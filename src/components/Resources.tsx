@@ -1,73 +1,71 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { FileText, Download, Calendar, Wrench } from "lucide-react";
+import { FileText, Download } from "lucide-react";
 
 const Resources = () => {
-  const resources = [
-    {
-      icon: FileText,
-      title: "Conventions Collectives",
-      items: ["CCNPC Cinéma", "CCNPAV Audiovisuel", "Grilles salariales", "Stages"],
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      icon: Wrench,
-      title: "Boîte à Outils",
-      items: ["Fiches enfants", "Plannings types", "Suivi scolaire", "Modèles documents"],
-      color: "from-accent to-gold-glow",
-    },
-    {
-      icon: Calendar,
-      title: "Calendriers",
-      items: ["Calendrier scolaire", "Périodes examens", "Vacances zones A/B/C", "Jours fériés"],
-      color: "from-green-500 to-green-600",
-    },
+  const conventions = [
+    { title: "Convention Collective Cinéma (CCNPC)", items: ["Grille des salaires", "Texte intégral", "Fiches pratiques"] },
+    { title: "Convention Collective Audiovisuel (CCNPAV)", items: ["Grille des salaires", "Texte intégral", "Dispositions"] },
+    { title: "Stages et conventions", items: ["Conventions de stage", "Rémunération", "Modèles"] },
+    { title: "Tournages internationaux", items: ["Réglementations", "Équivalences", "Contacts utiles"] },
+  ];
+
+  const tools = [
+    "Fiches de renseignements enfants",
+    "Planning type journée tournage",
+    "Suivi scolaire tournage",
+    "Calendrier scolaire & examens",
+    "Calendrier des vacances",
   ];
 
   return (
-    <section id="conventions" className="py-24 bg-background">
+    <section id="conventions" className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            <span className="text-accent">Ressources</span> & Outils
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-foreground mb-8 uppercase tracking-wide">
+            Conventions / Salaires
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Accédez à tous les documents essentiels pour exercer votre métier en toute conformité
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {resources.map((resource, index) => {
-            const Icon = resource.icon;
-            return (
-              <Card 
-                key={index} 
-                className="border-2 border-border hover:border-accent/50 transition-all hover:shadow-lg group overflow-hidden"
-              >
-                <div className={`h-2 bg-gradient-to-r ${resource.color}`} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            {conventions.map((convention, index) => (
+              <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                    <Icon className="w-7 h-7 text-accent" />
-                  </div>
-                  <CardTitle className="text-xl">{resource.title}</CardTitle>
+                  <CardTitle className="text-lg flex items-start gap-3">
+                    <FileText className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span>{convention.title}</span>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 mb-6">
-                    {resource.items.map((item, idx) => (
-                      <li key={idx} className="text-muted-foreground flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                  <ul className="space-y-2">
+                    {convention.items.map((item, idx) => (
+                      <li key={idx} className="text-sm text-muted-foreground flex items-center gap-2">
+                        <Download className="w-3 h-3 text-accent" />
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-accent/10">
-                    <Download className="w-4 h-4 mr-2" />
-                    Accéder
-                  </Button>
                 </CardContent>
               </Card>
-            );
-          })}
+            ))}
+          </div>
+
+          <div id="outils">
+            <h2 className="text-3xl font-bold text-foreground mb-8 uppercase tracking-wide">
+              Boîte à Outils
+            </h2>
+            <Card>
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {tools.map((tool, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 rounded hover:bg-secondary transition-colors">
+                      <FileText className="w-5 h-5 text-accent flex-shrink-0" />
+                      <span className="text-sm">{tool}</span>
+                      <Download className="w-4 h-4 ml-auto text-muted-foreground hover:text-accent cursor-pointer" />
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

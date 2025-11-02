@@ -47,13 +47,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        cinema: {
-          dark: "hsl(var(--cinema-dark))",
-          light: "hsl(var(--cinema-light))",
-        },
         gold: {
-          DEFAULT: "hsl(40 85% 55%)",
-          glow: "hsl(var(--gold-glow))",
+          DEFAULT: "hsl(var(--gold))",
+          dark: "hsl(var(--gold-dark))",
         },
       },
       borderRadius: {

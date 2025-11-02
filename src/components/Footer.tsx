@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
-import { Film, Mail, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Mail, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
+  const links = {
     association: [
       { label: "Présentation", href: "#association" },
       { label: "Charte AFCJA", href: "#charte" },
       { label: "Devenir membre", href: "#devenir-membre" },
       { label: "Organigramme", href: "#organigramme" },
+      { label: "Faire un don", href: "#don" },
     ],
     ressources: [
       { label: "Conventions collectives", href: "#conventions" },
@@ -26,48 +27,36 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          {/* Logo & Description */}
+    <footer className="bg-primary text-primary-foreground border-t border-primary-foreground/10">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Logo & Social */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <Film className="w-8 h-8 text-accent" />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold">AFCJA</span>
-                <span className="text-xs text-accent">Association Professionnelle</span>
-              </div>
+            <Link to="/" className="flex flex-col leading-none mb-4">
+              <span className="text-3xl font-bold text-accent tracking-tight lowercase italic">
+                afcja
+              </span>
+              <span className="text-[8px] text-primary-foreground/70 uppercase tracking-widest mt-1">
+                Association Française des
+              </span>
+              <span className="text-[8px] text-primary-foreground/70 uppercase tracking-widest -mt-0.5">
+                Coordinateurs Jeunesse Audiovisuel
+              </span>
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Fédérer les coordinateurs jeunesse de l'audiovisuel français et valoriser notre métier depuis 2010.
-            </p>
-            <div className="flex gap-3">
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
-                aria-label="Facebook"
-              >
+            <div className="flex gap-3 mt-6">
+              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
-                aria-label="Twitter"
-              >
+              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="#" 
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-accent/20 flex items-center justify-center transition-colors"
-                aria-label="YouTube"
-              >
+              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
@@ -75,13 +64,15 @@ const Footer = () => {
 
           {/* L'Association */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-accent">L'Association</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-accent">
+              L'Association
+            </h3>
             <ul className="space-y-2">
-              {footerLinks.association.map((link) => (
+              {links.association.map((link) => (
                 <li key={link.href}>
                   <a 
-                    href={link.href} 
-                    className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                    href={link.href}
+                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </a>
@@ -92,13 +83,15 @@ const Footer = () => {
 
           {/* Ressources */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-accent">Ressources</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-accent">
+              Ressources
+            </h3>
             <ul className="space-y-2">
-              {footerLinks.ressources.map((link) => (
+              {links.ressources.map((link) => (
                 <li key={link.href}>
                   <a 
-                    href={link.href} 
-                    className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                    href={link.href}
+                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </a>
@@ -109,23 +102,22 @@ const Footer = () => {
 
           {/* Contact & Legal */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-accent">Contact</h3>
-            <div className="space-y-3 mb-6">
-              <a 
-                href="mailto:contact@afcja.fr" 
-                className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-              >
-                <Mail className="w-4 h-4" />
-                contact@afcja.fr
-              </a>
-            </div>
-            <h4 className="font-semibold mb-3">Informations légales</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-accent">
+              Contact
+            </h3>
+            <a 
+              href="mailto:contact@afcja.fr"
+              className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-accent transition-colors mb-6"
+            >
+              <Mail className="w-4 h-4" />
+              contact@afcja.fr
+            </a>
             <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
+              {links.legal.map((link) => (
                 <li key={link.href}>
                   <a 
-                    href={link.href} 
-                    className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
+                    href={link.href}
+                    className="text-xs text-primary-foreground/60 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </a>
@@ -137,12 +129,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-            <p>© {currentYear} AFCJA - Tous droits réservés</p>
-            <p>
-              Site conçu avec ❤️ pour les professionnels de l'audiovisuel
-            </p>
-          </div>
+          <p className="text-xs text-primary-foreground/60 text-center">
+            © {currentYear} AFCJA - Tous droits réservés
+          </p>
         </div>
       </div>
     </footer>
