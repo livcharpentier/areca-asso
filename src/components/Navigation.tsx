@@ -28,10 +28,10 @@ const Navigation = () => {
                 <span className="text-2xl font-bold text-white">A</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="text-3xl font-bold text-accent tracking-tight">
-                  afcja
+                <span className="text-3xl font-lucky text-accent tracking-tight">
+                  AFCJA
                 </span>
-                <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-light">
+                <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
                   Coordinateurs Jeunesse Audiovisuel
                 </span>
               </div>

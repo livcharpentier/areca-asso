@@ -13,6 +13,12 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'bangers': ['Bangers', 'cursive'],
+        'comic': ['Comic Neue', 'cursive'],
+        'lucky': ['Luckiest Guy', 'cursive'],
+        'sans': ['Comic Neue', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -14,12 +14,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 h-full relative z-10">
         <div className="flex flex-col justify-center h-full max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bangers text-white mb-6 leading-tight tracking-wider">
             Association Française des
-            <span className="block bg-gradient-to-r from-accent via-coral to-gold bg-clip-text text-transparent mt-2">
+            <span className="block bg-gradient-to-r from-accent via-coral to-gold bg-clip-text text-transparent mt-2 text-6xl md:text-8xl">
               Coordinateurs Jeunesse
             </span>
-            <span className="block">Audiovisuel</span>
+            <span className="block text-5xl md:text-7xl">Audiovisuel</span>
           </h1>
           <p className="text-xl text-white/90 leading-relaxed mb-8">
             Fédérer les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel
