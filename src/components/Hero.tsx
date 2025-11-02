@@ -13,7 +13,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 h-full relative z-10">
-        <div className="flex flex-col justify-center h-full max-w-2xl">
+        <div className="flex flex-col justify-end h-full max-w-2xl pb-8">
           <h1 className="text-lg md:text-2xl lg:text-3xl font-bangers text-white mb-2 leading-tight tracking-wider">
             Association Française des
             <span className="block bg-gradient-to-r from-accent via-blue-sky to-gold bg-clip-text text-transparent mt-1 text-xl md:text-3xl lg:text-4xl">
