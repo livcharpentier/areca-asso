@@ -14,7 +14,95 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      member_availability: {
+        Row: {
+          created_at: string
+          director_name: string | null
+          end_date: string | null
+          film_title: string | null
+          id: string
+          production_company: string | null
+          start_date: string | null
+          status: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          director_name?: string | null
+          end_date?: string | null
+          film_title?: string | null
+          id?: string
+          production_company?: string | null
+          start_date?: string | null
+          status: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          director_name?: string | null
+          end_date?: string | null
+          film_title?: string | null
+          id?: string
+          production_company?: string | null
+          start_date?: string | null
+          status?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "member_availability_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          bio: string | null
+          created_at: string
+          email: string
+          experience_years: number | null
+          first_name: string | null
+          id: string
+          last_name: string | null
+          phone: string | null
+          photo_url: string | null
+          specialties: string[] | null
+          updated_at: string
+        }
+        Insert: {
+          bio?: string | null
+          created_at?: string
+          email: string
+          experience_years?: number | null
+          first_name?: string | null
+          id: string
+          last_name?: string | null
+          phone?: string | null
+          photo_url?: string | null
+          specialties?: string[] | null
+          updated_at?: string
+        }
+        Update: {
+          bio?: string | null
+          created_at?: string
+          email?: string
+          experience_years?: number | null
+          first_name?: string | null
+          id?: string
+          last_name?: string | null
+          phone?: string | null
+          photo_url?: string | null
+          specialties?: string[] | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
