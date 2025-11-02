@@ -1,11 +1,22 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, LogIn, Globe } from "lucide-react";
+import { Menu, LogIn, LogOut, Globe } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const { user, signOut } = useAuth();
+
+  const handleAuthAction = async () => {
+    if (user) {
+      await signOut();
+    } else {
+      navigate("/auth");
+    }
+  };
 
   const navItems = [
     { label: "L'ASSOCIATION", href: "#association" },
@@ -53,9 +64,11 @@ const Navigation = () => {
               <Button
                 variant="ghost"
                 size="icon"
+                onClick={handleAuthAction}
                 className="w-8 h-8 text-primary-foreground hover:text-accent"
+                title={user ? "Déconnexion" : "Connexion"}
               >
-                <LogIn className="w-4 h-4" />
+                {user ? <LogOut className="w-4 h-4" /> : <LogIn className="w-4 h-4" />}
               </Button>
               <Button
                 variant="ghost"
@@ -87,8 +100,11 @@ const Navigation = () => {
                   </a>
                 ))}
                 <div className="flex gap-2 mt-4 pt-4 border-t border-primary-foreground/20">
-                  <Button className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90">
-                    Connexion
+                  <Button 
+                    onClick={handleAuthAction}
+                    className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90"
+                  >
+                    {user ? "Déconnexion" : "Connexion"}
                   </Button>
                   <Button variant="outline" className="border-primary-foreground/30 text-primary-foreground">
                     FR
