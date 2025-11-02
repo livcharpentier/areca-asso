@@ -35,7 +35,7 @@ const News = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {news.map((item, index) => {
               const colors = [
-                { accent: 'text-accent', border: 'border-t-accent', button: 'text-accent hover:text-coral' },
+                { accent: 'text-accent', border: 'border-t-accent', button: 'text-accent hover:text-blue-vibrant' },
                 { accent: 'text-primary', border: 'border-t-primary', button: 'text-primary hover:text-green-forest' },
                 { accent: 'text-blue-sky', border: 'border-t-blue-sky', button: 'text-blue-sky hover:text-accent' }
               ];

@@ -46,7 +46,7 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="text-center bg-coral-light border-2 border-accent hover:shadow-xl transition-all hover:scale-105">
+            <Card className="text-center bg-blue-vibrantLight border-2 border-accent hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-8">
                 <div className="text-4xl font-bold text-accent mb-2">270+</div>
                 <div className="text-sm uppercase tracking-wider text-muted-foreground">Membres actifs</div>

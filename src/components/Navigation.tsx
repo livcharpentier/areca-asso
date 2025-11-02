@@ -24,7 +24,7 @@ const Navigation = () => {
           {/* Logo AFCJA coloré */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-coral flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-blue-sky flex items-center justify-center shadow-lg">
                 <span className="text-2xl font-bold text-white">A</span>
               </div>
               <div className="flex flex-col leading-none">

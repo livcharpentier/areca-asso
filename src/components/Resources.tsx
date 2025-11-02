@@ -28,7 +28,7 @@ const Resources = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {conventions.map((convention, index) => {
               const colors = [
-                { border: 'border-t-accent', icon: 'text-accent', bg: 'bg-coral-light' },
+                { border: 'border-t-accent', icon: 'text-accent', bg: 'bg-blue-vibrantLight' },
                 { border: 'border-t-primary', icon: 'text-primary', bg: 'bg-green-light' },
                 { border: 'border-t-blue-sky', icon: 'text-blue-sky', bg: 'bg-blue-light' },
                 { border: 'border-t-gold', icon: 'text-gold', bg: 'bg-gold-light' }
@@ -66,8 +66,8 @@ const Resources = () => {
               <CardContent className="p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {tools.map((tool, index) => {
-                    const colors = ['text-accent', 'text-primary', 'text-blue-sky', 'text-gold', 'text-coral'];
-                    const bgs = ['hover:bg-coral-light', 'hover:bg-green-light', 'hover:bg-blue-light', 'hover:bg-gold-light', 'hover:bg-coral-light'];
+                    const colors = ['text-accent', 'text-primary', 'text-blue-sky', 'text-gold', 'text-accent'];
+                    const bgs = ['hover:bg-blue-vibrantLight', 'hover:bg-green-light', 'hover:bg-blue-light', 'hover:bg-gold-light', 'hover:bg-blue-vibrantLight'];
                     const color = colors[index % 5];
                     const bg = bgs[index % 5];
                     

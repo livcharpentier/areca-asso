@@ -20,7 +20,7 @@ const Members = () => {
             <h2 className="text-3xl font-bold text-foreground uppercase tracking-wide">
               Membres
             </h2>
-            <Button className="bg-accent text-white hover:bg-coral shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <Button className="bg-accent text-white hover:bg-blue-vibrant shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <Search className="w-4 h-4 mr-2" />
               Rechercher un membre
             </Button>
@@ -29,11 +29,11 @@ const Members = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map((category, index) => {
               const colors = [
-                { bg: 'bg-coral-light', text: 'text-accent', icon: 'text-accent' },
+                { bg: 'bg-blue-vibrantLight', text: 'text-accent', icon: 'text-accent' },
                 { bg: 'bg-green-light', text: 'text-primary', icon: 'text-primary' },
                 { bg: 'bg-blue-light', text: 'text-blue-sky', icon: 'text-blue-sky' },
                 { bg: 'bg-gold-light', text: 'text-gold', icon: 'text-gold' },
-                { bg: 'bg-coral-light', text: 'text-accent', icon: 'text-accent' },
+                { bg: 'bg-blue-vibrantLight', text: 'text-accent', icon: 'text-accent' },
                 { bg: 'bg-green-light', text: 'text-primary', icon: 'text-primary' }
               ];
               const color = colors[index];

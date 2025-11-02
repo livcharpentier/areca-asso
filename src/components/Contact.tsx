@@ -17,14 +17,14 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               <Card className="border-l-4 border-l-accent hover:shadow-lg transition-all hover:-translate-y-1">
-                <CardHeader className="bg-coral-light">
+                <CardHeader className="bg-blue-vibrantLight">
                   <CardTitle className="text-lg flex items-center gap-2">
                     <Mail className="w-5 h-5 text-accent" />
                     Email
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="mt-4">
-                  <a href="mailto:contact@afcja.fr" className="text-accent hover:text-coral font-semibold transition-colors">
+                  <a href="mailto:contact@afcja.fr" className="text-accent hover:text-blue-vibrant font-semibold transition-colors">
                     contact@afcja.fr
                   </a>
                 </CardContent>
@@ -80,7 +80,7 @@ const Contact = () => {
                       className="resize-none border-2 focus:border-accent"
                     />
                   </div>
-                  <Button className="bg-accent text-white hover:bg-coral shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                  <Button className="bg-accent text-white hover:bg-blue-vibrant shadow-lg hover:shadow-xl transition-all hover:scale-105">
                     Envoyer
                   </Button>
                 </form>

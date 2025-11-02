@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="flex flex-col justify-center h-full max-w-2xl">
           <h1 className="text-5xl md:text-7xl font-bangers text-white mb-6 leading-tight tracking-wider">
             Association Française des
-            <span className="block bg-gradient-to-r from-accent via-coral to-gold bg-clip-text text-transparent mt-2 text-6xl md:text-8xl">
+            <span className="block bg-gradient-to-r from-accent via-blue-sky to-gold bg-clip-text text-transparent mt-2 text-6xl md:text-8xl">
               Coordinateurs Jeunesse
             </span>
             <span className="block text-5xl md:text-7xl">Audiovisuel</span>
@@ -25,7 +25,7 @@ const Hero = () => {
             Fédérer les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel
           </p>
           <div className="flex gap-4">
-            <button className="px-8 py-3 bg-accent hover:bg-coral text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105">
+            <button className="px-8 py-3 bg-accent hover:bg-blue-vibrant text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105">
               Devenir membre
             </button>
             <button className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg backdrop-blur-sm border border-white/30 transition-all hover:scale-105">
