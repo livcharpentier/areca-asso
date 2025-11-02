@@ -18,7 +18,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-primary border-b border-border/10">
+    <nav className="fixed top-0 w-full z-50 bg-black border-b border-border/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo AFCJA coloré */}
