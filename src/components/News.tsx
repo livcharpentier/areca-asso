@@ -33,27 +33,36 @@ const News = () => {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {news.map((item, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow cursor-pointer">
-                <CardHeader>
-                  <div className="flex items-center gap-2 text-xs text-accent mb-2">
-                    <Calendar className="w-3 h-3" />
-                    <span>{item.date}</span>
-                    <span className="text-muted-foreground">• {item.category}</span>
-                  </div>
-                  <CardTitle className="text-lg leading-snug">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                    {item.excerpt}
-                  </p>
-                  <Button variant="link" className="text-accent p-0 h-auto font-semibold">
-                    Lire la suite
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            {news.map((item, index) => {
+              const colors = [
+                { accent: 'text-accent', border: 'border-t-accent', button: 'text-accent hover:text-coral' },
+                { accent: 'text-primary', border: 'border-t-primary', button: 'text-primary hover:text-green-forest' },
+                { accent: 'text-blue-sky', border: 'border-t-blue-sky', button: 'text-blue-sky hover:text-accent' }
+              ];
+              const color = colors[index % 3];
+              
+              return (
+                <Card key={index} className={`hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer border-t-4 ${color.border}`}>
+                  <CardHeader>
+                    <div className={`flex items-center gap-2 text-xs ${color.accent} mb-2`}>
+                      <Calendar className="w-3 h-3" />
+                      <span>{item.date}</span>
+                      <span className="text-muted-foreground">• {item.category}</span>
+                    </div>
+                    <CardTitle className="text-lg leading-snug">{item.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                      {item.excerpt}
+                    </p>
+                    <Button variant="link" className={`${color.button} p-0 h-auto font-semibold transition-colors`}>
+                      Lire la suite
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>

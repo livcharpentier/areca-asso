@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* AFAR-inspired professional palette */
+    /* Palette colorée inspirée Les Cousins d'Alice */
     --background: 0 0% 98%;
     --foreground: 0 0% 15%;
 
@@ -16,17 +16,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Dark header like AFAR */
-    --primary: 0 0% 15%;
+    /* Vert forêt principal */
+    --primary: 150 45% 35%;
     --primary-foreground: 0 0% 98%;
     
-    /* Gold/Yellow accent like AFAR logo */
-    --accent: 45 93% 47%;
-    --accent-foreground: 0 0% 15%;
+    /* Orange corail vibrant */
+    --accent: 16 85% 58%;
+    --accent-foreground: 0 0% 98%;
 
-    /* Light gray for sections */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 15%;
+    /* Bleu ciel secondaire */
+    --secondary: 200 70% 92%;
+    --secondary-foreground: 150 45% 35%;
 
     --muted: 0 0% 94%;
     --muted-foreground: 0 0% 40%;
@@ -34,19 +34,29 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 89%;
+    --border: 0 0% 85%;
     --input: 0 0% 89%;
-    --ring: 45 93% 47%;
+    --ring: 16 85% 58%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
-    /* Custom tokens AFAR style */
-    --header-dark: 0 0% 10%;
-    --section-light: 0 0% 97%;
-    --gold: 45 93% 47%;
-    --gold-dark: 45 93% 37%;
+    /* Couleurs personnalisées */
+    --green-forest: 150 45% 35%;
+    --green-light: 150 40% 88%;
+    --coral: 16 85% 58%;
+    --coral-light: 16 85% 92%;
+    --gold: 45 93% 55%;
+    --gold-light: 45 90% 90%;
+    --blue-sky: 200 85% 65%;
+    --blue-light: 200 70% 92%;
+    --red-festive: 0 75% 55%;
     
-    /* Subtle transitions */
+    /* Gradients colorés */
+    --gradient-primary: linear-gradient(135deg, hsl(150 45% 35%), hsl(150 50% 45%));
+    --gradient-coral: linear-gradient(135deg, hsl(16 85% 58%), hsl(25 85% 60%));
+    --gradient-rainbow: linear-gradient(135deg, hsl(150 45% 35%), hsl(200 85% 65%), hsl(16 85% 58%));
+    
+    /* Transitions */
     --transition: all 0.3s ease;
   }
 
@@ -60,13 +70,13 @@
     --popover: 0 0% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 45 93% 47%;
-    --primary-foreground: 0 0% 15%;
+    --primary: 150 45% 40%;
+    --primary-foreground: 0 0% 98%;
 
-    --accent: 45 93% 47%;
-    --accent-foreground: 0 0% 15%;
+    --accent: 16 85% 58%;
+    --accent-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 20%;
+    --secondary: 200 30% 25%;
     --secondary-foreground: 0 0% 95%;
 
     --muted: 0 0% 20%;
@@ -77,7 +87,7 @@
 
     --border: 0 0% 25%;
     --input: 0 0% 25%;
-    --ring: 45 93% 47%;
+    --ring: 16 85% 58%;
   }
 }
 

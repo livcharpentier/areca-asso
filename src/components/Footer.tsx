@@ -32,32 +32,34 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Social */}
           <div>
-            <Link to="/" className="flex flex-col leading-none mb-4">
-              <span className="text-3xl font-bold text-accent tracking-tight lowercase italic">
-                afcja
-              </span>
-              <span className="text-[8px] text-primary-foreground/70 uppercase tracking-widest mt-1">
-                Association Française des
-              </span>
-              <span className="text-[8px] text-primary-foreground/70 uppercase tracking-widest -mt-0.5">
-                Coordinateurs Jeunesse Audiovisuel
-              </span>
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-coral flex items-center justify-center shadow-lg">
+                <span className="text-xl font-bold text-white">A</span>
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="text-2xl font-bold text-accent tracking-tight">
+                  afcja
+                </span>
+                <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider">
+                  Coordinateurs Jeunesse
+                </span>
+              </div>
             </Link>
             <div className="flex gap-3 mt-6">
-              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Facebook className="w-5 h-5" />
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
+                <Facebook className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Twitter className="w-5 h-5" />
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-blue-sky flex items-center justify-center transition-all hover:scale-110">
+                <Twitter className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110">
+                <Linkedin className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-coral flex items-center justify-center transition-all hover:scale-110">
+                <Instagram className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
-                <Youtube className="w-5 h-5" />
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-festive flex items-center justify-center transition-all hover:scale-110">
+                <Youtube className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
             </div>
           </div>

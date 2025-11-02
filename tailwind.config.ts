@@ -49,8 +49,21 @@ export default {
         },
         gold: {
           DEFAULT: "hsl(var(--gold))",
-          dark: "hsl(var(--gold-dark))",
+          light: "hsl(var(--gold-light))",
         },
+        green: {
+          forest: "hsl(var(--green-forest))",
+          light: "hsl(var(--green-light))",
+        },
+        coral: {
+          DEFAULT: "hsl(var(--coral))",
+          light: "hsl(var(--coral-light))",
+        },
+        blue: {
+          sky: "hsl(var(--blue-sky))",
+          light: "hsl(var(--blue-light))",
+        },
+        festive: "hsl(var(--red-festive))",
       },
       borderRadius: {
         lg: "var(--radius)",

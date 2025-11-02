@@ -20,27 +20,41 @@ const Members = () => {
             <h2 className="text-3xl font-bold text-foreground uppercase tracking-wide">
               Membres
             </h2>
-            <Button className="bg-accent text-accent-foreground hover:bg-gold-dark">
+            <Button className="bg-accent text-white hover:bg-coral shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <Search className="w-4 h-4 mr-2" />
               Rechercher un membre
             </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {categories.map((category, index) => (
-              <Card key={index} className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg flex items-center justify-between">
-                    <span>{category.title}</span>
-                    <Users className="w-5 h-5 text-accent" />
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-3xl font-bold text-accent mb-2">{category.count}</div>
-                  <p className="text-sm text-muted-foreground">{category.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {categories.map((category, index) => {
+              const colors = [
+                { bg: 'bg-coral-light', text: 'text-accent', icon: 'text-accent' },
+                { bg: 'bg-green-light', text: 'text-primary', icon: 'text-primary' },
+                { bg: 'bg-blue-light', text: 'text-blue-sky', icon: 'text-blue-sky' },
+                { bg: 'bg-gold-light', text: 'text-gold', icon: 'text-gold' },
+                { bg: 'bg-coral-light', text: 'text-accent', icon: 'text-accent' },
+                { bg: 'bg-green-light', text: 'text-primary', icon: 'text-primary' }
+              ];
+              const color = colors[index];
+              
+              return (
+                <Card key={index} className="hover:shadow-lg transition-all hover:-translate-y-1 border-2 hover:border-accent">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg flex items-center justify-between">
+                      <span>{category.title}</span>
+                      <div className={`w-10 h-10 rounded-full ${color.bg} flex items-center justify-center`}>
+                        <Users className={`w-5 h-5 ${color.icon}`} />
+                      </div>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className={`text-3xl font-bold ${color.text} mb-2`}>{category.count}</div>
+                    <p className="text-sm text-muted-foreground">{category.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>

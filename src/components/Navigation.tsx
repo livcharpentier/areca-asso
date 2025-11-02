@@ -21,17 +21,21 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full z-50 bg-primary border-b border-border/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo AFCJA style AFAR */}
-          <Link to="/" className="flex flex-col leading-none group">
-            <span className="text-4xl font-bold text-accent tracking-tight lowercase italic">
-              afcja
-            </span>
-            <span className="text-[9px] text-primary-foreground/80 uppercase tracking-widest mt-0.5 font-light">
-              Association Française des
-            </span>
-            <span className="text-[9px] text-primary-foreground/80 uppercase tracking-widest font-light -mt-0.5">
-              Coordinateurs Jeunesse Audiovisuel
-            </span>
+          {/* Logo AFCJA coloré */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="flex items-center gap-2">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-coral flex items-center justify-center shadow-lg">
+                <span className="text-2xl font-bold text-white">A</span>
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="text-3xl font-bold text-accent tracking-tight">
+                  afcja
+                </span>
+                <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-light">
+                  Coordinateurs Jeunesse Audiovisuel
+                </span>
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,7 +44,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-[11px] text-primary-foreground/90 hover:text-accent uppercase tracking-wider font-medium transition-colors"
+                className="text-[11px] text-primary-foreground/90 hover:text-accent hover:scale-105 uppercase tracking-wider font-medium transition-all"
               >
                 {item.label}
               </a>
