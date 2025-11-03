@@ -84,7 +84,7 @@ const DocumentsSection = () => {
                         {doc.category}
                       </span>
                     </div>
-                    <CardTitle className="text-xl text-white">
+                    <CardTitle className="text-xl text-amber-300 font-semibold">
                       {doc.title}
                     </CardTitle>
                     <CardDescription className="text-slate-200">
