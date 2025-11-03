@@ -5,7 +5,12 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, LogIn, LogOut, Globe } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
-const Navigation = () => {
+interface NavigationProps {
+  activeTab: string;
+  onTabChange: (tab: string) => void;
+}
+
+const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
@@ -19,13 +24,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "L'ASSOCIATION", href: "#association" },
-    { label: "MEMBRES", href: "#membres" },
-    { label: "CONVENTIONS / SALAIRES", href: "#conventions" },
-    { label: "PROJETS", href: "#projets" },
-    { label: "BOÎTE À OUTILS", href: "#outils" },
-    { label: "LIENS", href: "#liens" },
-    { label: "CONTACT", href: "#contact" },
+    { label: "À PROPOS", value: "about" },
+    { label: "MEMBRES", value: "members" },
+    { label: "RESSOURCES", value: "resources" },
+    { label: "ACTUALITÉS", value: "news" },
+    { label: "CONTACT", value: "contact" },
   ];
 
   return (
@@ -52,13 +55,17 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-[11px] text-primary-foreground/90 hover:text-accent hover:scale-105 uppercase tracking-wider font-medium transition-all"
+              <button
+                key={item.value}
+                onClick={() => onTabChange(item.value)}
+                className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 ${
+                  activeTab === item.value
+                    ? "text-accent border-accent"
+                    : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
+                }`}
               >
                 {item.label}
-              </a>
+              </button>
             ))}
             <div className="flex items-center gap-2 ml-4 pl-4 border-l border-primary-foreground/20">
               <Button
@@ -90,14 +97,20 @@ const Navigation = () => {
             <SheetContent side="right" className="w-[300px] bg-primary border-accent/20">
               <div className="flex flex-col gap-4 mt-8">
                 {navItems.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="text-sm text-primary-foreground hover:text-accent uppercase tracking-wider font-medium transition-colors py-2"
+                  <button
+                    key={item.value}
+                    onClick={() => {
+                      onTabChange(item.value);
+                      setOpen(false);
+                    }}
+                    className={`text-sm uppercase tracking-wider font-medium transition-colors py-2 text-left ${
+                      activeTab === item.value
+                        ? "text-accent"
+                        : "text-primary-foreground hover:text-accent"
+                    }`}
                   >
                     {item.label}
-                  </a>
+                  </button>
                 ))}
                 <div className="flex gap-2 mt-4 pt-4 border-t border-primary-foreground/20">
                   <Button 
