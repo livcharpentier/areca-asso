@@ -59,10 +59,10 @@ const DocumentsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-accent mb-4">
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-wide drop-shadow-2xl">
               Ressources & Documentation
             </h2>
-            <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-100 max-w-2xl mx-auto drop-shadow-lg">
               Accédez à nos documents, articles et textes de lois pour vous accompagner dans votre pratique professionnelle
             </p>
           </div>
