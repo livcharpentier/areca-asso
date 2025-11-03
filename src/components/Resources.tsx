@@ -36,18 +36,18 @@ const Resources = () => {
               const color = colors[index % 4];
               
               return (
-                <Card key={index} className={`hover:shadow-lg transition-all hover:-translate-y-1 border-t-4 ${color.border}`}>
-                  <CardHeader className={`${color.bg}`}>
-                    <CardTitle className="text-lg flex items-start gap-3">
-                      <FileText className={`w-5 h-5 ${color.icon} flex-shrink-0 mt-0.5`} />
+                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+                  <CardHeader>
+                    <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed flex items-start gap-3">
+                      <FileText className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                       <span>{convention.title}</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="mt-4">
                     <ul className="space-y-2">
                       {convention.items.map((item, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-center gap-2 hover:text-foreground transition-colors cursor-pointer">
-                          <Download className={`w-3 h-3 ${color.icon}`} />
+                        <li key={idx} className="text-sm text-slate-200 flex items-center gap-2 hover:text-accent transition-colors cursor-pointer">
+                          <Download className="w-3 h-3 text-accent" />
                           {item}
                         </li>
                       ))}
@@ -62,23 +62,16 @@ const Resources = () => {
             <h2 className="text-3xl font-bold text-foreground mb-8 uppercase tracking-wide">
               Boîte à Outils
             </h2>
-            <Card className="border-2 border-primary hover:border-accent hover:shadow-xl transition-all">
+            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
               <CardContent className="p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {tools.map((tool, index) => {
-                    const colors = ['text-accent', 'text-primary', 'text-blue-sky', 'text-gold', 'text-accent'];
-                    const bgs = ['hover:bg-blue-vibrantLight', 'hover:bg-green-light', 'hover:bg-blue-light', 'hover:bg-gold-light', 'hover:bg-blue-vibrantLight'];
-                    const color = colors[index % 5];
-                    const bg = bgs[index % 5];
-                    
-                    return (
-                      <div key={index} className={`flex items-center gap-3 p-3 rounded ${bg} transition-all hover:scale-105 cursor-pointer group`}>
-                        <FileText className={`w-5 h-5 ${color} flex-shrink-0`} />
-                        <span className="text-sm font-medium">{tool}</span>
-                        <Download className={`w-4 h-4 ml-auto ${color} group-hover:scale-125 transition-transform`} />
-                      </div>
-                    );
-                  })}
+                  {tools.map((tool, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 rounded bg-accent/10 hover:bg-accent/20 transition-all hover:scale-105 cursor-pointer group">
+                      <FileText className="w-5 h-5 text-accent flex-shrink-0" />
+                      <span className="text-sm font-medium text-slate-200">{tool}</span>
+                      <Download className="w-4 h-4 ml-auto text-accent group-hover:scale-125 transition-transform" />
+                    </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>
