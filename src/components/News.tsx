@@ -49,7 +49,7 @@ const News = () => {
                       <span>{item.date}</span>
                       <span className="text-muted-foreground">• {item.category}</span>
                     </div>
-                    <CardTitle className="text-lg leading-snug">{item.title}</CardTitle>
+                    <CardTitle className="text-lg leading-relaxed tracking-wide">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
