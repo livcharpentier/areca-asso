@@ -1,15 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Search } from "lucide-react";
+import { Users, Search, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Members = () => {
+  const navigate = useNavigate();
+  
   const categories = [
-    { title: "Responsables Enfants", count: 120, description: "Coordinateurs et chefs de production jeunesse" },
-    { title: "Coachs", count: 45, description: "Accompagnement artistique" },
-    { title: "Précepteurs", count: 35, description: "Suivi pédagogique et scolaire" },
-    { title: "Animateurs", count: 45, description: "Encadrants jeunesse" },
-    { title: "Cantiniers", count: 25, description: "Restauration sur tournages" },
-    { title: "Autres membres", count: 10, description: "Membres associés et honoraires" },
+    { title: "Responsables Enfants", count: 120, description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
+    { title: "Coachs", count: 45, description: "Accompagnement artistique", slug: "coachs" },
+    { title: "Précepteurs", count: 35, description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
+    { title: "Animateurs", count: 45, description: "Encadrants jeunesse", slug: "animateurs" },
+    { title: "Cantiniers", count: 25, description: "Restauration sur tournages", slug: "cantiniers" },
+    { title: "Autres membres", count: 10, description: "Membres associés et honoraires", slug: "autres" },
   ];
 
   return (
@@ -39,7 +42,11 @@ const Members = () => {
               const color = colors[index];
               
               return (
-                <Card key={index} className="hover:shadow-lg transition-all hover:-translate-y-1 border-2 hover:border-accent">
+                <Card 
+                  key={index} 
+                  className="hover:shadow-lg transition-all hover:-translate-y-1 border-2 hover:border-accent cursor-pointer group"
+                  onClick={() => navigate(`/members/${category.slug}`)}
+                >
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg flex items-center justify-between">
                       <span>{category.title}</span>
@@ -49,8 +56,13 @@ const Members = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className={`text-3xl font-bold ${color.text} mb-2`}>{category.count}</div>
-                    <p className="text-sm text-muted-foreground">{category.description}</p>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className={`text-3xl font-bold ${color.text} mb-2`}>{category.count}</div>
+                        <p className="text-sm text-muted-foreground">{category.description}</p>
+                      </div>
+                      <ChevronRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
                   </CardContent>
                 </Card>
               );
