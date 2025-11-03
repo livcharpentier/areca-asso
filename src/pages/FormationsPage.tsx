@@ -46,24 +46,24 @@ const FormationsPage = () => {
 
             <div className="space-y-6">
               {formations.map((formation, index) => (
-                <Card key={index} className="border-accent/20 bg-primary/50 backdrop-blur">
+                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-accent">{formation.title}</CardTitle>
-                    <CardDescription className="text-primary-foreground/70">
+                    <CardTitle className="text-2xl text-amber-300 font-semibold tracking-wide leading-relaxed">{formation.title}</CardTitle>
+                    <CardDescription className="text-slate-200">
                       {formation.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <div className="flex items-center gap-2 text-slate-300">
                         <Clock className="w-4 h-4 text-accent" />
                         <span className="text-sm">{formation.duration}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <div className="flex items-center gap-2 text-slate-300">
                         <Users className="w-4 h-4 text-accent" />
                         <span className="text-sm">{formation.participants}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-primary-foreground/80">
+                      <div className="flex items-center gap-2 text-slate-300">
                         <Calendar className="w-4 h-4 text-accent" />
                         <span className="text-sm">{formation.date}</span>
                       </div>
