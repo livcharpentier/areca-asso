@@ -23,6 +23,7 @@ const Navigation = () => {
     { label: "À PROPOS", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "RESSOURCES", path: "/resources" },
+    { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "CONTACT", path: "/contact" },
   ];

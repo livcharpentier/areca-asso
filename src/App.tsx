@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import AboutPage from "./pages/AboutPage";
 import MembersPage from "./pages/MembersPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import FormationsPage from "./pages/FormationsPage";
 import NewsPage from "./pages/NewsPage";
 import ContactPage from "./pages/ContactPage";
 import Auth from "./pages/Auth";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/about" element={<AboutPage />} />
             <Route path="/members" element={<MembersPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/formations" element={<FormationsPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/auth" element={<Auth />} />
