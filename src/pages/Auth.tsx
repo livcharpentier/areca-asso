@@ -151,11 +151,11 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary/90 to-primary/80 p-4">
-      <Card className="w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-primary/20 p-4">
+      <Card className="w-full max-w-md border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
         <CardHeader>
-          <CardTitle className="text-2xl font-bangers text-center">AFCJA</CardTitle>
-          <CardDescription className="text-center">
+          <CardTitle className="text-3xl font-bangers text-amber-300 tracking-wide text-center">AFCJA</CardTitle>
+          <CardDescription className="text-slate-200 text-center">
             Coordinateurs Jeunesse Audiovisuel
           </CardDescription>
         </CardHeader>
@@ -169,7 +169,7 @@ const Auth = () => {
             <TabsContent value="login">
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="login-email">Email</Label>
+                  <Label htmlFor="login-email" className="text-slate-200">Email</Label>
                   <Input
                     id="login-email"
                     type="email"
@@ -181,7 +181,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="login-password">Mot de passe</Label>
+                  <Label htmlFor="login-password" className="text-slate-200">Mot de passe</Label>
                   <Input
                     id="login-password"
                     type="password"
@@ -202,7 +202,7 @@ const Auth = () => {
               <form onSubmit={handleSignup} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="first-name">Prénom</Label>
+                    <Label htmlFor="first-name" className="text-slate-200">Prénom</Label>
                     <Input
                       id="first-name"
                       type="text"
@@ -214,7 +214,7 @@ const Auth = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="last-name">Nom</Label>
+                    <Label htmlFor="last-name" className="text-slate-200">Nom</Label>
                     <Input
                       id="last-name"
                       type="text"
@@ -227,7 +227,7 @@ const Auth = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="signup-email">Email</Label>
+                  <Label htmlFor="signup-email" className="text-slate-200">Email</Label>
                   <Input
                     id="signup-email"
                     type="email"
@@ -239,7 +239,7 @@ const Auth = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="signup-password">Mot de passe</Label>
+                  <Label htmlFor="signup-password" className="text-slate-200">Mot de passe</Label>
                   <Input
                     id="signup-password"
                     type="password"
