@@ -42,20 +42,20 @@ const News = () => {
               const color = colors[index % 3];
               
               return (
-                <Card key={index} className={`hover:shadow-lg transition-all hover:-translate-y-1 cursor-pointer border-t-4 ${color.border}`}>
+                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <CardHeader>
-                    <div className={`flex items-center gap-2 text-xs ${color.accent} mb-2`}>
+                    <div className="flex items-center gap-2 text-xs text-blue-200 mb-2">
                       <Calendar className="w-3 h-3" />
                       <span>{item.date}</span>
-                      <span className="text-muted-foreground">• {item.category}</span>
+                      <span className="text-slate-400">• {item.category}</span>
                     </div>
-                    <CardTitle className="text-lg leading-relaxed tracking-wide">{item.title}</CardTitle>
+                    <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                    <p className="text-sm text-slate-200 mb-4 line-clamp-3">
                       {item.excerpt}
                     </p>
-                    <Button variant="link" className={`${color.button} p-0 h-auto font-semibold transition-colors`}>
+                    <Button variant="ghost" className="text-accent hover:text-accent hover:bg-accent/10 p-0 h-auto font-semibold transition-colors">
                       Lire la suite
                       <ArrowRight className="w-4 h-4 ml-1" />
                     </Button>

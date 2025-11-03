@@ -44,22 +44,22 @@ const Members = () => {
               return (
                 <Card 
                   key={index} 
-                  className="hover:shadow-lg transition-all hover:-translate-y-1 border-2 hover:border-accent cursor-pointer group"
+                  className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer group"
                   onClick={() => navigate(`/members/${category.slug}`)}
                 >
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg flex items-center justify-between">
+                    <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed flex items-center justify-between">
                       <span>{category.title}</span>
-                      <div className={`w-10 h-10 rounded-full ${color.bg} flex items-center justify-center`}>
-                        <Users className={`w-5 h-5 ${color.icon}`} />
+                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                        <Users className="w-5 h-5 text-accent" />
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className={`text-3xl font-bold ${color.text} mb-2`}>{category.count}</div>
-                        <p className="text-sm text-muted-foreground">{category.description}</p>
+                        <div className="text-3xl font-bold text-accent mb-2">{category.count}</div>
+                        <p className="text-sm text-slate-200">{category.description}</p>
                       </div>
                       <ChevronRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>

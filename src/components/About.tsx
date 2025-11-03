@@ -10,34 +10,34 @@ const About = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <Card className="border-l-4 border-l-accent hover:shadow-lg transition-all hover:-translate-y-1">
+            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-accent">Présentation</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Présentation</h3>
+                <p className="text-slate-200 leading-relaxed">
                   L'AFCJA rassemble les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel. 
                   Notre objectif est de garantir les meilleures conditions de travail pour les enfants et les professionnels qui les accompagnent.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-primary hover:shadow-lg transition-all hover:-translate-y-1">
+            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-primary">Nos Missions</h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Nos Missions</h3>
+                <ul className="space-y-2 text-slate-200">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
                     <span>Valoriser le métier de coordinateur jeunesse</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1 font-bold">•</span>
+                    <span className="text-accent mt-1 font-bold">•</span>
                     <span>Fédérer les professionnels du secteur</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-sky mt-1 font-bold">•</span>
+                    <span className="text-accent mt-1 font-bold">•</span>
                     <span>Défendre les droits et la réglementation</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-gold mt-1 font-bold">•</span>
+                    <span className="text-accent mt-1 font-bold">•</span>
                     <span>Partager les bonnes pratiques</span>
                   </li>
                 </ul>
@@ -46,22 +46,22 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="text-center bg-blue-vibrantLight border-2 border-accent hover:shadow-xl transition-all hover:scale-105">
+            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8">
                 <div className="text-4xl font-bold text-accent mb-2">270+</div>
-                <div className="text-sm uppercase tracking-wider text-muted-foreground">Membres actifs</div>
+                <div className="text-sm uppercase tracking-wider text-slate-300">Membres actifs</div>
               </CardContent>
             </Card>
-            <Card className="text-center bg-green-light border-2 border-primary hover:shadow-xl transition-all hover:scale-105">
+            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm uppercase tracking-wider text-muted-foreground">Productions suivies</div>
+                <div className="text-4xl font-bold text-accent mb-2">500+</div>
+                <div className="text-sm uppercase tracking-wider text-slate-300">Productions suivies</div>
               </CardContent>
             </Card>
-            <Card className="text-center bg-blue-light border-2 border-blue-sky hover:shadow-xl transition-all hover:scale-105">
+            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-8">
-                <div className="text-4xl font-bold text-blue-sky mb-2">15+</div>
-                <div className="text-sm uppercase tracking-wider text-muted-foreground">Années d'expérience</div>
+                <div className="text-4xl font-bold text-accent mb-2">15+</div>
+                <div className="text-sm uppercase tracking-wider text-slate-300">Années d'expérience</div>
               </CardContent>
             </Card>
           </div>

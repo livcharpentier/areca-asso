@@ -16,9 +16,9 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="border-l-4 border-l-accent hover:shadow-lg transition-all hover:-translate-y-1">
-                <CardHeader className="bg-blue-vibrantLight">
-                  <CardTitle className="text-lg flex items-center gap-2">
+              <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed flex items-center gap-2">
                     <Mail className="w-5 h-5 text-accent" />
                     Email
                   </CardTitle>
@@ -30,15 +30,15 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary hover:shadow-lg transition-all hover:-translate-y-1">
-                <CardHeader className="bg-green-light">
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-primary" />
+              <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+                <CardHeader>
+                  <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-accent" />
                     Adresse
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="mt-4">
-                  <p className="text-sm text-muted-foreground font-medium">
+                  <p className="text-sm text-slate-200 font-medium">
                     Siège Social<br />
                     75000 Paris<br />
                     France
@@ -48,32 +48,32 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="lg:col-span-2 border-t-4 border-t-blue-sky hover:shadow-xl transition-all">
-              <CardHeader className="bg-blue-light">
-                <CardTitle className="text-blue-sky">Envoyez-nous un message</CardTitle>
+            <Card className="lg:col-span-2 border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed">Envoyez-nous un message</CardTitle>
               </CardHeader>
               <CardContent className="mt-6">
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">Nom</label>
+                      <label className="text-sm font-medium mb-1.5 block text-slate-200">Nom</label>
                       <Input placeholder="Votre nom" className="border-2 focus:border-accent" />
                     </div>
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">Prénom</label>
+                      <label className="text-sm font-medium mb-1.5 block text-slate-200">Prénom</label>
                       <Input placeholder="Votre prénom" className="border-2 focus:border-primary" />
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">Email</label>
+                    <label className="text-sm font-medium mb-1.5 block text-slate-200">Email</label>
                     <Input type="email" placeholder="votre.email@exemple.com" className="border-2 focus:border-blue-sky" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">Sujet</label>
+                    <label className="text-sm font-medium mb-1.5 block text-slate-200">Sujet</label>
                     <Input placeholder="Sujet de votre message" className="border-2 focus:border-gold" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">Message</label>
+                    <label className="text-sm font-medium mb-1.5 block text-slate-200">Message</label>
                     <Textarea 
                       placeholder="Votre message..." 
                       rows={5}

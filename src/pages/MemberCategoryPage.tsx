@@ -85,7 +85,7 @@ const MemberCategoryPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {mockMembers.map((member) => (
-                <Card key={member.id} className="hover:shadow-xl transition-all border-2 hover:border-accent">
+                <Card key={member.id} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
                   <CardHeader>
                     <div className="flex items-start gap-4">
                       <Avatar className="w-20 h-20">
@@ -93,7 +93,7 @@ const MemberCategoryPage = () => {
                         <AvatarFallback>{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
                       </Avatar>
                       <div className="flex-1">
-                        <CardTitle className="text-2xl mb-2">
+                        <CardTitle className="text-2xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-2">
                           {member.firstName} {member.lastName}
                         </CardTitle>
                         <Badge 
@@ -110,10 +110,10 @@ const MemberCategoryPage = () => {
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
+                    <p className="text-sm text-slate-200">{member.bio}</p>
                     
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-sm">Spécialités</h4>
+                      <h4 className="font-semibold text-sm text-slate-200">Spécialités</h4>
                       <div className="flex flex-wrap gap-2">
                         {member.specialties.map((specialty, idx) => (
                           <Badge key={idx} variant="outline" className="text-xs">
@@ -125,19 +125,19 @@ const MemberCategoryPage = () => {
 
                     {member.recentNews && (
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-sm">Actualité</h4>
-                        <p className="text-sm text-muted-foreground italic">{member.recentNews}</p>
+                        <h4 className="font-semibold text-sm text-slate-200">Actualité</h4>
+                        <p className="text-sm text-slate-300 italic">{member.recentNews}</p>
                       </div>
                     )}
 
-                    <div className="pt-4 border-t space-y-2">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="pt-4 border-t border-slate-700 space-y-2">
+                      <div className="flex items-center gap-2 text-sm text-slate-300">
                         <Mail className="w-4 h-4" />
                         <a href={`mailto:${member.email}`} className="hover:text-accent">
                           {member.email}
                         </a>
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-2 text-sm text-slate-300">
                         <Phone className="w-4 h-4" />
                         <a href={`tel:${member.phone}`} className="hover:text-accent">
                           {member.phone}
