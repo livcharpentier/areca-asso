@@ -7,10 +7,56 @@ const DocumentsSection = () => {
     {
       type: "document",
       icon: FileText,
-      title: "Guide des bonnes pratiques",
-      description: "Document de référence pour la coordination jeunesse",
-      date: "Janvier 2025",
-      category: "Documents",
+      title: "Guide officiel de la commission",
+      description: "Guide complet pour confectionner un dossier DRIEETS",
+      date: "Octobre 2021",
+      category: "Documents officiels",
+      link: "/guide_commission_enfants_spectacle.doc",
+    },
+    {
+      type: "document",
+      icon: FileText,
+      title: "Formulaire primaire (1D)",
+      description: "Avis pédagogique pour les enfants de primaire",
+      date: "Académie de Paris",
+      category: "Formulaires",
+      link: "https://www.ac-paris.fr/media/20903/download",
+    },
+    {
+      type: "document",
+      icon: FileText,
+      title: "Formulaire collège/lycée (2D)",
+      description: "Avis pédagogique pour collégiens et lycéens de moins de 16 ans",
+      date: "Académie de Paris",
+      category: "Formulaires",
+      link: "https://www.ac-paris.fr/media/20906/download",
+    },
+    {
+      type: "document",
+      icon: FileText,
+      title: "Avis DASEN",
+      description: "Formulaire d'avis du Directeur académique (hors Paris)",
+      date: "Académie de Paris",
+      category: "Formulaires",
+      link: "https://www.ac-paris.fr/media/24485/download",
+    },
+    {
+      type: "document",
+      icon: FileText,
+      title: "Calendrier Île-de-France 2025-2026",
+      description: "Dates des commissions pour toute l'Île-de-France",
+      date: "2025-2026",
+      category: "Calendriers",
+      link: "/calendrier_commissions_2025_2026.pdf",
+    },
+    {
+      type: "document",
+      icon: FileText,
+      title: "Calendrier Hauts-de-Seine (92)",
+      description: "Dates spécifiques des commissions du 92",
+      date: "2025-2026",
+      category: "Calendriers",
+      link: "/calendrier_commissions_92_hauts_de_seine.pdf",
     },
     {
       type: "law",
@@ -21,36 +67,12 @@ const DocumentsSection = () => {
       category: "Textes de lois",
     },
     {
-      type: "article",
-      icon: Newspaper,
-      title: "L'évolution du métier de coordinateur",
-      description: "Article sur les nouvelles pratiques professionnelles",
-      date: "Décembre 2024",
-      category: "Articles",
-    },
-    {
-      type: "document",
-      icon: FileText,
-      title: "Charte de l'AFCJA",
-      description: "Les valeurs et engagements de notre association",
-      date: "2024",
-      category: "Documents",
-    },
-    {
       type: "law",
       icon: Scale,
       title: "Réglementation des tournages",
       description: "Cadre légal pour les tournages avec des mineurs",
       date: "2024",
       category: "Textes de lois",
-    },
-    {
-      type: "article",
-      icon: Newspaper,
-      title: "Sécurité sur les plateaux",
-      description: "Meilleures pratiques pour assurer la sécurité",
-      date: "Novembre 2024",
-      category: "Articles",
     },
   ];
 
@@ -100,6 +122,7 @@ const DocumentsSection = () => {
                         variant="ghost"
                         size="sm"
                         className="text-accent hover:text-accent hover:bg-accent/10"
+                        onClick={() => doc.link && window.open(doc.link, '_blank')}
                       >
                         <Download className="w-4 h-4 mr-2" />
                         Télécharger

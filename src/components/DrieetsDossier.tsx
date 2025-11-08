@@ -53,6 +53,15 @@ const DrieetsDossier = () => {
               </p>
             </div>
 
+            <div className="bg-primary/10 border border-primary/30 p-4 rounded-lg">
+              <p className="text-sm text-foreground font-semibold mb-2">
+                📚 Ressource officielle de l'Académie de Paris
+              </p>
+              <p className="text-sm text-foreground/80">
+                Consultez le guide complet sur la scolarité des enfants du spectacle, incluant tous les formulaires nécessaires pour constituer votre dossier.
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
               <Button 
                 variant="default" 
@@ -62,6 +71,15 @@ const DrieetsDossier = () => {
               >
                 <FileText className="h-4 w-4" />
                 Accéder au formulaire DRIEETS
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="gap-2"
+                onClick={() => window.open('https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037', '_blank')}
+              >
+                <FileText className="h-4 w-4" />
+                Guide Académie de Paris
               </Button>
               <Button 
                 variant="outline" 
