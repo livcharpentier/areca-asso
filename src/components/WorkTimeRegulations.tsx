@@ -124,6 +124,36 @@ const WorkTimeRegulations = () => {
               </Card>
             </div>
 
+            {/* Section heures de nuit */}
+            <Card className="bg-destructive/5 border-destructive/30 mt-6">
+              <CardContent className="pt-6">
+                <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2">
+                  <AlertCircle className="h-5 w-5 text-destructive" />
+                  Travail de nuit (moins de 16 ans)
+                </h4>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-destructive font-bold">⛔</span>
+                    <p className="text-foreground">
+                      <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les jeunes de moins de 16 ans (article L.3163-2)
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-orange-500 font-bold">⚠️</span>
+                    <p className="text-foreground">
+                      <strong>Dérogation exceptionnelle :</strong> Dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary font-bold">🛌</span>
+                    <p className="text-foreground">
+                      <strong>Repos obligatoire :</strong> En cas de dérogation, la durée minimale de repos quotidien ne peut être inférieure à <strong>12 heures consécutives</strong> (article L.3164-1)
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="text-center text-sm text-muted-foreground pt-2">
               <p>Source : Code du travail - Articles L7124-1 et suivants</p>
             </div>
