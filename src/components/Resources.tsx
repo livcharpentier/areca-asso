@@ -69,6 +69,76 @@ const Resources = () => {
             </div>
           </div>
 
+          {/* Encadré VHSS */}
+          <div className="mb-8 bg-gradient-to-br from-red-950/40 to-pink-950/40 border-2 border-red-400/50 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-red-300 mb-4 flex items-center gap-2">
+              <FileText className="w-6 h-6" />
+              Avenant VHSS - Prévention des Violences et Harcèlements (17 mai 2024)
+            </h3>
+            <div className="space-y-4 text-slate-100">
+              <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30">
+                <p className="font-semibold text-red-200 mb-2">🚨 Définitions :</p>
+                <p className="text-sm"><strong>Harcèlement sexuel :</strong> Propos ou comportements à connotation sexuelle répétés qui portent atteinte à la dignité ou créent un environnement intimidant, hostile ou offensant.</p>
+                <p className="text-sm mt-2"><strong>Agissement sexiste :</strong> Tout agissement lié au sexe, ayant pour objet ou effet de porter atteinte à la dignité ou de créer un environnement intimidant, hostile, dégradant, humiliant ou offensant.</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-semibold text-red-200">👤 Référent VHSS obligatoire :</p>
+                    <p className="text-sm">Désignation d'un référent sur chaque film (30€ brut/semaine en long-métrage)</p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-red-200">📢 Procédure de signalement :</p>
+                    <p className="text-sm">Dispositif interne obligatoire - Mail/téléphone dédié - Confidentialité garantie</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-red-200">🛡️ Protection des victimes :</p>
+                    <p className="text-sm">Interdiction de sanctions, licenciement ou discrimination des victimes et témoins</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-semibold text-red-200">📞 Cellule d'écoute Audiens :</p>
+                    <p className="text-sm">Accompagnement psychologique et juridique gratuit - Anonymat préservé</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-red-200">🔍 Enquête interne :</p>
+                    <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect présomption d'innocence</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-red-200">📊 CPPHSCT de branche :</p>
+                    <p className="text-sm">Instance paritaire de conseil et observatoire des pratiques</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-red-900/20 p-3 rounded border border-red-400/30 text-sm">
+                <p className="font-semibold text-red-200">⚖️ Mesures de prévention obligatoires :</p>
+                <ul className="mt-2 space-y-1 ml-4 list-disc">
+                  <li>Information de tous les salariés (kit de prévention)</li>
+                  <li>Affichage des numéros utiles et procédures</li>
+                  <li>Formation des managers et référents</li>
+                  <li>Notification au CPPHSCT en cas de signalement (anonymisée)</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-red-400/30">
+              <button
+                onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                className="w-full bg-red-600/20 hover:bg-red-600/30 text-red-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Consulter l'avenant complet dans la Convention Collective (Articles 30-34)
+              </button>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {conventions.map((convention, index) => {
               const colors = [
