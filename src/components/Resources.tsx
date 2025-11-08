@@ -139,6 +139,88 @@ const Resources = () => {
             </div>
           </div>
 
+          {/* Encadré Mineurs */}
+          <div className="mb-8 bg-gradient-to-br from-blue-950/40 to-indigo-950/40 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
+              <FileText className="w-6 h-6" />
+              Avenant Conditions d'Emploi des Mineurs (17 mai 2024)
+            </h3>
+            <div className="space-y-4 text-slate-100">
+              <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+                <p className="font-semibold text-blue-200 mb-2">🎬 Champ d'application :</p>
+                <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-semibold text-blue-200">📋 Dossier obligatoire :</p>
+                    <p className="text-sm">• Autorisation parentale</p>
+                    <p className="text-sm">• Certificat médical &lt; 3 mois</p>
+                    <p className="text-sm">• Avis pédagogique Education Nationale</p>
+                    <p className="text-sm">• Assurance responsabilité civile</p>
+                  </div>
+                  
+                  <div>
+                    <p className="font-semibold text-blue-200">⏰ Temps de travail (voir tableau) :</p>
+                    <p className="text-sm">3-5 ans : Max 1h/jour</p>
+                    <p className="text-sm">6-11 ans : Max 3h/jour</p>
+                    <p className="text-sm">12-16 ans : Max 5h/jour</p>
+                    <p className="text-sm text-yellow-300">Pauses obligatoires respectées</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-blue-200">📅 Délais commission :</p>
+                    <p className="text-sm">Dépôt : 15 jours avant tournage</p>
+                    <p className="text-sm">Décision sous 8 jours ouvrables</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div>
+                    <p className="font-semibold text-blue-200">👨‍🏫 Scolarité obligatoire :</p>
+                    <p className="text-sm">Répétiteur agréé si absence scolaire</p>
+                    <p className="text-sm">3h d'enseignement/jour minimum</p>
+                    <p className="text-sm">Maintien du rythme scolaire</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-blue-200">👤 Accompagnement :</p>
+                    <p className="text-sm">Présence d'un parent ou tuteur légal</p>
+                    <p className="text-sm">Coordinateur enfants sur le plateau</p>
+                    <p className="text-sm">Conditions adaptées (repos, repas)</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-blue-200">💰 Rémunération :</p>
+                    <p className="text-sm">15% versés à la Caisse des Dépôts</p>
+                    <p className="text-sm">Bloqués jusqu'à majorité de l'enfant</p>
+                    <p className="text-sm">Protection du patrimoine du mineur</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm">
+                <p className="font-semibold text-blue-200">⚠️ Sanctions en cas de non-respect :</p>
+                <ul className="mt-2 space-y-1 ml-4 list-disc">
+                  <li>Arrêt immédiat du tournage possible</li>
+                  <li>Amendes administratives (jusqu'à 7 500€)</li>
+                  <li>Poursuites pénales (1 an de prison + 15 000€ d'amende)</li>
+                  <li>Interdiction d'employer des mineurs</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-blue-400/30">
+              <button
+                onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Consulter l'avenant complet dans la Convention Collective
+              </button>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {conventions.map((convention, index) => {
               const colors = [
