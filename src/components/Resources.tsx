@@ -151,17 +151,32 @@ const Resources = () => {
                 <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
               </div>
 
-              <div className="bg-orange-900/20 p-4 rounded-lg border border-orange-400/30 mb-4">
-                <p className="font-semibold text-orange-200 mb-2">🎭 NOUVELLES OBLIGATIONS (Avenant 17 mai 2024) :</p>
-                <div className="space-y-2 text-sm">
-                  <p><strong>• Castings :</strong> Accompagnement obligatoire par un adulte référent lors de tous les castings</p>
-                  <p><strong>• Responsable des enfants (OBLIGATOIRE pour le cinéma) :</strong></p>
-                  <ul className="ml-6 mt-1 space-y-1 list-disc">
-                    <li>Personne qualifiée avec diplôme ou expérience significative</li>
-                    <li>Casier judiciaire B3 vierge obligatoire (aucune condamnation incompatible)</li>
-                    <li>⚠️ Non applicable aux films publicitaires</li>
-                  </ul>
+              <div className="bg-gradient-to-r from-orange-900/40 to-red-900/40 p-5 rounded-lg border-2 border-orange-400 mb-4 shadow-lg">
+                <p className="text-xl font-bold text-orange-200 mb-3 flex items-center gap-2">
+                  🚨 OBLIGATION MAJEURE - Responsable des Enfants
+                </p>
+                <div className="space-y-3 text-sm bg-black/30 p-4 rounded">
+                  <p className="text-base font-semibold text-white">
+                    ⚠️ OBLIGATOIRE pour toute production cinématographique avec mineurs (non applicable aux films publicitaires)
+                  </p>
+                  <div className="border-l-4 border-orange-400 pl-4 space-y-2">
+                    <p className="text-orange-100"><strong>Profil requis :</strong></p>
+                    <ul className="ml-4 space-y-1 list-disc text-slate-200">
+                      <li>Personne qualifiée justifiant d'un <strong>diplôme</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
+                      <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
+                      <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
+                    </ul>
+                    <p className="text-orange-100 mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
+                  </div>
+                  <p className="text-yellow-300 font-semibold mt-2">
+                    💡 Cette obligation s'ajoute à la présence obligatoire du parent ou tuteur légal
+                  </p>
                 </div>
+              </div>
+
+              <div className="bg-orange-900/20 p-4 rounded-lg border border-orange-400/30 mb-4">
+                <p className="font-semibold text-orange-200 mb-2">🎭 Autre nouvelle obligation (Castings) :</p>
+                <p className="text-sm">Accompagnement obligatoire par un adulte référent lors de tous les castings avec des mineurs</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
