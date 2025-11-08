@@ -63,8 +63,14 @@ const DrieetsDossier = () => {
                 <FileText className="h-4 w-4" />
                 Accéder au formulaire DRIEETS
               </Button>
-              <Button variant="outline" size="lg">
-                Télécharger le guide
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="gap-2"
+                onClick={() => window.open('/guide_commission_enfants_spectacle.doc', '_blank')}
+              >
+                <FileText className="h-4 w-4" />
+                Télécharger le guide officiel
               </Button>
             </div>
           </CardContent>
