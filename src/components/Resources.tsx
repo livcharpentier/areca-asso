@@ -3,7 +3,12 @@ import { FileText, Download } from "lucide-react";
 
 const Resources = () => {
   const conventions = [
-    { title: "Convention Collective Cinéma (CCNPC)", items: ["Grille des salaires", "Texte intégral", "Fiches pratiques"] },
+    { 
+      title: "Convention Collective Cinéma (CCNPC)", 
+      items: ["Grille des salaires", "Texte intégral", "Fiches pratiques"],
+      link: "/ccn-production-cinema-consolidee-juin-24.pdf",
+      hasHighlight: true
+    },
     { title: "Convention Collective Audiovisuel (CCNPAV)", items: ["Grille des salaires", "Texte intégral", "Dispositions"] },
     { title: "Stages et conventions", items: ["Conventions de stage", "Rémunération", "Modèles"] },
     { title: "Tournages internationaux", items: ["Réglementations", "Équivalences", "Contacts utiles"] },
@@ -25,6 +30,45 @@ const Resources = () => {
             Conventions / Salaires
           </h2>
 
+          {/* Encadré Points Essentiels */}
+          <div className="mb-8 bg-gradient-to-br from-amber-900/30 to-orange-900/30 border-2 border-amber-400/50 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+              <FileText className="w-6 h-6" />
+              Points Essentiels - Convention Collective Cinéma 2024
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-100">
+              <div className="space-y-2">
+                <p className="font-semibold text-amber-200">📋 Champ d'application :</p>
+                <p className="text-sm">Production cinématographique (IDCC 3097)</p>
+                
+                <p className="font-semibold text-amber-200 mt-3">⏰ Durée du travail :</p>
+                <p className="text-sm">39h hebdomadaires - Heures supplémentaires majorées</p>
+                
+                <p className="font-semibold text-amber-200 mt-3">🏖️ Congés payés :</p>
+                <p className="text-sm">Minimum légal + dispositions spécifiques CDD d'usage</p>
+              </div>
+              <div className="space-y-2">
+                <p className="font-semibold text-amber-200">📝 Types de contrats :</p>
+                <p className="text-sm">CDI, CDD de droit commun, CDD d'usage</p>
+                
+                <p className="font-semibold text-amber-200 mt-3">🛡️ Protection :</p>
+                <p className="text-sm">Prévention VHSS, égalité F/H, lutte contre discriminations</p>
+                
+                <p className="font-semibold text-amber-200 mt-3">📞 Instances paritaires :</p>
+                <p className="text-sm">CPPNI - CPPHSCT de branche</p>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-amber-400/30">
+              <button
+                onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                className="w-full bg-amber-600/20 hover:bg-amber-600/30 text-amber-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Télécharger la Convention Collective complète (mise à jour juin 2024)
+              </button>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {conventions.map((convention, index) => {
               const colors = [
@@ -44,9 +88,13 @@ const Resources = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="mt-4">
-                    <ul className="space-y-2">
+                     <ul className="space-y-2">
                       {convention.items.map((item, idx) => (
-                        <li key={idx} className="text-sm text-slate-200 flex items-center gap-2 hover:text-accent transition-colors cursor-pointer">
+                        <li 
+                          key={idx} 
+                          className="text-sm text-slate-200 flex items-center gap-2 hover:text-accent transition-colors cursor-pointer"
+                          onClick={() => convention.link && window.open(convention.link, '_blank')}
+                        >
                           <Download className="w-3 h-3 text-accent" />
                           {item}
                         </li>
