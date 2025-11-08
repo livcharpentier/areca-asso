@@ -9,6 +9,11 @@ const Resources = () => {
       link: "/ccn-production-cinema-consolidee-juin-24.pdf",
       hasHighlight: true
     },
+    { 
+      title: "Grilles Salaires Techniciens Cinéma",
+      items: ["Annexe I - Préparation", "Annexe II - Tournage", "Annexe III - Intéressement"],
+      hasSalaryDetail: true
+    },
     { title: "Convention Collective Audiovisuel (CCNPAV)", items: ["Grille des salaires", "Texte intégral", "Dispositions"] },
     { title: "Stages et conventions", items: ["Conventions de stage", "Rémunération", "Modèles"] },
     { title: "Tournages internationaux", items: ["Réglementations", "Équivalences", "Contacts utiles"] },
@@ -30,7 +35,96 @@ const Resources = () => {
             Conventions / Salaires
           </h2>
 
-          {/* Encadré Points Essentiels */}
+          {/* Encadré Grilles Salaires */}
+          <div className="mb-8 bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-2 border-green-400/50 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-green-300 mb-4 flex items-center gap-2">
+              <FileText className="w-6 h-6" />
+              Grilles des Salaires Minima Techniciens Cinéma (Mise à jour 1er mars 2024)
+            </h3>
+            <div className="space-y-4">
+              <div className="bg-green-900/20 p-3 rounded border border-green-400/30 text-sm text-green-100">
+                <p className="font-semibold mb-1">📊 Base : 39 heures hebdomadaires (35h + 4h majorées à 25%)</p>
+                <p className="text-xs">Revalorisation : +23€ bruts (Avenant du 23 janvier 2024)</p>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                {/* Annexe I - Préparation */}
+                <div className="bg-slate-900/60 p-4 rounded-lg border border-green-400/20">
+                  <h4 className="font-bold text-green-300 mb-3 text-center">Annexe I - Préparation</h4>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between border-b border-slate-700 pb-2">
+                      <span className="text-slate-300">1er assistant réalisateur</span>
+                      <span className="font-bold text-green-300">1 479,49 €</span>
+                    </div>
+                    <div className="flex justify-between border-b border-slate-700 pb-2">
+                      <span className="text-slate-300">2e assistant réalisateur</span>
+                      <span className="font-bold text-green-300">1 070,37 €</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-300">Auxiliaire réalisation</span>
+                      <span className="font-bold text-green-300">534,74 €</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Annexe II - Tournage */}
+                <div className="bg-slate-900/60 p-4 rounded-lg border border-green-400/20">
+                  <h4 className="font-bold text-green-300 mb-3 text-center">Annexe II - Tournage</h4>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">1er assistant réalisateur</p>
+                      <p className="text-xs text-slate-400">5j (43h/46h éq.) : <span className="text-green-300 font-bold">1 664,43 €</span></p>
+                      <p className="text-xs text-slate-400">6j (52h/56h éq.) : <span className="text-green-300 font-bold">2 200,74 €</span></p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">2e assistant réalisateur</p>
+                      <p className="text-xs text-slate-400">5j (43h/46h éq.) : <span className="text-green-300 font-bold">1 204,17 €</span></p>
+                      <p className="text-xs text-slate-400">6j (52h/56h éq.) : <span className="text-green-300 font-bold">1 592,18 €</span></p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">Auxiliaire réalisation</p>
+                      <p className="text-xs text-slate-400">5j : <span className="text-green-300 font-bold">601,58 €</span> | 6j : <span className="text-green-300 font-bold">795,42 €</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Annexe III - Intéressement */}
+                <div className="bg-slate-900/60 p-4 rounded-lg border border-green-400/20">
+                  <h4 className="font-bold text-green-300 mb-3 text-center">Annexe III - Intéressement</h4>
+                  <div className="space-y-3 text-xs">
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">1er assistant (Prépa)</p>
+                      <p className="text-slate-400">MG : 1 082,91 € + Int. : 793,16 €</p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">1er assistant (Tournage 5j)</p>
+                      <p className="text-slate-400">MG : 1 218,27 € + Int. : 892,30 €</p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">2e assistant (Prépa)</p>
+                      <p className="text-slate-400">MG : 931,54 € + Int. : 277,67 €</p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">2e assistant (Tournage 5j)</p>
+                      <p className="text-slate-400">MG : 1 047,98 € + Int. : 312,38 €</p>
+                    </div>
+                    <p className="text-yellow-300 text-xs mt-2">MG = Minimum Garanti | Int. = Intéressement recettes</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-900/20 p-3 rounded border border-green-400/30 text-xs text-slate-200">
+                <p className="font-semibold text-green-200 mb-1">ℹ️ Notes importantes :</p>
+                <ul className="space-y-1 ml-4 list-disc">
+                  <li>L'Annexe III propose un système avec Minimum Garanti + Intéressement aux recettes d'exploitation</li>
+                  <li>Applicable aux sociétés adhérentes SPI/UPC/API dès signature, autres après extension JO</li>
+                  <li>Grille complète disponible sur afar.cc/salairescine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Encadré Points Essentiels Convention */}
           <div className="mb-8 bg-gradient-to-br from-amber-900/30 to-orange-900/30 border-2 border-amber-400/50 rounded-lg p-6 backdrop-blur">
             <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
