@@ -151,6 +151,19 @@ const Resources = () => {
                 <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
               </div>
 
+              <div className="bg-orange-900/20 p-4 rounded-lg border border-orange-400/30 mb-4">
+                <p className="font-semibold text-orange-200 mb-2">🎭 NOUVELLES OBLIGATIONS (Avenant 17 mai 2024) :</p>
+                <div className="space-y-2 text-sm">
+                  <p><strong>• Castings :</strong> Accompagnement obligatoire par un adulte référent lors de tous les castings</p>
+                  <p><strong>• Responsable des enfants (OBLIGATOIRE pour le cinéma) :</strong></p>
+                  <ul className="ml-6 mt-1 space-y-1 list-disc">
+                    <li>Personne qualifiée avec diplôme ou expérience significative</li>
+                    <li>Casier judiciaire B3 vierge obligatoire (aucune condamnation incompatible)</li>
+                    <li>⚠️ Non applicable aux films publicitaires</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div>
@@ -159,6 +172,7 @@ const Resources = () => {
                     <p className="text-sm">• Certificat médical &lt; 3 mois</p>
                     <p className="text-sm">• Avis pédagogique Education Nationale</p>
                     <p className="text-sm">• Assurance responsabilité civile</p>
+                    <p className="text-sm">• Casier B3 du Responsable enfants</p>
                   </div>
                   
                   <div>
@@ -185,9 +199,10 @@ const Resources = () => {
                   </div>
 
                   <div>
-                    <p className="font-semibold text-blue-200">👤 Accompagnement :</p>
+                    <p className="font-semibold text-blue-200">👤 Accompagnement plateau :</p>
                     <p className="text-sm">Présence d'un parent ou tuteur légal</p>
-                    <p className="text-sm">Coordinateur enfants sur le plateau</p>
+                    <p className="text-sm">Responsable des enfants qualifié (cinéma)</p>
+                    <p className="text-sm">Adulte référent lors des castings</p>
                     <p className="text-sm">Conditions adaptées (repos, repas)</p>
                   </div>
 
@@ -198,6 +213,11 @@ const Resources = () => {
                     <p className="text-sm">Protection du patrimoine du mineur</p>
                   </div>
                 </div>
+              </div>
+
+              <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm mt-4">
+                <p className="font-semibold text-blue-200">🔄 Travaux en cours :</p>
+                <p className="mt-1">Les partenaires sociaux poursuivent leurs travaux pour améliorer l'organisation des castings et du travail des enfants, afin de sécuriser l'ensemble des parties prenantes : enfants, responsables légaux, personnels d'encadrement et employeurs.</p>
               </div>
 
               <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm">
