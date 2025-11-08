@@ -677,23 +677,48 @@ const Resources = () => {
                 <p className="text-sm">Accompagnement obligatoire par un adulte référent lors de tous les castings avec des mineurs</p>
               </div>
 
+              <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30 mb-4">
+                <p className="font-semibold text-green-200 mb-2">🏥 Certificat médical obligatoire :</p>
+                <div className="space-y-2 text-sm">
+                  <p><strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant</p>
+                  <p><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
+                  <ul className="ml-4 list-disc space-y-1">
+                    <li>Du contenu du spectacle (histoire, paroles, scènes)</li>
+                    <li>Du planning précis (dates, horaires des répétitions et représentations)</li>
+                  </ul>
+                  <p className="text-yellow-300 mt-2"><strong>Renouvellement obligatoire :</strong></p>
+                  <ul className="ml-4 list-disc space-y-1">
+                    <li>Enfants &lt; 3 ans : Tous les <strong>3 mois</strong></li>
+                    <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
+                    <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
+                  </ul>
+                  <p className="text-red-300 mt-2">⚠️ En cas d'avis médical négatif, l'enfant ne peut être employé</p>
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div>
                     <p className="font-semibold text-blue-200">📋 Dossier obligatoire :</p>
                     <p className="text-sm">• Autorisation parentale</p>
-                    <p className="text-sm">• Certificat médical &lt; 3 mois</p>
+                    <p className="text-sm">• Certificat médical (validité selon âge)</p>
                     <p className="text-sm">• Avis pédagogique Education Nationale</p>
                     <p className="text-sm">• Assurance responsabilité civile</p>
                     <p className="text-sm">• Casier B3 du Responsable enfants</p>
                   </div>
                   
                   <div>
-                    <p className="font-semibold text-blue-200">⏰ Temps de travail (voir tableau) :</p>
-                    <p className="text-sm">3-5 ans : Max 1h/jour</p>
-                    <p className="text-sm">6-11 ans : Max 3h/jour</p>
-                    <p className="text-sm">12-16 ans : Max 5h/jour</p>
-                    <p className="text-sm text-yellow-300">Pauses obligatoires respectées</p>
+                    <p className="font-semibold text-blue-200">⏰ Durée quotidienne DÉTAILLÉE :</p>
+                    <div className="text-sm space-y-1 bg-blue-950/40 p-2 rounded">
+                      <p><strong>&lt; 3 ans :</strong> 1h/jour (pause après 30 min)</p>
+                      <p><strong>3-5 ans :</strong> 2h/jour (pause après 1h)</p>
+                      <p><strong>6-11 ans :</strong></p>
+                      <p className="ml-3">• Période scolaire : 3h/jour (pause après 1h30)</p>
+                      <p className="ml-3">• Vacances scolaires : 4h/jour (pause après 2h)</p>
+                      <p><strong>12-16 ans :</strong></p>
+                      <p className="ml-3">• Vacances scolaires : 6h/jour (pause après 3h)</p>
+                    </div>
+                    <p className="text-xs text-yellow-300 mt-2">⚠️ Préparation, répétition et présence sur plateau = temps de travail effectif</p>
                   </div>
 
                   <div>
@@ -728,12 +753,22 @@ const Resources = () => {
                 </div>
               </div>
 
+              <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30 mb-4">
+                <p className="font-semibold text-amber-200 mb-2">🏖️ Travail pendant les vacances scolaires :</p>
+                <ul className="text-sm space-y-1">
+                  <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
+                  <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
+                  <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
+                  <li className="text-yellow-300">⚠️ Valable quel que soit le nombre de jours de travail et d'employeurs</li>
+                </ul>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
                   <p className="font-semibold text-indigo-200 mb-2">⏰ Durée du travail :</p>
                   <ul className="text-sm space-y-1">
                     <li><strong>Maximum :</strong> 8h/jour - 35h/semaine</li>
-                    <li><strong>Pause obligatoire :</strong> 30 min après 4h30 de travail ininterrompu</li>
+                    <li><strong>Pause obligatoire :</strong> 30 min toutes les 4h30</li>
                     <li><strong>Repos quotidien :</strong> Minimum 14h consécutives</li>
                     <li><strong>Repos hebdomadaire :</strong> 2 jours consécutifs (dérogation possible : 36h dont 24h consécutives)</li>
                   </ul>
@@ -779,23 +814,36 @@ const Resources = () => {
                 <p className="mt-1">Les partenaires sociaux poursuivent leurs travaux pour améliorer l'organisation des castings et du travail des enfants, afin de sécuriser l'ensemble des parties prenantes : enfants, responsables légaux, personnels d'encadrement et employeurs.</p>
               </div>
 
-              <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm">
-                <p className="font-semibold text-blue-200">⚠️ Sanctions en cas de non-respect :</p>
-                <ul className="mt-2 space-y-1 ml-4 list-disc">
+              <div className="bg-red-900/30 p-4 rounded-lg border-2 border-red-500 text-sm">
+                <p className="font-bold text-red-200 text-base mb-2">⚠️ SANCTIONS PÉNALES (Art. Code du Travail) :</p>
+                <div className="bg-black/30 p-3 rounded">
+                  <p className="text-red-100 font-semibold mb-2">Engager ou produire un enfant ≤16 ans sans autorisation préalable :</p>
+                  <div className="text-red-300 text-lg font-bold">
+                    <p>🚨 5 ANS DE PRISON + 75 000 € D'AMENDE</p>
+                  </div>
+                </div>
+                <ul className="mt-3 space-y-1 ml-4 list-disc text-slate-200">
                   <li>Arrêt immédiat du tournage possible</li>
-                  <li>Amendes administratives (jusqu'à 7 500€)</li>
-                  <li>Poursuites pénales (1 an de prison + 15 000€ d'amende)</li>
+                  <li>Amendes administratives supplémentaires</li>
                   <li>Interdiction d'employer des mineurs</li>
+                  <li>Retrait de l'autorisation à tout moment par le préfet</li>
                 </ul>
               </div>
             </div>
-            <div className="mt-4 pt-4 border-t border-blue-400/30">
+            <div className="mt-4 pt-4 border-t border-blue-400/30 space-y-2">
               <button
                 onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
                 className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
               >
                 <Download className="w-5 h-5" />
                 Consulter l'avenant complet dans la Convention Collective
+              </button>
+              <button
+                onClick={() => window.open('/informations_emploi_mineurs_spectacle_drieets.pdf', '_blank')}
+                className="w-full bg-green-600/20 hover:bg-green-600/30 text-green-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Guide officiel DRIEETS - Informations à savoir sur l'emploi des mineurs
               </button>
             </div>
           </div>
