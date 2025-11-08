@@ -115,8 +115,8 @@ const CommissionCalendar = () => {
               </div>
             </div>
 
-            {/* Bouton de téléchargement */}
-            <div className="flex justify-center pt-6">
+            {/* Boutons de téléchargement */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6">
               <Button 
                 variant="default" 
                 size="lg" 
@@ -124,7 +124,16 @@ const CommissionCalendar = () => {
                 onClick={() => window.open('/calendrier_commissions_2025_2026.pdf', '_blank')}
               >
                 <Download className="h-5 w-5" />
-                Télécharger le calendrier complet 2025-2026
+                Calendrier Île-de-France complet
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="gap-2 shadow-lg hover:shadow-xl transition-shadow border-primary/50"
+                onClick={() => window.open('/calendrier_commissions_92_hauts_de_seine.pdf', '_blank')}
+              >
+                <Download className="h-5 w-5" />
+                Calendrier Hauts-de-Seine (92)
               </Button>
             </div>
 
