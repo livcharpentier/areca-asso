@@ -54,12 +54,17 @@ const DrieetsDossier = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
-              <Button variant="default" size="lg" className="gap-2">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="gap-2"
+                onClick={() => window.open('https://formulaire-enfants-du-spectacle.fabrique.social.gouv.fr/login?callbackUrl=https%3A%2F%2Fformulaire-enfants-du-spectacle.fabrique.social.gouv.fr%2F', '_blank')}
+              >
                 <FileText className="h-4 w-4" />
-                Télécharger le guide
+                Accéder au formulaire DRIEETS
               </Button>
               <Button variant="outline" size="lg">
-                Contacter la DRIEETS
+                Télécharger le guide
               </Button>
             </div>
           </CardContent>
