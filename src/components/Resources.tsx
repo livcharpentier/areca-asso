@@ -623,6 +623,30 @@ const Resources = () => {
               <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
                 <p className="font-semibold text-blue-200 mb-2">🎬 Champ d'application :</p>
                 <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
+                <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
+              </div>
+
+              <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+                <p className="font-semibold text-blue-200 mb-2">🏛️ Commission départementale consultative :</p>
+                <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
+                <p className="text-sm"><strong>Composition :</strong></p>
+                <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
+                  <li>Directeur académique des services de l'éducation nationale ou son représentant</li>
+                  <li>Directeur départemental chargé de l'emploi (DDETS/DDETSPP) ou son représentant</li>
+                  <li>Un médecin</li>
+                  <li>Directeur régional des affaires culturelles (DRAC) ou son représentant</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+                <p className="font-semibold text-blue-200 mb-2">⏱️ Procédure et délais :</p>
+                <ul className="text-sm space-y-1">
+                  <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
+                  <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
+                  <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
+                  <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
+                  <li><strong>⚠️ L'autorisation peut être retirée à tout moment</strong></li>
+                </ul>
               </div>
 
               <div className="bg-gradient-to-r from-orange-900/40 to-red-900/40 p-5 rounded-lg border-2 border-orange-400 mb-4 shadow-lg">
@@ -697,11 +721,57 @@ const Resources = () => {
 
                   <div>
                     <p className="font-semibold text-blue-200">💰 Rémunération :</p>
-                    <p className="text-sm">15% versés à la Caisse des Dépôts</p>
-                    <p className="text-sm">Bloqués jusqu'à majorité de l'enfant</p>
-                    <p className="text-sm">Protection du patrimoine du mineur</p>
+                    <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité)</p>
+                    <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux</p>
+                    <p className="text-sm">Minimum : grille convention collective applicable</p>
                   </div>
                 </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
+                  <p className="font-semibold text-indigo-200 mb-2">⏰ Durée du travail :</p>
+                  <ul className="text-sm space-y-1">
+                    <li><strong>Maximum :</strong> 8h/jour - 35h/semaine</li>
+                    <li><strong>Pause obligatoire :</strong> 30 min après 4h30 de travail ininterrompu</li>
+                    <li><strong>Repos quotidien :</strong> Minimum 14h consécutives</li>
+                    <li><strong>Repos hebdomadaire :</strong> 2 jours consécutifs (dérogation possible : 36h dont 24h consécutives)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
+                  <p className="font-semibold text-indigo-200 mb-2">🎭 Enfants du théâtre :</p>
+                  <ul className="text-sm space-y-1">
+                    <li>Âge minimum : <strong>9 ans</strong></li>
+                    <li>Maximum : <strong>3 représentations/semaine</strong></li>
+                    <li>Maximum : <strong>1 représentation/jour</strong></li>
+                    <li>Respect du repos pendant vacances scolaires</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+                  <p className="font-semibold text-purple-200 mb-2">🌙 Travail de nuit :</p>
+                  <ul className="text-sm space-y-1">
+                    <li><strong>Interdiction totale :</strong> 20h-6h pour les moins de 16 ans</li>
+                    <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
+                    <li><strong>Repos minimum :</strong> 12h consécutives en cas de dérogation</li>
+                  </ul>
+                </div>
+
+                <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+                  <p className="font-semibold text-purple-200 mb-2">🎪 Acrobaties & professions spéciales :</p>
+                  <ul className="text-sm space-y-1">
+                    <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
+                    <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm mt-4">
+                <p className="font-semibold text-blue-200 mb-1">📅 Travail dominical et jours fériés :</p>
+                <p>Le travail du dimanche et des jours fériés est autorisé dans les entreprises de spectacles, selon les conditions définies par la convention collective applicable.</p>
               </div>
 
               <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm mt-4">
