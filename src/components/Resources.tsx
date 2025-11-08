@@ -60,6 +60,14 @@ const Resources = () => {
                       <span className="text-slate-300">2e assistant réalisateur</span>
                       <span className="font-bold text-green-300">1 070,37 €</span>
                     </div>
+                    <div className="flex justify-between border-b border-slate-700 pb-2">
+                      <span className="text-slate-300">Responsable des enfants</span>
+                      <span className="font-bold text-green-300">1 070,37 €</span>
+                    </div>
+                    <div className="flex justify-between border-b border-slate-700 pb-2">
+                      <span className="text-slate-300">Coach</span>
+                      <span className="font-bold text-green-300">1 070,37 €</span>
+                    </div>
                     <div className="flex justify-between">
                       <span className="text-slate-300">Auxiliaire réalisation</span>
                       <span className="font-bold text-green-300">534,74 €</span>
@@ -78,6 +86,16 @@ const Resources = () => {
                     </div>
                     <div>
                       <p className="text-slate-300 font-semibold mb-1">2e assistant réalisateur</p>
+                      <p className="text-xs text-slate-400">5j (43h/46h éq.) : <span className="text-green-300 font-bold">1 204,17 €</span></p>
+                      <p className="text-xs text-slate-400">6j (52h/56h éq.) : <span className="text-green-300 font-bold">1 592,18 €</span></p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">Responsable des enfants</p>
+                      <p className="text-xs text-slate-400">5j (43h/46h éq.) : <span className="text-green-300 font-bold">1 204,17 €</span></p>
+                      <p className="text-xs text-slate-400">6j (52h/56h éq.) : <span className="text-green-300 font-bold">1 592,18 €</span></p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">Coach</p>
                       <p className="text-xs text-slate-400">5j (43h/46h éq.) : <span className="text-green-300 font-bold">1 204,17 €</span></p>
                       <p className="text-xs text-slate-400">6j (52h/56h éq.) : <span className="text-green-300 font-bold">1 592,18 €</span></p>
                     </div>
@@ -107,6 +125,14 @@ const Resources = () => {
                     <div>
                       <p className="text-slate-300 font-semibold mb-1">2e assistant (Tournage 5j)</p>
                       <p className="text-slate-400">MG : 1 047,98 € + Int. : 312,38 €</p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">Responsable enfants (Prépa)</p>
+                      <p className="text-slate-400">MG : 931,54 € + Int. : 277,67 €</p>
+                    </div>
+                    <div>
+                      <p className="text-slate-300 font-semibold mb-1">Coach (Prépa)</p>
+                      <p className="text-slate-400">MG : 931,54 € + Int. : 277,67 €</p>
                     </div>
                     <p className="text-yellow-300 text-xs mt-2">MG = Minimum Garanti | Int. = Intéressement recettes</p>
                   </div>
