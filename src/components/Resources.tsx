@@ -36,8 +36,8 @@ const Resources = () => {
           </h2>
 
           {/* Encadré Grilles Salaires Artistes */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Grilles des Salaires Minima Artistes-Interprètes & Acteurs de Complément
             </h3>
@@ -171,8 +171,8 @@ const Resources = () => {
           </div>
 
           {/* Encadré Comparatif Figuration ACFDA */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Comparatif Salaires Figuration - Cinéma vs Audiovisuel (ACFDA - 1er janv. 2025)
             </h3>
@@ -332,8 +332,8 @@ const Resources = () => {
           </div>
 
           {/* Encadré Grilles Salaires Techniciens */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Grilles des Salaires Minima Techniciens Cinéma (Mise à jour 1er mars 2024)
             </h3>
@@ -447,8 +447,8 @@ const Resources = () => {
           </div>
 
           {/* Encadré Points Essentiels Convention */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Points Essentiels - Convention Collective Cinéma 2024
             </h3>
@@ -486,8 +486,8 @@ const Resources = () => {
           </div>
 
           {/* Encadré VHSS */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Avenant VHSS - Prévention des Violences et Harcèlements (17 mai 2024)
             </h3>
@@ -556,8 +556,8 @@ const Resources = () => {
           </div>
 
           {/* Encadré Mineurs */}
-          <div className="mb-8 bg-gradient-to-br from-blue-900/30 to-blue-950/30 border-2 border-blue-400/50 rounded-lg p-6 backdrop-blur">
-            <h3 className="text-2xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+          <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
               Avenant Conditions d'Emploi des Mineurs (17 mai 2024)
             </h3>
