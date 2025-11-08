@@ -157,7 +157,7 @@ const Resources = () => {
                 </p>
                 <div className="space-y-3 text-sm bg-black/30 p-4 rounded">
                   <p className="text-base font-semibold text-white">
-                    ⚠️ OBLIGATOIRE pour toute production cinématographique avec mineurs (non applicable aux films publicitaires)
+                    ⚠️ OBLIGATOIRE pour toute production avec mineurs
                   </p>
                   <div className="border-l-4 border-orange-400 pl-4 space-y-2">
                     <p className="text-orange-100"><strong>Profil requis :</strong></p>
