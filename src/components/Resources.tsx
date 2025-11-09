@@ -866,6 +866,247 @@ const Resources = () => {
                 </div>
               </div>
 
+              {/* Procédure administrative */}
+              <div className="bg-gradient-to-br from-indigo-900/30 to-blue-900/30 p-5 rounded-lg border-2 border-indigo-400/40 mt-4">
+                <h4 className="text-lg font-bold text-indigo-200 mb-3 flex items-center gap-2">
+                  📋 Procédure d'Autorisation Administrative (Préfecture)
+                </h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-indigo-200 mb-2">🏛️ Commission départementale spécialisée :</p>
+                    <div className="text-sm space-y-1">
+                      <p className="text-slate-300">La demande est examinée par une commission composée de :</p>
+                      <ul className="ml-4 list-disc space-y-1 mt-2">
+                        <li>Un magistrat (juge des enfants)</li>
+                        <li>Un représentant de l'Éducation Nationale</li>
+                        <li>Un représentant de la DDETS (Direction du travail)</li>
+                        <li>Un médecin</li>
+                        <li>Un représentant des affaires culturelles</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-indigo-200 mb-2">⏱️ Délais de traitement :</p>
+                    <div className="text-sm space-y-2">
+                      <div className="flex items-start gap-2">
+                        <span className="text-yellow-300">•</span>
+                        <span><strong>Délai standard :</strong> 1 mois à compter du dossier complet</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-yellow-300">•</span>
+                        <span><strong>Complément d'instruction :</strong> Prolongation de 1 mois possible</span>
+                      </div>
+                      <div className="bg-red-900/30 p-2 rounded mt-2 border border-red-400/30">
+                        <p className="text-red-200 font-semibold">⚠️ Absence de réponse après délai :</p>
+                        <ul className="ml-4 list-disc space-y-1 mt-1">
+                          <li>Demande initiale = REJETÉE</li>
+                          <li>Demande de renouvellement = ACCEPTÉE</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-indigo-200 mb-2">📄 Documents requis (liste complète) :</p>
+                    <div className="text-sm space-y-1">
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>Demande d'autorisation individuelle</li>
+                        <li>État civil de l'enfant</li>
+                        <li>Autorisation écrite des représentants légaux</li>
+                        <li>Liste des emplois précédents/actuels de l'enfant</li>
+                        <li>Documents sur l'activité (scénario, plan de travail, etc.)</li>
+                        <li>Conditions d'emploi et rémunération détaillées</li>
+                        <li>Dispositions pour la fréquentation scolaire</li>
+                        <li>Examen médical obligatoire</li>
+                        <li>Avis favorable écrit de l'enfant si &gt; 13 ans</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-indigo-200 mb-2">🔍 Vérifications du casier judiciaire :</p>
+                    <div className="text-sm space-y-1">
+                      <p>L'administration peut demander le <strong>bulletin n°2 du casier judiciaire</strong> des dirigeants, associés ou gérants.</p>
+                      <p className="text-red-300 mt-2">⚠️ Si une condamnation y figure, l'agrément ne peut être ni accordé, ni renouvelé.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Caisse des Dépôts */}
+              <div className="bg-gradient-to-br from-green-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-green-400/40 mt-4">
+                <h4 className="text-lg font-bold text-green-200 mb-3 flex items-center gap-2">
+                  💰 Caisse des Dépôts et Consignations (CDC) - Gestion du Pécule
+                </h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-green-200 mb-2">📊 Gestion du compte :</p>
+                    <div className="text-sm space-y-2">
+                      <p>La CDC gère le pécule jusqu'à la <strong>majorité</strong> de l'enfant ou son <strong>émancipation</strong>.</p>
+                      <ul className="ml-4 list-disc space-y-1 mt-2">
+                        <li>Ouverture d'un compte de dépôt au nom de l'enfant</li>
+                        <li>Versement direct par l'employeur (hors part aux représentants légaux)</li>
+                        <li>Production d'intérêts (minimum : taux d'intérêt légal)</li>
+                        <li>Relevé annuel avant le 31 mars (montants + intérêts)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-green-200 mb-2">🔓 Déblocage du pécule :</p>
+                    <div className="text-sm space-y-2">
+                      <p><strong>À la majorité :</strong> La CDC communique le solde et tient les fonds à disposition</p>
+                      <p><strong>En cas d'émancipation :</strong> Sur communication de la décision définitive</p>
+                      <p className="text-yellow-300 mt-2">💡 Les fonds sont ensuite transférés sur un compte ordinaire</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-green-200 mb-2">⚠️ Prélèvements exceptionnels :</p>
+                    <div className="text-sm space-y-1">
+                      <p>À titre exceptionnel et dans l'intérêt exclusif de l'enfant, la commission peut autoriser les représentants légaux à effectuer des prélèvements sur le pécule.</p>
+                      <p className="text-red-300 mt-1">🚨 Cette autorisation peut être retirée si les sommes ne sont pas affectées à l'usage prévu.</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-green-200 mb-2">📝 Obligations de l'employeur :</p>
+                    <div className="text-sm space-y-1">
+                      <p>L'employeur doit joindre au versement une déclaration rappelant :</p>
+                      <ul className="ml-4 list-disc space-y-1 mt-1">
+                        <li>État civil de l'enfant</li>
+                        <li>Domicile de l'enfant</li>
+                        <li>Nom des représentants légaux</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Plateformes vidéo */}
+              <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-5 rounded-lg border-2 border-purple-400/40 mt-4">
+                <h4 className="text-lg font-bold text-purple-200 mb-3 flex items-center gap-2">
+                  📹 Vidéos sur Plateformes de Partage (Loi du 19 octobre 2020)
+                </h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-purple-900/20 p-3 rounded border border-purple-400/30">
+                    <p className="text-sm text-purple-100 mb-2">La loi encadre la réalisation et mise en ligne de vidéos ayant pour sujet principal un enfant de moins de 16 ans.</p>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-purple-200 mb-2">📊 Dispositif gradué (3 régimes) :</p>
+                    <div className="text-sm space-y-3">
+                      <div className="border-l-4 border-green-400 pl-3">
+                        <p className="font-semibold text-green-300">1. Activité libre (aucune formalité)</p>
+                        <p className="text-slate-300 text-xs mt-1">Vidéos privées, pur loisir, faible nombre/durée, absence de flux financier</p>
+                      </div>
+                      <div className="border-l-4 border-yellow-400 pl-3">
+                        <p className="font-semibold text-yellow-300">2. Régime de déclaration</p>
+                        <p className="text-slate-300 text-xs mt-1">Nombre, durée cumulée ou revenus dépassent les seuils fixés par décret</p>
+                      </div>
+                      <div className="border-l-4 border-red-400 pl-3">
+                        <p className="font-semibold text-red-300">3. Autorisation administrative préalable (Code du Travail)</p>
+                        <p className="text-slate-300 text-xs mt-1">Cadre professionnel, objectif lucratif → L'enfant devient <strong>salarié</strong></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-purple-200 mb-2">💼 Régime d'autorisation préalable (activité lucrative) :</p>
+                    <div className="text-sm space-y-2">
+                      <div className="bg-red-900/20 p-2 rounded border border-red-400/30">
+                        <p className="text-red-200 font-semibold">🚨 Conditions :</p>
+                        <ul className="ml-4 list-disc space-y-1 mt-1">
+                          <li>L'enfant est un <strong>salarié</strong></li>
+                          <li>La personne qui met en ligne les vidéos est l'<strong>employeur</strong></li>
+                          <li>L'employeur doit être une <strong>entreprise</strong> (pas de particulier ni association)</li>
+                          <li>La plateforme est un tiers (n'est pas l'employeur)</li>
+                          <li>Agrément obligatoire avant tout commencement</li>
+                        </ul>
+                      </div>
+                      <div className="bg-yellow-900/20 p-2 rounded border border-yellow-400/30 mt-2">
+                        <p className="text-yellow-200 font-semibold">⚠️ Double statut des parents :</p>
+                        <p className="text-xs mt-1">Lorsque l'employeur est aussi le parent/représentant légal, distinguer les obligations liées à chaque statut (notamment pour la rémunération)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-purple-200 mb-2">🛡️ Renforcement de la protection des enfants :</p>
+                    <div className="text-sm space-y-1">
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>Droit à l'effacement des données personnelles par l'enfant (sans consentement parental)</li>
+                        <li>Obligations pour les plateformes (chartes d'information)</li>
+                        <li>Rôle renforcé de l'Arcom (Autorité de régulation)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-purple-200 mb-2">📋 Agrément spécifique :</p>
+                    <div className="text-sm space-y-1">
+                      <p>• Durée : 1 an (renouvelable)</p>
+                      <p>• Suivi médical périodique obligatoire</p>
+                      <p>• Suspension possible en urgence (1 mois max)</p>
+                      <p>• Le préfet peut saisir le juge si contenu mis en ligne sans agrément</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Suspension et retrait */}
+              <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40 mt-4">
+                <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
+                  ⛔ Suspension et Retrait d'Autorisation
+                </h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-red-200 mb-2">⏸️ Suspension d'urgence (agences mannequins / vidéos) :</p>
+                    <div className="text-sm space-y-2">
+                      <p>En cas d'urgence, si la santé ou la moralité de l'enfant sont <strong>immédiatement et gravement mis en cause</strong> :</p>
+                      <ul className="ml-4 list-disc space-y-1 mt-2">
+                        <li>Le préfet peut suspendre l'agrément pour max. <strong>1 mois</strong></li>
+                        <li>Délai permettant à l'employeur de fournir les indications nécessaires</li>
+                        <li>La commission propose : retrait OU levée de suspension</li>
+                        <li>Sans réponse après 1 mois : suspension levée automatiquement</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-red-200 mb-2">🚫 Retrait d'autorisation :</p>
+                    <div className="text-sm space-y-2">
+                      <p>L'autorisation individuelle ou l'agrément peuvent être <strong>retirés à tout moment</strong> par le préfet.</p>
+                      <p className="text-yellow-300 mt-2">💡 Pour les vidéos sur plateformes : le retrait peut aussi être demandé par des personnes qualifiées dans le domaine de la protection de l'enfance.</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-red-200 mb-2">⚖️ Recours :</p>
+                    <div className="text-sm space-y-1">
+                      <p>Les décisions de refus, non-renouvellement ou retrait sont susceptibles de :</p>
+                      <ul className="ml-4 list-disc space-y-1 mt-1">
+                        <li>Recours administratif</li>
+                        <li>Recours contentieux</li>
+                      </ul>
+                      <p className="text-slate-300 text-xs mt-2">Les voies et délais de recours figurent sur la décision administrative</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-orange-900/20 p-3 rounded border border-orange-400/30">
+                    <p className="font-semibold text-orange-200 mb-2">📰 Publication au Journal Officiel :</p>
+                    <div className="text-sm">
+                      <p>La liste des décisions concernant les agences de mannequins (attribution, renouvellement, non-renouvellement ou retrait d'agrément) est publiée au JO de la République française.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30 text-sm mt-4">
                 <p className="font-semibold text-blue-200 mb-1">📅 Travail dominical et jours fériés :</p>
                 <p>Le travail du dimanche et des jours fériés est autorisé dans les entreprises de spectacles, selon les conditions définies par la convention collective applicable.</p>
@@ -913,6 +1154,13 @@ const Resources = () => {
               >
                 <Download className="w-5 h-5" />
                 Guide DRIEETS - Durée du travail des enfants dans le spectacle
+              </button>
+              <button
+                onClick={() => window.open('/livret_travail_des_enfants_080223.pdf', '_blank')}
+                className="w-full bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Livret complet Ministère du Travail - L'emploi des enfants dans le spectacle
               </button>
             </div>
           </div>
