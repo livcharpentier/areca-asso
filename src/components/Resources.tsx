@@ -789,9 +789,10 @@ const Resources = () => {
                 <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
                   <p className="font-semibold text-purple-200 mb-2">🌙 Travail de nuit :</p>
                   <ul className="text-sm space-y-1">
-                    <li><strong>Interdiction totale :</strong> 20h-6h pour les moins de 16 ans</li>
+                    <li><strong>&lt; 16 ans :</strong> Interdiction totale 20h-6h</li>
+                    <li><strong>16-18 ans :</strong> Interdiction totale 22h-6h</li>
                     <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
-                    <li><strong>Repos minimum :</strong> 12h consécutives en cas de dérogation</li>
+                    <li><strong>Repos minimum :</strong> 12h consécutives (&lt;16 ans) / 14h consécutives (16-18 ans) en cas de dérogation</li>
                   </ul>
                 </div>
 
@@ -801,6 +802,67 @@ const Resources = () => {
                     <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
                     <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
                   </ul>
+                </div>
+              </div>
+
+              {/* Section Enfants Mannequins */}
+              <div className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 p-5 rounded-lg border-2 border-pink-400/40 mt-4">
+                <h4 className="text-lg font-bold text-pink-200 mb-3 flex items-center gap-2">
+                  📸 Enfants Mannequins - Durées spécifiques
+                </h4>
+                
+                <div className="space-y-4">
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-pink-200 mb-2">Moins de 6 ans :</p>
+                    <div className="text-sm space-y-1 ml-3">
+                      <p><strong>Durée journalière maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>&lt; 3 ans : 1h/jour (max 30 min en continu)</li>
+                        <li>3-6 ans : 2h/jour (max 1h en continu)</li>
+                      </ul>
+                      <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>&lt; 6 mois : 1h/semaine</li>
+                        <li>6 mois - 3 ans : 2h/semaine</li>
+                        <li>3-6 ans : 3h/semaine</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-pink-200 mb-2">6-16 ans - PÉRIODE SCOLAIRE :</p>
+                    <div className="text-sm space-y-1 ml-3">
+                      <p className="text-yellow-300">⚠️ Uniquement jours/demi-journées de repos (sauf dimanche)</p>
+                      <p><strong>Durée journalière maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>6-11 ans : 3h/jour (max 1h30 en continu) - 1h30 en demi-journée</li>
+                        <li>12-16 ans : 4h/jour (max 2h en continu) - 2h en demi-journée</li>
+                      </ul>
+                      <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>6-11 ans : 4h30/semaine</li>
+                        <li>12-16 ans : 6h/semaine</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/30 p-3 rounded">
+                    <p className="font-semibold text-pink-200 mb-2">6-16 ans - VACANCES SCOLAIRES :</p>
+                    <div className="text-sm space-y-1 ml-3">
+                      <p className="text-yellow-300">⚠️ Maximum 50% de la durée des vacances</p>
+                      <p><strong>Durée journalière maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>6-11 ans : 6h/jour (max 2h en continu)</li>
+                        <li>12-16 ans : 7h/jour (max 3h en continu)</li>
+                      </ul>
+                      <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                      <ul className="ml-4 list-disc space-y-1">
+                        <li>6-11 ans : 12h/semaine</li>
+                        <li>12-14 ans : 15h/semaine</li>
+                        <li>14-16 ans : 18h/semaine</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -844,6 +906,13 @@ const Resources = () => {
               >
                 <Download className="w-5 h-5" />
                 Guide officiel DRIEETS - Informations à savoir sur l'emploi des mineurs
+              </button>
+              <button
+                onClick={() => window.open('/duree_travail_enfants_spectacle_drieets.pdf', '_blank')}
+                className="w-full bg-purple-600/20 hover:bg-purple-600/30 text-purple-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              >
+                <Download className="w-5 h-5" />
+                Guide DRIEETS - Durée du travail des enfants dans le spectacle
               </button>
             </div>
           </div>
