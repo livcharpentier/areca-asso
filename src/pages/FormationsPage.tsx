@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { GraduationCap, Calendar, Users, Clock, Info } from "lucide-react";
 
 const FormationsPage = () => {
@@ -45,14 +44,21 @@ const FormationsPage = () => {
               des coordinateurs jeunesse dans le domaine de l'audiovisuel.
             </p>
 
-            <Alert className="mb-12 border-accent/30 bg-accent/10">
-              <Info className="h-5 w-5 text-accent" />
-              <AlertDescription className="text-primary-foreground/90 ml-2">
-                Les formations présentées ci-dessous sont actuellement en cours de préparation. 
-                Elles seront officiellement disponibles d'ici 18 mois. 
-                Nous vous tiendrons informés de leur lancement via notre page actualités.
-              </AlertDescription>
-            </Alert>
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-12">
+              <div className="flex items-start gap-3">
+                <Info className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-foreground text-lg mb-1">
+                    📅 Formations en préparation
+                  </p>
+                  <p className="text-sm text-foreground/90">
+                    Les formations présentées ci-dessous sont actuellement en cours de préparation. 
+                    Elles seront officiellement disponibles d'ici 18 mois. 
+                    Nous vous tiendrons informés de leur lancement via notre page actualités.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="space-y-6">
               {formations.map((formation, index) => (
