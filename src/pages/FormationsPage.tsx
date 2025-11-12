@@ -10,21 +10,21 @@ const FormationsPage = () => {
       description: "Formation complète sur les techniques de coordination pour les projets audiovisuels jeunesse",
       duration: "3 jours",
       participants: "12-15 personnes",
-      date: "Mars 2025",
+      date: "À venir",
     },
     {
       title: "Atelier Gestion de Projet",
       description: "Apprentissage des outils et méthodes de gestion de projet dans l'audiovisuel",
       duration: "2 jours",
       participants: "10-12 personnes",
-      date: "Avril 2025",
+      date: "À venir",
     },
     {
       title: "Séminaire Nouvelles Technologies",
       description: "Découverte des nouvelles technologies et outils pour l'audiovisuel jeunesse",
       duration: "1 jour",
       participants: "20-25 personnes",
-      date: "Mai 2025",
+      date: "À venir",
     },
   ];
 
