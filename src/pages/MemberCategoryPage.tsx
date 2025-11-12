@@ -32,12 +32,12 @@ const MemberCategoryPage = () => {
       bio: "Responsable Enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
       experienceYears: 28,
       filmography: {
-        "Responsable Enfants": "Radin, Le petit Spirou, Rémi sans famille, Parents d'élèves, Le trésor du Petit Nicolas, Les enfants de la résistance, Karma, Abandon, Histoire parallèle",
-        "Assistante Casting Rôles (Adultes/Enfants)": "Sapiens Costelle, La guerre des Lulus, Groom, Les vacances de Ducobu, Stark First Target, Le jour J, La guerre des boutons",
-        "Casting Petits Rôles & Figurations": "Les bracelets rouges (3 saisons), Vise le coeur, La guerre des Lulus, Deux gouttes d'eau, Mon poussin, Blue Valentine, Love Locks, Chocolat, Intouchables, La dernière campagne, Cloclo, On voulait tout casser, Le retour de Charles, La grande boucle, Les vacances du Petit Nicolas, Un mariage explosif, Pièce Montée, Famille, Une famille formidable, Gainsbourg, 20 ans d'écart, Quelques heures de printemps, Les vacances de Ducobu, Omar m'a tuer, Stavisky, Transporter 3, Comme mon père, Le petit Nicolas, L'ex-femme de ma vie, Elles et moi, De l'autre côté du lit, Marie Besnard, Aurore, Podium, Molière",
+        "Responsable Enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), Abandon, Histoire parallèle, Les enfants de la résistance (2026), Karma (2026)",
+        "Assistante Casting Rôles (Adultes/Enfants)": "La guerre des boutons (2011), Les vacances de Ducobu (2011), Sapiens Costelle, Groom, La guerre des Lulus (2023), Stark First Target, Le jour J",
+        "Casting Petits Rôles & Figurations": "Podium (2004), Molière (2007), Transporter 3 (2008), Le petit Nicolas (2009), Les vacances du Petit Nicolas (2010), Blue Valentine (2010), Comme mon père (2007), De l'autre côté du lit (2008), Marie Besnard (2006), Pièce Montée (2010), Aurore (2005), Intouchables (2011), Gainsbourg (2010), 20 ans d'écart (2013), L'ex-femme de ma vie (2004), Elles et moi (2008), Quelques heures de printemps (2012), Omar m'a tuer (2011), Stavisky (2024), Les vacances de Ducobu (2011), Chocolat (2016), Cloclo (2012), La dernière campagne (2013), On voulait tout casser (2015), Le retour de Charles, La grande boucle (2013), Un mariage explosif (2002), Famille (2007), Une famille formidable, Love Locks, Les bracelets rouges (3 saisons, 2014-2018), La guerre des Lulus (2023), Deux gouttes d'eau, Mon poussin, Vise le coeur (2022)",
         "Assistante Mise en Scène": "Pièce pour elle, La Voix des Steppes",
-        "Coach Enfants": "Des nouvelles de la planète Mars",
-        "Assistante Régisseuse": "Transporter 3, Arthur, Arthur 3, À l'intérieur, Dracula"
+        "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
+        "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Dracula (2025)"
       },
       availability: "Disponible",
       recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
