@@ -13,6 +13,21 @@ const VHSSPage = () => {
               Prévention des Violences et Harcèlements Sexistes et Sexuels (VHSS)
             </h1>
 
+            {/* Formation obligatoire - Encadré rose important */}
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-8">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">⚠️</span>
+                <div>
+                  <p className="font-semibold text-foreground text-lg mb-1">
+                    FORMATION OBLIGATOIRE
+                  </p>
+                  <p className="text-sm text-foreground/90">
+                    La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="space-y-6">
               {/* Étude Février 2025 */}
               <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
@@ -63,23 +78,6 @@ const VHSSPage = () => {
                     <li><strong>Contexte :</strong> Tournages en déplacement, horaires tardifs, promiscuité, situations festives</li>
                     <li><strong>Évolution positive :</strong> 83% estiment que la situation s'améliore depuis le début de leur carrière</li>
                   </ul>
-                </div>
-              </div>
-
-              {/* Formation obligatoire - Encadré rose important */}
-              <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-                <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-4">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl">⚠️</span>
-                    <div>
-                      <p className="font-semibold text-foreground text-lg mb-1">
-                        FORMATION OBLIGATOIRE
-                      </p>
-                      <p className="text-sm text-foreground/90">
-                        La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
