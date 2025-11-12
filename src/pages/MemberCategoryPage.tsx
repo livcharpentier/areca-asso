@@ -24,10 +24,10 @@ const MemberCategoryPage = () => {
   const mockMembers = [
     {
       id: 1,
-      firstName: "Marie",
-      lastName: "Dupont",
-      photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marie",
-      email: "marie.dupont@example.com",
+      firstName: "Liv",
+      lastName: "Charpentier",
+      photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv",
+      email: "liv.charpentier@example.com",
       phone: "+33 6 12 34 56 78",
       bio: "Coordinatrice jeunesse avec 15 ans d'expérience dans l'industrie cinématographique.",
       experienceYears: 15,
