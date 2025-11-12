@@ -114,13 +114,14 @@ const MemberCategoryPage = () => {
                     
                     <div className="space-y-2">
                       <h4 className="font-semibold text-sm text-slate-200">C.V</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <ul className="space-y-1 text-sm text-slate-300">
                         {member.specialties.map((specialty, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs">
-                            {specialty}
-                          </Badge>
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="text-accent mt-0.5">•</span>
+                            <span>{specialty}</span>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
 
                     {member.recentNews && (
