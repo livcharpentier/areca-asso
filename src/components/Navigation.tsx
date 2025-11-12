@@ -20,6 +20,7 @@ const Navigation = () => {
   };
 
   const navItems = [
+    { label: "MINEURS", path: "/minors-employment" },
     { label: "À PROPOS", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
