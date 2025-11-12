@@ -24,7 +24,7 @@ const Navigation = () => {
     { label: "À PROPOS", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
-    { label: "RESSOURCES", path: "/resources" },
+    { label: "SALAIRES", path: "/resources" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "CONTACT", path: "/contact" },
