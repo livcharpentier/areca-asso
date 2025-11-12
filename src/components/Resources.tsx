@@ -174,7 +174,7 @@ const Resources = () => {
           <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
             <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
               <FileText className="w-6 h-6" />
-              Comparatif Salaires Figuration - Cinéma vs Audiovisuel (ACFDA - 1er janv. 2025)
+              Salaires Figuration - Cinéma vs Audiovisuel (ACFDA - 1er janv. 2025)
             </h3>
             <div className="space-y-4">
               <div className="bg-cyan-900/20 p-3 rounded border border-cyan-400/30 text-sm text-cyan-100">
