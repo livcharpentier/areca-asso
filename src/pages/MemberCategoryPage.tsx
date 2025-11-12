@@ -27,13 +27,37 @@ const MemberCategoryPage = () => {
       firstName: "Liv",
       lastName: "Charpentier",
       photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv",
-      email: "liv.charpentier@example.com",
-      phone: "+33 6 12 34 56 78",
-      bio: "Coordinatrice jeunesse avec 15 ans d'expérience dans l'industrie cinématographique.",
-      experienceYears: 15,
-      specialties: ["Coordination plateau", "Gestion administrative"],
+      email: "liv.charp@wanadoo.fr",
+      phone: "06 19 60 12 96",
+      bio: "Responsable Enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
+      experienceYears: 28,
+      specialties: [
+        "Le petit Spirou",
+        "Radin",
+        "Parents d'élèves", 
+        "Rémi sans famille",
+        "Le trésor du petit Nicolas",
+        "Des nouvelles de la planète Mars",
+        "Les enfants de la résistance",
+        "La guerre des Lulus",
+        "Mon poussin",
+        "Les bracelets rouges",
+        "Les vacances du Petit Nicolas",
+        "Pièce Montée",
+        "Les vacances de Ducobu",
+        "Comme mon père",
+        "L'élève Ducobu",
+        "Molière",
+        "Le petit Nicolas",
+        "L'Ex-femme de ma vie",
+        "Aurore",
+        "De l'autre côté du lit",
+        "La grande boucle",
+        "Deux gouttes d'eau"
+      ],
       availability: "Disponible",
-      recentNews: "Actuellement sur le tournage du film 'La Grande Aventure'"
+      recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
+      cvUrl: "/CV_LIV_CHARPENTIER.pdf"
     },
     {
       id: 2,
@@ -144,6 +168,18 @@ const MemberCategoryPage = () => {
                           {member.phone}
                         </a>
                       </div>
+                      {(member as any).cvUrl && (
+                        <div className="pt-3">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => window.open((member as any).cvUrl, '_blank')}
+                            className="w-full bg-accent/10 hover:bg-accent/20 border-accent/30 text-accent"
+                          >
+                            Télécharger le CV complet
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
