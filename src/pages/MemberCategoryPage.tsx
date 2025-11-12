@@ -32,7 +32,7 @@ const MemberCategoryPage = () => {
       bio: "Responsable Enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
       experienceYears: 28,
       filmography: {
-        "Responsable Enfants": "Radin, Le petit Spirou, Rémi sans famille, Parents d'élèves, Le trésor du Petit Nicolas",
+        "Responsable Enfants": "Radin, Le petit Spirou, Rémi sans famille, Parents d'élèves, Le trésor du Petit Nicolas, Les enfants de la résistance, Karma, Abandon, Histoire parallèle",
         "Assistante Casting Rôles (Adultes/Enfants)": "Sapiens Costelle, La guerre des Lulus, Groom, Les vacances de Ducobu, Stark First Target, Le jour J",
         "Casting Petits Rôles & Figurations": "Les bracelets rouges (3 saisons), Vise le coeur, La guerre des Lulus, Deux gouttes d'eau, Mon poussin, Blue Valentine, Love Locks, Chocolat, Intouchables, La dernière campagne, Cloclo, On voulait tout casser, Le retour de Charles, La grande boucle, Les vacances du Petit Nicolas, Un mariage explosif, Pièce Montée, Famille, Une famille formidable, Gainsbourg, 20 ans d'écart, Quelques heures de printemps, Les vacances de Ducobu, Omar m'a tuer, Stavisky, Transporter 3, Comme mon père, Le petit Nicolas, L'ex-femme de ma vie, Elles et moi, De l'autre côté du lit, Marie Besnard, Aurore, Podium, Molière",
         "Assistante Mise en Scène": "Pièce pour elle, La Voix des Steppes",
