@@ -113,7 +113,7 @@ const MemberCategoryPage = () => {
                     <p className="text-sm text-slate-200">{member.bio}</p>
                     
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-base text-slate-200">C.V</h4>
+                      <h4 className="font-semibold text-base text-slate-200">Filmographie</h4>
                       <ul className="space-y-1 text-sm text-slate-300">
                         {member.specialties.map((specialty, idx) => (
                           <li key={idx} className="flex items-start gap-2">
