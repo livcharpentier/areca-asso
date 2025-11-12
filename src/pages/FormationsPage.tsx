@@ -1,7 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Calendar, Users, Clock } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { GraduationCap, Calendar, Users, Clock, Info } from "lucide-react";
 
 const FormationsPage = () => {
   const formations = [
@@ -39,10 +40,19 @@ const FormationsPage = () => {
               <h1 className="text-4xl font-bold text-primary-foreground">Formations</h1>
             </div>
             
-            <p className="text-lg text-primary-foreground/80 mb-12">
+            <p className="text-lg text-primary-foreground/80 mb-8">
               L'AFCJA propose régulièrement des formations pour développer les compétences
               des coordinateurs jeunesse dans le domaine de l'audiovisuel.
             </p>
+
+            <Alert className="mb-12 border-accent/30 bg-accent/10">
+              <Info className="h-5 w-5 text-accent" />
+              <AlertDescription className="text-primary-foreground/90 ml-2">
+                Les formations présentées ci-dessous sont actuellement en cours de préparation. 
+                Elles seront officiellement disponibles d'ici 18 mois. 
+                Nous vous tiendrons informés de leur lancement via notre page actualités.
+              </AlertDescription>
+            </Alert>
 
             <div className="space-y-6">
               {formations.map((formation, index) => (
