@@ -66,6 +66,23 @@ const VHSSPage = () => {
                 </div>
               </div>
 
+              {/* Formation obligatoire - Encadré rose important */}
+              <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
+                <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">⚠️</span>
+                    <div>
+                      <p className="font-semibold text-foreground text-lg mb-1">
+                        FORMATION OBLIGATOIRE
+                      </p>
+                      <p className="text-sm text-foreground/90">
+                        La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Avenant VHSS Mai 2024 */}
               <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
                 <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30 mb-4">
