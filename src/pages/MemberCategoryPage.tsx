@@ -31,30 +31,14 @@ const MemberCategoryPage = () => {
       phone: "06 19 60 12 96",
       bio: "Responsable Enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
       experienceYears: 28,
-      specialties: [
-        "Le petit Spirou",
-        "Radin",
-        "Parents d'élèves", 
-        "Rémi sans famille",
-        "Le trésor du petit Nicolas",
-        "Des nouvelles de la planète Mars",
-        "Les enfants de la résistance",
-        "La guerre des Lulus",
-        "Mon poussin",
-        "Les bracelets rouges",
-        "Les vacances du Petit Nicolas",
-        "Pièce Montée",
-        "Les vacances de Ducobu",
-        "Comme mon père",
-        "L'élève Ducobu",
-        "Molière",
-        "Le petit Nicolas",
-        "L'Ex-femme de ma vie",
-        "Aurore",
-        "De l'autre côté du lit",
-        "La grande boucle",
-        "Deux gouttes d'eau"
-      ],
+      filmography: {
+        "Responsable Enfants": "Radin, Le petit Spirou, Rémi sans famille, Parents d'élèves, Le trésor du Petit Nicolas",
+        "Assistante Casting Rôles (Adultes/Enfants)": "Sapiens Costelle, La guerre des Lulus, Groom, Les vacances de Ducobu, Stark First Target, Le jour J",
+        "Casting Petits Rôles & Figurations": "Les bracelets rouges (3 saisons), Vise le coeur, La guerre des Lulus, Deux gouttes d'eau, Mon poussin, Blue Valentine, Love Locks, Chocolat, Intouchables, La dernière campagne, Cloclo, On voulait tout casser, Le retour de Charles, La grande boucle, Les vacances du Petit Nicolas, Un mariage explosif, Pièce Montée, Famille, Une famille formidable, Gainsbourg, 20 ans d'écart, Quelques heures de printemps, Les vacances de Ducobu, Omar m'a tuer, Stavisky, Transporter 3, Comme mon père, Le petit Nicolas, L'ex-femme de ma vie, Elles et moi, De l'autre côté du lit, Marie Besnard, Aurore, Podium, Molière",
+        "Assistante Mise en Scène": "Pièce pour elle, La Voix des Steppes",
+        "Coach Enfants": "Des nouvelles de la planète Mars",
+        "Assistante Régisseuse": "Transporter 3, Arthur, Arthur 3, À l'intérieur"
+      },
       availability: "Disponible",
       recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
       cvUrl: "/CV_LIV_CHARPENTIER.pdf"
@@ -136,17 +120,17 @@ const MemberCategoryPage = () => {
                   <CardContent className="space-y-4">
                     <p className="text-sm text-slate-200">{member.bio}</p>
                     
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-base text-slate-200">Filmographie</h4>
-                      <ul className="space-y-1 text-sm text-slate-300">
-                        {member.specialties.map((specialty, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <span className="text-accent mt-0.5">•</span>
-                            <span>{specialty}</span>
-                          </li>
+                    {(member as any).filmography && (
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-base text-slate-200">Filmographie</h4>
+                        {Object.entries((member as any).filmography).map(([role, films], idx) => (
+                          <div key={idx} className="space-y-1">
+                            <h5 className="text-sm font-medium text-accent">{role}</h5>
+                            <p className="text-sm text-slate-300 leading-relaxed">{films as string}</p>
+                          </div>
                         ))}
-                      </ul>
-                    </div>
+                      </div>
+                    )}
 
                     {member.recentNews && (
                       <div className="space-y-2">
