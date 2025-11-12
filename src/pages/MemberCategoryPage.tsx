@@ -37,7 +37,7 @@ const MemberCategoryPage = () => {
         "Casting Petits Rôles & Figurations": "Les bracelets rouges (3 saisons), Vise le coeur, La guerre des Lulus, Deux gouttes d'eau, Mon poussin, Blue Valentine, Love Locks, Chocolat, Intouchables, La dernière campagne, Cloclo, On voulait tout casser, Le retour de Charles, La grande boucle, Les vacances du Petit Nicolas, Un mariage explosif, Pièce Montée, Famille, Une famille formidable, Gainsbourg, 20 ans d'écart, Quelques heures de printemps, Les vacances de Ducobu, Omar m'a tuer, Stavisky, Transporter 3, Comme mon père, Le petit Nicolas, L'ex-femme de ma vie, Elles et moi, De l'autre côté du lit, Marie Besnard, Aurore, Podium, Molière",
         "Assistante Mise en Scène": "Pièce pour elle, La Voix des Steppes",
         "Coach Enfants": "Des nouvelles de la planète Mars",
-        "Assistante Régisseuse": "Transporter 3, Arthur, Arthur 3, À l'intérieur"
+        "Assistante Régisseuse": "Transporter 3, Arthur, Arthur 3, À l'intérieur, Dracula"
       },
       availability: "Disponible",
       recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
