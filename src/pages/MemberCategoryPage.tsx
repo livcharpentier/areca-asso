@@ -113,7 +113,7 @@ const MemberCategoryPage = () => {
                     <p className="text-sm text-slate-200">{member.bio}</p>
                     
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-sm text-slate-200">Spécialités</h4>
+                      <h4 className="font-semibold text-sm text-slate-200">C.V</h4>
                       <div className="flex flex-wrap gap-2">
                         {member.specialties.map((specialty, idx) => (
                           <Badge key={idx} variant="outline" className="text-xs">
