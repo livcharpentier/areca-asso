@@ -32,7 +32,7 @@ const Resources = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 uppercase tracking-wide leading-relaxed">
-            Conventions / Salaires
+            Informations Salaires Techniciens et Mineurs
           </h2>
 
           {/* Encadré Grilles Salaires Artistes */}
