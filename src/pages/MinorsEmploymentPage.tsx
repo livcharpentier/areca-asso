@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { FileText, Download } from "lucide-react";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-import ArtistSalaries from "@/components/ArtistSalaries";
 import DrieetsDossier from "@/components/DrieetsDossier";
 
 const MinorsEmploymentPage = () => {
@@ -12,9 +11,6 @@ const MinorsEmploymentPage = () => {
       
       {/* Réglementation des horaires en premier */}
       <WorkTimeRegulations />
-      
-      {/* Grilles des salaires artistes-interprètes */}
-      <ArtistSalaries />
       
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">

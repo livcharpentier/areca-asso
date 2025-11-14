@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import RegionalCalendar from "@/components/RegionalCalendar";
 import DrieetsDossier from "@/components/DrieetsDossier";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
+import ArtistSalaries from "@/components/ArtistSalaries";
 import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,7 +31,7 @@ const CalendrierPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="calendrier" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
               <TabsTrigger value="calendrier" className="gap-2">
                 <Calendar className="h-4 w-4" />
                 <span className="hidden sm:inline">Calendrier</span>
@@ -38,6 +39,10 @@ const CalendrierPage = () => {
               <TabsTrigger value="confection" className="gap-2">
                 <FileText className="h-4 w-4" />
                 <span className="hidden sm:inline">Confection</span>
+              </TabsTrigger>
+              <TabsTrigger value="salaires" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span className="hidden sm:inline">Salaires Artistes</span>
               </TabsTrigger>
               <TabsTrigger value="reglementation" className="gap-2">
                 <Clock className="h-4 w-4" />
@@ -55,6 +60,10 @@ const CalendrierPage = () => {
 
             <TabsContent value="confection">
               <DrieetsDossier />
+            </TabsContent>
+
+            <TabsContent value="salaires">
+              <ArtistSalaries />
             </TabsContent>
 
             <TabsContent value="reglementation">
