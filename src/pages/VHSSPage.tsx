@@ -9,7 +9,7 @@ const VHSSPage = () => {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 uppercase tracking-wide leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
               Prévention des Violences et Harcèlements Sexistes et Sexuels (VHSS)
             </h1>
 
