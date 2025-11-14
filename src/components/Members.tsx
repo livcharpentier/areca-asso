@@ -16,7 +16,7 @@ const Members = () => {
   ];
 
   return (
-    <section id="membres" className="py-16 bg-secondary">
+    <section id="membres" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">

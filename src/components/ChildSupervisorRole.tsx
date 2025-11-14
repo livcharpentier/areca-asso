@@ -4,7 +4,7 @@ import { Download, Users, CheckCircle, AlertCircle } from "lucide-react";
 
 const ChildSupervisorRole = () => {
   return (
-    <section id="responsable-enfant" className="py-16 bg-muted/30">
+    <section id="responsable-enfant" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">

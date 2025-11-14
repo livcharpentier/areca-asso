@@ -25,7 +25,7 @@ const News = () => {
   ];
 
   return (
-    <section id="projets" className="py-16 bg-secondary">
+    <section id="projets" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-8 uppercase tracking-wide">
