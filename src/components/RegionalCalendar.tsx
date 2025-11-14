@@ -54,9 +54,13 @@ const RegionalCalendar = () => {
                   <p className="font-semibold text-foreground text-lg mb-2">
                     ℹ️ Comment choisir la bonne région ?
                   </p>
-                  <p className="text-sm text-foreground/90">
-                    La région à sélectionner correspond à <strong>l'adresse du lieu de la production</strong> (tournage, spectacle, etc.). 
-                    Vérifiez auprès de votre DRIEETS locale pour confirmer cette règle, car les modalités peuvent varier.
+                  <p className="text-sm text-foreground/90 mb-3">
+                    <strong>L'autorité compétente est celle du département du siège de l'entreprise</strong> (société de production), 
+                    et non du lieu de tournage ou de spectacle.
+                  </p>
+                  <p className="text-xs text-foreground/80 italic">
+                    Si le siège de l'entreprise se trouve à l'étranger ou si l'entreprise n'a pas de siège fixe, 
+                    la compétence revient au préfet de Paris.
                   </p>
                 </div>
               </div>
