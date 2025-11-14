@@ -16,29 +16,33 @@ const HealthMonitoring = () => {
       </div>
 
       {/* Encadré important - Documents requis */}
-      <Alert className="bg-amber-950/30 border-amber-500/40 backdrop-blur">
-        <AlertCircle className="h-5 w-5 text-amber-400" />
-        <AlertDescription className="text-slate-200">
-          <strong className="text-amber-300 block mb-3 text-lg">Documents médicaux obligatoires</strong>
-          <div className="space-y-3">
-            <div>
-              <p className="font-semibold text-amber-200 mb-1">Pour tous les enfants :</p>
-              <ul className="space-y-1 ml-4">
-                <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
-                <li>• À minima : document justifiant d'une prise de rendez-vous</li>
-                <li>• Autorisation parentale obligatoire</li>
-              </ul>
-            </div>
-            <div className="pt-2 border-t border-amber-500/20">
-              <p className="font-semibold text-amber-200 mb-1">Cas particulier - Figurants et silhouettes :</p>
-              <ul className="space-y-1 ml-4">
-                <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
-                <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
-              </ul>
+      <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+        <div className="flex items-start gap-3">
+          <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
+          <div className="flex-1">
+            <p className="font-semibold text-foreground text-lg mb-3">
+              📋 Documents médicaux obligatoires
+            </p>
+            <div className="space-y-3">
+              <div>
+                <p className="font-semibold text-foreground mb-1">Pour tous les enfants :</p>
+                <ul className="space-y-1 ml-4 text-foreground/90">
+                  <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
+                  <li>• À minima : document justifiant d'une prise de rendez-vous</li>
+                  <li>• Autorisation parentale obligatoire</li>
+                </ul>
+              </div>
+              <div className="pt-2 border-t border-destructive/20">
+                <p className="font-semibold text-foreground mb-1">Cas particulier - Figurants et silhouettes :</p>
+                <ul className="space-y-1 ml-4 text-foreground/90">
+                  <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
+                  <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </AlertDescription>
-      </Alert>
+        </div>
+      </div>
 
       {/* Choix du médecin */}
       <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
