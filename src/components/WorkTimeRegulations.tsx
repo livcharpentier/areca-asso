@@ -69,29 +69,29 @@ const WorkTimeRegulations = () => {
             </div>
 
             {/* Tableau réglementaire */}
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-lg">
+            <div className="overflow-x-auto bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 rounded-lg p-4">
+              <table className="w-full border-collapse rounded-lg overflow-hidden">
                 <thead>
-                  <tr className="bg-muted">
-                    <th className="border border-border p-3 text-left font-semibold text-foreground">Âge</th>
-                    <th className="border border-border p-3 text-left font-semibold text-foreground">Temps de travail En période scolaire</th>
-                    <th className="border border-border p-3 text-left font-semibold text-foreground">
-                      <span className="underline decoration-primary decoration-2">pause</span> obligatoire
+                  <tr className="bg-blue-950/60">
+                    <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Âge</th>
+                    <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Temps de travail En période scolaire</th>
+                    <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">
+                      <span className="underline decoration-accent decoration-2">pause</span> obligatoire
                     </th>
-                    <th className="border border-border p-3 text-left font-semibold text-foreground">En vacances scolaires</th>
-                    <th className="border border-border p-3 text-left font-semibold text-foreground">Temps de pause obligatoire</th>
+                    <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">En vacances scolaires</th>
+                    <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Temps de pause obligatoire</th>
                   </tr>
                 </thead>
                 <tbody>
                   {regulations.map((rule, index) => (
-                    <tr key={index} className={rule.highlight ? "bg-orange-600/80 hover:bg-orange-600/90" : "bg-muted/30 hover:bg-muted/50"}>
-                      <td className={`border border-border p-3 font-medium ${rule.highlight ? "text-white" : "text-foreground"}`}>
-                        <span className={rule.highlight ? "" : "underline decoration-primary decoration-2"}>{rule.age}</span>
+                    <tr key={index} className={rule.highlight ? "bg-accent/20" : "bg-blue-950/30"}>
+                      <td className="border border-accent/20 p-3 font-medium text-slate-200">
+                        {rule.age}
                       </td>
-                      <td className={`border border-border p-3 ${rule.highlight ? "text-white" : "text-foreground"}`}>{rule.schoolPeriod}</td>
-                      <td className={`border border-border p-3 ${rule.highlight ? "text-white" : "text-foreground"}`}>{rule.schoolBreak}</td>
-                      <td className={`border border-border p-3 font-medium ${rule.highlight ? "text-white" : "text-foreground"}`}>{rule.holidays}</td>
-                      <td className={`border border-border p-3 ${rule.highlight ? "text-white" : "text-foreground"}`}>{rule.holidayBreak}</td>
+                      <td className="border border-accent/20 p-3 text-slate-200">{rule.schoolPeriod}</td>
+                      <td className="border border-accent/20 p-3 text-slate-200">{rule.schoolBreak}</td>
+                      <td className="border border-accent/20 p-3 font-medium text-slate-200">{rule.holidays}</td>
+                      <td className="border border-accent/20 p-3 text-slate-200">{rule.holidayBreak}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -100,61 +100,55 @@ const WorkTimeRegulations = () => {
 
             {/* Légende explicative */}
             <div className="grid gap-4 md:grid-cols-2">
-              <Card className="bg-primary/5 border-primary/20">
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-primary" />
-                    Période scolaire
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    Temps de travail réduit en raison de la scolarité obligatoire
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="bg-accent/5 border-accent/20">
-                <CardContent className="pt-6">
-                  <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-accent-foreground" />
-                    Vacances scolaires
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    Durées maximales augmentées pendant les périodes de vacances
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
+                <h4 className="font-semibold text-amber-300 mb-2 flex items-center gap-2">
+                  <Clock className="h-4 w-4 text-accent" />
+                  Période scolaire
+                </h4>
+                <p className="text-sm text-slate-200">
+                  Temps de travail réduit en raison de la scolarité obligatoire
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
+                <h4 className="font-semibold text-amber-300 mb-2 flex items-center gap-2">
+                  <Clock className="h-4 w-4 text-accent" />
+                  Vacances scolaires
+                </h4>
+                <p className="text-sm text-slate-200">
+                  Durées maximales augmentées pendant les périodes de vacances
+                </p>
+              </div>
             </div>
 
             {/* Section heures de nuit */}
-            <Card className="bg-destructive/5 border-destructive/30 mt-6">
-              <CardContent className="pt-6">
-                <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2">
-                  <AlertCircle className="h-5 w-5 text-destructive" />
-                  Travail de nuit (moins de 16 ans)
-                </h4>
-                <div className="space-y-3 text-sm">
-                  <div className="flex items-start gap-2">
-                    <span className="text-destructive font-bold">⛔</span>
-                    <p className="text-foreground">
-                      <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les jeunes de moins de 16 ans (article L.3163-2)
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-orange-500 font-bold">⚠️</span>
-                    <p className="text-foreground">
-                      <strong>Dérogation exceptionnelle :</strong> Dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary font-bold">🛌</span>
-                    <p className="text-foreground">
-                      <strong>Repos obligatoire :</strong> En cas de dérogation, la durée minimale de repos quotidien ne peut être inférieure à <strong>12 heures consécutives</strong> (article L.3164-1)
-                    </p>
-                  </div>
+            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg mt-6">
+              <h4 className="font-semibold text-accent mb-4 flex items-center gap-2">
+                <AlertCircle className="h-5 w-5" />
+                Travail de nuit (moins de 16 ans)
+              </h4>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start gap-2">
+                  <span className="text-destructive font-bold">⛔</span>
+                  <p className="text-slate-200">
+                    <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les jeunes de moins de 16 ans (article L.3163-2)
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-400 font-bold">⚠️</span>
+                  <p className="text-slate-200">
+                    <strong>Dérogation exceptionnelle :</strong> Dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-accent font-bold">🛌</span>
+                  <p className="text-slate-200">
+                    <strong>Repos obligatoire :</strong> En cas de dérogation, la durée minimale de repos quotidien ne peut être inférieure à <strong>12 heures consécutives</strong> (article L.3164-1)
+                  </p>
+                </div>
+              </div>
+            </div>
 
-            <div className="text-center text-sm text-muted-foreground pt-2">
+            <div className="text-center text-sm text-slate-400 pt-2">
               <p>Source : Code du travail - Articles L7124-1 et suivants</p>
             </div>
           </CardContent>
