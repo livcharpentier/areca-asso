@@ -77,13 +77,17 @@ const HealthMonitoring = () => {
               <p className="text-slate-200 mb-2">
                 Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
               </p>
-              <Alert className="bg-amber-950/30 border-amber-500/40 mt-3">
-                <AlertCircle className="h-4 w-4 text-amber-400" />
-                <AlertDescription className="text-slate-200 text-sm">
-                  <strong>Important :</strong> Le médecin généraliste doit être en exercice. 
-                  Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
-                </AlertDescription>
-              </Alert>
+              <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg mt-3">
+                <div className="flex items-start gap-2">
+                  <AlertCircle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm text-foreground/90">
+                      <strong>Important :</strong> Le médecin généraliste doit être en exercice. 
+                      Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -161,12 +165,12 @@ const HealthMonitoring = () => {
             </ul>
           </div>
 
-          <div className="bg-amber-950/30 p-4 rounded-lg border border-amber-500/40">
-            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-amber-400" />
-              Visites chez un médecin spécialiste
+          <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+              <AlertCircle className="h-5 w-5 text-destructive" />
+              ⚠️ Visites chez un médecin spécialiste
             </h3>
-            <p className="text-slate-200">
+            <p className="text-foreground/90">
               Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
               ne sont <strong>pas prises en charge par la production</strong>.
             </p>
@@ -250,14 +254,18 @@ const HealthMonitoring = () => {
             </div>
           </div>
 
-          <Alert className="bg-blue-950/40 border-accent/30">
-            <AlertCircle className="h-4 w-4 text-accent" />
-            <AlertDescription className="text-slate-200 text-sm">
-              <strong>Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
-              mais le Préfet suite à l'avis de la commission. L'autorisation est valable uniquement pour 
-              la prestation spécifique demandée.
-            </AlertDescription>
-          </Alert>
+          <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm text-foreground/90">
+                  <strong>Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
+                  mais le Préfet suite à l'avis de la commission. L'autorisation est valable uniquement pour 
+                  la prestation spécifique demandée.
+                </p>
+              </div>
+            </div>
+          </div>
         </CardContent>
       </Card>
 
