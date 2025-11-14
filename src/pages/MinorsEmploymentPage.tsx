@@ -75,7 +75,7 @@ const MinorsEmploymentPage = () => {
 
                 <div className="bg-orange-900/20 p-4 rounded-lg border border-orange-400/30 mb-4">
                   <p className="font-semibold text-orange-200 mb-2">Autre nouvelle obligation (Castings) :</p>
-                  <p className="text-sm">Accompagnement obligatoire par un adulte référent lors de tous les castings avec des mineurs</p>
+                  <p className="text-sm">Présence obligatoire d'un adulte référent lors de tous les castings avec des mineurs</p>
                 </div>
 
                 <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30 mb-4">
