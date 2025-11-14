@@ -45,7 +45,50 @@ const ArtistSalaries = () => {
                 <div className="space-y-2 text-xs">
                   <div className="bg-blue-950/30 p-2 rounded">
                     <p className="text-amber-200 font-semibold mb-1">Figuration</p>
-...
+                    <div className="flex justify-between text-slate-300">
+                      <span>Jour: 100,46€</span>
+                      <span>1/2j: 75,35€</span>
+                    </div>
+                  </div>
+                  <div className="bg-blue-950/30 p-2 rounded">
+                    <p className="text-amber-200 font-semibold mb-1">Silhouette</p>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Jour: 150,69€</span>
+                      <span>1/2j: 113,02€</span>
+                    </div>
+                  </div>
+                  <div className="bg-blue-950/30 p-2 rounded">
+                    <p className="text-amber-200 font-semibold mb-1">Silhouette parlante</p>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Jour: 175,81€</span>
+                      <span>1/2j: 131,85€</span>
+                    </div>
+                  </div>
+                  <div className="bg-blue-950/30 p-2 rounded">
+                    <p className="text-amber-200 font-semibold mb-1">Doublure</p>
+                    <div className="text-slate-300">
+                      <div className="flex justify-between">
+                        <span>Simple: 175,81€</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Image: 263,71€</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-blue-950/30 p-2 rounded">
+                    <p className="text-amber-200 font-semibold mb-1">Cascadeur</p>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Min artiste-interprète</span>
+                      <span>+ primes risques</span>
+                    </div>
+                  </div>
+                  <div className="bg-blue-950/30 p-2 rounded">
+                    <p className="text-amber-200 font-semibold mb-1">Danseur</p>
+                    <div className="flex justify-between text-slate-300">
+                      <span>Silhouette + 50%</span>
+                      <span>Prime: 25€</span>
+                    </div>
+                  </div>
                   <div className="bg-blue-950/30 p-2 rounded">
                     <p className="text-amber-200 font-semibold mb-1">Artiste de cirque</p>
                     <div className="flex justify-between text-slate-300">
@@ -100,15 +143,15 @@ const ArtistSalaries = () => {
               </div>
             </div>
 
-            <div className="bg-purple-900/20 p-3 rounded border border-purple-400/30 text-xs text-slate-200">
-              <p className="font-semibold text-purple-200 mb-1">ℹ️ Note importante :</p>
+            <div className="bg-blue-950/40 p-3 rounded border border-accent/30 text-xs text-slate-200">
+              <p className="font-semibold text-amber-300 mb-1">ℹ️ Note importante :</p>
               <p>Les silhouettes peuvent être désignées par la mise en scène le jour du tournage en accord avec la production, passant ainsi de figurant à silhouette.</p>
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-purple-400/30">
+          <div className="mt-4 pt-4 border-t border-accent/30">
             <button
               onClick={() => window.open('/acfda_salaire_figu-1er-janv-2025.pdf', '_blank')}
-              className="w-full bg-purple-600/20 hover:bg-purple-600/30 text-purple-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+              className="w-full bg-blue-950/40 hover:bg-blue-950/60 text-accent font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105 border border-accent/20"
             >
               <Download className="w-5 h-5" />
               Télécharger le guide complet ACFDA des salaires figurants (1er janvier 2025)
