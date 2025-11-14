@@ -31,7 +31,7 @@ const CalendrierPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="calendrier" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
               <TabsTrigger value="calendrier" className="gap-2">
                 <Calendar className="h-4 w-4" />
                 <span className="hidden sm:inline">Calendrier</span>
@@ -48,9 +48,13 @@ const CalendrierPage = () => {
                 <Clock className="h-4 w-4" />
                 <span className="hidden sm:inline">Temps de travail</span>
               </TabsTrigger>
-              <TabsTrigger value="documents" className="gap-2">
+              <TabsTrigger value="ressources" className="gap-2">
                 <BookOpen className="h-4 w-4" />
                 <span className="hidden sm:inline">Ressources</span>
+              </TabsTrigger>
+              <TabsTrigger value="documents" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span className="hidden sm:inline">Documents</span>
               </TabsTrigger>
             </TabsList>
 
@@ -70,15 +74,65 @@ const CalendrierPage = () => {
               <WorkTimeRegulations />
             </TabsContent>
 
+            <TabsContent value="ressources">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl">Ressources professionnelles</CardTitle>
+                  <CardDescription>
+                    Outils et documents pour accompagner les professionnels du spectacle
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <a
+                      href="/fiche_metier_responsable_enfant.pdf"
+                      download
+                      className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                    >
+                      <FileText className="h-8 w-8 text-primary" />
+                      <div>
+                        <p className="font-semibold">Fiche Métier Responsable Enfant</p>
+                        <p className="text-sm text-muted-foreground">Description du rôle et compétences requises</p>
+                      </div>
+                    </a>
+
+                    <a
+                      href="/ccn-production-cinema-consolidee-juin-24.pdf"
+                      download
+                      className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                    >
+                      <FileText className="h-8 w-8 text-primary" />
+                      <div>
+                        <p className="font-semibold">Convention Collective Cinéma</p>
+                        <p className="text-sm text-muted-foreground">CCNPC consolidée - Juin 2024</p>
+                      </div>
+                    </a>
+
+                    <a
+                      href="/etude_vhss_cine-av_assos_professionnelles_2025_afar_full_def.pdf"
+                      download
+                      className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                    >
+                      <FileText className="h-8 w-8 text-primary" />
+                      <div>
+                        <p className="font-semibold">Étude VHSS 2025</p>
+                        <p className="text-sm text-muted-foreground">Étude Cinéma-Audiovisuel AFAR</p>
+                      </div>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
             <TabsContent value="documents">
               <div className="space-y-6">
                 {/* Header de la section */}
                 <div className="text-center mb-8">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                    Ressources et Documentation
+                    Documents officiels
                   </h2>
                   <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                    Accédez à tous les documents, formulaires et guides officiels pour vous accompagner dans vos démarches
+                    Formulaires et guides officiels pour constituer votre dossier DRIEETS
                   </p>
                 </div>
 
