@@ -18,10 +18,10 @@ const MinorsEmploymentPage = () => {
               Informations Emploi des Mineurs
             </h1>
 
-            {/* Avenant Conditions d'Emploi des Mineurs */}
+            {/* Conditions d'Emploi des Mineurs */}
             <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
               <h3 className="text-2xl font-bold text-orange-300 mb-4">
-                Avenant Conditions d'Emploi des Mineurs (17 mai 2024)
+                Conditions d'Emploi des Mineurs (17 mai 2024)
               </h3>
               <div className="space-y-4 text-slate-100">
                 <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
@@ -542,7 +542,7 @@ const MinorsEmploymentPage = () => {
                   onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
                   className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
                 >
-                  Consulter l'avenant complet dans la Convention Collective
+                  Consulter le document complet dans la Convention Collective
                 </button>
                 <button
                   onClick={() => window.open('/informations_emploi_mineurs_spectacle_drieets.pdf', '_blank')}
