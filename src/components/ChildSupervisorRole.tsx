@@ -61,6 +61,7 @@ const ChildSupervisorRole = () => {
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
                   <li>• Contrôle du respect des horaires légaux</li>
                   <li>• Gestion des émotions et situations conflictuelles</li>
+                  <li>• Communication et organisation en fonction des informations transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC)</li>
                 </ul>
               </div>
 
