@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ChildSupervisorRole from "@/components/ChildSupervisorRole";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-import DocumentsSection from "@/components/DocumentsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,7 +13,6 @@ const Index = () => {
       <About />
       <ChildSupervisorRole />
       <WorkTimeRegulations />
-      <DocumentsSection />
       <Footer />
     </div>
   );
