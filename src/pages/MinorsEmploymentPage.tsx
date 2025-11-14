@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { FileText, Download } from "lucide-react";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-import DrieetsDossier from "@/components/DrieetsDossier";
 
 const MinorsEmploymentPage = () => {
   return (
@@ -571,9 +570,6 @@ const MinorsEmploymentPage = () => {
               </div>
             </div>
 
-            {/* Composants additionnels */}
-            <WorkTimeRegulations />
-            <DrieetsDossier />
           </div>
         </div>
       </section>
