@@ -127,6 +127,22 @@ const Resources = () => {
                         <span>Selon cascade</span>
                       </div>
                     </div>
+
+                    <div className="bg-pink-900/20 p-2 rounded">
+                      <p className="text-pink-200 font-semibold mb-1">Danseur</p>
+                      <div className="flex justify-between text-slate-300">
+                        <span>Jour: 150€+</span>
+                        <span>+ prime répétitions</span>
+                      </div>
+                    </div>
+
+                    <div className="bg-pink-900/20 p-2 rounded">
+                      <p className="text-pink-200 font-semibold mb-1">Artiste de cirque</p>
+                      <div className="flex justify-between text-slate-300">
+                        <span>Jour: 150€+</span>
+                        <span>+ primes techniques</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -162,6 +178,14 @@ const Resources = () => {
                   <div>
                     <p className="font-semibold text-purple-300">Cascadeur :</p>
                     <p>Professionnel réalisant des actions physiques dangereuses. Salaire minimum d'artiste-interprète + primes selon risques</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-purple-300">Danseur :</p>
+                    <p>Artiste exécutant des chorégraphies. Salaire silhouette + 50% prime répétitions danse/chant (25€ en cinéma)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-purple-300">Artiste de cirque :</p>
+                    <p>Professionnel avec compétences spécifiques (acrobatie, jonglage, etc.). Salaire silhouette + primes techniques selon compétences</p>
                   </div>
                 </div>
               </div>
