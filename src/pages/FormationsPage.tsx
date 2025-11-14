@@ -38,6 +38,22 @@ const FormationsPage = () => {
               <h1 className="text-4xl font-bold text-foreground">Formations</h1>
             </div>
 
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-12">
+              <div className="flex items-start gap-3">
+                <Info className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-foreground text-lg mb-1">
+                    📅 Formations en préparation
+                  </p>
+                  <p className="text-sm text-foreground/90">
+                    Les formations présentées ci-dessous sont actuellement en cours de préparation. 
+                    Elles seront officiellement disponibles d'ici 18 mois. 
+                    Nous vous tiendrons informés de leur lancement via notre page actualités.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 rounded-lg p-6 mb-12">
               <h2 className="text-2xl font-bold text-amber-300 mb-2">AFDAS</h2>
               <p className="text-white text-lg">En cours</p>
