@@ -50,7 +50,7 @@ const CalendrierPage = () => {
               </TabsTrigger>
               <TabsTrigger value="documents" className="gap-2">
                 <BookOpen className="h-4 w-4" />
-                <span className="hidden sm:inline">Documents</span>
+                <span className="hidden sm:inline">Ressources</span>
               </TabsTrigger>
             </TabsList>
 
@@ -72,6 +72,16 @@ const CalendrierPage = () => {
 
             <TabsContent value="documents">
               <div className="space-y-6">
+                {/* Header de la section */}
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Ressources et Documentation
+                  </h2>
+                  <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                    Accédez à tous les documents, formulaires et guides officiels pour vous accompagner dans vos démarches
+                  </p>
+                </div>
+
                 {/* Documents officiels */}
                 <Card>
                   <CardHeader>
