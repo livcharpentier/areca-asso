@@ -70,9 +70,6 @@ const MinorsEmploymentPage = () => {
                       </ul>
                       <p className="text-orange-100 mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
                     </div>
-                    <p className="text-yellow-300 font-semibold mt-2">
-                      Cette obligation s'ajoute à la présence obligatoire du parent ou tuteur légal
-                    </p>
                   </div>
                 </div>
 
