@@ -29,64 +29,67 @@ const DrieetsDossier = () => {
             </p>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="bg-muted/50 p-6 rounded-lg">
+            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
               <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-primary" />
+                <CheckCircle2 className="h-5 w-5 text-accent" />
                 Documents requis
               </h3>
               <ul className="space-y-3">
                 {steps.map((step, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-semibold">
+                    <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-accent text-primary-foreground text-sm font-semibold">
                       {index + 1}
                     </span>
-                    <span className="text-foreground">{step}</span>
+                    <span className="text-slate-200">{step}</span>
                   </li>
                 ))}
               </ul>
             </div>
             
-            <div className="bg-accent/20 border border-accent/50 p-4 rounded-lg">
-              <p className="text-sm text-foreground/90">
-                <strong>Important :</strong> Le dossier complet doit être déposé en recommandé avec accusé de réception 
-                ou remis en main propre contre récépissé à la DRIEETS de votre région.
-              </p>
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-foreground/90">
+                  <strong>Important :</strong> Le dossier complet doit être déposé en recommandé avec accusé de réception 
+                  ou remis en main propre contre récépissé à la DRIEETS de votre région.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-muted/50 p-6 rounded-lg space-y-4">
-              <h3 className="font-semibold text-lg mb-4 text-primary">
+            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg space-y-4">
+              <h3 className="font-semibold text-lg mb-4 text-accent">
                 Coordonnées DRIEETS Île-de-France
               </h3>
               <div className="grid gap-4">
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium">Adresse</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-medium text-amber-300">Adresse</p>
+                    <p className="text-sm text-slate-200">
                       19 rue Madeleine Vionnet<br />
                       93300 Aubervilliers
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium">Téléphone</p>
-                    <p className="text-sm text-muted-foreground">01 70 95 52 00</p>
+                    <p className="font-medium text-amber-300">Téléphone</p>
+                    <p className="text-sm text-slate-200">01 70 95 52 00</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">idf-ut75.enfants-spectacle@drieets.gouv.fr</p>
+                    <p className="font-medium text-amber-300">Email</p>
+                    <p className="text-sm text-slate-200">idf-ut75.enfants-spectacle@drieets.gouv.fr</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <Clock className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium">Horaires d'accueil</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-medium text-amber-300">Horaires d'accueil</p>
+                    <p className="text-sm text-slate-200">
                       Lundi au vendredi : 9h00 - 12h00 / 14h00 - 17h00<br />
                       <span className="text-xs italic">(Sur rendez-vous uniquement)</span>
                     </p>
@@ -95,11 +98,11 @@ const DrieetsDossier = () => {
               </div>
             </div>
 
-            <div className="bg-primary/10 border border-primary/30 p-4 rounded-lg">
+            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-4 rounded-lg">
               <p className="text-sm text-foreground font-semibold mb-2">
                 📚 Ressource officielle de l'Académie de Paris
               </p>
-              <p className="text-sm text-foreground/80">
+              <p className="text-sm text-slate-200">
                 Consultez le guide complet sur la scolarité des enfants du spectacle, incluant tous les formulaires nécessaires pour constituer votre dossier.
               </p>
             </div>
