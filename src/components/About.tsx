@@ -22,7 +22,7 @@ const About = () => {
 
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Nos Missions</h3>
+                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Notre rôle</h3>
                 <ul className="space-y-2 text-slate-200">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
