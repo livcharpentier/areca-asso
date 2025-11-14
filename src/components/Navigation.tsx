@@ -20,9 +20,9 @@ const Navigation = () => {
   };
 
   const navItems = [
+    { label: "MEMBRES", path: "/members" },
     { label: "RÉGLEMENTATION", path: "/minors-employment" },
     { label: "DOSSIER ENFANTS", path: "/calendrier" },
-    { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRES", path: "/resources" },
     { label: "FORMATIONS", path: "/formations" },
