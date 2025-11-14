@@ -114,6 +114,22 @@ const MemberCategoryPage = () => {
                           <Calendar className="w-4 h-4" />
                           <span>{member.experienceYears} ans d'expérience</span>
                         </div>
+                        
+                        {/* Coordonnées mises en avant */}
+                        <div className="mt-4 space-y-2 border-t border-accent/30 pt-3">
+                          <div className="flex items-center gap-2">
+                            <Mail className="w-5 h-5 text-accent" />
+                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-accent hover:text-blue-vibrant">
+                              {member.email}
+                            </a>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Phone className="w-5 h-5 text-accent" />
+                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-accent hover:text-blue-vibrant">
+                              {member.phone}
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </CardHeader>
@@ -139,32 +155,18 @@ const MemberCategoryPage = () => {
                       </div>
                     )}
 
-                    <div className="pt-4 border-t border-slate-700 space-y-2">
-                      <div className="flex items-center gap-2 text-sm text-slate-300">
-                        <Mail className="w-4 h-4" />
-                        <a href={`mailto:${member.email}`} className="hover:text-accent">
-                          {member.email}
-                        </a>
+                    {(member as any).cvUrl && (
+                      <div className="pt-4 border-t border-slate-700">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => window.open((member as any).cvUrl, '_blank')}
+                          className="w-full bg-accent/10 hover:bg-accent/20 border-accent/30 text-accent"
+                        >
+                          Télécharger le CV complet
+                        </Button>
                       </div>
-                      <div className="flex items-center gap-2 text-sm text-slate-300">
-                        <Phone className="w-4 h-4" />
-                        <a href={`tel:${member.phone}`} className="hover:text-accent">
-                          {member.phone}
-                        </a>
-                      </div>
-                      {(member as any).cvUrl && (
-                        <div className="pt-3">
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => window.open((member as any).cvUrl, '_blank')}
-                            className="w-full bg-accent/10 hover:bg-accent/20 border-accent/30 text-accent"
-                          >
-                            Télécharger le CV complet
-                          </Button>
-                        </div>
-                      )}
-                    </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}
