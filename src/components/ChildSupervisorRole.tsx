@@ -28,7 +28,8 @@ const ChildSupervisorRole = () => {
                 <p className="text-slate-200">
                   Le responsable enfant assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma. 
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille, 
-                  la production et les équipes artistiques et techniques.
+                  la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations 
+                  transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC).
                 </p>
               </CardContent>
             </Card>
@@ -61,7 +62,6 @@ const ChildSupervisorRole = () => {
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
                   <li>• Contrôle du respect des horaires légaux</li>
                   <li>• Gestion des émotions et situations conflictuelles</li>
-                  <li>• Communication et organisation en fonction des informations transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC)</li>
                 </ul>
               </div>
 
