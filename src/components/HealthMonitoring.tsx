@@ -406,6 +406,109 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
+      {/* Règles spécifiques et interdictions */}
+      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Shield className="h-5 w-5 text-accent" />
+            Règles spécifiques et interdictions
+          </CardTitle>
+          <CardDescription className="text-slate-300">
+            Dispositions légales et limites d'emploi
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-3">
+            <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+              <h4 className="font-semibold text-amber-300 mb-2">Âge minimum d'admission</h4>
+              <ul className="space-y-2 text-slate-200 text-sm">
+                <li>• <strong>Spectacle et cinéma :</strong> 3 mois minimum</li>
+                <li>• <strong>Théâtre :</strong> 9 ans conseillés par le Ministère de l'Éducation Nationale</li>
+                <li>• <strong>Attention particulière :</strong> Les demandes concernant les enfants de moins de 6 ans font l'objet d'une étude particulière par la commission</li>
+              </ul>
+            </div>
+
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                <AlertCircle className="h-5 w-5 text-destructive" />
+                ⚠️ Interdictions formelles
+              </h4>
+              <ul className="space-y-2 text-foreground/90 text-sm">
+                <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
+                <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
+                <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
+                <li>• <strong>Restriction d'emploi :</strong> Seuls les parents pratiquant certaines professions (acrobate, saltimbanque, directeur de cirque) peuvent employer leurs propres enfants, et uniquement à partir de 12 ans</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+              <h4 className="font-semibold text-amber-300 mb-2">Points de vigilance médicale</h4>
+              <p className="text-slate-200 text-sm mb-2">
+                L'examen médical doit particulièrement vérifier :
+              </p>
+              <ul className="space-y-2 text-slate-200 text-sm ml-4">
+                <li>• Impact psychologique du rôle (violence, mort, scènes difficiles)</li>
+                <li>• Retentissement sur le sommeil et le développement</li>
+                <li>• Contraintes physiques imposées par le rôle</li>
+                <li>• Durée, rythme et horaires de l'activité proposée</li>
+                <li>• Capacité de l'enfant à distinguer fiction et réalité</li>
+                <li>• Pour les mannequins : surveillance particulière du poids et de l'alimentation (dépistage anorexie)</li>
+              </ul>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Référentiel pour professionnels de santé */}
+      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Heart className="h-5 w-5 text-accent" />
+            Pour les professionnels de santé
+          </CardTitle>
+          <CardDescription className="text-slate-300">
+            Référentiel officiel pour l'examen médical préalable
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-slate-200">
+            Le <strong>Référentiel pour l'examen médical préalable à l'emploi d'un enfant de moins de 16 ans</strong> 
+            dans le spectacle, les professions ambulantes, la publicité et la mode est destiné aux médecins généralistes, 
+            pédiatres et médecins du travail qui réalisent ces examens.
+          </p>
+          
+          <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+            <h4 className="font-semibold text-amber-300 mb-2">Contenu du référentiel</h4>
+            <ul className="space-y-1 text-slate-200 text-sm">
+              <li>• Dispositions législatives et réglementaires</li>
+              <li>• Grille d'analyse des contraintes physiques et psychiques</li>
+              <li>• Protocole détaillé de l'examen médical</li>
+              <li>• Critères d'aptitude et contre-indications</li>
+              <li>• Modèle d'avis médical</li>
+            </ul>
+          </div>
+
+          <div className="flex gap-3">
+            <Button asChild variant="default">
+              <a href="/referentiel_professionnels_sante.docx" download>
+                <Download className="h-4 w-4 mr-2" />
+                Télécharger le référentiel (DOCX)
+              </a>
+            </Button>
+            <Button asChild variant="outline">
+              <a href="/referentiel_professionnels_sante.pdf" download>
+                <Download className="h-4 w-4 mr-2" />
+                Version PDF
+              </a>
+            </Button>
+          </div>
+          
+          <p className="text-xs text-slate-400 italic">
+            Document officiel du Ministère de la Santé et des Sports
+          </p>
+        </CardContent>
+      </Card>
+
       {/* Téléchargement du document */}
       <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
         <CardHeader>
