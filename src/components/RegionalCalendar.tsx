@@ -86,37 +86,37 @@ const RegionalCalendar = () => {
                 </div>
 
                 {/* Coordonnées DRIEETS */}
-                <div className="bg-muted/50 p-6 rounded-lg space-y-4">
-                  <h3 className="font-semibold text-lg mb-4 text-primary">
+                <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg space-y-4">
+                  <h3 className="font-semibold text-lg mb-4 text-accent">
                     Coordonnées DRIEETS {selectedRegion.nom}
                   </h3>
                   <div className="grid gap-4">
                     <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium">Adresse</p>
-                        <p className="text-sm text-muted-foreground">{selectedRegion.drieets.adresse}</p>
+                        <p className="font-medium text-amber-300">Adresse</p>
+                        <p className="text-sm text-slate-200">{selectedRegion.drieets.adresse}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium">Téléphone</p>
-                        <p className="text-sm text-muted-foreground">{selectedRegion.drieets.telephone}</p>
+                        <p className="font-medium text-amber-300">Téléphone</p>
+                        <p className="text-sm text-slate-200">{selectedRegion.drieets.telephone}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium">Email</p>
-                        <p className="text-sm text-muted-foreground">{selectedRegion.drieets.email}</p>
+                        <p className="font-medium text-amber-300">Email</p>
+                        <p className="text-sm text-slate-200">{selectedRegion.drieets.email}</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <Clock className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium">Horaires d'accueil</p>
-                        <p className="text-sm text-muted-foreground">{selectedRegion.drieets.horaires}</p>
+                        <p className="font-medium text-amber-300">Horaires d'accueil</p>
+                        <p className="text-sm text-slate-200">{selectedRegion.drieets.horaires}</p>
                       </div>
                     </div>
                   </div>
@@ -131,11 +131,11 @@ const RegionalCalendar = () => {
                     </h3>
                     <div className="grid gap-4 md:grid-cols-2">
                       {selectedRegion.dates2025.map((date, index) => (
-                        <Card key={index} className="bg-muted/50 border-primary/20 hover:border-primary/40 transition-colors">
+                        <Card key={index} className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 hover:border-accent/40 transition-colors">
                           <CardContent className="pt-6">
                             <div className="space-y-3">
                               <div className="flex items-center justify-between">
-                                <span className="text-xs font-semibold text-muted-foreground uppercase">
+                                <span className="text-xs font-semibold text-accent uppercase">
                                   Départements {date.departements}
                                 </span>
                               </div>
@@ -143,15 +143,15 @@ const RegionalCalendar = () => {
                                 <div className="flex items-center gap-2">
                                   <Clock className="h-4 w-4 text-destructive" />
                                   <div>
-                                    <p className="text-xs text-muted-foreground">Dépôt de dossier</p>
+                                    <p className="text-xs text-slate-400">Dépôt de dossier</p>
                                     <p className="font-semibold text-destructive">{date.depot}</p>
                                   </div>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <Calendar className="h-4 w-4 text-primary" />
+                                  <Calendar className="h-4 w-4 text-accent" />
                                   <div>
-                                    <p className="text-xs text-muted-foreground">Commission</p>
-                                    <p className="font-semibold text-foreground">{date.reunion}</p>
+                                    <p className="text-xs text-slate-400">Commission</p>
+                                    <p className="font-semibold text-slate-200">{date.reunion}</p>
                                   </div>
                                 </div>
                               </div>
@@ -172,11 +172,11 @@ const RegionalCalendar = () => {
                     </h3>
                     <div className="grid gap-4 md:grid-cols-2">
                       {selectedRegion.dates2026.map((date, index) => (
-                        <Card key={index} className="bg-muted/50 border-primary/20 hover:border-primary/40 transition-colors">
+                        <Card key={index} className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 hover:border-accent/40 transition-colors">
                           <CardContent className="pt-6">
                             <div className="space-y-3">
                               <div className="flex items-center justify-between">
-                                <span className="text-xs font-semibold text-muted-foreground uppercase">
+                                <span className="text-xs font-semibold text-accent uppercase">
                                   Départements {date.departements}
                                 </span>
                               </div>
@@ -184,15 +184,15 @@ const RegionalCalendar = () => {
                                 <div className="flex items-center gap-2">
                                   <Clock className="h-4 w-4 text-destructive" />
                                   <div>
-                                    <p className="text-xs text-muted-foreground">Dépôt de dossier</p>
+                                    <p className="text-xs text-slate-400">Dépôt de dossier</p>
                                     <p className="font-semibold text-destructive">{date.depot}</p>
                                   </div>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <Calendar className="h-4 w-4 text-primary" />
+                                  <Calendar className="h-4 w-4 text-accent" />
                                   <div>
-                                    <p className="text-xs text-muted-foreground">Commission</p>
-                                    <p className="font-semibold text-foreground">{date.reunion}</p>
+                                    <p className="text-xs text-slate-400">Commission</p>
+                                    <p className="font-semibold text-slate-200">{date.reunion}</p>
                                   </div>
                                 </div>
                               </div>
@@ -219,12 +219,12 @@ const RegionalCalendar = () => {
               </>
             ) : (
               <div className="text-center py-12">
-                <div className="bg-muted/50 p-8 rounded-lg max-w-2xl mx-auto">
-                  <AlertCircle className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">
+                <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-8 rounded-lg max-w-2xl mx-auto">
+                  <AlertCircle className="h-16 w-16 text-accent mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">
                     Calendrier non disponible pour {selectedRegion.nom}
                   </h3>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-slate-200 mb-6">
                     Les dates des commissions pour cette région ne sont pas encore disponibles. 
                     Veuillez contacter directement la DRIEETS de votre région.
                   </p>
