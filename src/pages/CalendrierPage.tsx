@@ -71,65 +71,203 @@ const CalendrierPage = () => {
             </TabsContent>
 
             <TabsContent value="documents">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Documents de référence</CardTitle>
-                  <CardDescription>
-                    Téléchargez les documents officiels pour vous accompagner
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid gap-4 md:grid-cols-2">
-                    <a
-                      href="/guide_commission_enfants_spectacle.doc"
-                      download
-                      className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <FileText className="h-8 w-8 text-primary" />
-                      <div>
-                        <p className="font-semibold">Guide Commission Enfants</p>
-                        <p className="text-sm text-muted-foreground">Format DOC</p>
-                      </div>
-                    </a>
-                    
-                    <a
-                      href="/livret_travail_des_enfants_080223.pdf"
-                      download
-                      className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <FileText className="h-8 w-8 text-primary" />
-                      <div>
-                        <p className="font-semibold">Livret Travail des Enfants</p>
-                        <p className="text-sm text-muted-foreground">Format PDF</p>
-                      </div>
-                    </a>
+              <div className="space-y-6">
+                {/* Documents officiels */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Documents officiels</CardTitle>
+                    <CardDescription>
+                      Guides et formulaires nécessaires pour constituer votre dossier
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                      <a
+                        href="/guide_commission_enfants_spectacle.doc"
+                        download
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Guide Commission Enfants</p>
+                          <p className="text-sm text-muted-foreground mb-2">Guide complet pour confectionner un dossier DRIEETS</p>
+                          <p className="text-xs text-muted-foreground">Format DOC • Octobre 2021</p>
+                        </div>
+                      </a>
 
-                    <a
-                      href="/duree_travail_enfants_spectacle_drieets.pdf"
-                      download
-                      className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <FileText className="h-8 w-8 text-primary" />
-                      <div>
-                        <p className="font-semibold">Durée de travail DRIEETS</p>
-                        <p className="text-sm text-muted-foreground">Format PDF</p>
-                      </div>
-                    </a>
+                      <a
+                        href="https://www.ac-paris.fr/media/20903/download"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Formulaire primaire (1D)</p>
+                          <p className="text-sm text-muted-foreground mb-2">Avis pédagogique pour les enfants de primaire</p>
+                          <p className="text-xs text-muted-foreground">Académie de Paris</p>
+                        </div>
+                      </a>
 
-                    <a
-                      href="/informations_emploi_mineurs_spectacle_drieets.pdf"
-                      download
-                      className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <FileText className="h-8 w-8 text-primary" />
-                      <div>
-                        <p className="font-semibold">Informations Emploi Mineurs</p>
-                        <p className="text-sm text-muted-foreground">Format PDF</p>
-                      </div>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+                      <a
+                        href="https://www.ac-paris.fr/media/20906/download"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Formulaire collège/lycée (2D)</p>
+                          <p className="text-sm text-muted-foreground mb-2">Avis pédagogique pour collégiens et lycéens</p>
+                          <p className="text-xs text-muted-foreground">Académie de Paris</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="https://www.ac-paris.fr/media/24485/download"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Avis DASEN</p>
+                          <p className="text-sm text-muted-foreground mb-2">Formulaire d'avis du Directeur académique (hors Paris)</p>
+                          <p className="text-xs text-muted-foreground">Académie de Paris</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/livret_travail_des_enfants_080223.pdf"
+                        download
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Livret Travail des Enfants</p>
+                          <p className="text-sm text-muted-foreground mb-2">Guide complet du Ministère du Travail</p>
+                          <p className="text-xs text-muted-foreground">Format PDF • Février 2023</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/duree_travail_enfants_spectacle_drieets.pdf"
+                        download
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Durée de travail DRIEETS</p>
+                          <p className="text-sm text-muted-foreground mb-2">Réglementation des horaires enfants</p>
+                          <p className="text-xs text-muted-foreground">Format PDF</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/informations_emploi_mineurs_spectacle_drieets.pdf"
+                        download
+                        className="flex flex-col gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Informations Emploi Mineurs</p>
+                          <p className="text-sm text-muted-foreground mb-2">Guide pratique DRIEETS</p>
+                          <p className="text-xs text-muted-foreground">Format PDF</p>
+                        </div>
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Calendriers */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Calendriers des commissions</CardTitle>
+                    <CardDescription>
+                      Dates des commissions enfants du spectacle par région
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <a
+                        href="/calendrier_commissions_2025_2026.pdf"
+                        download
+                        className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <Calendar className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Calendrier Île-de-France 2025-2026</p>
+                          <p className="text-sm text-muted-foreground">Dates des commissions pour toute l'Île-de-France</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/calendrier_commissions_92_hauts_de_seine.pdf"
+                        download
+                        className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <Calendar className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Calendrier Hauts-de-Seine (92)</p>
+                          <p className="text-sm text-muted-foreground">Dates spécifiques des commissions du 92</p>
+                        </div>
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Documents réglementation */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl">Conventions collectives et salaires</CardTitle>
+                    <CardDescription>
+                      Documents de référence pour les conventions et grilles salariales
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <a
+                        href="/ccn-production-cinema-consolidee-juin-24.pdf"
+                        download
+                        className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Convention Collective Cinéma</p>
+                          <p className="text-sm text-muted-foreground">CCNPC consolidée - Grille des salaires</p>
+                          <p className="text-xs text-muted-foreground">Format PDF • Juin 2024</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/acfda_salaire_figu-1er-janv-2025.pdf"
+                        download
+                        className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Salaires Figuration ACFDA</p>
+                          <p className="text-sm text-muted-foreground">Comparatif Cinéma vs Audiovisuel</p>
+                          <p className="text-xs text-muted-foreground">Format PDF • 1er janvier 2025</p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/etude_vhss_cine-av_assos_professionnelles_2025_afar_full_def.pdf"
+                        download
+                        className="flex items-center gap-3 p-4 border rounded-lg hover:bg-muted/50 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-8 w-8 text-primary" />
+                        <div>
+                          <p className="font-semibold">Étude VHSS 2025</p>
+                          <p className="text-sm text-muted-foreground">Étude Cinéma-Audiovisuel AFAR</p>
+                          <p className="text-xs text-muted-foreground">Format PDF • 2025</p>
+                        </div>
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </TabsContent>
           </Tabs>
         </div>
