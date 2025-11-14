@@ -21,7 +21,6 @@ const Navigation = () => {
 
   const navItems = [
     { label: "RÉGLEMENTATION", path: "/minors-employment" },
-    { label: "À PROPOS", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRES", path: "/resources" },
