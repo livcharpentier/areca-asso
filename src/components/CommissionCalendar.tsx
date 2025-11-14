@@ -67,17 +67,17 @@ const CommissionCalendar = () => {
                         </div>
                         <div className="space-y-2">
                           <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <div>
-                              <p className="text-xs text-muted-foreground">Commission</p>
-                              <p className="font-semibold text-foreground">{date.reunion}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-center gap-2">
                             <Clock className="h-4 w-4 text-destructive" />
                             <div>
                               <p className="text-xs text-muted-foreground">Dépôt de dossier</p>
                               <p className="font-semibold text-destructive">{date.depot}</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Calendar className="h-4 w-4 text-primary" />
+                            <div>
+                              <p className="text-xs text-muted-foreground">Commission</p>
+                              <p className="font-semibold text-foreground">{date.reunion}</p>
                             </div>
                           </div>
                         </div>
