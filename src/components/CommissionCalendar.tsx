@@ -10,10 +10,27 @@ const CommissionCalendar = () => {
     { reunion: "10 DÉCEMBRE", depot: "3 NOVEMBRE", departements: "92" },
   ];
 
-  const dates2026Preview = [
-    { reunion: "8 JANVIER", depot: "1er DÉCEMBRE 2025", departements: "Tous" },
-    { reunion: "5 FÉVRIER", depot: "2 JANVIER", departements: "Tous" },
-    { reunion: "12 MARS (75...) / 11 MARS (92)", depot: "2 FÉVRIER", departements: "Tous" },
+  const dates2026 = [
+    { reunion: "8 JANVIER", depot: "1er DÉCEMBRE 2025", departements: "75, 77, 78, 91, 92, 93, 94, 95" },
+    { reunion: "5 FÉVRIER", depot: "2 JANVIER", departements: "75, 77, 78, 91, 92, 93, 94, 95" },
+    { reunion: "12 MARS", depot: "2 FÉVRIER", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "11 MARS", depot: "2 FÉVRIER", departements: "92" },
+    { reunion: "9 AVRIL", depot: "2 MARS", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "8 AVRIL", depot: "2 MARS", departements: "92" },
+    { reunion: "7 MAI", depot: "1er AVRIL", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "6 MAI", depot: "1er AVRIL", departements: "92" },
+    { reunion: "11 JUIN", depot: "1er MAI", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "10 JUIN", depot: "1er MAI", departements: "92" },
+    { reunion: "9 JUILLET", depot: "1er JUIN", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "8 JUILLET", depot: "1er JUIN", departements: "92" },
+    { reunion: "10 SEPTEMBRE", depot: "1er JUILLET", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "9 SEPTEMBRE", depot: "1er JUILLET", departements: "92" },
+    { reunion: "8 OCTOBRE", depot: "1er SEPTEMBRE", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "7 OCTOBRE", depot: "1er SEPTEMBRE", departements: "92" },
+    { reunion: "5 NOVEMBRE", depot: "1er OCTOBRE", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "4 NOVEMBRE", depot: "1er OCTOBRE", departements: "92" },
+    { reunion: "3 DÉCEMBRE", depot: "2 NOVEMBRE", departements: "75, 77, 78, 91, 93, 94, 95" },
+    { reunion: "2 DÉCEMBRE", depot: "2 NOVEMBRE", departements: "92" },
   ];
 
   return (
@@ -88,29 +105,41 @@ const CommissionCalendar = () => {
               </div>
             </div>
 
-            {/* Aperçu 2026 */}
+            {/* Dates 2026 */}
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold flex items-center gap-2 text-foreground">
                 <Calendar className="h-6 w-6 text-primary" />
                 Dates prévues des prochaines commissions Année 2026
               </h3>
-              <div className="bg-muted/30 p-6 rounded-lg space-y-3">
-                {dates2026Preview.map((date, index) => (
-                  <div key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 py-2 border-b border-border/50 last:border-0">
-                    <div className="flex items-center gap-3">
-                      <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-                        {index + 1}
-                      </span>
-                      <div>
-                        <p className="font-semibold text-foreground">{date.reunion}</p>
-                        <p className="text-xs text-muted-foreground">{date.departements}</p>
+              <div className="grid gap-4 md:grid-cols-2">
+                {dates2026.map((date, index) => (
+                  <Card key={index} className="bg-muted/50 border-primary/20 hover:border-primary/40 transition-colors">
+                    <CardContent className="pt-6">
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs font-semibold text-muted-foreground uppercase">
+                            Départements {date.departements}
+                          </span>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="flex items-center gap-2">
+                            <Clock className="h-4 w-4 text-destructive" />
+                            <div>
+                              <p className="text-xs text-muted-foreground">Dépôt de dossier</p>
+                              <p className="font-semibold text-destructive">{date.depot}</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Calendar className="h-4 w-4 text-primary" />
+                            <div>
+                              <p className="text-xs text-muted-foreground">Commission</p>
+                              <p className="font-semibold text-foreground">{date.reunion}</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-center gap-2 sm:ml-auto">
-                      <Clock className="h-3 w-3 text-destructive" />
-                      <span className="text-sm text-destructive font-medium">Dépôt avant le {date.depot}</span>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>
