@@ -64,7 +64,7 @@ const MinorsEmploymentPage = () => {
                     <div className="border-l-4 border-orange-400 pl-4 space-y-2">
                       <p className="text-orange-100"><strong>Profil requis :</strong></p>
                       <ul className="ml-4 space-y-1 list-disc text-slate-200">
-                        <li>Personne qualifiée justifiant d'un <strong>diplôme</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
+                        <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
                         <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
                         <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
                       </ul>
