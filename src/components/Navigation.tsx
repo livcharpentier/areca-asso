@@ -22,12 +22,12 @@ const Navigation = () => {
   const navItems = [
     { label: "MEMBRES", path: "/members" },
     { label: "RÉGLEMENTATION", path: "/minors-employment" },
+    { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRE TECHNICIENS", path: "/resources" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "DOCUMENTS", path: "/documents" },
-    { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "CONTACT", path: "/contact" },
   ];
 
