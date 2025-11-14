@@ -92,7 +92,7 @@ const CommissionCalendar = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold flex items-center gap-2 text-foreground">
                 <Calendar className="h-6 w-6 text-primary" />
-                Dates prévues des prochaines commissions
+                Dates prévues des prochaines commissions Année 2026
               </h3>
               <div className="bg-muted/30 p-6 rounded-lg space-y-3">
                 {dates2026Preview.map((date, index) => (
