@@ -40,6 +40,85 @@ const HealthMonitoring = () => {
         </AlertDescription>
       </Alert>
 
+      {/* Choix du médecin */}
+      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Users className="h-5 w-5 text-accent" />
+            Quel médecin consulter ?
+          </CardTitle>
+          <CardDescription className="text-slate-300">
+            Critères de choix entre médecin Thalie Santé et médecin généraliste
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="space-y-4">
+            <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+              <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-accent" />
+                Médecin Thalie Santé obligatoire pour :
+              </h3>
+              <ul className="space-y-2 text-slate-200 ml-6">
+                <li>• <strong>Rôle 1er choix</strong></li>
+                <li>• <strong>Rôle 2nd choix</strong></li>
+                <li>• <strong>Figurant avec plus de 4 jours d'absences</strong> (donc à partir de 5 jours d'absences)</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+              <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 text-accent" />
+                Médecin généraliste autorisé pour :
+              </h3>
+              <p className="text-slate-200 mb-2">
+                Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
+              </p>
+              <Alert className="bg-amber-950/30 border-amber-500/40 mt-3">
+                <AlertCircle className="h-4 w-4 text-amber-400" />
+                <AlertDescription className="text-slate-200 text-sm">
+                  <strong>Important :</strong> Le médecin généraliste doit être en exercice. 
+                  Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
+                </AlertDescription>
+              </Alert>
+            </div>
+          </div>
+
+          <div className="space-y-4 pt-4 border-t border-accent/20">
+            <h3 className="font-semibold text-lg text-amber-300">Procédures selon la localisation</h3>
+            
+            <div className="space-y-3">
+              <div className="bg-blue-950/30 p-4 rounded-lg">
+                <h4 className="font-semibold text-amber-200 mb-2">Enfant en région parisienne (Île-de-France)</h4>
+                <ul className="space-y-2 text-slate-200 text-sm ml-4">
+                  <li>• Thalie Santé contacte directement les parents pour prendre rendez-vous</li>
+                  <li>• Consultation en <strong>physique</strong> ou en <strong>téléconsultation</strong></li>
+                  <li>• Vous devez renseigner les coordonnées des représentants légaux dans votre demande</li>
+                  <li>• Thalie Santé charge directement le certificat d'aptitude/inaptitude sur la plateforme</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-950/30 p-4 rounded-lg">
+                <h4 className="font-semibold text-amber-200 mb-2">Enfant en région</h4>
+                <ul className="space-y-2 text-slate-200 text-sm ml-4">
+                  <li>• Thalie Santé charge un <strong>bon de prise en charge</strong> sur la plateforme</li>
+                  <li>• Ce bon permet de prendre rendez-vous dans un <strong>centre agréé par Thalie Santé</strong> en région</li>
+                  <li>• Vous devez renseigner les coordonnées des représentants légaux</li>
+                  <li>• Liste des centres agréés disponible sur demande</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-950/30 p-4 rounded-lg">
+                <h4 className="font-semibold text-amber-200 mb-2">Examen sur pièce</h4>
+                <p className="text-slate-200 text-sm ml-4">
+                  Dans certains cas, Thalie Santé peut réaliser un examen sur pièce (analyse des documents sans consultation). 
+                  Le certificat d'aptitude/inaptitude est alors chargé directement sur la plateforme.
+                </p>
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
       {/* Information principale */}
       <Alert className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20">
         <Heart className="h-5 w-5 text-accent" />
