@@ -25,7 +25,7 @@ const Navigation = () => {
     { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRES", path: "/resources" },
-    { label: "LES COMMISSIONS", path: "/calendrier" },
+    { label: "DOSSIER ENFANTS", path: "/calendrier" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "CONTACT", path: "/contact" },
