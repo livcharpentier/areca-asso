@@ -37,7 +37,7 @@ const MemberCategoryPage = () => {
         "Casting Petits Rôles & Figurations": "Un mariage explosif (2002), L'ex-femme de ma vie (2004), Podium (2004), Aurore (2005), Marie Besnard (2006), Comme mon père (2007), Molière (2007), Famille (2007), De l'autre côté du lit (2008), Elles et moi (2008), Transporter 3 (2008), Le petit Nicolas (2009), Blue Valentine (2010), Gainsbourg (2010), Les vacances du Petit Nicolas (2010), Pièce Montée (2010), Intouchables (2011), Les vacances de Ducobu (2011), Omar m'a tuer (2011), Quelques heures de printemps (2012), Cloclo (2012), 20 ans d'écart (2013), La dernière campagne (2013), La grande boucle (2013), Les bracelets rouges (3 saisons, 2014-2018), On voulait tout casser (2015), Chocolat (2016), Vise le coeur (2022), La guerre des Lulus (2023), Stavisky (2024), Le retour de Charles, Deux gouttes d'eau, Mon poussin, Love Locks, Une famille formidable",
         "Assistante Mise en Scène": "Pièce pour elle, La Voix des Steppes",
         "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
-        "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Dracula (2025)"
+        "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Pub Afflelou, Pub KFC, Dracula (2025)"
       },
       availability: "Disponible",
       recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
