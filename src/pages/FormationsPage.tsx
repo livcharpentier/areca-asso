@@ -34,8 +34,7 @@ const FormationsPage = () => {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 mb-8">
-              <GraduationCap className="w-10 h-10 text-accent" />
+            <div className="mb-8">
               <h1 className="text-4xl font-bold text-foreground">Formations</h1>
             </div>
             
