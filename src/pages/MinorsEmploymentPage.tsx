@@ -9,6 +9,9 @@ const MinorsEmploymentPage = () => {
     <div className="min-h-screen">
       <Navigation />
       
+      {/* Réglementation des horaires en premier */}
+      <WorkTimeRegulations />
+      
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
