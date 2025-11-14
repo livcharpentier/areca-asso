@@ -7,7 +7,7 @@
 @layer base {
   :root {
     /* Palette colorée inspirée Les Cousins d'Alice */
-    --background: 0 0% 98%;
+    --background: 215 30% 96%;
     --foreground: 0 0% 15%;
 
     --card: 0 0% 100%;
