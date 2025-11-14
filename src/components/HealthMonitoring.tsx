@@ -10,7 +10,7 @@ const HealthMonitoring = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Suivi en Santé au Travail
         </h2>
-        <p className="text-lg text-slate-200 max-w-3xl mx-auto">
+        <p className="text-xl text-foreground/90 max-w-3xl mx-auto font-medium">
           Le suivi médical obligatoire des enfants du spectacle par Thalie Santé
         </p>
       </div>
