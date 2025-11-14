@@ -8,11 +8,11 @@ const Members = () => {
   
   const categories = [
     { title: "Responsables Enfants", count: 10, description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
-    { title: "Coachs", count: 45, description: "Accompagnement artistique", slug: "coachs" },
-    { title: "Précepteurs", count: 35, description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
-    { title: "Animateurs", count: 45, description: "Encadrants jeunesse", slug: "animateurs" },
-    { title: "Cantiniers", count: 25, description: "Restauration sur tournages", slug: "cantiniers" },
-    { title: "Autres membres", count: 10, description: "Membres associés et honoraires", slug: "autres" },
+    { title: "Coachs", count: 9, description: "Accompagnement artistique", slug: "coachs" },
+    { title: "Précepteurs", count: 9, description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
+    { title: "Animateurs", count: 9, description: "Encadrants jeunesse", slug: "animateurs" },
+    { title: "Cantiniers", count: 9, description: "Restauration sur tournages", slug: "cantiniers" },
+    { title: "Autres membres", count: 9, description: "Membres associés et honoraires", slug: "autres" },
   ];
 
   return (
