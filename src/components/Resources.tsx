@@ -119,6 +119,14 @@ const Resources = () => {
                         <span>6j: 1 164,91€</span>
                       </div>
                     </div>
+
+                    <div className="bg-pink-900/20 p-2 rounded">
+                      <p className="text-pink-200 font-semibold mb-1">Cascadeur</p>
+                      <div className="flex justify-between text-slate-300">
+                        <span>Jour: 418,25€+</span>
+                        <span>Selon cascade</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -150,6 +158,10 @@ const Resources = () => {
                   <div>
                     <p className="font-semibold text-purple-300">Doublure simple :</p>
                     <p>Un seul type (lumière, cadrage, image ou texte)</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-purple-300">Cascadeur :</p>
+                    <p>Professionnel réalisant des actions physiques dangereuses. Salaire minimum d'artiste-interprète + primes selon risques</p>
                   </div>
                 </div>
               </div>
