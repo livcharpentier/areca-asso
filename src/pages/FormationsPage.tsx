@@ -37,11 +37,6 @@ const FormationsPage = () => {
             <div className="mb-8">
               <h1 className="text-4xl font-bold text-foreground">Formations</h1>
             </div>
-            
-            <p className="text-lg text-foreground/80 mb-8">
-              L'AFCJA propose régulièrement des formations pour développer les compétences
-              des coordinateurs jeunesse dans le domaine de l'audiovisuel.
-            </p>
 
             <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-12">
               <div className="flex items-start gap-3">
