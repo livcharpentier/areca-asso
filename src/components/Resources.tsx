@@ -31,7 +31,7 @@ const Resources = () => {
     <section id="conventions" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 uppercase tracking-wide leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
             Informations Salaires Techniciens et Mineurs
           </h2>
 
@@ -389,7 +389,7 @@ const Resources = () => {
           </div>
 
           <div id="outils">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 uppercase tracking-wide leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
               Boîte à Outils
             </h2>
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
