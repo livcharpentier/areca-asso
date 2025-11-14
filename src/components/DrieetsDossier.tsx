@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, CheckCircle2 } from "lucide-react";
+import { FileText, CheckCircle2, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DrieetsDossier = () => {
@@ -51,6 +51,48 @@ const DrieetsDossier = () => {
                 <strong>Important :</strong> Le dossier complet doit être déposé en recommandé avec accusé de réception 
                 ou remis en main propre contre récépissé à la DRIEETS de votre région.
               </p>
+            </div>
+
+            <div className="bg-muted/50 p-6 rounded-lg space-y-4">
+              <h3 className="font-semibold text-lg mb-4 text-primary">
+                Coordonnées DRIEETS Île-de-France
+              </h3>
+              <div className="grid gap-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">Adresse</p>
+                    <p className="text-sm text-muted-foreground">
+                      19 rue Madeleine Vionnet<br />
+                      93300 Aubervilliers
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">Téléphone</p>
+                    <p className="text-sm text-muted-foreground">01 70 95 52 00</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-sm text-muted-foreground">idf-ut75.enfants-spectacle@drieets.gouv.fr</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Clock className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium">Horaires d'accueil</p>
+                    <p className="text-sm text-muted-foreground">
+                      Lundi au vendredi : 9h00 - 12h00 / 14h00 - 17h00<br />
+                      <span className="text-xs italic">(Sur rendez-vous uniquement)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="bg-primary/10 border border-primary/30 p-4 rounded-lg">
