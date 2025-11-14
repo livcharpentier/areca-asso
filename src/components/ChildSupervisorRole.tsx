@@ -17,15 +17,15 @@ const ChildSupervisorRole = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <Card className="border-primary/20">
+            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" />
+                  <Users className="h-5 w-5 text-accent" />
                   Description du métier
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
+                <p className="text-slate-200">
                   Le responsable enfant assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma. 
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure l'interface entre la famille, 
                   la production et les équipes artistiques et techniques.
@@ -33,15 +33,15 @@ const ChildSupervisorRole = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-primary/20">
+            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <AlertCircle className="h-5 w-5 text-primary" />
+                  <AlertCircle className="h-5 w-5 text-accent" />
                   Autres appellations
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-slate-200">
                   <li>• Encadrant enfant</li>
                   <li>• Coordinateur enfant</li>
                 </ul>
@@ -49,17 +49,17 @@ const ChildSupervisorRole = () => {
             </Card>
           </div>
 
-          <Card className="mb-8">
+          <Card className="mb-8 border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-primary" />
+                <CheckCircle className="h-5 w-5 text-accent" />
                 Principales activités
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
-                <h3 className="font-semibold text-lg mb-3 text-foreground">En préparation</h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <h3 className="font-semibold text-lg mb-3 text-amber-300">En préparation</h3>
+                <ul className="space-y-2 text-slate-200">
                   <li>• Analyse du scénario pour évaluer les conditions d'intervention</li>
                   <li>• Création d'une relation de confiance avec la famille</li>
                   <li>• Organisation de la logistique (transport, hébergement, soutien scolaire)</li>
@@ -69,8 +69,8 @@ const ChildSupervisorRole = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-3 text-foreground">Pendant le tournage</h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <h3 className="font-semibold text-lg mb-3 text-amber-300">Pendant le tournage</h3>
+                <ul className="space-y-2 text-slate-200">
                   <li>• Supervision et accompagnement quotidien de l'enfant</li>
                   <li>• Respect strict des horaires autorisés</li>
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
@@ -80,8 +80,8 @@ const ChildSupervisorRole = () => {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-3 text-foreground">Après le tournage</h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <h3 className="font-semibold text-lg mb-3 text-amber-300">Après le tournage</h3>
+                <ul className="space-y-2 text-slate-200">
                   <li>• Accompagnement de la transition vers le rythme normal</li>
                   <li>• Réalisation d'un bilan de fin de tournage</li>
                   <li>• Documentation des conditions de travail</li>
