@@ -121,17 +121,11 @@ const MinorsEmploymentPage = () => {
                       </div>
                       <p className="text-xs text-yellow-300 mt-2">Préparation, répétition et présence sur plateau = temps de travail effectif</p>
                     </div>
-
-                    <div>
-                      <p className="font-semibold text-blue-200">📅 Délais commission :</p>
-                      <p className="text-sm">Dépôt : 15 jours avant tournage</p>
-                      <p className="text-sm">Décision sous 8 jours ouvrables</p>
-                    </div>
                   </div>
 
                   <div className="space-y-3">
                     <div>
-                      <p className="font-semibold text-blue-200">👨‍🏫 Scolarité obligatoire :</p>
+                      <p className="font-semibold text-blue-200">Scolarité obligatoire :</p>
                       <p className="text-sm">Répétiteur agréé si absence scolaire</p>
                       <p className="text-sm">3h d'enseignement/jour minimum</p>
                       <p className="text-sm">Maintien du rythme scolaire</p>
