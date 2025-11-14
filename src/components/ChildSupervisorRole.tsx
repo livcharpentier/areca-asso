@@ -61,7 +61,7 @@ const ChildSupervisorRole = () => {
                   <li>• Respect strict des horaires autorisés</li>
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
                   <li>• Contrôle du respect des horaires légaux</li>
-                  <li>• Gestion des émotions et situations conflictuelles</li>
+                  <li>• Gestion des émotions et situations conflictuelles avant, pendant et après</li>
                 </ul>
               </div>
 
