@@ -45,6 +45,22 @@ const RegionalCalendar = () => {
                 </SelectContent>
               </Select>
             </div>
+
+            {/* Information importante sur le choix de région */}
+            <div className="bg-primary/10 border-2 border-primary/30 p-5 rounded-lg max-w-2xl mx-auto mt-6">
+              <div className="flex items-start gap-3">
+                <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-foreground text-lg mb-2">
+                    ℹ️ Comment choisir la bonne région ?
+                  </p>
+                  <p className="text-sm text-foreground/90">
+                    La région à sélectionner correspond à <strong>l'adresse du lieu de la production</strong> (tournage, spectacle, etc.). 
+                    Vérifiez auprès de votre DRIEETS locale pour confirmer cette règle, car les modalités peuvent varier.
+                  </p>
+                </div>
+              </div>
+            </div>
           </CardHeader>
 
           <CardContent className="space-y-8">
