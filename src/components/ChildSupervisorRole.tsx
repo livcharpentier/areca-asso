@@ -71,7 +71,6 @@ const ChildSupervisorRole = () => {
                 <ul className="space-y-2 text-slate-200">
                   <li>• Accompagnement de la transition vers le rythme normal</li>
                   <li>• Réalisation d'un bilan de fin de tournage</li>
-                  <li>• Développement du réseau professionnel</li>
                 </ul>
               </div>
             </CardContent>
