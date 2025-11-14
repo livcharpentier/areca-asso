@@ -36,10 +36,10 @@ const FormationsPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <GraduationCap className="w-10 h-10 text-accent" />
-              <h1 className="text-4xl font-bold text-primary-foreground">Formations</h1>
+              <h1 className="text-4xl font-bold text-foreground">Formations</h1>
             </div>
             
-            <p className="text-lg text-primary-foreground/80 mb-8">
+            <p className="text-lg text-foreground/80 mb-8">
               L'AFCJA propose régulièrement des formations pour développer les compétences
               des coordinateurs jeunesse dans le domaine de l'audiovisuel.
             </p>
