@@ -21,10 +21,10 @@ const Navigation = () => {
 
   const navItems = [
     { label: "RÉGLEMENTATION", path: "/minors-employment" },
+    { label: "DOSSIER ENFANTS", path: "/calendrier" },
     { label: "MEMBRES", path: "/members" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRES", path: "/resources" },
-    { label: "DOSSIER ENFANTS", path: "/calendrier" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "CONTACT", path: "/contact" },
