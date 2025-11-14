@@ -69,7 +69,7 @@ const CommissionCalendar = () => {
                           <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4 text-primary" />
                             <div>
-                              <p className="text-xs text-muted-foreground">Réunion</p>
+                              <p className="text-xs text-muted-foreground">Commission</p>
                               <p className="font-semibold text-foreground">{date.reunion}</p>
                             </div>
                           </div>
