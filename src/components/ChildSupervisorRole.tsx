@@ -62,6 +62,7 @@ const ChildSupervisorRole = () => {
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
                   <li>• Transmettre les informations de la mise en scène pour le jeu</li>
                   <li>• Gestion des émotions et situations conflictuelles avant, pendant et après</li>
+                  <li>• Réaliser un journal de bord pour chaque journée</li>
                 </ul>
               </div>
 
