@@ -16,7 +16,7 @@ const ChildSupervisorRole = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="mb-8">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -30,21 +30,6 @@ const ChildSupervisorRole = () => {
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille, 
                   la production et les équipes artistiques et techniques.
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <AlertCircle className="h-5 w-5 text-accent" />
-                  Autres appellations
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-slate-200">
-                  <li>• Encadrant enfant</li>
-                  <li>• Coordinateur enfant</li>
-                </ul>
               </CardContent>
             </Card>
           </div>
