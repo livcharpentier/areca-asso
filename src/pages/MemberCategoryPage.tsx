@@ -141,7 +141,7 @@ const MemberCategoryPage = () => {
                         <h4 className="font-semibold text-base text-slate-200">Filmographie</h4>
                         {Object.entries((member as any).filmography).map(([role, films], idx) => (
                           <div key={idx} className="space-y-1">
-                            <h5 className="text-sm font-medium text-accent">{role}</h5>
+                            <h5 className="text-sm font-medium text-amber-300">{role}</h5>
                             <p className="text-sm text-slate-300 leading-relaxed">{films as string}</p>
                           </div>
                         ))}
