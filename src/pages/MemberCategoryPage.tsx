@@ -116,16 +116,16 @@ const MemberCategoryPage = () => {
                         </div>
                         
                         {/* Coordonnées mises en avant */}
-                        <div className="mt-4 space-y-2 border-t border-accent/30 pt-3">
+                        <div className="mt-4 space-y-2 border-t border-amber-300/30 pt-3">
                           <div className="flex items-center gap-2">
-                            <Mail className="w-5 h-5 text-accent" />
-                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-accent hover:text-blue-vibrant">
+                            <Mail className="w-5 h-5 text-amber-300" />
+                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-amber-300 hover:text-amber-200">
                               {member.email}
                             </a>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Phone className="w-5 h-5 text-accent" />
-                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-accent hover:text-blue-vibrant">
+                            <Phone className="w-5 h-5 text-amber-300" />
+                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-amber-300 hover:text-amber-200">
                               {member.phone}
                             </a>
                           </div>
