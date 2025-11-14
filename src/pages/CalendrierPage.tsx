@@ -3,10 +3,11 @@ import RegionalCalendar from "@/components/RegionalCalendar";
 import DrieetsDossier from "@/components/DrieetsDossier";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import ArtistSalaries from "@/components/ArtistSalaries";
+import HealthMonitoring from "@/components/HealthMonitoring";
 import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Calendar, Clock, BookOpen } from "lucide-react";
+import { FileText, Calendar, Clock, BookOpen, Heart } from "lucide-react";
 
 const CalendrierPage = () => {
   return (
@@ -31,7 +32,7 @@ const CalendrierPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="calendrier" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-7 mb-8">
               <TabsTrigger value="calendrier" className="gap-2">
                 <Calendar className="h-4 w-4" />
                 <span className="hidden sm:inline">Calendrier</span>
@@ -39,6 +40,10 @@ const CalendrierPage = () => {
               <TabsTrigger value="confection" className="gap-2">
                 <FileText className="h-4 w-4" />
                 <span className="hidden sm:inline">Confection</span>
+              </TabsTrigger>
+              <TabsTrigger value="suivi-sante" className="gap-2">
+                <Heart className="h-4 w-4" />
+                <span className="hidden sm:inline">Suivi Santé</span>
               </TabsTrigger>
               <TabsTrigger value="salaires" className="gap-2">
                 <FileText className="h-4 w-4" />
@@ -64,6 +69,10 @@ const CalendrierPage = () => {
 
             <TabsContent value="confection">
               <DrieetsDossier />
+            </TabsContent>
+
+            <TabsContent value="suivi-sante">
+              <HealthMonitoring />
             </TabsContent>
 
             <TabsContent value="salaires">
