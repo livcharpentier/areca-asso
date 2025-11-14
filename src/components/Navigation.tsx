@@ -26,6 +26,7 @@ const Navigation = () => {
     { label: "SALAIRE TECHNICIENS", path: "/resources" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
+    { label: "DOCUMENTS", path: "/documents" },
     { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "CONTACT", path: "/contact" },
   ];
