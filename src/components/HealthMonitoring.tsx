@@ -129,6 +129,66 @@ const HealthMonitoring = () => {
         </AlertDescription>
       </Alert>
 
+      {/* Prise en charge financière */}
+      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <FileText className="h-5 w-5 text-accent" />
+            Prise en charge financière des visites médicales
+          </CardTitle>
+          <CardDescription className="text-slate-300">
+            Qui paie les consultations médicales ?
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-accent" />
+              Visites médicales obligatoires
+            </h3>
+            <p className="text-slate-200 mb-2">
+              Les visites médicales obligatoires pour l'obtention de l'autorisation de travail sont 
+              <strong> prises en charge par la production</strong> dans le cadre de la cotisation santé au travail.
+            </p>
+            <ul className="space-y-2 text-slate-200 ml-6 mt-3">
+              <li>• Consultation chez le médecin du travail Thalie Santé</li>
+              <li>• Consultation chez un médecin généraliste (selon les cas)</li>
+              <li>• Consultation chez un pédiatre (enfants de moins de 3 ans figurants)</li>
+            </ul>
+          </div>
+
+          <div className="bg-amber-950/30 p-4 rounded-lg border border-amber-500/40">
+            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
+              <AlertCircle className="h-5 w-5 text-amber-400" />
+              Visites chez un médecin spécialiste
+            </h3>
+            <p className="text-slate-200">
+              Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
+              ne sont <strong>pas prises en charge par la production</strong>.
+            </p>
+          </div>
+
+          <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-accent" />
+              Cas particulier : Figurants
+            </h3>
+            <p className="text-slate-200">
+              Pour les figurants, la production <strong>rembourse les visites médicales</strong> effectuées 
+              chez un médecin généraliste ou un pédiatre (selon l'âge de l'enfant).
+            </p>
+          </div>
+
+          <Alert className="bg-blue-950/40 border-accent/30">
+            <Heart className="h-4 w-4 text-accent" />
+            <AlertDescription className="text-slate-200 text-sm">
+              Le suivi en santé au travail est pris en charge par l'employeur dans le cadre de la cotisation 
+              obligatoire à Thalie Santé. Cette cotisation couvre les visites médicales réglementaires.
+            </AlertDescription>
+          </Alert>
+        </CardContent>
+      </Card>
+
       {/* Processus d'autorisation */}
       <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
         <CardHeader>
