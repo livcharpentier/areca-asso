@@ -42,51 +42,6 @@ const FormationsPage = () => {
               <h2 className="text-2xl font-bold text-amber-300 mb-2">AFDAS</h2>
               <p className="text-white text-lg">En cours</p>
             </div>
-
-            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-12">
-              <div className="flex items-start gap-3">
-                <Info className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-foreground text-lg mb-1">
-                    📅 Formations en préparation
-                  </p>
-                  <p className="text-sm text-foreground/90">
-                    Les formations présentées ci-dessous sont actuellement en cours de préparation. 
-                    Elles seront officiellement disponibles d'ici 18 mois. 
-                    Nous vous tiendrons informés de leur lancement via notre page actualités.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              {formations.map((formation, index) => (
-                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-amber-300 font-semibold tracking-wide leading-relaxed">{formation.title}</CardTitle>
-                    <CardDescription className="text-slate-200">
-                      {formation.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Clock className="w-4 h-4 text-accent" />
-                        <span className="text-sm">{formation.duration}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Users className="w-4 h-4 text-accent" />
-                        <span className="text-sm">{formation.participants}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <Calendar className="w-4 h-4 text-accent" />
-                        <span className="text-sm">{formation.date}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
         </div>
       </main>
