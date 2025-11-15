@@ -77,12 +77,12 @@ const HealthMonitoring = () => {
               <p className="text-slate-200 mb-2">
                 Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
               </p>
-              <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg mt-3">
+              <div className="bg-destructive/20 border-2 border-destructive p-4 rounded-lg mt-3">
                 <div className="flex items-start gap-2">
-                  <AlertCircle className="h-4 w-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm text-foreground/90">
-                      <strong>Important :</strong> Le médecin généraliste doit être en exercice. 
+                    <p className="text-sm font-medium text-foreground">
+                      <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
                       Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
                     </p>
                   </div>
