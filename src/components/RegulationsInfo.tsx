@@ -152,41 +152,106 @@ const RegulationsInfo = () => {
                   <span className="text-xl text-amber-300">Information Emploi des Mineurs</span>
                 </CardTitle>
               </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-slate-200 leading-relaxed">
-                    Conditions générales d'emploi, obligations légales, et protection des mineurs sur les tournages.
+              <CardContent className="space-y-4">
+                <p className="text-slate-200 leading-relaxed">
+                  Conditions générales d'emploi, obligations légales, et protection des mineurs sur les tournages.
+                </p>
+                
+                <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                  <p className="font-semibold text-white text-lg mb-2">
+                    📋 Autorisation préalable obligatoire
                   </p>
-                  
-                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
-                    <p className="font-semibold text-white text-lg mb-2">
-                      📋 Autorisation préalable obligatoire
-                    </p>
-                    <p className="text-base text-white">
-                      Toute participation d'un enfant de moins de 16 ans nécessite une autorisation de la commission enfants du spectacle.
-                    </p>
-                  </div>
+                  <p className="text-base text-white">
+                    Toute participation d'un enfant de moins de 16 ans nécessite une autorisation de la commission enfants du spectacle.
+                  </p>
+                </div>
 
-                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
-                    <h4 className="font-semibold text-amber-300 text-lg">Documents essentiels :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Guide DRIEETS :</strong> Informations emploi des mineurs dans le spectacle</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Livret enfants :</strong> Document de référence (Février 2023)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Certificat médical :</strong> Obligatoire et renouvelable selon l'âge</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Responsable enfant :</strong> Présence obligatoire sur le tournage</span>
-                      </li>
-                    </ul>
+                {/* Champ d'application */}
+                <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-amber-300 text-lg">Champ d'application :</h4>
+                  <p className="text-slate-200">
+                    Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).
+                  </p>
+                  <p className="text-slate-200">
+                    <strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.
+                  </p>
+                </div>
+
+                {/* Commission départementale */}
+                <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-amber-300 text-lg">Commission départementale consultative :</h4>
+                  <p className="text-slate-200">
+                    Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.
+                  </p>
+                  <p className="text-slate-200"><strong>Composition :</strong></p>
+                  <ul className="space-y-2 text-slate-200 ml-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Directeur académique des services de l'éducation nationale ou son représentant</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Directeur départemental chargé de l'emploi (DDETS/DDETSPP) ou son représentant</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Un médecin</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Directeur régional des affaires culturelles (DRAC) ou son représentant</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Obligation responsable enfant */}
+                <div className="bg-gradient-to-r from-orange-900/40 to-red-900/40 p-5 rounded-lg border-2 border-orange-400 shadow-lg">
+                  <p className="text-xl font-bold text-orange-200 mb-3">
+                    OBLIGATION MAJEURE - Responsable des Enfants
+                  </p>
+                  <div className="space-y-3 bg-black/30 p-4 rounded">
+                    <p className="text-base font-semibold text-white">
+                      OBLIGATOIRE pour toute production avec mineurs
+                    </p>
+                    <div className="border-l-4 border-orange-400 pl-4 space-y-2">
+                      <p className="text-orange-100"><strong>Profil requis :</strong></p>
+                      <ul className="space-y-2 text-orange-100">
+                        <li>• Diplôme niveau bac minimum dans secteur éducatif/social</li>
+                        <li>• <strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
+                        <li>• N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
+                      </ul>
+                      <p className="text-orange-100 mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
+                    </div>
                   </div>
+                </div>
+
+                {/* Certificat médical */}
+                <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                  <h4 className="font-semibold text-amber-300 text-lg">Certificat médical obligatoire :</h4>
+                  <p className="text-slate-200">
+                    <strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant
+                  </p>
+                  <p className="text-slate-200"><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
+                  <ul className="space-y-2 text-slate-200 ml-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Du contenu du spectacle (histoire, paroles, scènes)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Du planning précis (dates, horaires des répétitions et représentations)</span>
+                    </li>
+                  </ul>
+                  <div className="bg-amber-500/20 border border-amber-400 p-3 rounded mt-3">
+                    <p className="text-white font-semibold">⚠️ Renouvellement obligatoire :</p>
+                    <ul className="space-y-1 text-white text-sm mt-2">
+                      <li>• Enfants &lt; 3 ans : Tous les <strong>3 mois</strong></li>
+                      <li>• Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
+                      <li>• Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
+                    </ul>
+                    <p className="text-red-300 mt-2 font-semibold">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
+                  </div>
+                </div>
                 </CardContent>
             </Card>
           </TabsContent>
