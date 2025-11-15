@@ -29,7 +29,7 @@ const RegulationsInfo = () => {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Réglementation temps de travail */}
           <Collapsible open={openSections.workTime} onOpenChange={() => toggleSection("workTime")}>
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
