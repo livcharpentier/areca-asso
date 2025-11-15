@@ -15,12 +15,8 @@ const RegulationsInfo = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="workTime" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 gap-2 h-auto bg-muted/50 p-2">
-            <TabsTrigger value="workTime" className="flex items-center gap-2 data-[state=active]:bg-background">
-              <Clock className="h-4 w-4" />
-              <span className="hidden sm:inline">Temps de travail</span>
-            </TabsTrigger>
+        <Tabs defaultValue="employment" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 gap-2 h-auto bg-muted/50 p-2">
             <TabsTrigger value="employment" className="flex items-center gap-2 data-[state=active]:bg-background">
               <FileText className="h-4 w-4" />
               <span className="hidden sm:inline">Emploi Mineurs</span>
@@ -42,21 +38,6 @@ const RegulationsInfo = () => {
               <span className="hidden sm:inline">Sanctions</span>
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="workTime" className="mt-6">
-            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <div className="p-3 bg-destructive/10 rounded-full">
-                    <Clock className="h-6 w-6 text-destructive" />
-                  </div>
-                  <span className="text-xl text-amber-300">Réglementation Temps de Travail</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-              </CardContent>
-            </Card>
-          </TabsContent>
-
           <TabsContent value="employment" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
               <CardHeader>
