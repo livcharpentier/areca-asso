@@ -53,45 +53,10 @@ const RegulationsInfo = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-slate-200 leading-relaxed">
-                  Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
+                <p className="text-slate-200 leading-relaxed text-center py-8">
+                  Le tableau détaillé des temps de travail se trouve dans la section ci-dessous.
                 </p>
-                  
-                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
-                    <p className="font-semibold text-white text-lg mb-2">
-                      ⚠️ Respect strict obligatoire
-                    </p>
-                    <p className="text-base text-white">
-                      Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
-                    </p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
-                    <h4 className="font-semibold text-amber-300 text-lg">Points clés :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Durées quotidiennes :</strong> Varient selon l'âge (1h à 6h/jour)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Pauses obligatoires :</strong> Après 30 min à 3h selon l'âge</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Horaires :</strong> Début au plus tôt à 6h du matin</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Travail de nuit :</strong> Interdit entre 20h-6h (dérogation jusqu'à 24h)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-1">•</span>
-                        <span><strong>Limites :</strong> Maximum 6 jours/semaine et 80 jours/an</span>
-                      </li>
-                    </ul>
-                  </div>
-                </CardContent>
+              </CardContent>
             </Card>
           </TabsContent>
 
