@@ -11,9 +11,6 @@ const MinorsEmploymentPage = () => {
       {/* Sections réglementation et informations */}
       <RegulationsInfo />
       
-      {/* Réglementation des horaires détaillée */}
-      <WorkTimeRegulations />
-      
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
