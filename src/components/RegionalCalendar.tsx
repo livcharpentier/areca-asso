@@ -85,43 +85,6 @@ const RegionalCalendar = () => {
                   </div>
                 </div>
 
-                {/* Coordonnées DRIEETS */}
-                <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg space-y-4">
-                  <h3 className="font-semibold text-lg mb-4 text-accent">
-                    Coordonnées DRIEETS {selectedRegion.nom}
-                  </h3>
-                  <div className="grid gap-4">
-                    <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                      <div>
-                        <p className="font-medium text-amber-300">Adresse</p>
-                        <p className="text-sm text-slate-200">{selectedRegion.drieets.adresse}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                      <div>
-                        <p className="font-medium text-amber-300">Téléphone</p>
-                        <p className="text-sm text-slate-200">{selectedRegion.drieets.telephone}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                      <div>
-                        <p className="font-medium text-amber-300">Email</p>
-                        <p className="text-sm text-slate-200">{selectedRegion.drieets.email}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Clock className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                      <div>
-                        <p className="font-medium text-amber-300">Horaires d'accueil</p>
-                        <p className="text-sm text-slate-200">{selectedRegion.drieets.horaires}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Dates 2025 */}
                 {selectedRegion.dates2025.length > 0 && (
                   <div className="space-y-4">
