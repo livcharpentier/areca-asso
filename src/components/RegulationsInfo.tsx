@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const RegulationsInfo = () => {
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
-    workTime: false,
+    workTime: true,
     employment: false,
     authorization: false,
     caisse: false,
