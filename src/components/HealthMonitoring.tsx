@@ -165,12 +165,12 @@ const HealthMonitoring = () => {
             </ul>
           </div>
 
-          <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-destructive" />
+          <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+            <h3 className="font-semibold text-xl text-white mb-4 flex items-center gap-2">
+              <AlertCircle className="h-6 w-6 text-amber-400" />
               ⚠️ Visites chez un médecin spécialiste
             </h3>
-            <p className="text-foreground/90">
+            <p className="text-white text-base">
               Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
               ne sont <strong>pas prises en charge par la production</strong>.
             </p>
