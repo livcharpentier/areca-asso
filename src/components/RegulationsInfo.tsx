@@ -53,56 +53,9 @@ const RegulationsInfo = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                {/* Tableau des horaires */}
-                <div className="overflow-x-auto bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 rounded-lg p-4">
-                  <table className="w-full border-collapse rounded-lg overflow-hidden">
-                    <thead>
-                      <tr className="bg-blue-950/60">
-                        <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Âge</th>
-                        <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Temps de travail En période scolaire</th>
-                        <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">
-                          <span className="underline decoration-accent decoration-2">pause</span> obligatoire
-                        </th>
-                        <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">En vacances scolaires</th>
-                        <th className="border border-accent/20 p-3 text-left font-semibold text-amber-300">Temps de pause obligatoire</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="bg-blue-950/30">
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">moins de 3 ans</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">1 heure/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après une demi-heure de temps de travail</td>
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">1 heure/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après une demi-heure</td>
-                      </tr>
-                      <tr className="bg-accent/20">
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">de 3 à 5 ans</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">2 heures/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après une heure de temps de travail</td>
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">2 heures/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après une heure</td>
-                      </tr>
-                      <tr className="bg-blue-950/30">
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">de 6 à 11 ans</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">3 heures/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après une heure et demie de temps de travail</td>
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">4 heures/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après 2 heures</td>
-                      </tr>
-                      <tr className="bg-accent/20">
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">de 12 à 16 ans</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">4 heures/jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après 2 heures de temps de travail</td>
-                        <td className="border border-accent/20 p-3 font-medium text-slate-200">6 heures /jour</td>
-                        <td className="border border-accent/20 p-3 text-slate-200">Après 3 heures</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
                 <p className="text-slate-200 leading-relaxed">
-                    Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
-                  </p>
+                  Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
+                </p>
                   
                   <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
                     <p className="font-semibold text-white text-lg mb-2">
