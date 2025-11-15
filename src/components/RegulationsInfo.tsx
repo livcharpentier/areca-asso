@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, FileText, Shield, Landmark, Video, Scale } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 
 const RegulationsInfo = () => {
   return (
@@ -44,6 +45,7 @@ const RegulationsInfo = () => {
           </TabsList>
 
           <TabsContent value="workTime" className="mt-6">
+            <WorkTimeRegulations />
           </TabsContent>
           <TabsContent value="employment" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
