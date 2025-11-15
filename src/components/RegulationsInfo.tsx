@@ -1,22 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, FileText, Shield, Landmark, Video, Scale, ChevronDown } from "lucide-react";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { useState } from "react";
+import { Clock, FileText, Shield, Landmark, Video, Scale } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const RegulationsInfo = () => {
-  const [openSections, setOpenSections] = useState<Record<string, boolean>>({
-    workTime: true,
-    employment: false,
-    authorization: false,
-    caisse: false,
-    videos: false,
-    sanctions: false,
-  });
-
-  const toggleSection = (section: string) => {
-    setOpenSections(prev => ({ ...prev, [section]: !prev[section] }));
-  };
-
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
@@ -29,24 +15,43 @@ const RegulationsInfo = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Réglementation temps de travail */}
-          <Collapsible open={openSections.workTime} onOpenChange={() => toggleSection("workTime")}>
+        <Tabs defaultValue="workTime" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-6 gap-2 h-auto bg-muted/50 p-2">
+            <TabsTrigger value="workTime" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <Clock className="h-4 w-4" />
+              <span className="hidden sm:inline">Temps de travail</span>
+            </TabsTrigger>
+            <TabsTrigger value="employment" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <FileText className="h-4 w-4" />
+              <span className="hidden sm:inline">Emploi Mineurs</span>
+            </TabsTrigger>
+            <TabsTrigger value="authorization" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <Shield className="h-4 w-4" />
+              <span className="hidden sm:inline">Autorisation</span>
+            </TabsTrigger>
+            <TabsTrigger value="caisse" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <Landmark className="h-4 w-4" />
+              <span className="hidden sm:inline">Caisse Dépôts</span>
+            </TabsTrigger>
+            <TabsTrigger value="videos" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <Video className="h-4 w-4" />
+              <span className="hidden sm:inline">Plateformes</span>
+            </TabsTrigger>
+            <TabsTrigger value="sanctions" className="flex items-center gap-2 data-[state=active]:bg-background">
+              <Scale className="h-4 w-4" />
+              <span className="hidden sm:inline">Sanctions</span>
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="workTime" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-destructive/10 rounded-full">
-                        <Clock className="h-6 w-6 text-destructive" />
-                      </div>
-                      <span className="text-lg text-amber-300">Réglementation Temps de Travail</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.workTime ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-destructive/10 rounded-full">
+                    <Clock className="h-6 w-6 text-destructive" />
+                  </div>
+                  <span className="text-xl text-amber-300">Réglementation Temps de Travail</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-200 leading-relaxed">
                     Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
@@ -87,27 +92,19 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
+          </TabsContent>
 
-          {/* Information emploi des mineurs */}
-          <Collapsible open={openSections.employment} onOpenChange={() => toggleSection("employment")}>
+          <TabsContent value="employment" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-primary/10 rounded-full">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <span className="text-lg text-amber-300">Information Emploi des Mineurs</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.employment ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-primary/10 rounded-full">
+                    <FileText className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="text-xl text-amber-300">Information Emploi des Mineurs</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-200 leading-relaxed">
                     Conditions générales d'emploi, obligations légales, et protection des mineurs sur les tournages.
@@ -144,27 +141,19 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
+          </TabsContent>
 
-          {/* Procédure d'autorisation administrative */}
-          <Collapsible open={openSections.authorization} onOpenChange={() => toggleSection("authorization")}>
+          <TabsContent value="authorization" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-accent/10 rounded-full">
-                        <Shield className="h-6 w-6 text-accent" />
-                      </div>
-                      <span className="text-lg text-amber-300">Autorisation Administrative</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.authorization ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-accent/10 rounded-full">
+                    <Shield className="h-6 w-6 text-accent" />
+                  </div>
+                  <span className="text-xl text-amber-300">Autorisation Administrative</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-200 leading-relaxed">
                     Démarches et documents nécessaires pour obtenir l'autorisation préalable de la commission enfants du spectacle.
@@ -196,27 +185,19 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
+          </TabsContent>
 
-          {/* Caisse des dépôts et consignations */}
-          <Collapsible open={openSections.caisse} onOpenChange={() => toggleSection("caisse")}>
+          <TabsContent value="caisse" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-green-500/10 rounded-full">
-                        <Landmark className="h-6 w-6 text-green-500" />
-                      </div>
-                      <span className="text-lg text-amber-300">Caisse des Dépôts</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.caisse ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-green-500/10 rounded-full">
+                    <Landmark className="h-6 w-6 text-green-500" />
+                  </div>
+                  <span className="text-xl text-amber-300">Caisse des Dépôts et Consignations</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-200 leading-relaxed">
                     Protection financière obligatoire des revenus des mineurs : obligations de versement et gestion des fonds.
@@ -253,27 +234,19 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
+          </TabsContent>
 
-          {/* Vidéos sur les plateformes de partage */}
-          <Collapsible open={openSections.videos} onOpenChange={() => toggleSection("videos")}>
+          <TabsContent value="videos" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-blue-500/10 rounded-full">
-                        <Video className="h-6 w-6 text-blue-500" />
-                      </div>
-                      <span className="text-lg text-amber-300">Plateformes de Partage</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.videos ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-blue-500/10 rounded-full">
+                    <Video className="h-6 w-6 text-blue-500" />
+                  </div>
+                  <span className="text-xl text-amber-300">Vidéos sur les Plateformes de Partage</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-200 leading-relaxed">
                     Réglementation spécifique aux contenus vidéos mettant en scène des mineurs sur les plateformes en ligne.
@@ -314,27 +287,19 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
+          </TabsContent>
 
-          {/* Sanctions pénales */}
-          <Collapsible open={openSections.sanctions} onOpenChange={() => toggleSection("sanctions")}>
+          <TabsContent value="sanctions" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-accent/5 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-destructive/10 rounded-full">
-                        <Scale className="h-6 w-6 text-destructive" />
-                      </div>
-                      <span className="text-lg text-amber-300">Sanctions Pénales</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 text-accent transition-transform ${openSections.sanctions ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <div className="p-3 bg-destructive/10 rounded-full">
+                    <Scale className="h-6 w-6 text-destructive" />
+                  </div>
+                  <span className="text-xl text-amber-300">Sanctions Pénales</span>
+                </CardTitle>
+              </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
                     <p className="font-semibold text-white text-lg mb-2">
@@ -367,10 +332,9 @@ const RegulationsInfo = () => {
                     </ul>
                   </div>
                 </CardContent>
-              </CollapsibleContent>
             </Card>
-          </Collapsible>
-        </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </section>
   );
