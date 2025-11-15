@@ -254,12 +254,12 @@ const HealthMonitoring = () => {
             </div>
           </div>
 
-          <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+          <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
             <div className="flex items-start gap-3">
-              <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+              <AlertCircle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm text-foreground/90">
-                  <strong>Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
+                <p className="text-base text-white">
+                  <strong className="text-amber-300">Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
                   mais le Préfet suite à l'avis de la commission. L'autorisation est valable uniquement pour 
                   la prestation spécifique demandée.
                 </p>
