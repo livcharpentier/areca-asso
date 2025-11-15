@@ -428,12 +428,12 @@ const HealthMonitoring = () => {
               </ul>
             </div>
 
-            <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <AlertCircle className="h-5 w-5 text-destructive" />
+            <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+              <h4 className="font-semibold text-xl text-white mb-4 flex items-center gap-2">
+                <AlertCircle className="h-6 w-6 text-amber-400" />
                 ⚠️ Interdictions formelles
               </h4>
-              <ul className="space-y-2 text-foreground/90 text-sm">
+              <ul className="space-y-3 text-white text-base">
                 <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
                 <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
                 <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
