@@ -47,17 +47,45 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Durées maximales selon l'âge, horaires autorisés et temps de repos obligatoires.
+                <CardContent className="space-y-4">
+                  <p className="text-slate-200 leading-relaxed">
+                    Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
                   </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Durées quotidiennes selon l'âge</li>
-                    <li>• Pauses obligatoires</li>
-                    <li>• Horaires (6h minimum)</li>
-                    <li>• Travail de nuit encadré</li>
-                    <li>• 80 jours/an maximum</li>
-                  </ul>
+                  
+                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                    <p className="font-semibold text-white text-lg mb-2">
+                      ⚠️ Respect strict obligatoire
+                    </p>
+                    <p className="text-base text-white">
+                      Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-amber-300 text-lg">Points clés :</h4>
+                    <ul className="space-y-2 text-slate-200">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Durées quotidiennes :</strong> Varient selon l'âge (1h à 6h/jour)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Pauses obligatoires :</strong> Après 30 min à 3h selon l'âge</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Horaires :</strong> Début au plus tôt à 6h du matin</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Travail de nuit :</strong> Interdit entre 20h-6h (dérogation jusqu'à 24h)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Limites :</strong> Maximum 6 jours/semaine et 80 jours/an</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
@@ -80,16 +108,41 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Conditions d'emploi, obligations légales et protection sur les tournages.
+                <CardContent className="space-y-4">
+                  <p className="text-slate-200 leading-relaxed">
+                    Conditions générales d'emploi, obligations légales, et protection des mineurs sur les tournages.
                   </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Guide DRIEETS</li>
-                    <li>• Livret du travail enfants</li>
-                    <li>• Conditions de travail</li>
-                    <li>• Obligations employeur</li>
-                  </ul>
+                  
+                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                    <p className="font-semibold text-white text-lg mb-2">
+                      📋 Autorisation préalable obligatoire
+                    </p>
+                    <p className="text-base text-white">
+                      Toute participation d'un enfant de moins de 16 ans nécessite une autorisation de la commission enfants du spectacle.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-amber-300 text-lg">Documents essentiels :</h4>
+                    <ul className="space-y-2 text-slate-200">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Guide DRIEETS :</strong> Informations emploi des mineurs dans le spectacle</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Livret enfants :</strong> Document de référence (Février 2023)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Certificat médical :</strong> Obligatoire et renouvelable selon l'âge</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Responsable enfant :</strong> Présence obligatoire sur le tournage</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
@@ -112,16 +165,36 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Démarches pour l'autorisation de la commission enfants du spectacle.
+                <CardContent className="space-y-4">
+                  <p className="text-slate-200 leading-relaxed">
+                    Démarches et documents nécessaires pour obtenir l'autorisation préalable de la commission enfants du spectacle.
                   </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Demande DRIEETS</li>
-                    <li>• Délai : 1 mois</li>
-                    <li>• Commission consultative</li>
-                    <li>• Décision préfet</li>
-                  </ul>
+                  
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-amber-300 text-lg">Procédure :</h4>
+                    <ul className="space-y-2 text-slate-200">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Dépôt :</strong> Demande auprès de la DRIEETS du département</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Délai :</strong> 1 mois (prorogeable d'1 mois supplémentaire)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Commission :</strong> Présidée par un magistrat juge des enfants</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Décision :</strong> Autorisation ou refus par le préfet</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-amber-400 mt-1">⚠️</span>
+                        <span><strong>Retrait possible :</strong> L'autorisation peut être retirée à tout moment</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
@@ -144,16 +217,41 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Protection financière des revenus des mineurs.
+                <CardContent className="space-y-4">
+                  <p className="text-slate-200 leading-relaxed">
+                    Protection financière obligatoire des revenus des mineurs : obligations de versement et gestion des fonds.
                   </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Versement obligatoire</li>
-                    <li>• Protection jusqu'à majorité</li>
-                    <li>• Modalités de déblocage</li>
-                    <li>• Obligations producteur</li>
-                  </ul>
+                  
+                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                    <p className="font-semibold text-white text-lg mb-2">
+                      💰 Versement obligatoire
+                    </p>
+                    <p className="text-base text-white">
+                      Une partie des revenus de l'enfant doit être versée à la Caisse des Dépôts et Consignations.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-amber-300 text-lg">Règles importantes :</h4>
+                    <ul className="space-y-2 text-slate-200">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Protection :</strong> Fonds bloqués jusqu'à la majorité de l'enfant</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Modalités :</strong> Pourcentage variable selon les revenus</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Déblocage :</strong> À la majorité ou par décision judiciaire</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Obligations :</strong> Le producteur doit effectuer le versement</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
@@ -176,16 +274,45 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Réglementation vidéos avec mineurs en ligne.
+                <CardContent className="space-y-4">
+                  <p className="text-slate-200 leading-relaxed">
+                    Réglementation spécifique aux contenus vidéos mettant en scène des mineurs sur les plateformes en ligne.
                   </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Déclaration obligatoire</li>
-                    <li>• Protection image/données</li>
-                    <li>• Autorisation parentale</li>
-                    <li>• Droits d'auteur</li>
-                  </ul>
+                  
+                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                    <p className="font-semibold text-white text-lg mb-2">
+                      📹 Cadre légal renforcé
+                    </p>
+                    <p className="text-base text-white">
+                      La loi encadre strictement les contenus avec mineurs sur les plateformes de partage vidéo.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-accent/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-amber-300 text-lg">Points de vigilance :</h4>
+                    <ul className="space-y-2 text-slate-200">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Déclaration :</strong> Obligatoire si revenus réguliers générés</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Protection :</strong> Image et données personnelles de l'enfant</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Autorisation :</strong> Parentale requise pour toute publication</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Encadrement :</strong> Heures de tournage limitées comme au cinéma</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent mt-1">•</span>
+                        <span><strong>Rémunération :</strong> Droits d'auteur et protection financière</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
@@ -208,16 +335,37 @@ const RegulationsInfo = () => {
                 </CardHeader>
               </CollapsibleTrigger>
               <CollapsibleContent>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-slate-200">
-                    Conséquences du non-respect de la réglementation.
-                  </p>
-                  <ul className="space-y-2 text-sm text-slate-200">
-                    <li>• Sans autorisation : 2 ans + 30k€</li>
-                    <li>• Dépassement durées</li>
-                    <li>• Absence responsable</li>
-                    <li>• Non-versement CDC</li>
-                  </ul>
+                <CardContent className="space-y-4">
+                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+                    <p className="font-semibold text-white text-lg mb-2">
+                      ⚠️ Non-respect de la réglementation
+                    </p>
+                    <p className="text-base text-white">
+                      Le non-respect des règles de protection des mineurs expose à des sanctions pénales sévères.
+                    </p>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-blue-900/40 to-slate-800/40 border border-destructive/30 p-5 rounded-lg space-y-3">
+                    <h4 className="font-semibold text-destructive text-lg mb-3">Infractions principales :</h4>
+                    <ul className="space-y-3 text-slate-200">
+                      <li className="border-l-4 border-destructive pl-4 py-2 bg-destructive/5 rounded">
+                        <strong className="text-destructive">Emploi sans autorisation :</strong>
+                        <p className="text-sm mt-1">Jusqu'à 2 ans d'emprisonnement et 30 000€ d'amende</p>
+                      </li>
+                      <li className="border-l-4 border-destructive pl-4 py-2 bg-destructive/5 rounded">
+                        <strong className="text-destructive">Dépassement des durées :</strong>
+                        <p className="text-sm mt-1">Sanctions pénales et administratives immédiates</p>
+                      </li>
+                      <li className="border-l-4 border-destructive pl-4 py-2 bg-destructive/5 rounded">
+                        <strong className="text-destructive">Absence de responsable :</strong>
+                        <p className="text-sm mt-1">Suspension immédiate du tournage</p>
+                      </li>
+                      <li className="border-l-4 border-destructive pl-4 py-2 bg-destructive/5 rounded">
+                        <strong className="text-destructive">Non-versement CDC :</strong>
+                        <p className="text-sm mt-1">Sanctions financières majorées</p>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </CollapsibleContent>
             </Card>
