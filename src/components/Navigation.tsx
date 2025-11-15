@@ -21,7 +21,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: "MEMBRES", path: "/members" },
-    { label: "RÉGLEMENTATION", path: "/minors-employment" },
+    { label: "RÉGLEMENTATION INFORMATIONS", path: "/minors-employment" },
     { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "VHSS", path: "/vhss" },
     { label: "SALAIRE TECHNICIENS", path: "/resources" },
