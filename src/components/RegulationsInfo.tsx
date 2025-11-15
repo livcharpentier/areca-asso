@@ -53,9 +53,6 @@ const RegulationsInfo = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-slate-200 leading-relaxed text-center py-8">
-                  Le tableau détaillé des temps de travail se trouve dans la section ci-dessous.
-                </p>
               </CardContent>
             </Card>
           </TabsContent>
