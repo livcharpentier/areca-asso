@@ -44,18 +44,6 @@ const RegulationsInfo = () => {
           </TabsList>
 
           <TabsContent value="workTime" className="mt-6">
-            <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <div className="p-3 bg-destructive/10 rounded-full">
-                    <Clock className="h-6 w-6 text-destructive" />
-                  </div>
-                  <span className="text-xl text-amber-300">Réglementation Temps de Travail</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-              </CardContent>
-            </Card>
           </TabsContent>
           <TabsContent value="employment" className="mt-6">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
