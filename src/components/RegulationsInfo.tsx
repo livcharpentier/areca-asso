@@ -1,22 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, FileText, Shield, Landmark, Video, Scale, ChevronDown } from "lucide-react";
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { useState } from "react";
+import { Clock, FileText, Shield, Landmark, Video, Scale } from "lucide-react";
 
 const RegulationsInfo = () => {
-  const [openSections, setOpenSections] = useState<Record<string, boolean>>({
-    workTime: true,
-    employment: false,
-    authorization: false,
-    caisse: false,
-    videos: false,
-    sanctions: false,
-  });
-
-  const toggleSection = (section: string) => {
-    setOpenSections(prev => ({ ...prev, [section]: !prev[section] }));
-  };
-
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
@@ -29,233 +14,145 @@ const RegulationsInfo = () => {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Réglementation temps de travail */}
-          <Collapsible open={openSections.workTime} onOpenChange={() => toggleSection("workTime")}>
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-destructive/10 rounded-full">
-                        <Clock className="h-6 w-6 text-destructive" />
-                      </div>
-                      <span className="text-xl">Réglementation Temps de Travail</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.workTime ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Durées maximales de travail selon l'âge de l'enfant, horaires autorisés, et temps de repos obligatoires.
-                  </p>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
-                    <h4 className="font-semibold text-amber-300 mb-3">Points clés :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li>• Durées maximales quotidiennes selon l'âge</li>
-                      <li>• Pauses obligatoires pendant le travail</li>
-                      <li>• Horaires de début de journée (au plus tôt 6h)</li>
-                      <li>• Travail de nuit strictement encadré</li>
-                      <li>• Travail les jours fériés autorisé avec conditions</li>
-                      <li>• Maximum 6 jours/semaine et 80 jours/an</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-destructive/10 rounded-full">
+                  <Clock className="h-6 w-6 text-destructive" />
+                </div>
+                <span className="text-lg">Réglementation Temps de Travail</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Durées maximales selon l'âge, horaires autorisés et temps de repos obligatoires.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Durées quotidiennes selon l'âge</li>
+                <li>• Pauses obligatoires</li>
+                <li>• Horaires (6h minimum)</li>
+                <li>• Travail de nuit encadré</li>
+                <li>• 80 jours/an maximum</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           {/* Information emploi des mineurs */}
-          <Collapsible open={openSections.employment} onOpenChange={() => toggleSection("employment")}>
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-primary/10 rounded-full">
-                        <FileText className="h-6 w-6 text-primary" />
-                      </div>
-                      <span className="text-xl">Information Emploi des Mineurs</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.employment ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Conditions générales d'emploi, obligations légales, et protection des mineurs sur les tournages.
-                  </p>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
-                    <h4 className="font-semibold text-amber-300 mb-3">Documents essentiels :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li>• Guide DRIEETS sur l'emploi des mineurs</li>
-                      <li>• Livret du travail des enfants (Février 2023)</li>
-                      <li>• Informations sur les conditions de travail</li>
-                      <li>• Obligations du producteur et de l'employeur</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-primary/10 rounded-full">
+                  <FileText className="h-6 w-6 text-primary" />
+                </div>
+                <span className="text-lg">Information Emploi des Mineurs</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Conditions d'emploi, obligations légales et protection sur les tournages.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Guide DRIEETS</li>
+                <li>• Livret du travail enfants</li>
+                <li>• Conditions de travail</li>
+                <li>• Obligations employeur</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           {/* Procédure d'autorisation administrative */}
-          <Collapsible open={openSections.authorization} onOpenChange={() => toggleSection("authorization")}>
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-accent/10 rounded-full">
-                        <Shield className="h-6 w-6 text-accent" />
-                      </div>
-                      <span className="text-xl">Procédure d'Autorisation Administrative</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.authorization ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Démarches et documents nécessaires pour obtenir l'autorisation préalable de la commission enfants du spectacle.
-                  </p>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
-                    <h4 className="font-semibold text-amber-300 mb-3">Étapes clés :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li>• Dépôt de la demande auprès de la DRIEETS</li>
-                      <li>• Délai de traitement : 1 mois (prorogeable)</li>
-                      <li>• Commission départementale consultative</li>
-                      <li>• Décision du préfet</li>
-                      <li>• Possibilité de retrait à tout moment</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-accent/10 rounded-full">
+                  <Shield className="h-6 w-6 text-accent" />
+                </div>
+                <span className="text-lg">Autorisation Administrative</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Démarches pour l'autorisation de la commission enfants du spectacle.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Demande DRIEETS</li>
+                <li>• Délai : 1 mois</li>
+                <li>• Commission consultative</li>
+                <li>• Décision préfet</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           {/* Caisse des dépôts et consignations */}
-          <Collapsible open={openSections.caisse} onOpenChange={() => toggleSection("caisse")}>
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-green-500/10 rounded-full">
-                        <Landmark className="h-6 w-6 text-green-500" />
-                      </div>
-                      <span className="text-xl">Caisse des Dépôts et Consignations</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.caisse ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Protection financière des revenus des mineurs : obligations de versement et gestion des fonds.
-                  </p>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
-                    <h4 className="font-semibold text-amber-300 mb-3">Règles importantes :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li>• Versement obligatoire d'une partie des revenus</li>
-                      <li>• Protection jusqu'à la majorité de l'enfant</li>
-                      <li>• Modalités de versement et de déblocage</li>
-                      <li>• Obligations du producteur</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-green-500/10 rounded-full">
+                  <Landmark className="h-6 w-6 text-green-500" />
+                </div>
+                <span className="text-lg">Caisse des Dépôts</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Protection financière des revenus des mineurs.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Versement obligatoire</li>
+                <li>• Protection jusqu'à majorité</li>
+                <li>• Modalités de déblocage</li>
+                <li>• Obligations producteur</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           {/* Vidéos sur les plateformes de partage */}
-          <Collapsible open={openSections.videos} onOpenChange={() => toggleSection("videos")}>
-            <Card className="border-primary/20 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-blue-500/10 rounded-full">
-                        <Video className="h-6 w-6 text-blue-500" />
-                      </div>
-                      <span className="text-xl">Vidéos sur les Plateformes de Partage</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.videos ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Réglementation spécifique aux contenus vidéos mettant en scène des mineurs sur les plateformes en ligne.
-                  </p>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg">
-                    <h4 className="font-semibold text-amber-300 mb-3">Points de vigilance :</h4>
-                    <ul className="space-y-2 text-slate-200">
-                      <li>• Déclaration obligatoire pour les revenus réguliers</li>
-                      <li>• Protection de l'image et des données personnelles</li>
-                      <li>• Autorisation parentale requise</li>
-                      <li>• Encadrement des heures de tournage</li>
-                      <li>• Droits d'auteur et rémunération</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-blue-500/10 rounded-full">
+                  <Video className="h-6 w-6 text-blue-500" />
+                </div>
+                <span className="text-lg">Plateformes de Partage</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Réglementation vidéos avec mineurs en ligne.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Déclaration obligatoire</li>
+                <li>• Protection image/données</li>
+                <li>• Autorisation parentale</li>
+                <li>• Droits d'auteur</li>
+              </ul>
+            </CardContent>
+          </Card>
 
           {/* Sanctions pénales */}
-          <Collapsible open={openSections.sanctions} onOpenChange={() => toggleSection("sanctions")}>
-            <Card className="border-destructive/30 shadow-lg hover:shadow-xl transition-all">
-              <CollapsibleTrigger className="w-full">
-                <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
-                  <CardTitle className="flex items-center justify-between text-left">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-destructive/10 rounded-full">
-                        <Scale className="h-6 w-6 text-destructive" />
-                      </div>
-                      <span className="text-xl">Sanctions Pénales</span>
-                    </div>
-                    <ChevronDown className={`h-5 w-5 transition-transform ${openSections.sanctions ? 'rotate-180' : ''}`} />
-                  </CardTitle>
-                </CardHeader>
-              </CollapsibleTrigger>
-              <CollapsibleContent>
-                <CardContent className="space-y-4">
-                  <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
-                    <p className="font-semibold text-white text-lg mb-2">
-                      ⚠️ Non-respect de la réglementation
-                    </p>
-                    <p className="text-base text-white">
-                      Le non-respect des règles de protection des mineurs expose à des sanctions pénales sévères.
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-destructive/30 p-6 rounded-lg">
-                    <h4 className="font-semibold text-destructive mb-3">Infractions principales :</h4>
-                    <ul className="space-y-3 text-slate-200">
-                      <li className="border-l-4 border-destructive pl-4">
-                        <strong className="text-destructive">Emploi sans autorisation :</strong> Jusqu'à 2 ans d'emprisonnement et 30 000€ d'amende
-                      </li>
-                      <li className="border-l-4 border-destructive pl-4">
-                        <strong className="text-destructive">Dépassement des durées de travail :</strong> Sanctions pénales et administratives
-                      </li>
-                      <li className="border-l-4 border-destructive pl-4">
-                        <strong className="text-destructive">Absence de responsable enfant :</strong> Suspension immédiate du tournage
-                      </li>
-                      <li className="border-l-4 border-destructive pl-4">
-                        <strong className="text-destructive">Non-versement à la Caisse des Dépôts :</strong> Sanctions financières majorées
-                      </li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </CollapsibleContent>
-            </Card>
-          </Collapsible>
+          <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3">
+                <div className="p-3 bg-destructive/10 rounded-full">
+                  <Scale className="h-6 w-6 text-destructive" />
+                </div>
+                <span className="text-lg">Sanctions Pénales</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <p className="text-sm text-slate-200">
+                Conséquences du non-respect de la réglementation.
+              </p>
+              <ul className="space-y-2 text-sm text-slate-200">
+                <li>• Sans autorisation : 2 ans + 30k€</li>
+                <li>• Dépassement durées</li>
+                <li>• Absence responsable</li>
+                <li>• Non-versement CDC</li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
