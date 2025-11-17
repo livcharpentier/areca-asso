@@ -148,6 +148,9 @@ const MinorsEmploymentPage = () => {
                   <p className="font-semibold text-green-200 mb-2">Scolarité obligatoire :</p>
                   <p className="text-sm">Répétiteur agréé si absence scolaire - Minimum 3h d'enseignement/jour en période scolaire</p>
                 </div>
+              </div>
+            </div>
+                </div>
               </section>
             </TabsContent>
 
