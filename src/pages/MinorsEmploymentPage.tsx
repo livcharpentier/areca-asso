@@ -5,23 +5,56 @@ import CommissionCalendar from "@/components/CommissionCalendar";
 import DrieetsDossier from "@/components/DrieetsDossier";
 import HealthMonitoring from "@/components/HealthMonitoring";
 import ChildSupervisorRole from "@/components/ChildSupervisorRole";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Clock, FileText, Users, Heart, Calendar, Folder } from "lucide-react";
 
 const MinorsEmploymentPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Réglementation des horaires détaillée */}
-      <WorkTimeRegulations />
-      
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
-              Informations Emploi des Mineurs
-            </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed text-center">
+            Réglementation Emploi des Mineurs
+          </h1>
 
-            {/* Conditions d'Emploi des Mineurs */}
+          <Tabs defaultValue="temps-travail" className="w-full">
+            <TabsList className="grid w-full grid-cols-6 mb-8 h-auto bg-muted/50">
+              <TabsTrigger value="temps-travail" className="flex items-center gap-2 py-3">
+                <Clock className="h-4 w-4" />
+                <span className="hidden md:inline">Temps de travail</span>
+              </TabsTrigger>
+              <TabsTrigger value="conditions" className="flex items-center gap-2 py-3">
+                <FileText className="h-4 w-4" />
+                <span className="hidden md:inline">Conditions</span>
+              </TabsTrigger>
+              <TabsTrigger value="responsable" className="flex items-center gap-2 py-3">
+                <Users className="h-4 w-4" />
+                <span className="hidden md:inline">Responsable</span>
+              </TabsTrigger>
+              <TabsTrigger value="medical" className="flex items-center gap-2 py-3">
+                <Heart className="h-4 w-4" />
+                <span className="hidden md:inline">Suivi médical</span>
+              </TabsTrigger>
+              <TabsTrigger value="calendrier" className="flex items-center gap-2 py-3">
+                <Calendar className="h-4 w-4" />
+                <span className="hidden md:inline">Calendrier</span>
+              </TabsTrigger>
+              <TabsTrigger value="dossier" className="flex items-center gap-2 py-3">
+                <Folder className="h-4 w-4" />
+                <span className="hidden md:inline">Dossier</span>
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="temps-travail">
+              <WorkTimeRegulations />
+            </TabsContent>
+
+            <TabsContent value="conditions">
+              <section className="py-8 bg-background">
+                <div className="max-w-5xl mx-auto">
+                  {/* Conditions d'Emploi des Mineurs */}
             <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
               <h3 className="text-2xl font-bold text-orange-300 mb-4">
                 Conditions d'Emploi des Mineurs (17 mai 2024)
@@ -115,27 +148,27 @@ const MinorsEmploymentPage = () => {
                   <p className="font-semibold text-green-200 mb-2">Scolarité obligatoire :</p>
                   <p className="text-sm">Répétiteur agréé si absence scolaire - Minimum 3h d'enseignement/jour en période scolaire</p>
                 </div>
-              </div>
-            </div>
-          </div>
+              </section>
+            </TabsContent>
+
+            <TabsContent value="responsable">
+              <ChildSupervisorRole />
+            </TabsContent>
+
+            <TabsContent value="medical">
+              <HealthMonitoring />
+            </TabsContent>
+
+            <TabsContent value="calendrier">
+              <CommissionCalendar />
+            </TabsContent>
+
+            <TabsContent value="dossier">
+              <DrieetsDossier />
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
-
-      {/* Responsable Enfant */}
-      <ChildSupervisorRole />
-
-      {/* Suivi Médical */}
-      <section className="py-16 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <HealthMonitoring />
-        </div>
-      </section>
-
-      {/* Calendrier des Commissions */}
-      <CommissionCalendar />
-
-      {/* Dossier DRIEETS */}
-      <DrieetsDossier />
       
       <Footer />
     </div>
