@@ -46,7 +46,7 @@ const Navigation = () => {
                   AFCJA
                 </span>
                 <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Coordinateurs Jeunesse Audiovisuel
+                  Responsable Mineurs Audiovisuel
                 </span>
               </div>
             </div>
