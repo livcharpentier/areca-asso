@@ -41,7 +41,7 @@ const Footer = () => {
                   AFCJA
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Coordinateurs Jeunesse
+                  Responsable Mineurs
                 </span>
               </div>
             </Link>
