@@ -43,10 +43,10 @@ const Navigation = () => {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-3xl font-lucky text-accent tracking-tight">
-                  AFCJA
+                  AFRMA
                 </span>
                 <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Coordinateurs Jeunesse Audiovisuel
+                  Responsables Mineurs Audiovisuel
                 </span>
               </div>
             </div>

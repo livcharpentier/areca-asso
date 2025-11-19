@@ -154,9 +154,9 @@ const Auth = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-primary/20 p-4">
       <Card className="w-full max-w-md border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
         <CardHeader>
-          <CardTitle className="text-3xl font-bangers text-amber-300 tracking-wide text-center">AFCJA</CardTitle>
+          <CardTitle className="text-3xl font-bangers text-amber-300 tracking-wide text-center">AFRMA</CardTitle>
           <CardDescription className="text-slate-200 text-center">
-            Coordinateurs Jeunesse Audiovisuel
+            Responsables Mineurs Audiovisuel
           </CardDescription>
         </CardHeader>
         <CardContent>

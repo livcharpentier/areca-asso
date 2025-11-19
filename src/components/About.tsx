@@ -14,7 +14,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Présentation</h3>
                 <p className="text-slate-200 leading-relaxed">
-                  L'AFCJA rassemble les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel. 
+                  L'AFRMA rassemble les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel. 
                   Notre objectif est de garantir les meilleures conditions de travail pour les enfants et les professionnels qui les accompagnent.
                 </p>
               </CardContent>
@@ -26,7 +26,7 @@ const About = () => {
                 <ul className="space-y-2 text-slate-200">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Valoriser le métier de coordinateur jeunesse</span>
+                    <span>Valoriser le métier de responsable mineurs</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>

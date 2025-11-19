@@ -17,12 +17,12 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bangers text-white mb-4 leading-tight tracking-wider drop-shadow-2xl">
             Association Française des
             <span className="block bg-gradient-to-r from-accent via-blue-sky to-gold bg-clip-text text-transparent mt-2 text-4xl md:text-6xl lg:text-7xl drop-shadow-2xl">
-              Coordinateurs Jeunesse
+              Responsables Mineurs
             </span>
             <span className="block text-3xl md:text-5xl lg:text-6xl">Audiovisuel</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed mb-6 drop-shadow-lg font-medium">
-            Fédérer les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel
+            Fédérer les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel
           </p>
           <div className="flex flex-col sm:flex-row gap-2">
             <button className="px-4 md:px-5 py-1.5 md:py-2 bg-accent hover:bg-blue-vibrant text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 text-xs">
