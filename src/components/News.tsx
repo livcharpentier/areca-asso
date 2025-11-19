@@ -8,12 +8,12 @@ const News = () => {
       date: "24.10.2025",
       category: "Actualités Générales",
       title: "Nouvelles grilles salariales 2025",
-      excerpt: "Publication des nouveaux barèmes pour les responsables mineurs dans les conventions collectives cinéma et audiovisuel...",
+      excerpt: "Publication des nouveaux barèmes pour les coordinateurs jeunesse dans les conventions collectives cinéma et audiovisuel...",
     },
     {
       date: "12.10.2025",
-      category: "Vie de l'AFRMA",
-      title: "L'AFRMA accueille 11 nouveaux membres",
+      category: "Vie de l'AFCJA",
+      title: "L'AFCJA accueille 11 nouveaux membres",
       excerpt: "Nous sommes heureux d'accueillir de nouveaux professionnels au sein de notre association...",
     },
     {

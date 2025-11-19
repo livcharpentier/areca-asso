@@ -58,7 +58,7 @@ const HealthMonitoring = () => {
         <CardContent className="space-y-6">
           <div className="space-y-4">
             <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-              <h3 className="font-semibold text-xl text-amber-300 mb-5 flex items-center gap-2">
+              <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-accent" />
                 Médecin Thalie Santé obligatoire pour :
               </h3>
@@ -70,19 +70,19 @@ const HealthMonitoring = () => {
             </div>
 
             <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-              <h3 className="font-semibold text-xl text-amber-300 mb-5 flex items-center gap-2">
+              <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-accent" />
                 Médecin généraliste autorisé pour :
               </h3>
               <p className="text-slate-200 mb-2">
                 Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
               </p>
-              <div className="bg-amber-500/20 border-2 border-amber-400 p-4 rounded-lg mt-3">
+              <div className="bg-destructive/20 border-2 border-destructive p-4 rounded-lg mt-3">
                 <div className="flex items-start gap-2">
-                  <AlertCircle className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-medium text-white">
-                      <strong className="text-amber-300">Important :</strong> Le médecin généraliste doit être en exercice. 
+                    <p className="text-sm font-medium text-foreground">
+                      <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
                       Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
                     </p>
                   </div>
@@ -92,11 +92,11 @@ const HealthMonitoring = () => {
           </div>
 
           <div className="space-y-4 pt-4 border-t border-accent/20">
-            <h3 className="font-semibold text-xl text-amber-300 mb-5">Procédures selon la localisation</h3>
+            <h3 className="font-semibold text-lg text-amber-300">Procédures selon la localisation</h3>
             
             <div className="space-y-3">
               <div className="bg-blue-950/30 p-4 rounded-lg">
-                <h4 className="font-semibold text-lg text-amber-200 mb-4">Enfant en région parisienne (Île-de-France)</h4>
+                <h4 className="font-semibold text-amber-200 mb-2">Enfant en région parisienne (Île-de-France)</h4>
                 <ul className="space-y-2 text-slate-200 text-sm ml-4">
                   <li>• Thalie Santé contacte directement les parents pour prendre rendez-vous</li>
                   <li>• Consultation en <strong>physique</strong> ou en <strong>téléconsultation</strong></li>
@@ -106,7 +106,7 @@ const HealthMonitoring = () => {
               </div>
 
               <div className="bg-blue-950/30 p-4 rounded-lg">
-                <h4 className="font-semibold text-lg text-amber-200 mb-4">Enfant en région</h4>
+                <h4 className="font-semibold text-amber-200 mb-2">Enfant en région</h4>
                 <ul className="space-y-2 text-slate-200 text-sm ml-4">
                   <li>• Thalie Santé charge un <strong>bon de prise en charge</strong> sur la plateforme</li>
                   <li>• Ce bon permet de prendre rendez-vous dans un <strong>centre agréé par Thalie Santé</strong> en région</li>
@@ -116,7 +116,7 @@ const HealthMonitoring = () => {
               </div>
 
               <div className="bg-blue-950/30 p-4 rounded-lg">
-                <h4 className="font-semibold text-lg text-amber-200 mb-4">Examen sur pièce</h4>
+                <h4 className="font-semibold text-amber-200 mb-2">Examen sur pièce</h4>
                 <p className="text-slate-200 text-sm ml-4">
                   Dans certains cas, Thalie Santé peut réaliser un examen sur pièce (analyse des documents sans consultation). 
                   Le certificat d'aptitude/inaptitude est alors chargé directement sur la plateforme.
@@ -150,7 +150,7 @@ const HealthMonitoring = () => {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-            <h3 className="font-semibold text-xl text-amber-300 mb-5 flex items-center gap-2">
+            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-accent" />
               Visites médicales obligatoires
             </h3>
@@ -165,19 +165,19 @@ const HealthMonitoring = () => {
             </ul>
           </div>
 
-          <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
-            <h3 className="font-semibold text-xl text-white mb-4 flex items-center gap-2">
-              <AlertCircle className="h-6 w-6 text-amber-400" />
+          <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
+            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+              <AlertCircle className="h-5 w-5 text-destructive" />
               ⚠️ Visites chez un médecin spécialiste
             </h3>
-            <p className="text-white text-base">
+            <p className="text-foreground/90">
               Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
               ne sont <strong>pas prises en charge par la production</strong>.
             </p>
           </div>
 
           <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-            <h3 className="font-semibold text-xl text-amber-300 mb-5 flex items-center gap-2">
+            <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-accent" />
               Cas particulier : Figurants
             </h3>
@@ -213,7 +213,7 @@ const HealthMonitoring = () => {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">1</div>
               <div className="text-slate-200">
-                <p className="font-semibold text-lg text-amber-300 mb-2">Constitution du dossier</p>
+                <p className="font-semibold text-amber-300">Constitution du dossier</p>
                 <p className="text-sm">L'employeur constitue un dossier de demande d'autorisation pour l'enfant</p>
               </div>
             </div>
@@ -221,7 +221,7 @@ const HealthMonitoring = () => {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">2</div>
               <div className="text-slate-200">
-                <p className="font-semibold text-lg text-amber-300 mb-2">Visite médicale obligatoire</p>
+                <p className="font-semibold text-amber-300">Visite médicale obligatoire</p>
                 <p className="text-sm">
                   <strong>En Île-de-France :</strong> Médecin du travail (Thalie Santé)<br/>
                   <strong>En région :</strong> Médecin généraliste ou pédiatre
@@ -232,7 +232,7 @@ const HealthMonitoring = () => {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">3</div>
               <div className="text-slate-200">
-                <p className="font-semibold text-lg text-amber-300 mb-2">Avis médical</p>
+                <p className="font-semibold text-amber-300">Avis médical</p>
                 <p className="text-sm">Le médecin émet un avis : apte, apte avec restriction, ou inapte</p>
               </div>
             </div>
@@ -240,7 +240,7 @@ const HealthMonitoring = () => {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">4</div>
               <div className="text-slate-200">
-                <p className="font-semibold text-lg text-amber-300 mb-2">Commission départementale</p>
+                <p className="font-semibold text-amber-300">Commission départementale</p>
                 <p className="text-sm">L'avis médical est transmis à la Commission des Enfants du Spectacle qui examine le dossier complet</p>
               </div>
             </div>
@@ -248,18 +248,18 @@ const HealthMonitoring = () => {
             <div className="flex gap-3">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">5</div>
               <div className="text-slate-200">
-                <p className="font-semibold text-lg text-amber-300 mb-2">Autorisation préfectorale</p>
+                <p className="font-semibold text-amber-300">Autorisation préfectorale</p>
                 <p className="text-sm">Le Préfet délivre l'autorisation individuelle suite à l'avis conforme de la commission</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+          <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
             <div className="flex items-start gap-3">
-              <AlertCircle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+              <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-base text-white">
-                  <strong className="text-amber-300">Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
+                <p className="text-sm text-foreground/90">
+                  <strong>Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
                   mais le Préfet suite à l'avis de la commission. L'autorisation est valable uniquement pour 
                   la prestation spécifique demandée.
                 </p>
@@ -282,7 +282,7 @@ const HealthMonitoring = () => {
         </CardHeader>
         <CardContent className="space-y-6">
           <div>
-            <h3 className="font-semibold text-xl mb-5 text-amber-300">Avant la visite</h3>
+            <h3 className="font-semibold text-lg mb-3 text-amber-300">Avant la visite</h3>
             <p className="text-slate-200 mb-3">
               L'équipe du Pôle Enfants de Thalie Santé analyse en détail :
             </p>
@@ -307,7 +307,7 @@ const HealthMonitoring = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-xl mb-5 text-amber-300">Pendant la visite</h3>
+            <h3 className="font-semibold text-lg mb-3 text-amber-300">Pendant la visite</h3>
             <p className="text-slate-200 mb-3">
               Le médecin du travail évalue les capacités physiques et psychiques de l'enfant :
             </p>
@@ -385,7 +385,7 @@ const HealthMonitoring = () => {
         <CardContent>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <h4 className="font-semibold text-lg text-amber-300 mb-4">Risques physiques</h4>
+              <h4 className="font-semibold text-amber-300">Risques physiques</h4>
               <ul className="space-y-1 text-slate-200 text-sm">
                 <li>• Troubles musculo-squelettiques</li>
                 <li>• Risques auditifs (exposition au bruit)</li>
@@ -394,7 +394,7 @@ const HealthMonitoring = () => {
               </ul>
             </div>
             <div className="space-y-2">
-              <h4 className="font-semibold text-lg text-amber-300 mb-4">Risques psychosociaux</h4>
+              <h4 className="font-semibold text-amber-300">Risques psychosociaux</h4>
               <ul className="space-y-1 text-slate-200 text-sm">
                 <li>• Stress et anxiété</li>
                 <li>• Pression de la performance</li>
@@ -420,7 +420,7 @@ const HealthMonitoring = () => {
         <CardContent className="space-y-4">
           <div className="space-y-3">
             <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-              <h4 className="font-semibold text-lg text-amber-300 mb-4">Âge minimum d'admission</h4>
+              <h4 className="font-semibold text-amber-300 mb-2">Âge minimum d'admission</h4>
               <ul className="space-y-2 text-slate-200 text-sm">
                 <li>• <strong>Spectacle et cinéma :</strong> 3 mois minimum</li>
                 <li>• <strong>Théâtre :</strong> 9 ans conseillés par le Ministère de l'Éducation Nationale</li>
@@ -428,12 +428,12 @@ const HealthMonitoring = () => {
               </ul>
             </div>
 
-            <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
-              <h4 className="font-semibold text-xl text-white mb-4 flex items-center gap-2">
-                <AlertCircle className="h-6 w-6 text-amber-400" />
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                <AlertCircle className="h-5 w-5 text-destructive" />
                 ⚠️ Interdictions formelles
               </h4>
-              <ul className="space-y-3 text-white text-base">
+              <ul className="space-y-2 text-foreground/90 text-sm">
                 <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
                 <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
                 <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
@@ -442,7 +442,7 @@ const HealthMonitoring = () => {
             </div>
 
             <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-              <h4 className="font-semibold text-lg text-amber-300 mb-4">Points de vigilance médicale</h4>
+              <h4 className="font-semibold text-amber-300 mb-2">Points de vigilance médicale</h4>
               <p className="text-slate-200 text-sm mb-2">
                 L'examen médical doit particulièrement vérifier :
               </p>
@@ -478,7 +478,7 @@ const HealthMonitoring = () => {
           </p>
           
           <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-            <h4 className="font-semibold text-lg text-amber-300 mb-4">Contenu du référentiel</h4>
+            <h4 className="font-semibold text-amber-300 mb-2">Contenu du référentiel</h4>
             <ul className="space-y-1 text-slate-200 text-sm">
               <li>• Dispositions législatives et réglementaires</li>
               <li>• Grille d'analyse des contraintes physiques et psychiques</li>

@@ -54,14 +54,14 @@ const WorkTimeRegulations = () => {
           </CardHeader>
           <CardContent className="space-y-6">
             {/* Alerte réglementaire */}
-            <div className="bg-amber-500/20 border-2 border-amber-400 p-5 rounded-lg">
+            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
               <div className="flex items-start gap-3">
-                <AlertCircle className="h-6 w-6 text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-white text-lg mb-1">
+                  <p className="font-semibold text-foreground text-lg mb-1">
                     ⚠️ Respect strict obligatoire
                   </p>
-                  <p className="text-base text-white">
+                  <p className="text-sm text-foreground/90">
                     Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
                   </p>
                 </div>
@@ -120,85 +120,13 @@ const WorkTimeRegulations = () => {
               </div>
             </div>
 
-            {/* Section Jours fériés */}
-            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-xl text-amber-300 mb-4 flex items-center gap-2">
-                <Clock className="h-5 w-5 text-accent" />
-                Travail les jours fériés
-              </h4>
-              <div className="space-y-3 text-base">
-                <div className="flex items-start gap-2">
-                  <span className="text-accent font-bold">✓</span>
-                  <p className="text-slate-200">
-                    <strong>Autorisé :</strong> Le travail des enfants est autorisé les jours fériés dans le secteur du spectacle
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-amber-400 font-bold">⚠️</span>
-                  <p className="text-slate-200">
-                    <strong>Conditions :</strong> Les durées maximales de travail selon l'âge restent applicables, même les jours fériés
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Section Horaires de début de journée */}
-            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-xl text-amber-300 mb-4 flex items-center gap-2">
-                <Clock className="h-5 w-5 text-accent" />
-                Horaires de début de journée
-              </h4>
-              <div className="space-y-3 text-base">
-                <div className="flex items-start gap-2">
-                  <span className="text-accent font-bold">🌅</span>
-                  <p className="text-slate-200">
-                    <strong>Début au plus tôt :</strong> La journée de travail ne peut débuter avant <strong>6h du matin</strong> pour les enfants de moins de 16 ans
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-amber-400 font-bold">⚠️</span>
-                  <p className="text-slate-200">
-                    <strong>Dérogation exceptionnelle :</strong> Des dérogations peuvent être accordées par l'inspecteur du travail dans des cas particuliers, notamment pour les tournages en extérieur
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Section Durée maximale hebdomadaire */}
-            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-xl text-amber-300 mb-4 flex items-center gap-2">
-                <Clock className="h-5 w-5 text-accent" />
-                Durée maximale hebdomadaire et annuelle
-              </h4>
-              <div className="space-y-3 text-base">
-                <div className="flex items-start gap-2">
-                  <span className="text-accent font-bold">📅</span>
-                  <p className="text-slate-200">
-                    <strong>Limite hebdomadaire :</strong> Un enfant ne peut travailler plus de <strong>6 jours par semaine</strong>. Un jour de repos hebdomadaire est obligatoire
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-accent font-bold">📊</span>
-                  <p className="text-slate-200">
-                    <strong>Limite annuelle :</strong> La durée totale de travail ne peut excéder <strong>80 jours par an</strong> pour les enfants scolarisés
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-amber-400 font-bold">⚠️</span>
-                  <p className="text-slate-200">
-                    <strong>Attention :</strong> Ces limites s'appliquent à l'ensemble des activités artistiques de l'enfant (tous projets confondus)
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Section heures de nuit */}
             <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-xl text-amber-300 mb-4 flex items-center gap-2">
-                <AlertCircle className="h-5 w-5 text-accent" />
+              <h4 className="font-semibold text-accent mb-4 flex items-center gap-2">
+                <AlertCircle className="h-5 w-5" />
                 Travail de nuit (moins de 16 ans)
               </h4>
-              <div className="space-y-3 text-base">
+              <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-2">
                   <span className="text-destructive font-bold">⛔</span>
                   <p className="text-slate-200">
