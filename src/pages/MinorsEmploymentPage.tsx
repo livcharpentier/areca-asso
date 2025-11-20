@@ -1,7 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { FileText, Landmark, Video, AlertTriangle } from "lucide-react";
 
 const MinorsEmploymentPage = () => {
   return (
