@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Landmark, Video, AlertTriangle } from "lucide-react";
 
 const MinorsEmploymentPage = () => {
   return (
@@ -16,38 +15,11 @@ const MinorsEmploymentPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
-              Réglementations et Informations
+              Informations Emploi des Mineurs
             </h1>
 
-            <Tabs defaultValue="conditions" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 gap-2 h-auto bg-muted/50 p-2">
-                <TabsTrigger value="conditions" className="flex items-center gap-2 py-3">
-                  <FileText className="h-4 w-4" />
-                  <span className="hidden sm:inline">Conditions d'emploi</span>
-                  <span className="sm:hidden">Emploi</span>
-                </TabsTrigger>
-                <TabsTrigger value="caisse" className="flex items-center gap-2 py-3">
-                  <Landmark className="h-4 w-4" />
-                  <span className="hidden sm:inline">Caisse des Dépôts</span>
-                  <span className="sm:hidden">CDC</span>
-                </TabsTrigger>
-                <TabsTrigger value="videos" className="flex items-center gap-2 py-3">
-                  <Video className="h-4 w-4" />
-                  <span className="hidden sm:inline">Vidéos Plateformes</span>
-                  <span className="sm:hidden">Vidéos</span>
-                </TabsTrigger>
-                <TabsTrigger value="sanctions" className="flex items-center gap-2 py-3">
-                  <AlertTriangle className="h-4 w-4" />
-                  <span className="hidden sm:inline">Sanctions Pénales</span>
-                  <span className="sm:hidden">Sanctions</span>
-                </TabsTrigger>
-              </TabsList>
-
-              {/* Onglet 1: Conditions d'Emploi des Mineurs */}
-              <TabsContent value="conditions" className="mt-6">
-                <div className="space-y-6">
-                  {/* Conditions d'Emploi des Mineurs */}
-                  <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
+            {/* Conditions d'Emploi des Mineurs */}
+            <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
               <h3 className="text-2xl font-bold text-orange-300 mb-4">
                 Conditions d'Emploi des Mineurs (17 mai 2024)
               </h3>
