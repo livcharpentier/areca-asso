@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 h-full relative z-10">
         <div className="flex flex-col justify-end h-full max-w-2xl pb-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bangers text-white mb-4 leading-tight tracking-wider drop-shadow-2xl">
-            Association Française des
+            Association des
             <span className="block bg-gradient-to-r from-accent via-blue-sky to-gold bg-clip-text text-transparent mt-2 text-4xl md:text-6xl lg:text-7xl drop-shadow-2xl">
               Responsable Mineurs
             </span>
