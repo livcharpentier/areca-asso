@@ -46,7 +46,70 @@ const MinorsEmploymentPage = () => {
               </TabsList>
 
               <TabsContent value="temps-travail">
-                <WorkTimeRegulations />
+                <div className="space-y-6">
+                  <WorkTimeRegulations />
+                  
+                  {/* Section Enfants Mannequins */}
+                  <div className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 p-5 rounded-lg border-2 border-pink-400/40">
+                    <h4 className="text-lg font-bold text-pink-200 mb-3">
+                      Enfants Mannequins - Durées spécifiques
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-pink-200 mb-2">Moins de 6 ans :</p>
+                        <div className="text-sm space-y-1 ml-3">
+                          <p><strong>Durée journalière maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>&lt; 3 ans : 1h/jour (max 30 min en continu)</li>
+                            <li>3-6 ans : 2h/jour (max 1h en continu)</li>
+                          </ul>
+                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>&lt; 6 mois : 1h/semaine</li>
+                            <li>6 mois - 3 ans : 2h/semaine</li>
+                            <li>3-6 ans : 3h/semaine</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - PÉRIODE SCOLAIRE :</p>
+                        <div className="text-sm space-y-1 ml-3">
+                          <p className="text-yellow-300">Uniquement jours/demi-journées de repos (sauf dimanche)</p>
+                          <p><strong>Durée journalière maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>6-11 ans : 3h/jour (max 1h30 en continu) - 1h30 en demi-journée</li>
+                            <li>12-16 ans : 4h/jour (max 2h en continu) - 2h en demi-journée</li>
+                          </ul>
+                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>6-11 ans : 4h30/semaine</li>
+                            <li>12-16 ans : 6h/semaine</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - VACANCES SCOLAIRES :</p>
+                        <div className="text-sm space-y-1 ml-3">
+                          <p className="text-yellow-300">Maximum 50% de la durée des vacances</p>
+                          <p><strong>Durée journalière maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>6-11 ans : 6h/jour (max 2h en continu)</li>
+                            <li>12-16 ans : 7h/jour (max 3h en continu)</li>
+                          </ul>
+                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>6-11 ans : 12h/semaine</li>
+                            <li>12-14 ans : 15h/semaine</li>
+                            <li>14-16 ans : 18h/semaine</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </TabsContent>
 
               <TabsContent value="conditions">
@@ -236,66 +299,6 @@ const MinorsEmploymentPage = () => {
 
               <TabsContent value="procedures">
                 <div className="space-y-6">
-                  <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-pink-400/60 rounded-lg p-6 backdrop-blur">
-                    <h3 className="text-2xl font-bold text-pink-300 mb-4">
-                      Enfants Mannequins - Durées spécifiques
-                    </h3>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">Moins de 6 ans :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>&lt; 3 ans : 1h/jour (max 30 min en continu)</li>
-                            <li>3-6 ans : 2h/jour (max 1h en continu)</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>&lt; 6 mois : 1h/semaine</li>
-                            <li>6 mois - 3 ans : 2h/semaine</li>
-                            <li>3-6 ans : 3h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - PÉRIODE SCOLAIRE :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p className="text-yellow-300">Uniquement jours/demi-journées de repos (sauf dimanche)</p>
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 3h/jour (max 1h30 en continu) - 1h30 en demi-journée</li>
-                            <li>12-16 ans : 4h/jour (max 2h en continu) - 2h en demi-journée</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 4h30/semaine</li>
-                            <li>12-16 ans : 6h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - VACANCES SCOLAIRES :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p className="text-yellow-300">Maximum 50% de la durée des vacances</p>
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 6h/jour (max 2h en continu)</li>
-                            <li>12-16 ans : 7h/jour (max 3h en continu)</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 12h/semaine</li>
-                            <li>12-14 ans : 15h/semaine</li>
-                            <li>14-16 ans : 18h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                   <div className="bg-gradient-to-br from-indigo-900/30 to-blue-900/30 p-5 rounded-lg border-2 border-indigo-400/40">
                     <h4 className="text-lg font-bold text-indigo-200 mb-3 flex items-center gap-2">
                       Procédure d'Autorisation Administrative (Préfecture)
