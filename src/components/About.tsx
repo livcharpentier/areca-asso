@@ -14,7 +14,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Présentation</h3>
                 <p className="text-slate-200 leading-relaxed">
-                  L'AFCJA rassemble les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel. 
+                  L'ARMA rassemble les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel. 
                   Notre objectif est de garantir les meilleures conditions de travail pour les enfants et les professionnels qui les accompagnent.
                 </p>
               </CardContent>
