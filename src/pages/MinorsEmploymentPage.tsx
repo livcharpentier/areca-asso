@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Clock, AlertCircle, Scale } from "lucide-react";
+import { FileText, Clock, AlertCircle, Scale, AlertTriangle, BookOpen } from "lucide-react";
 
 const MinorsEmploymentPage = () => {
   return (
@@ -432,9 +432,11 @@ const MinorsEmploymentPage = () => {
 
               <TabsContent value="sanctions">
                 <div className="space-y-6">
+                  {/* Section Sanctions */}
                   <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-                    <h3 className="text-2xl font-bold text-red-300 mb-4">
-                      Sanctions Pénales et Documentation
+                    <h3 className="text-2xl font-bold text-red-300 mb-4 flex items-center gap-2">
+                      <AlertTriangle className="h-6 w-6" />
+                      Sanctions Pénales
                     </h3>
                     
                     <div className="space-y-4 text-slate-100">
@@ -463,33 +465,52 @@ const MinorsEmploymentPage = () => {
                         <p className="font-semibold text-blue-200">🔄 Travaux en cours :</p>
                         <p className="text-sm mt-1">Les partenaires sociaux poursuivent leurs travaux pour améliorer l'organisation des castings et du travail des enfants, afin de sécuriser l'ensemble des parties prenantes : enfants, responsables légaux, personnels d'encadrement et employeurs.</p>
                       </div>
+                    </div>
+                  </div>
 
-                      <div className="mt-4 pt-4 border-t border-blue-400/30 space-y-2">
-                        <button
-                          onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
-                          className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
-                        >
-                          Consulter le document complet dans la Convention Collective
-                        </button>
-                        <button
-                          onClick={() => window.open('/informations_emploi_mineurs_spectacle_drieets.pdf', '_blank')}
-                          className="w-full bg-green-600/20 hover:bg-green-600/30 text-green-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
-                        >
-                          Guide officiel DRIEETS - Informations à savoir sur l'emploi des mineurs
-                        </button>
-                        <button
-                          onClick={() => window.open('/duree_travail_enfants_spectacle_drieets.pdf', '_blank')}
-                          className="w-full bg-purple-600/20 hover:bg-purple-600/30 text-purple-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
-                        >
-                          Guide DRIEETS - Durée du travail des enfants dans le spectacle
-                        </button>
-                        <button
-                          onClick={() => window.open('/livret_travail_des_enfants_080223.pdf', '_blank')}
-                          className="w-full bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
-                        >
-                          Livret complet Ministère du Travail - L'emploi des enfants dans le spectacle
-                        </button>
-                      </div>
+                  {/* Section Documentation */}
+                  <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-blue-400/60 rounded-lg p-6 backdrop-blur">
+                    <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
+                      <BookOpen className="h-6 w-6" />
+                      Documentation Officielle
+                    </h3>
+                    
+                    <div className="space-y-3">
+                      <p className="text-slate-200 mb-4">
+                        Accédez aux documents officiels et guides pratiques pour l'emploi des mineurs dans le spectacle
+                      </p>
+                      
+                      <button
+                        onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                        className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-5 w-5" />
+                        Convention Collective - Document complet
+                      </button>
+                      
+                      <button
+                        onClick={() => window.open('/informations_emploi_mineurs_spectacle_drieets.pdf', '_blank')}
+                        className="w-full bg-green-600/20 hover:bg-green-600/30 text-green-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-5 w-5" />
+                        Guide DRIEETS - Informations emploi des mineurs
+                      </button>
+                      
+                      <button
+                        onClick={() => window.open('/duree_travail_enfants_spectacle_drieets.pdf', '_blank')}
+                        className="w-full bg-purple-600/20 hover:bg-purple-600/30 text-purple-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-5 w-5" />
+                        Guide DRIEETS - Durée du travail
+                      </button>
+                      
+                      <button
+                        onClick={() => window.open('/livret_travail_des_enfants_080223.pdf', '_blank')}
+                        className="w-full bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                      >
+                        <FileText className="h-5 w-5" />
+                        Livret Ministère du Travail - Emploi des enfants
+                      </button>
                     </div>
                   </div>
                 </div>
