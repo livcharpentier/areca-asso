@@ -21,6 +21,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: "MEMBRES", path: "/members" },
+    { label: "COMPTE RENDU JOURNALIER", path: "/calendrier?tab=compte-rendu" },
     { label: "RÉGLEMENTATIONS INFORMATIONS", path: "/minors-employment" },
     { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "VHSS", path: "/vhss" },
