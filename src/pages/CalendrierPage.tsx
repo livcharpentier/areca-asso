@@ -9,8 +9,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Calendar, Clock, BookOpen, Heart, Clipboard } from "lucide-react";
 import DailyReport from "@/components/DailyReport";
+import { useSearchParams } from "react-router-dom";
 
 const CalendrierPage = () => {
+  const [searchParams] = useSearchParams();
+  const defaultTab = searchParams.get("tab") || "calendrier";
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -32,7 +35,7 @@ const CalendrierPage = () => {
       {/* Main Content avec Tabs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="calendrier" className="w-full">
+          <Tabs defaultValue={defaultTab} className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
               <TabsTrigger value="calendrier" className="gap-2">
                 <Calendar className="h-4 w-4" />
