@@ -15,6 +15,7 @@ import FormationsPage from "./pages/FormationsPage";
 import NewsPage from "./pages/NewsPage";
 import ContactPage from "./pages/ContactPage";
 import CalendrierPage from "./pages/CalendrierPage";
+import CompteRenduPage from "./pages/CompteRenduPage";
 import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/documents" element={<DocumentsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/calendrier" element={<CalendrierPage />} />
+            <Route path="/compte-rendu" element={<CompteRenduPage />} />
             <Route path="/auth" element={<Auth />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
