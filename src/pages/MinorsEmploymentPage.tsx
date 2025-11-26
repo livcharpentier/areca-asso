@@ -307,36 +307,38 @@ const MinorsEmploymentPage = () => {
                   <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
                     <h4 className="text-lg font-bold text-emerald-200 mb-3 flex items-center gap-2">
                       <Landmark className="h-5 w-5" />
-                      Caisse des Dépôts et Consignations
+                      Caisse des Dépôts et Consignations - Mission d'intérêt général
                     </h4>
                     
                     <div className="space-y-4 text-slate-100">
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">Mission d'intérêt général</p>
+                        <p className="font-semibold text-emerald-200 mb-2">Rôle de la Caisse des Dépôts</p>
                         <div className="text-sm space-y-2">
-                          <p>La Caisse des Dépôts a pour mission de <strong>garantir la conservation des rémunérations des enfants</strong> jusqu'à leur majorité.</p>
-                          <p className="text-emerald-300">Protection identique pour les enfants du spectacle, mannequins et influenceurs (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
+                          <p>La Caisse des Dépôts est <strong>garante de la conservation des rémunérations des mineurs</strong> jusqu'à leur majorité (18 ans).</p>
+                          <p>Les versements se font sur un <strong>compte au nom de l'enfant</strong>. Les représentants légaux ne peuvent en aucun cas le créditer ou le débiter.</p>
+                          <p className="text-emerald-300">À noter : si l'enfant a plus de 16 ans, sa rémunération lui est directement versée par son employeur.</p>
                         </div>
                       </div>
 
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">💰 Répartition de la rémunération :</p>
+                        <p className="font-semibold text-emerald-200 mb-2">💰 Répartition de la rémunération</p>
                         <div className="text-sm space-y-2">
                           <div className="flex items-center gap-3">
                             <span className="bg-emerald-500 text-white font-bold px-3 py-1 rounded">90%</span>
-                            <p>Versés à la Caisse des Dépôts (pécule jusqu'à la majorité)</p>
+                            <p>Versés à la Caisse des Dépôts (pécule conservé jusqu'à la majorité)</p>
                           </div>
                           <div className="flex items-center gap-3">
                             <span className="bg-amber-500 text-white font-bold px-3 py-1 rounded">10%</span>
                             <p>À disposition des représentants légaux</p>
                           </div>
+                          <p className="text-yellow-300 text-xs mt-2">Pour ESM : la part est fixée par décision de la Commission DREETS</p>
                         </div>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">Gratuit</p>
-                          <p className="text-xs text-slate-300">Aucun frais de dépôt</p>
+                          <p className="text-xs text-slate-300">Aucun frais de dépôt ni gestion</p>
                         </div>
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">2,76%</p>
@@ -345,6 +347,14 @@ const MinorsEmploymentPage = () => {
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">30 ans</p>
                           <p className="text-xs text-slate-300">Conservation après majorité</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-amber-900/30 p-3 rounded border border-amber-400/40">
+                        <p className="font-semibold text-amber-200 mb-2">📅 Prescription applicable</p>
+                        <div className="text-sm">
+                          <p>À la majorité, la Caisse des Dépôts adresse un courrier recommandé précisant les modalités pour récupérer le pécule.</p>
+                          <p className="mt-1">Sans réclamation : fonds conservés <strong>30 ans</strong> (non rémunérés après majorité), puis acquis à l'État.</p>
                         </div>
                       </div>
                     </div>
@@ -360,36 +370,71 @@ const MinorsEmploymentPage = () => {
                       <div className="bg-black/30 p-3 rounded">
                         <p className="font-semibold text-blue-200 mb-2">Qui est concerné ?</p>
                         <div className="text-sm">
+                          <p className="mb-2">Enfants de moins de 16 ans employés pour :</p>
                           <ul className="ml-4 list-disc space-y-1">
-                            <li>Enfants de moins de 16 ans employés dans le <strong>spectacle vivant</strong></li>
-                            <li>Enfants employés dans le <strong>cinéma, audiovisuel, publicité</strong></li>
-                            <li>Enfants exerçant une activité de <strong>mannequinat</strong></li>
+                            <li><strong>Défilés</strong> et <strong>photos de mode</strong></li>
+                            <li><strong>Tournages</strong> (cinéma, télévision, publicité)</li>
+                            <li><strong>Shows</strong> et spectacles vivants</li>
+                            <li>Activités de <strong>mannequinat</strong></li>
                           </ul>
                         </div>
                       </div>
 
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-blue-200 mb-2">📋 Procédure de dépôt (Employeur) :</p>
+                        <p className="font-semibold text-blue-200 mb-2">Qui doit déposer ?</p>
+                        <div className="text-sm">
+                          <p>Seules les <strong>entreprises de spectacle</strong> et <strong>agences de mannequins</strong> employant l'enfant sont autorisées à effectuer les versements.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-blue-200 mb-2">📋 Procédure de dépôt en ligne :</p>
                         <div className="text-sm space-y-1">
                           <ol className="ml-4 list-decimal space-y-1">
                             <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
-                            <li>Sélectionner <strong>"Spectacle / Mannequinat"</strong> dans le type d'activité</li>
-                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois)</li>
-                            <li>Saisir les informations de l'enfant et le montant</li>
-                            <li>Effectuer le virement avec le numéro de demande</li>
+                            <li>Choisir <strong>"Société de production"</strong> ou <strong>"Agence de mannequinat"</strong> dans le type d'activité</li>
+                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou <strong>avis SIRENE</strong> (associations)</li>
+                            <li>Saisir la demande de dépôt avec les informations de l'enfant</li>
+                            <li>Récupérer l'accusé de réception</li>
+                            <li>Effectuer le virement <strong>en indiquant le n° de demande</strong></li>
+                            <li>Recevoir le récépissé de dépôt une fois validé</li>
                           </ol>
                         </div>
                       </div>
 
-                      <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
-                        <a 
-                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-blue-300 hover:text-blue-100 underline text-sm"
-                        >
-                          Accéder au portail ESM de la Caisse des Dépôts →
-                        </a>
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-blue-200 mb-2">📬 Procédure par voie postale (si impossible en ligne) :</p>
+                        <div className="text-sm">
+                          <p className="mb-2">Adresse : <em>Caisse des Dépôts - Enfants du spectacle - 15 quai Anatole France 75356 Paris 07 SP</em></p>
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>Déclaration de versement complétée et signée</li>
+                            <li><strong>Agences mannequins :</strong> Fiche d'identification du revenu</li>
+                            <li><strong>Sociétés de production :</strong> Autorisation individuelle préalable (fixe le % versé à la CDC)</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
+                          <a 
+                            href="https://consignations.caissedesdepots.fr/entreprise/activit%C3%A9-professionnelle-enfants-spectacle-mannequinat-esm" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 underline text-sm"
+                          >
+                            Accéder au portail ESM →
+                          </a>
+                        </div>
+                        <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
+                          <a 
+                            href="https://consignations.caissedesdepots.fr/sites/default/files/2024-04/Guide_operatoire_Parcours_d%C3%A9p%C3%B4t%20ESM_19042024.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-300 hover:text-blue-100 underline text-sm"
+                          >
+                            📄 Guide "Prise en main" ESM (PDF) →
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -404,36 +449,37 @@ const MinorsEmploymentPage = () => {
                       <div className="bg-black/30 p-3 rounded">
                         <p className="font-semibold text-purple-200 mb-2">Cadre légal</p>
                         <div className="text-sm space-y-2">
-                          <p>Le <strong>Décret du 28 avril 2022</strong> encadre l'exploitation commerciale de l'image des enfants de moins de 16 ans sur les plateformes (YouTube, TikTok, Instagram...).</p>
-                          <p className="text-purple-300">Les entreprises ont l'obligation de verser les revenus monétaires revenant à l'enfant à la Caisse des Dépôts.</p>
+                          <p>Le <strong>Décret n° 2022-727 du 28 avril 2022</strong> encadre l'exploitation commerciale de l'image des enfants de moins de 16 ans sur les plateformes en ligne (YouTube, TikTok, Instagram...).</p>
+                          <p className="text-purple-300">Les enfants influenceurs bénéficient de la <strong>même protection</strong> que les enfants du spectacle (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
                         </div>
                       </div>
 
                       <div className="bg-black/30 p-3 rounded">
                         <p className="font-semibold text-purple-200 mb-2">Qui doit déposer ?</p>
                         <div className="text-sm">
-                          <p>Seules les <strong>sociétés</strong> recourant aux services d'enfants pour la promotion d'un service ou produit.</p>
+                          <p>Seules les <strong>sociétés</strong> ayant fait appel à des enfants influenceurs mineurs pour la <strong>promotion d'un service ou produit</strong>.</p>
                           <p className="text-yellow-300 mt-2">⚠️ Les représentants légaux ne peuvent en aucun cas créditer ou débiter ce compte.</p>
                         </div>
                       </div>
 
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">📋 Procédure de dépôt :</p>
+                        <p className="font-semibold text-purple-200 mb-2">📋 Procédure de dépôt en ligne :</p>
                         <div className="text-sm space-y-1">
                           <ol className="ml-4 list-decimal space-y-1">
-                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail</li>
+                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
                             <li>Choisir <strong>"Autre"</strong> dans le type d'activité</li>
-                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou avis SIRENE</li>
+                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou <strong>avis SIRENE</strong></li>
                             <li>Saisir la demande de dépôt pour chaque enfant</li>
-                            <li>Effectuer le virement (indiquer le n° de demande)</li>
-                            <li>Recevoir le récépissé une fois validé</li>
+                            <li>Récupérer l'accusé de réception</li>
+                            <li>Effectuer le virement <strong>en indiquant précisément le n° de demande</strong></li>
+                            <li>Recevoir le récépissé de dépôt une fois validé</li>
                           </ol>
                         </div>
                       </div>
 
-                      <div className="bg-red-900/30 p-3 rounded border border-red-400/40">
-                        <p className="font-semibold text-red-200 mb-2">⚠️ Attention - Virements</p>
-                        <p className="text-sm"><strong>1 virement = 1 demande</strong> obligatoirement. Les virements groupés pour plusieurs demandes seront <strong>rejetés</strong>.</p>
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-purple-200 mb-2">💡 Point d'attention :</p>
+                        <p className="text-sm">Vérifiez la saisie des coordonnées des représentants légaux des enfants avant tout envoi de demande.</p>
                       </div>
 
                       <div className="bg-purple-900/40 p-3 rounded border border-purple-400/40">
@@ -449,15 +495,38 @@ const MinorsEmploymentPage = () => {
                     </div>
                   </div>
 
-                  {/* Contact */}
+                  {/* Règle importante virements */}
+                  <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40">
+                    <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
+                      ⚠️ Règle Importante - Virements
+                    </h4>
+                    
+                    <div className="space-y-3 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="text-sm">
+                          <strong className="text-red-300">Chaque virement</strong> effectué doit <strong>obligatoirement</strong> correspondre à <strong>une seule demande saisie et transmise</strong>, quel que soit le nombre d'enfants et/ou prestations contenus.
+                        </p>
+                      </div>
+                      <div className="bg-red-950/50 p-3 rounded border border-red-500">
+                        <p className="text-sm font-bold text-red-200">🚫 VIREMENTS REJETÉS si :</p>
+                        <ul className="text-sm mt-2 space-y-1">
+                          <li>• Virement global pour plusieurs demandes</li>
+                          <li>• Plusieurs virements pour une seule demande</li>
+                        </ul>
+                        <p className="text-xs text-red-300 mt-2">Dans ce cas, vous devrez refaire l'ensemble de vos démarches.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contact et références */}
                   <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-5 rounded-lg border-2 border-slate-400/40">
                     <h4 className="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2">
-                      📞 Contact Caisse des Dépôts
+                      📞 Contact et Références
                     </h4>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-100">
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-slate-200 mb-2">Téléphone</p>
+                        <p className="font-semibold text-slate-200 mb-2">Service Consignations</p>
                         <p className="text-lg font-bold text-emerald-300">01 58 50 89 88</p>
                         <p className="text-xs text-slate-400">Prix d'un appel local</p>
                         <p className="text-sm mt-2">Lundi - Vendredi : 9h-12h / 13h-17h</p>
@@ -465,10 +534,11 @@ const MinorsEmploymentPage = () => {
                       
                       <div className="bg-black/30 p-3 rounded">
                         <p className="font-semibold text-slate-200 mb-2">Textes de référence</p>
-                        <ul className="text-sm space-y-1">
-                          <li>• Articles L7124-1 à L7124-3 du Code du travail</li>
-                          <li>• Articles R7124-1 et suivants</li>
-                          <li>• Décret n° 2022-727 du 28/04/2022</li>
+                        <ul className="text-xs space-y-1">
+                          <li>• Articles L7124-1 et suivants du Code du travail</li>
+                          <li>• Articles R7124-1 et suivants du Code du travail</li>
+                          <li>• Article R7124-35 du Code du travail</li>
+                          <li>• Décret n° 2022-727 du 28/04/2022 (Influenceurs)</li>
                           <li>• Loi n° 2020-1266 du 19/10/2020</li>
                         </ul>
                       </div>
