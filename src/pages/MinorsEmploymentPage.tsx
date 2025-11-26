@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Clock, AlertCircle, Scale, AlertTriangle, BookOpen } from "lucide-react";
+import { FileText, Clock, AlertCircle, Scale, AlertTriangle, BookOpen, Landmark } from "lucide-react";
 
 const MinorsEmploymentPage = () => {
   return (
@@ -26,7 +26,7 @@ const MinorsEmploymentPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="temps-travail" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+              <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
                 <TabsTrigger value="temps-travail" className="gap-2">
                   <Clock className="h-4 w-4" />
                   <span className="hidden sm:inline">Temps de travail</span>
@@ -34,6 +34,10 @@ const MinorsEmploymentPage = () => {
                 <TabsTrigger value="conditions" className="gap-2">
                   <FileText className="h-4 w-4" />
                   <span className="hidden sm:inline">Conditions</span>
+                </TabsTrigger>
+                <TabsTrigger value="caisse-depots" className="gap-2">
+                  <Landmark className="h-4 w-4" />
+                  <span className="hidden sm:inline">Caisse des Dépôts</span>
                 </TabsTrigger>
                 <TabsTrigger value="procedures" className="gap-2">
                   <AlertCircle className="h-4 w-4" />
@@ -297,6 +301,182 @@ const MinorsEmploymentPage = () => {
                 </div>
               </TabsContent>
 
+              <TabsContent value="caisse-depots">
+                <div className="space-y-6">
+                  {/* Introduction Caisse des Dépôts */}
+                  <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
+                    <h4 className="text-lg font-bold text-emerald-200 mb-3 flex items-center gap-2">
+                      <Landmark className="h-5 w-5" />
+                      Caisse des Dépôts et Consignations
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">Mission d'intérêt général</p>
+                        <div className="text-sm space-y-2">
+                          <p>La Caisse des Dépôts a pour mission de <strong>garantir la conservation des rémunérations des enfants</strong> jusqu'à leur majorité.</p>
+                          <p className="text-emerald-300">Protection identique pour les enfants du spectacle, mannequins et influenceurs (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">💰 Répartition de la rémunération :</p>
+                        <div className="text-sm space-y-2">
+                          <div className="flex items-center gap-3">
+                            <span className="bg-emerald-500 text-white font-bold px-3 py-1 rounded">90%</span>
+                            <p>Versés à la Caisse des Dépôts (pécule jusqu'à la majorité)</p>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <span className="bg-amber-500 text-white font-bold px-3 py-1 rounded">10%</span>
+                            <p>À disposition des représentants légaux</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
+                          <p className="text-2xl font-bold text-emerald-300">Gratuit</p>
+                          <p className="text-xs text-slate-300">Aucun frais de dépôt</p>
+                        </div>
+                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
+                          <p className="text-2xl font-bold text-emerald-300">2,76%</p>
+                          <p className="text-xs text-slate-300">Taux de rémunération (nov. 2025)</p>
+                        </div>
+                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
+                          <p className="text-2xl font-bold text-emerald-300">30 ans</p>
+                          <p className="text-xs text-slate-300">Conservation après majorité</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Enfants du Spectacle et Mannequinat */}
+                  <div className="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 p-5 rounded-lg border-2 border-blue-400/40">
+                    <h4 className="text-lg font-bold text-blue-200 mb-3 flex items-center gap-2">
+                      🎬 Enfants du Spectacle et Mannequinat (ESM)
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-blue-200 mb-2">Qui est concerné ?</p>
+                        <div className="text-sm">
+                          <ul className="ml-4 list-disc space-y-1">
+                            <li>Enfants de moins de 16 ans employés dans le <strong>spectacle vivant</strong></li>
+                            <li>Enfants employés dans le <strong>cinéma, audiovisuel, publicité</strong></li>
+                            <li>Enfants exerçant une activité de <strong>mannequinat</strong></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-blue-200 mb-2">📋 Procédure de dépôt (Employeur) :</p>
+                        <div className="text-sm space-y-1">
+                          <ol className="ml-4 list-decimal space-y-1">
+                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
+                            <li>Sélectionner <strong>"Spectacle / Mannequinat"</strong> dans le type d'activité</li>
+                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois)</li>
+                            <li>Saisir les informations de l'enfant et le montant</li>
+                            <li>Effectuer le virement avec le numéro de demande</li>
+                          </ol>
+                        </div>
+                      </div>
+
+                      <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
+                        <a 
+                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-blue-300 hover:text-blue-100 underline text-sm"
+                        >
+                          Accéder au portail ESM de la Caisse des Dépôts →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Enfants Influenceurs */}
+                  <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-5 rounded-lg border-2 border-purple-400/40">
+                    <h4 className="text-lg font-bold text-purple-200 mb-3 flex items-center gap-2">
+                      📱 Enfants Influenceurs (Plateformes en ligne)
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-purple-200 mb-2">Cadre légal</p>
+                        <div className="text-sm space-y-2">
+                          <p>Le <strong>Décret du 28 avril 2022</strong> encadre l'exploitation commerciale de l'image des enfants de moins de 16 ans sur les plateformes (YouTube, TikTok, Instagram...).</p>
+                          <p className="text-purple-300">Les entreprises ont l'obligation de verser les revenus monétaires revenant à l'enfant à la Caisse des Dépôts.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-purple-200 mb-2">Qui doit déposer ?</p>
+                        <div className="text-sm">
+                          <p>Seules les <strong>sociétés</strong> recourant aux services d'enfants pour la promotion d'un service ou produit.</p>
+                          <p className="text-yellow-300 mt-2">⚠️ Les représentants légaux ne peuvent en aucun cas créditer ou débiter ce compte.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-purple-200 mb-2">📋 Procédure de dépôt :</p>
+                        <div className="text-sm space-y-1">
+                          <ol className="ml-4 list-decimal space-y-1">
+                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail</li>
+                            <li>Choisir <strong>"Autre"</strong> dans le type d'activité</li>
+                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou avis SIRENE</li>
+                            <li>Saisir la demande de dépôt pour chaque enfant</li>
+                            <li>Effectuer le virement (indiquer le n° de demande)</li>
+                            <li>Recevoir le récépissé une fois validé</li>
+                          </ol>
+                        </div>
+                      </div>
+
+                      <div className="bg-red-900/30 p-3 rounded border border-red-400/40">
+                        <p className="font-semibold text-red-200 mb-2">⚠️ Attention - Virements</p>
+                        <p className="text-sm"><strong>1 virement = 1 demande</strong> obligatoirement. Les virements groupés pour plusieurs demandes seront <strong>rejetés</strong>.</p>
+                      </div>
+
+                      <div className="bg-purple-900/40 p-3 rounded border border-purple-400/40">
+                        <a 
+                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs/depot-remuneration-enfants-influenceurs" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-purple-300 hover:text-purple-100 underline text-sm"
+                        >
+                          Accéder au portail Enfants Influenceurs →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contact */}
+                  <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-5 rounded-lg border-2 border-slate-400/40">
+                    <h4 className="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2">
+                      📞 Contact Caisse des Dépôts
+                    </h4>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-slate-200 mb-2">Téléphone</p>
+                        <p className="text-lg font-bold text-emerald-300">01 58 50 89 88</p>
+                        <p className="text-xs text-slate-400">Prix d'un appel local</p>
+                        <p className="text-sm mt-2">Lundi - Vendredi : 9h-12h / 13h-17h</p>
+                      </div>
+                      
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-slate-200 mb-2">Textes de référence</p>
+                        <ul className="text-sm space-y-1">
+                          <li>• Articles L7124-1 à L7124-3 du Code du travail</li>
+                          <li>• Articles R7124-1 et suivants</li>
+                          <li>• Décret n° 2022-727 du 28/04/2022</li>
+                          <li>• Loi n° 2020-1266 du 19/10/2020</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </TabsContent>
+
               <TabsContent value="procedures">
                 <div className="space-y-6">
                   <div className="bg-gradient-to-br from-indigo-900/30 to-blue-900/30 p-5 rounded-lg border-2 border-indigo-400/40">
@@ -395,81 +575,6 @@ const MinorsEmploymentPage = () => {
                             <li>Rôle renforcé de l'Arcom (Autorité de régulation)</li>
                           </ul>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Section Caisse des Dépôts - Enfants Influenceurs */}
-                  <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
-                    <h4 className="text-lg font-bold text-emerald-200 mb-3 flex items-center gap-2">
-                      💰 Dépôt de la Rémunération - Enfants Influenceurs
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">Pourquoi déposer à la Caisse des Dépôts ?</p>
-                        <div className="text-sm space-y-2">
-                          <p>Le <strong>Décret du 28 avril 2022</strong> impose aux entreprises de verser les revenus monétaires des enfants influenceurs de moins de 16 ans à la Caisse des Dépôts.</p>
-                          <p className="text-emerald-300">Les enfants influenceurs bénéficient de la même protection que les enfants du spectacle (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
-                          <p><strong>Mission :</strong> Garantir la conservation de leur rémunération jusqu'à leur majorité.</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">Qui doit déposer ?</p>
-                        <div className="text-sm">
-                          <p>Seules les <strong>sociétés</strong> recourant aux services d'enfants pour la promotion d'un service ou produit doivent verser les revenus à la Caisse des Dépôts.</p>
-                          <p className="text-yellow-300 mt-2">⚠️ Les représentants légaux ne peuvent en aucun cas créditer ou débiter ce compte.</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">📋 Procédure de dépôt :</p>
-                        <div className="text-sm space-y-1">
-                          <ol className="ml-4 list-decimal space-y-1">
-                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
-                            <li>Choisir "Autre" dans le type d'activité</li>
-                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou avis SIRENE</li>
-                            <li>Saisir la demande de dépôt pour chaque enfant</li>
-                            <li>Effectuer le virement (indiquer le n° de demande)</li>
-                            <li>Recevoir le récépissé de dépôt une fois validé</li>
-                          </ol>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-emerald-200 mb-2">💡 Points importants :</p>
-                        <div className="text-sm space-y-2">
-                          <div className="flex items-start gap-2">
-                            <span className="text-green-400">✓</span>
-                            <p><strong>Gratuit :</strong> Mission d'intérêt général, aucun frais de dépôt ou gestion</p>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-green-400">✓</span>
-                            <p><strong>Rémunéré :</strong> Taux de 2,76% jusqu'à la majorité (depuis nov. 2025)</p>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-green-400">✓</span>
-                            <p><strong>Conservation :</strong> 30 ans après la majorité, puis acquis à l'État</p>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="text-red-400">⚠️</span>
-                            <p><strong>1 virement = 1 demande</strong> (virements groupés rejetés)</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40">
-                        <p className="font-semibold text-emerald-200 mb-2">📞 Contact :</p>
-                        <p className="text-sm">01 58 50 89 88 (lundi-vendredi, 9h-12h / 13h-17h)</p>
-                        <a 
-                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs/depot-remuneration-enfants-influenceurs" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-emerald-300 hover:text-emerald-100 underline text-sm mt-2 inline-block"
-                        >
-                          Faire la démarche en ligne →
-                        </a>
                       </div>
                     </div>
                   </div>
