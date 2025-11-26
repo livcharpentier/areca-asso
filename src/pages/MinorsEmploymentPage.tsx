@@ -399,6 +399,81 @@ const MinorsEmploymentPage = () => {
                     </div>
                   </div>
 
+                  {/* Section Caisse des Dépôts - Enfants Influenceurs */}
+                  <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
+                    <h4 className="text-lg font-bold text-emerald-200 mb-3 flex items-center gap-2">
+                      💰 Dépôt de la Rémunération - Enfants Influenceurs
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">Pourquoi déposer à la Caisse des Dépôts ?</p>
+                        <div className="text-sm space-y-2">
+                          <p>Le <strong>Décret du 28 avril 2022</strong> impose aux entreprises de verser les revenus monétaires des enfants influenceurs de moins de 16 ans à la Caisse des Dépôts.</p>
+                          <p className="text-emerald-300">Les enfants influenceurs bénéficient de la même protection que les enfants du spectacle (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
+                          <p><strong>Mission :</strong> Garantir la conservation de leur rémunération jusqu'à leur majorité.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">Qui doit déposer ?</p>
+                        <div className="text-sm">
+                          <p>Seules les <strong>sociétés</strong> recourant aux services d'enfants pour la promotion d'un service ou produit doivent verser les revenus à la Caisse des Dépôts.</p>
+                          <p className="text-yellow-300 mt-2">⚠️ Les représentants légaux ne peuvent en aucun cas créditer ou débiter ce compte.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">📋 Procédure de dépôt :</p>
+                        <div className="text-sm space-y-1">
+                          <ol className="ml-4 list-decimal space-y-1">
+                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
+                            <li>Choisir "Autre" dans le type d'activité</li>
+                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou avis SIRENE</li>
+                            <li>Saisir la demande de dépôt pour chaque enfant</li>
+                            <li>Effectuer le virement (indiquer le n° de demande)</li>
+                            <li>Recevoir le récépissé de dépôt une fois validé</li>
+                          </ol>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">💡 Points importants :</p>
+                        <div className="text-sm space-y-2">
+                          <div className="flex items-start gap-2">
+                            <span className="text-green-400">✓</span>
+                            <p><strong>Gratuit :</strong> Mission d'intérêt général, aucun frais de dépôt ou gestion</p>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-green-400">✓</span>
+                            <p><strong>Rémunéré :</strong> Taux de 2,76% jusqu'à la majorité (depuis nov. 2025)</p>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-green-400">✓</span>
+                            <p><strong>Conservation :</strong> 30 ans après la majorité, puis acquis à l'État</p>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <span className="text-red-400">⚠️</span>
+                            <p><strong>1 virement = 1 demande</strong> (virements groupés rejetés)</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40">
+                        <p className="font-semibold text-emerald-200 mb-2">📞 Contact :</p>
+                        <p className="text-sm">01 58 50 89 88 (lundi-vendredi, 9h-12h / 13h-17h)</p>
+                        <a 
+                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs/depot-remuneration-enfants-influenceurs" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-emerald-300 hover:text-emerald-100 underline text-sm mt-2 inline-block"
+                        >
+                          Faire la démarche en ligne →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40">
                     <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
                       ⛔ Suspension et Retrait d'Autorisation
