@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-lucky text-accent tracking-tight">
-                  ARMA
+                  ARMAC
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
                   Responsables Mineurs Audiovisuel
