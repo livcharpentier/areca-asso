@@ -47,7 +47,7 @@ const Navigation = () => {
                   ARMA
                 </span>
                 <span className="text-[8px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Responsable Mineurs Audiovisuel
+                  Responsable Enfant Cinéma
                 </span>
               </div>
             </div>
