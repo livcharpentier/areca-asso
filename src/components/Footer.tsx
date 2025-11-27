@@ -41,7 +41,7 @@ const Footer = () => {
                   ARMA
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Responsable Mineurs
+                  Responsable Enfant Cinéma
                 </span>
               </div>
             </Link>
