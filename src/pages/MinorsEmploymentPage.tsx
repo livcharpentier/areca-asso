@@ -495,6 +495,92 @@ const MinorsEmploymentPage = () => {
                     </div>
                   </div>
 
+                  {/* Restitution à la majorité */}
+                  <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
+                    <h4 className="text-lg font-bold text-emerald-200 mb-3 flex items-center gap-2">
+                      🎓 Restitution à la Majorité (18 ans)
+                    </h4>
+                    
+                    <div className="space-y-4 text-slate-100">
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">Pourquoi les revenus sont-ils bloqués ?</p>
+                        <div className="text-sm space-y-2">
+                          <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle et du mannequinat.</p>
+                          <p>Les sommes sont <strong>sécurisées jusqu'à 18 ans</strong> sur un compte à la Caisse des Dépôts, garantissant un capital pour l'entrée dans la vie adulte.</p>
+                          <p className="text-emerald-300">Gestion <strong>totalement gratuite</strong>. Taux de rémunération : <strong>2,76%</strong> depuis le 1er novembre 2025.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">📬 Comment récupérer ses revenus à 18 ans ?</p>
+                        <div className="text-sm space-y-2">
+                          <p>Dans le mois de vos 18 ans, vous recevrez une <strong>lettre recommandée</strong> avec la procédure à suivre.</p>
+                          <ol className="ml-4 list-decimal space-y-1 mt-2">
+                            <li>Cliquez sur <strong>"Faire ma démarche en ligne"</strong> sur le site CDC</li>
+                            <li>Créez un compte profil <strong>Particulier</strong></li>
+                            <li>Remplissez la demande en indiquant votre <strong>N° compte CDC</strong></li>
+                            <li>Joignez les pièces justificatives (voir ci-dessous)</li>
+                            <li>Suivez l'avancement dans votre espace personnel</li>
+                          </ol>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">📄 Pièces justificatives requises :</p>
+                        <ul className="text-sm space-y-1 ml-4 list-disc">
+                          <li><strong>Pièce d'identité</strong> (CNI, passeport ou carte de séjour) - Recto/Verso</li>
+                          <li><strong>RIB actif</strong> à votre nom et prénom</li>
+                        </ul>
+                        <p className="text-yellow-300 text-xs mt-2">⚠️ Majeurs sous tutelle et héritiers : demandes par courrier uniquement.</p>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">💡 Cas particulier : percevoir avant 18 ans</p>
+                        <div className="text-sm">
+                          <p>Après 16 ans, la <strong>Commission DDCS/DIRECCTE</strong> peut autoriser le versement direct d'une partie de la rémunération.</p>
+                          <p className="text-slate-400 mt-1">La part bloquée reste à la CDC jusqu'à la majorité.</p>
+                        </div>
+                      </div>
+
+                      <div className="bg-black/30 p-3 rounded">
+                        <p className="font-semibold text-emerald-200 mb-2">📍 Changement de coordonnées</p>
+                        <div className="text-sm">
+                          <p>En cas de changement d'adresse, envoyez un mail à :</p>
+                          <a 
+                            href="mailto:contacts-consignations@caissedesdepots.fr" 
+                            className="text-emerald-300 hover:text-emerald-100 underline"
+                          >
+                            contacts-consignations@caissedesdepots.fr
+                          </a>
+                          <p className="text-slate-400 mt-1 text-xs">Objet : "Changement adresse postale représentant légal ESM"</p>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40">
+                          <a 
+                            href="https://consignations.caissedesdepots.fr/particulier/restitution-jeunes-majeurs-enfance-protegee/restitution-remuneration-enfants-spectacle-mannequinat-esm" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-emerald-300 hover:text-emerald-100 underline text-sm"
+                          >
+                            Faire ma démarche de restitution ESM →
+                          </a>
+                        </div>
+                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40">
+                          <a 
+                            href="https://consignations.caissedesdepots.fr/particulier/restitution-jeunes-majeurs-enfance-protegee/restitution-gains-enfants-influenceurs" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-emerald-300 hover:text-emerald-100 underline text-sm"
+                          >
+                            Restitution Enfants Influenceurs →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   {/* Règle importante virements */}
                   <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40">
                     <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
