@@ -25,7 +25,6 @@ const Navigation = () => {
     { label: "RÉGLEMENTATIONS INFORMATIONS", path: "/minors-employment" },
     { label: "DOSSIER DRIEETS", path: "/calendrier" },
     { label: "VHSS", path: "/vhss" },
-    { label: "SALAIRES TECHNICIENS", path: "/resources" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
