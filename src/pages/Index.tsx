@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ChildSupervisorRole from "@/components/ChildSupervisorRole";
-import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,7 +11,6 @@ const Index = () => {
       <Hero />
       <About />
       <ChildSupervisorRole />
-      <WorkTimeRegulations />
       <Footer />
     </div>
   );
