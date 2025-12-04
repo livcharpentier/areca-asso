@@ -212,7 +212,7 @@ const MinorsEmploymentPage = () => {
                           <p className="text-sm">• Certificat médical (validité selon âge)</p>
                           <p className="text-sm">• Avis pédagogique Education Nationale</p>
                           <p className="text-sm">• Assurance responsabilité civile</p>
-                          <p className="text-sm">• Casier B3 du Responsable enfants</p>
+                          <p className="text-sm">• Casier B3 du Responsable des mineurs</p>
                         </div>
                         
                         <div>
@@ -241,7 +241,7 @@ const MinorsEmploymentPage = () => {
                         <div>
                           <p className="font-semibold text-blue-200">👤 Accompagnement plateau :</p>
                           <p className="text-sm">Présence d'un parent ou tuteur légal</p>
-                          <p className="text-sm">Responsable des enfants qualifié (cinéma)</p>
+                          <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
                           <p className="text-sm">Adulte référent lors des castings</p>
                           <p className="text-sm">Conditions adaptées (repos, repas)</p>
                         </div>

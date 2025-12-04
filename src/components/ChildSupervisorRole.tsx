@@ -9,10 +9,10 @@ const ChildSupervisorRole = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-              Fiche Métier : Responsable Enfant
+              Fiche Métier : Responsable des mineurs
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Découvrez le rôle essentiel du responsable enfant dans l'encadrement et la protection des mineurs sur les tournages
+              Découvrez le rôle essentiel du responsable des mineurs dans l'encadrement et la protection des mineurs sur les tournages
             </p>
           </div>
 
@@ -26,7 +26,7 @@ const ChildSupervisorRole = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-slate-200">
-                  Le responsable enfant assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma. 
+                  Le responsable des mineurs assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma. 
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille, 
                   la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations 
                   transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC).

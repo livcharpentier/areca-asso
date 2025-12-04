@@ -12,7 +12,7 @@ const MemberCategoryPage = () => {
   const navigate = useNavigate();
 
   const categoryTitles: { [key: string]: string } = {
-    "responsables-enfants": "Responsables Enfants",
+    "responsables-enfants": "Responsables des mineurs",
     "coachs": "Coachs",
     "precepteurs": "Précepteurs",
     "animateurs": "Animateurs",
@@ -29,10 +29,10 @@ const MemberCategoryPage = () => {
       photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv",
       email: "liv.charp@wanadoo.fr",
       phone: "06 19 60 12 96",
-      bio: "Responsable Enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
+      bio: "Responsable des mineurs sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
       experienceYears: 28,
       filmography: {
-        "Responsable Enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), Abandon, Histoire parallèle, Les enfants de la résistance (2026), Karma (2026)",
+        "Responsable des mineurs": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), Abandon, Histoire parallèle, Les enfants de la résistance (2026), Karma (2026)",
         "Assistante Casting Rôles (Adultes/Enfants)": "Les vacances de Ducobu (2011), La guerre des boutons (2011), Sans laisser de traces (2010), Jamais contente (2017), La guerre des Lulus (2023), Le 3ème jour",
         "Casting Petits Rôles & Figurations": "L'ex-femme de ma vie (2004), Podium (2004), Aurore (2005), Marie Besnard (2006), Le grand Charles (2006), Comme mon père (2007), Famille (2007), Molière (2007), De l'autre côté du lit (2008), Elles et moi (2008), Transporter 3 (2008), Le petit Nicolas (2009), La reine et le cardinal (2009), Mes amis mes amours mes emmerdes (2009), Gainsbourg (2010), Les vacances du Petit Nicolas (2010), Les virtuoses episode 1 à 6 (2010), Pièce Montée (2010), Intouchables (2011), Les vacances de Ducobu (2011), L'élève Ducobu (2011), Omar m'a tuer (2011), Quelques heures de printemps (2012), Cloclo (2012), Star 80 (2012), Une famille formidable (2012), 20 ans d'écart (2013), La dernière campagne (2013), La grande boucle (2013), Les bracelets rouges (3 saisons, 2014-2018), On voulait tout casser (2015), Chocolat (2016), Stavisky l'escroc du siècle (2016), Love Locks (2017), Mon poussin (2017), Deux gouttes d'eau (2018), Vise le coeur (2022), La guerre des Lulus (2023)",
         "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes",
