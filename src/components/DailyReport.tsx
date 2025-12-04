@@ -259,10 +259,6 @@ const DailyReport = () => {
             </li>
             <li className="flex gap-2">
               <span className="text-amber-500">•</span>
-              <span className="text-sm">Transmettez une copie à la production et aux parents en fin de tournage</span>
-            </li>
-            <li className="flex gap-2">
-              <span className="text-amber-500">•</span>
               <span className="text-sm">En cas de situation particulière, informez immédiatement la production et les parents</span>
             </li>
             <li className="flex gap-2">
