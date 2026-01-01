@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="flex flex-col justify-end h-full max-w-2xl pb-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bangers text-white mb-4 leading-tight tracking-wider drop-shadow-2xl">
             Association des
-            <span className="block bg-gradient-to-r from-accent via-blue-sky to-gold bg-clip-text text-transparent mt-2 text-4xl md:text-6xl lg:text-7xl drop-shadow-2xl">
+            <span className="block text-gold mt-2 text-5xl md:text-7xl lg:text-8xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.5)' }}>
               Responsables Mineurs
             </span>
             <span className="block text-3xl md:text-5xl lg:text-6xl">Audiovisuel et Cinéma</span>
