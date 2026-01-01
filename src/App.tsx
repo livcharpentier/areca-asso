@@ -18,6 +18,7 @@ import CalendrierPage from "./pages/CalendrierPage";
 import CompteRenduPage from "./pages/CompteRenduPage";
 import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
+import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/calendrier" element={<CalendrierPage />} />
             <Route path="/compte-rendu" element={<CompteRenduPage />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/faq" element={<FAQPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
