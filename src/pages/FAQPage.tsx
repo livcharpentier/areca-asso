@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { CircleHelp } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -50,9 +51,12 @@ const FAQPage = () => {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bangers text-primary mb-4 tracking-wide">
-              Questions Fréquentes
-            </h1>
+            <div className="flex items-center gap-3 mb-4">
+              <CircleHelp className="h-10 w-10 text-primary" />
+              <h1 className="text-4xl md:text-5xl font-bangers text-primary tracking-wide">
+                Questions Fréquentes
+              </h1>
+            </div>
             <p className="text-muted-foreground mb-8">
               Retrouvez les réponses aux questions les plus courantes sur le métier de responsable mineur et l'association ARMAC.
             </p>
