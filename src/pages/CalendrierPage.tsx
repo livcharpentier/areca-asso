@@ -30,47 +30,41 @@ const CalendrierPage = () => {
       {/* Main Content avec Tabs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="calendrier" className="w-full" orientation="vertical">
-            <div className="flex flex-col md:flex-row gap-6">
-              {/* Sidebar avec les onglets à gauche */}
-              <TabsList className="flex flex-col h-auto w-full md:w-64 bg-muted p-2 rounded-lg shrink-0">
-                <TabsTrigger value="calendrier" className="w-full justify-start gap-3 px-4 py-3">
-                  <Calendar className="h-5 w-5" />
-                  <span>Calendrier</span>
-                </TabsTrigger>
-                <TabsTrigger value="confection" className="w-full justify-start gap-3 px-4 py-3">
-                  <FileText className="h-5 w-5" />
-                  <span>Confection</span>
-                </TabsTrigger>
-                <TabsTrigger value="suivi-sante" className="w-full justify-start gap-3 px-4 py-3">
-                  <Heart className="h-5 w-5" />
-                  <span>Suivi Santé</span>
-                </TabsTrigger>
-                <TabsTrigger value="salaires" className="w-full justify-start gap-3 px-4 py-3">
-                  <FileText className="h-5 w-5" />
-                  <span>Salaires Artistes</span>
-                </TabsTrigger>
-              </TabsList>
+          <Tabs defaultValue="calendrier" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-6">
+              <TabsTrigger value="calendrier" className="gap-2">
+                <Calendar className="h-4 w-4" />
+                <span>Calendrier</span>
+              </TabsTrigger>
+              <TabsTrigger value="confection" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span>Confection</span>
+              </TabsTrigger>
+              <TabsTrigger value="suivi-sante" className="gap-2">
+                <Heart className="h-4 w-4" />
+                <span>Suivi Santé</span>
+              </TabsTrigger>
+              <TabsTrigger value="salaires" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span>Salaires Artistes</span>
+              </TabsTrigger>
+            </TabsList>
 
-              {/* Contenu à droite */}
-              <div className="flex-1 min-w-0">
-                <TabsContent value="calendrier" className="mt-0">
-                  <RegionalCalendar />
-                </TabsContent>
+            <TabsContent value="calendrier">
+              <RegionalCalendar />
+            </TabsContent>
 
-                <TabsContent value="confection" className="mt-0">
-                  <DrieetsDossier />
-                </TabsContent>
+            <TabsContent value="confection">
+              <DrieetsDossier />
+            </TabsContent>
 
-                <TabsContent value="suivi-sante" className="mt-0">
-                  <HealthMonitoring />
-                </TabsContent>
+            <TabsContent value="suivi-sante">
+              <HealthMonitoring />
+            </TabsContent>
 
-                <TabsContent value="salaires" className="mt-0">
-                  <ArtistSalaries />
-                </TabsContent>
-              </div>
-            </div>
+            <TabsContent value="salaires">
+              <ArtistSalaries />
+            </TabsContent>
           </Tabs>
         </div>
       </section>
