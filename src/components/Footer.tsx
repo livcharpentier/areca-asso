@@ -41,7 +41,7 @@ const Footer = () => {
                   ARMAC
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Responsables Mineurs Audiovisuel
+                  Responsables Enfants Audiovisuel
                 </span>
               </div>
             </Link>
