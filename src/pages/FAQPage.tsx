@@ -32,7 +32,7 @@ const FAQPage = () => {
     },
     {
       question: "Quel est le rôle de l'ARMAC ?",
-      answer: "L'ARMAC (Association des Responsables Mineurs Audiovisuel et Cinéma) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques, de proposer des formations et de défendre les intérêts de la profession."
+      answer: "L'ARMAC (Association des Responsables Enfants Audiovisuel et Cinéma) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques, de proposer des formations et de défendre les intérêts de la profession."
     },
     {
       question: "Comment se déroule une demande d'autorisation DRIEETS ?",

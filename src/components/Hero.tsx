@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bangers text-white mb-4 leading-tight tracking-wider drop-shadow-2xl">
             Association des
             <span className="block text-gold mt-2 text-4xl md:text-5xl lg:text-6xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.5)' }}>
-              Responsables Mineurs
+              Responsables Enfants
             </span>
             <span className="block text-3xl md:text-5xl lg:text-6xl">Audiovisuel et Cinéma</span>
           </h1>
