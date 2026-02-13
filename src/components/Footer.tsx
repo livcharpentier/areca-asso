@@ -7,7 +7,7 @@ const Footer = () => {
   const links = {
     association: [
       { label: "Présentation", href: "#association" },
-      { label: "Charte ARMA", href: "#charte" },
+      { label: "Charte AREAC", href: "#charte" },
       { label: "Devenir membre", href: "#devenir-membre" },
       { label: "Organigramme", href: "#organigramme" },
       { label: "Faire un don", href: "#don" },
@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-2xl font-lucky text-accent tracking-tight">
-                  ARMAC
+                  AREAC
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
                   Responsables Enfants Audiovisuel
@@ -108,11 +108,11 @@ const Footer = () => {
               Contact
             </h3>
             <a 
-              href="mailto:contact@arma.fr"
+              href="mailto:contact@areac.fr"
               className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-accent transition-colors mb-6"
             >
               <Mail className="w-4 h-4" />
-              contact@arma.fr
+              contact@areac.fr
             </a>
             <ul className="space-y-2">
               {links.legal.map((link) => (
@@ -132,7 +132,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/10">
           <p className="text-xs text-primary-foreground/60 text-center">
-            © {currentYear} ARMA - Tous droits réservés
+            © {currentYear} AREAC - Tous droits réservés
           </p>
         </div>
       </div>
