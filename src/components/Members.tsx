@@ -8,16 +8,16 @@ const Members = () => {
   const navigate = useNavigate();
   
   const membresExemples = [
-    { name: "Liv Charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
-    { name: "Thomas Martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
-    { name: "Sophie Bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants", bio: "12 ans d'expérience dans le cinéma jeunesse et les relations parents-production." },
-    { name: "Claire Dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice", bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages." },
-    { name: "Marc Lefèvre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur", bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel." },
-    { name: "Julie Moreau", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie", role: "Animatrice", bio: "Animation et encadrement jeunesse sur plateaux de cinéma et séries TV." },
-    { name: "Pierre Roux", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre", role: "Animateur", bio: "Animateur BAFA avec expérience en productions audiovisuelles jeunesse." },
-    { name: "Emma Laurent", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma", role: "Cantinière", bio: "Restauration adaptée aux enfants sur les tournages, respect des normes alimentaires." },
-    { name: "Lucas Petit", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas", role: "Responsable enfants", bio: "Coordinateur terrain, gestion des plannings enfants et lien avec les familles." },
-    { name: "Camille Simon", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille", role: "Préceptrice", bio: "Suivi scolaire personnalisé et accompagnement éducatif sur tournages." },
+    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+    { name: "Thomas Martin", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+    { name: "Sophie Bernard", slug: "sophie-bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants", bio: "12 ans d'expérience dans le cinéma jeunesse et les relations parents-production." },
+    { name: "Claire Dupont", slug: "claire-dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice", bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages." },
+    { name: "Marc Lefèvre", slug: "marc-lefevre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur", bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel." },
+    { name: "Julie Moreau", slug: "julie-moreau", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie", role: "Animatrice", bio: "Animation et encadrement jeunesse sur plateaux de cinéma et séries TV." },
+    { name: "Pierre Roux", slug: "pierre-roux", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre", role: "Animateur", bio: "Animateur BAFA avec expérience en productions audiovisuelles jeunesse." },
+    { name: "Emma Laurent", slug: "emma-laurent", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma", role: "Cantinière", bio: "Restauration adaptée aux enfants sur les tournages, respect des normes alimentaires." },
+    { name: "Lucas Petit", slug: "lucas-petit", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas", role: "Responsable enfants", bio: "Coordinateur terrain, gestion des plannings enfants et lien avec les familles." },
+    { name: "Camille Simon", slug: "camille-simon", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille", role: "Préceptrice", bio: "Suivi scolaire personnalisé et accompagnement éducatif sur tournages." },
   ];
 
   const categories = [
@@ -47,7 +47,7 @@ const Members = () => {
             <h3 className="text-xl font-semibold text-foreground mb-6 uppercase tracking-wide">Trombinoscope</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {membresExemples.map((membre, index) => (
-                <div key={index} className="flex flex-col items-center text-center group cursor-pointer">
+                <div key={index} className="flex flex-col items-center text-center group cursor-pointer" onClick={() => navigate(`/member/${membre.slug}`)}>
                   <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
                     <AvatarImage src={membre.photo} alt={membre.name} />
                     <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
