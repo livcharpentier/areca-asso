@@ -20,6 +20,7 @@ const Navigation = () => {
   };
 
   const navItems = [
+    { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "COMPTE RENDU JOURNALIER", path: "/compte-rendu" },
     { label: "RÉGLEMENTATIONS INFORMATIONS", path: "/minors-employment" },
