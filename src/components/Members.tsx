@@ -47,19 +47,17 @@ const Members = () => {
             <h3 className="text-xl font-semibold text-foreground mb-6 uppercase tracking-wide">Trombinoscope</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {membresExemples.map((membre, index) => (
-                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
-                  <CardContent className="pt-5 pb-4 px-4 flex flex-col items-center text-center">
-                    <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
-                      <AvatarImage src={membre.photo} alt={membre.name} />
-                      <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
-                        {membre.name.split(' ').map(n => n[0]).join('')}
-                      </AvatarFallback>
-                    </Avatar>
-                    <span className="text-sm font-semibold text-foreground">{membre.name}</span>
-                    <span className="text-xs text-accent mb-2">{membre.role}</span>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{membre.bio}</p>
-                  </CardContent>
-                </Card>
+                <div key={index} className="flex flex-col items-center text-center group cursor-pointer">
+                  <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
+                    <AvatarImage src={membre.photo} alt={membre.name} />
+                    <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
+                      {membre.name.split(' ').map(n => n[0]).join('')}
+                    </AvatarFallback>
+                  </Avatar>
+                  <span className="text-sm font-semibold text-foreground">{membre.name}</span>
+                  <span className="text-xs text-accent mb-2">{membre.role}</span>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{membre.bio}</p>
+                </div>
               ))}
             </div>
           </div>
