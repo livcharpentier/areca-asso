@@ -58,66 +58,6 @@ const MinorsEmploymentPage = () => {
                 <div className="space-y-6">
                   <WorkTimeRegulations />
                   
-                  {/* Section Enfants Mannequins */}
-                  <div className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 p-5 rounded-lg border-2 border-pink-400/40">
-                    <h4 className="text-lg font-bold text-pink-200 mb-3">
-                      Enfants Mannequins - Durées spécifiques
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">Moins de 6 ans :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>&lt; 3 ans : 1h/jour (max 30 min en continu)</li>
-                            <li>3-6 ans : 2h/jour (max 1h en continu)</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>&lt; 6 mois : 1h/semaine</li>
-                            <li>6 mois - 3 ans : 2h/semaine</li>
-                            <li>3-6 ans : 3h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - PÉRIODE SCOLAIRE :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p className="text-yellow-300">Uniquement jours/demi-journées de repos (sauf dimanche)</p>
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 3h/jour (max 1h30 en continu) - 1h30 en demi-journée</li>
-                            <li>12-16 ans : 4h/jour (max 2h en continu) - 2h en demi-journée</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 4h30/semaine</li>
-                            <li>12-16 ans : 6h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-pink-200 mb-2">6-16 ans - VACANCES SCOLAIRES :</p>
-                        <div className="text-sm space-y-1 ml-3">
-                          <p className="text-yellow-300">Maximum 50% de la durée des vacances</p>
-                          <p><strong>Durée journalière maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 6h/jour (max 2h en continu)</li>
-                            <li>12-16 ans : 7h/jour (max 3h en continu)</li>
-                          </ul>
-                          <p className="mt-2"><strong>Durée hebdomadaire maximum :</strong></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>6-11 ans : 12h/semaine</li>
-                            <li>12-14 ans : 15h/semaine</li>
-                            <li>14-16 ans : 18h/semaine</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </TabsContent>
 
@@ -369,140 +309,6 @@ const MinorsEmploymentPage = () => {
                     </div>
                   </div>
 
-                  {/* Enfants du Spectacle et Mannequinat */}
-                  <div className="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 p-5 rounded-lg border-2 border-blue-400/40">
-                    <h4 className="text-lg font-bold text-blue-200 mb-3 flex items-center gap-2">
-                      🎬 Enfants du Spectacle et Mannequinat (ESM)
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-blue-200 mb-2">Qui est concerné ?</p>
-                        <div className="text-sm">
-                          <p className="mb-2">Enfants de moins de 16 ans employés pour :</p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li><strong>Défilés</strong> et <strong>photos de mode</strong></li>
-                            <li><strong>Tournages</strong> (cinéma, télévision, publicité)</li>
-                            <li><strong>Shows</strong> et spectacles vivants</li>
-                            <li>Activités de <strong>mannequinat</strong></li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-blue-200 mb-2">Qui doit déposer ?</p>
-                        <div className="text-sm">
-                          <p>Seules les <strong>entreprises de spectacle</strong> et <strong>agences de mannequins</strong> employant l'enfant sont autorisées à effectuer les versements.</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-blue-200 mb-2">📋 Procédure de dépôt en ligne :</p>
-                        <div className="text-sm space-y-1">
-                          <ol className="ml-4 list-decimal space-y-1">
-                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
-                            <li>Choisir <strong>"Société de production"</strong> ou <strong>"Agence de mannequinat"</strong> dans le type d'activité</li>
-                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou <strong>avis SIRENE</strong> (associations)</li>
-                            <li>Saisir la demande de dépôt avec les informations de l'enfant</li>
-                            <li>Récupérer l'accusé de réception</li>
-                            <li>Effectuer le virement <strong>en indiquant le n° de demande</strong></li>
-                            <li>Recevoir le récépissé de dépôt une fois validé</li>
-                          </ol>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-blue-200 mb-2">📬 Procédure par voie postale (si impossible en ligne) :</p>
-                        <div className="text-sm">
-                          <p className="mb-2">Adresse : <em>Caisse des Dépôts - Enfants du spectacle - 15 quai Anatole France 75356 Paris 07 SP</em></p>
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>Déclaration de versement complétée et signée</li>
-                            <li><strong>Agences mannequins :</strong> Fiche d'identification du revenu</li>
-                            <li><strong>Sociétés de production :</strong> Autorisation individuelle préalable (fixe le % versé à la CDC)</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
-                          <a 
-                            href="https://consignations.caissedesdepots.fr/entreprise/activit%C3%A9-professionnelle-enfants-spectacle-mannequinat-esm" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-blue-300 hover:text-blue-100 underline text-sm"
-                          >
-                            Accéder au portail ESM →
-                          </a>
-                        </div>
-                        <div className="bg-blue-900/40 p-3 rounded border border-blue-400/40">
-                          <a 
-                            href="https://consignations.caissedesdepots.fr/sites/default/files/2024-04/Guide_operatoire_Parcours_d%C3%A9p%C3%B4t%20ESM_19042024.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-blue-300 hover:text-blue-100 underline text-sm"
-                          >
-                            📄 Guide "Prise en main" ESM (PDF) →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Enfants Influenceurs */}
-                  <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-5 rounded-lg border-2 border-purple-400/40">
-                    <h4 className="text-lg font-bold text-purple-200 mb-3 flex items-center gap-2">
-                      📱 Enfants Influenceurs (Plateformes en ligne)
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">Cadre légal</p>
-                        <div className="text-sm space-y-2">
-                          <p>Le <strong>Décret n° 2022-727 du 28 avril 2022</strong> encadre l'exploitation commerciale de l'image des enfants de moins de 16 ans sur les plateformes en ligne (YouTube, TikTok, Instagram...).</p>
-                          <p className="text-purple-300">Les enfants influenceurs bénéficient de la <strong>même protection</strong> que les enfants du spectacle (Code du travail : L. 7124-9 et R. 7124-34 à R. 7124-37).</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">Qui doit déposer ?</p>
-                        <div className="text-sm">
-                          <p>Seules les <strong>sociétés</strong> ayant fait appel à des enfants influenceurs mineurs pour la <strong>promotion d'un service ou produit</strong>.</p>
-                          <p className="text-yellow-300 mt-2">⚠️ Les représentants légaux ne peuvent en aucun cas créditer ou débiter ce compte.</p>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">📋 Procédure de dépôt en ligne :</p>
-                        <div className="text-sm space-y-1">
-                          <ol className="ml-4 list-decimal space-y-1">
-                            <li>Créer un compte <strong>ENTREPRISE</strong> sur le portail Caisse des Dépôts</li>
-                            <li>Choisir <strong>"Autre"</strong> dans le type d'activité</li>
-                            <li>Joindre : <strong>pièce d'identité</strong> du dirigeant + <strong>KBIS</strong> (&lt;3 mois) ou <strong>avis SIRENE</strong></li>
-                            <li>Saisir la demande de dépôt pour chaque enfant</li>
-                            <li>Récupérer l'accusé de réception</li>
-                            <li>Effectuer le virement <strong>en indiquant précisément le n° de demande</strong></li>
-                            <li>Recevoir le récépissé de dépôt une fois validé</li>
-                          </ol>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">💡 Point d'attention :</p>
-                        <p className="text-sm">Vérifiez la saisie des coordonnées des représentants légaux des enfants avant tout envoi de demande.</p>
-                      </div>
-
-                      <div className="bg-purple-900/40 p-3 rounded border border-purple-400/40">
-                        <a 
-                          href="https://consignations.caissedesdepots.fr/entreprise/remuneration-des-enfants-mineurs/depot-remuneration-enfants-influenceurs" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-purple-300 hover:text-purple-100 underline text-sm"
-                        >
-                          Accéder au portail Enfants Influenceurs →
-                        </a>
-                      </div>
-                    </div>
-                  </div>
 
                   {/* Restitution à la majorité */}
                   <div className="bg-gradient-to-br from-emerald-900/30 to-teal-900/30 p-5 rounded-lg border-2 border-emerald-400/40">
@@ -576,16 +382,6 @@ const MinorsEmploymentPage = () => {
                             Faire ma démarche de restitution ESM →
                           </a>
                         </div>
-                        <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40">
-                          <a 
-                            href="https://consignations.caissedesdepots.fr/particulier/restitution-jeunes-majeurs-enfance-protegee/restitution-gains-enfants-influenceurs" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-emerald-300 hover:text-emerald-100 underline text-sm"
-                          >
-                            Restitution Enfants Influenceurs →
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -633,7 +429,7 @@ const MinorsEmploymentPage = () => {
                           <li>• Articles L7124-1 et suivants du Code du travail</li>
                           <li>• Articles R7124-1 et suivants du Code du travail</li>
                           <li>• Article R7124-35 du Code du travail</li>
-                          <li>• Décret n° 2022-727 du 28/04/2022 (Influenceurs)</li>
+                          
                           <li>• Loi n° 2020-1266 du 19/10/2020</li>
                         </ul>
                       </div>
@@ -691,87 +487,6 @@ const MinorsEmploymentPage = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-br from-purple-900/30 to-indigo-900/30 p-5 rounded-lg border-2 border-purple-400/40">
-                    <h4 className="text-lg font-bold text-purple-200 mb-3">
-                      Vidéos sur Plateformes de Partage (Loi 19 octobre 2020)
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">🎬 3 régimes selon la nature de l'activité :</p>
-                        <div className="space-y-3 mt-2">
-                          <div className="border-l-4 border-green-400 pl-3">
-                            <p className="font-semibold text-green-300">1. Aucune formalité</p>
-                            <p className="text-slate-300 text-xs mt-1">Vidéos privées, pur loisir, faible nombre/durée, absence de flux financier</p>
-                          </div>
-                          <div className="border-l-4 border-yellow-400 pl-3">
-                            <p className="font-semibold text-yellow-300">2. Régime de déclaration</p>
-                            <p className="text-slate-300 text-xs mt-1">Nombre, durée cumulée ou revenus dépassent les seuils fixés par décret</p>
-                          </div>
-                          <div className="border-l-4 border-red-400 pl-3">
-                            <p className="font-semibold text-red-300">3. Autorisation administrative préalable (Code du Travail)</p>
-                            <p className="text-slate-300 text-xs mt-1">Cadre professionnel, objectif lucratif → L'enfant devient <strong>salarié</strong></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">Régime d'autorisation préalable (activité lucrative) :</p>
-                        <div className="text-sm space-y-2">
-                          <div className="bg-red-900/20 p-2 rounded border border-red-400/30">
-                            <p className="text-red-200 font-semibold">Conditions :</p>
-                            <ul className="ml-4 list-disc space-y-1 mt-1">
-                              <li>L'enfant est un <strong>salarié</strong></li>
-                              <li>La personne qui met en ligne les vidéos est l'<strong>employeur</strong></li>
-                              <li>L'employeur doit être une <strong>entreprise</strong> (pas de particulier ni association)</li>
-                              <li>La plateforme est un tiers (n'est pas l'employeur)</li>
-                              <li>Agrément obligatoire avant tout commencement</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-purple-200 mb-2">🛡️ Renforcement de la protection des enfants :</p>
-                        <div className="text-sm space-y-1">
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>Droit à l'effacement des données personnelles par l'enfant (sans consentement parental)</li>
-                            <li>Obligations pour les plateformes (chartes d'information)</li>
-                            <li>Rôle renforcé de l'Arcom (Autorité de régulation)</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40">
-                    <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
-                      ⛔ Suspension et Retrait d'Autorisation
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-red-200 mb-2">⏸️ Suspension d'urgence (agences mannequins / vidéos) :</p>
-                        <div className="text-sm space-y-2">
-                          <p>En cas d'urgence, si la santé ou la moralité de l'enfant sont <strong>immédiatement et gravement mis en cause</strong> :</p>
-                          <ul className="ml-4 list-disc space-y-1 mt-2">
-                            <li>Le préfet peut suspendre l'agrément pour max. <strong>1 mois</strong></li>
-                            <li>Délai permettant à l'employeur de fournir les indications nécessaires</li>
-                            <li>La commission propose : retrait OU levée de suspension</li>
-                            <li>Sans réponse après 1 mois : suspension levée automatiquement</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-red-200 mb-2">🚫 Retrait d'autorisation :</p>
-                        <div className="text-sm space-y-2">
-                          <p>L'autorisation individuelle ou l'agrément peuvent être <strong>retirés à tout moment</strong> par le préfet.</p>
-                          <p className="text-yellow-300 mt-2">Pour les vidéos sur plateformes : le retrait peut aussi être demandé par des personnes qualifiées dans le domaine de la protection de l'enfance.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </TabsContent>
 
