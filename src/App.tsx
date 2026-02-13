@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import AboutPage from "./pages/AboutPage";
 import MembersPage from "./pages/MembersPage";
 import MemberCategoryPage from "./pages/MemberCategoryPage";
+import MemberProfilePage from "./pages/MemberProfilePage";
 import MinorsEmploymentPage from "./pages/MinorsEmploymentPage";
 import VHSSPage from "./pages/VHSSPage";
 import ResourcesPage from "./pages/ResourcesPage";
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/about" element={<AboutPage />} />
             <Route path="/members" element={<MembersPage />} />
             <Route path="/members/:category" element={<MemberCategoryPage />} />
+            <Route path="/member/:slug" element={<MemberProfilePage />} />
             <Route path="/minors-employment" element={<MinorsEmploymentPage />} />
             <Route path="/vhss" element={<VHSSPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
