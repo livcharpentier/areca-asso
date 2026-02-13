@@ -27,7 +27,7 @@ const MinorsEmploymentPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="temps-travail" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-8">
+              <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
                 <TabsTrigger value="temps-travail" className="gap-2">
                   <Clock className="h-4 w-4" />
                   <span className="hidden sm:inline">Temps de travail</span>
@@ -43,10 +43,6 @@ const MinorsEmploymentPage = () => {
                 <TabsTrigger value="caisse-depots" className="gap-2">
                   <Landmark className="h-4 w-4" />
                   <span className="hidden sm:inline">Caisse des Dépôts</span>
-                </TabsTrigger>
-                <TabsTrigger value="procedures" className="gap-2">
-                  <AlertCircle className="h-4 w-4" />
-                  <span className="hidden sm:inline">Procédures</span>
                 </TabsTrigger>
                 <TabsTrigger value="sanctions" className="gap-2">
                   <Scale className="h-4 w-4" />
@@ -435,58 +431,6 @@ const MinorsEmploymentPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="procedures">
-                <div className="space-y-6">
-                  <div className="bg-gradient-to-br from-indigo-900/30 to-blue-900/30 p-5 rounded-lg border-2 border-indigo-400/40">
-                    <h4 className="text-lg font-bold text-indigo-200 mb-3 flex items-center gap-2">
-                      Procédure d'Autorisation Administrative (Préfecture)
-                    </h4>
-                    
-                    <div className="space-y-4 text-slate-100">
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-indigo-200 mb-2">Commission départementale spécialisée :</p>
-                        <div className="text-sm space-y-1">
-                          <p className="text-slate-300">La demande est examinée par une commission composée de :</p>
-                          <ul className="ml-4 list-disc space-y-1 mt-2">
-                            <li>Un magistrat (juge des enfants)</li>
-                            <li>Un représentant de l'Éducation Nationale</li>
-                            <li>Un représentant de la DDETS (Direction du travail)</li>
-                            <li>Un médecin</li>
-                            <li>Un représentant des affaires culturelles</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-indigo-200 mb-2">Dossier à constituer :</p>
-                        <div className="text-sm space-y-1">
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li>Demande d'autorisation complète</li>
-                            <li>Certificat médical en cours de validité</li>
-                            <li>Autorisation parentale signée</li>
-                            <li>Justificatifs de scolarité</li>
-                            <li>Description du projet et planning</li>
-                            <li>Casier judiciaire B3 du responsable des enfants</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-indigo-200 mb-2">Délais de traitement :</p>
-                        <div className="text-sm space-y-1">
-                          <ul className="ml-4 list-disc space-y-1">
-                            <li><strong>Instruction :</strong> 1 mois à compter du dossier complet</li>
-                            <li><strong>Prolongation possible :</strong> +1 mois si nécessaire</li>
-                            <li><strong>Absence de réponse :</strong> Demande réputée rejetée</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </TabsContent>
 
