@@ -2,10 +2,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Search, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Members = () => {
   const navigate = useNavigate();
   
+  const membresExemples = [
+    { name: "Liv Charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants" },
+    { name: "Thomas Martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants" },
+    { name: "Sophie Bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants" },
+    { name: "Claire Dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice" },
+    { name: "Marc Lefèvre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur" },
+    { name: "Julie Moreau", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie", role: "Animatrice" },
+    { name: "Pierre Roux", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre", role: "Animateur" },
+    { name: "Emma Laurent", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma", role: "Cantinière" },
+    { name: "Lucas Petit", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas", role: "Responsable enfants" },
+    { name: "Camille Simon", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille", role: "Préceptrice" },
+  ];
+
   const categories = [
     { title: "Responsables des enfants", count: 10, description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
     { title: "Précepteurs", count: 9, description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
@@ -28,6 +42,27 @@ const Members = () => {
             </Button>
           </div>
 
+          {/* Trombinoscope */}
+          <div className="mb-12">
+            <h3 className="text-xl font-semibold text-foreground mb-6 uppercase tracking-wide">Trombinoscope</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+              {membresExemples.map((membre, index) => (
+                <div key={index} className="flex flex-col items-center text-center group cursor-pointer">
+                  <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300 group-hover:scale-110">
+                    <AvatarImage src={membre.photo} alt={membre.name} />
+                    <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
+                      {membre.name.split(' ').map(n => n[0]).join('')}
+                    </AvatarFallback>
+                  </Avatar>
+                  <span className="text-sm font-semibold text-foreground">{membre.name}</span>
+                  <span className="text-xs text-muted-foreground">{membre.role}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Catégories */}
+          <h3 className="text-xl font-semibold text-foreground mb-6 uppercase tracking-wide">Par catégorie</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categories.map((category, index) => {
               const colors = [
