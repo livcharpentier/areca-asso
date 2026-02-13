@@ -8,16 +8,16 @@ const Members = () => {
   const navigate = useNavigate();
   
   const membresExemples = [
-    { name: "Liv Charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants" },
-    { name: "Thomas Martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants" },
-    { name: "Sophie Bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants" },
-    { name: "Claire Dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice" },
-    { name: "Marc Lefèvre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur" },
-    { name: "Julie Moreau", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie", role: "Animatrice" },
-    { name: "Pierre Roux", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre", role: "Animateur" },
-    { name: "Emma Laurent", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma", role: "Cantinière" },
-    { name: "Lucas Petit", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas", role: "Responsable enfants" },
-    { name: "Camille Simon", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille", role: "Préceptrice" },
+    { name: "Liv Charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+    { name: "Thomas Martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+    { name: "Sophie Bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants", bio: "12 ans d'expérience dans le cinéma jeunesse et les relations parents-production." },
+    { name: "Claire Dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice", bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages." },
+    { name: "Marc Lefèvre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur", bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel." },
+    { name: "Julie Moreau", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie", role: "Animatrice", bio: "Animation et encadrement jeunesse sur plateaux de cinéma et séries TV." },
+    { name: "Pierre Roux", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre", role: "Animateur", bio: "Animateur BAFA avec expérience en productions audiovisuelles jeunesse." },
+    { name: "Emma Laurent", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma", role: "Cantinière", bio: "Restauration adaptée aux enfants sur les tournages, respect des normes alimentaires." },
+    { name: "Lucas Petit", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas", role: "Responsable enfants", bio: "Coordinateur terrain, gestion des plannings enfants et lien avec les familles." },
+    { name: "Camille Simon", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille", role: "Préceptrice", bio: "Suivi scolaire personnalisé et accompagnement éducatif sur tournages." },
   ];
 
   const categories = [
@@ -45,18 +45,21 @@ const Members = () => {
           {/* Trombinoscope */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold text-foreground mb-6 uppercase tracking-wide">Trombinoscope</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {membresExemples.map((membre, index) => (
-                <div key={index} className="flex flex-col items-center text-center group cursor-pointer">
-                  <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300 group-hover:scale-110">
-                    <AvatarImage src={membre.photo} alt={membre.name} />
-                    <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
-                      {membre.name.split(' ').map(n => n[0]).join('')}
-                    </AvatarFallback>
-                  </Avatar>
-                  <span className="text-sm font-semibold text-foreground">{membre.name}</span>
-                  <span className="text-xs text-muted-foreground">{membre.role}</span>
-                </div>
+                <Card key={index} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
+                  <CardContent className="pt-5 pb-4 px-4 flex flex-col items-center text-center">
+                    <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
+                      <AvatarImage src={membre.photo} alt={membre.name} />
+                      <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
+                        {membre.name.split(' ').map(n => n[0]).join('')}
+                      </AvatarFallback>
+                    </Avatar>
+                    <span className="text-sm font-semibold text-foreground">{membre.name}</span>
+                    <span className="text-xs text-accent mb-2">{membre.role}</span>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{membre.bio}</p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
