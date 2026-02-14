@@ -40,7 +40,7 @@ const App = () => (
             <Route path="/members" element={<MembersPage />} />
             <Route path="/members/:category" element={<MemberCategoryPage />} />
             <Route path="/member/:slug" element={<MemberProfilePage />} />
-            <Route path="/minors-employment" element={<ProtectedRoute><MinorsEmploymentPage /></ProtectedRoute>} />
+            <Route path="/minors-employment" element={<MinorsEmploymentPage />} />
             <Route path="/vhss" element={<VHSSPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/formations" element={<FormationsPage />} />
@@ -48,7 +48,7 @@ const App = () => (
             <Route path="/documents" element={<DocumentsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/calendrier" element={<CalendrierPage />} />
-            <Route path="/compte-rendu" element={<ProtectedRoute><CompteRenduPage /></ProtectedRoute>} />
+            <Route path="/compte-rendu" element={<CompteRenduPage />} />
             <Route path="/production" element={<ProductionPage />} />
             <Route path="/parents" element={<ParentsPage />} />
             <Route path="/auth" element={<Auth />} />
