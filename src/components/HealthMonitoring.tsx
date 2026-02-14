@@ -459,56 +459,6 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-      {/* Référentiel pour professionnels de santé */}
-      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Heart className="h-5 w-5 text-accent" />
-            Pour les professionnels de santé
-          </CardTitle>
-          <CardDescription className="text-slate-300">
-            Référentiel officiel pour l'examen médical préalable
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-slate-200">
-            Le <strong>Référentiel pour l'examen médical préalable à l'emploi d'un enfant de moins de 16 ans</strong> 
-            dans le spectacle, les professions ambulantes, la publicité et la mode est destiné aux médecins généralistes, 
-            pédiatres et médecins du travail qui réalisent ces examens.
-          </p>
-          
-          <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-            <h4 className="font-semibold text-amber-300 mb-2">Contenu du référentiel</h4>
-            <ul className="space-y-1 text-slate-200 text-sm">
-              <li>• Dispositions législatives et réglementaires</li>
-              <li>• Grille d'analyse des contraintes physiques et psychiques</li>
-              <li>• Protocole détaillé de l'examen médical</li>
-              <li>• Critères d'aptitude et contre-indications</li>
-              <li>• Modèle d'avis médical</li>
-            </ul>
-          </div>
-
-          <div className="flex gap-3">
-            <Button asChild variant="default">
-              <a href="/referentiel_professionnels_sante.docx" download>
-                <Download className="h-4 w-4 mr-2" />
-                Télécharger le référentiel (DOCX)
-              </a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="/referentiel_professionnels_sante.pdf" download>
-                <Download className="h-4 w-4 mr-2" />
-                Version PDF
-              </a>
-            </Button>
-          </div>
-          
-          <p className="text-xs text-slate-400 italic">
-            Document officiel du Ministère de la Santé et des Sports
-          </p>
-        </CardContent>
-      </Card>
-
       {/* Téléchargement du document */}
       <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur">
         <CardHeader>
