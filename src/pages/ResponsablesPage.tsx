@@ -318,34 +318,6 @@ const SanctionsContent = () => (
         </div>
       </div>
     </div>
-
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-blue-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
-        <BookOpen className="h-6 w-6" />
-        Documentation Officielle
-      </h3>
-      <div className="space-y-3">
-        <p className="text-slate-200 mb-4">
-          Accédez aux documents officiels et guides pratiques pour l'emploi des mineurs dans le spectacle
-        </p>
-        <button onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')} className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <FileText className="h-5 w-5" />
-          Convention Collective - Document complet
-        </button>
-        <button onClick={() => window.open('/informations_emploi_mineurs_spectacle_drieets.pdf', '_blank')} className="w-full bg-green-600/20 hover:bg-green-600/30 text-green-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <FileText className="h-5 w-5" />
-          Guide DRIEETS - Informations emploi des mineurs
-        </button>
-        <button onClick={() => window.open('/duree_travail_enfants_spectacle_drieets.pdf', '_blank')} className="w-full bg-purple-600/20 hover:bg-purple-600/30 text-purple-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <FileText className="h-5 w-5" />
-          Guide DRIEETS - Durée du travail
-        </button>
-        <button onClick={() => window.open('/livret_travail_des_enfants_080223.pdf', '_blank')} className="w-full bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <FileText className="h-5 w-5" />
-          Livret Ministère du Travail - Emploi des enfants
-        </button>
-      </div>
-    </div>
   </div>
 );
 
