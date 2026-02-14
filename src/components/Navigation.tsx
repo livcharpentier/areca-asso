@@ -23,7 +23,7 @@ const Navigation = () => {
     { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "CÔTÉ PRODUCTION", path: "/production" },
-    { label: "CÔTÉ PARENTS", path: "/parents" },
+    { label: "RESSOURCES POUR LES FAMILLES", path: "/parents" },
     { label: "CÔTÉ RESPONSABLES ENFANTS", path: "/responsables" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
