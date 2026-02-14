@@ -35,12 +35,12 @@ const Navigation = () => {
       children: [
         { label: "Compte Rendu Journalier", path: "/compte-rendu" },
         { label: "Réglementations Informations", path: "/minors-employment" },
+        { label: "VHSS", path: "/vhss" },
       ],
     },
     { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "DOSSIER DRIEETS", path: "/calendrier" },
-    { label: "VHSS", path: "/vhss" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
