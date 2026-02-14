@@ -2,18 +2,11 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, LogIn, LogOut, Globe, ChevronDown } from "lucide-react";
+import { Menu, LogIn, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-
-type NavItem = {
-  label: string;
-  path: string;
-  children?: { label: string; path: string }[];
-};
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState<string | null>(null);
   const navigate = useNavigate();
   const location = useLocation();
   const { user, signOut } = useAuth();
@@ -26,34 +19,18 @@ const Navigation = () => {
     }
   };
 
-  const navItems: NavItem[] = [
+  const navItems = [
     { label: "CÔTÉ PRODUCTION", path: "/production" },
     { label: "CÔTÉ PARENTS", path: "/parents" },
-    {
-      label: "CÔTÉ RESPONSABLES ENFANTS",
-      path: "#",
-      children: [
-        { label: "Compte Rendu Journalier", path: "/compte-rendu" },
-        { label: "Réglementations Informations", path: "/minors-employment" },
-        { label: "VHSS", path: "/vhss" },
-      ],
-    },
+    { label: "CÔTÉ RESPONSABLES ENFANTS", path: "/responsables" },
     { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
-    
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
     { label: "FAQ", path: "/faq" },
     { label: "CONTACT", path: "/contact" },
   ];
-
-  const isActiveParent = (item: NavItem) => {
-    if (item.children) {
-      return item.children.some((child) => location.pathname === child.path);
-    }
-    return location.pathname === item.path;
-  };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black border-b border-border/10">
@@ -78,56 +55,19 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
-            {navItems.map((item) =>
-              item.children ? (
-                <div
-                  key={item.label}
-                  className="relative"
-                  onMouseEnter={() => setDropdownOpen(item.label)}
-                  onMouseLeave={() => setDropdownOpen(null)}
-                >
-                  <button
-                    className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 flex items-center gap-1 ${
-                      isActiveParent(item)
-                        ? "text-accent border-accent"
-                        : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
-                    }`}
-                  >
-                    {item.label}
-                    <ChevronDown className="w-3 h-3" />
-                  </button>
-                  {dropdownOpen === item.label && (
-                    <div className="absolute top-full left-0 mt-1 bg-black/95 border border-accent/20 rounded-lg shadow-xl py-2 min-w-[260px] backdrop-blur-sm">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.path}
-                          to={child.path}
-                          className={`block px-4 py-2.5 text-xs uppercase tracking-wider font-medium transition-colors ${
-                            location.pathname === child.path
-                              ? "text-accent bg-accent/10"
-                              : "text-primary-foreground/90 hover:text-accent hover:bg-accent/5"
-                          }`}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 flex items-center gap-1 ${
-                    location.pathname === item.path
-                      ? "text-accent border-accent"
-                      : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 flex items-center gap-1 ${
+                  location.pathname === item.path
+                    ? "text-accent border-accent"
+                    : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
             <div className="flex items-center gap-2 ml-4 pl-4 border-l border-primary-foreground/20">
               <Button
                 onClick={handleAuthAction}
@@ -154,44 +94,20 @@ const Navigation = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-primary border-accent/20">
               <div className="flex flex-col gap-4 mt-8">
-                {navItems.map((item) =>
-                  item.children ? (
-                    <div key={item.label} className="flex flex-col gap-1">
-                      <span className="text-sm uppercase tracking-wider font-medium text-accent py-2">
-                        {item.label}
-                      </span>
-                      <div className="flex flex-col gap-1 pl-4 border-l-2 border-accent/30">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.path}
-                            to={child.path}
-                            onClick={() => setOpen(false)}
-                            className={`text-sm uppercase tracking-wider font-medium transition-colors py-1.5 text-left ${
-                              location.pathname === child.path
-                                ? "text-accent"
-                                : "text-primary-foreground hover:text-accent"
-                            }`}
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      onClick={() => setOpen(false)}
-                      className={`text-sm uppercase tracking-wider font-medium transition-colors py-2 text-left ${
-                        location.pathname === item.path
-                          ? "text-accent"
-                          : "text-primary-foreground hover:text-accent"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  )
-                )}
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setOpen(false)}
+                    className={`text-sm uppercase tracking-wider font-medium transition-colors py-2 text-left ${
+                      location.pathname === item.path
+                        ? "text-accent"
+                        : "text-primary-foreground hover:text-accent"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
                 <div className="flex gap-2 mt-4 pt-4 border-t border-primary-foreground/20">
                   <Button 
                     onClick={handleAuthAction}

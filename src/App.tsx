@@ -19,6 +19,7 @@ import CalendrierPage from "./pages/CalendrierPage";
 import CompteRenduPage from "./pages/CompteRenduPage";
 import ProductionPage from "./pages/ProductionPage";
 import ParentsPage from "./pages/ParentsPage";
+import ResponsablesPage from "./pages/ResponsablesPage";
 import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
 import FAQPage from "./pages/FAQPage";
@@ -51,6 +52,7 @@ const App = () => (
             <Route path="/compte-rendu" element={<CompteRenduPage />} />
             <Route path="/production" element={<ProductionPage />} />
             <Route path="/parents" element={<ParentsPage />} />
+            <Route path="/responsables" element={<ResponsablesPage />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/faq" element={<FAQPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
