@@ -40,7 +40,7 @@ const Navigation = () => {
     },
     { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
-    { label: "DOSSIER DRIEETS", path: "/calendrier" },
+    
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
