@@ -59,10 +59,10 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[11px] uppercase tracking-wider font-extrabold transition-all pb-1 border-b-2 flex items-center gap-1 ${
+                className={`text-sm uppercase tracking-wider font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
                     ? "text-accent border-accent"
-                    : "text-foreground/80 hover:text-accent border-transparent hover:border-accent/50"
+                    : "text-foreground hover:text-accent border-transparent hover:border-accent/50"
                 }`}
               >
                 {item.label}
