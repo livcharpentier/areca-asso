@@ -12,8 +12,8 @@ const News = () => {
     },
     {
       date: "12.10.2025",
-      category: "Vie de l'AFCJA",
-      title: "L'AFCJA accueille 11 nouveaux membres",
+      category: "Vie de l'ARECA",
+      title: "L'ARECA accueille 11 nouveaux membres",
       excerpt: "Nous sommes heureux d'accueillir de nouveaux professionnels au sein de notre association...",
     },
     {
