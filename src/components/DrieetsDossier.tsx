@@ -83,6 +83,64 @@ const DrieetsDossier = () => {
           </div>
         </div>
 
+        {/* Pièces par enfant */}
+        <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-6">
+          <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+            <FolderOpen className="h-5 w-5 text-accent" />
+            Pièces à fournir pour chaque enfant
+          </h3>
+          <div className="space-y-3">
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Livret de famille à jour</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Projet de contrat de travail</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Autorisation parentale</p>
+                <p className="text-sm text-slate-400">À remplir à partir du modèle officiel</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Certificat de scolarité</p>
+                <p className="text-sm text-slate-400">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Avis pédagogique</p>
+                <p className="text-sm text-slate-400">À fournir à partir de 4 jours d'absence scolaire</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-slate-200">
+                <p className="font-semibold">Avis médical d'aptitude</p>
+                <p className="text-sm text-slate-400">Médecin du travail Thalie Santé (ex-CMB) ou justificatif de prise de rendez-vous</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 bg-blue-950/40 p-4 rounded-lg border border-accent/30">
+            <h4 className="font-semibold text-amber-300 mb-2">Cas particuliers — Figurants et silhouettes :</h4>
+            <ul className="space-y-1 text-slate-200 text-sm ml-4">
+              <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
+              <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
+            </ul>
+          </div>
+        </div>
+
         {/* Coordonnées DRIEETS */}
         <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg space-y-4">
           <h3 className="font-semibold text-lg mb-4 text-accent">
