@@ -2,9 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import DailyReport from "@/components/DailyReport";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-import FigurationSalaries from "@/components/FigurationSalaries";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Scale, ShieldAlert, Clock, Coins, Landmark, AlertTriangle, BookOpen, Download } from "lucide-react";
+import { FileText, Scale, ShieldAlert, Clock, Landmark, AlertTriangle, BookOpen, Download } from "lucide-react";
 
 const ResponsablesPage = () => {
   return (
@@ -69,14 +69,10 @@ const ReglementationsContent = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <Tabs defaultValue="temps-travail" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
           <TabsTrigger value="temps-travail" className="gap-2">
             <Clock className="h-4 w-4" />
             <span className="hidden sm:inline">Temps de travail</span>
-          </TabsTrigger>
-          <TabsTrigger value="salaires-figuration" className="gap-2">
-            <Coins className="h-4 w-4" />
-            <span className="hidden sm:inline">Salaires Figuration</span>
           </TabsTrigger>
           <TabsTrigger value="conditions" className="gap-2">
             <FileText className="h-4 w-4" />
@@ -98,9 +94,6 @@ const ReglementationsContent = () => {
           </div>
         </TabsContent>
 
-        <TabsContent value="salaires-figuration">
-          <FigurationSalaries />
-        </TabsContent>
 
         <TabsContent value="conditions">
           <ConditionsContent />
