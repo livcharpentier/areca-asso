@@ -20,8 +20,8 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "PRODUCTION", path: "/production", protected: false },
-    { label: "PARENTS", path: "/parents", protected: false },
+    { label: "CÔTÉ PRODUCTION", path: "/production", protected: false },
+    { label: "CÔTÉ PARENTS", path: "/parents", protected: false },
     { label: "FICHE MÉTIER", path: "/about", protected: false },
     { label: "MEMBRES", path: "/members", protected: false },
     { label: "COMPTE RENDU JOURNALIER", path: "/compte-rendu", protected: false },
