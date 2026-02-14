@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, LogIn, LogOut, Globe } from "lucide-react";
+import { Menu, LogIn, LogOut, Globe, Lock } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 const Navigation = () => {
@@ -20,17 +20,17 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "FICHE MÉTIER", path: "/about" },
-    { label: "MEMBRES", path: "/members" },
-    { label: "COMPTE RENDU JOURNALIER", path: "/compte-rendu" },
-    { label: "RÉGLEMENTATIONS INFORMATIONS", path: "/minors-employment" },
-    { label: "DOSSIER DRIEETS", path: "/calendrier" },
-    { label: "VHSS", path: "/vhss" },
-    { label: "FORMATIONS", path: "/formations" },
-    { label: "ACTUALITÉS", path: "/news" },
-    { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
-    { label: "FAQ", path: "/faq" },
-    { label: "CONTACT", path: "/contact" },
+    { label: "FICHE MÉTIER", path: "/about", protected: false },
+    { label: "MEMBRES", path: "/members", protected: false },
+    { label: "COMPTE RENDU JOURNALIER", path: "/compte-rendu", protected: true },
+    { label: "RÉGLEMENTATIONS INFORMATIONS", path: "/minors-employment", protected: true },
+    { label: "DOSSIER DRIEETS", path: "/calendrier", protected: false },
+    { label: "VHSS", path: "/vhss", protected: false },
+    { label: "FORMATIONS", path: "/formations", protected: false },
+    { label: "ACTUALITÉS", path: "/news", protected: false },
+    { label: "SOURCES ET DOCUMENTATION", path: "/documents", protected: false },
+    { label: "FAQ", path: "/faq", protected: false },
+    { label: "CONTACT", path: "/contact", protected: false },
   ];
 
   return (
@@ -60,12 +60,13 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 ${
+                className={`text-[11px] uppercase tracking-wider font-medium transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
                     ? "text-accent border-accent"
                     : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
                 }`}
               >
+                {item.protected && <Lock className="w-3 h-3" />}
                 {item.label}
               </Link>
             ))}

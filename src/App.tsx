@@ -21,6 +21,7 @@ import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
 import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +38,7 @@ const App = () => (
             <Route path="/members" element={<MembersPage />} />
             <Route path="/members/:category" element={<MemberCategoryPage />} />
             <Route path="/member/:slug" element={<MemberProfilePage />} />
-            <Route path="/minors-employment" element={<MinorsEmploymentPage />} />
+            <Route path="/minors-employment" element={<ProtectedRoute><MinorsEmploymentPage /></ProtectedRoute>} />
             <Route path="/vhss" element={<VHSSPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/formations" element={<FormationsPage />} />
@@ -45,7 +46,7 @@ const App = () => (
             <Route path="/documents" element={<DocumentsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/calendrier" element={<CalendrierPage />} />
-            <Route path="/compte-rendu" element={<CompteRenduPage />} />
+            <Route path="/compte-rendu" element={<ProtectedRoute><CompteRenduPage /></ProtectedRoute>} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/faq" element={<FAQPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
