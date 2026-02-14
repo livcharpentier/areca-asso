@@ -4,7 +4,7 @@ import DailyReport from "@/components/DailyReport";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download } from "lucide-react";
+import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download, Coffee, Users, Award, Briefcase, CalendarDays, Theater, Gamepad2, Copyright } from "lucide-react";
 
 const ResponsablesPage = () => {
   return (
@@ -69,16 +69,28 @@ const ReglementationsContent = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <Tabs defaultValue="temps-travail" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 mb-8">
-          <TabsTrigger value="temps-travail" className="gap-2">
+        <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-8">
+          <TabsTrigger value="temps-travail" className="gap-1 text-xs">
             <Clock className="h-4 w-4" />
             <span className="hidden sm:inline">Temps de travail</span>
           </TabsTrigger>
-          <TabsTrigger value="conditions" className="gap-2">
+          <TabsTrigger value="organisation" className="gap-1 text-xs">
+            <Coffee className="h-4 w-4" />
+            <span className="hidden sm:inline">Organisation</span>
+          </TabsTrigger>
+          <TabsTrigger value="familles-emploi" className="gap-1 text-xs">
+            <Theater className="h-4 w-4" />
+            <span className="hidden sm:inline">Familles d'emploi</span>
+          </TabsTrigger>
+          <TabsTrigger value="conditions" className="gap-1 text-xs">
             <FileText className="h-4 w-4" />
             <span className="hidden sm:inline">Conditions</span>
           </TabsTrigger>
-          <TabsTrigger value="sanctions" className="gap-2">
+          <TabsTrigger value="droits-cumul" className="gap-1 text-xs">
+            <Copyright className="h-4 w-4" />
+            <span className="hidden sm:inline">Droits & Cumul</span>
+          </TabsTrigger>
+          <TabsTrigger value="sanctions" className="gap-1 text-xs">
             <Scale className="h-4 w-4" />
             <span className="hidden sm:inline">Sanctions</span>
           </TabsTrigger>
@@ -90,11 +102,21 @@ const ReglementationsContent = () => {
           </div>
         </TabsContent>
 
+        <TabsContent value="organisation">
+          <OrganisationTravailContent />
+        </TabsContent>
+
+        <TabsContent value="familles-emploi">
+          <FamillesEmploiContent />
+        </TabsContent>
 
         <TabsContent value="conditions">
           <ConditionsContent />
         </TabsContent>
 
+        <TabsContent value="droits-cumul">
+          <DroitsCumulContent />
+        </TabsContent>
 
         <TabsContent value="sanctions">
           <SanctionsContent />
@@ -103,6 +125,239 @@ const ReglementationsContent = () => {
     </div>
   );
 };
+
+/* Contenu Organisation du travail */
+const OrganisationTravailContent = () => (
+  <div className="space-y-6">
+    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-blue-400/60 rounded-lg p-6 backdrop-blur">
+      <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
+        <Coffee className="h-6 w-6" />
+        Organisation du Temps de Travail
+      </h3>
+
+      <div className="space-y-4 text-slate-100">
+        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+          <p className="font-semibold text-blue-200 mb-2 flex items-center gap-2">
+            <Clock className="h-4 w-4" />
+            Temps de travail effectif vs. Temps de présence
+          </p>
+          <p className="text-sm mb-2">Le temps de travail effectif comprend :</p>
+          <ul className="text-sm ml-4 list-disc space-y-1">
+            <li><strong>Préparation :</strong> Maquillage, coiffure, habillage</li>
+            <li><strong>Répétitions :</strong> Toutes les répétitions sur plateau</li>
+            <li><strong>Prises :</strong> Temps de tournage effectif</li>
+          </ul>
+          <div className="mt-3 bg-amber-900/30 p-3 rounded border border-amber-400/30">
+            <p className="text-amber-200 font-semibold text-sm">⚠️ Ne sont PAS du temps de travail :</p>
+            <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
+              <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
+              <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
+              <li><strong>Temps d'attente</strong> dans la loge (si l'enfant n'est pas sollicité)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+          <p className="font-semibold text-blue-200 mb-2 flex items-center gap-2">
+            <CalendarDays className="h-4 w-4" />
+            Travail du dimanche et jours fériés
+          </p>
+          <ul className="text-sm space-y-1">
+            <li>Le travail du dimanche et des jours fériés est <strong>autorisé</strong> dans les entreprises de spectacles</li>
+            <li>Conditions définies par la <strong>convention collective</strong> applicable</li>
+            <li>Les majorations de salaire prévues s'appliquent</li>
+          </ul>
+        </div>
+
+        <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30">
+          <p className="font-semibold text-amber-200 mb-2 flex items-center gap-2">
+            <CalendarDays className="h-4 w-4" />
+            Règle des vacances scolaires
+          </p>
+          <ul className="text-sm space-y-2">
+            <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
+            <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
+            <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
+            <li className="text-amber-300"><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
+          </ul>
+        </div>
+
+        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
+          <p className="font-semibold text-blue-200 mb-2">Repos obligatoire :</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+            <div>
+              <p><strong>Repos quotidien :</strong></p>
+              <ul className="ml-4 list-disc space-y-1">
+                <li>Minimum <strong>14 heures consécutives</strong> pour les moins de 16 ans</li>
+                <li>Minimum <strong>12 heures consécutives</strong> pour les 16-18 ans</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>Repos hebdomadaire :</strong></p>
+              <ul className="ml-4 list-disc space-y-1">
+                <li><strong>2 jours consécutifs</strong> incluant le dimanche</li>
+                <li>Dérogation possible : 36h dont 24h consécutives</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+/* Contenu Familles d'emploi */
+const FamillesEmploiContent = () => (
+  <div className="space-y-6">
+    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-purple-400/60 rounded-lg p-6 backdrop-blur">
+      <h3 className="text-2xl font-bold text-purple-300 mb-4 flex items-center gap-2">
+        <Theater className="h-6 w-6" />
+        Familles d'Emploi des Mineurs dans le Spectacle
+      </h3>
+
+      <div className="space-y-4 text-slate-100">
+        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+            <Users className="h-4 w-4" />
+            Rôle vs. Figuration
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+            <div className="bg-purple-950/40 p-3 rounded">
+              <p className="font-semibold text-purple-300 mb-1">🎭 Rôle (Artiste interprète)</p>
+              <ul className="ml-4 list-disc space-y-1">
+                <li>Texte à dire ou jeu d'acteur identifiable</li>
+                <li>Rémunération selon la convention collective artistes</li>
+                <li>Droits voisins (ADAMI) applicables</li>
+                <li>Contrat d'artiste interprète obligatoire</li>
+              </ul>
+            </div>
+            <div className="bg-purple-950/40 p-3 rounded">
+              <p className="font-semibold text-purple-300 mb-1">👥 Figuration</p>
+              <ul className="ml-4 list-disc space-y-1">
+                <li>Présence dans le décor sans jeu identifiable</li>
+                <li>Rémunération selon grille de figuration</li>
+                <li>Pas de droits voisins</li>
+                <li>Contrat de figuration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+            <Theater className="h-4 w-4" />
+            Théâtre & Cirque
+          </p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Âge minimum :</strong> <span className="text-amber-300 font-semibold">9 ans</span> (pas de dérogation possible)</li>
+            <li><strong>Maximum :</strong> 3 représentations par semaine</li>
+            <li><strong>Maximum :</strong> 1 représentation par jour</li>
+            <li>Repos obligatoire pendant les vacances scolaires</li>
+            <li><strong>Cirque :</strong> Mêmes règles, interdiction des exercices dangereux pour les moins de 16 ans</li>
+          </ul>
+        </div>
+
+        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+            <Gamepad2 className="h-4 w-4" />
+            E-sport & Compétitions de jeux vidéo
+          </p>
+          <ul className="text-sm space-y-1">
+            <li>Les compétitions de jeux vidéo professionnelles sont soumises à la réglementation du spectacle</li>
+            <li>Autorisation de la commission obligatoire pour les mineurs de moins de 16 ans</li>
+            <li>Mêmes règles de temps de travail et de repos applicables</li>
+            <li>Obligation de déclaration à la Caisse des Dépôts pour les gains</li>
+          </ul>
+        </div>
+
+        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
+          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+            <Briefcase className="h-4 w-4" />
+            Compétence territoriale
+          </p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Entreprise française :</strong> Demande auprès de la DRIEETS du département du siège social de l'entreprise</li>
+            <li><strong>Entreprise étrangère :</strong> Demande auprès de la DRIEETS du département du lieu de tournage</li>
+            <li><strong>Île-de-France :</strong> Commission centralisée pour les départements 75, 77, 78, 91, 92, 93, 94, 95</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+/* Contenu Droits & Cumul */
+const DroitsCumulContent = () => (
+  <div className="space-y-6">
+    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-green-400/60 rounded-lg p-6 backdrop-blur">
+      <h3 className="text-2xl font-bold text-green-300 mb-4 flex items-center gap-2">
+        <Copyright className="h-6 w-6" />
+        Droits d'Auteur & Droits Voisins
+      </h3>
+
+      <div className="space-y-4 text-slate-100">
+        <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30">
+          <p className="font-semibold text-green-200 mb-2">Droits voisins (Artistes interprètes)</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>ADAMI :</strong> Gère les droits des artistes interprètes principaux (rôles)</li>
+            <li><strong>SPEDIDAM :</strong> Gère les droits des artistes interprètes musiciens</li>
+            <li>Les droits voisins sont perçus lors de la <strong>rediffusion, diffusion en ligne ou exploitation secondaire</strong> de l'œuvre</li>
+            <li>Les mineurs bénéficient des mêmes droits que les adultes</li>
+            <li className="text-amber-300">Les figurants ne bénéficient <strong>pas</strong> de droits voisins</li>
+          </ul>
+        </div>
+
+        <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30">
+          <p className="font-semibold text-green-200 mb-2">Droits d'auteur</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>SACD :</strong> Société des Auteurs et Compositeurs Dramatiques - gère les droits des auteurs d'œuvres audiovisuelles</li>
+            <li><strong>SACEM :</strong> Droits des auteurs, compositeurs et éditeurs de musique</li>
+            <li>Si un mineur est <strong>auteur ou co-auteur</strong> d'une œuvre, ses droits sont gérés par ses représentants légaux jusqu'à sa majorité</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-indigo-400/60 rounded-lg p-6 backdrop-blur">
+      <h3 className="text-2xl font-bold text-indigo-300 mb-4 flex items-center gap-2">
+        <Award className="h-6 w-6" />
+        Cumul de Prestations
+      </h3>
+
+      <div className="space-y-4 text-slate-100">
+        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
+          <p className="font-semibold text-indigo-200 mb-2">Règles de cumul</p>
+          <ul className="text-sm space-y-2">
+            <li><strong>Cumul d'emplois :</strong> Un enfant peut travailler pour plusieurs productions, mais le cumul des heures de travail ne doit pas dépasser les durées maximales légales</li>
+            <li><strong>Déclaration obligatoire :</strong> Chaque employeur doit vérifier que l'enfant ne travaille pas déjà pour une autre production</li>
+            <li><strong>Responsabilité :</strong> C'est à chaque producteur de s'assurer du respect des durées maximales</li>
+            <li className="text-amber-300"><strong>Vacances scolaires :</strong> La règle des 50% s'applique tous employeurs confondus</li>
+          </ul>
+        </div>
+
+        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
+          <p className="font-semibold text-indigo-200 mb-2">Déclaration des sommes à la Caisse des Dépôts</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Obligation de l'employeur :</strong> Verser 90% de la rémunération nette à la Caisse des Dépôts et Consignations</li>
+            <li><strong>Délai :</strong> Dans les 30 jours suivant la fin du contrat</li>
+            <li><strong>Déclaration :</strong> Formulaire de déclaration spécifique à adresser à la CDC</li>
+            <li><strong>Pièces justificatives :</strong> Copie du bulletin de paie, autorisation préfectorale, pièce d'identité de l'enfant</li>
+          </ul>
+        </div>
+
+        <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30">
+          <p className="font-semibold text-amber-200 mb-2">Déblocage anticipé du pécule</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Principe :</strong> Les sommes sont bloquées jusqu'à la majorité de l'enfant</li>
+            <li><strong>Exception :</strong> Le juge des tutelles peut autoriser un déblocage anticipé en cas de nécessité</li>
+            <li><strong>Motifs acceptés :</strong> Financement des études, achat immobilier, situation de précarité</li>
+            <li><strong>Procédure :</strong> Requête auprès du juge des tutelles du tribunal judiciaire du domicile de l'enfant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 /* Contenu Conditions - extrait de MinorsEmploymentPage */
 const ConditionsContent = () => (
