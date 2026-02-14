@@ -74,20 +74,17 @@ const Navigation = () => {
             ))}
             <div className="flex items-center gap-2 ml-4 pl-4 border-l border-primary-foreground/20">
               <Button
-                variant="ghost"
-                size="icon"
                 onClick={handleAuthAction}
-                className="w-8 h-8 text-primary-foreground hover:text-accent"
-                title={user ? "Déconnexion" : "Connexion"}
+                className={user 
+                  ? "bg-transparent border border-primary-foreground/30 text-primary-foreground hover:bg-accent hover:text-white text-xs px-3 h-8"
+                  : "bg-accent text-white hover:bg-accent/90 text-xs px-4 h-8 font-semibold"
+                }
               >
-                {user ? <LogOut className="w-4 h-4" /> : <LogIn className="w-4 h-4" />}
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="w-8 h-8 text-primary-foreground hover:text-accent"
-              >
-                <Globe className="w-4 h-4" />
+                {user ? (
+                  <><LogOut className="w-3.5 h-3.5 mr-1.5" /> Déconnexion</>
+                ) : (
+                  <><LogIn className="w-3.5 h-3.5 mr-1.5" /> Connexion</>
+                )}
               </Button>
             </div>
           </div>
