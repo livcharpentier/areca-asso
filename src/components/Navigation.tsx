@@ -20,11 +20,11 @@ const Navigation = () => {
   };
 
   const navItems = [
+    { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
     { label: "CÔTÉ PRODUCTION", path: "/production" },
     { label: "CÔTÉ PARENTS", path: "/parents" },
     { label: "CÔTÉ RESPONSABLES ENFANTS", path: "/responsables" },
-    { label: "FICHE MÉTIER", path: "/about" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
