@@ -68,7 +68,6 @@ const Navigation = () => {
                     : "text-primary-foreground/90 hover:text-accent border-transparent hover:border-accent/50"
                 }`}
               >
-                {item.protected && <Lock className="w-3 h-3" />}
                 {item.label}
               </Link>
             ))}
