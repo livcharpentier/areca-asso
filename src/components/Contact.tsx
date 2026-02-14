@@ -24,8 +24,8 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="mt-4">
-                  <a href="mailto:contact@afcja.fr" className="text-accent hover:text-blue-vibrant font-semibold transition-colors">
-                    contact@afcja.fr
+                  <a href="mailto:contact@areca.fr" className="text-accent hover:text-blue-vibrant font-semibold transition-colors">
+                    contact@areca.fr
                   </a>
                 </CardContent>
               </Card>
