@@ -22,9 +22,9 @@ const Navigation = () => {
   const navItems = [
     { label: "FICHE MÉTIER", path: "/about" },
     { label: "MEMBRES", path: "/members" },
-    { label: "CÔTÉ PRODUCTION", path: "/production" },
-    { label: "RESSOURCES POUR LES FAMILLES", path: "/parents" },
-    { label: "CÔTÉ RESPONSABLES ENFANTS", path: "/responsables" },
+    { label: "ESPACE INFORMATION", path: "/production" },
+    { label: "ESPACE FAMILLE", path: "/parents" },
+    { label: "ESPACE MEMBRE", path: "/responsables" },
     { label: "FORMATIONS", path: "/formations" },
     { label: "ACTUALITÉS", path: "/news" },
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
