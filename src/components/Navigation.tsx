@@ -26,7 +26,7 @@ const Navigation = () => {
     { label: "ESPACE FAMILLE", path: "/parents" },
     { label: "ESPACE MEMBRE", path: "/responsables" },
     { label: "FORMATIONS", path: "/formations" },
-    { label: "ACTUALITÉS", path: "/news" },
+    
     { label: "SOURCES ET DOCUMENTATION", path: "/documents" },
     { label: "FAQ", path: "/faq" },
     { label: "CONTACT", path: "/contact" },
