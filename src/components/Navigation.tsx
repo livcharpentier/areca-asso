@@ -37,26 +37,43 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(200,80%,50%)] to-[hsl(280,70%,55%)] flex items-center justify-center shadow-lg relative overflow-hidden">
-                <div className="absolute inset-0 flex">
-                  <div className="w-1/5 h-full bg-[hsl(0,75%,55%)]" />
-                  <div className="w-1/5 h-full bg-[hsl(45,85%,55%)]" />
-                  <div className="w-1/5 h-full bg-[hsl(145,60%,45%)]" />
-                  <div className="w-1/5 h-full bg-[hsl(200,80%,50%)]" />
-                  <div className="w-1/5 h-full bg-[hsl(280,70%,55%)]" />
-                </div>
-                <span className="relative z-10 text-[9px] font-lucky text-white tracking-wider drop-shadow-md">ARECA</span>
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-3xl font-lucky text-blue-vibrant tracking-tight">
-                  ARECA
-                </span>
-                <span className="text-[8px] text-foreground/60 uppercase tracking-wider font-comic font-bold">
-                  Responsables Enfants Cinéma Audiovisuel
-                </span>
-              </div>
+          <Link to="/" className="flex items-center gap-2 group">
+            {/* Film reel SVG logo */}
+            <svg width="48" height="48" viewBox="0 0 100 100" className="flex-shrink-0">
+              {/* Film strips behind */}
+              <rect x="5" y="35" width="30" height="18" rx="2" fill="hsl(15, 85%, 55%)" transform="rotate(-15, 20, 44)" />
+              <rect x="10" y="38" width="25" height="12" rx="1" fill="none" stroke="white" strokeWidth="1.5" transform="rotate(-15, 20, 44)" />
+              <rect x="65" y="35" width="30" height="18" rx="2" fill="hsl(15, 85%, 55%)" transform="rotate(15, 80, 44)" />
+              <rect x="70" y="38" width="25" height="12" rx="1" fill="none" stroke="white" strokeWidth="1.5" transform="rotate(15, 80, 44)" />
+              {/* Main reel circle */}
+              <circle cx="50" cy="50" r="28" fill="hsl(0, 75%, 55%)" />
+              <circle cx="50" cy="50" r="26" fill="none" stroke="hsl(340, 70%, 50%)" strokeWidth="2" />
+              {/* Outer dots */}
+              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => (
+                <circle
+                  key={angle}
+                  cx={50 + 22 * Math.cos((angle * Math.PI) / 180)}
+                  cy={50 + 22 * Math.sin((angle * Math.PI) / 180)}
+                  r="2.5"
+                  fill="white"
+                />
+              ))}
+              {/* Inner holes */}
+              <circle cx="50" cy="38" r="5" fill="white" />
+              <circle cx="60" cy="50" r="5" fill="white" />
+              <circle cx="50" cy="62" r="5" fill="white" />
+              <circle cx="40" cy="50" r="5" fill="white" />
+              {/* Center hole */}
+              <circle cx="50" cy="50" r="4" fill="white" />
+              <circle cx="50" cy="50" r="2.5" fill="hsl(0, 75%, 55%)" />
+            </svg>
+            <div className="flex flex-col leading-none">
+              <span className="text-3xl font-lucky text-blue-vibrant tracking-tight">
+                ARECA
+              </span>
+              <span className="text-[8px] text-foreground/60 uppercase tracking-wider font-comic font-bold">
+                Responsables Enfants Cinéma Audiovisuel
+              </span>
             </div>
           </Link>
 
