@@ -69,7 +69,7 @@ const ReglementationsContent = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <Tabs defaultValue="temps-travail" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-8">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
           <TabsTrigger value="temps-travail" className="gap-1 text-xs">
             <Clock className="h-4 w-4" />
             <span className="hidden sm:inline">Temps de travail</span>
@@ -85,10 +85,6 @@ const ReglementationsContent = () => {
           <TabsTrigger value="conditions" className="gap-1 text-xs">
             <FileText className="h-4 w-4" />
             <span className="hidden sm:inline">Conditions</span>
-          </TabsTrigger>
-          <TabsTrigger value="sanctions" className="gap-1 text-xs">
-            <Scale className="h-4 w-4" />
-            <span className="hidden sm:inline">Sanctions</span>
           </TabsTrigger>
         </TabsList>
 
@@ -111,9 +107,6 @@ const ReglementationsContent = () => {
         </TabsContent>
 
 
-        <TabsContent value="sanctions">
-          <SanctionsContent />
-        </TabsContent>
       </Tabs>
     </div>
   );
@@ -453,43 +446,6 @@ const ConditionsContent = () => (
             <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
             <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-/* Contenu Sanctions */
-const SanctionsContent = () => (
-  <div className="space-y-6">
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-red-300 mb-4 flex items-center gap-2">
-        <AlertTriangle className="h-6 w-6" />
-        Sanctions Pénales
-      </h3>
-      <div className="space-y-4 text-slate-100">
-        <div className="bg-red-900/30 p-4 rounded-lg border-2 border-red-500">
-          <p className="font-bold text-red-200 text-base mb-2">SANCTIONS PÉNALES (Art. Code du Travail) :</p>
-          <div className="bg-black/30 p-3 rounded">
-            <p className="text-red-100 font-semibold mb-2">Engager ou produire un enfant ≤16 ans sans autorisation préalable :</p>
-            <div className="text-red-300 text-lg font-bold">
-              <p>5 ANS DE PRISON + 75 000 € D'AMENDE</p>
-            </div>
-          </div>
-          <ul className="mt-3 space-y-1 ml-4 list-disc text-slate-200">
-            <li>Arrêt immédiat du tournage possible</li>
-            <li>Amendes administratives supplémentaires</li>
-            <li>Interdiction d'employer des mineurs</li>
-            <li>Retrait de l'autorisation à tout moment par le préfet</li>
-          </ul>
-        </div>
-        <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30">
-          <p className="font-semibold text-blue-200 mb-1">📅 Travail dominical et jours fériés :</p>
-          <p className="text-sm">Le travail du dimanche et des jours fériés est autorisé dans les entreprises de spectacles, selon les conditions définies par la convention collective applicable.</p>
-        </div>
-        <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30">
-          <p className="font-semibold text-blue-200">🔄 Travaux en cours :</p>
-          <p className="text-sm mt-1">Les partenaires sociaux poursuivent leurs travaux pour améliorer l'organisation des castings et du travail des enfants, afin de sécuriser l'ensemble des parties prenantes : enfants, responsables légaux, personnels d'encadrement et employeurs.</p>
         </div>
       </div>
     </div>
