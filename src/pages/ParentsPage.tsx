@@ -42,7 +42,7 @@ const ParentsPage = () => {
               </TabsTrigger>
               <TabsTrigger value="salaires" className="gap-2">
                 <Coins className="h-4 w-4" />
-                <span className="hidden sm:inline">Salaires Artistes</span>
+                <span className="hidden sm:inline">Définitions Fonctions</span>
               </TabsTrigger>
               <TabsTrigger value="salaires-figuration" className="gap-2">
                 <Users className="h-4 w-4" />
