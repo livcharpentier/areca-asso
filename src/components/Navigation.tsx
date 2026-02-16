@@ -52,7 +52,7 @@ const Navigation = () => {
                   <rect key={`b${x}`} x={x} y={59} width="8" height="6" rx="1" fill="white" />
                 ))}
                 {/* ARECA text on film strip */}
-                <text x="170" y="58" textAnchor="middle" fill="hsl(45, 100%, 50%)" fontSize="30" fontWeight="900" letterSpacing="10" fontFamily="sans-serif">ARECA</text>
+                <text x="170" y="58" textAnchor="middle" fill="hsl(43, 100%, 60%)" fontSize="30" fontWeight="900" letterSpacing="10" fontFamily="sans-serif" stroke="hsl(35, 80%, 40%)" strokeWidth="0.5">ARECA</text>
                 {/* Main reel circle */}
                 <circle cx="45" cy="50" r="38" fill="hsl(220, 15%, 25%)" />
                 <circle cx="45" cy="50" r="35" fill="hsl(220, 15%, 30%)" stroke="white" strokeWidth="1.5" />
