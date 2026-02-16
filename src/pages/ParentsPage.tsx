@@ -2,11 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HealthMonitoring from "@/components/HealthMonitoring";
 import ArtistSalaries from "@/components/ArtistSalaries";
-import ChildSupervisorRole from "@/components/ChildSupervisorRole";
+
 import FigurationSalaries from "@/components/FigurationSalaries";
 import CaisseDepots from "@/components/CaisseDepots";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, Coins, Briefcase, FolderOpen, CheckCircle, AlertCircle, Download, Users, Landmark } from "lucide-react";
+import { Heart, Coins, FolderOpen, CheckCircle, AlertCircle, Download, Users, Landmark } from "lucide-react";
 
 const ParentsPage = () => {
   return (
@@ -31,7 +31,7 @@ const ParentsPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="suivi-sante" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-6">
+            <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-6">
               <TabsTrigger value="suivi-sante" className="gap-2">
                 <Heart className="h-4 w-4" />
                 <span className="hidden sm:inline">Suivi Santé</span>
@@ -51,10 +51,6 @@ const ParentsPage = () => {
               <TabsTrigger value="caisse-depots" className="gap-2">
                 <Landmark className="h-4 w-4" />
                 <span className="hidden sm:inline">Caisse des Dépôts</span>
-              </TabsTrigger>
-              <TabsTrigger value="fiche-metier" className="gap-2">
-                <Briefcase className="h-4 w-4" />
-                <span className="hidden sm:inline">Fiche Métier</span>
               </TabsTrigger>
             </TabsList>
 
@@ -78,9 +74,6 @@ const ParentsPage = () => {
               <CaisseDepots />
             </TabsContent>
 
-            <TabsContent value="fiche-metier">
-              <ChildSupervisorRole />
-            </TabsContent>
           </Tabs>
         </div>
       </section>
