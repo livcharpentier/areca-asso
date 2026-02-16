@@ -39,38 +39,42 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             {/* Film reel SVG logo */}
-            <svg width="48" height="48" viewBox="0 0 100 100" className="flex-shrink-0">
-              {/* Film strips behind */}
-              <rect x="5" y="35" width="30" height="18" rx="2" fill="hsl(15, 85%, 55%)" transform="rotate(-15, 20, 44)" />
-              <rect x="10" y="38" width="25" height="12" rx="1" fill="none" stroke="white" strokeWidth="1.5" transform="rotate(-15, 20, 44)" />
-              <rect x="65" y="35" width="30" height="18" rx="2" fill="hsl(15, 85%, 55%)" transform="rotate(15, 80, 44)" />
-              <rect x="70" y="38" width="25" height="12" rx="1" fill="none" stroke="white" strokeWidth="1.5" transform="rotate(15, 80, 44)" />
+            <svg width="140" height="48" viewBox="0 0 280 100" className="flex-shrink-0">
+              {/* Film strip banner behind */}
+              <rect x="55" y="32" width="220" height="36" rx="3" fill="hsl(220, 15%, 25%)" />
+              {/* Film strip perforations top */}
+              {[75, 95, 115, 135, 155, 175, 195, 215, 235, 255].map((x) => (
+                <rect key={`t${x}`} x={x} y={35} width="8" height="6" rx="1" fill="hsl(220, 10%, 40%)" />
+              ))}
+              {/* Film strip perforations bottom */}
+              {[75, 95, 115, 135, 155, 175, 195, 215, 235, 255].map((x) => (
+                <rect key={`b${x}`} x={x} y={59} width="8" height="6" rx="1" fill="hsl(220, 10%, 40%)" />
+              ))}
+              {/* ARECA text on film strip */}
+              <text x="170" y="56" textAnchor="middle" fill="white" fontSize="22" fontWeight="900" letterSpacing="6" fontFamily="sans-serif">ARECA</text>
               {/* Main reel circle */}
-              <circle cx="50" cy="50" r="28" fill="hsl(0, 75%, 55%)" />
-              <circle cx="50" cy="50" r="26" fill="none" stroke="hsl(340, 70%, 50%)" strokeWidth="2" />
+              <circle cx="45" cy="50" r="38" fill="hsl(220, 15%, 25%)" />
+              <circle cx="45" cy="50" r="35" fill="hsl(220, 15%, 30%)" stroke="hsl(220, 10%, 40%)" strokeWidth="2" />
               {/* Outer dots */}
-              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => (
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
                 <circle
                   key={angle}
-                  cx={50 + 22 * Math.cos((angle * Math.PI) / 180)}
-                  cy={50 + 22 * Math.sin((angle * Math.PI) / 180)}
-                  r="2.5"
-                  fill="white"
+                  cx={45 + 30 * Math.cos((angle * Math.PI) / 180)}
+                  cy={50 + 30 * Math.sin((angle * Math.PI) / 180)}
+                  r="3"
+                  fill="hsl(220, 10%, 40%)"
                 />
               ))}
               {/* Inner holes */}
-              <circle cx="50" cy="38" r="5" fill="white" />
-              <circle cx="60" cy="50" r="5" fill="white" />
-              <circle cx="50" cy="62" r="5" fill="white" />
-              <circle cx="40" cy="50" r="5" fill="white" />
+              <circle cx="45" cy="35" r="7" fill="hsl(220, 10%, 40%)" />
+              <circle cx="58" cy="50" r="7" fill="hsl(220, 10%, 40%)" />
+              <circle cx="45" cy="65" r="7" fill="hsl(220, 10%, 40%)" />
+              <circle cx="32" cy="50" r="7" fill="hsl(220, 10%, 40%)" />
               {/* Center hole */}
-              <circle cx="50" cy="50" r="4" fill="white" />
-              <circle cx="50" cy="50" r="2.5" fill="hsl(0, 75%, 55%)" />
+              <circle cx="45" cy="50" r="5" fill="hsl(220, 10%, 40%)" />
+              <circle cx="45" cy="50" r="3" fill="hsl(220, 15%, 30%)" />
             </svg>
             <div className="flex flex-col leading-none">
-              <span className="text-3xl font-lucky text-blue-vibrant tracking-tight">
-                ARECA
-              </span>
               <span className="text-[8px] text-foreground/60 uppercase tracking-wider font-comic font-bold">
                 Responsables Enfants Cinéma Audiovisuel
               </span>
