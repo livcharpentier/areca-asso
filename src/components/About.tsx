@@ -13,32 +13,35 @@ const About = () => {
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Présentation</h3>
-                <p className="text-slate-200 leading-relaxed">
-                  L'ARECA rassemble les professionnels de l'encadrement jeunesse dans le cinéma et l'audiovisuel. 
-                  Notre objectif est de garantir les meilleures conditions de travail pour les enfants et les professionnels qui les accompagnent.
+                <p className="text-slate-200 leading-relaxed text-sm">
+                  L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) regroupe les professionnels chargés de l'encadrement, de la protection et de la coordination des mineurs de moins de 16 ans sur les tournages. Elle œuvre pour la reconnaissance du métier, la défense des intérêts de la profession et la diffusion des bonnes pratiques auprès des productions, des institutions et des organisations professionnelles.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Notre rôle</h3>
-                <ul className="space-y-2 text-slate-200">
+                <h3 className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-3">Nos missions</h3>
+                <ul className="space-y-2 text-slate-200 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Valoriser le métier de coordinateur jeunesse</span>
+                    <span>Promouvoir et défendre la profession de responsable enfant</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Fédérer les professionnels du secteur</span>
+                    <span>Assurer la formation continue et le perfectionnement professionnel</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Défendre les droits et la réglementation</span>
+                    <span>Être l'interlocuteur des pouvoirs publics et des organisations professionnelles</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Partager les bonnes pratiques</span>
+                    <span>Clarifier la distinction entre responsable enfant et coach enfant</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1 font-bold">•</span>
+                    <span>Contribuer à la certification métier prévue en 2027</span>
                   </li>
                 </ul>
               </CardContent>
