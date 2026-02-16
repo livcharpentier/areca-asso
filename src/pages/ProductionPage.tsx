@@ -16,7 +16,7 @@ const ProductionPage = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold">
-              Espace Production
+              Informations concernant le travail des enfants
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Toutes les informations essentielles pour les productions employant des mineurs
