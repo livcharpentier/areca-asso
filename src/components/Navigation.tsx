@@ -39,11 +39,18 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-blue-sky flex items-center justify-center shadow-lg">
-                <span className="text-2xl font-bold text-white">A</span>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(200,80%,50%)] to-[hsl(280,70%,55%)] flex items-center justify-center shadow-lg relative overflow-hidden">
+                <div className="absolute inset-0 flex">
+                  <div className="w-1/5 h-full bg-[hsl(0,75%,55%)]" />
+                  <div className="w-1/5 h-full bg-[hsl(45,85%,55%)]" />
+                  <div className="w-1/5 h-full bg-[hsl(145,60%,45%)]" />
+                  <div className="w-1/5 h-full bg-[hsl(200,80%,50%)]" />
+                  <div className="w-1/5 h-full bg-[hsl(280,70%,55%)]" />
+                </div>
+                <span className="relative z-10 text-[9px] font-lucky text-white tracking-wider drop-shadow-md">ARECA</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="text-3xl font-lucky text-accent tracking-tight">
+                <span className="text-3xl font-lucky text-blue-vibrant tracking-tight">
                   ARECA
                 </span>
                 <span className="text-[8px] text-foreground/60 uppercase tracking-wider font-comic font-bold">
