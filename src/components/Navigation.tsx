@@ -40,7 +40,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center gap-2 group">
             {/* Film reel SVG logo */}
             <div className="flex flex-col items-center gap-0">
-              <svg width="140" height="48" viewBox="0 0 280 100" className="flex-shrink-0">
+              <svg width="180" height="56" viewBox="0 0 280 100" className="flex-shrink-0">
                 {/* Film strip banner behind */}
                 <rect x="55" y="32" width="220" height="36" rx="3" fill="hsl(220, 15%, 25%)" />
                 {/* Film strip perforations top */}
@@ -52,7 +52,7 @@ const Navigation = () => {
                   <rect key={`b${x}`} x={x} y={59} width="8" height="6" rx="1" fill="white" />
                 ))}
                 {/* ARECA text on film strip */}
-                <text x="170" y="57" textAnchor="middle" fill="hsl(210, 80%, 50%)" fontSize="24" fontWeight="900" letterSpacing="8" fontFamily="sans-serif">ARECA</text>
+                <text x="170" y="58" textAnchor="middle" fill="hsl(45, 100%, 50%)" fontSize="30" fontWeight="900" letterSpacing="10" fontFamily="sans-serif">ARECA</text>
                 {/* Main reel circle */}
                 <circle cx="45" cy="50" r="38" fill="hsl(220, 15%, 25%)" />
                 <circle cx="45" cy="50" r="35" fill="hsl(220, 15%, 30%)" stroke="white" strokeWidth="1.5" />
