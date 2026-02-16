@@ -4,7 +4,7 @@ import DailyReport from "@/components/DailyReport";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download, Coffee, Users, Award, Briefcase, CalendarDays, Theater, Gamepad2, Copyright } from "lucide-react";
+import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download, Coffee, Users, Briefcase, CalendarDays, Theater, Gamepad2 } from "lucide-react";
 
 const ResponsablesPage = () => {
   return (
@@ -69,7 +69,7 @@ const ReglementationsContent = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <Tabs defaultValue="temps-travail" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-8">
+        <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-8">
           <TabsTrigger value="temps-travail" className="gap-1 text-xs">
             <Clock className="h-4 w-4" />
             <span className="hidden sm:inline">Temps de travail</span>
@@ -85,10 +85,6 @@ const ReglementationsContent = () => {
           <TabsTrigger value="conditions" className="gap-1 text-xs">
             <FileText className="h-4 w-4" />
             <span className="hidden sm:inline">Conditions</span>
-          </TabsTrigger>
-          <TabsTrigger value="droits-cumul" className="gap-1 text-xs">
-            <Copyright className="h-4 w-4" />
-            <span className="hidden sm:inline">Droits & Cumul</span>
           </TabsTrigger>
           <TabsTrigger value="sanctions" className="gap-1 text-xs">
             <Scale className="h-4 w-4" />
@@ -114,9 +110,6 @@ const ReglementationsContent = () => {
           <ConditionsContent />
         </TabsContent>
 
-        <TabsContent value="droits-cumul">
-          <DroitsCumulContent />
-        </TabsContent>
 
         <TabsContent value="sanctions">
           <SanctionsContent />
@@ -279,79 +272,6 @@ const FamillesEmploiContent = () => (
             <li><strong>Entreprise française :</strong> Demande auprès de la DRIEETS du département du siège social de l'entreprise</li>
             <li><strong>Entreprise étrangère :</strong> Demande auprès de la DRIEETS du département du lieu de tournage</li>
             <li><strong>Île-de-France :</strong> Commission centralisée pour les départements 75, 77, 78, 91, 92, 93, 94, 95</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-/* Contenu Droits & Cumul */
-const DroitsCumulContent = () => (
-  <div className="space-y-6">
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-green-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-green-300 mb-4 flex items-center gap-2">
-        <Copyright className="h-6 w-6" />
-        Droits d'Auteur & Droits Voisins
-      </h3>
-
-      <div className="space-y-4 text-slate-100">
-        <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30">
-          <p className="font-semibold text-green-200 mb-2">Droits voisins (Artistes interprètes)</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>ADAMI :</strong> Gère les droits des artistes interprètes principaux (rôles)</li>
-            <li><strong>SPEDIDAM :</strong> Gère les droits des artistes interprètes musiciens</li>
-            <li>Les droits voisins sont perçus lors de la <strong>rediffusion, diffusion en ligne ou exploitation secondaire</strong> de l'œuvre</li>
-            <li>Les mineurs bénéficient des mêmes droits que les adultes</li>
-            <li className="text-amber-300">Les figurants ne bénéficient <strong>pas</strong> de droits voisins</li>
-          </ul>
-        </div>
-
-        <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30">
-          <p className="font-semibold text-green-200 mb-2">Droits d'auteur</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>SACD :</strong> Société des Auteurs et Compositeurs Dramatiques - gère les droits des auteurs d'œuvres audiovisuelles</li>
-            <li><strong>SACEM :</strong> Droits des auteurs, compositeurs et éditeurs de musique</li>
-            <li>Si un mineur est <strong>auteur ou co-auteur</strong> d'une œuvre, ses droits sont gérés par ses représentants légaux jusqu'à sa majorité</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-indigo-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-indigo-300 mb-4 flex items-center gap-2">
-        <Award className="h-6 w-6" />
-        Cumul de Prestations
-      </h3>
-
-      <div className="space-y-4 text-slate-100">
-        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
-          <p className="font-semibold text-indigo-200 mb-2">Règles de cumul</p>
-          <ul className="text-sm space-y-2">
-            <li><strong>Cumul d'emplois :</strong> Un enfant peut travailler pour plusieurs productions, mais le cumul des heures de travail ne doit pas dépasser les durées maximales légales</li>
-            <li><strong>Déclaration obligatoire :</strong> Chaque employeur doit vérifier que l'enfant ne travaille pas déjà pour une autre production</li>
-            <li><strong>Responsabilité :</strong> C'est à chaque producteur de s'assurer du respect des durées maximales</li>
-            <li className="text-amber-300"><strong>Vacances scolaires :</strong> La règle des 50% s'applique tous employeurs confondus</li>
-          </ul>
-        </div>
-
-        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
-          <p className="font-semibold text-indigo-200 mb-2">Déclaration des sommes à la Caisse des Dépôts</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Obligation de l'employeur :</strong> Verser 90% de la rémunération nette à la Caisse des Dépôts et Consignations</li>
-            <li><strong>Délai :</strong> Dans les 30 jours suivant la fin du contrat</li>
-            <li><strong>Déclaration :</strong> Formulaire de déclaration spécifique à adresser à la CDC</li>
-            <li><strong>Pièces justificatives :</strong> Copie du bulletin de paie, autorisation préfectorale, pièce d'identité de l'enfant</li>
-          </ul>
-        </div>
-
-        <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30">
-          <p className="font-semibold text-amber-200 mb-2">Déblocage anticipé du pécule</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Principe :</strong> Les sommes sont bloquées jusqu'à la majorité de l'enfant</li>
-            <li><strong>Exception :</strong> Le juge des tutelles peut autoriser un déblocage anticipé en cas de nécessité</li>
-            <li><strong>Motifs acceptés :</strong> Financement des études, achat immobilier, situation de précarité</li>
-            <li><strong>Procédure :</strong> Requête auprès du juge des tutelles du tribunal judiciaire du domicile de l'enfant</li>
           </ul>
         </div>
       </div>
