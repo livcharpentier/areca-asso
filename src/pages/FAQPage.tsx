@@ -32,7 +32,7 @@ const FAQPage = () => {
     },
     {
       question: "Quel est le rôle de l'ARECA ?",
-      answer: "L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques, de proposer des formations et de défendre les intérêts de la profession."
+      answer: "L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques et de défendre les intérêts de la profession."
     },
     {
       question: "Comment se déroule une demande d'autorisation DRIEETS ?",
