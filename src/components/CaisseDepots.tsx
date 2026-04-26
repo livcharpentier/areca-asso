@@ -115,27 +115,6 @@ const CaisseDepots = () => (
       </div>
     </div>
 
-    <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 p-5 rounded-lg border-2 border-red-400/40">
-      <h4 className="text-lg font-bold text-red-200 mb-3 flex items-center gap-2">
-        ⚠️ Règle Importante - Virements
-      </h4>
-      <div className="space-y-3 text-slate-100">
-        <div className="bg-black/30 p-3 rounded">
-          <p className="text-sm">
-            <strong className="text-red-300">Chaque virement</strong> effectué doit <strong>obligatoirement</strong> correspondre à <strong>une seule demande saisie et transmise</strong>, quel que soit le nombre d'enfants et/ou prestations contenus.
-          </p>
-        </div>
-        <div className="bg-red-950/50 p-3 rounded border border-red-500">
-          <p className="text-sm font-bold text-red-200">🚫 VIREMENTS REJETÉS si :</p>
-          <ul className="text-sm mt-2 space-y-1">
-            <li>• Virement global pour plusieurs demandes</li>
-            <li>• Plusieurs virements pour une seule demande</li>
-          </ul>
-          <p className="text-xs text-red-300 mt-2">Dans ce cas, vous devrez refaire l'ensemble de vos démarches.</p>
-        </div>
-      </div>
-    </div>
-
     <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-5 rounded-lg border-2 border-slate-400/40">
       <h4 className="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2">
         📞 Contact et Références
