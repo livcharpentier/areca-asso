@@ -9,7 +9,7 @@ const Members = () => {
   
   const membresExemples = [
     { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
-    { name: "Thomas Martin", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Christophe", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
     { name: "Sophie Bernard", slug: "sophie-bernard", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie", role: "Responsable enfants", bio: "12 ans d'expérience dans le cinéma jeunesse et les relations parents-production." },
     { name: "Claire Dupont", slug: "claire-dupont", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire", role: "Préceptrice", bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages." },
     { name: "Marc Lefèvre", slug: "marc-lefevre", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc", role: "Précepteur", bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel." },

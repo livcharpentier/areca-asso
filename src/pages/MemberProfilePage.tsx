@@ -29,9 +29,9 @@ const memberData: { [key: string]: any } = {
     }
   },
   "thomas-martin": {
-    firstName: "Thomas", lastName: "Martin",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas",
-    email: "thomas.martin@example.com", phone: "+33 6 23 45 67 89",
+    firstName: "Christophe", lastName: "Denis",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Christophe",
+    email: "christophe.denis@example.com", phone: "+33 6 23 45 67 89",
     role: "Responsable enfants",
     bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
     experienceYears: 10, availability: "En tournage",
