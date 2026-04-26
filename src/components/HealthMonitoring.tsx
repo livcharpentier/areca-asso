@@ -97,10 +97,9 @@ const HealthMonitoring = () => {
               <div className="bg-blue-950/30 p-4 rounded-lg">
                 <h4 className="font-semibold text-amber-200 mb-2">Enfant en région parisienne (Île-de-France)</h4>
                 <ul className="space-y-2 text-slate-200 text-sm ml-4">
+                  <li>• Vous devez renseigner les coordonnées des représentants légaux : la production donnera vos coordonnées à Thalie Santé</li>
                   <li>• Thalie Santé contacte directement les parents pour prendre rendez-vous</li>
                   <li>• Consultation en <strong>physique</strong> ou en <strong>téléconsultation</strong></li>
-                  <li>• Vous devez renseigner les coordonnées des représentants légaux dans votre demande</li>
-                  <li>• Thalie Santé charge directement le certificat d'aptitude/inaptitude sur la plateforme</li>
                 </ul>
               </div>
 
