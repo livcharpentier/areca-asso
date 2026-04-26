@@ -16,9 +16,9 @@ const HealthMonitoring = () => {
       </div>
 
       {/* Encadré important - Documents requis */}
-      <div className="bg-destructive/15 border-2 border-destructive/60 p-5 rounded-lg">
+      <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-2 border-accent/40 p-5 rounded-lg">
         <div className="flex items-start gap-3">
-          <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
+          <AlertCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
           <div className="flex-1">
             <p className="font-semibold text-white text-lg mb-3">
               📋 Documents médicaux obligatoires
@@ -32,7 +32,7 @@ const HealthMonitoring = () => {
                   <li>• Autorisation parentale obligatoire</li>
                 </ul>
               </div>
-              <div className="pt-2 border-t border-destructive/20">
+              <div className="pt-2 border-t border-accent/20">
                 <p className="font-semibold text-white mb-1">Cas particulier - Figurants et silhouettes :</p>
                 <ul className="space-y-1 ml-4 text-white/90">
                   <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
