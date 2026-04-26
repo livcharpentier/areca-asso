@@ -8,16 +8,8 @@ const Members = () => {
   const navigate = useNavigate();
   
   const membresExemples = [
-    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Liv", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
-    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Christophe", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
-    { name: "Sophie Bernard", slug: "sophie-bernard", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Sophie", role: "Responsable enfants", bio: "12 ans d'expérience dans le cinéma jeunesse et les relations parents-production." },
-    { name: "Claire Dupont", slug: "claire-dupont", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Claire", role: "Préceptrice", bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages." },
-    { name: "Marc Lefèvre", slug: "marc-lefevre", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Marc", role: "Précepteur", bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel." },
-    { name: "Julie Moreau", slug: "julie-moreau", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Julie", role: "Animatrice", bio: "Animation et encadrement jeunesse sur plateaux de cinéma et séries TV." },
-    { name: "Pierre Roux", slug: "pierre-roux", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Pierre", role: "Animateur", bio: "Animateur BAFA avec expérience en productions audiovisuelles jeunesse." },
-    { name: "Emma Laurent", slug: "emma-laurent", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Emma", role: "Cantinière", bio: "Restauration adaptée aux enfants sur les tournages, respect des normes alimentaires." },
-    { name: "Lucas Petit", slug: "lucas-petit", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Lucas", role: "Responsable enfants", bio: "Coordinateur terrain, gestion des plannings enfants et lien avec les familles." },
-    { name: "Camille Simon", slug: "camille-simon", photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Camille", role: "Préceptrice", bio: "Suivi scolaire personnalisé et accompagnement éducatif sur tournages." },
+    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=LivCharpentier", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=ChristopheDenis", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
   ];
 
   const categories = [
