@@ -109,14 +109,6 @@ const HealthMonitoring = () => {
                   <li>• Ce bon permet de prendre rendez-vous dans un <strong>centre agréé par Thalie Santé</strong> en région</li>
                 </ul>
               </div>
-
-              <div className="bg-blue-950/30 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-200 mb-2">Examen sur pièce</h4>
-                <p className="text-slate-200 text-sm ml-4">
-                  Dans certains cas, Thalie Santé peut réaliser un examen sur pièce (analyse des documents sans consultation). 
-                  Le certificat d'aptitude/inaptitude est alors chargé directement sur la plateforme.
-                </p>
-              </div>
             </div>
           </div>
         </CardContent>
