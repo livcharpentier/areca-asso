@@ -16,25 +16,25 @@ const HealthMonitoring = () => {
       </div>
 
       {/* Encadré important - Documents requis */}
-      <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+      <div className="bg-destructive/15 border-2 border-destructive/60 p-5 rounded-lg">
         <div className="flex items-start gap-3">
           <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
           <div className="flex-1">
-            <p className="font-semibold text-foreground text-lg mb-3">
+            <p className="font-semibold text-white text-lg mb-3">
               📋 Documents médicaux obligatoires
             </p>
             <div className="space-y-3">
               <div>
-                <p className="font-semibold text-foreground mb-1">Pour tous les enfants :</p>
-                <ul className="space-y-1 ml-4 text-foreground/90">
+                <p className="font-semibold text-white mb-1">Pour tous les enfants :</p>
+                <ul className="space-y-1 ml-4 text-white/90">
                   <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
                   <li>• À minima : document justifiant d'une prise de rendez-vous</li>
                   <li>• Autorisation parentale obligatoire</li>
                 </ul>
               </div>
               <div className="pt-2 border-t border-destructive/20">
-                <p className="font-semibold text-foreground mb-1">Cas particulier - Figurants et silhouettes :</p>
-                <ul className="space-y-1 ml-4 text-foreground/90">
+                <p className="font-semibold text-white mb-1">Cas particulier - Figurants et silhouettes :</p>
+                <ul className="space-y-1 ml-4 text-white/90">
                   <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
                   <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
                 </ul>
@@ -77,12 +77,12 @@ const HealthMonitoring = () => {
               <p className="text-slate-200 mb-2">
                 Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
               </p>
-              <div className="bg-destructive/20 border-2 border-destructive p-4 rounded-lg mt-3">
+              <div className="bg-destructive/25 border-2 border-destructive p-4 rounded-lg mt-3">
                 <div className="flex items-start gap-2">
                   <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-medium text-foreground">
-                      <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
+                    <p className="text-sm font-medium text-white">
+                      <strong className="text-red-300">Important :</strong> Le médecin généraliste doit être en exercice. 
                       Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
                     </p>
                   </div>
@@ -165,12 +165,12 @@ const HealthMonitoring = () => {
             </ul>
           </div>
 
-          <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
-            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+          <div className="bg-destructive/15 border-2 border-destructive/60 p-4 rounded-lg">
+            <h3 className="font-semibold text-white mb-3 flex items-center gap-2">
               <AlertCircle className="h-5 w-5 text-destructive" />
               ⚠️ Visites chez un médecin spécialiste
             </h3>
-            <p className="text-foreground/90">
+            <p className="text-white/90">
               Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
               ne sont <strong>pas prises en charge par la production</strong>.
             </p>
@@ -254,11 +254,11 @@ const HealthMonitoring = () => {
             </div>
           </div>
 
-          <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
+          <div className="bg-destructive/15 border-2 border-destructive/60 p-5 rounded-lg">
             <div className="flex items-start gap-3">
               <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm text-foreground/90">
+                <p className="text-sm text-white/90">
                   <strong>Important :</strong> Ce n'est pas le médecin qui accorde l'autorisation de travail, 
                   mais le Préfet suite à l'avis de la commission. L'autorisation est valable uniquement pour 
                   la prestation spécifique demandée.
@@ -428,12 +428,12 @@ const HealthMonitoring = () => {
               </ul>
             </div>
 
-            <div className="bg-destructive/10 border-2 border-destructive/50 p-4 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+            <div className="bg-destructive/15 border-2 border-destructive/60 p-4 rounded-lg">
+              <h4 className="font-semibold text-white mb-2 flex items-center gap-2">
                 <AlertCircle className="h-5 w-5 text-destructive" />
                 ⚠️ Interdictions formelles
               </h4>
-              <ul className="space-y-2 text-foreground/90 text-sm">
+              <ul className="space-y-2 text-white/90 text-sm">
                 <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
                 <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
                 <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
