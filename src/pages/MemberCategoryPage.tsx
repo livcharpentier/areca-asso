@@ -26,7 +26,7 @@ const MemberCategoryPage = () => {
       id: 1,
       firstName: "Liv",
       lastName: "Charpentier",
-      photoUrl: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Liv",
+      photoUrl: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=LivCharpentier",
       email: "liv.charp@wanadoo.fr",
       phone: "06 19 60 12 96",
       bio: "Responsable des enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
@@ -47,7 +47,7 @@ const MemberCategoryPage = () => {
       id: 2,
       firstName: "Christophe",
       lastName: "Denis",
-      photoUrl: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Christophe",
+      photoUrl: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=ChristopheDenis",
       email: "christophe.denis@example.com",
       phone: "+33 6 23 45 67 89",
       bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
@@ -55,19 +55,6 @@ const MemberCategoryPage = () => {
       specialties: ["Accompagnement artistique", "Soutien psychologique"],
       availability: "En tournage",
       recentNews: "Formation continue en psychologie de l'enfant"
-    },
-    {
-      id: 3,
-      firstName: "Sophie",
-      lastName: "Bernard",
-      photoUrl: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Sophie",
-      email: "sophie.bernard@example.com",
-      phone: "+33 6 34 56 78 90",
-      bio: "Passionnée par le cinéma jeunesse et forte de 12 ans d'expérience.",
-      experienceYears: 12,
-      specialties: ["Organisation", "Relations parents-production"],
-      availability: "Disponible",
-      recentNews: "Vient de terminer un projet avec Canal+"
     }
   ];
 
