@@ -38,45 +38,17 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            {/* Film reel SVG logo */}
-            <div className="flex flex-col items-center gap-0">
-              <svg width="180" height="56" viewBox="0 0 280 100" className="flex-shrink-0">
-                {/* Film strip banner behind */}
-                <rect x="55" y="32" width="220" height="36" rx="3" fill="hsl(220, 15%, 25%)" />
-                {/* Film strip perforations top */}
-                {[75, 95, 115, 135, 155, 175, 195, 215, 235, 255].map((x) => (
-                  <rect key={`t${x}`} x={x} y={35} width="8" height="6" rx="1" fill="white" />
-                ))}
-                {/* Film strip perforations bottom */}
-                {[75, 95, 115, 135, 155, 175, 195, 215, 235, 255].map((x) => (
-                  <rect key={`b${x}`} x={x} y={59} width="8" height="6" rx="1" fill="white" />
-                ))}
-                {/* ARECA text on film strip */}
-                <text x="170" y="58" textAnchor="middle" fill="hsl(180, 80%, 45%)" fontSize="30" fontWeight="900" letterSpacing="10" fontFamily="sans-serif">ARECA</text>
-                {/* Main reel circle */}
-                <circle cx="45" cy="50" r="38" fill="hsl(220, 15%, 25%)" />
-                <circle cx="45" cy="50" r="35" fill="hsl(220, 15%, 30%)" stroke="white" strokeWidth="1.5" />
-                {/* Outer dots */}
-                {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
-                  <circle
-                    key={angle}
-                    cx={45 + 30 * Math.cos((angle * Math.PI) / 180)}
-                    cy={50 + 30 * Math.sin((angle * Math.PI) / 180)}
-                    r="3"
-                    fill="white"
-                  />
-                ))}
-                {/* Inner holes */}
-                <circle cx="45" cy="35" r="7" fill="white" />
-                <circle cx="58" cy="50" r="7" fill="white" />
-                <circle cx="45" cy="65" r="7" fill="white" />
-                <circle cx="32" cy="50" r="7" fill="white" />
-                {/* Center hole */}
-                <circle cx="45" cy="50" r="5" fill="white" />
-                <circle cx="45" cy="50" r="3" fill="hsl(220, 15%, 30%)" />
-              </svg>
-              <span className="text-[7px] text-foreground/60 uppercase tracking-wider font-comic font-bold leading-tight text-center">
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src={logoAreca}
+              alt="ARECA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
+              className="h-14 w-auto flex-shrink-0"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-3xl font-black tracking-widest text-primary font-sans">
+                ARECA
+              </span>
+              <span className="text-[7px] text-foreground/60 uppercase tracking-wider font-comic font-bold leading-tight max-w-[180px]">
                 Responsables Enfants dans le Cinéma et l'Audiovisuel
               </span>
             </div>
