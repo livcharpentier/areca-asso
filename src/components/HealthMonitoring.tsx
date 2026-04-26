@@ -25,7 +25,7 @@ const HealthMonitoring = () => {
             </p>
             <div className="space-y-3">
               <div>
-                <p className="font-semibold text-white mb-1">Pour tous les enfants :</p>
+                <p className="font-semibold text-white mb-1">Enfants rôles ou petits rôles :</p>
                 <ul className="space-y-1 ml-4 text-white/90">
                   <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
                   <li>• À minima : document justifiant d'une prise de rendez-vous</li>
@@ -33,7 +33,7 @@ const HealthMonitoring = () => {
                 </ul>
               </div>
               <div className="pt-2 border-t border-accent/20">
-                <p className="font-semibold text-white mb-1">Cas particulier - Figurants et silhouettes :</p>
+                <p className="font-semibold text-white mb-1">Cas particulier - Figurants, silhouettes et silhouettes parlantes :</p>
                 <ul className="space-y-1 ml-4 text-white/90">
                   <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
                   <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
