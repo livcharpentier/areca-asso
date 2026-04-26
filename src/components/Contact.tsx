@@ -40,7 +40,9 @@ const Contact = () => {
                 <CardContent className="mt-4">
                   <p className="text-sm text-slate-200 font-medium">
                     Siège Social<br />
-                    75000 Paris<br />
+                    CST<br />
+                    9 rue Baudoin<br />
+                    75013 Paris<br />
                     France
                   </p>
                 </CardContent>
