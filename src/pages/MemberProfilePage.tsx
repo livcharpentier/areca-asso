@@ -10,7 +10,7 @@ const memberData: { [key: string]: any } = {
   "liv-charpentier": {
     firstName: "Liv",
     lastName: "Charpentier",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Liv",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Liv",
     email: "liv.charp@wanadoo.fr",
     phone: "06 19 60 12 96",
     role: "Responsable enfants",
@@ -30,7 +30,7 @@ const memberData: { [key: string]: any } = {
   },
   "thomas-martin": {
     firstName: "Christophe", lastName: "Denis",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Christophe",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Christophe",
     email: "christophe.denis@example.com", phone: "+33 6 23 45 67 89",
     role: "Responsable enfants",
     bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
@@ -39,7 +39,7 @@ const memberData: { [key: string]: any } = {
   },
   "sophie-bernard": {
     firstName: "Sophie", lastName: "Bernard",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Sophie",
     email: "sophie.bernard@example.com", phone: "+33 6 34 56 78 90",
     role: "Responsable enfants",
     bio: "Passionnée par le cinéma jeunesse et forte de 12 ans d'expérience.",
@@ -48,7 +48,7 @@ const memberData: { [key: string]: any } = {
   },
   "claire-dupont": {
     firstName: "Claire", lastName: "Dupont",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Claire",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Claire",
     email: "claire.dupont@example.com", phone: "+33 6 45 67 89 01",
     role: "Préceptrice",
     bio: "Enseignante détachée, suivi scolaire sur les tournages longs métrages.",
@@ -56,7 +56,7 @@ const memberData: { [key: string]: any } = {
   },
   "marc-lefevre": {
     firstName: "Marc", lastName: "Lefèvre",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Marc",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Marc",
     email: "marc.lefevre@example.com", phone: "+33 6 56 78 90 12",
     role: "Précepteur",
     bio: "Professeur des écoles, spécialiste du maintien pédagogique en milieu audiovisuel.",
@@ -64,7 +64,7 @@ const memberData: { [key: string]: any } = {
   },
   "julie-moreau": {
     firstName: "Julie", lastName: "Moreau",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Julie",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Julie",
     email: "julie.moreau@example.com", phone: "+33 6 67 89 01 23",
     role: "Animatrice",
     bio: "Animation et encadrement jeunesse sur plateaux de cinéma et séries TV.",
@@ -72,7 +72,7 @@ const memberData: { [key: string]: any } = {
   },
   "pierre-roux": {
     firstName: "Pierre", lastName: "Roux",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pierre",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Pierre",
     email: "pierre.roux@example.com", phone: "+33 6 78 90 12 34",
     role: "Animateur",
     bio: "Animateur BAFA avec expérience en productions audiovisuelles jeunesse.",
@@ -80,7 +80,7 @@ const memberData: { [key: string]: any } = {
   },
   "emma-laurent": {
     firstName: "Emma", lastName: "Laurent",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Emma",
     email: "emma.laurent@example.com", phone: "+33 6 89 01 23 45",
     role: "Cantinière",
     bio: "Restauration adaptée aux enfants sur les tournages, respect des normes alimentaires.",
@@ -88,7 +88,7 @@ const memberData: { [key: string]: any } = {
   },
   "lucas-petit": {
     firstName: "Lucas", lastName: "Petit",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Lucas",
     email: "lucas.petit@example.com", phone: "+33 6 90 12 34 56",
     role: "Responsable enfants",
     bio: "Coordinateur terrain, gestion des plannings enfants et lien avec les familles.",
@@ -96,7 +96,7 @@ const memberData: { [key: string]: any } = {
   },
   "camille-simon": {
     firstName: "Camille", lastName: "Simon",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=Camille",
+    photo: "https://api.dicebear.com/7.x/big-smile/svg?backgroundColor=ffd5dc,ffdfbf,c0aede,b6e3f4,d1d4f9,c1f4cd&seed=Camille",
     email: "camille.simon@example.com", phone: "+33 6 01 23 45 67",
     role: "Préceptrice",
     bio: "Suivi scolaire personnalisé et accompagnement éducatif sur tournages.",
