@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, LogIn, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import logoAreca from "@/assets/logo-areca.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
