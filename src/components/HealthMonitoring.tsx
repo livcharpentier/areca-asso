@@ -275,65 +275,6 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-      {/* Actions en milieu de travail */}
-      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Users className="h-5 w-5 text-accent" />
-            Actions en milieu de travail
-          </CardTitle>
-          <CardDescription className="text-slate-300">
-            Conseil et prévention auprès des employeurs
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-slate-200">
-            Le Pôle Enfants conseille les employeurs (producteurs, metteurs en scène…) en matière de prévention des risques. 
-            Le médecin du travail exerce un rôle de conseil et recherche des solutions adaptées pour éviter 
-            la mise en danger physique et psychique des enfants.
-          </p>
-          <p className="text-slate-200">
-            Des déplacements sur les lieux de tournage ou de représentation sont possibles, bien que plus rarement réalisés 
-            en raison de contraintes logistiques (transmission tardive des scénarios, changements de dernière minute, 
-            courte durée de certains projets, éloignement géographique).
-          </p>
-        </CardContent>
-      </Card>
-
-      {/* Risques professionnels */}
-      <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <AlertCircle className="h-5 w-5 text-accent" />
-            Principaux risques professionnels
-          </CardTitle>
-          <CardDescription className="text-slate-300">
-            Risques spécifiques identifiés dans le secteur du spectacle
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <h4 className="font-semibold text-amber-300">Risques physiques</h4>
-              <ul className="space-y-1 text-slate-200 text-sm">
-                <li>• Troubles musculo-squelettiques</li>
-                <li>• Risques auditifs (exposition au bruit)</li>
-                <li>• Chutes et traumatismes</li>
-                <li>• Fatigue et troubles du sommeil</li>
-              </ul>
-            </div>
-            <div className="space-y-2">
-              <h4 className="font-semibold text-amber-300">Risques psychosociaux</h4>
-              <ul className="space-y-1 text-slate-200 text-sm">
-                <li>• Stress et anxiété</li>
-                <li>• Pression de la performance</li>
-                <li>• Impact sur la scolarité</li>
-                <li>• Gestion de l'image publique</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
 
       {/* Règles spécifiques et interdictions */}
       <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300">
