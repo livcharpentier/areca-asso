@@ -154,8 +154,8 @@ const DossierEnfantContent = () => (
       </div>
 
       {/* Situation particulière */}
-      <div className="mt-4 bg-destructive/10 border border-destructive/30 p-4 rounded-lg">
-        <p className="text-sm text-foreground/90">
+      <div className="mt-4 bg-destructive/20 border border-destructive/40 p-4 rounded-lg">
+        <p className="text-sm text-white">
           <strong>Situation particulière :</strong> En cas de retrait d'autorité parentale, tutelle, etc., fournir tout document justifiant de cette situation.
         </p>
       </div>
