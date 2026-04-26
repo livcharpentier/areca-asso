@@ -8,8 +8,8 @@ const Members = () => {
   const navigate = useNavigate();
   
   const membresExemples = [
-    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=LivCharpentier", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
-    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=ChristopheDenis", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
   ];
 
   const categories = [

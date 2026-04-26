@@ -10,7 +10,7 @@ const memberData: { [key: string]: any } = {
   "liv-charpentier": {
     firstName: "Liv",
     lastName: "Charpentier",
-    photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=LivCharpentier",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20",
     email: "liv.charp@wanadoo.fr",
     phone: "06 19 60 12 96",
     role: "Responsable enfants",
@@ -30,7 +30,7 @@ const memberData: { [key: string]: any } = {
   },
   "thomas-martin": {
     firstName: "Christophe", lastName: "Denis",
-    photo: "https://api.dicebear.com/7.x/personas/svg?backgroundColor=b6e3f4,c0aede,d1d4f9&seed=ChristopheDenis",
+    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank",
     email: "christophe.denis@example.com", phone: "+33 6 23 45 67 89",
     role: "Responsable enfants",
     bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
