@@ -107,8 +107,6 @@ const HealthMonitoring = () => {
                 <ul className="space-y-2 text-slate-200 text-sm ml-4">
                   <li>• Thalie Santé charge un <strong>bon de prise en charge</strong> sur la plateforme</li>
                   <li>• Ce bon permet de prendre rendez-vous dans un <strong>centre agréé par Thalie Santé</strong> en région</li>
-                  <li>• Vous devez renseigner les coordonnées des représentants légaux</li>
-                  <li>• Liste des centres agréés disponible sur demande</li>
                 </ul>
               </div>
 
