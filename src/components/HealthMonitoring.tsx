@@ -166,7 +166,7 @@ const HealthMonitoring = () => {
           <div className="bg-blue-950/40 p-4 rounded-lg border border-accent/30">
             <h3 className="font-semibold text-amber-300 mb-3 flex items-center gap-2">
               <CheckCircle className="h-5 w-5 text-accent" />
-              Cas particulier : Figurants
+              Figurants, silhouettes et silhouettes parlantes
             </h3>
             <p className="text-slate-200">
               Pour les figurants, la production <strong>rembourse les visites médicales</strong> effectuées 
