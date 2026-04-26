@@ -33,14 +33,6 @@ const FAQPage = () => {
     {
       question: "Quel est le rôle de l'ARECA ?",
       answer: "L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques et de défendre les intérêts de la profession."
-    },
-    {
-      question: "Comment se déroule une demande d'autorisation DRIEETS ?",
-      answer: "La demande doit être déposée au moins 8 jours avant le début du tournage. Elle comprend le dossier médical de l'enfant, l'accord des représentants légaux, le contrat de travail et le scénario. La commission examine ensuite la demande."
-    },
-    {
-      question: "Les formations proposées sont-elles certifiantes ?",
-      answer: "Oui, l'ARECA propose des formations certifiantes reconnues par la profession. Consultez notre page Formations pour découvrir les programmes disponibles."
     }
   ];
 
