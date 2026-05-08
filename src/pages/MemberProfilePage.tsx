@@ -124,12 +124,6 @@ const MemberProfilePage = () => {
               )}
             </div>
 
-            {/* Bio */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-foreground mb-3">Biographie</h2>
-              <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
-            </div>
-
             {/* Filmographie */}
             {member.filmography && (
               <div className="mb-8">
@@ -145,6 +139,36 @@ const MemberProfilePage = () => {
               </div>
             )}
 
+            {/* Animation */}
+            {member.animation && (
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-foreground mb-4">Animation</h2>
+                <div className="space-y-4">
+                  {Object.entries(member.animation).map(([period, content], idx) => (
+                    <div key={idx} className="border-l-2 border-foreground/40 pl-4">
+                      <h3 className="font-medium text-foreground mb-1">{period}</h3>
+                      <p className="text-sm text-foreground/80 leading-relaxed">{content as string}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* CV / Diplômes */}
+            {member.cvSections && (
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-foreground mb-4">CV</h2>
+                <div className="space-y-4">
+                  {Object.entries(member.cvSections).map(([section, content], idx) => (
+                    <div key={idx} className="border-l-2 border-accent/30 pl-4">
+                      <h3 className="font-medium text-accent mb-1">{section}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{content as string}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Actualité */}
             {member.recentNews && (
               <div className="mb-8">
@@ -153,7 +177,7 @@ const MemberProfilePage = () => {
               </div>
             )}
 
-            {/* CV */}
+            {/* CV PDF (téléchargement) */}
             {member.cvUrl && (
               <Button
                 size="lg"
