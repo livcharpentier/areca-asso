@@ -55,6 +55,7 @@ const App = () => (
             <Route path="/parents" element={<ParentsPage />} />
             <Route path="/responsables" element={<ResponsablesPage />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/mon-profil" element={<ProtectedRoute><MyProfilePage /></ProtectedRoute>} />
             <Route path="/faq" element={<FAQPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
