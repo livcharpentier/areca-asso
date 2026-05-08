@@ -117,15 +117,21 @@ const Navigation = () => {
                     {item.label}
                   </Link>
                 ))}
-                <div className="flex gap-2 mt-4 pt-4 border-t border-foreground/20">
+                <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-foreground/20">
+                  {user && (
+                    <Button
+                      onClick={() => { setOpen(false); navigate("/mon-profil"); }}
+                      variant="outline"
+                      className="border-accent/40 text-accent"
+                    >
+                      <UserCircle className="w-4 h-4 mr-2" /> Mon profil
+                    </Button>
+                  )}
                   <Button 
                     onClick={handleAuthAction}
-                    className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90"
+                    className="bg-accent text-accent-foreground hover:bg-accent/90"
                   >
                     {user ? "Déconnexion" : "Connexion"}
-                  </Button>
-                  <Button variant="outline" className="border-foreground/30 text-foreground">
-                    FR
                   </Button>
                 </div>
               </div>
