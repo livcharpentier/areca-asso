@@ -22,6 +22,7 @@ import ParentsPage from "./pages/ParentsPage";
 import ResponsablesPage from "./pages/ResponsablesPage";
 import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
+import MyProfilePage from "./pages/MyProfilePage";
 import FAQPage from "./pages/FAQPage";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
