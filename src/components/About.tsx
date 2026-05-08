@@ -48,26 +48,6 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-accent mb-2">270+</div>
-                <div className="text-sm uppercase tracking-wider text-slate-300">Membres actifs</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-accent mb-2">500+</div>
-                <div className="text-sm uppercase tracking-wider text-slate-300">Productions suivies</div>
-              </CardContent>
-            </Card>
-            <Card className="text-center border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
-              <CardContent className="p-8">
-                <div className="text-4xl font-bold text-accent mb-2">15+</div>
-                <div className="text-sm uppercase tracking-wider text-slate-300">Années d'expérience</div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
