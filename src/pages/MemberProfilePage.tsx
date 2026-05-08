@@ -27,6 +27,16 @@ const memberData: { [key: string]: any } = {
       "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes",
       "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
       "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Valerian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
+    },
+    animation: {
+      "Entre 1996 et 2005 (été et hiver)": "Animations dans divers centres (enfants/ados). Formation encadrement ski.",
+      "Entre 1998 et 2005 (Primaire / Collège / Lycée)": "Professeur vacataire (remplaçant). Centre sportif à la Ville de Paris.",
+      "En 2003": "Monitorat fédéral de voile.",
+      "Entre 2003 et 2010": "Professeur spécialisée voile et animation — enfants / ados / adultes."
+    },
+    cvSections: {
+      "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédérale de voile (aux Glenans, 2000) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
+      "Permis": "Voiture B. Bateau : Côtier / Rivière / Fleuve / Lac."
     }
   },
   "thomas-martin": {
@@ -114,12 +124,6 @@ const MemberProfilePage = () => {
               )}
             </div>
 
-            {/* Bio */}
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold text-foreground mb-3">Biographie</h2>
-              <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
-            </div>
-
             {/* Filmographie */}
             {member.filmography && (
               <div className="mb-8">
@@ -135,6 +139,36 @@ const MemberProfilePage = () => {
               </div>
             )}
 
+            {/* Animation */}
+            {member.animation && (
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-foreground mb-4">Animation</h2>
+                <div className="space-y-4">
+                  {Object.entries(member.animation).map(([period, content], idx) => (
+                    <div key={idx} className="border-l-2 border-foreground/40 pl-4">
+                      <h3 className="font-medium text-foreground mb-1">{period}</h3>
+                      <p className="text-sm text-foreground/80 leading-relaxed">{content as string}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* CV / Diplômes */}
+            {member.cvSections && (
+              <div className="mb-8">
+                <h2 className="text-xl font-semibold text-foreground mb-4">CV</h2>
+                <div className="space-y-4">
+                  {Object.entries(member.cvSections).map(([section, content], idx) => (
+                    <div key={idx} className="border-l-2 border-accent/30 pl-4">
+                      <h3 className="font-medium text-accent mb-1">{section}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{content as string}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Actualité */}
             {member.recentNews && (
               <div className="mb-8">
@@ -143,7 +177,7 @@ const MemberProfilePage = () => {
               </div>
             )}
 
-            {/* CV */}
+            {/* CV PDF (téléchargement) */}
             {member.cvUrl && (
               <Button
                 size="lg"
