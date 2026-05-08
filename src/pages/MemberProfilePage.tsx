@@ -29,13 +29,9 @@ const memberData: { [key: string]: any } = {
       "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Valerian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
     },
     animation: {
-      "Entre 1996 et 2005 (été et hiver)": "Animations dans divers centres (enfants/ados). Formation encadrement ski.",
-      "Entre 1998 et 2005 (Primaire / Collège / Lycée)": "Professeur vacataire (remplaçant). Centre sportif à la Ville de Paris.",
-      "En 2003": "Monitorat fédéral de voile.",
-      "Entre 2003 et 2010": "Professeur spécialisée voile et animation — enfants / ados / adultes."
-    },
-    cvSections: {
-      "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédérale de voile (aux Glenans, 2000) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
+      "Animations entre 1996 et 2010": "Centre de loisirs, colonie de vacances, camp itinérant, encadrement voile, encadrement ski, surveillance mer, professeur spécialisé voile (ado, adulte).",
+      "Professeur EPS (remplaçant) entre 1998 et 2005": "École maternelle, primaire, collège, lycée, et le centre sportif de la Ville de Paris le mercredi.",
+      "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédéral de voile (aux Glenans, 2000) / Monitorat fédéral de voile (2003) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
       "Permis": "Voiture B. Bateau : Côtier / Rivière / Fleuve / Lac."
     }
   },
@@ -145,9 +141,9 @@ const MemberProfilePage = () => {
                 <h2 className="text-xl font-semibold text-foreground mb-4">Animation</h2>
                 <div className="space-y-4">
                   {Object.entries(member.animation).map(([period, content], idx) => (
-                    <div key={idx} className="border-l-2 border-foreground/40 pl-4">
-                      <h3 className="font-medium text-foreground mb-1">{period}</h3>
-                      <p className="text-sm text-foreground/80 leading-relaxed">{content as string}</p>
+                    <div key={idx} className="border-l-2 border-accent/30 pl-4">
+                      <h3 className="font-medium text-accent mb-1">{period}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{content as string}</p>
                     </div>
                   ))}
                 </div>
