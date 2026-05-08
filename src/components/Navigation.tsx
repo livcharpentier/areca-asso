@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6 ml-4">
+          <div className="hidden lg:flex items-center gap-6 ml-8 xl:ml-12">
             {navItems.map((item) => (
               <Link
                 key={item.path}
