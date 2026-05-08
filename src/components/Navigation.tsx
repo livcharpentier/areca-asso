@@ -70,6 +70,14 @@ const Navigation = () => {
               </Link>
             ))}
             <div className="flex items-center gap-2 ml-4 pl-4 border-l border-foreground/20">
+              {user && (
+                <Button
+                  onClick={() => navigate("/mon-profil")}
+                  className="bg-transparent border border-accent/40 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
+                >
+                  <UserCircle className="w-3.5 h-3.5 mr-1.5" /> Mon profil
+                </Button>
+              )}
               <Button
                 onClick={handleAuthAction}
                 className={user 
