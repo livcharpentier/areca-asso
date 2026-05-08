@@ -14,6 +14,50 @@ export type Database = {
   }
   public: {
     Tables: {
+      filmography: {
+        Row: {
+          created_at: string
+          details: string | null
+          id: string
+          role_category: string
+          sort_order: number | null
+          title: string
+          updated_at: string
+          user_id: string
+          year: number | null
+        }
+        Insert: {
+          created_at?: string
+          details?: string | null
+          id?: string
+          role_category: string
+          sort_order?: number | null
+          title: string
+          updated_at?: string
+          user_id: string
+          year?: number | null
+        }
+        Update: {
+          created_at?: string
+          details?: string | null
+          id?: string
+          role_category?: string
+          sort_order?: number | null
+          title?: string
+          updated_at?: string
+          user_id?: string
+          year?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "filmography_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       member_availability: {
         Row: {
           created_at: string
@@ -61,10 +105,50 @@ export type Database = {
           },
         ]
       }
+      member_news: {
+        Row: {
+          content: string | null
+          created_at: string
+          id: string
+          published_at: string | null
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          content?: string | null
+          created_at?: string
+          id?: string
+          published_at?: string | null
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          content?: string | null
+          created_at?: string
+          id?: string
+          published_at?: string | null
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "member_news_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
+          availability: string | null
           bio: string | null
           created_at: string
+          cv_url: string | null
           email: string
           experience_years: number | null
           first_name: string | null
@@ -72,12 +156,15 @@ export type Database = {
           last_name: string | null
           phone: string | null
           photo_url: string | null
+          role: string | null
           specialties: string[] | null
           updated_at: string
         }
         Insert: {
+          availability?: string | null
           bio?: string | null
           created_at?: string
+          cv_url?: string | null
           email: string
           experience_years?: number | null
           first_name?: string | null
@@ -85,12 +172,15 @@ export type Database = {
           last_name?: string | null
           phone?: string | null
           photo_url?: string | null
+          role?: string | null
           specialties?: string[] | null
           updated_at?: string
         }
         Update: {
+          availability?: string | null
           bio?: string | null
           created_at?: string
+          cv_url?: string | null
           email?: string
           experience_years?: number | null
           first_name?: string | null
@@ -98,6 +188,7 @@ export type Database = {
           last_name?: string | null
           phone?: string | null
           photo_url?: string | null
+          role?: string | null
           specialties?: string[] | null
           updated_at?: string
         }
