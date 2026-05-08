@@ -27,6 +27,16 @@ const memberData: { [key: string]: any } = {
       "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes",
       "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
       "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Valerian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
+    },
+    animation: {
+      "Entre 1996 et 2005 (été et hiver)": "Animations dans divers centres (enfants/ados). Formation encadrement ski.",
+      "Entre 1998 et 2005 (Primaire / Collège / Lycée)": "Professeur vacataire (remplaçant). Centre sportif à la Ville de Paris.",
+      "En 2003": "Monitorat fédéral de voile.",
+      "Entre 2003 et 2010": "Professeur spécialisée voile et animation — enfants / ados / adultes."
+    },
+    cvSections: {
+      "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédérale de voile (aux Glenans, 2000) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
+      "Permis": "Voiture B. Bateau : Côtier / Rivière / Fleuve / Lac."
     }
   },
   "thomas-martin": {
