@@ -13,11 +13,9 @@ const Members = () => {
   ];
 
   const categories = [
-    { title: "Responsables des enfants", count: 10, description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
-    { title: "Précepteurs", count: 9, description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
-    { title: "Animateurs", count: 9, description: "Encadrants jeunesse", slug: "animateurs" },
-    { title: "Cantiniers", count: 9, description: "Restauration sur tournages", slug: "cantiniers" },
-    { title: "Autres membres", count: 9, description: "Membres associés et honoraires", slug: "autres" },
+    { title: "Responsables des enfants", description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
+    { title: "Précepteurs", description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
+    { title: "Animateurs", description: "Encadrants jeunesse", slug: "animateurs" },
   ];
 
   return (
@@ -84,10 +82,7 @@ const Members = () => {
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between">
-                      <div>
-                        <div className="text-3xl font-bold text-accent mb-2">{category.count}</div>
-                        <p className="text-sm text-slate-200">{category.description}</p>
-                      </div>
+                      <p className="text-sm text-slate-200">{category.description}</p>
                       <ChevronRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </CardContent>
