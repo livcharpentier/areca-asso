@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import livPhoto from "@/assets/liv-charpentier.png";
 
 type MembreTrombi = {
   id: string;
