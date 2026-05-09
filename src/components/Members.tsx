@@ -3,13 +3,51 @@ import { Button } from "@/components/ui/button";
 import { Users, Search, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+
+type MembreTrombi = {
+  id: string;
+  name: string;
+  slug: string;
+  photo: string | null;
+  role: string;
+  bio: string;
+};
+
+const membresStatiques: MembreTrombi[] = [
+  { id: "liv-charpentier", name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+  { id: "thomas-martin", name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+];
 
 const Members = () => {
   const navigate = useNavigate();
-  
+  const [membresInscrits, setMembresInscrits] = useState<MembreTrombi[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const { data } = await supabase
+        .from("profiles")
+        .select("id, first_name, last_name, role, bio, photo_url")
+        .order("created_at", { ascending: true });
+      if (!data) return;
+      const mapped: MembreTrombi[] = data
+        .filter((p) => p.first_name || p.last_name)
+        .map((p) => ({
+          id: p.id,
+          name: `${p.first_name || ""} ${p.last_name || ""}`.trim(),
+          slug: p.id,
+          photo: p.photo_url,
+          role: p.role || "Membre",
+          bio: p.bio || "",
+        }));
+      setMembresInscrits(mapped);
+    })();
+  }, []);
+
   const membresExemples = [
-    { name: "Liv Charpentier", slug: "liv-charpentier", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20", role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
-    { name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
+    ...membresStatiques,
+    ...membresInscrits.filter((m) => !membresStatiques.some((s) => s.name.toLowerCase() === m.name.toLowerCase())),
   ];
 
   const categories = [
@@ -39,7 +77,7 @@ const Members = () => {
               {membresExemples.map((membre, index) => (
                 <div key={index} className="flex flex-col items-center text-center group cursor-pointer" onClick={() => navigate(`/member/${membre.slug}`)}>
                   <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
-                    <AvatarImage src={membre.photo} alt={membre.name} />
+                    <AvatarImage src={membre.photo || undefined} alt={membre.name} />
                     <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
                       {membre.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
