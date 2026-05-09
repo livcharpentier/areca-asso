@@ -108,11 +108,11 @@ const Footer = () => {
               Contact
             </h3>
             <a 
-              href="mailto:contact@areca.fr"
+              href="mailto:contact@areca-asso.fr"
               className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-accent transition-colors mb-6"
             >
               <Mail className="w-4 h-4" />
-              contact@areca.fr
+              contact@areca-asso.fr
             </a>
             <ul className="space-y-2">
               {links.legal.map((link) => (
