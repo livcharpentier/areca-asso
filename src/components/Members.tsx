@@ -77,7 +77,7 @@ const Members = () => {
               {membresExemples.map((membre, index) => (
                 <div key={index} className="flex flex-col items-center text-center group cursor-pointer" onClick={() => navigate(`/member/${membre.slug}`)}>
                   <Avatar className="w-20 h-20 mb-3 ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
-                    <AvatarImage src={membre.photo} alt={membre.name} />
+                    <AvatarImage src={membre.photo || undefined} alt={membre.name} />
                     <AvatarFallback className="bg-accent/20 text-accent text-lg font-bold">
                       {membre.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
