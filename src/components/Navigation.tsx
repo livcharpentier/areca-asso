@@ -40,24 +40,24 @@ const Navigation = () => {
       <div className="container mx-auto px-0">
         <div className="flex items-center justify-between h-16">
           {/* Logo avec fond caméras */}
-          <div className="relative h-16 w-full max-w-[380px] sm:max-w-[420px] overflow-hidden flex-shrink-0">
+          <div className="relative h-16 w-auto max-w-[280px] sm:max-w-[360px] lg:max-w-[420px] overflow-hidden flex-shrink-0">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${heroCameras})` }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
             </div>
-            <Link to="/" className="relative z-10 flex items-center gap-3 group h-full px-4 sm:px-5">
+            <Link to="/" className="relative z-10 flex items-center gap-3 group h-full px-3 sm:px-5">
               <img
                 src={logoAreca}
                 alt="ARECA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
-                className="h-14 w-auto flex-shrink-0"
+                className="h-12 sm:h-14 w-auto flex-shrink-0"
               />
               <div className="flex flex-col leading-tight">
-                <span className="text-3xl font-black tracking-widest text-white font-sans">
+                <span className="text-2xl sm:text-3xl font-black tracking-widest text-white font-sans">
                   ARECA
                 </span>
-                <span className="text-[7px] text-white/80 uppercase tracking-wider font-comic font-bold leading-tight max-w-[180px]">
+                <span className="text-[6px] sm:text-[7px] text-white/80 uppercase tracking-wider font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
                   Responsables Enfants dans le Cinéma et l'Audiovisuel
                 </span>
               </div>
