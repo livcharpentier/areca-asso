@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Shield, Heart, Users, Briefcase, GraduationCap, Scale, Eye, PenLine } from "lucide-react";
+import { FileText, Shield, Heart, Users, Briefcase, GraduationCap, Scale, Eye, PenLine, AlertTriangle } from "lucide-react";
 
 const ChartePage = () => {
   const articles = [
@@ -47,12 +47,14 @@ const ChartePage = () => {
           ]
         },
         {
-          subtitle: "Accompagnement personnalisé",
+          subtitle: "Accompagnement personnalisé et gestion des transitions",
           items: [
             "S'adapter au rythme, à la personnalité et aux besoins spécifiques de chaque enfant",
             "Favoriser l'expression des émotions et être à l'écoute",
             "Encourager et valoriser l'enfant dans son travail artistique",
-            "Respecter les limites de l'enfant"
+            "Respecter les limites de l'enfant",
+            "Préparer l'enfant à l'entrée et à la sortie du tournage (transitions école/plateau, fin de tournage)",
+            "Identifier et signaler à la production les risques de difficulté de transition"
           ]
         },
         {
@@ -114,12 +116,21 @@ const ChartePage = () => {
           ]
         },
         {
-          subtitle: "Organisation rigoureuse",
+          subtitle: "Organisation rigoureuse et conditions matérielles",
           items: [
+            "Vérifier en amont les conditions matérielles d'accueil (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
             "Planifier et coordonner la logistique (transport, hébergement, repas)",
             "Préparer l'enfant aux scènes à tourner en transmettant les consignes",
-            "Gérer les autorisations administratives",
+            "Gérer les autorisations administratives (DRIEETS, Caisse des Dépôts)",
             "Constituer et superviser une équipe d'animation si nécessaire"
+          ]
+        },
+        {
+          subtitle: "Interface avec les équipes artistiques et techniques",
+          items: [
+            "Adapter sa communication aux différents interlocuteurs (mise en scène, régie, HMC, technique)",
+            "Réguler les interactions entre l'enfant et les équipes pour préserver un cadre de travail respectueux",
+            "Transmettre les besoins et contraintes de l'enfant aux équipes concernées"
           ]
         }
       ]
@@ -185,8 +196,35 @@ const ChartePage = () => {
     },
     {
       id: "article8",
+      icon: AlertTriangle,
+      title: "Article 8 - Analyse et prévention des risques",
+      content: [
+        "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
+      ],
+      sections: [
+        {
+          subtitle: "En amont du tournage",
+          items: [
+            "Analyser le scénario et les scènes impliquant l'enfant (contenu, émotions sollicitées, cascades, effets spéciaux)",
+            "Identifier les risques liés aux lieux de tournage (extérieurs, hauteurs, eau, animaux, foule, conditions climatiques)",
+            "Évaluer les risques liés aux horaires (nuit, amplitude, décalages) et au rythme de tournage",
+            "Vérifier la conformité du dossier réglementaire (autorisation DRIEETS, certificat médical, Caisse des Dépôts)"
+          ]
+        },
+        {
+          subtitle: "Pendant le tournage",
+          items: [
+            "Réévaluer en continu les risques au regard des modifications de planning ou de mise en scène",
+            "Alerter immédiatement la production et, si nécessaire, les autorités compétentes",
+            "Documenter les incidents et les mesures correctives dans le journal de bord"
+          ]
+        }
+      ]
+    },
+    {
+      id: "article9",
       icon: PenLine,
-      title: "Article 8 - Application de la charte",
+      title: "Article 9 - Application de la charte",
       content: [
         "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
       ]
