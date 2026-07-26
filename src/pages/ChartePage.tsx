@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Shield, Heart, Users, Briefcase, GraduationCap, Scale, Eye, PenLine } from "lucide-react";
+import { FileText, Shield, Heart, Users, Briefcase, GraduationCap, Scale, Eye, PenLine, AlertTriangle } from "lucide-react";
 
 const ChartePage = () => {
   const articles = [
