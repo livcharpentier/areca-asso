@@ -72,17 +72,17 @@ const Navigation = () => {
                 className={`text-sm uppercase tracking-wider font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
                     ? "text-accent border-accent"
-                    : "text-foreground hover:text-accent border-transparent hover:border-accent/50"
+                    : "text-white hover:text-accent border-transparent hover:border-accent/50"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-foreground/20">
+            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-white/20">
               {user && (
                 <Button
                   onClick={() => navigate("/mon-profil")}
-                  className="bg-transparent border border-accent/40 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
+                  className="bg-transparent border border-accent/60 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
                 >
                   <UserCircle className="w-3.5 h-3.5 mr-1.5" /> Mon profil
                 </Button>
@@ -90,7 +90,7 @@ const Navigation = () => {
               <Button
                 onClick={handleAuthAction}
                 className={user 
-                  ? "bg-transparent border border-foreground/30 text-foreground hover:bg-accent hover:text-white text-xs px-3 h-8"
+                  ? "bg-transparent border border-white/40 text-white hover:bg-accent hover:text-white text-xs px-3 h-8"
                   : "bg-accent text-white hover:bg-accent/90 text-xs px-4 h-8 font-semibold"
                 }
               >
@@ -106,7 +106,7 @@ const Navigation = () => {
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="text-foreground">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
