@@ -5,7 +5,6 @@ import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download, Coffee, Users, Briefcase, CalendarDays, Theater, Gamepad2 } from "lucide-react";
 
 const ResponsablesPage = () => {
   return (
@@ -13,10 +12,10 @@ const ResponsablesPage = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 bg-gradient-to-b from-primary/10 to-background">
+      <section className="pt-24 pb-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
               Espace Responsables Enfants
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -31,16 +30,13 @@ const ResponsablesPage = () => {
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="compte-rendu" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-6">
-              <TabsTrigger value="compte-rendu" className="gap-2">
-                <FileText className="h-4 w-4" />
+              <TabsTrigger value="compte-rendu">
                 <span className="hidden sm:inline">Compte Rendu Journalier</span>
               </TabsTrigger>
-              <TabsTrigger value="reglementations" className="gap-2">
-                <Scale className="h-4 w-4" />
+              <TabsTrigger value="reglementations">
                 <span className="hidden sm:inline">Réglementations</span>
               </TabsTrigger>
-              <TabsTrigger value="vhss" className="gap-2">
-                <ShieldAlert className="h-4 w-4" />
+              <TabsTrigger value="vhss">
                 <span className="hidden sm:inline">VHSS</span>
               </TabsTrigger>
             </TabsList>
@@ -65,26 +61,22 @@ const ResponsablesPage = () => {
   );
 };
 
-/* Contenu Réglementations (extrait de MinorsEmploymentPage sans Navigation/Footer) */
+/* Contenu Réglementations */
 const ReglementationsContent = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <Tabs defaultValue="temps-travail" className="w-full">
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
-          <TabsTrigger value="temps-travail" className="gap-1 text-xs">
-            <Clock className="h-4 w-4" />
+          <TabsTrigger value="temps-travail" className="text-xs">
             <span className="hidden sm:inline">Temps de travail</span>
           </TabsTrigger>
-          <TabsTrigger value="organisation" className="gap-1 text-xs">
-            <Coffee className="h-4 w-4" />
+          <TabsTrigger value="organisation" className="text-xs">
             <span className="hidden sm:inline">Organisation</span>
           </TabsTrigger>
-          <TabsTrigger value="familles-emploi" className="gap-1 text-xs">
-            <Theater className="h-4 w-4" />
+          <TabsTrigger value="familles-emploi" className="text-xs">
             <span className="hidden sm:inline">Familles d'emploi</span>
           </TabsTrigger>
-          <TabsTrigger value="conditions" className="gap-1 text-xs">
-            <FileText className="h-4 w-4" />
+          <TabsTrigger value="conditions" className="text-xs">
             <span className="hidden sm:inline">Conditions</span>
           </TabsTrigger>
         </TabsList>
@@ -106,8 +98,6 @@ const ReglementationsContent = () => {
         <TabsContent value="conditions">
           <ConditionsContent />
         </TabsContent>
-
-
       </Tabs>
     </div>
   );
@@ -116,18 +106,13 @@ const ReglementationsContent = () => {
 /* Contenu Organisation du travail */
 const OrganisationTravailContent = () => (
   <div className="space-y-6">
-    <div className="bg-card border rounded-lg p-6">
-      <h3 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
-        <Coffee className="h-6 w-6 text-accent" />
-        Organisation du temps de travail
-      </h3>
-
-      <div className="space-y-4">
+    <Card>
+      <CardHeader>
+        <CardTitle>Organisation du temps de travail</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <Clock className="h-4 w-4 text-accent" />
-            Temps de travail effectif vs. temps de présence
-          </p>
+          <p className="font-semibold text-primary mb-2">Temps de travail effectif vs. temps de présence</p>
           <p className="text-sm text-foreground mb-2">Le temps de travail effectif comprend :</p>
           <ul className="text-sm text-foreground ml-4 list-disc space-y-1">
             <li><strong>Préparation :</strong> Maquillage, coiffure, habillage</li>
@@ -135,7 +120,7 @@ const OrganisationTravailContent = () => (
             <li><strong>Prises :</strong> Temps de tournage effectif</li>
           </ul>
           <div className="mt-3 bg-card p-3 rounded border border-border">
-            <p className="text-primary font-semibold text-sm">Ne sont PAS du temps de travail :</p>
+            <p className="font-semibold text-primary text-sm">Ne sont PAS du temps de travail :</p>
             <ul className="text-sm text-foreground ml-4 list-disc space-y-1 mt-1">
               <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
               <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
@@ -145,10 +130,7 @@ const OrganisationTravailContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <CalendarDays className="h-4 w-4 text-accent" />
-            Travail du dimanche et jours fériés
-          </p>
+          <p className="font-semibold text-primary mb-2">Travail du dimanche et jours fériés</p>
           <ul className="text-sm text-foreground space-y-1 ml-4 list-disc">
             <li>Le travail du dimanche et des jours fériés est <strong>autorisé</strong> dans les entreprises de spectacles</li>
             <li>Conditions définies par la <strong>convention collective</strong> applicable</li>
@@ -157,10 +139,7 @@ const OrganisationTravailContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <CalendarDays className="h-4 w-4 text-accent" />
-            Règle des vacances scolaires
-          </p>
+          <p className="font-semibold text-primary mb-2">Règle des vacances scolaires</p>
           <ul className="text-sm text-foreground space-y-2 ml-4 list-disc">
             <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
             <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
@@ -188,8 +167,8 @@ const OrganisationTravailContent = () => (
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   </div>
 );
 
@@ -198,17 +177,11 @@ const FamillesEmploiContent = () => (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Theater className="h-6 w-6" />
-          Familles d'Emploi des Mineurs dans le Spectacle
-        </CardTitle>
+        <CardTitle>Familles d'Emploi des Mineurs dans le Spectacle</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-3 flex items-center gap-2">
-            <Users className="h-4 w-4" />
-            Rôle vs. Figuration
-          </p>
+          <p className="font-semibold text-primary mb-3">Rôle vs. Figuration</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
             <div className="bg-card p-3 rounded border border-border">
               <p className="font-semibold text-primary mb-1">Rôle (Artiste interprète)</p>
@@ -232,10 +205,7 @@ const FamillesEmploiContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <Theater className="h-4 w-4" />
-            Théâtre & Cirque
-          </p>
+          <p className="font-semibold text-primary mb-2">Théâtre & Cirque</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
             <li><strong>Âge minimum :</strong> 9 ans (pas de dérogation possible)</li>
             <li><strong>Maximum :</strong> 3 représentations par semaine</li>
@@ -246,10 +216,7 @@ const FamillesEmploiContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <Gamepad2 className="h-4 w-4" />
-            E-sport & Compétitions de jeux vidéo
-          </p>
+          <p className="font-semibold text-primary mb-2">E-sport & Compétitions de jeux vidéo</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
             <li>Les compétitions de jeux vidéo professionnelles sont soumises à la réglementation du spectacle</li>
             <li>Autorisation de la commission obligatoire pour les mineurs de moins de 16 ans</li>
@@ -259,10 +226,7 @@ const FamillesEmploiContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <Briefcase className="h-4 w-4" />
-            Compétence territoriale
-          </p>
+          <p className="font-semibold text-primary mb-2">Compétence territoriale</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
             <li><strong>Entreprise française :</strong> Demande auprès de la DRIEETS du département du siège social de l'entreprise</li>
             <li><strong>Entreprise étrangère :</strong> Demande auprès de la DRIEETS du département du lieu de tournage</li>
@@ -279,10 +243,7 @@ const ConditionsContent = () => (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <FileText className="h-6 w-6" />
-          Conditions d'Emploi des Mineurs (17 mai 2024)
-        </CardTitle>
+        <CardTitle>Conditions d'Emploi des Mineurs (17 mai 2024)</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
@@ -456,123 +417,143 @@ const ConditionsContent = () => (
 /* Contenu VHSS */
 const VHSSContent = () => (
   <div className="space-y-6">
-    <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
-      <div className="flex items-start gap-3">
-        <span className="text-2xl">⚠️</span>
-        <div>
-          <p className="font-semibold text-foreground text-lg mb-1">FORMATION OBLIGATOIRE</p>
-          <p className="text-sm text-foreground/90">
-            La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
-          </p>
-        </div>
-      </div>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Formation obligatoire</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-foreground">
+          La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
+        </p>
+      </CardContent>
+    </Card>
 
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-      <div className="bg-red-900/30 p-4 rounded-lg border border-red-400/40">
-        <p className="font-bold text-red-200 mb-3 text-lg">📊 ÉTUDE VHSS - Février 2025 (17 associations professionnelles)</p>
-        <p className="text-sm mb-3 text-slate-100"><strong>1 698 réponses</strong> de technicien·ne·s du cinéma et de l'audiovisuel sur 40 ans de carrière</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-          <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-destructive text-sm">DISCRIMINATION</p>
-            <p className="text-xs mt-1 text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
-            <p className="text-xs text-muted-foreground">Motifs : sexe, âge, apparence physique</p>
+    <Card>
+      <CardHeader>
+        <CardTitle>Étude VHSS - Février 2025 (17 associations professionnelles)</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <p className="text-sm text-foreground">
+          <strong>1 698 réponses</strong> de technicien·ne·s du cinéma et de l'audiovisuel sur 40 ans de carrière
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-1">Discrimination</p>
+            <p className="text-sm text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
+            <p className="text-xs text-muted-foreground mt-1">Motifs : sexe, âge, apparence physique</p>
           </div>
-          <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-destructive text-sm">AGISSEMENTS SEXISTES</p>
-            <p className="text-xs mt-1 text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
-            <p className="text-xs text-muted-foreground">Remarques, blagues sexistes, interpellations familières</p>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-1">Agissements sexistes</p>
+            <p className="text-sm text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
+            <p className="text-xs text-muted-foreground mt-1">Remarques, blagues sexistes, interpellations familières</p>
           </div>
-          <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-destructive text-sm">HARCÈLEMENT SEXUEL</p>
-            <p className="text-xs mt-1 text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-            <p className="text-xs text-muted-foreground">Blagues grivoises, rapprochements physiques non-consentis</p>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-1">Harcèlement sexuel</p>
+            <p className="text-sm text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
+            <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non-consentis</p>
           </div>
-          <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-destructive text-sm">AGRESSIONS SEXUELLES</p>
-            <p className="text-xs mt-1 text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
-            <p className="text-xs text-muted-foreground">Baisers forcés, attouchements</p>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-1">Agressions sexuelles</p>
+            <p className="text-sm text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
+            <p className="text-xs text-muted-foreground mt-1">Baisers forcés, attouchements</p>
           </div>
         </div>
-        <div className="bg-red-950/50 p-2 rounded text-xs">
-          <p className="font-semibold text-destructive">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary">Viols / tentatives : 25 personnes (23 femmes, 2 hommes)</p>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
 
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-      <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30">
-        <p className="font-semibold text-red-200 mb-2">⚠️ Constats clés de l'étude :</p>
-        <ul className="text-sm space-y-2 text-slate-100">
-          <li><strong>Victimes :</strong> Principalement des femmes, jeunes, en postes subalternes ou techniques</li>
-          <li><strong>Auteurs :</strong> Très majoritairement des hommes avec pouvoir hiérarchique, notoriété ou âge</li>
-          <li><strong>Omerta :</strong> 82% des femmes et 65% des hommes estiment que la loi du silence persiste</li>
-          <li><strong>Contexte :</strong> Tournages en déplacement, horaires tardifs, promiscuité, situations festives</li>
-          <li><strong>Évolution positive :</strong> 83% estiment que la situation s'améliore depuis le début de leur carrière</li>
-        </ul>
-      </div>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Constats clés de l'étude</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <ul className="text-sm space-y-2 text-foreground">
+            <li><strong>Victimes :</strong> Principalement des femmes, jeunes, en postes subalternes ou techniques</li>
+            <li><strong>Auteurs :</strong> Très majoritairement des hommes avec pouvoir hiérarchique, notoriété ou âge</li>
+            <li><strong>Omerta :</strong> 82% des femmes et 65% des hommes estiment que la loi du silence persiste</li>
+            <li><strong>Contexte :</strong> Tournages en déplacement, horaires tardifs, promiscuité, situations festives</li>
+            <li><strong>Évolution positive :</strong> 83% estiment que la situation s'améliore depuis le début de leur carrière</li>
+          </ul>
+        </div>
+      </CardContent>
+    </Card>
 
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-      <div className="bg-red-900/20 p-4 rounded-lg border border-red-400/30 mb-4">
-        <p className="font-semibold text-red-200 mb-2 text-lg">📜 Avenant VHSS (17 mai 2024 - étendu sept. 2024)</p>
-        <p className="text-sm mb-2 text-slate-100"><strong>Harcèlement sexuel :</strong> Propos/comportements à connotation sexuelle répétés portant atteinte à la dignité.</p>
-        <p className="text-sm mb-3 text-slate-100"><strong>Agissement sexiste :</strong> Tout agissement lié au sexe créant un environnement hostile.</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-100">
-        <div className="space-y-3">
-          <div>
-            <p className="font-semibold text-red-200">👤 Référent VHSS obligatoire :</p>
-            <p className="text-sm">Désignation d'un référent formé sur chaque film (30€ brut/semaine en long-métrage)</p>
+    <Card>
+      <CardHeader>
+        <CardTitle>Avenant VHSS (17 mai 2024 - étendu septembre 2024)</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+          <p className="text-sm text-foreground"><strong>Harcèlement sexuel :</strong> Propos ou comportements à connotation sexuelle répétés portant atteinte à la dignité.</p>
+          <p className="text-sm text-foreground"><strong>Agissement sexiste :</strong> Tout agissement lié au sexe créant un environnement hostile.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground">
+          <div className="space-y-3">
+            <div>
+              <p className="font-semibold text-primary">Référent VHSS obligatoire</p>
+              <p className="text-sm">Désignation d'un référent formé sur chaque film (30€ brut/semaine en long-métrage)</p>
+            </div>
+            <div>
+              <p className="font-semibold text-primary">Procédure de signalement</p>
+              <p className="text-sm">Dispositif interne obligatoire - Mail/téléphone dédié - Confidentialité garantie</p>
+            </div>
+            <div>
+              <p className="font-semibold text-primary">Protection des victimes</p>
+              <p className="text-sm">Interdiction de sanctions, licenciement ou discrimination des victimes et témoins</p>
+            </div>
           </div>
-          <div>
-            <p className="font-semibold text-red-200">📢 Procédure de signalement :</p>
-            <p className="text-sm">Dispositif interne obligatoire - Mail/téléphone dédié - Confidentialité garantie</p>
-          </div>
-          <div>
-            <p className="font-semibold text-red-200">🛡️ Protection des victimes :</p>
-            <p className="text-sm">Interdiction de sanctions, licenciement ou discrimination des victimes et témoins</p>
+          <div className="space-y-3">
+            <div>
+              <p className="font-semibold text-primary">Cellule d'écoute Audiens</p>
+              <p className="text-sm">Accompagnement psychologique et juridique gratuit - Anonymat préservé</p>
+            </div>
+            <div>
+              <p className="font-semibold text-primary">Enquête interne</p>
+              <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect présomption d'innocence</p>
+            </div>
+            <div>
+              <p className="font-semibold text-primary">Formation obligatoire</p>
+              <p className="text-sm">Formation VHSS pour producteurs (depuis 2022) et équipes de tournage (depuis janvier 2025)</p>
+            </div>
           </div>
         </div>
-        <div className="space-y-3">
-          <div>
-            <p className="font-semibold text-red-200">📞 Cellule d'écoute Audiens :</p>
-            <p className="text-sm">Accompagnement psychologique et juridique gratuit - Anonymat préservé</p>
-          </div>
-          <div>
-            <p className="font-semibold text-red-200">🔍 Enquête interne :</p>
-            <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect présomption d'innocence</p>
-          </div>
-          <div>
-            <p className="font-semibold text-red-200">✅ Formation obligatoire :</p>
-            <p className="text-sm">Formation VHSS pour producteurs (depuis 2022) et équipes de tournage (depuis janv. 2025)</p>
-          </div>
-        </div>
-      </div>
-      <div className="bg-red-900/20 p-3 rounded border border-red-400/30 text-sm mt-4">
-        <p className="font-semibold text-red-200">⚖️ Mesures de prévention obligatoires :</p>
-        <ul className="mt-2 space-y-1 ml-4 list-disc text-slate-100">
-          <li>Information de tous les salariés (kit de prévention)</li>
-          <li>Affichage des numéros utiles et procédures</li>
-          <li>Formation des managers et référents</li>
-          <li>Au moins 2 référents VHSS formés à chaque étape (prépa, tournage, post-prod)</li>
-          <li>Notification au CCHSCT en cas de signalement (anonymisée)</li>
-        </ul>
-      </div>
-    </div>
 
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-      <div className="space-y-2">
-        <button onClick={() => window.open('/etude_vhss_cine-av_assos_professionnelles_2025_afar_full_def.pdf', '_blank')} className="w-full bg-red-600/30 hover:bg-red-600/40 text-red-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <Download className="w-5 h-5" />
-          📊 Télécharger l'Étude complète VHSS (Février 2025)
+        <div className="bg-muted/50 p-4 rounded-lg border border-border text-sm">
+          <p className="font-semibold text-primary mb-2">Mesures de prévention obligatoires</p>
+          <ul className="space-y-1 ml-4 list-disc text-foreground">
+            <li>Information de tous les salariés (kit de prévention)</li>
+            <li>Affichage des numéros utiles et procédures</li>
+            <li>Formation des managers et référents</li>
+            <li>Au moins 2 référents VHSS formés à chaque étape (prépa, tournage, post-prod)</li>
+            <li>Notification au CCHSCT en cas de signalement (anonymisée)</li>
+          </ul>
+        </div>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Documents de référence</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2">
+        <button
+          onClick={() => window.open('/etude_vhss_cine-av_assos_professionnelles_2025_afar_full_def.pdf', '_blank')}
+          className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
+        >
+          Télécharger l'Étude complète VHSS (Février 2025)
         </button>
-        <button onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')} className="w-full bg-red-600/20 hover:bg-red-600/30 text-red-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
-          <Download className="w-5 h-5" />
+        <button
+          onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+          className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
+        >
           Consulter l'avenant complet dans la Convention Collective (Articles 30-34)
         </button>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   </div>
 );
 
