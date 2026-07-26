@@ -4,7 +4,7 @@ import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import RegionalCalendar from "@/components/RegionalCalendar";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Clock, Calendar } from "lucide-react";
+import { Clock, Calendar } from "lucide-react";
 
 const ProductionPage = () => {
   return (
