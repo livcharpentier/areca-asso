@@ -43,38 +43,37 @@ const VHSSPage = () => {
                   <CardTitle>Étude VHSS - Février 2025 (17 associations professionnelles)</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="bg-muted/50 p-4 rounded-lg border border-border">
-                    <p className="text-sm text-foreground mb-3">
-                      <strong>1 698 réponses</strong> de technicien·ne·s du cinéma et de l'audiovisuel sur 40 ans de carrière
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="bg-card p-3 rounded-lg border border-border">
-                        <p className="font-semibold text-primary text-sm">DISCRIMINATION</p>
-                        <p className="text-xs mt-1 text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
-                        <p className="text-xs text-muted-foreground">Motifs : sexe, âge, apparence physique</p>
-                      </div>
-                      <div className="bg-card p-3 rounded-lg border border-border">
-                        <p className="font-semibold text-primary text-sm">AGISSEMENTS SEXISTES</p>
-                        <p className="text-xs mt-1 text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
-                        <p className="text-xs text-muted-foreground">Remarques, blagues sexistes, interpellations familières</p>
-                      </div>
-                      <div className="bg-card p-3 rounded-lg border border-border">
-                        <p className="font-semibold text-primary text-sm">HARCÈLEMENT SEXUEL</p>
-                        <p className="text-xs mt-1 text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-                        <p className="text-xs text-muted-foreground">Blagues grivoises, rapprochements physiques non-consentis</p>
-                      </div>
-                      <div className="bg-card p-3 rounded-lg border border-border">
-                        <p className="font-semibold text-primary text-sm">AGRESSIONS SEXUELLES</p>
-                        <p className="text-xs mt-1 text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
-                        <p className="text-xs text-muted-foreground">Baisers forcés, attouchements</p>
-                      </div>
+                  <p className="text-sm text-foreground">
+                    <strong>1 698 réponses</strong> de technicien·ne·s du cinéma et de l'audiovisuel sur 40 ans de carrière
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-muted/50 p-4 rounded-lg border border-border">
+                      <p className="font-semibold text-primary mb-1">Discrimination</p>
+                      <p className="text-sm text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
+                      <p className="text-xs text-muted-foreground mt-1">Motifs : sexe, âge, apparence physique</p>
+                    </div>
+                    <div className="bg-muted/50 p-4 rounded-lg border border-border">
+                      <p className="font-semibold text-primary mb-1">Agissements sexistes</p>
+                      <p className="text-sm text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
+                      <p className="text-xs text-muted-foreground mt-1">Remarques, blagues sexistes, interpellations familières</p>
+                    </div>
+                    <div className="bg-muted/50 p-4 rounded-lg border border-border">
+                      <p className="font-semibold text-primary mb-1">Harcèlement sexuel</p>
+                      <p className="text-sm text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
+                      <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non-consentis</p>
+                    </div>
+                    <div className="bg-muted/50 p-4 rounded-lg border border-border">
+                      <p className="font-semibold text-primary mb-1">Agressions sexuelles</p>
+                      <p className="text-sm text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
+                      <p className="text-xs text-muted-foreground mt-1">Baisers forcés, attouchements</p>
                     </div>
                   </div>
-                  <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm">
-                    <p className="font-semibold text-primary">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
+                  <div className="bg-muted/50 p-4 rounded-lg border border-border">
+                    <p className="font-semibold text-primary">Viols / tentatives : 25 personnes (23 femmes, 2 hommes)</p>
                   </div>
                 </CardContent>
               </Card>
+
 
               <Card>
                 <CardHeader>
