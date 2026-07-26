@@ -83,9 +83,9 @@ const MemberCategoryPage = () => {
                 <Card key={member.id} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
                   <CardHeader>
                     <div className="flex items-start gap-4">
-                      <Avatar className="w-20 h-20">
-                        <AvatarImage src={member.photoUrl} alt={`${member.firstName} ${member.lastName}`} />
-                        <AvatarFallback>{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
+                      <Avatar className="w-20 h-28 !rounded-lg overflow-hidden">
+                        <AvatarImage src={member.photoUrl} alt={`${member.firstName} ${member.lastName}`} className="!aspect-[3/4] object-cover" />
+                        <AvatarFallback className="!rounded-lg bg-accent/20 text-accent h-full w-full">{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
                       </Avatar>
                       <div className="flex-1">
                         <CardTitle className="text-2xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-2">

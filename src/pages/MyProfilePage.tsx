@@ -231,9 +231,9 @@ const MyProfilePage = () => {
             <CardHeader><CardTitle>Photo & informations</CardTitle></CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center gap-6">
-                <Avatar className="w-24 h-24 ring-2 ring-accent/30">
-                  <AvatarImage src={profile.photo_url || undefined} />
-                  <AvatarFallback className="bg-accent/20 text-accent text-xl font-bold">{initials}</AvatarFallback>
+                <Avatar className="w-24 h-32 !rounded-lg overflow-hidden ring-2 ring-accent/30">
+                  <AvatarImage src={profile.photo_url || undefined} className="!aspect-[3/4] object-cover" />
+                  <AvatarFallback className="!rounded-lg bg-accent/20 text-accent text-xl font-bold h-full w-full">{initials}</AvatarFallback>
                 </Avatar>
                 <div>
                   <Label htmlFor="photo" className="cursor-pointer inline-flex items-center gap-2 px-4 py-2 rounded-md border border-accent/40 hover:bg-accent/10 text-sm">
