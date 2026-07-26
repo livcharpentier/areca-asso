@@ -239,7 +239,7 @@ const ChartePage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bangers text-primary tracking-wide mb-4">
+              <h1 className="text-4xl md:text-5xl font-bangers text-foreground tracking-wide mb-4">
                 Charte du Responsable des Enfants
               </h1>
               <p className="text-xl text-accent font-semibold tracking-wide">
