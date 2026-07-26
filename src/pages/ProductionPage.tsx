@@ -2,9 +2,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import RegionalCalendar from "@/components/RegionalCalendar";
-import DrieetsDossier from "@/components/DrieetsDossier";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { FileText, Clock, Calendar } from "lucide-react";
+import { FileText, Clock } from "lucide-react";
 
 const ProductionPage = () => {
   return (
@@ -41,24 +41,7 @@ const ProductionPage = () => {
             </TabsList>
 
             <TabsContent value="dossier-drieets">
-              <Tabs defaultValue="calendrier" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 mb-4">
-                  <TabsTrigger value="calendrier" className="gap-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>Calendrier Commissions</span>
-                  </TabsTrigger>
-                  <TabsTrigger value="confection" className="gap-2">
-                    <FileText className="h-4 w-4" />
-                    <span>Confection du dossier</span>
-                  </TabsTrigger>
-                </TabsList>
-                <TabsContent value="calendrier">
-                  <RegionalCalendar />
-                </TabsContent>
-                <TabsContent value="confection">
-                  <DrieetsDossier />
-                </TabsContent>
-              </Tabs>
+              <RegionalCalendar />
             </TabsContent>
 
             <TabsContent value="temps-travail">
