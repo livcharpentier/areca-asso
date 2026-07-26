@@ -5,7 +5,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, LogIn, LogOut, UserCircle } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import logoAreca from "@/assets/logo-areca.png";
-import heroCameras from "@/assets/hero-cameras.jpg";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
