@@ -16,17 +16,17 @@
     --popover: 215 25% 94%;
     --popover-foreground: 0 0% 15%;
 
-    /* Bleu royal principal (unifié avec l'accent) */
-    --primary: 220 85% 55%;
+    /* Bleu institutionnel nuancé (moins vif, plus sobre) */
+    --primary: 220 55% 45%;
     --primary-foreground: 0 0% 98%;
     
-    /* Bleu royal vif */
-    --accent: 220 85% 55%;
+    /* Bleu accent nuancé */
+    --accent: 220 55% 45%;
     --accent-foreground: 0 0% 98%;
 
     /* Bleu ciel secondaire */
-    --secondary: 200 70% 92%;
-    --secondary-foreground: 220 85% 55%;
+    --secondary: 200 55% 92%;
+    --secondary-foreground: 220 55% 45%;
 
     --muted: 215 20% 92%;
     --muted-foreground: 0 0% 40%;
@@ -43,18 +43,18 @@
     /* Couleurs personnalisées */
     --green-forest: 150 45% 35%;
     --green-light: 150 40% 88%;
-    --blue-vibrant: 220 85% 55%;
-    --blue-vibrant-light: 220 85% 92%;
+    --blue-vibrant: 220 55% 45%;
+    --blue-vibrant-light: 220 55% 92%;
     --gold: 45 93% 55%;
     --gold-light: 45 90% 90%;
-    --blue-sky: 200 85% 65%;
-    --blue-light: 200 70% 92%;
+    --blue-sky: 200 55% 55%;
+    --blue-light: 200 55% 92%;
     --purple-festive: 270 75% 55%;
     
     /* Gradients colorés */
-    --gradient-primary: linear-gradient(135deg, hsl(220 85% 55%), hsl(210 85% 60%));
-    --gradient-blue: linear-gradient(135deg, hsl(220 85% 55%), hsl(210 85% 60%));
-    --gradient-rainbow: linear-gradient(135deg, hsl(220 85% 55%), hsl(200 85% 65%), hsl(210 85% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(220 55% 45%), hsl(210 55% 50%));
+    --gradient-blue: linear-gradient(135deg, hsl(220 55% 45%), hsl(210 55% 50%));
+    --gradient-rainbow: linear-gradient(135deg, hsl(220 55% 45%), hsl(200 55% 55%), hsl(210 55% 50%));
     
     /* Transitions */
     --transition: all 0.3s ease;
@@ -70,10 +70,10 @@
     --popover: 0 0% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 220 85% 55%;
+    --primary: 220 55% 45%;
     --primary-foreground: 0 0% 98%;
 
-    --accent: 220 85% 55%;
+    --accent: 220 55% 45%;
     --accent-foreground: 0 0% 98%;
 
     --secondary: 200 30% 25%;
