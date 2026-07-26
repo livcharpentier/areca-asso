@@ -6,7 +6,7 @@ import { Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="pt-40 pb-16 bg-background">
+    <section id="contact" className="pt-24 pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-8 uppercase tracking-wide">

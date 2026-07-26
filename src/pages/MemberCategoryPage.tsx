@@ -62,7 +62,7 @@ const MemberCategoryPage = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <section className="pt-40 pb-16 bg-secondary">
+      <section className="pt-24 pb-16 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <Button

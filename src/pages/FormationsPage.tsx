@@ -31,7 +31,7 @@ const FormationsPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-40 pb-16">
+      <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
