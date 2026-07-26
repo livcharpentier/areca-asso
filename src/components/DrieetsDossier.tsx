@@ -12,10 +12,10 @@ const DrieetsDossier = () => {
           <div className="flex items-start gap-3">
             <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
             <div>
-              <p className="font-semibold text-white text-lg mb-2">
+              <p className="font-semibold text-foreground text-lg mb-2">
                 ⚠️ Démarche obligatoire
               </p>
-              <p className="text-white/90 text-sm">
+              <p className="text-foreground/90 text-sm">
                 L'emploi d'un enfant de moins de 16 ans dans le secteur du spectacle vivant et enregistré nécessite <strong>l'accord préalable de l'autorité administrative</strong>. 
                 Chaque dossier nécessite entre 3 et 5 semaines d'instruction. Pensez à déposer votre dossier suffisamment à l'avance.
               </p>

@@ -313,7 +313,7 @@ const ConditionsContent = () => (
           OBLIGATION MAJEURE - Responsable des Enfants
         </p>
         <div className="space-y-3 text-sm bg-black/30 p-4 rounded">
-          <p className="text-base font-semibold text-white">
+          <p className="text-base font-semibold text-foreground">
             OBLIGATOIRE pour toute production avec mineurs
           </p>
           <div className="border-l-4 border-orange-400 pl-4 space-y-2">

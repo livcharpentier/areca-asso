@@ -101,7 +101,7 @@ const MinorsEmploymentPage = () => {
                         OBLIGATION MAJEURE - Responsable des Enfants
                       </p>
                       <div className="space-y-3 text-sm bg-black/30 p-4 rounded">
-                        <p className="text-base font-semibold text-white">
+                        <p className="text-base font-semibold text-foreground">
                           OBLIGATOIRE pour toute production avec mineurs
                         </p>
                         <div className="border-l-4 border-orange-400 pl-4 space-y-2">
@@ -269,11 +269,11 @@ const MinorsEmploymentPage = () => {
                         <p className="font-semibold text-emerald-200 mb-2">💰 Répartition de la rémunération</p>
                         <div className="text-sm space-y-2">
                           <div className="flex items-center gap-3">
-                            <span className="bg-emerald-500 text-white font-bold px-3 py-1 rounded">90%</span>
+                            <span className="bg-emerald-500 text-foreground font-bold px-3 py-1 rounded">90%</span>
                             <p>Versés à la Caisse des Dépôts (pécule conservé jusqu'à la majorité)</p>
                           </div>
                           <div className="flex items-center gap-3">
-                            <span className="bg-amber-500 text-white font-bold px-3 py-1 rounded">10%</span>
+                            <span className="bg-amber-500 text-foreground font-bold px-3 py-1 rounded">10%</span>
                             <p>À disposition des représentants légaux</p>
                           </div>
                           <p className="text-yellow-300 text-xs mt-2">Pour ESM : la part est fixée par décision de la Commission DREETS</p>

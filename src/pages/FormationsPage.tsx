@@ -56,7 +56,7 @@ const FormationsPage = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 mb-12">
               <h2 className="text-2xl font-bold text-primary mb-2">AFDAS</h2>
-              <p className="text-white text-lg">En cours</p>
+              <p className="text-foreground text-lg">En cours</p>
             </div>
           </div>
         </div>
