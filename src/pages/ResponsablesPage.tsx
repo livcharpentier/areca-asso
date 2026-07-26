@@ -274,99 +274,106 @@ const FamillesEmploiContent = () => (
   </div>
 );
 
-/* Contenu Conditions - extrait de MinorsEmploymentPage */
+/* Contenu Conditions */
 const ConditionsContent = () => (
-  <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
-    <h3 className="text-2xl font-bold text-orange-300 mb-4">
-      Conditions d'Emploi des Mineurs (17 mai 2024)
-    </h3>
-    <div className="space-y-4 text-slate-100">
-      <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-foreground mb-2">Champ d'application :</p>
-        <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
-        <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
-      </div>
+  <div className="space-y-6">
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <FileText className="h-6 w-6" />
+          Conditions d'Emploi des Mineurs (17 mai 2024)
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-foreground">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Champ d'application</p>
+          <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
+          <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
+        </div>
 
-      <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-foreground mb-2">Commission départementale consultative :</p>
-        <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
-        <p className="text-sm"><strong>Composition :</strong></p>
-        <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
-          <li>Directeur académique des services de l'éducation nationale ou son représentant</li>
-          <li>Directeur départemental chargé de l'emploi (DDETS/DDETSPP) ou son représentant</li>
-          <li>Un médecin</li>
-          <li>Directeur régional des affaires culturelles (DRAC) ou son représentant</li>
-        </ul>
-      </div>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Commission départementale consultative</p>
+          <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
+          <p className="text-sm"><strong>Composition :</strong></p>
+          <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
+            <li>Directeur académique des services de l'éducation nationale ou son représentant</li>
+            <li>Directeur départemental chargé de l'emploi (DDETS/DDETSPP) ou son représentant</li>
+            <li>Un médecin</li>
+            <li>Directeur régional des affaires culturelles (DRAC) ou son représentant</li>
+          </ul>
+        </div>
 
-      <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-foreground mb-2">Procédure et délais :</p>
-        <ul className="text-sm space-y-1">
-          <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
-          <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
-          <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
-          <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
-          <li><strong>L'autorisation peut être retirée à tout moment</strong></li>
-        </ul>
-      </div>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Procédure et délais</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
+            <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
+            <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
+            <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
+            <li><strong>L'autorisation peut être retirée à tout moment</strong></li>
+          </ul>
+        </div>
 
-      <div className="bg-gradient-to-r from-orange-900/40 to-red-900/40 p-5 rounded-lg border-2 border-orange-400 mb-4 shadow-lg">
-        <p className="text-xl font-bold text-orange-200 mb-3">
-          OBLIGATION MAJEURE - Responsable des Enfants
-        </p>
-        <div className="space-y-3 text-sm bg-black/30 p-4 rounded">
-          <p className="text-base font-semibold text-foreground">
-            OBLIGATOIRE pour toute production avec mineurs
-          </p>
-          <div className="border-l-4 border-orange-400 pl-4 space-y-2">
-            <p className="text-orange-100"><strong>Profil requis :</strong></p>
-            <ul className="ml-4 space-y-1 list-disc text-foreground">
-              <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-3">Obligation majeure - Responsable des enfants</p>
+          <p className="text-sm mb-3">Obligatoire pour toute production avec mineurs.</p>
+          <div className="bg-card p-3 rounded border border-border">
+            <p className="font-semibold text-primary mb-2">Profil requis</p>
+            <ul className="ml-4 space-y-1 list-disc text-sm">
+              <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> ou d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
               <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
               <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
             </ul>
-            <p className="text-orange-100 mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
+            <p className="text-sm mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau.</p>
           </div>
         </div>
-      </div>
 
-      <div className="bg-orange-900/20 p-4 rounded-lg border border-orange-400/30 mb-4">
-        <p className="font-semibold text-orange-200 mb-2">Autre nouvelle obligation (Castings) :</p>
-        <p className="text-sm">Présence obligatoire d'un adulte référent lors de tous les castings avec des mineurs</p>
-      </div>
-
-      <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30 mb-4">
-        <p className="font-semibold text-green-200 mb-2">Certificat médical obligatoire :</p>
-        <div className="space-y-2 text-sm">
-          <p><strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant</p>
-          <p><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
-          <ul className="ml-4 list-disc space-y-1">
-            <li>Du contenu du spectacle (histoire, paroles, scènes)</li>
-            <li>Du planning précis (dates, horaires des répétitions et représentations)</li>
-          </ul>
-          <p className="text-yellow-300 mt-2"><strong>Renouvellement obligatoire :</strong></p>
-          <ul className="ml-4 list-disc space-y-1">
-            <li>Enfants &lt; 3 ans : Tous les <strong>3 mois</strong></li>
-            <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
-            <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
-          </ul>
-          <p className="text-destructive mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Autre nouvelle obligation (Castings)</p>
+          <p className="text-sm">Présence obligatoire d'un adulte référent lors de tous les castings avec des mineurs.</p>
         </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-3">
-          <div>
-            <p className="font-semibold text-foreground">Dossier obligatoire :</p>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Certificat médical obligatoire</p>
+          <div className="space-y-2 text-sm">
+            <p><strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant.</p>
+            <p><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
+            <ul className="ml-4 list-disc space-y-1">
+              <li>Du contenu du spectacle (histoire, paroles, scènes)</li>
+              <li>Du planning précis (dates, horaires des répétitions et représentations)</li>
+            </ul>
+            <p className="mt-2"><strong>Renouvellement obligatoire :</strong></p>
+            <ul className="ml-4 list-disc space-y-1">
+              <li>Enfants &lt; 3 ans : Tous les <strong>3 mois</strong></li>
+              <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
+              <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
+            </ul>
+            <p className="text-destructive mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé.</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
+            <p className="font-semibold text-primary">Dossier obligatoire</p>
             <p className="text-sm">• Autorisation parentale</p>
             <p className="text-sm">• Certificat médical (validité selon âge)</p>
             <p className="text-sm">• Avis pédagogique Education Nationale</p>
             <p className="text-sm">• Assurance responsabilité civile</p>
             <p className="text-sm">• Casier B3 du Responsable des mineurs</p>
           </div>
-          <div>
-            <p className="font-semibold text-foreground">Durée quotidienne DÉTAILLÉE :</p>
-            <div className="text-sm space-y-1 bg-muted/50 p-2 rounded">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
+            <p className="font-semibold text-primary">Accompagnement plateau</p>
+            <p className="text-sm">Présence d'un parent ou tuteur légal</p>
+            <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
+            <p className="text-sm">Adulte référent lors des castings</p>
+            <p className="text-sm">Conditions adaptées (repos, repas)</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
+            <p className="font-semibold text-primary">Durée quotidienne détaillée</p>
+            <div className="text-sm space-y-1">
               <p><strong>&lt; 3 ans :</strong> 1h/jour (pause après 30 min)</p>
               <p><strong>3-5 ans :</strong> 2h/jour (pause après 1h)</p>
               <p><strong>6-11 ans :</strong></p>
@@ -375,82 +382,74 @@ const ConditionsContent = () => (
               <p><strong>12-16 ans :</strong></p>
               <p className="ml-3">• Vacances scolaires : 6h/jour (pause après 3h)</p>
             </div>
-            <p className="text-xs text-yellow-300 mt-2">Préparation, répétition et présence sur plateau = temps de travail effectif</p>
+            <p className="text-xs text-muted-foreground mt-2">Préparation, répétition et présence sur plateau = temps de travail effectif.</p>
           </div>
-        </div>
-        <div className="space-y-3">
-          <div>
-            <p className="font-semibold text-foreground">Scolarité obligatoire :</p>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
+            <p className="font-semibold text-primary">Scolarité obligatoire</p>
             <p className="text-sm">Répétiteur agréé si absence scolaire</p>
             <p className="text-sm">3h d'enseignement/jour minimum</p>
             <p className="text-sm">Maintien du rythme scolaire</p>
           </div>
-          <div>
-            <p className="font-semibold text-foreground">👤 Accompagnement plateau :</p>
-            <p className="text-sm">Présence d'un parent ou tuteur légal</p>
-            <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
-            <p className="text-sm">Adulte référent lors des castings</p>
-            <p className="text-sm">Conditions adaptées (repos, repas)</p>
+        </div>
+
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Rémunération</p>
+          <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité).</p>
+          <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux.</p>
+          <p className="text-sm">Minimum : grille convention collective applicable.</p>
+        </div>
+
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Travail pendant les vacances scolaires</p>
+          <ul className="text-sm space-y-1">
+            <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
+            <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
+            <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
+            <li>Valable quel que soit le nombre de jours de travail et d'employeurs</li>
+          </ul>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-2">Durée du travail</p>
+            <ul className="text-sm space-y-1">
+              <li><strong>Maximum :</strong> 8h/jour - 35h/semaine</li>
+              <li><strong>Pause obligatoire :</strong> 30 min toutes les 4h30</li>
+              <li><strong>Repos quotidien :</strong> Minimum 14h consécutives</li>
+              <li><strong>Repos hebdomadaire :</strong> 2 jours consécutifs (dérogation possible : 36h dont 24h consécutives)</li>
+            </ul>
           </div>
-          <div>
-            <p className="font-semibold text-foreground">Rémunération :</p>
-            <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité)</p>
-            <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux</p>
-            <p className="text-sm">Minimum : grille convention collective applicable</p>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-2">Enfants du théâtre</p>
+            <ul className="text-sm space-y-1">
+              <li>Âge minimum : <strong>9 ans</strong></li>
+              <li>Maximum : <strong>3 représentations/semaine</strong></li>
+              <li>Maximum : <strong>1 représentation/jour</strong></li>
+              <li>Respect du repos pendant vacances scolaires</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30 mb-4">
-        <p className="font-semibold text-primary mb-2">Travail pendant les vacances scolaires :</p>
-        <ul className="text-sm space-y-1">
-          <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
-          <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
-          <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
-          <li className="text-yellow-300">Valable quel que soit le nombre de jours de travail et d'employeurs</li>
-        </ul>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
-          <p className="font-semibold text-indigo-200 mb-2">Durée du travail :</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Maximum :</strong> 8h/jour - 35h/semaine</li>
-            <li><strong>Pause obligatoire :</strong> 30 min toutes les 4h30</li>
-            <li><strong>Repos quotidien :</strong> Minimum 14h consécutives</li>
-            <li><strong>Repos hebdomadaire :</strong> 2 jours consécutifs (dérogation possible : 36h dont 24h consécutives)</li>
-          </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-2">Travail de nuit</p>
+            <ul className="text-sm space-y-1">
+              <li><strong>&lt; 16 ans :</strong> Interdiction totale 20h-6h</li>
+              <li><strong>16-18 ans :</strong> Interdiction totale 22h-6h</li>
+              <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
+              <li><strong>Repos minimum :</strong> 12h consécutives (&lt;16 ans) / 14h consécutives (16-18 ans) en cas de dérogation</li>
+            </ul>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary mb-2">Acrobaties et professions spéciales</p>
+            <ul className="text-sm space-y-1">
+              <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
+              <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
+            </ul>
+          </div>
         </div>
-        <div className="bg-indigo-900/20 p-4 rounded-lg border border-indigo-400/30">
-          <p className="font-semibold text-indigo-200 mb-2">Enfants du théâtre :</p>
-          <ul className="text-sm space-y-1">
-            <li>Âge minimum : <strong>9 ans</strong></li>
-            <li>Maximum : <strong>3 représentations/semaine</strong></li>
-            <li>Maximum : <strong>1 représentation/jour</strong></li>
-            <li>Respect du repos pendant vacances scolaires</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2">Travail de nuit :</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>&lt; 16 ans :</strong> Interdiction totale 20h-6h</li>
-            <li><strong>16-18 ans :</strong> Interdiction totale 22h-6h</li>
-            <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
-            <li><strong>Repos minimum :</strong> 12h consécutives (&lt;16 ans) / 14h consécutives (16-18 ans) en cas de dérogation</li>
-          </ul>
-        </div>
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2">Acrobaties & professions spéciales :</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
-            <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   </div>
 );
 
