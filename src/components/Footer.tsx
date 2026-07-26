@@ -7,7 +7,7 @@ const Footer = () => {
   const links = {
     association: [
       { label: "Présentation", href: "#association" },
-      { label: "Charte ARECA", href: "#charte" },
+      { label: "Charte ARECA", href: "/charte" },
       { label: "Devenir membre", href: "#devenir-membre" },
       { label: "Organigramme", href: "#organigramme" },
       { label: "Faire un don", href: "#don" },
