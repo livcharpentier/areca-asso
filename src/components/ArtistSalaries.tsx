@@ -1,23 +1,22 @@
-import { FileText, Download } from "lucide-react";
+import { Download } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ArtistSalaries = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="mb-8 bg-card border border-border rounded-lg p-6">
-          <h3 className="text-2xl font-bold text-accent mb-4 flex items-center gap-2">
-            <FileText className="w-6 h-6" />
-            Définitions des Fonctions — Artistes-Interprètes & Acteurs de Complément
-          </h3>
-          <div className="space-y-4">
-            <div className="bg-muted/50 p-3 rounded border border-border text-sm text-foreground">
-              <p className="font-semibold mb-1">🎭 Convention Collective Nationale de la Production Cinématographique (Titre III)</p>
+        <Card>
+          <CardHeader>
+            <CardTitle>Définitions des Fonctions — Artistes-Interprètes et Acteurs de Complément</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm text-foreground">
+              <p className="font-semibold mb-1">Convention Collective Nationale de la Production Cinématographique (Titre III)</p>
             </div>
 
-            {/* Définitions */}
-            <div className="bg-muted/50 p-4 rounded border border-border">
-              <p className="font-semibold text-primary mb-3">📖 Définitions des fonctions :</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-foreground">
+            <div className="bg-muted/50 p-4 rounded-lg border border-border">
+              <p className="font-semibold text-primary mb-3">Définitions des fonctions :</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-foreground">
                 <div>
                   <p className="font-semibold text-primary">Figurant :</p>
                   <p>Acteur de complément engagé pour figurer une présence complémentaire à l'histoire</p>
@@ -57,21 +56,22 @@ const ArtistSalaries = () => {
               </div>
             </div>
 
-            <div className="bg-muted/50 p-3 rounded border border-border text-xs text-foreground">
-              <p className="font-semibold text-primary mb-1">ℹ️ Note importante :</p>
+            <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm text-foreground">
+              <p className="font-semibold text-primary mb-1">Note importante :</p>
               <p>Les silhouettes peuvent être désignées par la mise en scène le jour du tournage en accord avec la production, passant ainsi de figurant à silhouette.</p>
             </div>
-          </div>
-          <div className="mt-4 pt-4 border-t border-border">
-            <button
-              onClick={() => window.open('/acfda_salaire_figu-1er-janv-2025.pdf', '_blank')}
-              className="w-full bg-muted/50 hover:bg-muted text-accent font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105 border border-border"
-            >
-              <Download className="w-5 h-5" />
-              Télécharger le guide complet ACFDA des salaires figurants (1er janvier 2025)
-            </button>
-          </div>
-        </div>
+
+            <div className="pt-4 border-t border-border">
+              <button
+                onClick={() => window.open('/acfda_salaire_figu-1er-janv-2025.pdf', '_blank')}
+                className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
+              >
+                <Download className="w-5 h-5 text-primary" />
+                Télécharger le guide complet ACFDA des salaires figurants (1er janvier 2025)
+              </button>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

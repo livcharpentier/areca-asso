@@ -1,55 +1,45 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Heart, FileText, Users, Shield, Download, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const HealthMonitoring = () => {
   return (
     <div className="space-y-6">
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
           Suivi en Santé au Travail
         </h2>
-        <p className="text-xl text-foreground/90 max-w-3xl mx-auto font-medium">
+        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Le suivi médical obligatoire des enfants du spectacle par Thalie Santé
         </p>
       </div>
 
-      {/* Encadré important - Documents requis */}
-      <div className="bg-muted/40 border-2 border-primary/30 p-5 rounded-lg">
-        <div className="flex items-start gap-3">
-          <AlertCircle className="h-6 w-6 text-accent flex-shrink-0 mt-0.5" />
-          <div className="flex-1">
-            <p className="font-semibold text-foreground text-lg mb-3">
-              📋 Documents médicaux obligatoires
-            </p>
-            <div className="space-y-3">
-              <div>
-                <p className="font-semibold text-foreground mb-1">Enfants rôles ou petits rôles :</p>
-                <ul className="space-y-1 ml-4 text-foreground/90">
-                  <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
-                  <li>• À minima : document justifiant d'une prise de rendez-vous</li>
-                </ul>
-              </div>
-              <div className="pt-2 border-t border-border">
-                <p className="font-semibold text-foreground mb-1">Enfants - Figurants, silhouettes et silhouettes parlantes :</p>
-                <ul className="space-y-1 ml-4 text-foreground/90">
-                  <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
-                  <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
-                </ul>
-              </div>
-            </div>
+      <div className="bg-muted/40 border border-primary/30 p-5 rounded-lg">
+        <p className="font-semibold text-foreground text-lg mb-3">
+          Documents médicaux obligatoires
+        </p>
+        <div className="space-y-3">
+          <div>
+            <p className="font-semibold text-foreground mb-1">Enfants rôles ou petits rôles :</p>
+            <ul className="space-y-1 ml-4 text-foreground">
+              <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
+              <li>• À minima : document justifiant d'une prise de rendez-vous</li>
+            </ul>
+          </div>
+          <div className="pt-2 border-t border-border">
+            <p className="font-semibold text-foreground mb-1">Enfants - Figurants, silhouettes et silhouettes parlantes :</p>
+            <ul className="space-y-1 ml-4 text-foreground">
+              <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
+              <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      {/* Choix du médecin */}
-      <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300">
+      <Card className="border-border bg-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Users className="h-5 w-5 text-accent" />
-            Quel médecin consulter ?
-          </CardTitle>
+          <CardTitle>Quel médecin consulter ?</CardTitle>
           <CardDescription className="text-muted-foreground">
             Critères de choix entre médecin Thalie Santé et médecin généraliste
           </CardDescription>
@@ -57,10 +47,7 @@ const HealthMonitoring = () => {
         <CardContent className="space-y-6">
           <div className="space-y-4">
             <div className="bg-muted/50 p-4 rounded-lg border border-border">
-              <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-accent" />
-                Médecin Thalie Santé obligatoire pour :
-              </h3>
+              <h3 className="font-semibold text-primary mb-3">Médecin Thalie Santé obligatoire pour :</h3>
               <ul className="space-y-2 text-foreground ml-6">
                 <li>• <strong>Rôle 1er choix</strong></li>
                 <li>• <strong>Rôle 2nd choix</strong></li>
@@ -69,40 +56,30 @@ const HealthMonitoring = () => {
             </div>
 
             <div className="bg-muted/50 p-4 rounded-lg border border-border">
-              <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-accent" />
-                Médecin généraliste autorisé pour :
-              </h3>
+              <h3 className="font-semibold text-primary mb-3">Médecin généraliste autorisé pour :</h3>
               <p className="text-foreground mb-2">
                 Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
               </p>
-              <div className="bg-destructive/25 border-2 border-destructive p-4 rounded-lg mt-3">
-                <div className="flex items-start gap-2">
-                  <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-medium text-foreground">
-                      <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
-                      Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
-                    </p>
-                  </div>
-                </div>
+              <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg mt-3">
+                <p className="text-sm text-foreground">
+                  <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
+                  Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
+                </p>
               </div>
             </div>
           </div>
 
           <div className="space-y-4 pt-4 border-t border-border">
             <h3 className="font-semibold text-lg text-primary">Procédures selon la localisation</h3>
-            
             <div className="space-y-3">
-              <div className="bg-muted/30 p-4 rounded-lg">
+              <div className="bg-muted/30 p-4 rounded-lg border border-border">
                 <h4 className="font-semibold text-primary mb-2">Enfant en région parisienne (Île-de-France)</h4>
                 <ul className="space-y-2 text-foreground text-sm ml-4">
                   <li>• Thalie Santé contacte directement les parents pour prendre rendez-vous</li>
                   <li>• Consultation en <strong>physique</strong> ou en <strong>téléconsultation</strong></li>
                 </ul>
               </div>
-
-              <div className="bg-muted/30 p-4 rounded-lg">
+              <div className="bg-muted/30 p-4 rounded-lg border border-border">
                 <h4 className="font-semibold text-primary mb-2">Enfant en région</h4>
                 <ul className="space-y-2 text-foreground text-sm ml-4">
                   <li>• Thalie Santé charge un <strong>bon de prise en charge</strong> sur la plateforme</li>
@@ -114,9 +91,7 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-      {/* Information principale */}
       <Alert className="bg-card border-border">
-        <Heart className="h-5 w-5 text-accent" />
         <AlertDescription className="text-foreground">
           <strong>Thalie Santé</strong> est le seul service de prévention et de santé au travail interentreprises agréé en France 
           pour le suivi médical des mineurs de moins de 16 ans dans le spectacle en Île-de-France, 
@@ -124,23 +99,16 @@ const HealthMonitoring = () => {
         </AlertDescription>
       </Alert>
 
-      {/* Prise en charge financière */}
-      <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300">
+      <Card className="border-border bg-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <FileText className="h-5 w-5 text-accent" />
-            Prise en charge financière des visites médicales
-          </CardTitle>
+          <CardTitle>Prise en charge financière des visites médicales</CardTitle>
           <CardDescription className="text-muted-foreground">
             Qui paie les consultations médicales ?
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-accent" />
-              Visites médicales obligatoires
-            </h3>
+            <h3 className="font-semibold text-primary mb-3">Visites médicales obligatoires</h3>
             <p className="text-foreground mb-2">
               Les visites médicales obligatoires pour l'obtention de l'autorisation de travail sont 
               <strong> prises en charge par la production</strong> dans le cadre de la cotisation santé au travail.
@@ -152,22 +120,16 @@ const HealthMonitoring = () => {
             </ul>
           </div>
 
-          <div className="bg-destructive/15 border-2 border-destructive/60 p-4 rounded-lg">
-            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-destructive" />
-              ⚠️ Visites chez un médecin spécialiste
-            </h3>
-            <p className="text-foreground/90">
+          <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg">
+            <h3 className="font-semibold text-foreground mb-2">Visites chez un médecin spécialiste</h3>
+            <p className="text-foreground">
               Les consultations chez des médecins spécialistes (hors médecin généraliste ou pédiatre autorisés) 
               ne sont <strong>pas prises en charge par la production</strong>.
             </p>
           </div>
 
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <h3 className="font-semibold text-primary mb-3 flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-accent" />
-              Figurants, silhouettes et silhouettes parlantes
-            </h3>
+            <h3 className="font-semibold text-primary mb-3">Figurants, silhouettes et silhouettes parlantes</h3>
             <p className="text-foreground">
               Pour les figurants, la production <strong>rembourse les visites médicales</strong> effectuées 
               chez un médecin généraliste ou un pédiatre (selon l'âge de l'enfant).
@@ -175,7 +137,6 @@ const HealthMonitoring = () => {
           </div>
 
           <Alert className="bg-muted/50 border-border">
-            <Heart className="h-4 w-4 text-accent" />
             <AlertDescription className="text-foreground text-sm">
               Le suivi en santé au travail est pris en charge par l'employeur dans le cadre de la cotisation 
               obligatoire à Thalie Santé. Cette cotisation couvre les visites médicales réglementaires.
@@ -184,14 +145,9 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-
-      {/* La visite médicale */}
-      <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300">
+      <Card className="border-border bg-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Heart className="h-5 w-5 text-accent" />
-            La visite médicale
-          </CardTitle>
+          <CardTitle>La visite médicale</CardTitle>
           <CardDescription className="text-muted-foreground">
             Une visite médicale obligatoire à chaque nouveau contrat de travail
           </CardDescription>
@@ -202,23 +158,11 @@ const HealthMonitoring = () => {
             <p className="text-foreground mb-3">
               L'équipe du Pôle Enfants de Thalie Santé analyse en détail :
             </p>
-            <ul className="space-y-2 text-foreground">
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                La charge et la durée de travail (sur ce projet et tous les autres projets de l'année)
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                La thématique du projet (spectacle, film, doublage, chant…)
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Les interactions avec les autres artistes
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Le rôle et la prestation : établissement d'une cartographie des risques
-              </li>
+            <ul className="space-y-2 text-foreground ml-4">
+              <li>• La charge et la durée de travail (sur ce projet et tous les autres projets de l'année)</li>
+              <li>• La thématique du projet (spectacle, film, doublage, chant…)</li>
+              <li>• Les interactions avec les autres artistes</li>
+              <li>• Le rôle et la prestation : établissement d'une cartographie des risques</li>
             </ul>
           </div>
 
@@ -227,32 +171,16 @@ const HealthMonitoring = () => {
             <p className="text-foreground mb-3">
               Le médecin du travail évalue les capacités physiques et psychiques de l'enfant :
             </p>
-            <ul className="space-y-2 text-foreground">
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Échange sur l'activité professionnelle récente et le parcours global
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Discussion sur la scolarité
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Perception du rôle par l'enfant : motivation, distinction fiction/réalité
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Examen médical et tests complémentaires (visuels, audiogramme, évaluation psychologique)
-              </li>
-              <li className="flex gap-2">
-                <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                Consultation du carnet de santé (vaccinations, courbe de croissance)
-              </li>
+            <ul className="space-y-2 text-foreground ml-4">
+              <li>• Échange sur l'activité professionnelle récente et le parcours global</li>
+              <li>• Discussion sur la scolarité</li>
+              <li>• Perception du rôle par l'enfant : motivation, distinction fiction/réalité</li>
+              <li>• Examen médical et tests complémentaires (visuels, audiogramme, évaluation psychologique)</li>
+              <li>• Consultation du carnet de santé (vaccinations, courbe de croissance)</li>
             </ul>
           </div>
 
           <Alert className="bg-muted/50 border-border">
-            <Heart className="h-4 w-4 text-accent" />
             <AlertDescription className="text-foreground text-sm">
               Le suivi s'inscrit dans une démarche de <strong>prévention primaire</strong> pour évaluer 
               l'impact du rôle sur la santé physique et psychologique de l'enfant. Le coût est pris en charge 
@@ -262,14 +190,9 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-
-      {/* Règles spécifiques et interdictions */}
-      <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300">
+      <Card className="border-border bg-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Shield className="h-5 w-5 text-accent" />
-            Règles spécifiques et interdictions
-          </CardTitle>
+          <CardTitle>Règles spécifiques et interdictions</CardTitle>
           <CardDescription className="text-muted-foreground">
             Dispositions légales et limites d'emploi
           </CardDescription>
@@ -285,12 +208,9 @@ const HealthMonitoring = () => {
               </ul>
             </div>
 
-            <div className="bg-destructive/15 border-2 border-destructive/60 p-4 rounded-lg">
-              <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                <AlertCircle className="h-5 w-5 text-destructive" />
-                ⚠️ Interdictions formelles
-              </h4>
-              <ul className="space-y-2 text-foreground/90 text-sm">
+            <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg">
+              <h4 className="font-semibold text-foreground mb-2">Interdictions formelles</h4>
+              <ul className="space-y-2 text-foreground text-sm">
                 <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
                 <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
                 <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
@@ -316,13 +236,9 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-      {/* Téléchargement du document */}
       <Card className="border-border bg-card">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <FileText className="h-5 w-5 text-accent" />
-            Document complet
-          </CardTitle>
+          <CardTitle>Document complet</CardTitle>
         </CardHeader>
         <CardContent>
           <Button asChild className="w-full sm:w-auto">
@@ -337,9 +253,7 @@ const HealthMonitoring = () => {
         </CardContent>
       </Card>
 
-      {/* Contact Thalie Santé */}
       <Alert className="bg-card border-border">
-        <Shield className="h-5 w-5 text-accent" />
         <AlertDescription className="text-foreground">
           <strong>Thalie Santé</strong> est issu de la fusion en 2021 du Centre Médical de la Bourse (CMB) 
           et du Centre Médical de la Publicité et de la Communication (CMPC). Depuis 2009, 
