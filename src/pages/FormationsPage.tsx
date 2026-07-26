@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Calendar, Users, Clock, Info } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const FormationsPage = () => {
   const formations = [
@@ -38,19 +37,16 @@ const FormationsPage = () => {
               <h1 className="text-4xl font-bold text-foreground">Formations</h1>
             </div>
 
-            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg mb-12">
-              <div className="flex items-start gap-3">
-                <Info className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-foreground text-lg mb-1">
-                    📅 Formations en préparation
-                  </p>
-                  <p className="text-sm text-foreground/90">
-                    Les formations présentées ci-dessous sont actuellement en cours de préparation. 
-                    Elles seront officiellement disponibles d'ici 18 mois. 
-                    Nous vous tiendrons informés de leur lancement via notre page actualités.
-                  </p>
-                </div>
+            <div className="bg-muted/50 border border-border p-5 rounded-lg mb-12">
+              <div>
+                <p className="font-semibold text-primary text-lg mb-1">
+                  Formations en préparation
+                </p>
+                <p className="text-sm text-foreground/90">
+                  Les formations présentées ci-dessous sont actuellement en cours de préparation.
+                  Elles seront officiellement disponibles d'ici 18 mois.
+                  Nous vous tiendrons informés de leur lancement via notre page actualités.
+                </p>
               </div>
             </div>
 
