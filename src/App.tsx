@@ -24,6 +24,7 @@ import DocumentsPage from "./pages/DocumentsPage";
 import Auth from "./pages/Auth";
 import MyProfilePage from "./pages/MyProfilePage";
 import FAQPage from "./pages/FAQPage";
+import ChartePage from "./pages/ChartePage";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -57,6 +58,7 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/mon-profil" element={<ProtectedRoute><MyProfilePage /></ProtectedRoute>} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/charte" element={<ChartePage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

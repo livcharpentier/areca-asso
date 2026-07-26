@@ -22,6 +22,7 @@ const Navigation = () => {
 
   const navItems = [
     { label: "FICHE MÉTIER", path: "/about" },
+    { label: "CHARTE", path: "/charte" },
     { label: "MEMBRES", path: "/members" },
     { label: "ESPACE INFORMATIONS", path: "/production" },
     { label: "ESPACE FAMILLE", path: "/parents" },
