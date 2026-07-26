@@ -5,7 +5,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, LogIn, LogOut, UserCircle } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import logoAreca from "@/assets/logo-areca.png";
-import heroCameras from "@/assets/hero-cameras.jpg";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -36,28 +35,21 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 border-b border-black/10">
-      {/* Fond caméras sur toute la largeur du bandeau */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroCameras})` }}
-      >
-        <div className="absolute inset-0 bg-white/80" />
-      </div>
+    <nav className="fixed top-0 w-full z-50 border-b border-black/10 bg-white">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex items-center justify-between h-40">
+        <div className="flex items-center justify-between min-h-16 py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src={logoAreca}
               alt="ARECA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
-              className="h-16 sm:h-20 w-auto flex-shrink-0"
+              className="h-12 sm:h-14 w-auto flex-shrink-0"
             />
             <div className="flex flex-col leading-tight">
               <span className="text-2xl sm:text-3xl font-black tracking-widest text-black font-sans">
                 ARECA
               </span>
-              <span className="text-[8px] sm:text-[10px] text-black/80 uppercase tracking-widest font-comic font-bold leading-tight max-w-[160px] sm:max-w-[200px]">
+              <span className="text-[6px] sm:text-[7px] text-black/80 uppercase tracking-widest font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
                 Responsables Enfants dans le Cinéma et l'Audiovisuel
               </span>
             </div>
