@@ -123,7 +123,7 @@ const OrganisationTravailContent = () => (
 
       <div className="space-y-4 text-slate-100">
         <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-blue-200 mb-2 flex items-center gap-2">
+          <p className="font-semibold text-foreground mb-2 flex items-center gap-2">
             <Clock className="h-4 w-4" />
             Temps de travail effectif vs. Temps de présence
           </p>
@@ -134,7 +134,7 @@ const OrganisationTravailContent = () => (
             <li><strong>Prises :</strong> Temps de tournage effectif</li>
           </ul>
           <div className="mt-3 bg-amber-900/30 p-3 rounded border border-amber-400/30">
-            <p className="text-amber-200 font-semibold text-sm">⚠️ Ne sont PAS du temps de travail :</p>
+            <p className="text-primary font-semibold text-sm">⚠️ Ne sont PAS du temps de travail :</p>
             <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
               <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
               <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
@@ -144,7 +144,7 @@ const OrganisationTravailContent = () => (
         </div>
 
         <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-blue-200 mb-2 flex items-center gap-2">
+          <p className="font-semibold text-foreground mb-2 flex items-center gap-2">
             <CalendarDays className="h-4 w-4" />
             Travail du dimanche et jours fériés
           </p>
@@ -156,7 +156,7 @@ const OrganisationTravailContent = () => (
         </div>
 
         <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30">
-          <p className="font-semibold text-amber-200 mb-2 flex items-center gap-2">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
             <CalendarDays className="h-4 w-4" />
             Règle des vacances scolaires
           </p>
@@ -164,12 +164,12 @@ const OrganisationTravailContent = () => (
             <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
             <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
             <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
-            <li className="text-amber-300"><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
+            <li className="text-primary"><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
           </ul>
         </div>
 
         <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-blue-200 mb-2">Repos obligatoire :</p>
+          <p className="font-semibold text-foreground mb-2">Repos obligatoire :</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
             <div>
               <p><strong>Repos quotidien :</strong></p>
@@ -235,7 +235,7 @@ const FamillesEmploiContent = () => (
             Théâtre & Cirque
           </p>
           <ul className="text-sm space-y-1">
-            <li><strong>Âge minimum :</strong> <span className="text-amber-300 font-semibold">9 ans</span> (pas de dérogation possible)</li>
+            <li><strong>Âge minimum :</strong> <span className="text-primary font-semibold">9 ans</span> (pas de dérogation possible)</li>
             <li><strong>Maximum :</strong> 3 représentations par semaine</li>
             <li><strong>Maximum :</strong> 1 représentation par jour</li>
             <li>Repos obligatoire pendant les vacances scolaires</li>
@@ -280,13 +280,13 @@ const ConditionsContent = () => (
     </h3>
     <div className="space-y-4 text-slate-100">
       <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-blue-200 mb-2">Champ d'application :</p>
+        <p className="font-semibold text-foreground mb-2">Champ d'application :</p>
         <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
         <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
       </div>
 
       <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-blue-200 mb-2">Commission départementale consultative :</p>
+        <p className="font-semibold text-foreground mb-2">Commission départementale consultative :</p>
         <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
         <p className="text-sm"><strong>Composition :</strong></p>
         <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
@@ -298,7 +298,7 @@ const ConditionsContent = () => (
       </div>
 
       <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-        <p className="font-semibold text-blue-200 mb-2">Procédure et délais :</p>
+        <p className="font-semibold text-foreground mb-2">Procédure et délais :</p>
         <ul className="text-sm space-y-1">
           <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
           <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
@@ -318,7 +318,7 @@ const ConditionsContent = () => (
           </p>
           <div className="border-l-4 border-orange-400 pl-4 space-y-2">
             <p className="text-orange-100"><strong>Profil requis :</strong></p>
-            <ul className="ml-4 space-y-1 list-disc text-slate-200">
+            <ul className="ml-4 space-y-1 list-disc text-foreground">
               <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
               <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
               <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
@@ -348,14 +348,14 @@ const ConditionsContent = () => (
             <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
             <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
           </ul>
-          <p className="text-red-300 mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
+          <p className="text-destructive mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-3">
           <div>
-            <p className="font-semibold text-blue-200">Dossier obligatoire :</p>
+            <p className="font-semibold text-foreground">Dossier obligatoire :</p>
             <p className="text-sm">• Autorisation parentale</p>
             <p className="text-sm">• Certificat médical (validité selon âge)</p>
             <p className="text-sm">• Avis pédagogique Education Nationale</p>
@@ -363,8 +363,8 @@ const ConditionsContent = () => (
             <p className="text-sm">• Casier B3 du Responsable des mineurs</p>
           </div>
           <div>
-            <p className="font-semibold text-blue-200">Durée quotidienne DÉTAILLÉE :</p>
-            <div className="text-sm space-y-1 bg-blue-950/40 p-2 rounded">
+            <p className="font-semibold text-foreground">Durée quotidienne DÉTAILLÉE :</p>
+            <div className="text-sm space-y-1 bg-muted/50 p-2 rounded">
               <p><strong>&lt; 3 ans :</strong> 1h/jour (pause après 30 min)</p>
               <p><strong>3-5 ans :</strong> 2h/jour (pause après 1h)</p>
               <p><strong>6-11 ans :</strong></p>
@@ -378,20 +378,20 @@ const ConditionsContent = () => (
         </div>
         <div className="space-y-3">
           <div>
-            <p className="font-semibold text-blue-200">Scolarité obligatoire :</p>
+            <p className="font-semibold text-foreground">Scolarité obligatoire :</p>
             <p className="text-sm">Répétiteur agréé si absence scolaire</p>
             <p className="text-sm">3h d'enseignement/jour minimum</p>
             <p className="text-sm">Maintien du rythme scolaire</p>
           </div>
           <div>
-            <p className="font-semibold text-blue-200">👤 Accompagnement plateau :</p>
+            <p className="font-semibold text-foreground">👤 Accompagnement plateau :</p>
             <p className="text-sm">Présence d'un parent ou tuteur légal</p>
             <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
             <p className="text-sm">Adulte référent lors des castings</p>
             <p className="text-sm">Conditions adaptées (repos, repas)</p>
           </div>
           <div>
-            <p className="font-semibold text-blue-200">Rémunération :</p>
+            <p className="font-semibold text-foreground">Rémunération :</p>
             <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité)</p>
             <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux</p>
             <p className="text-sm">Minimum : grille convention collective applicable</p>
@@ -400,7 +400,7 @@ const ConditionsContent = () => (
       </div>
 
       <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30 mb-4">
-        <p className="font-semibold text-amber-200 mb-2">Travail pendant les vacances scolaires :</p>
+        <p className="font-semibold text-primary mb-2">Travail pendant les vacances scolaires :</p>
         <ul className="text-sm space-y-1">
           <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
           <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
@@ -473,28 +473,28 @@ const VHSSContent = () => (
         <p className="text-sm mb-3 text-slate-100"><strong>1 698 réponses</strong> de technicien·ne·s du cinéma et de l'audiovisuel sur 40 ans de carrière</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
           <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-red-300 text-sm">DISCRIMINATION</p>
-            <p className="text-xs mt-1 text-slate-200"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
-            <p className="text-xs text-slate-300">Motifs : sexe, âge, apparence physique</p>
+            <p className="font-semibold text-destructive text-sm">DISCRIMINATION</p>
+            <p className="text-xs mt-1 text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
+            <p className="text-xs text-muted-foreground">Motifs : sexe, âge, apparence physique</p>
           </div>
           <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-red-300 text-sm">AGISSEMENTS SEXISTES</p>
-            <p className="text-xs mt-1 text-slate-200"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
-            <p className="text-xs text-slate-300">Remarques, blagues sexistes, interpellations familières</p>
+            <p className="font-semibold text-destructive text-sm">AGISSEMENTS SEXISTES</p>
+            <p className="text-xs mt-1 text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
+            <p className="text-xs text-muted-foreground">Remarques, blagues sexistes, interpellations familières</p>
           </div>
           <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-red-300 text-sm">HARCÈLEMENT SEXUEL</p>
-            <p className="text-xs mt-1 text-slate-200"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-            <p className="text-xs text-slate-300">Blagues grivoises, rapprochements physiques non-consentis</p>
+            <p className="font-semibold text-destructive text-sm">HARCÈLEMENT SEXUEL</p>
+            <p className="text-xs mt-1 text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
+            <p className="text-xs text-muted-foreground">Blagues grivoises, rapprochements physiques non-consentis</p>
           </div>
           <div className="bg-red-950/40 p-3 rounded">
-            <p className="font-semibold text-red-300 text-sm">AGRESSIONS SEXUELLES</p>
-            <p className="text-xs mt-1 text-slate-200"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
-            <p className="text-xs text-slate-300">Baisers forcés, attouchements</p>
+            <p className="font-semibold text-destructive text-sm">AGRESSIONS SEXUELLES</p>
+            <p className="text-xs mt-1 text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
+            <p className="text-xs text-muted-foreground">Baisers forcés, attouchements</p>
           </div>
         </div>
         <div className="bg-red-950/50 p-2 rounded text-xs">
-          <p className="font-semibold text-red-300">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
+          <p className="font-semibold text-destructive">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
         </div>
       </div>
     </div>

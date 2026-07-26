@@ -68,13 +68,13 @@ const MinorsEmploymentPage = () => {
                   </h3>
                   <div className="space-y-4 text-slate-100">
                     <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-                      <p className="font-semibold text-blue-200 mb-2">Champ d'application :</p>
+                      <p className="font-semibold text-foreground mb-2">Champ d'application :</p>
                       <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
                       <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
                     </div>
 
                     <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-                      <p className="font-semibold text-blue-200 mb-2">Commission départementale consultative :</p>
+                      <p className="font-semibold text-foreground mb-2">Commission départementale consultative :</p>
                       <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
                       <p className="text-sm"><strong>Composition :</strong></p>
                       <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
@@ -86,7 +86,7 @@ const MinorsEmploymentPage = () => {
                     </div>
 
                     <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-                      <p className="font-semibold text-blue-200 mb-2">Procédure et délais :</p>
+                      <p className="font-semibold text-foreground mb-2">Procédure et délais :</p>
                       <ul className="text-sm space-y-1">
                         <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
                         <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
@@ -106,7 +106,7 @@ const MinorsEmploymentPage = () => {
                         </p>
                         <div className="border-l-4 border-orange-400 pl-4 space-y-2">
                           <p className="text-orange-100"><strong>Profil requis :</strong></p>
-                          <ul className="ml-4 space-y-1 list-disc text-slate-200">
+                          <ul className="ml-4 space-y-1 list-disc text-foreground">
                             <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> OU d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
                             <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
                             <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
@@ -136,14 +136,14 @@ const MinorsEmploymentPage = () => {
                           <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
                           <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
                         </ul>
-                        <p className="text-red-300 mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
+                        <p className="text-destructive mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé</p>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-3">
                         <div>
-                          <p className="font-semibold text-blue-200">Dossier obligatoire :</p>
+                          <p className="font-semibold text-foreground">Dossier obligatoire :</p>
                           <p className="text-sm">• Autorisation parentale</p>
                           <p className="text-sm">• Certificat médical (validité selon âge)</p>
                           <p className="text-sm">• Avis pédagogique Education Nationale</p>
@@ -152,8 +152,8 @@ const MinorsEmploymentPage = () => {
                         </div>
                         
                         <div>
-                          <p className="font-semibold text-blue-200">Durée quotidienne DÉTAILLÉE :</p>
-                          <div className="text-sm space-y-1 bg-blue-950/40 p-2 rounded">
+                          <p className="font-semibold text-foreground">Durée quotidienne DÉTAILLÉE :</p>
+                          <div className="text-sm space-y-1 bg-muted/50 p-2 rounded">
                             <p><strong>&lt; 3 ans :</strong> 1h/jour (pause après 30 min)</p>
                             <p><strong>3-5 ans :</strong> 2h/jour (pause après 1h)</p>
                             <p><strong>6-11 ans :</strong></p>
@@ -168,14 +168,14 @@ const MinorsEmploymentPage = () => {
 
                       <div className="space-y-3">
                         <div>
-                          <p className="font-semibold text-blue-200">Scolarité obligatoire :</p>
+                          <p className="font-semibold text-foreground">Scolarité obligatoire :</p>
                           <p className="text-sm">Répétiteur agréé si absence scolaire</p>
                           <p className="text-sm">3h d'enseignement/jour minimum</p>
                           <p className="text-sm">Maintien du rythme scolaire</p>
                         </div>
 
                         <div>
-                          <p className="font-semibold text-blue-200">👤 Accompagnement plateau :</p>
+                          <p className="font-semibold text-foreground">👤 Accompagnement plateau :</p>
                           <p className="text-sm">Présence d'un parent ou tuteur légal</p>
                           <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
                           <p className="text-sm">Adulte référent lors des castings</p>
@@ -183,7 +183,7 @@ const MinorsEmploymentPage = () => {
                         </div>
 
                         <div>
-                          <p className="font-semibold text-blue-200">Rémunération :</p>
+                          <p className="font-semibold text-foreground">Rémunération :</p>
                           <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité)</p>
                           <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux</p>
                           <p className="text-sm">Minimum : grille convention collective applicable</p>
@@ -192,7 +192,7 @@ const MinorsEmploymentPage = () => {
                     </div>
 
                     <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30 mb-4">
-                      <p className="font-semibold text-amber-200 mb-2">Travail pendant les vacances scolaires :</p>
+                      <p className="font-semibold text-primary mb-2">Travail pendant les vacances scolaires :</p>
                       <ul className="text-sm space-y-1">
                         <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
                         <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
@@ -283,20 +283,20 @@ const MinorsEmploymentPage = () => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">Gratuit</p>
-                          <p className="text-xs text-slate-300">Aucun frais de dépôt ni gestion</p>
+                          <p className="text-xs text-muted-foreground">Aucun frais de dépôt ni gestion</p>
                         </div>
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">2,76%</p>
-                          <p className="text-xs text-slate-300">Taux de rémunération (nov. 2025)</p>
+                          <p className="text-xs text-muted-foreground">Taux de rémunération (nov. 2025)</p>
                         </div>
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">30 ans</p>
-                          <p className="text-xs text-slate-300">Conservation après majorité</p>
+                          <p className="text-xs text-muted-foreground">Conservation après majorité</p>
                         </div>
                       </div>
 
                       <div className="bg-amber-900/30 p-3 rounded border border-amber-400/40">
-                        <p className="font-semibold text-amber-200 mb-2">📅 Prescription applicable</p>
+                        <p className="font-semibold text-primary mb-2">📅 Prescription applicable</p>
                         <div className="text-sm">
                           <p>À la majorité, la Caisse des Dépôts adresse un courrier recommandé précisant les modalités pour récupérer le pécule.</p>
                           <p className="mt-1">Sans réclamation : fonds conservés <strong>30 ans</strong> (non rémunérés après majorité), puis acquis à l'État.</p>
@@ -349,7 +349,7 @@ const MinorsEmploymentPage = () => {
                         <p className="font-semibold text-emerald-200 mb-2">💡 Cas particulier : percevoir avant 18 ans</p>
                         <div className="text-sm">
                           <p>Après 16 ans, la <strong>Commission DDCS/DIRECCTE</strong> peut autoriser le versement direct d'une partie de la rémunération.</p>
-                          <p className="text-slate-400 mt-1">La part bloquée reste à la CDC jusqu'à la majorité.</p>
+                          <p className="text-muted-foreground mt-1">La part bloquée reste à la CDC jusqu'à la majorité.</p>
                         </div>
                       </div>
 
@@ -363,7 +363,7 @@ const MinorsEmploymentPage = () => {
                           >
                             contacts-consignations@caissedesdepots.fr
                           </a>
-                          <p className="text-slate-400 mt-1 text-xs">Objet : "Changement adresse postale représentant légal ESM"</p>
+                          <p className="text-muted-foreground mt-1 text-xs">Objet : "Changement adresse postale représentant légal ESM"</p>
                         </div>
                       </div>
 
@@ -391,7 +391,7 @@ const MinorsEmploymentPage = () => {
                     <div className="space-y-3 text-slate-100">
                       <div className="bg-black/30 p-3 rounded">
                         <p className="text-sm">
-                          <strong className="text-red-300">Chaque virement</strong> effectué doit <strong>obligatoirement</strong> correspondre à <strong>une seule demande saisie et transmise</strong>, quel que soit le nombre d'enfants et/ou prestations contenus.
+                          <strong className="text-destructive">Chaque virement</strong> effectué doit <strong>obligatoirement</strong> correspondre à <strong>une seule demande saisie et transmise</strong>, quel que soit le nombre d'enfants et/ou prestations contenus.
                         </p>
                       </div>
                       <div className="bg-red-950/50 p-3 rounded border border-red-500">
@@ -400,27 +400,27 @@ const MinorsEmploymentPage = () => {
                           <li>• Virement global pour plusieurs demandes</li>
                           <li>• Plusieurs virements pour une seule demande</li>
                         </ul>
-                        <p className="text-xs text-red-300 mt-2">Dans ce cas, vous devrez refaire l'ensemble de vos démarches.</p>
+                        <p className="text-xs text-destructive mt-2">Dans ce cas, vous devrez refaire l'ensemble de vos démarches.</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Contact et références */}
                   <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-5 rounded-lg border-2 border-slate-400/40">
-                    <h4 className="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2">
+                    <h4 className="text-lg font-bold text-foreground mb-3 flex items-center gap-2">
                       📞 Contact et Références
                     </h4>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-100">
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-slate-200 mb-2">Service Consignations</p>
+                        <p className="font-semibold text-foreground mb-2">Service Consignations</p>
                         <p className="text-lg font-bold text-emerald-300">01 58 50 89 88</p>
-                        <p className="text-xs text-slate-400">Prix d'un appel local</p>
+                        <p className="text-xs text-muted-foreground">Prix d'un appel local</p>
                         <p className="text-sm mt-2">Lundi - Vendredi : 9h-12h / 13h-17h</p>
                       </div>
                       
                       <div className="bg-black/30 p-3 rounded">
-                        <p className="font-semibold text-slate-200 mb-2">Textes de référence</p>
+                        <p className="font-semibold text-foreground mb-2">Textes de référence</p>
                         <ul className="text-xs space-y-1">
                           <li>• Articles L7124-1 et suivants du Code du travail</li>
                           <li>• Articles R7124-1 et suivants du Code du travail</li>
@@ -438,7 +438,7 @@ const MinorsEmploymentPage = () => {
                 <div className="space-y-6">
                   {/* Section Sanctions */}
                   <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-red-400/60 rounded-lg p-6 backdrop-blur">
-                    <h3 className="text-2xl font-bold text-red-300 mb-4 flex items-center gap-2">
+                    <h3 className="text-2xl font-bold text-destructive mb-4 flex items-center gap-2">
                       <AlertTriangle className="h-6 w-6" />
                       Sanctions Pénales
                     </h3>
@@ -448,11 +448,11 @@ const MinorsEmploymentPage = () => {
                         <p className="font-bold text-red-200 text-base mb-2">SANCTIONS PÉNALES (Art. Code du Travail) :</p>
                         <div className="bg-black/30 p-3 rounded">
                           <p className="text-red-100 font-semibold mb-2">Engager ou produire un enfant ≤16 ans sans autorisation préalable :</p>
-                          <div className="text-red-300 text-lg font-bold">
+                          <div className="text-destructive text-lg font-bold">
                             <p>5 ANS DE PRISON + 75 000 € D'AMENDE</p>
                           </div>
                         </div>
-                        <ul className="mt-3 space-y-1 ml-4 list-disc text-slate-200">
+                        <ul className="mt-3 space-y-1 ml-4 list-disc text-foreground">
                           <li>Arrêt immédiat du tournage possible</li>
                           <li>Amendes administratives supplémentaires</li>
                           <li>Interdiction d'employer des mineurs</li>
@@ -461,12 +461,12 @@ const MinorsEmploymentPage = () => {
                       </div>
 
                       <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30">
-                        <p className="font-semibold text-blue-200 mb-1">📅 Travail dominical et jours fériés :</p>
+                        <p className="font-semibold text-foreground mb-1">📅 Travail dominical et jours fériés :</p>
                         <p className="text-sm">Le travail du dimanche et des jours fériés est autorisé dans les entreprises de spectacles, selon les conditions définies par la convention collective applicable.</p>
                       </div>
 
                       <div className="bg-blue-900/20 p-3 rounded border border-blue-400/30">
-                        <p className="font-semibold text-blue-200">🔄 Travaux en cours :</p>
+                        <p className="font-semibold text-foreground">🔄 Travaux en cours :</p>
                         <p className="text-sm mt-1">Les partenaires sociaux poursuivent leurs travaux pour améliorer l'organisation des castings et du travail des enfants, afin de sécuriser l'ensemble des parties prenantes : enfants, responsables légaux, personnels d'encadrement et employeurs.</p>
                       </div>
                     </div>
@@ -480,13 +480,13 @@ const MinorsEmploymentPage = () => {
                     </h3>
                     
                     <div className="space-y-3">
-                      <p className="text-slate-200 mb-4">
+                      <p className="text-foreground mb-4">
                         Accédez aux documents officiels et guides pratiques pour l'emploi des mineurs dans le spectacle
                       </p>
                       
                       <button
                         onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
-                        className="w-full bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+                        className="w-full bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
                       >
                         <FileText className="h-5 w-5" />
                         Convention Collective - Document complet

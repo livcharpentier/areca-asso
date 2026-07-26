@@ -108,11 +108,11 @@ const Members = () => {
               return (
                 <Card 
                   key={index} 
-                  className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer group"
+                  className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105 cursor-pointer group"
                   onClick={() => navigate(`/members/${category.slug}`)}
                 >
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed flex items-center justify-between">
+                    <CardTitle className="text-xl text-primary font-semibold tracking-wide leading-relaxed flex items-center justify-between">
                       <span>{category.title}</span>
                       <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
                         <Users className="w-5 h-5 text-accent" />
@@ -121,7 +121,7 @@ const Members = () => {
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between">
-                      <p className="text-sm text-slate-200">{category.description}</p>
+                      <p className="text-sm text-foreground">{category.description}</p>
                       <ChevronRight className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
                   </CardContent>

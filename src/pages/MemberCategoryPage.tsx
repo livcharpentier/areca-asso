@@ -80,7 +80,7 @@ const MemberCategoryPage = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {mockMembers.map((member) => (
-                <Card key={member.id} className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
+                <Card key={member.id} className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105">
                   <CardHeader>
                     <div className="flex items-start gap-4">
                       <Avatar className="w-20 h-28 !rounded-lg overflow-hidden">
@@ -88,7 +88,7 @@ const MemberCategoryPage = () => {
                         <AvatarFallback className="!rounded-lg bg-accent/20 text-accent h-full w-full">{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
                       </Avatar>
                       <div className="flex-1">
-                        <CardTitle className="text-2xl text-amber-300 font-semibold tracking-wide leading-relaxed mb-2">
+                        <CardTitle className="text-2xl text-primary font-semibold tracking-wide leading-relaxed mb-2">
                           {member.firstName} {member.lastName}
                         </CardTitle>
                         <Badge 
@@ -105,14 +105,14 @@ const MemberCategoryPage = () => {
                         {/* Coordonnées mises en avant */}
                         <div className="mt-4 space-y-2 border-t border-amber-300/30 pt-3">
                           <div className="flex items-center gap-2">
-                            <Mail className="w-5 h-5 text-amber-300" />
-                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-amber-300 hover:text-amber-200">
+                            <Mail className="w-5 h-5 text-primary" />
+                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-primary hover:text-primary">
                               {member.email}
                             </a>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Phone className="w-5 h-5 text-amber-300" />
-                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-amber-300 hover:text-amber-200">
+                            <Phone className="w-5 h-5 text-primary" />
+                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-primary hover:text-primary">
                               {member.phone}
                             </a>
                           </div>
@@ -121,15 +121,15 @@ const MemberCategoryPage = () => {
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-sm text-slate-200">{member.bio}</p>
+                    <p className="text-sm text-foreground">{member.bio}</p>
                     
                     {(member as any).filmography && (
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-base text-slate-200">Filmographie</h4>
+                        <h4 className="font-semibold text-base text-foreground">Filmographie</h4>
                         {Object.entries((member as any).filmography).map(([role, films], idx) => (
                           <div key={idx} className="space-y-1">
-                            <h5 className="text-sm font-medium text-amber-300">{role}</h5>
-                            <p className="text-sm text-slate-300 leading-relaxed">{films as string}</p>
+                            <h5 className="text-sm font-medium text-primary">{role}</h5>
+                            <p className="text-sm text-muted-foreground leading-relaxed">{films as string}</p>
                           </div>
                         ))}
                       </div>
@@ -137,8 +137,8 @@ const MemberCategoryPage = () => {
 
                     {member.recentNews && (
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-sm text-slate-200">Actualité</h4>
-                        <p className="text-sm text-slate-300 italic">{member.recentNews}</p>
+                        <h4 className="font-semibold text-sm text-foreground">Actualité</h4>
+                        <p className="text-sm text-muted-foreground italic">{member.recentNews}</p>
                       </div>
                     )}
 
@@ -148,7 +148,7 @@ const MemberCategoryPage = () => {
                           variant="outline"
                           size="sm"
                           onClick={() => window.open((member as any).cvUrl, '_blank')}
-                          className="w-full bg-accent/10 hover:bg-accent/20 border-accent/30 text-accent"
+                          className="w-full bg-accent/10 hover:bg-accent/20 border-border text-accent"
                         >
                           Télécharger le CV complet
                         </Button>

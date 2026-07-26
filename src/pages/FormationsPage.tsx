@@ -54,8 +54,8 @@ const FormationsPage = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 rounded-lg p-6 mb-12">
-              <h2 className="text-2xl font-bold text-amber-300 mb-2">AFDAS</h2>
+            <div className="bg-card border border-border rounded-lg p-6 mb-12">
+              <h2 className="text-2xl font-bold text-primary mb-2">AFDAS</h2>
               <p className="text-white text-lg">En cours</p>
             </div>
           </div>

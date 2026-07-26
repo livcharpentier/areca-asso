@@ -24,12 +24,12 @@ const DrieetsDossier = () => {
         </div>
 
         {/* Plateforme numérique */}
-        <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-5">
+        <div className="bg-card border rounded-lg p-5">
           <div className="flex items-start gap-3">
             <ExternalLink className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
             <div>
-              <p className="font-semibold text-amber-300 mb-2">🆕 Nouveau service numérique (depuis janvier 2026)</p>
-              <p className="text-slate-200 text-sm mb-3">
+              <p className="font-semibold text-primary mb-2">🆕 Nouveau service numérique (depuis janvier 2026)</p>
+              <p className="text-foreground text-sm mb-3">
                 La procédure de demande d'autorisation est désormais dématérialisée. Déposez votre dossier en ligne sur la plateforme officielle.
               </p>
               <a 
@@ -46,95 +46,95 @@ const DrieetsDossier = () => {
         </div>
 
         {/* Pièces relatives au projet */}
-        <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-6">
-          <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+        <div className="bg-card border rounded-lg p-6">
+          <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
             <FileText className="h-5 w-5 text-accent" />
             Pièces relatives au projet
           </h3>
           <div className="space-y-3">
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Synopsis</p>
-                <p className="text-sm text-slate-400">Résumé du projet artistique</p>
+                <p className="text-sm text-muted-foreground">Résumé du projet artistique</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Scénario ou script</p>
-                <p className="text-sm text-slate-400">Les séquences où interviennent les enfants doivent être clairement identifiées</p>
+                <p className="text-sm text-muted-foreground">Les séquences où interviennent les enfants doivent être clairement identifiées</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Note de sécurité</p>
-                <p className="text-sm text-slate-400">Document détaillant les scènes susceptibles d'exposer les enfants à un risque et les mesures prises pour les éviter</p>
+                <p className="text-sm text-muted-foreground">Document détaillant les scènes susceptibles d'exposer les enfants à un risque et les mesures prises pour les éviter</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Plan de travail</p>
-                <p className="text-sm text-slate-400">Planning des jours de tournage avec horaires</p>
+                <p className="text-sm text-muted-foreground">Planning des jours de tournage avec horaires</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Pièces par enfant */}
-        <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-6">
-          <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+        <div className="bg-card border rounded-lg p-6">
+          <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
             <FolderOpen className="h-5 w-5 text-accent" />
             Pièces à fournir pour chaque enfant
           </h3>
           <div className="space-y-3">
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Livret de famille à jour</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Projet de contrat de travail</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Autorisation parentale</p>
-                <p className="text-sm text-slate-400">À remplir à partir du modèle officiel</p>
+                <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Certificat de scolarité</p>
-                <p className="text-sm text-slate-400">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
+                <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Avis pédagogique</p>
-                <p className="text-sm text-slate-400">À fournir à partir de 4 jours d'absence scolaire</p>
+                <p className="text-sm text-muted-foreground">À fournir à partir de 4 jours d'absence scolaire</p>
               </div>
             </div>
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-              <div className="text-slate-200">
+              <div className="text-foreground">
                 <p className="font-semibold">Avis médical d'aptitude</p>
-                <p className="text-sm text-slate-400">Médecin du travail Thalie Santé (ex-CMB) ou justificatif de prise de rendez-vous</p>
+                <p className="text-sm text-muted-foreground">Médecin du travail Thalie Santé (ex-CMB) ou justificatif de prise de rendez-vous</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-4 bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-            <h4 className="font-semibold text-amber-300 mb-2">Cas particuliers — Figurants et silhouettes :</h4>
-            <ul className="space-y-1 text-slate-200 text-sm ml-4">
+          <div className="mt-4 bg-muted/50 p-4 rounded-lg border border-border">
+            <h4 className="font-semibold text-primary mb-2">Cas particuliers — Figurants et silhouettes :</h4>
+            <ul className="space-y-1 text-foreground text-sm ml-4">
               <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
               <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
             </ul>
@@ -142,7 +142,7 @@ const DrieetsDossier = () => {
         </div>
 
         {/* Coordonnées DRIEETS */}
-        <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border border-accent/20 p-6 rounded-lg space-y-4">
+        <div className="bg-card border border-border p-6 rounded-lg space-y-4">
           <h3 className="font-semibold text-lg mb-4 text-accent">
             Coordonnées DRIEETS Île-de-France
           </h3>
@@ -150,8 +150,8 @@ const DrieetsDossier = () => {
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-amber-300">Adresse</p>
-                <p className="text-sm text-slate-200">
+                <p className="font-medium text-primary">Adresse</p>
+                <p className="text-sm text-foreground">
                   19 rue Madeleine Vionnet<br />
                   93300 Aubervilliers
                 </p>
@@ -160,22 +160,22 @@ const DrieetsDossier = () => {
             <div className="flex items-start gap-3">
               <Phone className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-amber-300">Téléphone</p>
-                <p className="text-sm text-slate-200">01 70 95 52 00</p>
+                <p className="font-medium text-primary">Téléphone</p>
+                <p className="text-sm text-foreground">01 70 95 52 00</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Mail className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-amber-300">Email</p>
-                <p className="text-sm text-slate-200">idf-ut75.enfants-spectacle@drieets.gouv.fr</p>
+                <p className="font-medium text-primary">Email</p>
+                <p className="text-sm text-foreground">idf-ut75.enfants-spectacle@drieets.gouv.fr</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Clock className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-medium text-amber-300">Horaires d'accueil</p>
-                <p className="text-sm text-slate-200">
+                <p className="font-medium text-primary">Horaires d'accueil</p>
+                <p className="text-sm text-foreground">
                   Lundi au vendredi : 9h00 - 12h00 / 14h00 - 17h00<br />
                   <span className="text-xs italic">(Sur rendez-vous uniquement)</span>
                 </p>

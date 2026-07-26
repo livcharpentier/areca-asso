@@ -88,58 +88,58 @@ const DossierEnfantContent = () => (
     </div>
 
     {/* Pièces par enfant */}
-    <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-6">
-      <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+    <div className="bg-card border rounded-lg p-6">
+      <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
         <FolderOpen className="h-5 w-5 text-accent" />
         Pièces à fournir pour chaque enfant
       </h3>
       <div className="space-y-3">
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Livret de famille à jour</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Projet de contrat de travail</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Autorisation parentale</p>
-            <p className="text-sm text-slate-400">À remplir à partir du modèle officiel</p>
+            <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Certificat de scolarité</p>
-            <p className="text-sm text-slate-400">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
+            <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Avis pédagogique</p>
-            <p className="text-sm text-slate-400">À fournir à partir de 4 jours d'absence scolaire. Pour Paris, si l'enfant est scolarisé hors académie de Paris, joindre aussi l'avis du Directeur académique concerné</p>
+            <p className="text-sm text-muted-foreground">À fournir à partir de 4 jours d'absence scolaire. Pour Paris, si l'enfant est scolarisé hors académie de Paris, joindre aussi l'avis du Directeur académique concerné</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
           <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-          <div className="text-slate-200">
+          <div className="text-foreground">
             <p className="font-semibold">Avis médical d'aptitude</p>
-            <p className="text-sm text-slate-400">Médecin du travail Thalie Santé (ex-CMB) ou, a minima, justificatif de prise de rendez-vous</p>
+            <p className="text-sm text-muted-foreground">Médecin du travail Thalie Santé (ex-CMB) ou, a minima, justificatif de prise de rendez-vous</p>
           </div>
         </div>
       </div>
 
       {/* Cas particuliers médicaux */}
-      <div className="mt-4 bg-blue-950/40 p-4 rounded-lg border border-accent/30">
-        <h4 className="font-semibold text-amber-300 mb-2">Cas particuliers — Figurants et silhouettes :</h4>
-        <ul className="space-y-1 text-slate-200 text-sm ml-4">
+      <div className="mt-4 bg-muted/50 p-4 rounded-lg border border-border">
+        <h4 className="font-semibold text-primary mb-2">Cas particuliers — Figurants et silhouettes :</h4>
+        <ul className="space-y-1 text-foreground text-sm ml-4">
           <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
           <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
         </ul>
@@ -154,8 +154,8 @@ const DossierEnfantContent = () => (
     </div>
 
     {/* Formulaires téléchargeables */}
-    <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-6">
-      <h3 className="text-xl font-bold text-amber-300 mb-4 flex items-center gap-2">
+    <div className="bg-card border rounded-lg p-6">
+      <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
         <Download className="h-5 w-5 text-accent" />
         Formulaires officiels à télécharger
       </h3>
@@ -174,7 +174,7 @@ const DossierEnfantContent = () => (
             href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_1D.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
           >
             <Download className="h-4 w-4" />
             Avis pédagogique 1er degré (PDF)
@@ -183,7 +183,7 @@ const DossierEnfantContent = () => (
             href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_2D.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
           >
             <Download className="h-4 w-4" />
             Avis pédagogique 2nd degré (PDF)
@@ -192,7 +192,7 @@ const DossierEnfantContent = () => (
             href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_DASEN.docx" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
           >
             <Download className="h-4 w-4" />
             Avis Directeur académique (DOCX)
@@ -201,7 +201,7 @@ const DossierEnfantContent = () => (
             href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_chef_etablissement_1er_degre.doc" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
           >
             <Download className="h-4 w-4" />
             Avis chef d'établissement 1er degré
@@ -211,15 +211,15 @@ const DossierEnfantContent = () => (
     </div>
 
     {/* Contact */}
-    <div className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur border-accent/20 border rounded-lg p-5">
-      <p className="text-slate-200 text-sm">
-        <strong className="text-amber-300">Besoin d'aide ?</strong> Contactez le service d'instruction à l'adresse : {' '}
+    <div className="bg-card border rounded-lg p-5">
+      <p className="text-foreground text-sm">
+        <strong className="text-primary">Besoin d'aide ?</strong> Contactez le service d'instruction à l'adresse : {' '}
         <a href="mailto:drieets-idf-ud75.eesam@drieets.gouv.fr" className="text-accent hover:text-accent/80 underline">
           drieets-idf-ud75.eesam@drieets.gouv.fr
         </a>
       </p>
-      <p className="text-slate-400 text-xs mt-2 italic">
-        Source : <a href="https://enfants-du-spectacle.fabrique.social.gouv.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-300">enfants-du-spectacle.fabrique.social.gouv.fr</a> — Plateforme officielle DRIEETS Île-de-France
+      <p className="text-muted-foreground text-xs mt-2 italic">
+        Source : <a href="https://enfants-du-spectacle.fabrique.social.gouv.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">enfants-du-spectacle.fabrique.social.gouv.fr</a> — Plateforme officielle DRIEETS Île-de-France
       </p>
     </div>
   </div>

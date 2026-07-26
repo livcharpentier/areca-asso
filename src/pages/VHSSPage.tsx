@@ -37,32 +37,32 @@ const VHSSPage = () => {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
                     <div className="bg-red-950/40 p-3 rounded">
-                      <p className="font-semibold text-red-300 text-sm">DISCRIMINATION</p>
-                      <p className="text-xs mt-1 text-slate-200"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
-                      <p className="text-xs text-slate-300">Motifs : sexe, âge, apparence physique</p>
+                      <p className="font-semibold text-destructive text-sm">DISCRIMINATION</p>
+                      <p className="text-xs mt-1 text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
+                      <p className="text-xs text-muted-foreground">Motifs : sexe, âge, apparence physique</p>
                     </div>
                     
                     <div className="bg-red-950/40 p-3 rounded">
-                      <p className="font-semibold text-red-300 text-sm">AGISSEMENTS SEXISTES</p>
-                      <p className="text-xs mt-1 text-slate-200"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
-                      <p className="text-xs text-slate-300">Remarques, blagues sexistes, interpellations familières</p>
+                      <p className="font-semibold text-destructive text-sm">AGISSEMENTS SEXISTES</p>
+                      <p className="text-xs mt-1 text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
+                      <p className="text-xs text-muted-foreground">Remarques, blagues sexistes, interpellations familières</p>
                     </div>
                     
                     <div className="bg-red-950/40 p-3 rounded">
-                      <p className="font-semibold text-red-300 text-sm">HARCÈLEMENT SEXUEL</p>
-                      <p className="text-xs mt-1 text-slate-200"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-                      <p className="text-xs text-slate-300">Blagues grivoises, rapprochements physiques non-consentis</p>
+                      <p className="font-semibold text-destructive text-sm">HARCÈLEMENT SEXUEL</p>
+                      <p className="text-xs mt-1 text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
+                      <p className="text-xs text-muted-foreground">Blagues grivoises, rapprochements physiques non-consentis</p>
                     </div>
                     
                     <div className="bg-red-950/40 p-3 rounded">
-                      <p className="font-semibold text-red-300 text-sm">AGRESSIONS SEXUELLES</p>
-                      <p className="text-xs mt-1 text-slate-200"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
-                      <p className="text-xs text-slate-300">Baisers forcés, attouchements</p>
+                      <p className="font-semibold text-destructive text-sm">AGRESSIONS SEXUELLES</p>
+                      <p className="text-xs mt-1 text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
+                      <p className="text-xs text-muted-foreground">Baisers forcés, attouchements</p>
                     </div>
                   </div>
                   
                   <div className="bg-red-950/50 p-2 rounded text-xs">
-                    <p className="font-semibold text-red-300">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
+                    <p className="font-semibold text-destructive">VIOLS / TENTATIVES : 25 personnes (23 femmes, 2 hommes)</p>
                   </div>
                 </div>
               </div>

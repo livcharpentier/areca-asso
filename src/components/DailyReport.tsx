@@ -240,7 +240,7 @@ const DailyReport = () => {
       </Card>
 
       {/* Bonnes pratiques */}
-      <Card className="bg-gradient-to-br from-accent/5 to-primary/5 border-accent/20">
+      <Card className="bg-gradient-to-br from-accent/5 to-primary/5 border-border">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-amber-500" />
