@@ -116,12 +116,21 @@ const ChartePage = () => {
           ]
         },
         {
-          subtitle: "Organisation rigoureuse",
+          subtitle: "Organisation rigoureuse et conditions matérielles",
           items: [
+            "Vérifier en amont les conditions matérielles d'accueil (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
             "Planifier et coordonner la logistique (transport, hébergement, repas)",
             "Préparer l'enfant aux scènes à tourner en transmettant les consignes",
-            "Gérer les autorisations administratives",
+            "Gérer les autorisations administratives (DRIEETS, Caisse des Dépôts)",
             "Constituer et superviser une équipe d'animation si nécessaire"
+          ]
+        },
+        {
+          subtitle: "Interface avec les équipes artistiques et techniques",
+          items: [
+            "Adapter sa communication aux différents interlocuteurs (mise en scène, régie, HMC, technique)",
+            "Réguler les interactions entre l'enfant et les équipes pour préserver un cadre de travail respectueux",
+            "Transmettre les besoins et contraintes de l'enfant aux équipes concernées"
           ]
         }
       ]
