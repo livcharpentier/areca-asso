@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, AlertCircle } from "lucide-react";
 
 const WorkTimeRegulations = () => {
   const regulations = [
@@ -36,15 +35,10 @@ const WorkTimeRegulations = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background via-primary/5 to-background">
+    <section className="py-8 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <Card className="border-primary/30 shadow-2xl bg-gradient-to-br from-card to-card/50">
+        <Card>
           <CardHeader className="text-center space-y-4 pb-8">
-            <div className="flex justify-center">
-              <div className="p-4 bg-destructive/10 rounded-full">
-                <Clock className="h-12 w-12 text-destructive" />
-              </div>
-            </div>
             <CardTitle className="text-3xl md:text-4xl">
               Réglementation des Temps de Travail
             </CardTitle>
@@ -54,17 +48,14 @@ const WorkTimeRegulations = () => {
           </CardHeader>
           <CardContent className="space-y-6">
             {/* Alerte réglementaire */}
-            <div className="bg-destructive/10 border-2 border-destructive/50 p-5 rounded-lg">
-              <div className="flex items-start gap-3">
-                <AlertCircle className="h-6 w-6 text-destructive flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-foreground text-lg mb-1">
-                    ⚠️ Respect strict obligatoire
-                  </p>
-                  <p className="text-sm text-foreground/90">
-                    Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
-                  </p>
-                </div>
+            <div className="bg-destructive/10 border border-destructive/50 p-5 rounded-lg">
+              <div>
+                <p className="font-semibold text-foreground text-lg mb-1">
+                  Respect strict obligatoire
+                </p>
+                <p className="text-sm text-foreground/90">
+                  Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
+                </p>
               </div>
             </div>
 
@@ -76,7 +67,7 @@ const WorkTimeRegulations = () => {
                     <th className="border border-border p-3 text-left font-semibold text-primary">Âge</th>
                     <th className="border border-border p-3 text-left font-semibold text-primary">Temps de travail En période scolaire</th>
                     <th className="border border-border p-3 text-left font-semibold text-primary">
-                      <span className="underline decoration-accent decoration-2">pause</span> obligatoire
+                      Pause obligatoire
                     </th>
                     <th className="border border-border p-3 text-left font-semibold text-primary">En vacances scolaires</th>
                     <th className="border border-border p-3 text-left font-semibold text-primary">Temps de pause obligatoire</th>
@@ -84,7 +75,7 @@ const WorkTimeRegulations = () => {
                 </thead>
                 <tbody>
                   {regulations.map((rule, index) => (
-                    <tr key={index} className={rule.highlight ? "bg-accent/20" : "bg-muted/30"}>
+                    <tr key={index} className={rule.highlight ? "bg-muted/50" : "bg-card"}>
                       <td className="border border-border p-3 font-medium text-foreground">
                         {rule.age}
                       </td>
@@ -100,20 +91,14 @@ const WorkTimeRegulations = () => {
 
             {/* Légende explicative */}
             <div className="grid gap-4 md:grid-cols-2">
-              <div className="bg-card border border-border p-6 rounded-lg">
-                <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-accent" />
-                  Période scolaire
-                </h4>
+              <div className="bg-muted/50 p-6 rounded-lg border border-border">
+                <h4 className="font-semibold text-primary mb-2">Période scolaire</h4>
                 <p className="text-sm text-foreground">
                   Temps de travail réduit en raison de la scolarité obligatoire
                 </p>
               </div>
-              <div className="bg-card border border-border p-6 rounded-lg">
-                <h4 className="font-semibold text-primary mb-2 flex items-center gap-2">
-                  <Clock className="h-4 w-4 text-accent" />
-                  Vacances scolaires
-                </h4>
+              <div className="bg-muted/50 p-6 rounded-lg border border-border">
+                <h4 className="font-semibold text-primary mb-2">Vacances scolaires</h4>
                 <p className="text-sm text-foreground">
                   Durées maximales augmentées pendant les périodes de vacances
                 </p>
@@ -121,26 +106,20 @@ const WorkTimeRegulations = () => {
             </div>
 
             {/* Section heures de nuit */}
-            <div className="bg-card border border-border p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-accent mb-4 flex items-center gap-2">
-                <AlertCircle className="h-5 w-5" />
-                Travail de nuit (moins de 16 ans)
-              </h4>
+            <div className="bg-muted/50 border border-border p-6 rounded-lg mt-6">
+              <h4 className="font-semibold text-primary mb-4">Travail de nuit (moins de 16 ans)</h4>
               <div className="space-y-3 text-sm">
-                <div className="flex items-start gap-2">
-                  <span className="text-destructive font-bold">⛔</span>
+                <div>
                   <p className="text-foreground">
                     <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les jeunes de moins de 16 ans (article L.3163-2)
                   </p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-primary font-bold">⚠️</span>
+                <div>
                   <p className="text-foreground">
                     <strong>Dérogation exceptionnelle :</strong> Dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
                   </p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-accent font-bold">🛌</span>
+                <div>
                   <p className="text-foreground">
                     <strong>Repos obligatoire :</strong> En cas de dérogation, la durée minimale de repos quotidien ne peut être inférieure à <strong>12 heures consécutives</strong> (article L.3164-1)
                   </p>
