@@ -129,6 +129,24 @@ const Members = () => {
               );
             })}
           </div>
+
+          {/* Positionnement de l'ARECA */}
+          <Card className="mt-12 border-border bg-card">
+            <CardHeader>
+              <CardTitle className="text-xl text-primary font-semibold tracking-wide">
+                Notre positionnement
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-foreground leading-relaxed">
+                L'ARECA n'est <strong>pas un syndicat</strong>. Nous intervenons en tant que{" "}
+                <strong>consultants</strong> auprès des organisations professionnelles et des
+                pouvoirs publics afin d'apporter notre expertise de terrain et d'aider aux
+                négociations concernant la reconnaissance du métier de responsable des enfants
+                sur les tournages.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
