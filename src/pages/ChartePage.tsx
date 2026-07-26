@@ -196,8 +196,35 @@ const ChartePage = () => {
     },
     {
       id: "article8",
+      icon: AlertTriangle,
+      title: "Article 8 - Analyse et prévention des risques",
+      content: [
+        "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
+      ],
+      sections: [
+        {
+          subtitle: "En amont du tournage",
+          items: [
+            "Analyser le scénario et les scènes impliquant l'enfant (contenu, émotions sollicitées, cascades, effets spéciaux)",
+            "Identifier les risques liés aux lieux de tournage (extérieurs, hauteurs, eau, animaux, foule, conditions climatiques)",
+            "Évaluer les risques liés aux horaires (nuit, amplitude, décalages) et au rythme de tournage",
+            "Vérifier la conformité du dossier réglementaire (autorisation DRIEETS, certificat médical, Caisse des Dépôts)"
+          ]
+        },
+        {
+          subtitle: "Pendant le tournage",
+          items: [
+            "Réévaluer en continu les risques au regard des modifications de planning ou de mise en scène",
+            "Alerter immédiatement la production et, si nécessaire, les autorités compétentes",
+            "Documenter les incidents et les mesures correctives dans le journal de bord"
+          ]
+        }
+      ]
+    },
+    {
+      id: "article9",
       icon: PenLine,
-      title: "Article 8 - Application de la charte",
+      title: "Article 9 - Application de la charte",
       content: [
         "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
       ]
