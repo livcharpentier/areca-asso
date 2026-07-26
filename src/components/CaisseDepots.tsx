@@ -1,14 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Landmark, GraduationCap, Phone } from "lucide-react";
 
 const CaisseDepots = () => (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Landmark className="h-5 w-5 text-accent" />
-          Caisse des Dépôts et Consignations — Mission d'intérêt général
-        </CardTitle>
+        <CardTitle>Caisse des Dépôts et Consignations — Mission d'intérêt général</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
@@ -28,7 +24,7 @@ const CaisseDepots = () => (
               <p>Versés à la Caisse des Dépôts (pécule conservé jusqu'à la majorité)</p>
             </div>
             <div className="flex items-center gap-3">
-              <span className="bg-accent text-accent-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
+              <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
               <p>À disposition des représentants légaux</p>
             </div>
             <p className="text-muted-foreground text-xs mt-2">Pour ESM : la part est fixée par décision de la Commission DREETS</p>
@@ -62,16 +58,13 @@ const CaisseDepots = () => (
 
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <GraduationCap className="h-5 w-5 text-accent" />
-          Restitution à la majorité (18 ans)
-        </CardTitle>
+        <CardTitle>Restitution à la majorité (18 ans)</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Pourquoi les revenus sont-ils bloqués ?</p>
           <div className="text-sm text-foreground space-y-2">
-            <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle et du mannequinat.</p>
+            <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle.</p>
             <p>Les sommes sont <strong>sécurisées jusqu'à 18 ans</strong> sur un compte à la Caisse des Dépôts, garantissant un capital pour l'entrée dans la vie adulte.</p>
             <p>Gestion <strong>totalement gratuite</strong>. Taux de rémunération : <strong>2,76%</strong> depuis le 1er novembre 2025.</p>
           </div>
@@ -112,7 +105,7 @@ const CaisseDepots = () => (
           <p className="font-semibold text-primary mb-2">Changement de coordonnées</p>
           <div className="text-sm text-foreground">
             <p>En cas de changement d'adresse, envoyez un mail à :</p>
-            <a href="mailto:contacts-consignations@caissedesdepots.fr" className="text-accent hover:text-accent/80 underline">
+            <a href="mailto:contacts-consignations@caissedesdepots.fr" className="text-primary hover:text-primary/80 underline">
               contacts-consignations@caissedesdepots.fr
             </a>
             <p className="text-muted-foreground mt-1 text-xs">Objet : « Changement adresse postale représentant légal ESM »</p>
@@ -123,19 +116,16 @@ const CaisseDepots = () => (
           href="https://consignations.caissedesdepots.fr/particulier/restitution-jeunes-majeurs-enfance-protegee/restitution-remuneration-enfants-spectacle-mannequinat-esm"
           target="_blank"
           rel="noopener noreferrer"
-          className="block bg-accent/10 hover:bg-accent/20 text-accent font-semibold py-3 px-4 rounded-lg text-center transition-all text-sm"
+          className="block bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg text-center transition-all text-sm border border-border"
         >
-          Faire ma démarche de restitution ESM →
+          Faire ma démarche de restitution ESM
         </a>
       </CardContent>
     </Card>
 
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Phone className="h-5 w-5 text-accent" />
-          Contact et références
-        </CardTitle>
+        <CardTitle>Contact et références</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
