@@ -217,7 +217,7 @@ const MyProfilePage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <section className="pt-24 pb-16 bg-secondary">
+      <section className="pt-40 pb-16 bg-secondary">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-3xl font-bold text-foreground">Mon profil</h1>
