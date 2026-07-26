@@ -16,8 +16,8 @@
     --popover: 215 25% 94%;
     --popover-foreground: 0 0% 15%;
 
-    /* Vert forêt principal */
-    --primary: 150 45% 35%;
+    /* Bleu royal principal (unifié avec l'accent) */
+    --primary: 220 85% 55%;
     --primary-foreground: 0 0% 98%;
     
     /* Bleu royal vif */
@@ -26,7 +26,7 @@
 
     /* Bleu ciel secondaire */
     --secondary: 200 70% 92%;
-    --secondary-foreground: 150 45% 35%;
+    --secondary-foreground: 220 85% 55%;
 
     --muted: 215 20% 92%;
     --muted-foreground: 0 0% 40%;
@@ -52,9 +52,9 @@
     --purple-festive: 270 75% 55%;
     
     /* Gradients colorés */
-    --gradient-primary: linear-gradient(135deg, hsl(150 45% 35%), hsl(150 50% 45%));
+    --gradient-primary: linear-gradient(135deg, hsl(220 85% 55%), hsl(210 85% 60%));
     --gradient-blue: linear-gradient(135deg, hsl(220 85% 55%), hsl(210 85% 60%));
-    --gradient-rainbow: linear-gradient(135deg, hsl(150 45% 35%), hsl(200 85% 65%), hsl(220 85% 55%));
+    --gradient-rainbow: linear-gradient(135deg, hsl(220 85% 55%), hsl(200 85% 65%), hsl(210 85% 60%));
     
     /* Transitions */
     --transition: all 0.3s ease;
@@ -70,7 +70,7 @@
     --popover: 0 0% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 150 45% 40%;
+    --primary: 220 85% 55%;
     --primary-foreground: 0 0% 98%;
 
     --accent: 220 85% 55%;

@@ -45,7 +45,7 @@ const FAQPage = () => {
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
               <CircleHelp className="h-10 w-10 text-primary" />
-              <h1 className="text-4xl md:text-5xl font-bangers text-primary tracking-wide">
+              <h1 className="text-4xl md:text-5xl font-bangers text-foreground tracking-wide">
                 Questions Fréquentes
               </h1>
             </div>
