@@ -31,8 +31,8 @@ const ProductionPage = () => {
           <Tabs defaultValue="dossier-drieets" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-6">
               <TabsTrigger value="dossier-drieets" className="gap-2">
-                <FileText className="h-4 w-4" />
-                <span className="hidden sm:inline">Dossier DRIEETS</span>
+                <Calendar className="h-4 w-4" />
+                <span className="hidden sm:inline">Calendrier des commissions</span>
               </TabsTrigger>
               <TabsTrigger value="temps-travail" className="gap-2">
                 <Clock className="h-4 w-4" />
