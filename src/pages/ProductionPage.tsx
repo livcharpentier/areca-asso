@@ -41,24 +41,7 @@ const ProductionPage = () => {
             </TabsList>
 
             <TabsContent value="dossier-drieets">
-              <Tabs defaultValue="calendrier" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 mb-4">
-                  <TabsTrigger value="calendrier" className="gap-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>Calendrier Commissions</span>
-                  </TabsTrigger>
-                  <TabsTrigger value="confection" className="gap-2">
-                    <FileText className="h-4 w-4" />
-                    <span>Confection du dossier</span>
-                  </TabsTrigger>
-                </TabsList>
-                <TabsContent value="calendrier">
-                  <RegionalCalendar />
-                </TabsContent>
-                <TabsContent value="confection">
-                  <DrieetsDossier />
-                </TabsContent>
-              </Tabs>
+              <RegionalCalendar />
             </TabsContent>
 
             <TabsContent value="temps-travail">
