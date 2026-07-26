@@ -95,27 +95,27 @@ const DocumentsSection = () => {
               return (
                 <Card
                   key={index}
-                  className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105"
+                  className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105"
                 >
                   <CardHeader>
                     <div className="flex items-start justify-between mb-2">
                       <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">
                         <Icon className="w-6 h-6 text-accent" />
                       </div>
-                      <span className="text-xs text-blue-200 bg-blue-950/60 px-2 py-1 rounded">
+                      <span className="text-xs text-foreground bg-muted px-2 py-1 rounded">
                         {doc.category}
                       </span>
                     </div>
-                    <CardTitle className="text-xl text-amber-300 font-semibold tracking-wide leading-relaxed">
+                    <CardTitle className="text-xl text-primary font-semibold tracking-wide leading-relaxed">
                       {doc.title}
                     </CardTitle>
-                    <CardDescription className="text-slate-200">
+                    <CardDescription className="text-foreground">
                       {doc.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-slate-300">
+                      <span className="text-sm text-muted-foreground">
                         {doc.date}
                       </span>
                       <Button

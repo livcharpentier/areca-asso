@@ -50,18 +50,18 @@ const CharterHighlights = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-2 uppercase tracking-wide">
           Charte du Responsable Enfant
         </h2>
-        <p className="text-slate-400 text-center mb-8 text-sm">
+        <p className="text-muted-foreground text-center mb-8 text-sm">
           Les principes fondamentaux qui guident notre profession
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {charterPoints.map((point) => (
             <div
               key={point.title}
-              className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 border border-accent/20 rounded-lg p-4 text-center hover:border-accent/50 transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-br from-blue-950/80 to-slate-900/80 border border-border rounded-lg p-4 text-center hover:border-accent/50 transition-all duration-300 hover:scale-105"
             >
               <point.icon className="w-8 h-8 text-accent mx-auto mb-2" />
-              <h3 className="text-amber-300 font-semibold text-sm mb-1">{point.title}</h3>
-              <p className="text-slate-300 text-xs leading-relaxed">{point.description}</p>
+              <h3 className="text-primary font-semibold text-sm mb-1">{point.title}</h3>
+              <p className="text-muted-foreground text-xs leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>
