@@ -2,7 +2,7 @@ import heroCameras from "@/assets/hero-cameras.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative h-[500px] mt-40 overflow-hidden">
+    <section className="relative h-[500px] mt-16 overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
