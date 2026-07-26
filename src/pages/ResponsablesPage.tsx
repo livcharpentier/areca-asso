@@ -115,27 +115,27 @@ const ReglementationsContent = () => {
 /* Contenu Organisation du travail */
 const OrganisationTravailContent = () => (
   <div className="space-y-6">
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-blue-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-blue-300 mb-4 flex items-center gap-2">
-        <Coffee className="h-6 w-6" />
-        Organisation du Temps de Travail
+    <div className="bg-card border rounded-lg p-6">
+      <h3 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+        <Coffee className="h-6 w-6 text-accent" />
+        Organisation du temps de travail
       </h3>
 
-      <div className="space-y-4 text-slate-100">
-        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-foreground mb-2 flex items-center gap-2">
-            <Clock className="h-4 w-4" />
-            Temps de travail effectif vs. Temps de présence
+      <div className="space-y-4">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
+            <Clock className="h-4 w-4 text-accent" />
+            Temps de travail effectif vs. temps de présence
           </p>
-          <p className="text-sm mb-2">Le temps de travail effectif comprend :</p>
-          <ul className="text-sm ml-4 list-disc space-y-1">
+          <p className="text-sm text-foreground mb-2">Le temps de travail effectif comprend :</p>
+          <ul className="text-sm text-foreground ml-4 list-disc space-y-1">
             <li><strong>Préparation :</strong> Maquillage, coiffure, habillage</li>
             <li><strong>Répétitions :</strong> Toutes les répétitions sur plateau</li>
             <li><strong>Prises :</strong> Temps de tournage effectif</li>
           </ul>
-          <div className="mt-3 bg-amber-900/30 p-3 rounded border border-amber-400/30">
-            <p className="text-primary font-semibold text-sm">⚠️ Ne sont PAS du temps de travail :</p>
-            <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
+          <div className="mt-3 bg-card p-3 rounded border border-border">
+            <p className="text-primary font-semibold text-sm">Ne sont PAS du temps de travail :</p>
+            <ul className="text-sm text-foreground ml-4 list-disc space-y-1 mt-1">
               <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
               <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
               <li><strong>Temps d'attente</strong> dans la loge (si l'enfant n'est pas sollicité)</li>
@@ -143,34 +143,34 @@ const OrganisationTravailContent = () => (
           </div>
         </div>
 
-        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-foreground mb-2 flex items-center gap-2">
-            <CalendarDays className="h-4 w-4" />
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
+            <CalendarDays className="h-4 w-4 text-accent" />
             Travail du dimanche et jours fériés
           </p>
-          <ul className="text-sm space-y-1">
+          <ul className="text-sm text-foreground space-y-1 ml-4 list-disc">
             <li>Le travail du dimanche et des jours fériés est <strong>autorisé</strong> dans les entreprises de spectacles</li>
             <li>Conditions définies par la <strong>convention collective</strong> applicable</li>
             <li>Les majorations de salaire prévues s'appliquent</li>
           </ul>
         </div>
 
-        <div className="bg-amber-900/20 p-4 rounded-lg border border-amber-400/30">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2 flex items-center gap-2">
-            <CalendarDays className="h-4 w-4" />
+            <CalendarDays className="h-4 w-4 text-accent" />
             Règle des vacances scolaires
           </p>
-          <ul className="text-sm space-y-2">
+          <ul className="text-sm text-foreground space-y-2 ml-4 list-disc">
             <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
             <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
             <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
-            <li className="text-primary"><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
+            <li><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
           </ul>
         </div>
 
-        <div className="bg-blue-900/20 p-4 rounded-lg border border-blue-400/30">
-          <p className="font-semibold text-foreground mb-2">Repos obligatoire :</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Repos obligatoire</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-foreground">
             <div>
               <p><strong>Repos quotidien :</strong></p>
               <ul className="ml-4 list-disc space-y-1">
