@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import HealthMonitoring from "@/components/HealthMonitoring";
 import ArtistSalaries from "@/components/ArtistSalaries";
 
-import FigurationSalaries from "@/components/FigurationSalaries";
+
 import CaisseDepots from "@/components/CaisseDepots";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart, Coins, FolderOpen, CheckCircle, AlertCircle, Download, Users, Landmark } from "lucide-react";
