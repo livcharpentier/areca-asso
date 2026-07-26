@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, CheckCircle, AlertCircle } from "lucide-react";
-import heroCameras from "@/assets/hero-cameras.jpg";
+import { Download, Users, CheckCircle } from "lucide-react";
 
 const ChildSupervisorRole = () => {
   return (
