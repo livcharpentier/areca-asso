@@ -31,7 +31,7 @@ const ParentsPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="suivi-sante" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-5 mb-6">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-6">
               <TabsTrigger value="suivi-sante" className="gap-2">
                 <Heart className="h-4 w-4" />
                 <span className="hidden sm:inline">Suivi Santé</span>
