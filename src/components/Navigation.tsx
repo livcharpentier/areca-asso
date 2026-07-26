@@ -36,33 +36,32 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white border-b border-border/20">
-      <div className="container mx-auto px-0">
+    <nav className="fixed top-0 w-full z-50 border-b border-white/10">
+      {/* Fond caméras sur toute la largeur du bandeau */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroCameras})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/60" />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex items-center justify-between h-16">
-          {/* Logo avec fond caméras */}
-          <div className="relative h-16 w-auto max-w-[280px] sm:max-w-[360px] lg:max-w-[420px] overflow-hidden flex-shrink-0">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${heroCameras})` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30" />
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src={logoAreca}
+              alt="ARECA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
+              className="h-12 sm:h-14 w-auto flex-shrink-0"
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-2xl sm:text-3xl font-black tracking-widest text-white font-sans">
+                ARECA
+              </span>
+              <span className="text-[6px] sm:text-[7px] text-white/80 uppercase tracking-wider font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
+                Responsables Enfants dans le Cinéma et l'Audiovisuel
+              </span>
             </div>
-            <Link to="/" className="relative z-10 flex items-center gap-3 group h-full px-3 sm:px-5">
-              <img
-                src={logoAreca}
-                alt="ARECA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
-                className="h-12 sm:h-14 w-auto flex-shrink-0"
-              />
-              <div className="flex flex-col leading-tight">
-                <span className="text-2xl sm:text-3xl font-black tracking-widest text-white font-sans">
-                  ARECA
-                </span>
-                <span className="text-[6px] sm:text-[7px] text-white/80 uppercase tracking-wider font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
-                  Responsables Enfants dans le Cinéma et l'Audiovisuel
-                </span>
-              </div>
-            </Link>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 ml-8 xl:ml-12">
@@ -73,17 +72,17 @@ const Navigation = () => {
                 className={`text-sm uppercase tracking-wider font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
                     ? "text-accent border-accent"
-                    : "text-foreground hover:text-accent border-transparent hover:border-accent/50"
+                    : "text-white hover:text-accent border-transparent hover:border-accent/50"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-foreground/20">
+            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-white/20">
               {user && (
                 <Button
                   onClick={() => navigate("/mon-profil")}
-                  className="bg-transparent border border-accent/40 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
+                  className="bg-transparent border border-accent/60 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
                 >
                   <UserCircle className="w-3.5 h-3.5 mr-1.5" /> Mon profil
                 </Button>
@@ -91,7 +90,7 @@ const Navigation = () => {
               <Button
                 onClick={handleAuthAction}
                 className={user 
-                  ? "bg-transparent border border-foreground/30 text-foreground hover:bg-accent hover:text-white text-xs px-3 h-8"
+                  ? "bg-transparent border border-white/40 text-white hover:bg-accent hover:text-white text-xs px-3 h-8"
                   : "bg-accent text-white hover:bg-accent/90 text-xs px-4 h-8 font-semibold"
                 }
               >
@@ -107,7 +106,7 @@ const Navigation = () => {
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="text-foreground">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>

@@ -1,30 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, CheckCircle, AlertCircle } from "lucide-react";
-import heroCameras from "@/assets/hero-cameras.jpg";
+import { Download, Users, CheckCircle } from "lucide-react";
 
 const ChildSupervisorRole = () => {
   return (
     <section id="responsable-enfant" className="pt-24 pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="relative mb-12 min-h-[300px] overflow-hidden rounded-lg border border-border shadow-lg">
-            <img
-              src={heroCameras}
-              alt="Caméras de cinéma sur un plateau de tournage"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-foreground/65" />
-            <div className="relative z-10 flex min-h-[300px] flex-col items-center justify-center px-6 text-center">
-              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">
-                Fiche Métier : Responsable des enfants
-              </h1>
-              <p className="text-lg text-primary-foreground/90 max-w-3xl mx-auto">
-                Découvrez le rôle essentiel du responsable des enfants dans l'encadrement et la protection des mineurs sur les tournages
-              </p>
-            </div>
-          </div>
-
           <div className="mb-8">
             <Card className="border-accent/20 bg-gradient-to-br from-blue-950/80 to-slate-900/80 backdrop-blur hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
