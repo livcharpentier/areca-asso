@@ -10,7 +10,7 @@ const MinorsEmploymentPage = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <section className="pt-24 pb-12 px-4 bg-gradient-to-b from-primary/10 to-background">
+      <section className="pt-40 pb-12 px-4 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold">
