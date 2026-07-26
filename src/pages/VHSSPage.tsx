@@ -7,21 +7,35 @@ const VHSSPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase tracking-wide leading-relaxed">
-              Prévention des Violences et Harcèlements Sexistes et Sexuels (VHSS)
-            </h1>
 
-            <div className="bg-destructive/10 border border-destructive/30 p-5 rounded-lg mb-8">
-              <p className="font-semibold text-foreground text-lg mb-1">
-                FORMATION OBLIGATOIRE
-              </p>
-              <p className="text-sm text-foreground/90">
-                La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
-              </p>
-            </div>
+      <section className="pt-24 pb-12 px-4 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center space-y-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+              Prévention VHSS
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Violences et harcèlements sexistes et sexuels dans le cinéma et l'audiovisuel
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <main className="pb-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="max-w-5xl mx-auto">
+            <Card className="mb-6">
+              <CardHeader>
+                <CardTitle>Formation obligatoire</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-foreground">
+                  La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
+                </p>
+              </CardContent>
+            </Card>
+
+
 
             <div className="space-y-6">
               <Card>
