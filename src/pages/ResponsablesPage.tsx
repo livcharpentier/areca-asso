@@ -196,21 +196,22 @@ const OrganisationTravailContent = () => (
 /* Contenu Familles d'emploi */
 const FamillesEmploiContent = () => (
   <div className="space-y-6">
-    <div className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-purple-400/60 rounded-lg p-6 backdrop-blur">
-      <h3 className="text-2xl font-bold text-purple-300 mb-4 flex items-center gap-2">
-        <Theater className="h-6 w-6" />
-        Familles d'Emploi des Mineurs dans le Spectacle
-      </h3>
-
-      <div className="space-y-4 text-slate-100">
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Theater className="h-6 w-6" />
+          Familles d'Emploi des Mineurs dans le Spectacle
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-foreground">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-3 flex items-center gap-2">
             <Users className="h-4 w-4" />
             Rôle vs. Figuration
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-            <div className="bg-purple-950/40 p-3 rounded">
-              <p className="font-semibold text-purple-300 mb-1">🎭 Rôle (Artiste interprète)</p>
+            <div className="bg-card p-3 rounded border border-border">
+              <p className="font-semibold text-primary mb-1">Rôle (Artiste interprète)</p>
               <ul className="ml-4 list-disc space-y-1">
                 <li>Texte à dire ou jeu d'acteur identifiable</li>
                 <li>Rémunération selon la convention collective artistes</li>
@@ -218,8 +219,8 @@ const FamillesEmploiContent = () => (
                 <li>Contrat d'artiste interprète obligatoire</li>
               </ul>
             </div>
-            <div className="bg-purple-950/40 p-3 rounded">
-              <p className="font-semibold text-purple-300 mb-1">👥 Figuration</p>
+            <div className="bg-card p-3 rounded border border-border">
+              <p className="font-semibold text-primary mb-1">Figuration</p>
               <ul className="ml-4 list-disc space-y-1">
                 <li>Présence dans le décor sans jeu identifiable</li>
                 <li>Rémunération selon grille de figuration</li>
@@ -230,13 +231,13 @@ const FamillesEmploiContent = () => (
           </div>
         </div>
 
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
             <Theater className="h-4 w-4" />
             Théâtre & Cirque
           </p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Âge minimum :</strong> <span className="text-primary font-semibold">9 ans</span> (pas de dérogation possible)</li>
+          <ul className="text-sm space-y-1 ml-4 list-disc">
+            <li><strong>Âge minimum :</strong> 9 ans (pas de dérogation possible)</li>
             <li><strong>Maximum :</strong> 3 représentations par semaine</li>
             <li><strong>Maximum :</strong> 1 représentation par jour</li>
             <li>Repos obligatoire pendant les vacances scolaires</li>
@@ -244,12 +245,12 @@ const FamillesEmploiContent = () => (
           </ul>
         </div>
 
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
             <Gamepad2 className="h-4 w-4" />
             E-sport & Compétitions de jeux vidéo
           </p>
-          <ul className="text-sm space-y-1">
+          <ul className="text-sm space-y-1 ml-4 list-disc">
             <li>Les compétitions de jeux vidéo professionnelles sont soumises à la réglementation du spectacle</li>
             <li>Autorisation de la commission obligatoire pour les mineurs de moins de 16 ans</li>
             <li>Mêmes règles de temps de travail et de repos applicables</li>
@@ -257,19 +258,19 @@ const FamillesEmploiContent = () => (
           </ul>
         </div>
 
-        <div className="bg-purple-900/20 p-4 rounded-lg border border-purple-400/30">
-          <p className="font-semibold text-purple-200 mb-2 flex items-center gap-2">
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2 flex items-center gap-2">
             <Briefcase className="h-4 w-4" />
             Compétence territoriale
           </p>
-          <ul className="text-sm space-y-1">
+          <ul className="text-sm space-y-1 ml-4 list-disc">
             <li><strong>Entreprise française :</strong> Demande auprès de la DRIEETS du département du siège social de l'entreprise</li>
             <li><strong>Entreprise étrangère :</strong> Demande auprès de la DRIEETS du département du lieu de tournage</li>
             <li><strong>Île-de-France :</strong> Commission centralisée pour les départements 75, 77, 78, 91, 92, 93, 94, 95</li>
           </ul>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   </div>
 );
 
