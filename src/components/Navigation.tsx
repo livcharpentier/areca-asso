@@ -35,16 +35,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 border-b border-black/10">
-      {/* Fond caméras sur toute la largeur du bandeau */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroCameras})` }}
-      >
-        <div className="absolute inset-0 bg-white/80" />
-      </div>
+    <nav className="fixed top-0 w-full z-50 border-b border-black/10 bg-white">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex items-center justify-between h-40">
+        <div className="flex items-center justify-between min-h-16 py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
