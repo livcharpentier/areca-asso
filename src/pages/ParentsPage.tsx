@@ -2,22 +2,20 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HealthMonitoring from "@/components/HealthMonitoring";
 import ArtistSalaries from "@/components/ArtistSalaries";
-
-
 import CaisseDepots from "@/components/CaisseDepots";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, Coins, FolderOpen, CheckCircle, AlertCircle, Download, Landmark } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Download } from "lucide-react";
 
 const ParentsPage = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 bg-gradient-to-b from-primary/10 to-background">
+      <section className="pt-24 pb-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
               Espace Parents
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -27,25 +25,20 @@ const ParentsPage = () => {
         </div>
       </section>
 
-      {/* Main Content avec Tabs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="suivi-sante" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-6">
-              <TabsTrigger value="suivi-sante" className="gap-2">
-                <Heart className="h-4 w-4" />
+              <TabsTrigger value="suivi-sante">
                 <span className="hidden sm:inline">Suivi Santé</span>
               </TabsTrigger>
-              <TabsTrigger value="dossier" className="gap-2">
-                <FolderOpen className="h-4 w-4" />
+              <TabsTrigger value="dossier">
                 <span className="hidden sm:inline">Dossier Enfant</span>
               </TabsTrigger>
-              <TabsTrigger value="salaires" className="gap-2">
-                <Coins className="h-4 w-4" />
+              <TabsTrigger value="salaires">
                 <span className="hidden sm:inline">Définitions Fonctions</span>
               </TabsTrigger>
-              <TabsTrigger value="caisse-depots" className="gap-2">
-                <Landmark className="h-4 w-4" />
+              <TabsTrigger value="caisse-depots">
                 <span className="hidden sm:inline">Caisse des Dépôts</span>
               </TabsTrigger>
             </TabsList>
@@ -65,7 +58,6 @@ const ParentsPage = () => {
             <TabsContent value="caisse-depots">
               <CaisseDepots />
             </TabsContent>
-
           </Tabs>
         </div>
       </section>
@@ -75,153 +67,145 @@ const ParentsPage = () => {
   );
 };
 
-/* Contenu Dossier Enfant - Uniquement pièces par enfant et formulaires */
 const DossierEnfantContent = () => (
   <div className="space-y-6">
     <div className="text-center mb-8">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Dossier Enfant — Pièces à fournir
       </h2>
-      <p className="text-xl text-foreground/90 max-w-3xl mx-auto font-medium">
+      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
         Documents à réunir pour chaque enfant dans le cadre d'une demande d'autorisation
       </p>
     </div>
 
-    {/* Pièces par enfant */}
-    <div className="bg-card border rounded-lg p-6">
-      <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-        <FolderOpen className="h-5 w-5 text-accent" />
-        Pièces à fournir pour chaque enfant
-      </h3>
-      <div className="space-y-3">
+    <Card>
+      <CardHeader>
+        <CardTitle>Pièces à fournir pour chaque enfant</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3">
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Livret de famille à jour</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Projet de contrat de travail</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Autorisation parentale</p>
             <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Certificat de scolarité</p>
             <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Avis pédagogique</p>
             <p className="text-sm text-muted-foreground">À fournir à partir de 4 jours d'absence scolaire. Pour Paris, si l'enfant est scolarisé hors académie de Paris, joindre aussi l'avis du Directeur académique concerné</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
-          <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
           <div className="text-foreground">
             <p className="font-semibold">Avis médical d'aptitude</p>
             <p className="text-sm text-muted-foreground">Médecin du travail Thalie Santé (ex-CMB) ou, a minima, justificatif de prise de rendez-vous</p>
           </div>
         </div>
-      </div>
+      </CardContent>
+    </Card>
 
-      {/* Cas particuliers médicaux */}
-      <div className="mt-4 bg-muted/50 p-4 rounded-lg border border-border">
-        <h4 className="font-semibold text-primary mb-2">Cas particuliers — Figurants et silhouettes :</h4>
+    <Card>
+      <CardHeader>
+        <CardTitle>Cas particuliers — Figurants et silhouettes</CardTitle>
+      </CardHeader>
+      <CardContent>
         <ul className="space-y-1 text-foreground text-sm ml-4">
           <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
           <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
         </ul>
-      </div>
+      </CardContent>
+    </Card>
 
-      {/* Situation particulière */}
-      <div className="mt-4 bg-destructive/20 border border-destructive/40 p-4 rounded-lg">
-        <p className="text-sm text-foreground">
-          <strong>Situation particulière :</strong> En cas de retrait d'autorité parentale, tutelle, etc., fournir tout document justifiant de cette situation.
-        </p>
-      </div>
+    <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg">
+      <p className="text-sm text-foreground">
+        <strong>Situation particulière :</strong> En cas de retrait d'autorité parentale, tutelle, etc., fournir tout document justifiant de cette situation.
+      </p>
     </div>
 
-    {/* Formulaires téléchargeables */}
-    <div className="bg-card border rounded-lg p-6">
-      <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
-        <Download className="h-5 w-5 text-accent" />
-        Formulaires officiels à télécharger
-      </h3>
-      <div className="space-y-3">
-        <a 
-          href="https://enfants-du-spectacle.fabrique.social.gouv.fr/autorisation_parentale.docx" 
-          target="_blank" 
+    <Card>
+      <CardHeader>
+        <CardTitle>Formulaires officiels à télécharger</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3">
+        <a
+          href="https://enfants-du-spectacle.fabrique.social.gouv.fr/autorisation_parentale.docx"
+          target="_blank"
           rel="noopener noreferrer"
-          className="w-full bg-accent/10 hover:bg-accent/20 text-accent font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
+          className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
         >
-          <Download className="h-4 w-4" />
+          <Download className="h-4 w-4 text-primary" />
           Modèle d'autorisation parentale (DOCX)
         </a>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a 
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_1D.pdf" 
-            target="_blank" 
+          <a
+            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_1D.pdf"
+            target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4 text-primary" />
             Avis pédagogique 1er degré (PDF)
           </a>
-          <a 
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_2D.pdf" 
-            target="_blank" 
+          <a
+            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_2D.pdf"
+            target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4 text-primary" />
             Avis pédagogique 2nd degré (PDF)
           </a>
-          <a 
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_DASEN.docx" 
-            target="_blank" 
+          <a
+            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_DASEN.docx"
+            target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4 text-primary" />
             Avis Directeur académique (DOCX)
           </a>
-          <a 
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_chef_etablissement_1er_degre.doc" 
-            target="_blank" 
+          <a
+            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_chef_etablissement_1er_degre.doc"
+            target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm"
+            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4 text-primary" />
             Avis chef d'établissement 1er degré
           </a>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
 
-    {/* Contact */}
-    <div className="bg-card border rounded-lg p-5">
-      <p className="text-foreground text-sm">
-        <strong className="text-primary">Besoin d'aide ?</strong> Contactez le service d'instruction à l'adresse : {' '}
-        <a href="mailto:drieets-idf-ud75.eesam@drieets.gouv.fr" className="text-accent hover:text-accent/80 underline">
-          drieets-idf-ud75.eesam@drieets.gouv.fr
-        </a>
-      </p>
-      <p className="text-muted-foreground text-xs mt-2 italic">
-        Source : <a href="https://enfants-du-spectacle.fabrique.social.gouv.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">enfants-du-spectacle.fabrique.social.gouv.fr</a> — Plateforme officielle DRIEETS Île-de-France
-      </p>
-    </div>
+    <Card>
+      <CardContent className="p-5">
+        <p className="text-foreground text-sm">
+          <strong className="text-primary">Besoin d'aide ?</strong> Contactez le service d'instruction à l'adresse : {' '}
+          <a href="mailto:drieets-idf-ud75.eesam@drieets.gouv.fr" className="text-primary hover:text-primary/80 underline">
+            drieets-idf-ud75.eesam@drieets.gouv.fr
+          </a>
+        </p>
+        <p className="text-muted-foreground text-xs mt-2 italic">
+          Source : <a href="https://enfants-du-spectacle.fabrique.social.gouv.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">enfants-du-spectacle.fabrique.social.gouv.fr</a> — Plateforme officielle DRIEETS Île-de-France
+        </p>
+      </CardContent>
+    </Card>
   </div>
 );
 
