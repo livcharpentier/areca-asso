@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import RegionalCalendar from "@/components/RegionalCalendar";
-import DrieetsDossier from "@/components/DrieetsDossier";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FileText, Clock, Calendar } from "lucide-react";
 
