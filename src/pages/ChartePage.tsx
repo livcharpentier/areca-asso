@@ -47,12 +47,14 @@ const ChartePage = () => {
           ]
         },
         {
-          subtitle: "Accompagnement personnalisé",
+          subtitle: "Accompagnement personnalisé et gestion des transitions",
           items: [
             "S'adapter au rythme, à la personnalité et aux besoins spécifiques de chaque enfant",
             "Favoriser l'expression des émotions et être à l'écoute",
             "Encourager et valoriser l'enfant dans son travail artistique",
-            "Respecter les limites de l'enfant"
+            "Respecter les limites de l'enfant",
+            "Préparer l'enfant à l'entrée et à la sortie du tournage (transitions école/plateau, fin de tournage)",
+            "Identifier et signaler à la production les risques de difficulté de transition"
           ]
         },
         {
