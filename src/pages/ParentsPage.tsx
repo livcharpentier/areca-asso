@@ -62,10 +62,6 @@ const ParentsPage = () => {
               <ArtistSalaries />
             </TabsContent>
 
-            <TabsContent value="salaires-figuration">
-              <FigurationSalaries />
-            </TabsContent>
-
             <TabsContent value="caisse-depots">
               <CaisseDepots />
             </TabsContent>
