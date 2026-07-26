@@ -106,7 +106,7 @@ const Navigation = () => {
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="lg:hidden">
-              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+              <Button variant="ghost" size="icon" className="text-black hover:bg-black/10">
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
