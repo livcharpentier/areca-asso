@@ -4,6 +4,7 @@ import DailyReport from "@/components/DailyReport";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Scale, ShieldAlert, Clock, AlertTriangle, BookOpen, Download, Coffee, Users, Briefcase, CalendarDays, Theater, Gamepad2 } from "lucide-react";
 
 const ResponsablesPage = () => {
