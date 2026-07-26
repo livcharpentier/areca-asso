@@ -44,10 +44,6 @@ const ParentsPage = () => {
                 <Coins className="h-4 w-4" />
                 <span className="hidden sm:inline">Définitions Fonctions</span>
               </TabsTrigger>
-              <TabsTrigger value="salaires-figuration" className="gap-2">
-                <Users className="h-4 w-4" />
-                <span className="hidden sm:inline">Salaires Figuration</span>
-              </TabsTrigger>
               <TabsTrigger value="caisse-depots" className="gap-2">
                 <Landmark className="h-4 w-4" />
                 <span className="hidden sm:inline">Caisse des Dépôts</span>
