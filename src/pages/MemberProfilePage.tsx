@@ -81,9 +81,9 @@ const MemberProfilePage = () => {
 
             {/* En-tête profil */}
             <div className="flex flex-col md:flex-row items-start gap-6 mb-8">
-              <Avatar className="w-28 h-28 ring-4 ring-accent/30">
-                <AvatarImage src={member.photo} alt={`${member.firstName} ${member.lastName}`} />
-                <AvatarFallback className="bg-accent/20 text-accent text-2xl font-bold">
+              <Avatar className="w-28 h-36 !rounded-lg overflow-hidden ring-4 ring-accent/30">
+                <AvatarImage src={member.photo} alt={`${member.firstName} ${member.lastName}`} className="!aspect-[3/4] object-cover" />
+                <AvatarFallback className="!rounded-lg bg-accent/20 text-accent text-2xl font-bold h-full w-full">
                   {member.firstName[0]}{member.lastName[0]}
                 </AvatarFallback>
               </Avatar>
