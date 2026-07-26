@@ -6,7 +6,7 @@ import ArtistSalaries from "@/components/ArtistSalaries";
 
 import CaisseDepots from "@/components/CaisseDepots";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Heart, Coins, FolderOpen, CheckCircle, AlertCircle, Download, Users, Landmark } from "lucide-react";
+import { Heart, Coins, FolderOpen, CheckCircle, AlertCircle, Download, Landmark } from "lucide-react";
 
 const ParentsPage = () => {
   return (
