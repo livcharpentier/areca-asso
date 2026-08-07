@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Users, CheckCircle } from "lucide-react";
+import { Download } from "lucide-react";
 
 const ChildSupervisorRole = () => {
   return (
@@ -10,10 +10,9 @@ const ChildSupervisorRole = () => {
           <div className="mb-8">
             <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-accent" />
-                  Description du métier
-                </CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                Description du métier
+              </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground">
@@ -29,7 +28,6 @@ const ChildSupervisorRole = () => {
           <Card className="mb-8 border-border bg-card">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-accent" />
                 Principales activités
               </CardTitle>
             </CardHeader>
