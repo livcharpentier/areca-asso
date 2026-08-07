@@ -1,13 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Shield, Heart, Users, Briefcase, GraduationCap, Scale, Eye, PenLine, AlertTriangle } from "lucide-react";
 
 const ChartePage = () => {
   const articles = [
     {
       id: "preambule",
-      icon: FileText,
       title: "Préambule",
       content: [
         "La présente charte définit les principes fondamentaux et les engagements du responsable des enfants dans le cadre de productions audiovisuelles et cinématographiques. Elle vise à garantir la protection, le bien-être et l'épanouissement des mineurs tout en facilitant la réalisation des projets artistiques."
@@ -15,7 +13,6 @@ const ChartePage = () => {
     },
     {
       id: "article1",
-      icon: Shield,
       title: "Article 1 - Principes fondamentaux",
       sections: [
         {
@@ -34,7 +31,6 @@ const ChartePage = () => {
     },
     {
       id: "article2",
-      icon: Heart,
       title: "Article 2 - Engagement envers l'enfant",
       sections: [
         {
@@ -70,7 +66,6 @@ const ChartePage = () => {
     },
     {
       id: "article3",
-      icon: Users,
       title: "Article 3 - Engagement envers la famille",
       sections: [
         {
@@ -94,7 +89,6 @@ const ChartePage = () => {
     },
     {
       id: "article4",
-      icon: Briefcase,
       title: "Article 4 - Engagement envers la production",
       sections: [
         {
@@ -137,7 +131,6 @@ const ChartePage = () => {
     },
     {
       id: "article5",
-      icon: GraduationCap,
       title: "Article 5 - Compétences et formation continue",
       content: [
         "Le responsable des enfants s'engage à :"
@@ -151,7 +144,6 @@ const ChartePage = () => {
     },
     {
       id: "article6",
-      icon: Scale,
       title: "Article 6 - Déontologie professionnelle",
       sections: [
         {
@@ -182,7 +174,6 @@ const ChartePage = () => {
     },
     {
       id: "article7",
-      icon: Eye,
       title: "Article 7 - Engagement de vigilance",
       content: [
         "Le responsable des enfants s'engage à :"
@@ -196,7 +187,6 @@ const ChartePage = () => {
     },
     {
       id: "article8",
-      icon: AlertTriangle,
       title: "Article 8 - Analyse et prévention des risques",
       content: [
         "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
@@ -223,7 +213,6 @@ const ChartePage = () => {
     },
     {
       id: "article9",
-      icon: PenLine,
       title: "Article 9 - Application de la charte",
       content: [
         "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
@@ -249,7 +238,6 @@ const ChartePage = () => {
 
             <div className="space-y-6">
               {articles.map((article) => {
-                const Icon = article.icon;
                 return (
                   <Card
                     key={article.id}
@@ -257,10 +245,7 @@ const ChartePage = () => {
                     className="border-accent/20 bg-card hover:border-accent/50 transition-all duration-300"
                   >
                     <CardHeader>
-                      <CardTitle className="flex items-center gap-3 text-xl md:text-2xl text-primary">
-                        <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                          <Icon className="h-5 w-5 text-accent" />
-                        </div>
+                      <CardTitle className="text-xl md:text-2xl text-primary">
                         {article.title}
                       </CardTitle>
                     </CardHeader>
