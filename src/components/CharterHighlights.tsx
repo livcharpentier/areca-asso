@@ -6,6 +6,10 @@ const charterPoints = [
     description: "L'intérêt et la sécurité du mineur au cœur de toutes les décisions",
   },
   {
+    title: "Respect de la loi",
+    description: "Application stricte de la réglementation sur le travail des mineurs",
+  },
+  {
     title: "Bienveillance",
     description: "Gestion des émotions en respectant les distances, sans créer de dépendance",
   },
@@ -14,8 +18,20 @@ const charterPoints = [
     description: "Signalement à la production des situations à risques — Coordination et sécurité sans intervention artistique",
   },
   {
+    title: "Horaires & repos",
+    description: "Contrôle strict des temps de travail et repos obligatoires",
+  },
+  {
     title: "Traçabilité",
     description: "Rapport de la journée de travail du mineur à la production",
+  },
+  {
+    title: "Vigilance absolue",
+    description: "Signalement immédiat des situations à risques et droit d'interruption",
+  },
+  {
+    title: "Confidentialité",
+    description: "Protection des informations personnelles de l'enfant et de sa famille",
   },
   {
     title: "Interface",
@@ -37,7 +53,7 @@ const CharterHighlights = () => {
         <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
           Les principes fondamentaux qui guident notre profession
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {charterPoints.map((point) => (
             <Card
               key={point.title}
