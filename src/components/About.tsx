@@ -29,10 +29,6 @@ const About = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent mt-1 font-bold">•</span>
-                    <span>Assurer la formation continue et le perfectionnement professionnel</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1 font-bold">•</span>
                     <span>Être l'interlocuteur des pouvoirs publics et des organisations professionnelles</span>
                   </li>
                   <li className="flex items-start gap-2">
