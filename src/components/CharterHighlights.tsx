@@ -15,7 +15,7 @@ const charterPoints = [
   },
   {
     title: "Distinction des rôles",
-    description: "Signalement à la production des situations à risques — Coordination et sécurité sans intervention artistique",
+    description: "Coordination et sécurité sans intervention artistique",
   },
   {
     title: "Horaires & repos",
