@@ -39,7 +39,7 @@ const charterPoints = [
   },
   {
     title: "Permis de conduire",
-    description: "Il est grandement recommandé d'avoir le permis de plus de 2 ans pour faciliter les transports des jeunes comédiens",
+    description: "Il est grandement recommandé d'avoir le permis de plus de 2 ans pour faciliter les transports des mineurs",
   },
 ];
 
