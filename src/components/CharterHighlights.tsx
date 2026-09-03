@@ -27,7 +27,7 @@ const charterPoints = [
   },
   {
     title: "Vigilance absolue",
-    description: "Signalement immédiat des situations à risques et droit d'interruption",
+    description: "Signalement à la production des situations à risques",
   },
   {
     title: "Confidentialité",
