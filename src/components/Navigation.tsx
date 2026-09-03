@@ -35,7 +35,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 border-b border-black/10 bg-white">
+    <nav className="fixed top-0 w-full z-50 border-b border-black/10 bg-[#f5f0e8]">
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex items-center justify-between min-h-16 py-2">
           {/* Logo */}
@@ -102,7 +102,7 @@ const Navigation = () => {
                 <Menu className="w-6 h-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-white border-accent/20">
+            <SheetContent side="right" className="w-[300px] bg-[#f5f0e8] border-accent/20">
               <div className="flex flex-col gap-4 mt-8">
                 {navItems.map((item) => (
                   <Link
