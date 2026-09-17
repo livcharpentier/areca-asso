@@ -21,16 +21,12 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "FICHE MÉTIER", path: "/about" },
-    { label: "CHARTE", path: "/charte" },
+    { label: "LE MÉTIER", path: "/metier" },
+    { label: "RÉGLEMENTATION", path: "/production" },
     { label: "MEMBRES", path: "/members" },
-    { label: "ESPACE INFORMATIONS", path: "/production" },
-    { label: "ESPACE FAMILLE", path: "/parents" },
+    { label: "ESPACE PARENTS", path: "/parents" },
     { label: "ESPACE MEMBRE", path: "/responsables" },
     { label: "FORMATIONS", path: "/formations" },
-    { label: "ACTUALITÉS", path: "/news" },
-    
-{ label: "FAQ", path: "/faq" },
     { label: "CONTACT", path: "/contact" },
   ];
 
@@ -50,13 +46,13 @@ const Navigation = () => {
                 ARECA
               </span>
               <span className="text-[6px] sm:text-[7px] text-black/80 uppercase tracking-widest font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
-                Association des Responsables Enfants dans le Cinéma et l'Audiovisuel
+                Association des Responsables Enfants Cinéma et Audiovisuel
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-6 gap-y-2 ml-4 xl:ml-8">
+          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-5 gap-y-2 ml-4 xl:ml-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -81,7 +77,7 @@ const Navigation = () => {
               )}
               <Button
                 onClick={handleAuthAction}
-                className={user 
+                className={user
                   ? "bg-transparent border border-black/40 text-black hover:bg-accent hover:text-white text-xs px-3 h-8"
                   : "bg-accent text-white hover:bg-accent/90 text-xs px-4 h-8 font-semibold"
                 }
@@ -128,7 +124,7 @@ const Navigation = () => {
                       <UserCircle className="w-4 h-4 mr-2" /> Mon profil
                     </Button>
                   )}
-                  <Button 
+                  <Button
                     onClick={handleAuthAction}
                     className="bg-accent text-accent-foreground hover:bg-accent/90"
                   >
