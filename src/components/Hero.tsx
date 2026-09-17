@@ -19,7 +19,7 @@ const Hero = () => {
             <span className="block text-gold mt-2 text-4xl md:text-5xl lg:text-6xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.5)' }}>
               Responsables Enfants
             </span>
-            <span className="block text-3xl md:text-5xl lg:text-6xl">Audiovisuel et Cinéma</span>
+            <span className="block text-3xl md:text-5xl lg:text-6xl">Cinéma et Audiovisuel</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed mb-6 drop-shadow-lg font-medium">
             Fédérer les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel
