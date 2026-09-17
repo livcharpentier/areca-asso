@@ -2,23 +2,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
-const ChildSupervisorRole = () => {
+interface Props {
+  embedded?: boolean;
+}
+
+const ChildSupervisorRole = ({ embedded = false }: Props) => {
   return (
-    <section id="responsable-enfant" className="pt-24 pb-16 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="responsable-enfant" className={`${embedded ? "py-4" : "pt-24 pb-16"} bg-background`}>
+      <div className={embedded ? "" : "container mx-auto px-4"}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-8">
             <Card className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105">
               <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                Description du métier
-              </CardTitle>
+                <CardTitle className="flex items-center gap-2">Description du métier</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground">
                   Le responsable des enfants assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma.
-                  Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille, 
-                  la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations 
+                  Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille,
+                  la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations
                   transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC).
                 </p>
               </CardContent>
@@ -27,9 +29,7 @@ const ChildSupervisorRole = () => {
 
           <Card className="mb-8 border-border bg-card">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                Principales activités
-              </CardTitle>
+              <CardTitle className="flex items-center gap-2">Principales activités</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
@@ -42,7 +42,6 @@ const ChildSupervisorRole = () => {
                   <li>• Sensibilisation des équipes aux spécificités du travail avec des mineurs</li>
                 </ul>
               </div>
-
               <div>
                 <h3 className="font-semibold text-lg mb-3 text-primary">Pendant le tournage</h3>
                 <ul className="space-y-2 text-foreground">
@@ -54,7 +53,6 @@ const ChildSupervisorRole = () => {
                   <li>• Réaliser un journal de bord pour chaque journée</li>
                 </ul>
               </div>
-
               <div>
                 <h3 className="font-semibold text-lg mb-3 text-primary">Après le tournage</h3>
                 <ul className="space-y-2 text-foreground">
@@ -67,7 +65,7 @@ const ChildSupervisorRole = () => {
           </Card>
 
           <div className="text-center">
-            <Button 
+            <Button
               size="lg"
               onClick={() => window.open('/fiche_metier_responsable_enfant.pdf', '_blank')}
               className="gap-2"
