@@ -204,11 +204,7 @@ const MemberProfilePage = () => {
                     <span className="text-sm font-semibold text-orange-700">{member.actualite}</span>
                   </div>
                 )}
-                {member.availability && (
-                  <Badge variant={member.availability === "Disponible" ? "default" : "secondary"} className="mb-3">
-                    {member.availability}
-                  </Badge>
-                )}
+
                 {member.experienceYears && (
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4" />
