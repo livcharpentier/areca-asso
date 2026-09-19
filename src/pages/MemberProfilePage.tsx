@@ -53,7 +53,7 @@ const MemberProfilePage = () => {
 
   if (!member) {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-background">
         <Navigation />
         <div className="container mx-auto px-4 py-24 text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Membre introuvable</h1>
@@ -65,9 +65,9 @@ const MemberProfilePage = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Navigation />
-      <section className="pt-24 pb-16 bg-secondary">
+      <section className="pt-24 pb-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Button
