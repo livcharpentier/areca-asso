@@ -199,10 +199,10 @@ const MemberProfilePage = () => {
                 </h1>
                 <p className="text-accent font-medium mb-3">{member.role}</p>
                 {member.actualite && (
-                  <div className="inline-flex items-center gap-2 bg-orange-100 border border-orange-200 rounded-full px-3 py-1 mb-3">
-                    <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse inline-block"></span>
-                    <span className="text-sm font-semibold text-orange-700">{member.actualite}</span>
-                  </div>
+                  <p className="flex items-center gap-2 text-sm font-semibold text-orange-600 mb-3">
+                    <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse inline-block flex-shrink-0"></span>
+                    {member.actualite}
+                  </p>
                 )}
 
                 {member.experienceYears && (
@@ -280,9 +280,7 @@ const MemberProfilePage = () => {
                   <span className="inline-block w-3 h-3 rounded-full bg-orange-500 animate-pulse"></span>
                   <h2 className="text-xl font-semibold" style={{color: "#ea580c"}}>Actualité</h2>
                 </div>
-                <div className="bg-orange-50 border border-orange-200 rounded-lg px-5 py-4">
-                  <p className="text-orange-800 font-medium leading-relaxed">{member.actualite}</p>
-                </div>
+                <p className="text-orange-600 font-medium leading-relaxed">{member.actualite}</p>
               </div>
             )}
             {member.recentNews && !member.actualite && (
