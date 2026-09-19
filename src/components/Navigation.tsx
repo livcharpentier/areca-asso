@@ -114,8 +114,8 @@ const Navigation = () => {
                     {item.label}
                   </Link>
                 ))}
-                <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-foreground/20">
-                  {user && (
+                {user && (
+                  <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-foreground/20">
                     <Button
                       onClick={() => { setOpen(false); navigate("/mon-profil"); }}
                       variant="outline"
@@ -123,14 +123,14 @@ const Navigation = () => {
                     >
                       <UserCircle className="w-4 h-4 mr-2" /> Mon profil
                     </Button>
-                  )}
-                  <Button
-                    onClick={handleAuthAction}
-                    className="bg-accent text-accent-foreground hover:bg-accent/90"
-                  >
-                    {user ? "Déconnexion" : "Connexion"}
-                  </Button>
-                </div>
+                    <Button
+                      onClick={() => { handleAuthAction(); setOpen(false); }}
+                      className="bg-transparent border border-black/40 text-black"
+                    >
+                      <LogOut className="w-4 h-4 mr-2" /> Déconnexion
+                    </Button>
+                  </div>
+                )}
               </div>
             </SheetContent>
           </Sheet>
