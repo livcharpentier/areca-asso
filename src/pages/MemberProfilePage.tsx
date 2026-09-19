@@ -198,6 +198,12 @@ const MemberProfilePage = () => {
                   {member.firstName} {member.lastName}
                 </h1>
                 <p className="text-accent font-medium mb-3">{member.role}</p>
+                {member.actualite && (
+                  <div className="inline-flex items-center gap-2 bg-orange-100 border border-orange-200 rounded-full px-3 py-1 mb-3">
+                    <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse inline-block"></span>
+                    <span className="text-sm font-semibold text-orange-700">{member.actualite}</span>
+                  </div>
+                )}
                 {member.availability && (
                   <Badge variant={member.availability === "Disponible" ? "default" : "secondary"} className="mb-3">
                     {member.availability}
