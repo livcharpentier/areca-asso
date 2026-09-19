@@ -107,11 +107,11 @@ const WorkTimeRegulations = () => {
 
             {/* Section heures de nuit */}
             <div className="bg-muted/50 border border-border p-6 rounded-lg mt-6">
-              <h4 className="font-semibold text-primary mb-4">Travail de nuit (moins de 16 ans)</h4>
+              <h4 className="font-semibold text-primary mb-4">Travail de nuit des mineurs</h4>
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="text-foreground">
-                    <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les jeunes de moins de 16 ans (article L.3163-2)
+                    <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les mineurs (article L.3163-2)
                   </p>
                 </div>
                 <div>
