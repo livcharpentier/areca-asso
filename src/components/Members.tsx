@@ -145,6 +145,11 @@ const Members = () => {
                 négociations concernant la reconnaissance du métier de responsable des enfants
                 sur les tournages.
               </p>
+              <p className="text-sm text-foreground leading-relaxed mt-4 pt-4 border-t border-border">
+                Lors de l'adh&#233;sion, chaque nouveau membre, en plus de signer la charte de l'association,
+                d&#233;clare sur l'honneur, par &#233;crit, avoir un casier vierge, lui permettant de travailler
+                en contact avec des enfants. La v&#233;rification incombe &#224; la production.
+              </p>
             </CardContent>
           </Card>
         </div>
