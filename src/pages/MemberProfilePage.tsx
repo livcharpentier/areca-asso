@@ -19,6 +19,7 @@ const memberData: { [key: string]: any } = {
     experienceYears: 28,
     availability: "Disponible",
     recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
+    actualite: "En tournage — Les Enfants de la Résistance 2 (2025-2026)",
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
     filmography: {
       "Responsable des enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), Abandon (2026), Histoire parallèle (2025), Les enfants de la résistance (2025), Karma (2026)",
@@ -271,7 +272,18 @@ const MemberProfilePage = () => {
             )}
 
             {/* Actualité */}
-            {member.recentNews && (
+            {member.actualite && (
+              <div className="mb-8">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-block w-3 h-3 rounded-full bg-orange-500 animate-pulse"></span>
+                  <h2 className="text-xl font-semibold" style={{color: "#ea580c"}}>Actualité</h2>
+                </div>
+                <div className="bg-orange-50 border border-orange-200 rounded-lg px-5 py-4">
+                  <p className="text-orange-800 font-medium leading-relaxed">{member.actualite}</p>
+                </div>
+              </div>
+            )}
+            {member.recentNews && !member.actualite && (
               <div className="mb-8">
                 <h2 className="text-xl font-semibold text-foreground mb-3">Actualité</h2>
                 <p className="text-muted-foreground italic">{member.recentNews}</p>
