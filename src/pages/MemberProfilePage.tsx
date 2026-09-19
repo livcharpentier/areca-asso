@@ -10,7 +10,7 @@ const memberData: { [key: string]: any } = {
   "liv-charpentier": {
     firstName: "Liv",
     lastName: "Charpentier",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20",
+    photo: "/liv-charpentier.png",
     email: "liv.charp@wanadoo.fr",
     phone: "06 19 60 12 96",
     role: "Responsable enfants",
