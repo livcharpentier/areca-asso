@@ -2,11 +2,50 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import DailyReport from "@/components/DailyReport";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useAuth } from "@/contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { Lock } from "lucide-react";
 
 const ResponsablesPage = () => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
+  if (!user) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navigation />
+        <div className="flex flex-col items-center justify-center min-h-[80vh] px-4">
+          <div className="max-w-md w-full text-center space-y-6">
+            <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
+              <Lock className="w-8 h-8 text-accent" />
+            </div>
+            <h1 className="text-3xl font-bold text-foreground">Espace Membres</h1>
+            <p className="text-muted-foreground text-lg">
+              Cet espace est r&#233;serv&#233; aux professionnels membres de l&#39;ARECA.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Vous devez &#234;tre connect&#233;(e) pour acc&#233;der aux ressources, outils et informations r&#233;serv&#233;s aux membres.
+            </p>
+            <Button
+              size="lg"
+              onClick={() => navigate("/auth")}
+              className="w-full"
+            >
+              Se connecter
+            </Button>
+            <p className="text-xs text-muted-foreground">
+              Pas encore membre ? <span className="text-accent cursor-pointer underline" onClick={() => navigate("/contact")}>Contactez-nous</span>
+            </p>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen">
       <Navigation />
