@@ -18,7 +18,7 @@ const ChildSupervisorRole = ({ embedded = false }: Props) => {
               </CardHeader>
               <CardContent>
                 <p className="text-foreground">
-                  Le responsable des enfants assure l'encadrement et la protection des mineurs de moins de 16 ans dans l'audiovisuel et le cinéma.
+                  Le responsable des enfants assure l'encadrement des mineurs dans l'audiovisuel et le cinéma.
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille,
                   la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations
                   transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC).
