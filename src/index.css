@@ -100,7 +100,16 @@
     @apply bg-background text-foreground font-comic;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  /* h1 grands titres — Bangers conservé */
+  h1 {
     @apply font-bangers tracking-widest;
+  }
+
+  /* h2, h3 sous-titres — police plus lisible, espacée */
+  h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 }
