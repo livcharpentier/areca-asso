@@ -8,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 import livPhoto from "@/assets/liv-charpentier.png";
 
 type MembreTrombi = {
+  actualite?: string;
   id: string;
   name: string;
   slug: string;
@@ -17,7 +18,7 @@ type MembreTrombi = {
 };
 
 const membresStatiques: MembreTrombi[] = [
-  { id: "liv-charpentier", name: "Liv Charpentier", slug: "liv-charpentier", photo: livPhoto, role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." },
+  { id: "liv-charpentier", name: "Liv Charpentier", slug: "liv-charpentier", photo: livPhoto, role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." , actualite: "En tournage — Les Enfants de la Résistance 2 (2025-2026)" },
   { id: "thomas-martin", name: "Christophe Denis", slug: "thomas-martin", photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank", role: "Responsable enfants", bio: "Accompagnement des jeunes acteurs sur les tournages de longue durée." },
 ];
 
@@ -84,7 +85,13 @@ const Members = () => {
                     </AvatarFallback>
                   </Avatar>
                   <span className="text-sm font-semibold text-foreground">{membre.name}</span>
-                  <span className="text-xs text-accent mb-2">{membre.role}</span>
+                  <span className="text-xs text-accent mb-1">{membre.role}</span>
+                  {membre.actualite && (
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold bg-orange-100 text-orange-700 border border-orange-200 rounded-full px-2 py-0.5 mb-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse inline-block"></span>
+                      {membre.actualite}
+                    </span>
+                  )}
                   <p className="text-xs text-muted-foreground leading-relaxed">{membre.bio}</p>
                 </div>
               ))}
