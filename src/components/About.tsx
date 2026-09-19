@@ -14,7 +14,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl text-primary font-semibold tracking-wide leading-relaxed mb-3">Présentation</h3>
                 <p className="text-foreground leading-relaxed text-sm">
-                  L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) regroupe les professionnels chargés de l'encadrement, de la protection et de la coordination des mineurs de moins de 16 ans sur les tournages. Elle œuvre pour la reconnaissance du métier, la défense des intérêts de la profession et la diffusion des bonnes pratiques auprès des productions, des institutions et des organisations professionnelles.
+                  L'ARECA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) regroupe les professionnels chargés de l'encadrement, de la protection et de la coordination des mineurs sur les tournages. Elle œuvre pour la reconnaissance du métier, la défense des intérêts de la profession et la diffusion des bonnes pratiques auprès des productions, des institutions et des organisations professionnelles.
                 </p>
               </CardContent>
             </Card>
