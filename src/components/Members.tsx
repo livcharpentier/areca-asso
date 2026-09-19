@@ -87,7 +87,7 @@ const Members = () => {
                   <span className="text-sm font-semibold text-foreground">{membre.name}</span>
                   <span className="text-xs text-accent mb-1">{membre.role}</span>
                   {membre.actualite && (
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold bg-orange-100 text-orange-700 border border-orange-200 rounded-full px-2 py-0.5 mb-1">
+                    <span className="flex items-center justify-center gap-1 text-xs font-semibold text-orange-600 mb-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse inline-block"></span>
                       {membre.actualite}
                     </span>
