@@ -29,7 +29,7 @@ const ResponsablesPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="compte-rendu" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-6">
+            <TabsList className="grid w-full grid-cols-4 mb-6">
               <TabsTrigger value="compte-rendu">
                 <span className="hidden sm:inline">Compte Rendu Journalier</span>
               </TabsTrigger>
@@ -38,6 +38,9 @@ const ResponsablesPage = () => {
               </TabsTrigger>
               <TabsTrigger value="vhss">
                 <span className="hidden sm:inline">VHSS</span>
+              </TabsTrigger>
+              <TabsTrigger value="positionnement">
+                <span className="hidden sm:inline">Positionnement</span>
               </TabsTrigger>
             </TabsList>
 
@@ -51,6 +54,41 @@ const ResponsablesPage = () => {
 
             <TabsContent value="vhss">
               <VHSSContent />
+            </TabsContent>
+            <TabsContent value="positionnement">
+              <div className="space-y-4">
+                <div className="bg-muted/50 p-5 rounded-lg border border-border">
+                  <p className="font-semibold text-primary mb-3">Engagement ethique a l&apos;adhesion</p>
+                  <p className="text-sm leading-relaxed text-foreground">
+                    Lors de l&apos;adhesion, chaque nouveau membre, en plus de signer la charte de l&apos;association, 
+                    declare sur l&apos;honneur, par ecrit, avoir un casier judiciaire vierge, lui permettant 
+                    de travailler en contact avec des enfants.
+                  </p>
+                  <div className="mt-4 bg-card p-3 rounded border border-border">
+                    <p className="text-sm text-muted-foreground italic">
+                      La verification du casier judiciaire incombe a la production employeuse, 
+                      conformement a la reglementation en vigueur.
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-muted/50 p-5 rounded-lg border border-border">
+                  <p className="font-semibold text-primary mb-3">Ce que cela signifie concretement</p>
+                  <ul className="text-sm space-y-2 text-foreground">
+                    <li>- Chaque membre signe la charte professionnelle de l&apos;ARECA</li>
+                    <li>- Une declaration sur l&apos;honneur de casier judiciaire vierge est fournie par ecrit</li>
+                    <li>- La production reste responsable de la verification officielle (extrait B3)</li>
+                    <li>- L&apos;ARECA s&apos;engage a retirer tout membre dont le casier serait incompatible avec la fonction</li>
+                  </ul>
+                </div>
+                <div className="bg-muted/50 p-5 rounded-lg border border-border">
+                  <p className="font-semibold text-primary mb-3">Rappel reglementaire</p>
+                  <p className="text-sm leading-relaxed text-foreground">
+                    Conformement a l&apos;article R.7124-44 du Code du travail, le responsable enfant doit produire 
+                    un extrait de casier judiciaire (bulletin B3) aupres de la production, attestant qu&apos;il n&apos;a fait 
+                    l&apos;objet d&apos;aucune condamnation incompatible avec l&apos;exercice de fonctions aupres de mineurs.
+                  </p>
+                </div>
+              </div>
             </TabsContent>
           </Tabs>
         </div>
