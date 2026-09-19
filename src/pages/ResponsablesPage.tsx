@@ -219,7 +219,7 @@ const FamillesEmploiContent = () => (
           <p className="font-semibold text-primary mb-2">E-sport & Compétitions de jeux vidéo</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
             <li>Les compétitions de jeux vidéo professionnelles sont soumises à la réglementation du spectacle</li>
-            <li>Autorisation de la commission obligatoire pour les mineurs de moins de 16 ans</li>
+            <li>Autorisation de la commission obligatoire pour les mineurs</li>
             <li>Mêmes règles de temps de travail et de repos applicables</li>
             <li>Obligation de déclaration à la Caisse des Dépôts pour les gains</li>
           </ul>
