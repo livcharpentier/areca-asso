@@ -19,7 +19,7 @@ const memberData: { [key: string]: any } = {
     experienceYears: 28,
     availability: "Disponible",
     recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
-    actualite: "En tournage — Les Enfants de la Résistance 2 (2025-2026)",
+    actualite: "Disponible",
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
     filmography: {
       "Responsable des enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), Abandon (2026), Histoire parallèle (2025), Les enfants de la résistance (2025), Karma (2026)",
