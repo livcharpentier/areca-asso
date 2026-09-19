@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
+import jsPDF from "jspdf";
 
 const memberData: { [key: string]: any } = {
   "liv-charpentier": {
@@ -50,6 +51,110 @@ const MemberProfilePage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const member = memberData[slug || ""];
+
+  const generatePDF = () => {
+    const doc = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+    const pageW = 210;
+    const margin = 18;
+    const contentW = pageW - margin * 2;
+    let y = 20;
+
+    // Couleurs site
+    const bleu = [59, 130, 246] as [number, number, number];
+    const noir = [15, 23, 42] as [number, number, number];
+    const gris = [100, 116, 139] as [number, number, number];
+    const beige = [245, 240, 232] as [number, number, number];
+
+    // Fond beige header
+    doc.setFillColor(...beige);
+    doc.rect(0, 0, pageW, 50, "F");
+
+    // Nom
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(22);
+    doc.setTextColor(...noir);
+    doc.text(`${member.firstName} ${member.lastName}`.toUpperCase(), margin, y + 8);
+
+    // Role
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(11);
+    doc.setTextColor(...bleu);
+    doc.text(member.role || "", margin, y + 16);
+
+    // Contact
+    doc.setFontSize(9);
+    doc.setTextColor(...gris);
+    let contactLine = "";
+    if (member.phone) contactLine += member.phone + "  ";
+    if (member.email) contactLine += member.email;
+    doc.text(contactLine, margin, y + 23);
+
+    y = 58;
+
+    // Bio
+    if (member.bio) {
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(10);
+      doc.setTextColor(...gris);
+      const bioLines = doc.splitTextToSize(member.bio, contentW);
+      doc.text(bioLines, margin, y);
+      y += bioLines.length * 5 + 6;
+    }
+
+    // Ligne séparatrice
+    doc.setDrawColor(...bleu);
+    doc.setLineWidth(0.5);
+    doc.line(margin, y, pageW - margin, y);
+    y += 8;
+
+    const addSection = (title: string, text: string) => {
+      if (y > 265) { doc.addPage(); y = 20; }
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10);
+      doc.setTextColor(...bleu);
+      doc.text(title.toUpperCase(), margin, y);
+      y += 5;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9);
+      doc.setTextColor(...noir);
+      const lines = doc.splitTextToSize(text, contentW);
+      lines.forEach((line: string) => {
+        if (y > 275) { doc.addPage(); y = 20; }
+        doc.text(line, margin, y);
+        y += 4.5;
+      });
+      y += 4;
+    };
+
+    // Filmographie
+    if (member.filmography) {
+      Object.entries(member.filmography).forEach(([role, films]) => {
+        addSection(role, films as string);
+      });
+    }
+
+    // Animation
+    if (member.animation) {
+      Object.entries(member.animation).forEach(([period, text]) => {
+        addSection(period, text as string);
+      });
+    }
+
+    // CV Sections (diplomes)
+    if (member.cvSections) {
+      Object.entries(member.cvSections).forEach(([section, text]) => {
+        addSection(section, text as string);
+      });
+    }
+
+    // Footer
+    doc.setFont("helvetica", "italic");
+    doc.setFontSize(8);
+    doc.setTextColor(...gris);
+    doc.text("ARECA — Association des Responsables Enfants Cinema et Audiovisuel", margin, 290);
+
+    doc.save(`CV_${member.lastName}_${member.firstName}.pdf`);
+  };
 
   if (!member) {
     return (
@@ -177,11 +282,11 @@ const MemberProfilePage = () => {
             {member.cvUrl && (
               <Button
                 size="lg"
-                onClick={() => window.open(member.cvUrl, '_blank')}
+                onClick={generatePDF}
                 className="gap-2"
               >
                 <Download className="h-5 w-5" />
-                Télécharger le CV complet
+                Télécharger le CV complet (PDF)
               </Button>
             )}
           </div>
