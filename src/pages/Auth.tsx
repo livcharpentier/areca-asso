@@ -150,6 +150,20 @@ const Auth = () => {
     }
   };
 
+  const handleForgotPassword = async () => {
+    const email = loginEmail || prompt("Entrez votre adresse email :");
+    if (!email) return;
+    try {
+      const { error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: window.location.origin + "/auth?reset=true",
+      });
+      if (error) throw error;
+      alert("Un email de r&#233;initialisation a &#233;t&#233; envoy&#233; &#224; " + email + "\nV&#233;rifiez votre boite mail (et vos spams).");
+    } catch (err: any) {
+      alert("Erreur : " + err.message);
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-primary/20 p-4">
       <Card className="w-full max-w-md border-border bg-card">
@@ -195,6 +209,15 @@ const Auth = () => {
                 <Button type="submit" className="w-full" disabled={loading}>
                   {loading ? "Connexion..." : "Se connecter"}
                 </Button>
+                <div className="text-center mt-3">
+                  <button
+                    type="button"
+                    onClick={handleForgotPassword}
+                    className="text-sm text-accent underline hover:opacity-80 cursor-pointer"
+                  >
+                    Mot de passe oubli&#233; ?
+                  </button>
+                </div>
               </form>
             </TabsContent>
 
