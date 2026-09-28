@@ -101,8 +101,7 @@ const articles = [
       {
         subtitle: "Organisation rigoureuse et conditions matérielles",
         items: [
-          "Vérifier en amont les conditions matérielles d'accueil (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
-          "Planifier et coordonner la logistique (transport, hébergement, repas)",
+          "Planifier et coordonner la logistique et les conditions matérielles d'accueil : transport, hébergement, repas (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
           "Préparer l'enfant aux scènes à tourner en transmettant les consignes",
           "Constituer et superviser une équipe d'animation si nécessaire"
         ]
