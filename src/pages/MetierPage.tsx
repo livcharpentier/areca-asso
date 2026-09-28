@@ -92,7 +92,7 @@ const articles = [
       {
         subtitle: "Coordination et médiation",
         items: [
-          "Faire le lien entre la famille, l'enfant, la mise en scène et les équipes techniques",
+          "Faire le lien entre la famille, l'enfant, la mise en scène et chaque département concerné",
           "Anticiper et résoudre les situations conflictuelles",
           "Faciliter le travail des équipes tout en protégeant l'enfant",
           "Proposer des solutions adaptées aux besoins de tous"
