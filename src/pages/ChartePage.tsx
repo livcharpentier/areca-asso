@@ -51,7 +51,7 @@ const ChartePage = () => {
           subtitle: "Préservation de l'équilibre",
           items: [
             "Mettre en place des activités adaptées pendant les temps d'attente",
-            "En période scolaire, organiser le temps scolaire",
+            "En période scolaire, organiser le suivi et le temps scolaire",
           ]
         }
       ]
