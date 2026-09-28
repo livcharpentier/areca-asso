@@ -72,7 +72,7 @@ const articles = [
       {
         subtitle: "Respect des valeurs familiales",
         items: [
-          "Prendre en compte les souhaits et les limites fixées par les parents",
+          "Prendre en compte les souhaits et les limites fixées par les parents, tout en respectant la législation",
           "Respecter l'éducation et les principes familiaux",
           "Associer la famille aux décisions importantes concernant l'enfant"
         ]
