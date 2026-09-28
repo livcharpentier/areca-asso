@@ -116,7 +116,6 @@ const articles = [
           "Vérifier en amont les conditions matérielles d'accueil (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
           "Planifier et coordonner la logistique (transport, hébergement, repas)",
           "Préparer l'enfant aux scènes à tourner en transmettant les consignes",
-          "Gérer les autorisations administratives (DRIEETS, Caisse des Dépôts)",
           "Constituer et superviser une équipe d'animation si nécessaire"
         ]
       },
