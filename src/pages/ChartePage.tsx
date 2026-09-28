@@ -72,7 +72,7 @@ const ChartePage = () => {
           subtitle: "Respect des valeurs familiales",
           items: [
             "Prendre en compte les souhaits et les limites fixées par les parents, tout en respectant la législation",
-            "Associer la famille aux décisions importantes concernant l'enfant"
+            "Dans le cadre du tournage, toute décision importante concernant l'enfant doit être discutée avec les représentants légaux et l'enfant si possible"
           ]
         }
       ]
