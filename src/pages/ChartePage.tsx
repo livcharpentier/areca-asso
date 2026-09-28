@@ -52,9 +52,7 @@ const ChartePage = () => {
           subtitle: "Préservation de l'équilibre",
           items: [
             "Garantir le respect des horaires et des temps de repos",
-            "Organiser des activités ludiques et éducatives pendant les temps d'attente",
             "Maintenir un lien avec la scolarité si nécessaire",
-            "Préserver l'enfance et la spontanéité"
           ]
         }
       ]
