@@ -91,7 +91,7 @@ const ChartePage = () => {
         {
           subtitle: "Coordination et médiation",
           items: [
-            "Faire le lien entre la famille, l'enfant, la mise en scène et chaque département concerné",
+            "Faire le lien entre la famille, l'enfant et chaque département concerné. S'assurer de la bonne transmission des informations liées à l'analyse des risques (alimentation, relation aux animaux, etc…)",
             "Anticiper et résoudre les situations conflictuelles",
           ]
         },
