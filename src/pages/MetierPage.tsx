@@ -64,9 +64,9 @@ const articles = [
       {
         subtitle: "Communication transparente",
         items: [
+          "Établir une relation de confiance dès la préparation",
           "Informer régulièrement la famille du déroulement du tournage",
-          "Être disponible et réactif aux questions et préoccupations",
-          "Établir une relation de confiance dès la préparation"
+          "Être disponible et réactif aux questions et préoccupations"
         ]
       },
       {
