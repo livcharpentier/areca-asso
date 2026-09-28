@@ -86,7 +86,6 @@ const ChartePage = () => {
           items: [
             "Assurer une présence constante et fiable auprès de l'enfant",
             "Tenir à jour un récapitulatif des temps de travail / repos / suivi scolaire",
-            "Respecter les contraintes de production dans le cadre légal",
             "Communiquer efficacement avec toutes les équipes"
           ]
         },
