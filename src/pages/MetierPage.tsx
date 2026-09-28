@@ -45,7 +45,6 @@ const articles = [
         subtitle: "Accompagnement personnalisé",
         items: [
           "S'adapter au rythme, à la personnalité et aux besoins spécifiques et aux limites de chaque enfant",
-          "Encourager et valoriser l'enfant dans son travail artistique",
           "Préparer l'enfant à l'entrée et à la sortie du tournage (transitions école/plateau, fin de tournage)",
         ]
       },
