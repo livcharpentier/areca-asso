@@ -115,7 +115,6 @@ const ChartePage = () => {
             "Vérifier en amont les conditions matérielles d'accueil (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
             "Planifier et coordonner la logistique (transport, hébergement, repas)",
             "Préparer l'enfant aux scènes à tourner en transmettant les consignes",
-            "Gérer les autorisations administratives (DRIEETS, Caisse des Dépôts)",
             "Constituer et superviser une équipe d'animation si nécessaire"
           ]
         },
@@ -198,7 +197,6 @@ const ChartePage = () => {
             "Analyser le scénario et les scènes impliquant l'enfant (contenu, émotions sollicitées, cascades, effets spéciaux)",
             "Identifier les risques liés aux lieux de tournage (extérieurs, hauteurs, eau, animaux, foule, conditions climatiques)",
             "Évaluer les risques liés aux horaires (nuit, amplitude, décalages) et au rythme de tournage",
-            "Vérifier la conformité du dossier réglementaire (autorisation DRIEETS, certificat médical, Caisse des Dépôts)"
           ]
         },
         {
