@@ -191,17 +191,17 @@ const articles = [
     ]
   },
   {
-    id: "article10",
-    title: "Article 10 - Gestion du tournage",
-    items: [
-      "Identifier et signaler à la production les risques de difficulté de tournage"
-    ]
-  },
-  {
     id: "article9",
     title: "Article 9 - Application de la charte",
     content: [
       "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
+    ]
+  },
+  {
+    id: "article10",
+    title: "Article 10 - Gestion du tournage",
+    items: [
+      "Identifier et signaler à la production les risques de difficulté de tournage"
     ]
   }
 ];
