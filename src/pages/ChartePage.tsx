@@ -98,7 +98,7 @@ const ChartePage = () => {
           ]
         },
         {
-          subtitle: "Organisation rigoureuse et conditions matérielles",
+          subtitle: "",
           items: [
             "Planifier et coordonner la logistique et les conditions matérielles d'accueil : transport, hébergement, repas (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
             "Constituer et superviser une équipe d'animation si nécessaire"
