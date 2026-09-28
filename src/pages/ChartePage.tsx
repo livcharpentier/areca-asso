@@ -37,9 +37,7 @@ const ChartePage = () => {
           subtitle: "Protection physique et psychologique",
           items: [
             "Veiller à la sécurité physique de l'enfant sur le plateau et lors des déplacements",
-            "Protéger l'enfant de toute situation inappropriée ou traumatisante",
             "Être attentif aux signes de fatigue, de stress ou de mal-être",
-            "Créer un environnement rassurant et adapté"
           ]
         },
         {
