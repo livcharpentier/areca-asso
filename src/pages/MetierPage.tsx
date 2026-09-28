@@ -42,7 +42,7 @@ const articles = [
         ]
       },
       {
-        subtitle: "Accompagnement personnalisé et gestion des transitions",
+        subtitle: "Accompagnement personnalisé",
         items: [
           "S'adapter au rythme, à la personnalité et aux besoins spécifiques de chaque enfant",
           "Favoriser l'expression des émotions et être à l'écoute",
