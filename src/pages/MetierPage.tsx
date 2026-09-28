@@ -194,8 +194,7 @@ const articles = [
         items: [
           "Analyser le scénario et les scènes impliquant l'enfant (contenu, émotions sollicitées, cascades, effets spéciaux)",
           "Identifier les risques liés aux lieux de tournage (extérieurs, hauteurs, eau, animaux, foule, conditions climatiques)",
-          "Évaluer les risques liés aux horaires (nuit, amplitude, décalages) et au rythme de tournage",
-          "Vérifier la conformité du dossier réglementaire (autorisation DRIEETS, certificat médical, Caisse des Dépôts)"
+          "Évaluer les risques liés aux horaires (nuit, amplitude, décalages) et au rythme de tournage"
         ]
       },
       {
