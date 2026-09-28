@@ -206,6 +206,13 @@ const ChartePage = () => {
       ]
     },
     {
+      id: "article10",
+      title: "Article 10 - Gestion des transitions",
+      items: [
+        "Identifier et signaler à la production les risques de difficulté de transition"
+      ]
+    },
+    {
       id: "article9",
       title: "Article 9 - Application de la charte",
       content: [
