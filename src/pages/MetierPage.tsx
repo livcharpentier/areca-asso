@@ -66,7 +66,6 @@ const articles = [
         items: [
           "Informer régulièrement la famille du déroulement du tournage",
           "Être disponible et réactif aux questions et préoccupations",
-          "Transmettre les informations importantes en temps réel",
           "Établir une relation de confiance dès la préparation"
         ]
       },
