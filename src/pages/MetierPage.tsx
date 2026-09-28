@@ -85,7 +85,7 @@ const articles = [
       {
         subtitle: "Professionnalisme",
         items: [
-          "Assurer une présence constante et fiable auprès de l'enfant",
+          "Assurer une présence constante et fiable auprès de l'enfant sans créer un lien de dépendance",
           "Tenir à jour un récapitulatif des temps de travail / repos / suivi scolaire",
           "Communiquer efficacement avec toutes les équipes"
         ]
