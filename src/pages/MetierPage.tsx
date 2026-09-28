@@ -9,7 +9,7 @@ const articles = [
     id: "preambule",
     title: "Préambule",
     content: [
-      "La présente charte définit les principes fondamentaux et les engagements du responsable des enfants dans le cadre de productions audiovisuelles et cinématographiques. Elle vise à garantir la protection, le bien-être et l'épanouissement des mineurs tout en facilitant la réalisation des projets artistiques."
+      "La présente charte définit les principes fondamentaux pour adhérer à l'association ARENCA. Elle vise à garantir la protection, le bien-être et l''panouissement des mineurs."
     ]
   },
   {
