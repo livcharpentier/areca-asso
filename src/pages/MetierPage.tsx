@@ -22,7 +22,7 @@ const articles = [
       },
       {
         subtitle: "Le respect de la législation",
-        items: ["Le responsable connaît la réglementation en vigueur concernant le travail des mineurs, notamment les durées de travail, les temps de repos et les autorisations nécessaires."]
+        items: ["Le responsable connaît la réglementation en vigueur concernant le travail des mineurs, notamment les durées de travail, les temps de repos et les autorisations nécessaires. Il s'engage à alerter immédiatement la production en cas de non-respect."]
       },
       {
         subtitle: "La bienveillance et la confidentialité",
