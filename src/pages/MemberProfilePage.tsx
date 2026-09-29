@@ -152,7 +152,7 @@ const MemberProfilePage = () => {
     doc.setFont("helvetica", "italic");
     doc.setFontSize(8);
     doc.setTextColor(...gris);
-    doc.text("ARECA — Association des Responsables Enfants Cinema et Audiovisuel", margin, 290);
+    doc.text("ARENCA — Association des Responsables Enfants Cinema et Audiovisuel", margin, 290);
 
     doc.save(`CV_${member.lastName}_${member.firstName}.pdf`);
   };
