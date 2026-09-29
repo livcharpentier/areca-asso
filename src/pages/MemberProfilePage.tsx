@@ -76,11 +76,13 @@ const MemberProfilePage = () => {
     doc.setTextColor(...noir);
     doc.text(`${member.firstName} ${member.lastName}`.toUpperCase(), margin, y + 8);
 
-    // Role
+    // Role — sur plusieurs lignes si necessaire
     doc.setFont("helvetica", "normal");
-    doc.setFontSize(11);
+    doc.setFontSize(10);
     doc.setTextColor(...bleu);
-    doc.text(member.role || "", margin, y + 16);
+    const roleLines = doc.splitTextToSize(member.role || "", contentW);
+    doc.text(roleLines, margin, y + 14);
+    const roleHeight = roleLines.length * 5;
 
     // Contact
     doc.setFontSize(9);
@@ -88,7 +90,7 @@ const MemberProfilePage = () => {
     let contactLine = "";
     if (member.phone) contactLine += member.phone + "  ";
     if (member.email) contactLine += member.email;
-    doc.text(contactLine, margin, y + 23);
+    doc.text(contactLine, margin, y + 14 + roleHeight + 3);
 
     y = 58;
 
