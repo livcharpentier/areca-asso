@@ -168,7 +168,7 @@ const Auth = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-primary/20 p-4">
       <Card className="w-full max-w-md border-border bg-card">
         <CardHeader>
-          <CardTitle className="text-3xl font-bangers text-primary tracking-wide text-center">ARECA</CardTitle>
+          <CardTitle className="text-3xl font-bangers text-primary tracking-wide text-center">ARENCA</CardTitle>
           <CardDescription className="text-foreground text-center">
             Association des Responsables Enfants dans le Cinéma et l'Audiovisuel
           </CardDescription>
