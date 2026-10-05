@@ -107,7 +107,6 @@ const ChartePage = () => {
           items: [
             "Adapter sa communication aux différents interlocuteurs (mise en scène, régie, HMC, technique)",
             "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes",
-            "Transmettre les besoins et contraintes de l'enfant aux équipes concernées"
           ]
         }
       ]
