@@ -179,12 +179,6 @@ const ChartePage = () => {
     },
     {
       id: "article9",
-      title: "Article 9 - Gestion du tournage",
-      items: [
-        "Identifier et signaler à la production les risques de difficulté de tournage",
-      "Si aucune mesure n'est prise, alerter les autorités compétentes"
-      ]
-    }
   ];
 
   return (
