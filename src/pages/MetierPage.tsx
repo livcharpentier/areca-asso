@@ -149,7 +149,7 @@ const articles = [
         subtitle: "Pendant le tournage",
         items: [
           "Réévaluer en continu les risques au regard des modifications de planning ou de mise en scène",
-          "Documenter les incidents et les mesures correctives dans le journal de bord"
+          "Documenter les incidents et les mesures mises en place"
         ]
       }
     ]
