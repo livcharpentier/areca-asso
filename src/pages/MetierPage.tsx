@@ -107,7 +107,7 @@ const articles = [
         subtitle: "Interface avec les équipes artistiques et techniques",
         items: [
           "Adapter sa communication aux différents interlocuteurs (mise en scène, régie, HMC, technique)",
-          "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes, et accompagner l'enfant dans la fin de ces liens à la clôture du tournage",
+          "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes",
           "Transmettre les besoins et contraintes de l'enfant aux équipes concernées"
         ]
       }
