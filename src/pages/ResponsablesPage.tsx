@@ -23,33 +23,45 @@ const ResponsablesPage = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              Espace Responsables Enfants
+              Espace Membres
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Outils et réglementations pour les responsables enfants du cinéma et de l'audiovisuel
+              Outils et ressources pour les membres de l'ARENCA
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Content avec Tabs */}
+      {/* Deux sections : RE et Animateurs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="compte-rendu" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-6">
-              <TabsTrigger value="compte-rendu">
-                <span className="hidden sm:inline">Compte Rendu Journalier</span>
+          <Tabs defaultValue="responsables" className="w-full">
+            <TabsList className="grid w-full grid-cols-2 mb-8">
+              <TabsTrigger value="responsables" className="text-base font-semibold">
+                🎬 Responsables Enfants
               </TabsTrigger>
-              <TabsTrigger value="reglementations">
-                <span className="hidden sm:inline">Réglementations</span>
-              </TabsTrigger>
-              <TabsTrigger value="vhss">
-                <span className="hidden sm:inline">VHSS</span>
-              </TabsTrigger>
-              <TabsTrigger value="positionnement">
-                <span className="hidden sm:inline">Positionnement</span>
+              <TabsTrigger value="animateurs" className="text-base font-semibold">
+                🎨 Animateurs
               </TabsTrigger>
             </TabsList>
+
+            {/* SECTION RESPONSABLES ENFANTS */}
+            <TabsContent value="responsables">
+              <Tabs defaultValue="compte-rendu" className="w-full">
+                <TabsList className="grid w-full grid-cols-4 mb-6">
+                  <TabsTrigger value="compte-rendu">
+                    <span className="hidden sm:inline">Compte Rendu</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="reglementations">
+                    <span className="hidden sm:inline">Réglementations</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="vhss">
+                    <span className="hidden sm:inline">VHSS</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="positionnement">
+                    <span className="hidden sm:inline">Positionnement</span>
+                  </TabsTrigger>
+                </TabsList>
 
             <TabsContent value="compte-rendu">
               <DailyReport />
@@ -77,6 +89,14 @@ const ResponsablesPage = () => {
                 </div>
               </div>
             </TabsContent>
+          </Tabs>
+            </TabsContent>
+
+            {/* SECTION ANIMATEURS */}
+            <TabsContent value="animateurs">
+              <AnimateursSection />
+            </TabsContent>
+
           </Tabs>
         </div>
       </section>
@@ -580,6 +600,193 @@ const VHSSContent = () => (
       </CardContent>
     </Card>
   </div>
+);
+
+/* Section Animateurs */
+const AnimateursSection = () => (
+  <Tabs defaultValue="charte-anim" className="w-full">
+    <TabsList className="grid w-full grid-cols-3 mb-6">
+      <TabsTrigger value="charte-anim">Charte Animateur</TabsTrigger>
+      <TabsTrigger value="idees-animation">Idées Animation</TabsTrigger>
+      <TabsTrigger value="jeux-rapides">Jeux Rapides</TabsTrigger>
+    </TabsList>
+
+    <TabsContent value="charte-anim">
+      <div className="space-y-4 max-w-3xl mx-auto">
+        <Card>
+          <CardHeader><CardTitle>Charte de l&apos;Animateur — ARENCA</CardTitle></CardHeader>
+          <CardContent className="space-y-4 text-sm text-foreground">
+            <div><p className="italic text-muted-foreground">La présente charte définit les principes fondamentaux pour adhérer à l&apos;ARENCA en tant qu&apos;animateur. Elle vise à garantir la protection et le bien-être des mineurs pendant les temps d&apos;attente sur les tournages.</p></div>
+            {[
+              { title: "Article 1 — Rôle", content: "L&apos;animateur intervient sous la responsabilité directe du Responsable Enfants. Il encadre les mineurs pendant les temps d&apos;attente et les périodes hors plateau." },
+              { title: "Article 2 — Engagement éthique", content: "Lors de l&apos;adhésion, chaque animateur déclare sur l&apos;honneur, par écrit, avoir un casier judiciaire vierge. La vérification incombe à la production." },
+            ].map((a, i) => (
+              <div key={i} className="border-t border-border pt-3">
+                <p className="font-semibold text-primary mb-1">{a.title}</p>
+                <p dangerouslySetInnerHTML={{__html: a.content}} />
+              </div>
+            ))}
+            <div className="border-t border-border pt-3">
+              <p className="font-semibold text-primary mb-2">Article 3 — Principes fondamentaux</p>
+              <ul className="space-y-1 ml-4">
+                <li>• L&apos;intérêt supérieur de l&apos;enfant est au coeur de toutes les actions</li>
+                <li>• Bienveillance et confidentialité des informations personnelles des mineurs et de leurs familles</li>
+              </ul>
+            </div>
+            <div className="border-t border-border pt-3">
+              <p className="font-semibold text-primary mb-2">Article 4 — Accompagnement</p>
+              <ul className="space-y-1 ml-4">
+                <li>• S&apos;adapter au rythme, à la personnalité et aux limites de chaque enfant</li>
+                <li>• Assurer une présence fiable sans créer de lien de dépendance</li>
+                <li>• Mettre en place des activités adaptées pendant les temps d&apos;attente</li>
+              </ul>
+            </div>
+            <div className="border-t border-border pt-3">
+              <p className="font-semibold text-primary mb-2">Article 5 — Relation avec les familles</p>
+              <ul className="space-y-1 ml-4">
+                <li>• Établir une relation de confiance avec les représentants légaux</li>
+                <li>• Ne prendre aucune décision concernant l&apos;enfant sans en référer au Responsable Enfants</li>
+                <li>• Respecter la confidentialité des informations familiales</li>
+              </ul>
+            </div>
+            <div className="border-t border-border pt-3">
+              <p className="font-semibold text-primary mb-2">Article 6 — Coordination</p>
+              <ul className="space-y-1 ml-4">
+                <li>• Travailler sous la supervision directe du Responsable Enfants</li>
+                <li>• Rendre compte régulièrement de l&apos;état des enfants au Responsable Enfants</li>
+                <li>• Ne pas intervenir auprès des équipes de production sans l&apos;accord du Responsable Enfants</li>
+                <li>• En cas de situation préoccupante, en informer immédiatement le Responsable Enfants</li>
+              </ul>
+            </div>
+            <div className="border-t border-border pt-3">
+              <p className="font-semibold text-primary mb-1">Article 7 — Application</p>
+              <p>L&apos;ARENCA peut reconsidérer l&apos;adhésion d&apos;un membre dont le comportement serait contraire aux valeurs de l&apos;association.</p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </TabsContent>
+
+    <TabsContent value="idees-animation">
+      <div className="space-y-4">
+        <Card>
+          <CardHeader><CardTitle>Idées d&apos;animation par tranche d&apos;âge</CardTitle></CardHeader>
+          <CardContent className="space-y-6">
+            {[
+              {
+                age: "3 — 6 ans",
+                color: "bg-yellow-50 border-yellow-200",
+                idees: [
+                  "Dessin libre et coloriage sur grand format",
+                  "Jeux de construction (Duplo, kapla)",
+                  "Histoires et contes racontés",
+                  "Jeux d&apos;imitation et de dînette",
+                  "Bulles de savon et jeux sensoriels",
+                  "Puzzles simples et encastrements",
+                ]
+              },
+              {
+                age: "6 — 10 ans",
+                color: "bg-green-50 border-green-200",
+                idees: [
+                  "Dessin, coloriage manga, origami",
+                  "Lego et constructions créatives",
+                  "Jeux de société simples (Uno, Dobble, Jungle Speed)",
+                  "Lecture de BD et livres illustrés",
+                  "Activités manuelles (découpage, collage)",
+                  "Jeux de cartes et mémory",
+                ]
+              },
+              {
+                age: "10 — 13 ans",
+                color: "bg-blue-50 border-blue-200",
+                idees: [
+                  "Jeux de société stratégiques (Puissance 4, Échecs, Uno)",
+                  "Dessin créatif, manga, BD",
+                  "Quiz et jeux de culture générale",
+                  "Écriture créative et scénarios",
+                  "Puzzles complexes",
+                  "Jeux de cartes à collectionner",
+                ]
+              },
+              {
+                age: "13 — 16 ans",
+                color: "bg-purple-50 border-purple-200",
+                idees: [
+                  "Jeux de société (Catan, Codenames, Time&apos;s Up)",
+                  "Quiz cinéma, musique, culture pop",
+                  "Écoute de musique et discussion",
+                  "Dessin, manga, illustrations",
+                  "Jeux de rôle simples",
+                  "Activités créatives libres",
+                ]
+              },
+            ].map((groupe, i) => (
+              <div key={i} className={`p-4 rounded-lg border ${groupe.color}`}>
+                <p className="font-bold text-lg mb-3">{groupe.age}</p>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-1 text-sm">
+                  {groupe.idees.map((idee, j) => (
+                    <li key={j} dangerouslySetInnerHTML={{__html: `• ${idee}`}} />
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+      </div>
+    </TabsContent>
+
+    <TabsContent value="jeux-rapides">
+      <div className="space-y-4">
+        <Card>
+          <CardHeader><CardTitle>Jeux rapides — Sans matériel</CardTitle></CardHeader>
+          <CardContent className="space-y-6">
+            {[
+              {
+                titre: "Pour tous (3-16 ans)",
+                jeux: [
+                  { nom: "Jacques a dit", desc: "Classique intemporel, adapter la complexité selon l&apos;âge" },
+                  { nom: "1, 2, 3 Soleil", desc: "Idéal pour se dégourdir les jambes entre deux prises" },
+                  { nom: "Le jeu du silence", desc: "Utile pour les moments de calme avant une scène" },
+                  { nom: "Devinettes", desc: "Animaux, objets, personnages célèbres — s&apos;adapte à tous les âges" },
+                ]
+              },
+              {
+                titre: "6 — 12 ans",
+                jeux: [
+                  { nom: "Le jeu du baccalauréat", desc: "Trouver un prénom, ville, animal... pour chaque lettre" },
+                  { nom: "Ni oui ni non", desc: "Répondre aux questions sans dire oui ou non" },
+                  { nom: "Le téléphone arabe", desc: "Chuchoter un message de personne en personne" },
+                  { nom: "Mime express", desc: "Mimer un film, un animal, un métier en moins d&apos;une minute" },
+                ]
+              },
+              {
+                titre: "10 — 16 ans",
+                jeux: [
+                  { nom: "Quiz cinéma/séries", desc: "Parfait pour créer du lien avec les ados passionnés" },
+                  { nom: "Le mot interdit", desc: "Faire deviner un mot sans utiliser certains mots clés" },
+                  { nom: "Qui suis-je ?", desc: "Personnage collé dans le dos à faire deviner" },
+                  { nom: "Story Cubes verbal", desc: "Inventer une histoire à partir de mots tirés au sort" },
+                ]
+              },
+            ].map((groupe, i) => (
+              <div key={i} className="bg-muted/50 p-4 rounded-lg border border-border">
+                <p className="font-bold text-primary mb-3">{groupe.titre}</p>
+                <div className="space-y-2">
+                  {groupe.jeux.map((jeu, j) => (
+                    <div key={j} className="flex gap-2 text-sm">
+                      <span className="font-semibold min-w-[140px]" dangerouslySetInnerHTML={{__html: jeu.nom}} />
+                      <span className="text-muted-foreground" dangerouslySetInnerHTML={{__html: `— ${jeu.desc}`}} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+      </div>
+    </TabsContent>
+  </Tabs>
 );
 
 export default ResponsablesPage;
