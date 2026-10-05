@@ -756,7 +756,7 @@ const AnimateursSection = () => (
                 jeux: [
                   { nom: "Le jeu du baccalauréat", desc: "Trouver un prénom, ville, animal... pour chaque lettre" },
                   { nom: "Ni oui ni non", desc: "Répondre aux questions sans dire oui ou non" },
-                  { nom: "Le téléphone arabe", desc: "Chuchoter un message de personne en personne" },
+                  { nom: "Le message secret", desc: "Chuchoter un message de personne en personne" },
                   { nom: "Mime express", desc: "Mimer un film, un animal, un métier en moins d&apos;une minute" },
                 ]
               },
