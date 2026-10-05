@@ -125,7 +125,6 @@ const articles = [
       {
         subtitle: "Engagement de vigilance",
         items: [
-          "En cas de non-respect de la législation, alerter immédiatement la production",
           "En cas de situation préoccupante, informer immédiatement la production et les parents"
         ]
       }
