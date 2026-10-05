@@ -162,7 +162,6 @@ const ChartePage = () => {
         "Le responsable des enfants s'engage à :"
       ],
       items: [
-        "Refuser toute participation de l'enfant à des scènes dangereuses ou inappropriées",
         "Alerter immédiatement en cas de non-respect de la législation",
         "Interrompre le tournage si la sécurité ou le bien-être de l'enfant est en danger",
         "Documenter toute situation problématique"
