@@ -149,7 +149,7 @@ const ChartePage = () => {
           subtitle: "En amont du tournage",
           items: [
             "Analyser le scénario et les scènes impliquant l'enfant",
-          "Identifier les risques liés aux lieux de tournage et aux horaires",
+          "Identifier les risques liés aux lieux de tournage, aux horaires…",
           "Si nécessaire, inviter la production à solliciter d'autres intervenants (coach, régleur cascade, psychologue, coordinateur d'intimité, dresseur animalier…)"
           ]
         },
