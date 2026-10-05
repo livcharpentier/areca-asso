@@ -8,7 +8,7 @@ const ChartePage = () => {
       id: "preambule",
       title: "Préambule",
       content: [
-      "La présente charte définit les principes fondamentaux pour adhérer à l'association ARENCA. Elle vise à garantir la protection, le bien-être et l''panouissement des mineurs. L'ARENCA peut reconsidérer l'adhésion d'un membre dont le comportement serait contraire aux valeurs de l'association."
+      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineurs.\nL’ARENCA peut reconsidérer l’adhésion d’un membre dont le comportement serait contraire à la charte."
       ]
     },
     {
