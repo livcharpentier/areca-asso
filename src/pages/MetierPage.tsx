@@ -164,8 +164,8 @@ const articles = [
     ]
   },
   {
-    id: "article8",
-    title: "Article 8 - Analyse et prévention des risques",
+    id: "article7",
+    title: "Article 7 - Analyse et prévention des risques",
     content: [
       "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
     ],
@@ -189,15 +189,15 @@ const articles = [
     ]
   },
   {
-    id: "article9",
-    title: "Article 9 - Application de la charte",
+    id: "article8",
+    title: "Article 8 - Application de la charte",
     content: [
       "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
     ]
   },
   {
-    id: "article10",
-    title: "Article 10 - Gestion du tournage",
+    id: "article9",
+    title: "Article 9 - Gestion du tournage",
     items: [
       "Identifier et signaler à la production les risques de difficulté de tournage"
     ]
