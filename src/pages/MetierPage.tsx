@@ -179,7 +179,8 @@ const articles = [
     id: "article10",
     title: "Article 10 - Gestion du tournage",
     items: [
-      "Identifier et signaler à la production les risques de difficulté de tournage"
+      "Identifier et signaler à la production les risques de difficulté de tournage",
+      "Si aucune mesure n'est prise, alerter les autorités compétentes"
     ]
   }
 ];
