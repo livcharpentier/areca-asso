@@ -106,6 +106,7 @@ const articles = [
     title: "Article 5 - Compétences et formation continue",
     content: ["Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"],
     items: [
+      "Se tenir informé des évolutions législatives et réglementaires",
       "Développer ses connaissances en psychologie de l'enfant",
       "Échanger avec ses pairs sur les bonnes pratiques"
     ]
