@@ -158,9 +158,8 @@ const articles = [
     id: "article7",
     title: "Article 8 - Accompagnement post-tournage",
     items: [
-      "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage",
+      "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage, notamment lors des périodes de promotion et de sortie du film",
       "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne",
-      "Rester disponible si les parents ont besoin d'un contact rassurant, notamment lors des périodes de promotion et de sortie du film",
     ]
   },
   {
