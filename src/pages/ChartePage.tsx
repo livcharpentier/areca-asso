@@ -21,7 +21,7 @@ const ChartePage = () => {
         },
         {
           subtitle: "Le respect de la législation",
-          items: ["Le responsable connaît la réglementation en vigueur concernant le travail des mineurs, notamment les durées de travail, les temps de repos et les autorisations nécessaires. Il s'engage à alerter immédiatement la production en cas de non-respect."]
+          items: ["Le responsable connaît la réglementation en vigueur concernant le travail des mineurs, notamment les durées de travail, les temps de repos et les autorisations nécessaires. Il s'engage à alerter immédiatement la production en cas de non-respect.", "Si aucune mesure n'est prise, le responsable enfant peut alerter les autorités compétentes"]
         },
         {
           subtitle: "La bienveillance et la confidentialité",
