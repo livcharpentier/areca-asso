@@ -157,7 +157,6 @@ const ChartePage = () => {
           subtitle: "Pendant le tournage",
           items: [
             "Réévaluer en continu les risques au regard des modifications de planning ou de mise en scène",
-            "Alerter immédiatement la production et, si nécessaire, les autorités compétentes",
             "Documenter les incidents et les mesures correctives dans le journal de bord"
           ]
         }
