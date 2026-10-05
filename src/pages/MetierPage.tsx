@@ -121,19 +121,20 @@ const articles = [
       "Reconnaître les limites de son intervention et orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
       "Ne pas se substituer aux parents dans leur rôle éducatif",
       "En cas de situation préoccupante, en informer la production et les parents"
+    ],
+    sections: [
+      {
+        subtitle: "Engagement de vigilance",
+        items: [
+          "Alerter immédiatement en cas de non-respect de la législation",
+          "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production"
+        ]
+      }
     ]
   },
   {
     id: "article7",
-    title: "Article 7 - Engagement de vigilance",
-    items: [
-      "Alerter immédiatement en cas de non-respect de la législation",
-      "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production",
-    ]
-  },
-  {
-    id: "article7",
-    title: "Article 8 - Analyse et prévention des risques",
+    title: "Article 7 - Analyse et prévention des risques",
     content: [
       "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
     ],
@@ -157,8 +158,8 @@ const articles = [
     ]
   },
   {
-    id: "article9",
-    title: "Article 9 - Accompagnement post-tournage",
+    id: "article7",
+    title: "Article 8 - Accompagnement post-tournage",
     items: [
       "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage",
       "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne",
@@ -166,15 +167,15 @@ const articles = [
     ]
   },
   {
-    id: "article10",
-    title: "Article 10 - Application de la charte",
+    id: "article7",
+    title: "Article 9 - Application de la charte",
     content: [
       "L'ARENCA peut reconsidérer l'adhésion d'un membre dont le comportement serait contraire aux valeurs de l'association."
     ]
   },
   {
-    id: "article11",
-    title: "Article 11 - Gestion du tournage",
+    id: "article7",
+    title: "Article 10 - Gestion du tournage",
     items: [
       "Identifier et signaler à la production les risques de difficulté de tournage",
       "Si aucune mesure n'est prise, alerter les autorités compétentes"
