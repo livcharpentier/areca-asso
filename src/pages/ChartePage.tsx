@@ -142,7 +142,7 @@ const ChartePage = () => {
           items: [
             "Traiter tous les intervenants avec respect et professionnalisme",
             "Refuser toute forme de discrimination ou de comportement inapproprié",
-            "Signaler toute situation préoccupante aux autorités compétentes"
+            "En cas de situation préoccupante, en informer en priorité la production. Si aucune mesure n'est prise, alerter les autorités compétentes"
           ]
         },
         {
