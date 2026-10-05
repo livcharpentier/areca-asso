@@ -203,7 +203,7 @@ const articles = [
     id: "article9",
     title: "Article 9 - Application de la charte",
     content: [
-      "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
+      "L'ARENCA peut reconsidérer l'adhésion d'un membre dont le comportement serait contraire aux valeurs de l'association."
     ]
   },
   {
