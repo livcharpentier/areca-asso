@@ -163,7 +163,7 @@ const ChartePage = () => {
       ],
       items: [
         "Alerter immédiatement en cas de non-respect de la législation",
-        "Interrompre le tournage si la sécurité ou le bien-être de l'enfant est en danger",
+        "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production",
         "Documenter toute situation problématique"
       ]
     },
