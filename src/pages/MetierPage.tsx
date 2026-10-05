@@ -161,7 +161,6 @@ const articles = [
     items: [
       "Alerter immédiatement en cas de non-respect de la législation",
       "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production",
-      "Documenter toute situation problématique"
     ]
   },
   {
