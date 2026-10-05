@@ -190,14 +190,25 @@ const articles = [
   },
   {
     id: "article8",
-    title: "Article 8 - Application de la charte",
+    title: "Article 8 - Accompagnement post-tournage",
+    items: [
+      "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage",
+      "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne",
+      "Rester disponible si les parents ont besoin d'un contact rassurant, notamment lors des périodes de promotion et de sortie du film",
+      "Durant la promotion et la sortie du film, rester attentif aux éventuelles difficultés que peut rencontrer l'enfant et sa famille : réactions à l'école, attention des médias, des réseaux sociaux, etc. Orienter vers des professionnels adaptés si nécessaire",
+      "Veiller à la reprise scolaire en se renseignant sur d'éventuels écarts, et si nécessaire, alerter la production pour la mise en place de cours de remise à niveau"
+    ]
+  },
+  {
+    id: "article9",
+    title: "Article 9 - Application de la charte",
     content: [
       "Cette charte engage moralement et professionnellement le responsable des enfants. Tout manquement grave aux principes énoncés peut entraîner une remise en cause de l'exercice de la profession."
     ]
   },
   {
-    id: "article9",
-    title: "Article 9 - Gestion du tournage",
+    id: "article10",
+    title: "Article 10 - Gestion du tournage",
     items: [
       "Identifier et signaler à la production les risques de difficulté de tournage"
     ]
