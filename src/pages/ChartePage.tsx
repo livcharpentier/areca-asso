@@ -120,7 +120,8 @@ const ChartePage = () => {
       "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
       "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
       "Reconnaître les limites de son intervention et orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
-      "Ne pas se substituer aux parents dans leur rôle éducatif"
+      "Ne pas se substituer aux parents dans leur rôle éducatif",
+      "En cas de situation préoccupante, en informer la production et les parents"
     ]
   },
   {
