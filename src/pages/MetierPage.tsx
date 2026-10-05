@@ -125,7 +125,6 @@ const articles = [
   {
     id: "article7",
     title: "Article 7 - Engagement de vigilance",
-    content: ["Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"],
     items: [
       "Alerter immédiatement en cas de non-respect de la législation",
       "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production",
