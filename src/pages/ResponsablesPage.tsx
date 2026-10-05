@@ -614,6 +614,14 @@ const AnimateursSection = () => (
 
     <TabsContent value="charte-anim">
       <div className="space-y-4 max-w-3xl mx-auto">
+        <div className="flex justify-end">
+          <button
+            onClick={() => window.open('/Charte_Animateur_ARENCA.pdf', '_blank')}
+            className="bg-accent text-white hover:bg-accent/90 font-semibold py-2 px-4 rounded-lg flex items-center gap-2 text-sm transition-all"
+          >
+            ⬇ Télécharger la charte PDF
+          </button>
+        </div>
         <Card>
           <CardHeader><CardTitle>Charte de l&apos;Animateur — ARENCA</CardTitle></CardHeader>
           <CardContent className="space-y-4 text-sm text-foreground">
