@@ -114,30 +114,15 @@ const articles = [
   {
     id: "article6",
     title: "Article 6 - Déontologie professionnelle",
-    sections: [
-      {
-        subtitle: "Neutralité et objectivité",
-        items: [
-          "Maintenir une position neutre dans les relations professionnelles",
-          "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
-        ]
-      },
-      {
-        subtitle: "Respect des personnes",
-        items: [
-          "Traiter tous les intervenants avec respect et professionnalisme",
-          "Refuser toute forme de discrimination ou de comportement inapproprié",
-          "En cas de situation préoccupante, en informer en priorité la production. Si aucune mesure n'est prise, alerter les autorités compétentes"
-        ]
-      },
-      {
-        subtitle: "Limites de la fonction",
-        items: [
-          "Reconnaître les limites de son intervention",
-          "Orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
-          "Ne pas se substituer aux parents dans leur rôle éducatif"
-        ]
-      }
+    items: [
+      "Maintenir une position neutre dans les relations professionnelles",
+      "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
+      "Traiter tous les intervenants avec respect et professionnalisme",
+      "Refuser toute forme de discrimination ou de comportement inapproprié",
+      "En cas de situation préoccupante, en informer en priorité la production. Si aucune mesure n'est prise, alerter les autorités compétentes",
+      "Reconnaître les limites de son intervention",
+      "Orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
+      "Ne pas se substituer aux parents dans leur rôle éducatif"
     ]
   },
   {
