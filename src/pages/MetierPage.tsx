@@ -120,6 +120,7 @@ const articles = [
       "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
       "Reconnaître les limites de son intervention",
       "Orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
+      "En cas de situation préoccupante, en informer la production et les parents",
       "Ne pas se substituer aux parents dans leur rôle éducatif"
     ]
   },
