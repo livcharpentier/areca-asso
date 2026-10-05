@@ -118,9 +118,7 @@ const ChartePage = () => {
     items: [
       "Maintenir une position neutre dans les relations professionnelles",
       "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
-      "Traiter tous les intervenants avec respect et professionnalisme",
-      "Refuser toute forme de discrimination ou de comportement inapproprié",
-      "En cas de situation préoccupante, en informer en priorité la production. Si aucune mesure n'est prise, alerter les autorités compétentes",
+      "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
       "Reconnaître les limites de son intervention",
       "Orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
       "Ne pas se substituer aux parents dans leur rôle éducatif"
