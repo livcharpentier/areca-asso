@@ -90,24 +90,13 @@ const articles = [
         ]
       },
       {
-        subtitle: "Coordination et médiation",
+        subtitle: "Coordination et médiation avec les équipes artistiques et techniques",
         items: [
           "Faire le lien entre la famille, l'enfant et chaque département concerné. S'assurer de la bonne transmission des informations liées à l'analyse des risques (alimentation, relation aux animaux, etc…)",
           "Anticiper et résoudre les situations conflictuelles",
-        ]
-      },
-      {
-        subtitle: "",
-        items: [
           "Planifier et coordonner la logistique et les conditions matérielles d'accueil : transport, hébergement, repas (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
-          "Constituer et superviser une équipe d'animation si nécessaire"
-        ]
-      },
-      {
-        subtitle: "Interface avec les équipes artistiques et techniques",
-        items: [
-          "Adapter sa communication aux différents interlocuteurs (mise en scène, régie, HMC, technique)",
-          "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes",
+          "Constituer et superviser une équipe d'animation/trice si nécessaire",
+          "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes"
         ]
       }
     ]
