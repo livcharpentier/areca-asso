@@ -605,11 +605,11 @@ const VHSSContent = () => (
 /* Section Animateurs */
 const AnimateursSection = () => (
   <Tabs defaultValue="charte-anim" className="w-full">
-    <TabsList className="grid w-full grid-cols-2 h-auto gap-1 mb-6">
-      <TabsTrigger value="charte-anim">Charte</TabsTrigger>
-      <TabsTrigger value="idees-animation">Idées Animation</TabsTrigger>
-      <TabsTrigger value="jeux-rapides">Jeux Rapides</TabsTrigger>
-      <TabsTrigger value="jeux-societe">Jeux de Société</TabsTrigger>
+    <TabsList className="grid w-full grid-cols-4 mb-6">
+      <TabsTrigger value="charte-anim" className="text-xs">Charte</TabsTrigger>
+      <TabsTrigger value="idees-animation" className="text-xs">Animations</TabsTrigger>
+      <TabsTrigger value="jeux-rapides" className="text-xs">Jeux Rapides</TabsTrigger>
+      <TabsTrigger value="jeux-societe" className="text-xs">Jeux Société</TabsTrigger>
     </TabsList>
 
     <TabsContent value="charte-anim">
