@@ -809,6 +809,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Classique indémodable, simple et rapide</p></div>
                 <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Jeu de réflexes, crée beaucoup d&apos;animation</p></div>
                 <div><p className="font-semibold">Zombie Kidz</p><p className="text-muted-foreground">Jeu coopératif, idéal pour apprendre à jouer ensemble</p></div>
+                <div><p className="font-semibold">Loup Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, à partir de 6 ans, parfait en groupe</p></div>
               </div>
             </div>
 
@@ -833,6 +834,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Jeu coopératif d&apos;enquête, crée des échanges</p></div>
                 <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner sans parler, universel et créatif</p></div>
                 <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Rapide, drôle et plein de rebondissements</p></div>
+                <div><p className="font-semibold">2 Pommes 3 Pins</p><p className="text-muted-foreground">Jeu de culture générale décalé, parfait pour les ados, crée beaucoup de fous rires</p></div>
               </div>
             </div>
 
