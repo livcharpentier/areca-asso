@@ -174,14 +174,12 @@ const ChartePage = () => {
     },
     {
       id: "article9",
-      title: "Article 9 - Application de la charte",
       content: [
-        "L'ARENCA peut reconsidérer l'adhésion d'un membre dont le comportement serait contraire aux valeurs de l'association."
       ]
     },
     {
-      id: "article10",
-      title: "Article 10 - Gestion du tournage",
+      id: "article9",
+      title: "Article 9 - Gestion du tournage",
       items: [
         "Identifier et signaler à la production les risques de difficulté de tournage",
       "Si aucune mesure n'est prise, alerter les autorités compétentes"
