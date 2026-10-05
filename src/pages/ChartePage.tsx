@@ -107,7 +107,8 @@ const ChartePage = () => {
         "Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"
       ],
       items: [
-        "Développer ses connaissances en psychologie de l'enfant",
+        "Se tenir informé des évolutions législatives et réglementaires",
+      "Développer ses connaissances en psychologie de l'enfant",
         "Échanger avec ses pairs sur les bonnes pratiques"
       ]
     },
