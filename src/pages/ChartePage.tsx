@@ -126,7 +126,7 @@ const ChartePage = () => {
       {
         subtitle: "Engagement de vigilance",
         items: [
-          "Alerter immédiatement en cas de non-respect de la législation",
+          "En cas de non-respect de la législation, alerter immédiatement la production",
           "En cas de situation préoccupante, informer immédiatement la production et les parents"
         ]
       }
@@ -136,7 +136,7 @@ const ChartePage = () => {
     id: "article7",
       title: "Article 7 - Engagement de vigilance",
       items: [
-        "Alerter immédiatement en cas de non-respect de la législation",
+        "En cas de non-respect de la législation, alerter immédiatement la production",
         "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production",
       ]
     },
