@@ -121,7 +121,6 @@ const ChartePage = () => {
           items: [
             "Maintenir une position neutre dans les relations professionnelles",
             "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
-            "Éviter tout conflit d'intérêts"
           ]
         },
         {
