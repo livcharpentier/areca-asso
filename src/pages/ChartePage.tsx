@@ -104,12 +104,9 @@ const ChartePage = () => {
       id: "article5",
       title: "Article 5 - Compétences et formation continue",
       content: [
-        "Le responsable des enfants s'engage à :"
+        "Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"
       ],
       items: [
-        "Maintenir et développer ses compétences professionnelles",
-      "Se tenir informé des évolutions législatives et réglementaires",
-        "Se tenir informé des évolutions législatives et réglementaires",
         "Développer ses connaissances en psychologie de l'enfant",
         "Échanger avec ses pairs sur les bonnes pratiques"
       ]
@@ -148,7 +145,7 @@ const ChartePage = () => {
       id: "article7",
       title: "Article 7 - Engagement de vigilance",
       content: [
-        "Le responsable des enfants s'engage à :"
+        "Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"
       ],
       items: [
         "Alerter immédiatement en cas de non-respect de la législation",
