@@ -55,7 +55,7 @@ const Members = () => {
   const categories = [
     { title: "Responsables des enfants", description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
     { title: "Précepteurs", description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
-    { title: "Animateurs", description: "Encadrants jeunesse", slug: "animateurs" },
+    { title: "Animateur/trices", description: "Encadrants jeunesse", slug: "animateurs" },
   ];
 
   return (
