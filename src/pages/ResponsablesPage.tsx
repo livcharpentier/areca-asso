@@ -623,7 +623,7 @@ const AnimateursSection = () => (
           </button>
         </div>
         <Card>
-          <CardHeader><CardTitle>Charte de l&apos;Animateur — ARENCA</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Charte de l&apos;Animateur/trice — ARENCA</CardTitle></CardHeader>
           <CardContent className="space-y-4 text-sm text-foreground">
             <div><p className="italic text-muted-foreground">La présente charte définit les principes fondamentaux pour adhérer à l&apos;ARENCA en tant qu&apos;animateur. Elle vise à garantir la protection et le bien-être des mineurs pendant les temps d&apos;attente sur les tournages.</p></div>
             {[
