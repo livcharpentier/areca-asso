@@ -167,7 +167,7 @@ const ChartePage = () => {
       title: "Article 8 - Accompagnement post-tournage",
       items: [
         "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage, notamment lors des périodes de promotion et de sortie du film",
-        "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne",
+        "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne et scolaire",
         "Durant la promotion et la sortie du film, rester attentif aux éventuelles difficultés que peut rencontrer l'enfant et sa famille : réactions à l'école, attention des médias, des réseaux sociaux, etc. Orienter vers des professionnels adaptés si nécessaire",
         "Veiller à la reprise scolaire en se renseignant sur d'éventuels écarts, et si nécessaire, alerter la production pour la mise en place de cours de remise à niveau"
       ]
