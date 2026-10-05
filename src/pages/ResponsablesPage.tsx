@@ -38,10 +38,10 @@ const ResponsablesPage = () => {
           <Tabs defaultValue="responsables" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
               <TabsTrigger value="responsables" className="text-base font-semibold">
-                🎬 Responsables Enfants
+                Responsables Enfants
               </TabsTrigger>
               <TabsTrigger value="animateurs" className="text-base font-semibold">
-                🎨 Animateurs
+                Animateurs
               </TabsTrigger>
             </TabsList>
 
