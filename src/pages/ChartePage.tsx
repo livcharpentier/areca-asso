@@ -121,14 +121,13 @@ const ChartePage = () => {
       "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
       "Reconnaître les limites de son intervention et orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
       "Ne pas se substituer aux parents dans leur rôle éducatif",
-      "En cas de situation préoccupante, en informer la production et les parents"
     ],
     sections: [
       {
         subtitle: "Engagement de vigilance",
         items: [
           "Alerter immédiatement en cas de non-respect de la législation",
-          "Si la sécurité ou le bien-être de l'enfant est en danger, alerter immédiatement la production"
+          "En cas de situation préoccupante, informer immédiatement la production et les parents"
         ]
       }
     ]
