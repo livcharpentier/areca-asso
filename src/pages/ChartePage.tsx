@@ -108,6 +108,7 @@ const ChartePage = () => {
       ],
       items: [
         "Maintenir et développer ses compétences professionnelles",
+      "Se tenir informé des évolutions législatives et réglementaires",
         "Se tenir informé des évolutions législatives et réglementaires",
         "Développer ses connaissances en psychologie de l'enfant",
         "Échanger avec ses pairs sur les bonnes pratiques"
