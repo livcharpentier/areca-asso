@@ -118,9 +118,7 @@ const articles = [
       "Maintenir une position neutre dans les relations professionnelles",
       "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
       "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
-      "Reconnaître les limites de son intervention",
-      "Orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
-      "En cas de situation préoccupante, en informer la production et les parents",
+      "Reconnaître les limites de son intervention et orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
       "Ne pas se substituer aux parents dans leur rôle éducatif"
     ]
   },
@@ -165,8 +163,6 @@ const articles = [
       "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage",
       "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne",
       "Rester disponible si les parents ont besoin d'un contact rassurant, notamment lors des périodes de promotion et de sortie du film",
-      "Durant la promotion et la sortie du film, rester attentif aux éventuelles difficultés que peut rencontrer l'enfant et sa famille : réactions à l'école, attention des médias, des réseaux sociaux, etc. Orienter vers des professionnels adaptés si nécessaire",
-      "Veiller à la reprise scolaire en se renseignant sur d'éventuels écarts, et si nécessaire, alerter la production pour la mise en place de cours de remise à niveau"
     ]
   },
   {
