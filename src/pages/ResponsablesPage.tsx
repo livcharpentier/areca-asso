@@ -41,7 +41,7 @@ const ResponsablesPage = () => {
                 Responsables Enfants
               </TabsTrigger>
               <TabsTrigger value="animateurs" className="text-base font-semibold">
-                Animateurs
+                Animateur/trices
               </TabsTrigger>
             </TabsList>
 
