@@ -609,6 +609,7 @@ const AnimateursSection = () => (
       <TabsTrigger value="charte-anim">Charte Animateur</TabsTrigger>
       <TabsTrigger value="idees-animation">Idées Animation</TabsTrigger>
       <TabsTrigger value="jeux-rapides">Jeux Rapides</TabsTrigger>
+      <TabsTrigger value="jeux-societe">Jeux de Société</TabsTrigger>
     </TabsList>
 
     <TabsContent value="charte-anim">
@@ -786,6 +787,57 @@ const AnimateursSection = () => (
         </Card>
       </div>
     </TabsContent>
+    <TabsContent value="jeux-societe">
+      <div className="space-y-4">
+        <Card>
+          <CardHeader><CardTitle>Jeux de société recommandés</CardTitle></CardHeader>
+          <CardContent className="space-y-6">
+
+            <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">6 — 10 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Mille Sabord</p><p className="text-muted-foreground">Jeu de dés pirate, rapide et rigolo, parfait pour les petits</p></div>
+                <div><p className="font-semibold">Dobble</p><p className="text-muted-foreground">Réflexes et observation, fonctionne avec tout le monde</p></div>
+                <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Classique indémodable, simple et rapide</p></div>
+                <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Jeu de réflexes, crée beaucoup d&apos;animation</p></div>
+                <div><p className="font-semibold">Zombie Kidz</p><p className="text-muted-foreground">Jeu coopératif, idéal pour apprendre à jouer ensemble</p></div>
+              </div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">10 — 13 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Mito</p><p className="text-muted-foreground">Bluff et déduction, très populaire chez les ados</p></div>
+                <div><p className="font-semibold">Wasabi</p><p className="text-muted-foreground">Jeu de sushis et de stratégie, drôle et coloré</p></div>
+                <div><p className="font-semibold">Flip Seven</p><p className="text-muted-foreground">Jeu de cartes addictif, facile à apprendre</p></div>
+                <div><p className="font-semibold">Cluster</p><p className="text-muted-foreground">Jeu de réflexion et de placement, stimule la stratégie</p></div>
+                <div><p className="font-semibold">Zombie Buzz</p><p className="text-muted-foreground">Rapide et nerveux, idéal pour les temps courts</p></div>
+                <div><p className="font-semibold">Skull King</p><p className="text-muted-foreground">Jeu de plis pirate, facile et très amusant</p></div>
+              </div>
+            </div>
+
+            <div className="bg-purple-50 border border-purple-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">13 — 16 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Time&apos;s Up</p><p className="text-muted-foreground">Faire deviner des noms célèbres, crée beaucoup de rires</p></div>
+                <div><p className="font-semibold">Codenames</p><p className="text-muted-foreground">Jeu d&apos;espions en équipe, stimule la communication</p></div>
+                <div><p className="font-semibold">Blanc Manger Coco</p><p className="text-muted-foreground">Humour absurde, parfait pour détendre l&apos;atmosphère</p></div>
+                <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Jeu coopératif d&apos;enquête, crée des échanges</p></div>
+                <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner sans parler, universel et créatif</p></div>
+                <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Rapide, drôle et plein de rebondissements</p></div>
+              </div>
+            </div>
+
+            <div className="bg-muted/50 border border-border p-4 rounded-lg">
+              <p className="font-semibold text-primary mb-2">Conseil pratique</p>
+              <p className="text-sm text-foreground">Privilégier les jeux courts (15-20 min max) adaptés aux interruptions fréquentes du tournage. Avoir toujours 2-3 jeux de niveaux différents pour s&apos;adapter rapidement au groupe.</p>
+            </div>
+
+          </CardContent>
+        </Card>
+      </div>
+    </TabsContent>
+
   </Tabs>
 );
 
