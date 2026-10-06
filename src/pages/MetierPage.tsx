@@ -162,6 +162,17 @@ const articles = [
       "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne et scolaire",
     ]
   }
+  {
+    id: "article9",
+    title: "Article 9 - L'animateur/trice",
+    items: [
+      "Lors de l'adhésion, chaque animateur/trice déclare sur l'honneur, par écrit, avoir un casier judiciaire vierge. La vérification incombe à la production.",
+      "L'animateur/trice intervient en soutien du responsable des enfants et exerce ses missions sous sa supervision directe. Il/elle peut être amené(e) à assister toutes les missions précédemment citées.",
+      "Il/elle rend régulièrement compte au responsable des enfants de toute observation, difficulté ou situation préoccupante.",
+      "Il/elle ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer préalablement au responsable des enfants, sauf urgence mettant en jeu la sécurité de l'enfant.",
+      "Il/elle adhère pleinement aux principes fondamentaux énoncés dans la présente charte et s'engage à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l'enfant, dans la limite de son périmètre d'intervention."
+    ]
+  }
 ];
 
 const CharteContent = () => (
