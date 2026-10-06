@@ -171,9 +171,7 @@ const ChartePage = () => {
         "Durant la promotion et la sortie du film, rester attentif aux éventuelles difficultés que peut rencontrer l'enfant et sa famille : réactions à l'école, attention des médias, des réseaux sociaux, etc. Orienter vers des professionnels adaptés si nécessaire",
         "Veiller à la reprise scolaire en se renseignant sur d'éventuels écarts, et si nécessaire, alerter la production pour la mise en place de cours de remise à niveau"
       ]
-    },
-    {
-      id: "article9",
+    }
   ];
 
   return (
