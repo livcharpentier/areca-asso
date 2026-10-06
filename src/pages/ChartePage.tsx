@@ -174,11 +174,6 @@ const ChartePage = () => {
     },
     {
       id: "article9",
-      content: [
-      ]
-    },
-    {
-      id: "article9",
   ];
 
   return (
