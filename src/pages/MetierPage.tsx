@@ -164,11 +164,6 @@ const articles = [
   },
   {
     id: "article7",
-    content: [
-    ]
-  },
-  {
-    id: "article7",
 ];
 
 const CharteContent = () => (
