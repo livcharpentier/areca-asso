@@ -604,77 +604,12 @@ const VHSSContent = () => (
 
 /* Section Animateurs */
 const AnimateursSection = () => (
-  <Tabs defaultValue="charte-anim" className="w-full">
-    <TabsList className="grid w-full grid-cols-4 mb-6">
-      <TabsTrigger value="charte-anim" className="text-xs">Charte</TabsTrigger>
+  <Tabs defaultValue="idees-animation" className="w-full">
+    <TabsList className="grid w-full grid-cols-3 mb-6">
       <TabsTrigger value="idees-animation" className="text-xs">Animations</TabsTrigger>
       <TabsTrigger value="jeux-rapides" className="text-xs">Jeux Rapides</TabsTrigger>
       <TabsTrigger value="jeux-societe" className="text-xs">Jeux Société</TabsTrigger>
     </TabsList>
-
-    <TabsContent value="charte-anim">
-      <div className="space-y-4 max-w-3xl mx-auto">
-        <div className="flex justify-end">
-          <button
-            onClick={() => window.open('/Charte_Animateur_ARENCA.pdf', '_blank')}
-            className="bg-accent text-white hover:bg-accent/90 font-semibold py-2 px-4 rounded-lg flex items-center gap-2 text-sm transition-all"
-          >
-            ⬇ Télécharger la charte PDF
-          </button>
-        </div>
-        <Card>
-          <CardHeader><CardTitle>Charte de l&apos;Animateur/trice — ARENCA</CardTitle></CardHeader>
-          <CardContent className="space-y-4 text-sm text-foreground">
-            <div><p className="italic text-muted-foreground">La présente charte définit les principes fondamentaux pour adhérer à l&apos;ARENCA en tant qu&apos;animateur. Elle vise à garantir la protection et le bien-être des mineurs pendant les temps d&apos;attente sur les tournages.</p></div>
-            {[
-              { title: "Article 1 — Rôle", content: "L&apos;animateur intervient sous la responsabilité directe du Responsable Enfants. Il encadre les mineurs pendant les temps d&apos;attente et les périodes hors plateau." },
-              { title: "Article 2 — Engagement éthique", content: "Lors de l&apos;adhésion, chaque animateur déclare sur l&apos;honneur, par écrit, avoir un casier judiciaire vierge. La vérification incombe à la production." },
-            ].map((a, i) => (
-              <div key={i} className="border-t border-border pt-3">
-                <p className="font-semibold text-primary mb-1">{a.title}</p>
-                <p dangerouslySetInnerHTML={{__html: a.content}} />
-              </div>
-            ))}
-            <div className="border-t border-border pt-3">
-              <p className="font-semibold text-primary mb-2">Article 3 — Principes fondamentaux</p>
-              <ul className="space-y-1 ml-4">
-                <li>• L&apos;intérêt supérieur de l&apos;enfant est au coeur de toutes les actions</li>
-                <li>• Bienveillance et confidentialité des informations personnelles des mineurs et de leurs familles</li>
-              </ul>
-            </div>
-            <div className="border-t border-border pt-3">
-              <p className="font-semibold text-primary mb-2">Article 4 — Accompagnement</p>
-              <ul className="space-y-1 ml-4">
-                <li>• S&apos;adapter au rythme, à la personnalité et aux limites de chaque enfant</li>
-                <li>• Assurer une présence fiable sans créer de lien de dépendance</li>
-                <li>• Mettre en place des activités adaptées pendant les temps d&apos;attente</li>
-              </ul>
-            </div>
-            <div className="border-t border-border pt-3">
-              <p className="font-semibold text-primary mb-2">Article 5 — Relation avec les familles</p>
-              <ul className="space-y-1 ml-4">
-                <li>• Établir une relation de confiance avec les représentants légaux</li>
-                <li>• Ne prendre aucune décision concernant l&apos;enfant sans en référer au Responsable Enfants</li>
-                <li>• Respecter la confidentialité des informations familiales</li>
-              </ul>
-            </div>
-            <div className="border-t border-border pt-3">
-              <p className="font-semibold text-primary mb-2">Article 6 — Coordination</p>
-              <ul className="space-y-1 ml-4">
-                <li>• Travailler sous la supervision directe du Responsable Enfants</li>
-                <li>• Rendre compte régulièrement de l&apos;état des enfants au Responsable Enfants</li>
-                <li>• Ne pas intervenir auprès des équipes de production sans l&apos;accord du Responsable Enfants</li>
-                <li>• En cas de situation préoccupante, en informer immédiatement le Responsable Enfants</li>
-              </ul>
-            </div>
-            <div className="border-t border-border pt-3">
-              <p className="font-semibold text-primary mb-1">Article 7 — Application</p>
-              <p>L&apos;ARENCA peut reconsidérer l&apos;adhésion d&apos;un membre dont le comportement serait contraire aux valeurs de l&apos;association.</p>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    </TabsContent>
 
     <TabsContent value="idees-animation">
       <div className="space-y-4">
