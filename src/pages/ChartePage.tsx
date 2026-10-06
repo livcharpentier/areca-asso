@@ -171,6 +171,17 @@ const ChartePage = () => {
         "Durant la promotion et la sortie du film, rester attentif aux éventuelles difficultés que peut rencontrer l'enfant et sa famille : réactions à l'école, attention des médias, des réseaux sociaux, etc. Orienter vers des professionnels adaptés si nécessaire",
         "Veiller à la reprise scolaire en se renseignant sur d'éventuels écarts, et si nécessaire, alerter la production pour la mise en place de cours de remise à niveau"
       ]
+    },
+    {
+      id: "article9",
+      title: "Article 9 - L'animateur/trice",
+      items: [
+        "Lors de l'adhésion, chaque animateur/trice déclare sur l'honneur, par écrit, avoir un casier judiciaire vierge. La vérification incombe à la production.",
+        "L'animateur/trice intervient en soutien du responsable des enfants et exerce ses missions sous sa supervision directe. Il/elle peut être amené(e) à assister toutes les missions précédemment citées.",
+        "Il/elle rend régulièrement compte au responsable des enfants de toute observation, difficulté ou situation préoccupante.",
+        "Il/elle ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer préalablement au responsable des enfants, sauf urgence mettant en jeu la sécurité de l'enfant.",
+        "Il/elle adhère pleinement aux principes fondamentaux énoncés dans la présente charte et s'engage à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l'enfant, dans la limite de son périmètre d'intervention."
+      ]
     }
   ];
 
