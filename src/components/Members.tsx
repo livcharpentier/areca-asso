@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Users, Search, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import livPhoto from "@/assets/liv-charpentier.png";
 
 type MembreTrombi = {
@@ -24,33 +22,8 @@ const membresStatiques: MembreTrombi[] = [
 
 const Members = () => {
   const navigate = useNavigate();
-  const [membresInscrits, setMembresInscrits] = useState<MembreTrombi[]>([]);
 
-  useEffect(() => {
-    (async () => {
-      const { data } = await supabase
-        .from("profiles")
-        .select("id, first_name, last_name, role, bio, photo_url")
-        .order("created_at", { ascending: true });
-      if (!data) return;
-      const mapped: MembreTrombi[] = data
-        .filter((p) => p.first_name || p.last_name)
-        .map((p) => ({
-          id: p.id,
-          name: `${p.first_name || ""} ${p.last_name || ""}`.trim(),
-          slug: p.id,
-          photo: p.photo_url,
-          role: p.role || "Membre",
-          bio: p.bio || "",
-        }));
-      setMembresInscrits(mapped);
-    })();
-  }, []);
-
-  const membresExemples = [
-    ...membresStatiques,
-    ...membresInscrits.filter((m) => !membresStatiques.some((s) => s.name.toLowerCase() === m.name.toLowerCase())),
-  ];
+  const membresExemples = membresStatiques;
 
   const categories = [
     { title: "Responsables des enfants", description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
