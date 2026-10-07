@@ -733,7 +733,7 @@ const AnimateursSection = () => (
     <TabsContent value="jeux-societe">
       <div className="space-y-4">
         <Card>
-          <CardHeader><CardTitle>Jeux de société recommandés</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Idées de jeux de société</CardTitle></CardHeader>
           <CardContent className="space-y-6">
 
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
@@ -744,7 +744,11 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Classique indémodable, simple et rapide</p></div>
                 <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Jeu de réflexes, crée beaucoup d&apos;animation</p></div>
                 <div><p className="font-semibold">Zombie Kidz</p><p className="text-muted-foreground">Jeu coopératif, idéal pour apprendre à jouer ensemble</p></div>
-                <div><p className="font-semibold">Loup Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, à partir de 6 ans, parfait en groupe</p></div>
+                <div><p className="font-semibold">Trio</p><p className="text-muted-foreground">Jeu de mémorisation et de déduction en famille</p></div>
+                <div><p className="font-semibold">Jungle</p><p className="text-muted-foreground">Jeu de stratégie animalière simple, accessible dès 6 ans</p></div>
+                <div><p className="font-semibold">Toss It</p><p className="text-muted-foreground">Jeu d&apos;adresse et de rapidité, très dynamique</p></div>
+                <div><p className="font-semibold">Cabanga</p><p className="text-muted-foreground">Jeu de cartes nerveux, idéal pour les petits groupes</p></div>
+                <div><p className="font-semibold">Mouton Mouton</p><p className="text-muted-foreground">Jeu d&apos;observation et de rapidité, rigolo et accessible</p></div>
               </div>
             </div>
 
@@ -752,11 +756,17 @@ const AnimateursSection = () => (
               <p className="font-bold text-lg mb-3">10 — 13 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div><p className="font-semibold">Mito</p><p className="text-muted-foreground">Bluff et déduction, très populaire chez les ados</p></div>
-                <div><p className="font-semibold">Wasabi</p><p className="text-muted-foreground">Jeu de sushis et de stratégie, drôle et coloré</p></div>
                 <div><p className="font-semibold">Flip Seven</p><p className="text-muted-foreground">Jeu de cartes addictif, facile à apprendre</p></div>
-                <div><p className="font-semibold">Cluster</p><p className="text-muted-foreground">Jeu de réflexion et de placement, stimule la stratégie</p></div>
-                <div><p className="font-semibold">Zombie Buzz</p><p className="text-muted-foreground">Rapide et nerveux, idéal pour les temps courts</p></div>
                 <div><p className="font-semibold">Skull King</p><p className="text-muted-foreground">Jeu de plis pirate, facile et très amusant</p></div>
+                <div><p className="font-semibold">Love Letter</p><p className="text-muted-foreground">Jeu de cartes minimaliste, bluff et déduction, très rapide</p></div>
+                <div><p className="font-semibold">Hanabi</p><p className="text-muted-foreground">Jeu coopératif où l&apos;on ne voit pas ses propres cartes, stimule la communication</p></div>
+                <div><p className="font-semibold">The Mind</p><p className="text-muted-foreground">Jeu de cartes coopératif mystérieux, crée une vraie connivence de groupe</p></div>
+                <div><p className="font-semibold">Perudo</p><p className="text-muted-foreground">Jeu de dés et de bluff, idéal pour les groupes animés</p></div>
+                <div><p className="font-semibold">Saboteur</p><p className="text-muted-foreground">Jeu de rôles cachés autour d&apos;une mine, trahi ou coopère !</p></div>
+                <div><p className="font-semibold">Bang !</p><p className="text-muted-foreground">Western avec rôles cachés, beaucoup d&apos;interaction et de rebondissements</p></div>
+                <div><p className="font-semibold">Loup-Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, parfait en grand groupe</p></div>
+                <div><p className="font-semibold">Loup-Garou pour un Crépuscule</p><p className="text-muted-foreground">Nouvelle version avec de nouvelles cartes et mécaniques</p></div>
+                <div><p className="font-semibold">Traîtres à Bord !</p><p className="text-muted-foreground">Rôles cachés sur un bateau, tension et fous rires garantis</p></div>
               </div>
             </div>
 
@@ -769,7 +779,13 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Jeu coopératif d&apos;enquête, crée des échanges</p></div>
                 <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner sans parler, universel et créatif</p></div>
                 <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Rapide, drôle et plein de rebondissements</p></div>
-                <div><p className="font-semibold">2 Pommes 3 Pins</p><p className="text-muted-foreground">Jeu de culture générale décalé, parfait pour les ados, crée beaucoup de fous rires</p></div>
+                <div><p className="font-semibold">2 Pommes 3 Pins</p><p className="text-muted-foreground">Jeu de culture générale décalé, parfait pour les ados</p></div>
+                <div><p className="font-semibold">Secret Identity</p><p className="text-muted-foreground">Jeu de rôles et déduction, créatif et immersif</p></div>
+                <div><p className="font-semibold">The Game</p><p className="text-muted-foreground">Jeu coopératif de cartes très exigeant, parfait pour souder un groupe</p></div>
+                <div><p className="font-semibold">Le Baron</p><p className="text-muted-foreground">Jeu de stratégie et de négociation, stimule la réflexion</p></div>
+                <div><p className="font-semibold">Dystopia</p><p className="text-muted-foreground">Univers dystopique, jeu de stratégie et d&apos;ambiance pour les plus grands</p></div>
+                <div><p className="font-semibold">Speed Bac</p><p className="text-muted-foreground">Jeu de rapidité et de culture générale, très dynamique</p></div>
+                <div><p className="font-semibold">Mamie Moule Maki</p><p className="text-muted-foreground">Le petit bac délirant, parfait en famille ou en groupe</p></div>
               </div>
             </div>
 
