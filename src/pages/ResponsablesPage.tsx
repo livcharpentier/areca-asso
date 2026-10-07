@@ -736,6 +736,22 @@ const AnimateursSection = () => (
           <CardHeader><CardTitle>Idées de jeux de société</CardTitle></CardHeader>
           <CardContent className="space-y-6">
 
+            <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">3 — 6 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Monza</p><p className="text-muted-foreground">Jeu de course automobile avec dés colorés, logique simple</p></div>
+                <div><p className="font-semibold">Memory</p><p className="text-muted-foreground">Classique de mémorisation, fonctionne avec tous les petits</p></div>
+                <div><p className="font-semibold">Bata-Miaou</p><p className="text-muted-foreground">Jeu de chats rigolo et accessible dès le plus jeune âge</p></div>
+                <div><p className="font-semibold">Bata-Waf</p><p className="text-muted-foreground">Version chiens, même principe, très apprécié des petits</p></div>
+                <div><p className="font-semibold">Croque Carotte</p><p className="text-muted-foreground">Jeu coopératif autour d&apos;un lapin gourmand, idéal dès 4 ans</p></div>
+                <div><p className="font-semibold">Dragomino</p><p className="text-muted-foreground">Jeu de dominos avec des dragons, accessible et coloré</p></div>
+                <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Jeu de logique et de circuit, stimule la réflexion des plus petits</p></div>
+                <div><p className="font-semibold">Little Action</p><p className="text-muted-foreground">Petits défis d&apos;action et de motricité, idéal pour dépenser l&apos;énergie</p></div>
+                <div><p className="font-semibold">Crazy Cups</p><p className="text-muted-foreground">Jeu de rapidité et d&apos;observation avec des gobelets colorés</p></div>
+                <div><p className="font-semibold">Qui Est ?</p><p className="text-muted-foreground">Jeu de devinettes de personnages, stimule la logique</p></div>
+              </div>
+            </div>
+
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
               <p className="font-bold text-lg mb-3">6 — 10 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
@@ -749,6 +765,16 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Toss It</p><p className="text-muted-foreground">Jeu d&apos;adresse et de rapidité, très dynamique</p></div>
                 <div><p className="font-semibold">Cabanga</p><p className="text-muted-foreground">Jeu de cartes nerveux, idéal pour les petits groupes</p></div>
                 <div><p className="font-semibold">Mouton Mouton</p><p className="text-muted-foreground">Jeu d&apos;observation et de rapidité, rigolo et accessible</p></div>
+                <div><p className="font-semibold">6 Qui Prend</p><p className="text-muted-foreground">Jeu de cartes tactique, simple à expliquer et très amusant</p></div>
+                <div><p className="font-semibold">Skyjo</p><p className="text-muted-foreground">Jeu de cartes léger et addictif, parfait pour tous les âges</p></div>
+                <div><p className="font-semibold">Taco Chat Bouc Cheese Pizza</p><p className="text-muted-foreground">Jeu de réflexes délirant, fous rires garantis</p></div>
+                <div><p className="font-semibold">Las Vegas</p><p className="text-muted-foreground">Jeu de dés et de tactique, rapide et animé</p></div>
+                <div><p className="font-semibold">Rush Hour</p><p className="text-muted-foreground">Jeu de logique et de casse-tête, stimule la réflexion</p></div>
+                <div><p className="font-semibold">Labyrinthe</p><p className="text-muted-foreground">Jeu de plateau classique, déplacement de chemins et stratégie</p></div>
+                <div><p className="font-semibold">Mission Dragon</p><p className="text-muted-foreground">Jeu d&apos;aventure coopératif, accessible et immersif</p></div>
+                <div><p className="font-semibold">Nom d&apos;un Renard !</p><p className="text-muted-foreground">Jeu de culture générale légère, parfait en famille</p></div>
+                <div><p className="font-semibold">Opération Noisette</p><p className="text-muted-foreground">Jeu d&apos;adresse coopératif autour d&apos;un écureuil espion</p></div>
+                <div><p className="font-semibold">Little Secret</p><p className="text-muted-foreground">Jeu de déduction et de secrets, accessible aux enfants</p></div>
               </div>
             </div>
 
@@ -766,7 +792,18 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Bang !</p><p className="text-muted-foreground">Western avec rôles cachés, beaucoup d&apos;interaction et de rebondissements</p></div>
                 <div><p className="font-semibold">Loup-Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, parfait en grand groupe</p></div>
                 <div><p className="font-semibold">Loup-Garou pour un Crépuscule</p><p className="text-muted-foreground">Nouvelle version avec de nouvelles cartes et mécaniques</p></div>
+                <div><p className="font-semibold">Le Jeu des Loups</p><p className="text-muted-foreground">Jeu de rôles et de déduction en groupe, tension et stratégie</p></div>
                 <div><p className="font-semibold">Traîtres à Bord !</p><p className="text-muted-foreground">Rôles cachés sur un bateau, tension et fous rires garantis</p></div>
+                <div><p className="font-semibold">Galápagos</p><p className="text-muted-foreground">Jeu de survie et de négociation, stimule la coopération et la stratégie</p></div>
+                <div><p className="font-semibold">Faraway</p><p className="text-muted-foreground">Jeu d&apos;exploration de cartes, simple et plein de découvertes</p></div>
+                <div><p className="font-semibold">Burger Quiz</p><p className="text-muted-foreground">Quiz délirant inspiré de l&apos;émission, parfait pour animer un groupe</p></div>
+                <div><p className="font-semibold">Wazabi</p><p className="text-muted-foreground">Jeu de dés épicé et nerveux, très rapide à jouer</p></div>
+                <div><p className="font-semibold">Smile Life</p><p className="text-muted-foreground">Jeu de simulation de vie positive, créatif et bienveillant</p></div>
+                <div><p className="font-semibold">The Crew</p><p className="text-muted-foreground">Jeu de plis coopératif en mission spatiale, très addictif</p></div>
+                <div><p className="font-semibold">Elixir</p><p className="text-muted-foreground">Jeu de potions et de déduction, original et mystérieux</p></div>
+                <div><p className="font-semibold">Unlock !</p><p className="text-muted-foreground">Escape game en cartes, idéal pour résoudre des énigmes en groupe</p></div>
+                <div><p className="font-semibold">Moustique</p><p className="text-muted-foreground">Jeu de rapidité et de réflexes, très animé</p></div>
+                <div><p className="font-semibold">Le Trésor des 3 Brigands</p><p className="text-muted-foreground">Jeu d&apos;aventure et de stratégie autour d&apos;un trésor à partager</p></div>
               </div>
             </div>
 
@@ -786,6 +823,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Dystopia</p><p className="text-muted-foreground">Univers dystopique, jeu de stratégie et d&apos;ambiance pour les plus grands</p></div>
                 <div><p className="font-semibold">Speed Bac</p><p className="text-muted-foreground">Jeu de rapidité et de culture générale, très dynamique</p></div>
                 <div><p className="font-semibold">Mamie Moule Maki</p><p className="text-muted-foreground">Le petit bac délirant, parfait en famille ou en groupe</p></div>
+                <div><p className="font-semibold">Micronacro</p><p className="text-muted-foreground">Jeu d&apos;observation et de déduction sur un grand poster, captivant</p></div>
               </div>
             </div>
 
