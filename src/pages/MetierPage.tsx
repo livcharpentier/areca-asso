@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import ChildSupervisorRole from "@/components/ChildSupervisorRole";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const articles = [
   {
@@ -225,10 +227,22 @@ const CharteContent = () => (
       <p className="text-muted-foreground mb-6">
         Date : <span className="inline-block w-40 border-b border-foreground/30" />
       </p>
-      <p className="text-foreground font-medium">
-        Signature du responsable des enfants :
+      <p className="text-foreground font-medium mb-6">
+        Signature du·de la responsable des enfants :
         <span className="inline-block w-64 ml-2 border-b border-foreground/30" />
       </p>
+      <p className="text-foreground font-medium">
+        Signature de l'animateur·trice (le cas échéant) :
+        <span className="inline-block w-64 ml-2 border-b border-foreground/30" />
+      </p>
+    </div>
+    <div className="mt-8 flex justify-center">
+      <a href="/Charte_ARENCA.pdf" download="Charte_Professionnelle_ARENCA.pdf">
+        <Button className="bg-accent text-white hover:bg-blue-vibrant shadow-lg hover:shadow-xl transition-all hover:scale-105 gap-2">
+          <Download className="w-4 h-4" />
+          Télécharger la charte en PDF
+        </Button>
+      </a>
     </div>
   </div>
 );
