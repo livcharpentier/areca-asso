@@ -9,7 +9,7 @@ const articles = [
     id: "preambule",
     title: "Préambule",
     content: [
-      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineurs.\nL’ARENCA peut reconsidérer l’adhésion d’un membre dont le comportement serait contraire à la charte."
+      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineurs.\nL’ARENCA peut reconsidérer l’adhésion d’un membre dont le comportement serait contraire à la charte.\nEn signant la présente charte, le responsable des enfants et/ou l’animateur/trice déclare sur l’honneur avoir un casier judiciaire vierge."
     ]
   },
   {
@@ -166,7 +166,6 @@ const articles = [
     id: "article9",
     title: "Article 9 - L'animateur/trice",
     items: [
-      "Lors de l'adhésion, chaque animateur/trice déclare sur l'honneur, par écrit, avoir un casier judiciaire vierge.",
       "L'animateur/trice intervient en soutien du responsable des enfants et exerce ses missions sous sa supervision directe. Il/elle peut être amené(e) à assister toutes les missions précédemment citées.",
       "Il/elle rend régulièrement compte au responsable des enfants de toute observation, difficulté ou situation préoccupante.",
       "Il/elle ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer préalablement au responsable des enfants, sauf urgence mettant en jeu la sécurité de l'enfant.",
