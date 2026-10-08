@@ -166,10 +166,10 @@ const articles = [
     id: "article9",
     title: "Article 9 - L’animateur·trice",
     items: [
-      "L’animateur·trice intervient en soutien du·de la responsable des enfants et exerce ses missions sous sa supervision directe. Il·elle peut être amené·e à assister toutes les missions précédemment citées.",
-      "Il·elle rend régulièrement compte au·à la responsable des enfants de toute observation, difficulté ou situation préoccupante.",
-      "Il·elle ne prend aucune décision engageant l’enfant, la famille ou la production sans en référer préalablement au·à la responsable des enfants.",
-      "Il·elle adhère pleinement aux principes fondamentaux énoncés dans la présente charte et s’engage à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l’enfant, dans la limite de son périmètre d’intervention."
+      "Intervenir en soutien du·de la responsable des enfants et exercer ses missions sous sa supervision directe. Il·elle peut être amené·e à assister toutes les missions précédemment citées.",
+      "Rendre régulièrement compte au·à la responsable des enfants de toute observation concernant le bien-être des enfants, y compris en cas de difficulté et de situation préoccupante.",
+      "Ne prendre aucune décision engageant l’enfant, la famille ou la production sans en référer préalablement au·à la responsable des enfants.",
+      "Adhérer pleinement aux principes fondamentaux énoncés dans la présente charte et s’engager à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l’enfant, dans la limite de son périmètre d’intervention."
     ]
   }
 ];
