@@ -9,7 +9,7 @@ const articles = [
     id: "preambule",
     title: "Préambule",
     content: [
-      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineurs.\nL’ARENCA peut reconsidérer l’adhésion d’un membre dont le comportement serait contraire à la charte.\nEn signant la présente charte, le responsable des enfants et/ou l’animateur/trice déclare sur l’honneur avoir un casier judiciaire vierge."
+      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineur·es.\nL’ARENCA peut reconsidérer l’adhésion d’un·e membre dont le comportement serait contraire à la charte.\nEn signant la présente charte, le·la responsable des enfants et/ou l’animateur·trice déclare sur l’honneur avoir un casier judiciaire vierge."
     ]
   },
   {
@@ -17,41 +17,41 @@ const articles = [
     title: "Article 1 - Principes fondamentaux",
     sections: [
       {
-        subtitle: "L'intérêt supérieur de l'enfant",
-        items: ["Le responsable des enfants place l'intérêt, la sécurité et le bien-être du mineur au cœur de toutes ses actions et décisions."]
+        subtitle: "L’intérêt supérieur de l’enfant",
+        items: ["Le·la responsable des enfants place l’intérêt, la sécurité et le bien-être du·de la mineur·e au cœur de toutes ses actions et décisions."]
       },
       {
         subtitle: "Le respect de la législation",
-        items: ["Le responsable connaît la réglementation en vigueur concernant le travail des mineurs, notamment les durées de travail, les temps de repos et les autorisations nécessaires. Il s'engage à alerter immédiatement la production en cas de non-respect.", "Si aucune mesure n'est prise, le responsable enfant peut alerter les autorités compétentes"]
+        items: ["Le·la responsable connaît la réglementation en vigueur concernant le travail des mineur·es, notamment les durées de travail, les temps de repos et les autorisations nécessaires. Il·elle s’engage à alerter immédiatement la production en cas de non-respect.", "Si aucune mesure n’est prise, le·la responsable enfant peut alerter les autorités compétentes"]
       },
       {
         subtitle: "La bienveillance et la confidentialité",
-        items: ["Le responsable adopte une attitude bienveillante et respectueuse envers l'enfant et sa famille, et garantit la confidentialité des informations personnelles."]
+        items: ["Le·la responsable adopte une attitude bienveillante et respectueuse envers l’enfant et sa famille, et garantit la confidentialité des informations personnelles."]
       }
     ]
   },
   {
     id: "article2",
-    title: "Article 2 - Engagement envers l'enfant",
+    title: "Article 2 - Engagement envers l’enfant",
     sections: [
       {
         subtitle: "Protection physique et psychologique",
         items: [
-          "Veiller à la sécurité physique de l'enfant sur le plateau et lors des déplacements",
-          "Être attentif aux signes de fatigue, de stress ou de mal-être",
+          "Veiller à la sécurité physique de l’enfant sur le plateau et lors des déplacements",
+          "Être attentif·ve aux signes de fatigue, de stress ou de mal-être",
         ]
       },
       {
         subtitle: "Accompagnement personnalisé",
         items: [
-          "S'adapter au rythme, à la personnalité et aux besoins spécifiques et aux limites de chaque enfant",
-          "Préparer l'enfant à l'entrée et à la sortie du tournage (transitions école/plateau, fin de tournage)",
+          "S’adapter au rythme, à la personnalité et aux besoins spécifiques et aux limites de chaque enfant",
+          "Préparer l’enfant à l’entrée et à la sortie du tournage (transitions école/plateau, fin de tournage)",
         ]
       },
       {
-        subtitle: "Préservation de l'équilibre",
+        subtitle: "Préservation de l’équilibre",
         items: [
-          "Mettre en place des activités adaptées pendant les temps d'attente",
+          "Mettre en place des activités adaptées pendant les temps d’attente",
           "En période scolaire, organiser le suivi scolaire",
         ]
       }
@@ -66,14 +66,14 @@ const articles = [
         items: [
           "Établir une relation de confiance dès la préparation",
           "Informer régulièrement la famille du déroulement du tournage",
-          "Être disponible et réactif aux questions et préoccupations"
+          "Être disponible et réactif·ve aux questions et préoccupations"
         ]
       },
       {
         subtitle: "Respect des valeurs familiales",
         items: [
           "Prendre en compte les souhaits et les limites fixées par les parents, tout en respectant la législation",
-          "Dans le cadre du tournage, toute décision importante concernant l'enfant doit être discutée avec les représentants légaux et l'enfant si possible"
+          "Dans le cadre du tournage, toute décision importante concernant l’enfant doit être discutée avec les représentant·es légaux·ales et l’enfant si possible"
         ]
       }
     ]
@@ -85,18 +85,18 @@ const articles = [
       {
         subtitle: "Professionnalisme",
         items: [
-          "Assurer une présence constante et fiable auprès de l'enfant sans créer un lien de dépendance",
+          "Assurer une présence constante et fiable auprès de l’enfant sans créer un lien de dépendance",
           "Tenir à jour un récapitulatif des temps de travail / repos / suivi scolaire",
         ]
       },
       {
         subtitle: "Coordination et médiation avec les équipes artistiques et techniques",
         items: [
-          "Faire le lien entre la famille, l'enfant et chaque département concerné. S'assurer de la bonne transmission des informations liées à l'analyse des risques (alimentation, relation aux animaux, etc…)",
+          "Faire le lien entre la famille, l’enfant et chaque département concerné. S’assurer de la bonne transmission des informations liées à l’analyse des risques (alimentation, relation aux animaux, etc…)",
           "Anticiper et résoudre les situations conflictuelles",
-          "Planifier et coordonner la logistique et les conditions matérielles d'accueil : transport, hébergement, repas (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
-          "Constituer et superviser une équipe d'animation/trice si nécessaire",
-          "Être attentif aux liens affectifs qui se créent naturellement entre l'enfant et les équipes"
+          "Planifier et coordonner la logistique et les conditions matérielles d’accueil : transport, hébergement, repas (loge dédiée, espace de repos, restauration adaptée, transport sécurisé)",
+          "Constituer et superviser une équipe d’animateur·trices si nécessaire",
+          "Être attentif·ve aux liens affectifs qui se créent naturellement entre l’enfant et les équipes"
         ]
       }
     ]
@@ -104,11 +104,11 @@ const articles = [
   {
     id: "article5",
     title: "Article 5 - Compétences et formation continue",
-    content: ["Le responsable des enfants s'engage à maintenir et développer ses compétences professionnelles :"],
+    content: ["Le·la responsable des enfants s’engage à maintenir et développer ses compétences professionnelles :"],
     items: [
-      "Se tenir informé des évolutions législatives et réglementaires",
-      "Développer ses connaissances en psychologie de l'enfant",
-      "Échanger avec ses pairs sur les bonnes pratiques"
+      "Se tenir informé·e des évolutions législatives et réglementaires",
+      "Développer ses connaissances en psychologie de l’enfant",
+      "Échanger avec ses pair·es sur les bonnes pratiques"
     ]
   },
   {
@@ -116,9 +116,9 @@ const articles = [
     title: "Article 6 - Déontologie professionnelle",
     items: [
       "Maintenir une position neutre dans les relations professionnelles",
-      "Ne pas favoriser ses intérêts personnels au détriment de l'enfant",
-      "Traiter tous les intervenants et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
-      "Reconnaître les limites de son intervention et orienter vers des professionnels adaptés si nécessaire (psychologue, médecin, etc.)",
+      "Ne pas favoriser ses intérêts personnels au détriment de l’enfant",
+      "Traiter tou·tes les intervenant·es et les enfants avec respect et professionnalisme et refuser toute forme de discrimination ou de comportement inapproprié",
+      "Reconnaître les limites de son intervention et orienter vers des professionnel·les adapté·es si nécessaire (psychologue, médecin, etc.)",
       "Ne pas se substituer aux parents dans leur rôle éducatif",
     ],
     sections: [
@@ -134,15 +134,15 @@ const articles = [
     id: "article7",
     title: "Article 7 - Analyse et prévention des risques",
     content: [
-      "Conformément au référentiel professionnel du métier (CPNEF de l'audiovisuel / AFDAS), le responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
+      "Conformément au référentiel professionnel du métier (CPNEF de l’audiovisuel / AFDAS), le·la responsable des enfants conduit en amont et pendant le tournage une analyse formalisée des risques :"
     ],
     sections: [
       {
         subtitle: "En amont du tournage",
         items: [
-          "Analyser le scénario et les scènes impliquant l'enfant",
+          "Analyser le scénario et les scènes impliquant l’enfant",
           "Identifier les risques (lieux de tournage, horaires...)",
-          "Si nécessaire, inviter la production à solliciter d'autres intervenants (coach, régleur cascade, psychologue, coordinateur d'intimité, dresseur animalier…)"
+          "Si nécessaire, inviter la production à solliciter d’autres intervenant·es (coach, régleur·se cascade, psychologue, coordinateur·trice d’intimité, dresseur·se animalier·ère…)"
         ]
       },
       {
@@ -155,21 +155,21 @@ const articles = [
     ]
   },
   {
-    id: "article7",
+    id: "article8",
     title: "Article 8 - Accompagnement post-tournage",
     items: [
-      "Rester disponible et à l'écoute des questionnements de l'enfant et de sa famille après la fin du tournage, notamment lors des périodes de promotion et de sortie du film",
-      "Être attentif aux retombées émotionnelles que peut vivre l'enfant à son retour à la vie quotidienne et scolaire",
+      "Rester disponible et à l’écoute des questionnements de l’enfant et de sa famille après la fin du tournage, notamment lors des périodes de promotion et de sortie du film",
+      "Être attentif·ve aux retombées émotionnelles que peut vivre l’enfant à son retour à la vie quotidienne et scolaire",
     ]
   },
   {
     id: "article9",
-    title: "Article 9 - L'animateur/trice",
+    title: "Article 9 - L’animateur·trice",
     items: [
-      "L'animateur/trice intervient en soutien du responsable des enfants et exerce ses missions sous sa supervision directe. Il/elle peut être amené(e) à assister toutes les missions précédemment citées.",
-      "Il/elle rend régulièrement compte au responsable des enfants de toute observation, difficulté ou situation préoccupante.",
-      "Il/elle ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer préalablement au responsable des enfants, sauf urgence mettant en jeu la sécurité de l'enfant.",
-      "Il/elle adhère pleinement aux principes fondamentaux énoncés dans la présente charte et s'engage à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l'enfant, dans la limite de son périmètre d'intervention."
+      "L’animateur·trice intervient en soutien du·de la responsable des enfants et exerce ses missions sous sa supervision directe. Il·elle peut être amené·e à assister toutes les missions précédemment citées.",
+      "Il·elle rend régulièrement compte au·à la responsable des enfants de toute observation, difficulté ou situation préoccupante.",
+      "Il·elle ne prend aucune décision engageant l’enfant, la famille ou la production sans en référer préalablement au·à la responsable des enfants, sauf urgence mettant en jeu la sécurité de l’enfant.",
+      "Il·elle adhère pleinement aux principes fondamentaux énoncés dans la présente charte et s’engage à conduire son action dans le même esprit de protection, de bienveillance et de professionnalisme envers l’enfant, dans la limite de son périmètre d’intervention."
     ]
   }
 ];
