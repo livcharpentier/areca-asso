@@ -15,7 +15,7 @@ const memberData: { [key: string]: any } = {
     photo: "/liv-charpentier.png",
     email: "liv.charp@wanadoo.fr",
     phone: "06 19 60 12 96",
-    role: "Responsable des enfants sur tournage | Directrice de casting figuration et petit rôle | 3ème Assistante mise en scène | Assistante régisseuse",
+    role: "Responsable enfants | Casting figuration et petits rôles",
     bio: "Encadrement et animation des mineurs sur tournage depuis 1996.",
     experienceYears: 28,
     availability: "Disponible",

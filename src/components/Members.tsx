@@ -16,7 +16,7 @@ type MembreTrombi = {
 };
 
 const membresStatiques: MembreTrombi[] = [
-  { id: "liv-charpentier", name: "Liv Charpentier", slug: "liv-charpentier", photo: livPhoto, role: "Responsable enfants", bio: "Spécialisée dans l'encadrement des enfants sur tournage depuis 1996. Casting et coordination." , actualite: "Disponible" },
+  { id: "liv-charpentier", name: "Liv Charpentier", slug: "liv-charpentier", photo: livPhoto, role: "Responsable enfants | Casting figuration et petits rôles", bio: "", actualite: "Disponible" },
   { id: "eleonore-aguillon", name: "Éléonore Aguillon", slug: "eleonore-aguillon", photo: "/eleonore-aguillon.jpg", role: "Responsable enfants", bio: "Responsable et coach enfants, suivi scolaire, formée à la petite enfance. Casting rôles et figuration." },
 ];
 
