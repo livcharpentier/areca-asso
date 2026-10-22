@@ -195,12 +195,16 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
 };
 
 // Pour un membre sans liste de films détaillée : on retrouve « Titre (année) » dans le texte de la filmographie
-export function filmsDepuisFilmographie(filmography: Record<string, string> | undefined): FilmCV[] {
+export function filmsDepuisFilmographie(filmography: Record<string, string> | undefined, affiches?: Record<string, string>): FilmCV[] {
+  const affichesNorm: Record<string, string> = {};
+  Object.entries(affiches || {}).forEach(([t, u]) => { affichesNorm[normaliser(t)] = u; });
   if (!filmography) return [];
   const vus = new Set<string>();
   const films: FilmCV[] = [];
   Object.values(filmography).forEach((texte) => {
+    // « Plusieurs publicités : Nike, KFC… (2012-2026) » n'est pas un film
     String(texte)
+      .replace(/Plusieurs[^(]*(\([^)]*\))?/gi, "")
       .split(/,(?![^()]*\))/)
       .map((s) => s.trim())
       .forEach((item) => {
@@ -211,7 +215,7 @@ export function filmsDepuisFilmographie(filmography: Record<string, string> | un
         const cle = normaliser(titre);
         if (vus.has(cle)) return;
         vus.add(cle);
-        films.push({ titre, annee: m ? Number(m[2]) : undefined, type: /s[ée]rie/i.test(item) ? "serie" : "film" });
+        films.push({ titre, annee: m ? Number(m[2]) : undefined, type: /s[ée]rie/i.test(item) ? "serie" : "film", affiche: affichesNorm[cle] });
       });
   });
   return films.sort((a, b) => (b.annee || 0) - (a.annee || 0));
