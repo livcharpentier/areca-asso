@@ -130,6 +130,7 @@ const Members = () => {
                 Lors de l'adh&#233;sion, chaque nouveau membre, en plus de signer la charte de l'association,
                 d&#233;clare sur l'honneur, par &#233;crit, avoir un casier vierge, lui permettant de travailler
                 en contact avec des enfants. La v&#233;rification incombe &#224; la production.
+                Toute fausse d&#233;claration entra&#238;nerait la radiation du membre.
               </p>
             </CardContent>
           </Card>

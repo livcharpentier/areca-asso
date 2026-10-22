@@ -86,6 +86,9 @@ const ResponsablesPage = () => {
                   <p className="text-muted-foreground mt-4 italic border-t border-border pt-4">
                     La v&#233;rification incombe &#224; la production.
                   </p>
+                  <p className="text-foreground font-semibold mt-3">
+                    Toute fausse d&#233;claration entra&#238;nerait la radiation du membre.
+                  </p>
                 </div>
               </div>
             </TabsContent>
