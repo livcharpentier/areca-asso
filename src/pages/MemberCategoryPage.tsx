@@ -45,16 +45,16 @@ const MemberCategoryPage = () => {
     },
     {
       id: 2,
-      firstName: "Christophe",
-      lastName: "Denis",
-      photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank",
-      email: "christophe.denis@example.com",
-      phone: "+33 6 23 45 67 89",
-      bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
-      experienceYears: 10,
-      specialties: ["Accompagnement artistique", "Soutien psychologique"],
-      availability: "En tournage",
-      recentNews: "Formation continue en psychologie de l'enfant"
+      firstName: "Éléonore",
+      lastName: "Aguillon",
+      photoUrl: "/eleonore-aguillon.jpg",
+      email: "eleonore.aguillon@gmail.com",
+      phone: "",
+      bio: "Responsable et coach enfants, suivi scolaire, formée à la petite enfance. Casting rôles et figuration.",
+      experienceYears: 9,
+      availability: "",
+      recentNews: "",
+      cvUrl: "/CV_ELEONORE_AGUILLON.pdf"
     }
   ];
 
@@ -91,12 +91,12 @@ const MemberCategoryPage = () => {
                         <CardTitle className="text-2xl text-primary font-semibold tracking-wide leading-relaxed mb-2">
                           {member.firstName} {member.lastName}
                         </CardTitle>
-                        <Badge 
+                        {member.availability && (<Badge 
                           variant={member.availability === "Disponible" ? "default" : "secondary"}
                           className="mb-2"
                         >
                           {member.availability}
-                        </Badge>
+                        </Badge>)}
                         <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2">
                           <Calendar className="w-4 h-4" />
                           <span>{member.experienceYears} ans d'expérience</span>
@@ -110,12 +110,14 @@ const MemberCategoryPage = () => {
                               {member.email}
                             </a>
                           </div>
+                          {member.phone && (
                           <div className="flex items-center gap-2">
                             <Phone className="w-5 h-5 text-primary" />
                             <a href={`tel:${member.phone}`} className="text-base font-semibold text-primary hover:text-primary">
                               {member.phone}
                             </a>
                           </div>
+                          )}
                         </div>
                       </div>
                     </div>

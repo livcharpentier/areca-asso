@@ -54,7 +54,7 @@ const memberData: { [key: string]: any } = {
       { titre: "Fifi et sa bande, c'était pas gagné !", realisateur: "Pierre Lacheau", annee: 2026, type: "serie" },
       { titre: "Slt ma belle !", realisateur: "Elisa Jadot", annee: 2026, type: "court" },
       { titre: "Civilisés", realisateur: "Chine Thybaud", annee: 2026, type: "court" },
-      { titre: "Quelques mots d'amour", realisateur: "Rudi Rosenberg", annee: 2025, type: "film" },
+      { titre: "Quelques mots d'amour", realisateur: "Rudi Rosenberg", annee: 2025, type: "film", affiche: "/affiches/quelques-mots-d-amour.jpg" },
       { titre: "Chasse gardée 2", realisateur: "Antonin Fourlon et Frédéric Forestier", annee: 2025, type: "film" },
       { titre: "La Guerre des prix", realisateur: "Anthony Dechaux", annee: 2025, type: "film" },
       { titre: "Camembert", realisateur: "Matthieu Rumani et Nicolas Slomka", annee: 2025, type: "film" },
@@ -99,15 +99,6 @@ const memberData: { [key: string]: any } = {
       "Langues": "Anglais courant (plusieurs tournages en anglais), allemand intermédiaire, braille",
       "Activités pédagogiques": "Quand la durée du tournage et le nombre d'enfants s'y prêtent, ateliers adaptés aux stades de développement des enfants : activités manuelles (pâtisserie, peinture, aquarelle, argile, décopatch, bricolage), activités audiovisuelles (petit making-of et interviews de l'équipe, en accord avec la production), expériences scientifiques en toute sécurité (lumière, magnétisme, chimie du quotidien, électricité), activités musicales (chant, guitare, piano, écriture, composition)"
     }
-  },
-  "thomas-martin": {
-    firstName: "Christophe", lastName: "Denis",
-    photo: "https://api.dicebear.com/7.x/avataaars/svg?seed=ChrisYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=short01,short02,short03,short04,short05&hairColor=2c1b18,a55728,724133&skinColor=f8d25c,fd9841,edb98a&facialHair=blank",
-    email: "christophe.denis@example.com", phone: "+33 6 23 45 67 89",
-    role: "Responsable des enfants sur tournage | Directrice de casting figuration et petit rôle | 3ème Assistante mise en scène | Assistante régisseuse",
-    bio: "Spécialisé dans l'accompagnement des jeunes acteurs sur les tournages de longue durée.",
-    experienceYears: 10, availability: "En tournage",
-    recentNews: "Formation continue en psychologie de l'enfant"
   }
 };
 

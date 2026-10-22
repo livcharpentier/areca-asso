@@ -21,7 +21,7 @@ const normaliser = (s: string) =>
 // « FURIES - SAISON 2 » → « Furies »
 const titreDeBase = (t: string) => t.replace(/\s*[-–—]?\s*saison\s*\d+.*$/i, "").trim();
 
-const CLE_CACHE = "arenca-affiches-v1";
+const CLE_CACHE = "arenca-affiches-v2";
 const DUREE_CACHE = 1000 * 60 * 60 * 24 * 30;
 
 type Cache = Record<string, { url: string | null; t: number }>;
@@ -40,8 +40,40 @@ const ecrireCache = (c: Cache) => {
   }
 };
 
-// Cherche l'affiche sur Wikipédia (page du film ou de la série), en vérifiant que c'est bien une œuvre du même titre
+const anneeProche = (a: number | undefined, b: number | undefined) => !a || !b || Math.abs(a - b) <= 1;
+
+// Affiche d'iTunes (films et séries sortis en France)
+async function chercherAfficheItunes(film: FilmCV): Promise<string | null> {
+  const base = titreDeBase(film.titre);
+  const serie = film.type === "serie";
+  const url = "https://itunes.apple.com/search?country=fr&limit=15&term=" + encodeURIComponent(base) +
+    (serie ? "&media=tvShow&entity=tvSeason" : "&media=movie&entity=movie");
+  const rep = await fetch(url);
+  if (!rep.ok) return null;
+  const json = await rep.json();
+  const cible = normaliser(base);
+  const r = (json.results || []).find((x: any) => {
+    const nom = normaliser(String(serie ? x.collectionName || "" : x.trackName || "").replace(/[,:-]\s*saison.*$/i, ""));
+    const annee = x.releaseDate ? new Date(x.releaseDate).getFullYear() : undefined;
+    return nom === cible && x.artworkUrl100 && (serie || anneeProche(film.annee, annee));
+  });
+  return r ? String(r.artworkUrl100).replace(/\/\d+x\d+bb\./, "/400x600bb.") : null;
+}
+
 async function chercherAffiche(film: FilmCV): Promise<string | null> {
+  for (const source of [chercherAfficheWikipedia, chercherAfficheItunes]) {
+    try {
+      const url = await source(film);
+      if (url) return url;
+    } catch {
+      /* source indisponible : on essaie la suivante */
+    }
+  }
+  return null;
+}
+
+// Cherche l'affiche sur Wikipédia (page du film ou de la série), en vérifiant que c'est bien une œuvre du même titre
+async function chercherAfficheWikipedia(film: FilmCV): Promise<string | null> {
   const base = titreDeBase(film.titre);
   const genre = film.type === "serie" ? "série télévisée" : "film";
   const url =
