@@ -48,18 +48,18 @@ const ResponsablesPage = () => {
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
               <Tabs defaultValue="compte-rendu" className="w-full">
-                <TabsList className="grid w-full grid-cols-4 mb-6">
+                <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-6">
                   <TabsTrigger value="compte-rendu">
-                    <span className="hidden sm:inline">Compte Rendu</span>
+                    <span>Compte Rendu</span>
                   </TabsTrigger>
                   <TabsTrigger value="reglementations">
-                    <span className="hidden sm:inline">Réglementations</span>
+                    <span>Réglementations</span>
                   </TabsTrigger>
                   <TabsTrigger value="vhss">
-                    <span className="hidden sm:inline">VHSS</span>
+                    <span>VHSS</span>
                   </TabsTrigger>
                   <TabsTrigger value="positionnement">
-                    <span className="hidden sm:inline">Positionnement</span>
+                    <span>Positionnement</span>
                   </TabsTrigger>
                 </TabsList>
 
@@ -113,16 +113,16 @@ const ReglementationsContent = () => {
       <Tabs defaultValue="temps-travail" className="w-full">
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
           <TabsTrigger value="temps-travail" className="text-xs">
-            <span className="hidden sm:inline">Temps de travail</span>
+            <span>Temps de travail</span>
           </TabsTrigger>
           <TabsTrigger value="organisation" className="text-xs">
-            <span className="hidden sm:inline">Organisation</span>
+            <span>Organisation</span>
           </TabsTrigger>
           <TabsTrigger value="familles-emploi" className="text-xs">
-            <span className="hidden sm:inline">Familles d'emploi</span>
+            <span>Familles d'emploi</span>
           </TabsTrigger>
           <TabsTrigger value="conditions" className="text-xs">
-            <span className="hidden sm:inline">Conditions</span>
+            <span>Conditions</span>
           </TabsTrigger>
         </TabsList>
 
@@ -162,7 +162,7 @@ const OrganisationTravailContent = () => (
           <ul className="text-sm text-foreground ml-4 list-disc space-y-1">
             <li><strong>Préparation :</strong> Maquillage, coiffure, habillage</li>
             <li><strong>Répétitions :</strong> Toutes les répétitions sur plateau</li>
-            <li><strong>Prises :</strong> Temps de tournage effectif</li>
+            <li><strong>Prises :</strong> Temps de tournage effectif, temps d'attente entre les prises</li>
           </ul>
           <div className="mt-3 bg-card p-3 rounded border border-border">
             <p className="font-semibold text-primary text-sm">Ne sont PAS du temps de travail :</p>

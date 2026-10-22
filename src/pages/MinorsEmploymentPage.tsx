@@ -30,23 +30,23 @@ const MinorsEmploymentPage = () => {
               <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8">
                 <TabsTrigger value="temps-travail" className="gap-2">
                   <Clock className="h-4 w-4" />
-                  <span className="hidden sm:inline">Temps de travail</span>
+                  <span>Temps de travail</span>
                 </TabsTrigger>
                 <TabsTrigger value="salaires-figuration" className="gap-2">
                   <Coins className="h-4 w-4" />
-                  <span className="hidden sm:inline">Salaires Figuration</span>
+                  <span>Salaires Figuration</span>
                 </TabsTrigger>
                 <TabsTrigger value="conditions" className="gap-2">
                   <FileText className="h-4 w-4" />
-                  <span className="hidden sm:inline">Conditions</span>
+                  <span>Conditions</span>
                 </TabsTrigger>
                 <TabsTrigger value="caisse-depots" className="gap-2">
                   <Landmark className="h-4 w-4" />
-                  <span className="hidden sm:inline">Caisse des Dépôts</span>
+                  <span>Caisse des Dépôts</span>
                 </TabsTrigger>
                 <TabsTrigger value="sanctions" className="gap-2">
                   <Scale className="h-4 w-4" />
-                  <span className="hidden sm:inline">Sanctions</span>
+                  <span>Sanctions</span>
                 </TabsTrigger>
               </TabsList>
 

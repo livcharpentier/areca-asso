@@ -30,16 +30,16 @@ const ParentsPage = () => {
           <Tabs defaultValue="suivi-sante" className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-6">
               <TabsTrigger value="suivi-sante">
-                <span className="hidden sm:inline">Suivi Santé</span>
+                <span>Suivi Santé</span>
               </TabsTrigger>
               <TabsTrigger value="dossier">
-                <span className="hidden sm:inline">Dossier Enfant</span>
+                <span>Dossier Enfant</span>
               </TabsTrigger>
               <TabsTrigger value="salaires">
-                <span className="hidden sm:inline">Définitions Fonctions</span>
+                <span>Définitions Fonctions</span>
               </TabsTrigger>
               <TabsTrigger value="caisse-depots">
-                <span className="hidden sm:inline">Caisse des Dépôts</span>
+                <span>Caisse des Dépôts</span>
               </TabsTrigger>
             </TabsList>
 
