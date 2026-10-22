@@ -80,7 +80,7 @@ const memberData: { [key: string]: any } = {
       "Deux gouttes d'eau": "/affiches/liv/deux-gouttes-d-eau.jpg",
       "Vise le coeur": "/affiches/liv/vise-le-coeur.jpg",
       "Pour elle": "/affiches/liv/pour-elle.jpg",
-      "La Voix des Steppes": "/affiches/liv/la-voix-des-steppes.jpg",
+      "La Voix des Steppes (2014)": "/affiches/liv/la-voix-des-steppes.jpg",
       "Des nouvelles de la planète Mars": "/affiches/liv/des-nouvelles-de-la-planete-mars.jpg",
       "Arthur et les Minimoys": "/affiches/liv/arthur-et-les-minimoys.jpg",
       "À l'intérieur": "/affiches/liv/a-l-interieur.jpg",
@@ -92,7 +92,7 @@ const memberData: { [key: string]: any } = {
       "Assistante Casting Rôles (Adultes/Enfants)": "Les vacances de Ducobu (2011), La guerre des boutons (2011), Sans laisser de traces (2010), Jamais contente (2017), La guerre des Lulus (2023), Le 3ème jour (2010), Pigalle la nuit (2009 — série)",
       "Casting Petits Rôles & Figurations": "L'ex-femme de ma vie (2004), Podium (2004), Aurore (2005), Marie Besnard (2006), Le grand Charles (2006), Comme mon père (2007), Famille (2007), Molière (2007), De l'autre côté du lit (2008), Elles et moi (2008), Transporter 3 (2008), Le petit Nicolas (2009), La reine et le cardinal (2009), Mes amis mes amours mes emmerdes (2009), Gainsbourg (2010), Les vacances du Petit Nicolas (2010), Les virtuoses episode 1 à 6 (2010), Pièce Montée (2010), Intouchables (2011), Les vacances de Ducobu (2011), L'élève Ducobu (2011), Omar m'a tuer (2011), La pire semaine de ma vie (2011 — série), Quelques heures de printemps (2012), Cloclo (2012), Stars 80 (2012), Une famille formidable (2012), 20 ans d'écart (2013), La dernière campagne (2013), La grande boucle (2013), Les bracelets rouges (2017-2024), On voulait tout casser (2015), Chocolat (2016), Stavisky l'escroc du siècle (2016), Love Locks (2017), Mon poussin (2017), Deux gouttes d'eau (2018), Vise le coeur (2022), La guerre des Lulus (2023), Plusieurs publicités : Nike, Vuitton, KFC, Air France, Vittel… (2012-2026)",
       "Casting Clips": "Plusieurs clips musicaux : Renan Luce, Raphael…",
-      "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes",
+      "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes (2014)",
       "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
       "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Le Transporteur : Héritage (2015), Valerian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
     },
