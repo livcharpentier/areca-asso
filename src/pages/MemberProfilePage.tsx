@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
 import jsPDF from "jspdf";
-import FilmPosterBand, { filmsDepuisFilmographie } from "@/components/FilmPosterBand";
+import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres } from "@/components/FilmPosterBand";
 
 const memberData: { [key: string]: any } = {
   "liv-charpentier": {
@@ -271,29 +271,48 @@ const MemberProfilePage = () => {
     doc.line(margin, y, pageW - margin, y);
     y += 8;
 
-    const addSection = (title: string, text: string) => {
+    const titresPdf = titresDuMembre(member);
+    const addSection = (title: string, text: string, avecTitres = false) => {
       if (y > 265) { doc.addPage(); y = 20; }
       doc.setFont("helvetica", "bold");
       doc.setFontSize(10);
       doc.setTextColor(...bleu);
       doc.text(title.toUpperCase(), margin, y);
       y += 5;
-      doc.setFont("helvetica", "normal");
       doc.setFontSize(9);
       doc.setTextColor(...noir);
-      const lines = doc.splitTextToSize(text, contentW);
-      lines.forEach((line: string) => {
-        if (y > 275) { doc.addPage(); y = 20; }
-        doc.text(line, margin, y);
-        y += 4.5;
+      // Mots un par un, les titres de films en gras
+      // Filmographie : un film par ligne, comme sur le site
+      const items = avecTitres ? text.split(/(?<=\))\s*[,.]\s+/).filter(Boolean) : [text];
+      items.forEach((item, n) => {
+      const mots: { t: string; gras: boolean }[] = [];
+      (avecTitres ? segmentsTitres(item, titresPdf) : [{ t: item, gras: false }]).forEach((sg) => {
+        sg.t.split(/(\s+)/).forEach((m) => { if (m) mots.push({ t: m, gras: sg.gras }); });
       });
-      y += 4;
+      if (n > 0) y += avecTitres ? 5.5 : 4.5;
+      let x = margin;
+      if (y > 275) { doc.addPage(); y = 20; }
+      mots.forEach((m) => {
+        doc.setFont("helvetica", m.gras ? "bold" : "normal");
+        const espace = /^\s+$/.test(m.t);
+        const w = doc.getTextWidth(espace ? " " : m.t);
+        if (espace) { if (x > margin) x += w; return; }
+        if (x + w > margin + contentW && x > margin) {
+          x = margin; y += 4.5;
+          if (y > 275) { doc.addPage(); y = 20; }
+        }
+        doc.text(m.t, x, y);
+        x += w;
+      });
+      });
+      doc.setFont("helvetica", "normal");
+      y += 4.5 + 6;
     };
 
     // Filmographie
     if (member.filmography) {
       Object.entries(member.filmography).forEach(([role, films]) => {
-        addSection(role, films as string);
+        addSection(role, films as string, true);
       });
     }
 
@@ -400,11 +419,17 @@ const MemberProfilePage = () => {
             {member.filmography && (
               <div className="mb-8">
                 <h2 className="text-xl font-semibold text-foreground mb-4">Filmographie</h2>
-                <div className="space-y-4">
+                <div className="space-y-8">
                   {Object.entries(member.filmography).map(([role, films], idx) => (
                     <div key={idx} className="border-l-2 border-accent/30 pl-4">
-                      <h3 className="font-medium text-accent mb-1">{role}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{films as string}</p>
+                      <h3 className="font-medium text-accent mb-3">{role}</h3>
+                      <ul className="text-sm text-muted-foreground leading-relaxed space-y-1.5">
+                        {(films as string).split(/(?<=\))\s*[,.]\s+/).filter(Boolean).map((item, i) => (
+                          <li key={i}>
+                            {segmentsTitres(item, titresDuMembre(member)).map((sg, k) => sg.gras ? <strong key={k} className="font-semibold text-foreground">{sg.t}</strong> : <span key={k}>{sg.t}</span>)}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   ))}
                 </div>

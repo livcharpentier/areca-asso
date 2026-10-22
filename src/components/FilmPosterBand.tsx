@@ -224,3 +224,37 @@ export function filmsDepuisFilmographie(filmography: Record<string, string> | un
 }
 
 export default FilmPosterBand;
+
+// ── Titres de films en gras dans le texte de la filmographie ──
+export type Segment = { t: string; gras: boolean };
+
+const echapper = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/['’]/g, "['’]");
+
+export function titresDuMembre(member: any): string[] {
+  const titres = new Set<string>();
+  const ajouter = (t?: string) => {
+    if (!t) return;
+    const propre = t.replace(/\s*\([^)]*\d[^)]*\)\s*$/, "").trim();
+    [propre, titreDeBase(propre), propre.split(/\s+:\s+/)[0]].forEach((x) => { if (x && x.length >= 3) titres.add(x); });
+  };
+  (member.films || []).forEach((f: FilmCV) => ajouter(f.titre));
+  Object.keys(member.affiches || {}).forEach(ajouter);
+  // Sans liste de films détaillée (fiche de Liv), les titres viennent du texte « Titre (année) »
+  if (!member.films) filmsDepuisFilmographie(member.filmography).forEach((f) => ajouter(f.titre));
+  return [...titres].sort((a, b) => b.length - a.length);
+}
+
+export function segmentsTitres(texte: string, titres: string[]): Segment[] {
+  if (!titres.length) return [{ t: texte, gras: false }];
+  const re = new RegExp("(?<![\\p{L}\\p{N}])(" + titres.map(echapper).join("|") + ")(?![\\p{L}\\p{N}])", "giu");
+  const res: Segment[] = [];
+  let dernier = 0;
+  for (const m of texte.matchAll(re)) {
+    const i = m.index ?? 0;
+    if (i > dernier) res.push({ t: texte.slice(dernier, i), gras: false });
+    res.push({ t: m[0], gras: true });
+    dernier = i + m[0].length;
+  }
+  if (dernier < texte.length) res.push({ t: texte.slice(dernier), gras: false });
+  return res;
+}
