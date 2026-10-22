@@ -23,6 +23,12 @@ const memberData: { [key: string]: any } = {
     actualite: "Disponible",
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
     affiches: {
+      "Dracula": "/affiches/liv/dracula.jpg",
+      "Abandon": "/affiches/liv/abandon.jpg",
+      "Les enfants de la résistance": "/affiches/liv/les-enfants-de-la-resistance.jpg",
+      "Karma": "/affiches/liv/karma.jpg",
+      "Histoire parallèle": "/affiches/liv/histoire-parallele.jpg",
+      "Robin": "/affiches/liv/robin.jpg",
       "Radin": "/affiches/liv/radin.jpg",
       "Le petit Spirou": "/affiches/liv/le-petit-spirou.jpg",
       "Rémi sans famille": "/affiches/liv/remi-sans-famille.jpg",
