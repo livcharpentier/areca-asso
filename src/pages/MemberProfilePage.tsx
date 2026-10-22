@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
 import jsPDF from "jspdf";
-import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres } from "@/components/FilmPosterBand";
+import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres, lignesCV } from "@/components/FilmPosterBand";
 
 const memberData: { [key: string]: any } = {
   "liv-charpentier": {
@@ -100,7 +100,7 @@ const memberData: { [key: string]: any } = {
       "Animations entre 1996 et 2010": "Centre de loisirs, colonie de vacances, camp itinérant, encadrement voile, encadrement ski, surveillance mer, professeur spécialisé voile (ado, adulte).",
       "Professeur EPS (remplaçant) entre 1998 et 2005": "École maternelle, primaire, collège, lycée, et le centre sportif de la Ville de Paris le mercredi.",
       "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédéral de voile (aux Glenans, 2000) / Monitorat fédéral de voile (2003) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
-      "Permis": "Voiture B. Bateau : Côtier / Rivière / Fleuve / Lac."
+      "Permis": "Voiture B. Bateau (côtier, rivière, fleuve, lac)."
     }
   },
   "eleonore-aguillon": {
@@ -283,13 +283,13 @@ const MemberProfilePage = () => {
       doc.setTextColor(...noir);
       // Mots un par un, les titres de films en gras
       // Filmographie : un film par ligne, comme sur le site
-      const items = avecTitres ? text.split(/(?<=\))\s*[,.]\s+/).filter(Boolean) : [text];
+      const items = avecTitres ? text.split(/(?<=\))\s*[,.]\s+/).filter(Boolean) : lignesCV(text, title);
       items.forEach((item, n) => {
       const mots: { t: string; gras: boolean }[] = [];
       (avecTitres ? segmentsTitres(item, titresPdf) : [{ t: item, gras: false }]).forEach((sg) => {
         sg.t.split(/(\s+)/).forEach((m) => { if (m) mots.push({ t: m, gras: sg.gras }); });
       });
-      if (n > 0) y += avecTitres ? 5.5 : 4.5;
+      if (n > 0) y += 5.5;
       let x = margin;
       if (y > 275) { doc.addPage(); y = 20; }
       mots.forEach((m) => {
@@ -444,7 +444,9 @@ const MemberProfilePage = () => {
                   {Object.entries(member.animation).map(([period, content], idx) => (
                     <div key={idx} className="border-l-2 border-accent/30 pl-4">
                       <h3 className="font-medium text-accent mb-1">{period}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{content as string}</p>
+                      <ul className="text-sm text-muted-foreground leading-relaxed space-y-1.5">
+                        {lignesCV(content as string, String(period)).map((l, i) => <li key={i}>{/^https?:/.test(l) ? <a href={l} target="_blank" rel="noreferrer" className="text-accent underline break-all">{l}</a> : l}</li>)}
+                      </ul>
                     </div>
                   ))}
                 </div>
@@ -459,7 +461,9 @@ const MemberProfilePage = () => {
                   {Object.entries(member.cvSections).map(([section, content], idx) => (
                     <div key={idx} className="border-l-2 border-accent/30 pl-4">
                       <h3 className="font-medium text-accent mb-1">{section}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{content as string}</p>
+                      <ul className="text-sm text-muted-foreground leading-relaxed space-y-1.5">
+                        {lignesCV(content as string, String(section)).map((l, i) => <li key={i}>{/^https?:/.test(l) ? <a href={l} target="_blank" rel="noreferrer" className="text-accent underline break-all">{l}</a> : l}</li>)}
+                      </ul>
                     </div>
                   ))}
                 </div>

@@ -258,3 +258,20 @@ export function segmentsTitres(texte: string, titres: string[]): Segment[] {
   if (dernier < texte.length) res.push({ t: texte.slice(dernier), gras: false });
   return res;
 }
+
+// ── Diplômes, langues, animation… : un élément par ligne ──
+export function lignesCV(texte: string, titre = ""): string[] {
+  let t = String(texte || "").trim();
+  if (/^https?:\/\//.test(t)) return [t];
+  // « … : a (x), b (y), c (z) » → chaque élément entre parenthèses sur sa ligne
+  let parties = t.split(/(?<=[)\p{L}\d])\.\s+(?=[\p{Lu}\d])/u);
+  parties = parties.flatMap((p) => p.split(/\s+\/\s+(?=[\p{Lu}])/u));
+  parties = parties.flatMap((p) => p.split(/(?<=\)),\s+/));
+  if (/langue|permis/i.test(titre)) parties = parties.flatMap((p) => p.split(/,\s+(?![^()]*\))/));
+  // « Introduction : a, b » : l'intro reste seule sur sa ligne
+  parties = parties.flatMap((p) => {
+    const m = p.match(/^([^:()]{25,}?) :\s+(.+\(.+)$/);
+    return m ? [m[1] + " :", m[2]] : [p];
+  });
+  return parties.map((p) => p.trim().replace(/\.$/, "")).filter(Boolean).map((p) => p.charAt(0).toUpperCase() + p.slice(1));
+}
