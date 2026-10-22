@@ -162,7 +162,7 @@ const MinorsEmploymentPage = () => {
                             <p><strong>12-16 ans :</strong></p>
                             <p className="ml-3">• Vacances scolaires : 6h/jour (pause après 3h)</p>
                           </div>
-                          <p className="text-xs text-yellow-300 mt-2">Préparation, répétition et présence sur plateau = temps de travail effectif</p>
+                          <p className="text-xs text-yellow-300 mt-2">Temps de travail effectif : préparation (maquillage, coiffure, habillage), répétitions sur plateau, temps de tournage effectif et temps d'attente entre les prises. Ne sont pas du temps de travail : le transport, le repas et la pause.</p>
                         </div>
                       </div>
 
