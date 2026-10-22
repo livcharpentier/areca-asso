@@ -55,6 +55,19 @@ const MemberCategoryPage = () => {
       availability: "",
       recentNews: "",
       cvUrl: "/CV_ELEONORE_AGUILLON.pdf"
+    },
+    {
+      id: 3,
+      firstName: "Christophe",
+      lastName: "Denis",
+      photoUrl: "/christophe-denis.jpg",
+      email: "christophe2ni@gmail.com",
+      phone: "",
+      bio: "Responsable de l'encadrement des enfants acteurs depuis 2006. Comédien, musicien, répétiteur musique.",
+      experienceYears: 20,
+      availability: "",
+      recentNews: "",
+      cvUrl: "/CV_CHRISTOPHE_DENIS.pdf"
     }
   ];
 

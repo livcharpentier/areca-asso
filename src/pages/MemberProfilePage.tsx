@@ -164,6 +164,48 @@ const memberData: { [key: string]: any } = {
       "Langues": "Anglais courant (plusieurs tournages en anglais), allemand intermédiaire, braille",
       "Activités pédagogiques": "Quand la durée du tournage et le nombre d'enfants s'y prêtent, ateliers adaptés aux stades de développement des enfants : activités manuelles (pâtisserie, peinture, aquarelle, argile, décopatch, bricolage), activités audiovisuelles (petit making-of et interviews de l'équipe, en accord avec la production), expériences scientifiques en toute sécurité (lumière, magnétisme, chimie du quotidien, électricité), activités musicales (chant, guitare, piano, écriture, composition)"
     }
+  },
+  "christophe-denis": {
+    firstName: "Christophe",
+    lastName: "Denis",
+    photo: "/christophe-denis.jpg",
+    email: "christophe2ni@gmail.com",
+    role: "Responsable enfants | Comédien | Musicien | Répétiteur musique",
+    bio: "Responsable de l'encadrement des enfants acteurs au cinéma et en audiovisuel depuis 2006. Basé à Paris.",
+    experienceYears: 20,
+    cvUrl: "/CV_CHRISTOPHE_DENIS.pdf",
+    films: [
+      { titre: "Anatole Latuile", realisateur: "François Descraques", annee: 2026, type: "film" },
+      { titre: "Karma", realisateur: "Guillaume Canet", annee: 2025, type: "film", affiche: "/affiches/liv/karma.jpg" },
+      { titre: "Singapura", realisateur: "Danielle Arbid et Lucie Borleteau", annee: 2024, type: "serie" },
+      { titre: "Sur un fil", realisateur: "Reda Kateb", annee: 2023, type: "film" },
+      { titre: "Toto : la classe se met au vert", realisateur: "Pascal Bourdiaux", annee: 2022, type: "film" },
+      { titre: "La Guerre des Lulus", realisateur: "Yann Samuell", annee: 2021, type: "film", affiche: "/affiches/liv/la-guerre-des-lulus.jpg" },
+      { titre: "Les Blagues de Toto", realisateur: "Pascal Bourdiaux", annee: 2019, type: "film" },
+      { titre: "Christ(Off)", realisateur: "Pierre Dudan", annee: 2017, type: "film" },
+      { titre: "Les Mystères de l'amour", annee: 2016, type: "serie" },
+      { titre: "Un sac de billes", realisateur: "Christian Duguay", annee: 2015, type: "film" },
+      { titre: "West Coast", realisateur: "Benjamin Weill", annee: 2014, type: "film" },
+      { titre: "Les Vacances du Petit Nicolas", realisateur: "Laurent Tirard", annee: 2013, type: "film", affiche: "/affiches/liv/les-vacances-du-petit-nicolas.jpg" },
+      { titre: "Je m'appelle Hmmm…", realisateur: "Agnès b.", annee: 2012, type: "film" },
+      { titre: "La Fleur de l'âge", realisateur: "Nick Quinn", annee: 2011, type: "film" },
+      { titre: "La Guerre des boutons", realisateur: "Yann Samuell", annee: 2011, type: "film", affiche: "/affiches/liv/la-guerre-des-boutons.jpg" },
+      { titre: "Astérix et Obélix : Au service de Sa Majesté", realisateur: "Laurent Tirard", annee: 2011, type: "film" },
+      { titre: "Ripoux anonymes", realisateur: "Claude et Julien Zidi", annee: 2010, type: "film" },
+      { titre: "Le Petit Nicolas", realisateur: "Laurent Tirard", annee: 2008, type: "film", affiche: "/affiches/liv/le-petit-nicolas.jpg" },
+      { titre: "Les Enfants de Timpelbach", realisateur: "Nicolas Bary", annee: 2007, type: "film" },
+      { titre: "Big City", realisateur: "Djamel Bensalah", annee: 2006, type: "film" },
+      { titre: "À cran", realisateur: "Alain Tasma", annee: 2003, type: "film" }
+    ],
+    filmography: {
+      "Responsable enfants": "Anatole Latuile de François Descraques, Pyramide Productions, enfants acteurs et figurants de 12 à 14 ans (2026), Karma de Guillaume Canet, Iconoclast Films, 7 à 15 ans (2025), Singapura, série de Danielle Arbid et Lucie Borleteau, Étoile Rouge Productions, 14 ans (2024), Sur un fil de Reda Kateb, Pyramide Productions, 5 à 11 ans (2023), Toto : la classe se met au vert de Pascal Bourdiaux, Superprod Films, 10 à 13 ans (2022), La Guerre des Lulus de Yann Samuell, Superprod Films, 7 à 16 ans (2021), Les Blagues de Toto de Pascal Bourdiaux, Superprod Films, 10 à 13 ans (2019), Un sac de billes de Christian Duguay, Mitico, 11 à 15 ans (2015), West Coast de Benjamin Weill, Jéricho, 12 à 17 ans (2014), Les Vacances du Petit Nicolas de Laurent Tirard, Fidélité Films, 8 à 10 ans (2013), La Fleur de l'âge de Nick Quinn, Gloria Films, 6 à 11 ans (2011), La Guerre des boutons de Yann Samuell, One World Films, 7 à 15 ans (2011), Le Petit Nicolas de Laurent Tirard, Fidélité Films, 8 à 10 ans (2008), Les Enfants de Timpelbach de Nicolas Bary, Chapter Two, 8 à 15 ans (2007), Big City de Djamel Bensalah, Miroir Magique, 7 à 15 ans (2006)",
+      "Comédien": "Toto : la classe se met au vert de Pascal Bourdiaux (2022), Les Blagues de Toto de Pascal Bourdiaux (2019), Les Mystères de l'amour, série (2016), Je m'appelle Hmmm… d'Agnès b. (2012), Astérix et Obélix : Au service de Sa Majesté de Laurent Tirard (2011), Akım, court métrage de Nicolas Karolszyk (2011), Ripoux anonymes, téléfilm de Claude et Julien Zidi (2010), courts métrages en 2010 : Bus Stop in Paris, Martin n'est pas blanc, Nicolas et Émilie, Circonstances atténuantes, Élégie, Sur un banc, Casting. À cran, téléfilm d'Alain Tasma (2003)",
+      "Répétiteur musique": "Christ(Off) de Pierre Dudan, Fechner Films (2017)"
+    },
+    cvSections: {
+      "Formation": "Référent VHSS, violences, harcèlement et discriminations sexuelles et sexistes, Atelier Marcelle (2025). Formation professionnelle d'intervenant pédagogique en musiques actuelles, FIPMA (2016). Formation professionnelle de comédien, Studio Pygmalion (2012). Cycle professionnel de musicien, spécialisation musique de film, 300 heures (2009). Animation d'ateliers d'écriture de chansons, ALEPH (1998). Encadrement de répétitions en musiques actuelles, Le CRY, Yvelines (1996). Brevet d'État d'éducateur sportif 1er degré option natation, BEESAN (1990). Études de guitare et d'arrangement, école de jazz du CIM (1984-1989). BAFA (1983)",
+      "IMDb": "https://www.imdb.com/fr/name/nm1456468/"
+    }
   }
 };
 
