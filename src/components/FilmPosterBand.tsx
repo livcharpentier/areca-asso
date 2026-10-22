@@ -168,11 +168,13 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
   }, [cleFilms]);
 
   if (!films.length) return null;
+  // Par date de sortie, du plus récent au plus ancien (sans année : à la fin)
+  const filmsTries = films.map((f, i) => ({ f, i })).sort((a, b) => (b.f.annee || 0) - (a.f.annee || 0) || a.i - b.i).map((x) => x.f);
 
   return (
     <div className="mb-8">
       <div className="flex gap-3 overflow-x-auto pb-3 snap-x" style={{ scrollbarWidth: "thin" }}>
-        {films.map((f, i) => {
+        {filmsTries.map((f, i) => {
           const cle = `${f.titre}|${f.annee || ""}`;
           const url = affiches[cle];
           return (
