@@ -188,7 +188,6 @@ const OrganisationTravailContent = () => (
           <ul className="text-sm text-foreground space-y-2 ml-4 list-disc">
             <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
             <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
-            <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
             <li><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
           </ul>
         </div>
@@ -393,7 +392,7 @@ const ConditionsContent = () => (
           <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
             <p className="font-semibold text-primary">Scolarité obligatoire</p>
             <p className="text-sm">Répétiteur agréé si absence scolaire</p>
-            <p className="text-sm">3h d'enseignement/jour minimum</p>
+            <p className="text-sm">2h d'enseignement/jour minimum</p>
             <p className="text-sm">Maintien du rythme scolaire</p>
           </div>
         </div>
@@ -410,7 +409,6 @@ const ConditionsContent = () => (
           <ul className="text-sm space-y-1">
             <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
             <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
-            <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
             <li>Valable quel que soit le nombre de jours de travail et d'employeurs</li>
           </ul>
         </div>

@@ -170,7 +170,7 @@ const MinorsEmploymentPage = () => {
                         <div>
                           <p className="font-semibold text-foreground">Scolarité obligatoire :</p>
                           <p className="text-sm">Répétiteur agréé si absence scolaire</p>
-                          <p className="text-sm">3h d'enseignement/jour minimum</p>
+                          <p className="text-sm">2h d'enseignement/jour minimum</p>
                           <p className="text-sm">Maintien du rythme scolaire</p>
                         </div>
 
@@ -196,7 +196,6 @@ const MinorsEmploymentPage = () => {
                       <ul className="text-sm space-y-1">
                         <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
                         <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
-                        <li><strong>Rentrée scolaire :</strong> Éviter de tourner la semaine de la rentrée</li>
                         <li className="text-yellow-300">Valable quel que soit le nombre de jours de travail et d'employeurs</li>
                       </ul>
                     </div>
