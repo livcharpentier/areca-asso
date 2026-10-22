@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
 import jsPDF from "jspdf";
+import FilmPosterBand, { filmsDepuisFilmographie } from "@/components/FilmPosterBand";
 
 const memberData: { [key: string]: any } = {
   "liv-charpentier": {
@@ -35,6 +36,68 @@ const memberData: { [key: string]: any } = {
       "Professeur EPS (remplaçant) entre 1998 et 2005": "École maternelle, primaire, collège, lycée, et le centre sportif de la Ville de Paris le mercredi.",
       "Diplômes": "BAFA (1997). A2C (1996) / Monitorat fédéral de voile (aux Glenans, 2000) / Monitorat fédéral de voile (2003) / B1D1 Voile (2003). Maîtrise STAPS (2006). AFPS / A.F.S.P.A.M (brevet de secouriste avec matériel). B.N.S.S.A (brevet national de secouriste et sauvetage aquatique).",
       "Permis": "Voiture B. Bateau : Côtier / Rivière / Fleuve / Lac."
+    }
+  },
+  "eleonore-aguillon": {
+    firstName: "Éléonore",
+    lastName: "Aguillon",
+    photo: "/eleonore-aguillon.jpg",
+    email: "eleonore.aguillon@gmail.com",
+    role: "Responsable enfants | Coach enfants | Suivi scolaire | Formée à la petite enfance | Casting rôles et figuration",
+    bio: "Responsable enfants et coach enfants sur longs métrages, séries et courts métrages, avec suivi scolaire en parallèle du tournage (du CP à la seconde).",
+    experienceYears: 9,
+    cvUrl: "/CV_ELEONORE_AGUILLON.pdf",
+    films: [
+      { titre: "Dans les yeux de Happy", realisateur: "Gilles de Maistre", annee: 2026, type: "film" },
+      { titre: "Les Quatre Rendez-vous de Françoise", realisateur: "Sandrine Kiberlain", annee: 2026, type: "film" },
+      { titre: "Pourquoi pas nous", realisateur: "Mélanie Auffret", annee: 2026, type: "film" },
+      { titre: "Fifi et sa bande, c'était pas gagné !", realisateur: "Pierre Lacheau", annee: 2026, type: "serie" },
+      { titre: "Slt ma belle !", realisateur: "Elisa Jadot", annee: 2026, type: "court" },
+      { titre: "Civilisés", realisateur: "Chine Thybaud", annee: 2026, type: "court" },
+      { titre: "Quelques mots d'amour", realisateur: "Rudi Rosenberg", annee: 2025, type: "film" },
+      { titre: "Chasse gardée 2", realisateur: "Antonin Fourlon et Frédéric Forestier", annee: 2025, type: "film" },
+      { titre: "La Guerre des prix", realisateur: "Anthony Dechaux", annee: 2025, type: "film" },
+      { titre: "Camembert", realisateur: "Matthieu Rumani et Nicolas Slomka", annee: 2025, type: "film" },
+      { titre: "Le Triangle d'or", realisateur: "Hélène Rosselet-Ruiz", annee: 2025, type: "film" },
+      { titre: "Sanguine", realisateur: "Marion Le Corroller", annee: 2025, type: "film" },
+      { titre: "Icaros", realisateur: "Alaa Safi", annee: 2025, type: "film" },
+      { titre: "Furies - saison 2", realisateur: "Cédric Nicolas-Troyan et Ludovic Bernard", annee: 2025, type: "serie" },
+      { titre: "G.I.G.N. - saison 1", realisateur: "Julien Leclercq", annee: 2025, type: "serie" },
+      { titre: "Élysée - saison 1", realisateur: "Martin Bourboulon", annee: 2025, type: "serie" },
+      { titre: "Seuls les poissons morts suivent le courant", realisateur: "Christophe Gomes", annee: 2025, type: "court" },
+      { titre: "Qui brille au combat", realisateur: "Joséphine Japy", annee: 2024, type: "film" },
+      { titre: "Banger", realisateur: "Bertrand de Langeron", annee: 2024, type: "film" },
+      { titre: "Les Orphelins", realisateur: "Olivier Schneider", annee: 2024, type: "film" },
+      { titre: "Yoroï", realisateur: "David Tomaszewski", annee: 2024, type: "film" },
+      { titre: "B.R.I. - saison 2", realisateur: "Jérémy Guez", annee: 2024, type: "serie" },
+      { titre: "Expulsion", realisateur: "Mathieu Vadepied", annee: 2024, type: "court" },
+      { titre: "Par amour", realisateur: "Élise Otzenberger", annee: 2023, type: "film" },
+      { titre: "Des blessures invisibles", realisateur: "Sarah Marx", annee: 2023, type: "film" },
+      { titre: "Le Règne animal", realisateur: "Thomas Cailley", annee: 2023, type: "film" },
+      { titre: "Frères", realisateur: "Olivier Casas", annee: 2023, type: "film" },
+      { titre: "Home-Jacking", realisateur: "Hervé Hadmar", annee: 2023, type: "serie" },
+      { titre: "Sous le tapis", realisateur: "Camille Japy", annee: 2022, type: "film" },
+      { titre: "Truth or Consequences", realisateur: "Philippe Prouff", annee: 2022, type: "film" },
+      { titre: "L'Abbé Pierre : Une vie de combats", realisateur: "Frédéric Tellier", annee: 2022, type: "film" },
+      { titre: "La Petite", realisateur: "Guillaume Nicloux", annee: 2022, type: "film" },
+      { titre: "La Révolution", realisateur: "J. Trousselier, J. Rozan, E. Saulnier", annee: 2019, type: "serie" },
+      { titre: "Le Test", realisateur: "Gabrielle Stemmer", annee: 2019, type: "court" },
+      { titre: "Les enfants font leur cinéma", realisateur: "Le Trianon", annee: 2019, type: "court" },
+      { titre: "De l'autre côté des montagnes", realisateur: "Nina Doré", annee: 2019, type: "court" }
+    ],
+    filmography: {
+      "Responsable enfants — Longs métrages": "Dans les yeux de Happy de Gilles de Maistre, Moana Films (2026), Les Quatre Rendez-vous de Françoise de Sandrine Kiberlain, Curiosa (2026), Pourquoi pas nous de Mélanie Auffret, Quad Films (2026), Quelques mots d'amour de Rudi Rosenberg, Chi Fou Mi (2025), Chasse gardée 2 d'Antonin Fourlon et Frédéric Forestier, Starman Films (2025), La Guerre des prix d'Anthony Dechaux, Les Films de Jeanne & La Filmerie (2025), Camembert de Matthieu Rumani et Nicolas Slomka, Jerico Films (2025), Le Triangle d'or d'Hélène Rosselet-Ruiz, Les Films de Pierre (2025), Sanguine de Marion Le Corroller, Windy Production (2025), Qui brille au combat de Joséphine Japy, Cowboys Films (2024), Par amour d'Élise Otzenberger, Mamma Roman (2023), Des blessures invisibles de Sarah Marx, What's Up Films (2023), Sous le tapis de Camille Japy, Mandarin et Compagnie (2022)",
+      "Responsable enfants — Séries": "Fifi et sa bande, c'était pas gagné ! de Pierre Lacheau, BAF Prod (2026), Furies saison 2 de Cédric Nicolas-Troyan et Ludovic Bernard, Empreinte Digitale (2025), G.I.G.N. saison 1 de Julien Leclercq, Labyrinthe Films (2025), Élysée saison 1 de Martin Bourboulon, Mediawan (2025)",
+      "Responsable enfants — Courts métrages": "Slt ma belle ! d'Elisa Jadot, Super 8 Films (2026), Civilisés de Chine Thybaud, 24 25 Films (2026), Seuls les poissons morts suivent le courant de Christophe Gomes (2025), Expulsion de Mathieu Vadepied, Boogie Nights (2024), Le Test de Gabrielle Stemmer, La Fémis (2019), Les enfants font leur cinéma, Le Trianon, film réalisé avec une classe de CE1 (2019), De l'autre côté des montagnes de Nina Doré, Après la 13 (2019)",
+      "Coach enfants": "Longs métrages : Dans les yeux de Happy (2026), Pourquoi pas nous (2026), Quelques mots d'amour (2025), La Guerre des prix (2025), Par amour (2023), Sous le tapis (2022). Séries : Fifi et sa bande, c'était pas gagné ! (2026), Furies saison 2 (2025), G.I.G.N. saison 1 (2025). Courts métrages : Civilisés (2026), Seuls les poissons morts suivent le courant (2025), Le Test (2019), De l'autre côté des montagnes (2019)",
+      "Suivi scolaire (en parallèle du tournage, du CP à la seconde générale)": "La Guerre des prix (2025) : 2 semaines de suivi pour un enfant en CE1. Par amour (2023) : 2 mois de suivi pour deux enfants en CE1 et CM1. Furies saison 2 (2025) : 4 mois de suivi pour un enfant en 4e",
+      "Casting rôles & figuration — Longs métrages": "Icaros d'Alaa Safi, Oïkia : chargée de figuration (2025), Banger de Bertrand de Langeron, Iconoclast Films : chargée de figuration et assistante castings rôles (2024), Les Orphelins d'Olivier Schneider, Inoxy Films : chargée de figuration (2024), Yoroï de David Tomaszewski, Cinéfrance Studio : chargée de figuration et assistante castings rôles (2024), Le Règne animal de Thomas Cailley, Nord-Ouest Films : assistante castings rôles et figuration région (2023), Frères d'Olivier Casas, ADNP Quad Films : chargée de figuration et assistante castings rôles (2023), Truth or Consequences de Philippe Prouff, Walter Films : chargée de figuration (2022), L'Abbé Pierre de Frédéric Tellier, WY Production : chargée de figuration et assistante castings rôles (2022), La Petite de Guillaume Nicloux, Les Films du Kiosque : assistante castings rôles et figuration région (2022)",
+      "Casting rôles & figuration — Séries et courts métrages": "B.R.I. saison 2 de Jérémy Guez, Cheyenne Fédération : chargée de figuration, bloc 3 (2024), Home-Jacking d'Hervé Hadmar, Lincoln TV : directrice de castings seconds rôles et chargée de figuration (2023), La Révolution de J. Trousselier, J. Rozan et E. Saulnier, John Doe Productions : stagiaire puis auxiliaire casting figuration, 8 épisodes (2019). Une quarantaine de courts métrages et de clips en tant que directrice de casting enfants et adultes depuis 2017"
+    },
+    cvSections: {
+      "Diplômes & formations": "CAP Accompagnement éducatif petite enfance (niveau 3, en cours). Stage en crèche de 8 semaines, Crèche du Centre, Neuilly-Plaisance (2026). PSC, gestes de premiers secours, Protection civile (2026). SEN, secours enfants & nourrissons, Protection civile (2026). Licence de physique-chimie, Sorbonne Université (L1, 2022). Double licence cinéma & gestion, Sorbonne Panthéon (niveau 6, 2021). Bac scientifique section européenne, mention TB (2017). Permis B (2017)",
+      "Langues": "Anglais courant (plusieurs tournages en anglais), allemand intermédiaire, braille",
+      "Activités pédagogiques": "Quand la durée du tournage et le nombre d'enfants s'y prêtent, ateliers adaptés aux stades de développement des enfants : activités manuelles (pâtisserie, peinture, aquarelle, argile, décopatch, bricolage), activités audiovisuelles (petit making-of et interviews de l'équipe, en accord avec la production), expériences scientifiques en toute sécurité (lumière, magnétisme, chimie du quotidien, électricité), activités musicales (chant, guitare, piano, écriture, composition)"
     }
   },
   "thomas-martin": {
@@ -229,6 +292,11 @@ const MemberProfilePage = () => {
                 </a>
               )}
             </div>
+
+            {/* Bandeau d'affiches des films du CV */}
+            {(member.films || member.filmography) && (
+              <FilmPosterBand films={member.films || filmsDepuisFilmographie(member.filmography)} />
+            )}
 
             {/* Filmographie */}
             {member.filmography && (
