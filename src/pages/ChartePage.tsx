@@ -197,7 +197,7 @@ const ChartePage = () => {
                 Charte du Responsable des Enfants
               </h1>
               <p className="text-xl text-accent font-semibold tracking-wide">
-                Audiovisuel et Cinéma
+                dans le Cinéma et l'Audiovisuel
               </p>
             </div>
 

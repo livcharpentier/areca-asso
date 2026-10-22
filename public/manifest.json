@@ -1,7 +1,7 @@
 {
   "name": "ARECA",
   "short_name": "ARECA",
-  "description": "Association des Responsables Enfants Audiovisuel et Cinéma",
+  "description": "Association des Responsables Enfants dans le Cinéma et l'Audiovisuel",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

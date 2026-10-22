@@ -32,7 +32,7 @@ const faqItems = [
   },
   {
     question: "Quel est le rôle de l'ARENCA ?",
-    answer: "L'ARENCA (Association des Responsables Enfants Cinéma et Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques et de défendre les intérêts de la profession."
+    answer: "L'ARENCA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques et de défendre les intérêts de la profession."
   }
 ];
 

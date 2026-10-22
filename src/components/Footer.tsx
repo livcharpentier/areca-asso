@@ -41,7 +41,7 @@ const Footer = () => {
                   ARENCA
                 </span>
                 <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
-                  Responsables Enfants Cinéma Audiovisuel
+                  Responsables Enfants dans le Cinéma et l'Audiovisuel
                 </span>
               </div>
             </Link>

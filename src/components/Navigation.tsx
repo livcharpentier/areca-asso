@@ -46,7 +46,7 @@ const Navigation = () => {
                 ARENCA
               </span>
               <span className="text-[6px] sm:text-[7px] text-black/80 uppercase tracking-widest font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
-                Association des Responsables Enfants Cinéma et Audiovisuel
+                Association des Responsables Enfants dans le Cinéma et l'Audiovisuel
               </span>
             </div>
           </Link>
