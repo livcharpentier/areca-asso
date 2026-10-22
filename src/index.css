@@ -134,7 +134,13 @@
       overflow-wrap: break-word;
       hyphens: auto;
     }
-    h1, h2, h3, h4 { overflow-wrap: anywhere; }
+    h1, h2, h3, h4 { overflow-wrap: break-word; hyphens: auto; }
+    h3 { letter-spacing: 0.02em !important; }
+    /* Blocs imbriqués (une section dans une section) : pas de double marge sur téléphone */
+    section section, section section > .container, section .container .container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
     a[href^="mailto:"] { word-break: break-all; }
   }
 }

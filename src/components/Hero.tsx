@@ -16,10 +16,10 @@ const Hero = () => {
         <div className="flex flex-col justify-end h-full max-w-2xl pb-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bangers text-white mb-4 leading-tight tracking-wider drop-shadow-2xl">
             Association des
-            <span className="block text-gold mt-2 text-4xl md:text-5xl lg:text-6xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.5)' }}>
+            <span className="block text-gold mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 20px rgba(255,215,0,0.5)' }}>
               Responsables Enfants
             </span>
-            <span className="block text-3xl md:text-5xl lg:text-6xl">dans le Cinéma et l'Audiovisuel</span>
+            <span className="block text-2xl sm:text-3xl md:text-5xl lg:text-6xl">dans le Cinéma et l'Audiovisuel</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed mb-6 drop-shadow-lg font-medium">
             Fédérer les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel

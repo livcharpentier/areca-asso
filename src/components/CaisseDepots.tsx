@@ -12,7 +12,7 @@ const CaisseDepots = () => (
           <div className="text-sm text-foreground space-y-2">
             <p>La Caisse des Dépôts est <strong>garante de la conservation des rémunérations des mineurs</strong> jusqu'à leur majorité (18 ans).</p>
             <p>Les versements se font sur un <strong>compte au nom de l'enfant</strong>. Les représentants légaux ne peuvent en aucun cas le créditer ou le débiter.</p>
-            <p className="text-muted-foreground">À noter : si l'enfant a plus de 16 ans, sa rémunération lui est directement versée par son employeur.</p>
+            <p><strong>Enfant de 16 ans et plus :</strong> il n'y a pas de versement à la Caisse des Dépôts, mais l'enfant reste sous la responsabilité financière de ses parents jusqu'à sa majorité (sauf mineur émancipé). La production doit donc <strong>demander l'autorisation des parents</strong> avant de verser la rémunération directement au mineur.</p>
           </div>
         </div>
 
@@ -25,9 +25,18 @@ const CaisseDepots = () => (
             </div>
             <div className="flex items-center gap-3">
               <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
-              <p>À disposition des représentants légaux</p>
+              <p>Versés aux <strong>représentants légaux</strong> — et non sur un compte bancaire au nom de l'enfant</p>
             </div>
             <p className="text-muted-foreground text-xs mt-2">Pour ESM : la part est fixée par décision de la Commission DREETS</p>
+          </div>
+        </div>
+
+        <div className="bg-amber-50 p-4 rounded-lg border border-amber-300">
+          <p className="font-semibold text-primary mb-2">Délais de versement</p>
+          <div className="text-sm text-foreground space-y-2">
+            <p>La production verse en général les sommes à la Caisse des Dépôts <strong>à la fin du projet</strong>.</p>
+            <p>La Caisse des Dépôts peut ensuite mettre <strong>jusqu'à 3 mois</strong> pour affecter les fonds au compte de l'enfant.</p>
+            <p className="text-muted-foreground">Il est utile de prévenir les familles dès le début : ces délais sont souvent source d'inquiétude.</p>
           </div>
         </div>
 

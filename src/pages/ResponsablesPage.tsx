@@ -403,7 +403,7 @@ const ConditionsContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Rémunération</p>
           <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité).</p>
-          <p className="text-sm"><strong>10%</strong> à disposition des représentants légaux.</p>
+          <p className="text-sm"><strong>10%</strong> versés aux représentants légaux (et non sur un compte au nom de l'enfant).</p>
           <p className="text-sm">Minimum : grille convention collective applicable.</p>
         </div>
 
