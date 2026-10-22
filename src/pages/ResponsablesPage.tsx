@@ -169,7 +169,7 @@ const OrganisationTravailContent = () => (
             <ul className="text-sm text-foreground ml-4 list-disc space-y-1 mt-1">
               <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
               <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
-              <li><strong>Temps d'attente</strong> dans la loge (si l'enfant n'est pas sollicité)</li>
+              <li><strong>La pause</strong></li>
             </ul>
           </div>
         </div>
