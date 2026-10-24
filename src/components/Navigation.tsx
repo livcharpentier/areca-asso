@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, LogIn, LogOut, UserCircle } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import logoAreca from "@/assets/logo-areca.png";
+import logoArenca from "@/assets/logo-arenca.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -37,7 +37,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src={logoAreca}
+              src={logoArenca}
               alt="ARENCA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
               className="h-12 sm:h-14 w-auto flex-shrink-0"
             />

@@ -5,22 +5,10 @@ import { Button } from "@/components/ui/button";
 const News = () => {
   const news = [
     {
-      date: "24.10.2025",
-      category: "Actualités Générales",
-      title: "Nouvelles grilles salariales 2025",
-      excerpt: "Publication des nouveaux barèmes pour les coordinateurs jeunesse dans les conventions collectives cinéma et audiovisuel...",
-    },
-    {
-      date: "12.10.2025",
-      category: "Vie de l'ARECA",
-      title: "L'ARECA accueille 11 nouveaux membres",
-      excerpt: "Nous sommes heureux d'accueillir de nouveaux professionnels au sein de notre association...",
-    },
-    {
-      date: "05.10.2025",
-      category: "Réglementation",
-      title: "Mise à jour du Code du Travail",
-      excerpt: "Nouvelles dispositions concernant le travail des enfants dans l'audiovisuel. Points clés à retenir...",
+      date: "Octobre 2026",
+      category: "Vie de l'ARENCA",
+      title: "L'ARENCA est publiée au Journal officiel",
+      excerpt: "L'Association des Responsables Enfants dans le Cinéma et l'Audiovisuel est désormais officiellement déclarée.",
     },
   ];
 
@@ -55,10 +43,6 @@ const News = () => {
                     <p className="text-sm text-foreground mb-4 line-clamp-3">
                       {item.excerpt}
                     </p>
-                    <Button variant="ghost" className="text-accent hover:text-accent hover:bg-accent/10 p-0 h-auto font-semibold transition-colors">
-                      Lire la suite
-                      <ArrowRight className="w-4 h-4 ml-1" />
-                    </Button>
                   </CardContent>
                 </Card>
               );

@@ -19,8 +19,8 @@ const FAQPage = () => {
       answer: "L'emploi d'enfants dans le spectacle et l'audiovisuel nécessite une autorisation individuelle délivrée par la commission des enfants du spectacle de la DRIEETS. Les horaires de travail sont strictement encadrés selon l'âge de l'enfant."
     },
     {
-      question: "Comment devenir membre de l'ARECA ?",
-      answer: "Pour devenir membre de l'ARECA, vous devez exercer le métier de responsable enfants ou être en formation pour ce métier. Rendez-vous sur notre page Contact pour nous envoyer votre candidature."
+      question: "Comment devenir membre de l'ARENCA ?",
+      answer: "Pour devenir membre de l'ARENCA, vous devez exercer le métier de responsable enfants ou être en formation pour ce métier. Rendez-vous sur notre page Contact pour nous envoyer votre candidature."
     },
     {
       question: "Quels sont les horaires de travail autorisés pour les enfants ?",
@@ -31,7 +31,7 @@ const FAQPage = () => {
       answer: "La commission des enfants du spectacle est une instance qui délivre les autorisations individuelles de travail pour les mineurs dans le spectacle. Elle vérifie que les conditions d'emploi respectent la législation et le bien-être de l'enfant."
     },
     {
-      question: "Quel est le rôle de l'ARECA ?",
+      question: "Quel est le rôle de l'ARENCA ?",
       answer: "L'ARENCA (Association des Responsables Enfants dans le Cinéma et l'Audiovisuel) a pour mission de fédérer les professionnels du secteur, de promouvoir les bonnes pratiques et de défendre les intérêts de la profession."
     }
   ];
@@ -50,7 +50,7 @@ const FAQPage = () => {
               </h1>
             </div>
             <p className="text-muted-foreground mb-8">
-              Retrouvez les réponses aux questions les plus courantes sur le métier de responsable enfants et l'association ARECA.
+              Retrouvez les réponses aux questions les plus courantes sur le métier de responsable enfants et l'association ARENCA.
             </p>
 
             <Accordion type="single" collapsible className="space-y-4">
