@@ -1,5 +1,5 @@
 // Accès au site réservé pendant la validation par les membres.
-// Le mot de passe est défini dans Vercel : Settings → Environment Variables → SITE_PASSWORD.
+// Mot de passe : celui ci-dessous, ou SITE_PASSWORD dans Vercel (Settings → Environment Variables) s'il est défini.
 // Pour rouvrir le site à tout le monde : supprimer ce fichier (ou mettre SITE_OUVERT=oui dans Vercel).
 export const config = { matcher: "/:path*" };
 
@@ -15,7 +15,7 @@ h1{font-size:2rem;letter-spacing:.08em;margin:0 0 12px}p{margin:6px 0;color:#444
 export default function middleware(request) {
   const env = (typeof process !== "undefined" && process.env) || {};
   if ((env.SITE_OUVERT || "").toLowerCase() === "oui") return;
-  const motDePasse = env.SITE_PASSWORD || "";
+  const motDePasse = env.SITE_PASSWORD || "5437265";
   const auth = request.headers.get("authorization") || "";
   if (motDePasse && auth.startsWith("Basic ")) {
     try {
