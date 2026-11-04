@@ -104,6 +104,13 @@ const ArtistSalaries = () => {
                 <Download className="w-5 h-5" />
                 Convention collective du cinéma (IDCC 3097, version consolidée au 1er juin 2024)
               </button>
+              <button
+                onClick={() => window.open('/ccn-production-audiovisuelle-novembre-2026.pdf', '_blank')}
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 mt-3 bg-muted/50 hover:bg-muted text-foreground rounded-lg border border-border transition-colors font-semibold"
+              >
+                <Download className="w-5 h-5" />
+                Convention collective de l'audiovisuel (IDCC 2642, texte en vigueur, Légifrance, novembre 2026)
+              </button>
             </div>
           </CardContent>
         </Card>
