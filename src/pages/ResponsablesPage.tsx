@@ -424,7 +424,7 @@ const ConditionsContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-3">Obligation majeure - Responsable des enfants</p>
+          <p className="font-semibold text-primary mb-3">Responsable des enfants (cinéma)</p>
           <p className="text-sm mb-3">En cinéma : obligatoire dès qu'un mineur de moins de 16 ans est engagé (convention collective, titre III, article 6).</p>
           <div className="bg-card p-3 rounded border border-border">
             <p className="font-semibold text-primary mb-2">Profil requis</p>
@@ -462,102 +462,31 @@ const ConditionsContent = () => (
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
-            <p className="font-semibold text-primary">Dossier obligatoire (par enfant)</p>
-            <p className="text-sm">• Livret de famille ou acte de naissance</p>
-            <p className="text-sm">• Autorisation parentale signée par les deux parents (ou justificatif si un seul)</p>
-            <p className="text-sm">• Avis favorable écrit de l'enfant s'il a plus de 13 ans</p>
-            <p className="text-sm">• Projet de contrat de travail</p>
-            <p className="text-sm">• Certificat de scolarité, ou avis pédagogique à partir de 4 jours d'absence</p>
-            <p className="text-sm">• Avis médical d'aptitude (validité selon l'âge)</p>
-            <p className="text-xs text-muted-foreground">Le casier judiciaire (B3) du responsable des enfants est vérifié par l'employeur ; il ne fait pas partie du dossier.</p>
-          </div>
-          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
-            <p className="font-semibold text-primary">Accompagnement plateau</p>
-            <p className="text-sm">• Responsable des enfants qualifié : obligatoire en cinéma dès qu'un mineur de moins de 16 ans est engagé</p>
-            <p className="text-sm">• Adulte référent : obligatoire lors des castings de mineurs (cinéma)</p>
-            <p className="text-sm">• Conditions adaptées : repos, repas, loge</p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
-            <p className="font-semibold text-primary">Durée quotidienne détaillée</p>
-            <div className="text-sm space-y-1">
-              <p><strong>&lt; 3 ans :</strong> 1h/jour (pause après 30 min)</p>
-              <p><strong>3-5 ans :</strong> 2h/jour (pause après 1h)</p>
-              <p><strong>6-11 ans :</strong></p>
-              <p className="ml-3">• Période scolaire : 3h/jour (pause après 1h30)</p>
-              <p className="ml-3">• Vacances scolaires : 4h/jour (pause après 2h)</p>
-              <p><strong>12-16 ans :</strong></p>
-              <p className="ml-3">• Période scolaire : 4h/jour (pause après 2h)</p>
-              <p className="ml-3">• Vacances scolaires : 6h/jour (pause après 3h)</p>
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">Temps de travail effectif : préparation (maquillage, coiffure, habillage), répétitions sur plateau, temps de tournage effectif et temps d'attente entre les prises. Ne sont pas du temps de travail : le transport, le repas et la pause.</p>
-          </div>
-          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
-            <p className="font-semibold text-primary">Scolarité obligatoire</p>
-            <p className="text-sm">Répétiteur agréé si absence scolaire</p>
-            <p className="text-sm">2h d'enseignement/jour minimum</p>
-            <p className="text-sm">Maintien du rythme scolaire</p>
-          </div>
-        </div>
-
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Rémunération</p>
-          <p className="text-sm"><strong>90%</strong> versés à la Caisse des Dépôts et Consignations (pécule jusqu'à majorité).</p>
-          <p className="text-sm"><strong>10%</strong> (en général) laissés à la disposition des représentants légaux.</p>
-          <p className="text-sm">Minimum : grille convention collective applicable.</p>
-        </div>
-
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Travail pendant les vacances scolaires</p>
-          <ul className="text-sm space-y-1">
-            <li><strong>Maximum :</strong> 50% de la durée totale des vacances</li>
-            <li><strong>Été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août)</li>
-            <li>Valable quel que soit le nombre de jours de travail et d'employeurs</li>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+          <p className="font-semibold text-primary">Le responsable des enfants est-il obligatoire ?</p>
+          <ul className="text-sm space-y-1 ml-4 list-disc">
+            <li><strong>Cinéma (films, y compris courts métrages) : oui</strong>, dès qu'un mineur de moins de 16 ans est engagé (convention collective du cinéma, titre III, article 6, étendu).</li>
+            <li><strong>Audiovisuel (séries, téléfilms, documentaires, émissions de flux) :</strong> un accord du 21 mars 2025 le rend obligatoire pour les moins de 16 ans, mais il n'est pas encore étendu : il ne s'impose pour l'instant qu'aux producteurs adhérents des syndicats signataires.</li>
+            <li><strong>Publicité : non</strong>, la convention du cinéma l'exclut (titre III, article 7).</li>
+            <li><strong>Clip musical, théâtre, spectacle vivant :</strong> aucune obligation trouvée à ce jour.</li>
           </ul>
+          <p className="text-xs text-muted-foreground">Dans tous les cas, le responsable des enfants reste recommandé, et l'autorisation du préfet est toujours obligatoire.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <p className="font-semibold text-primary mb-2">Durée du travail</p>
-            <ul className="text-sm space-y-1">
-              <li><strong>Maximum :</strong> 8h/jour - 35h/semaine</li>
-              <li><strong>Pause obligatoire :</strong> 30 min toutes les 4h30</li>
-              <li><strong>Repos quotidien :</strong> Minimum 14h consécutives</li>
-              <li><strong>Repos hebdomadaire :</strong> 2 jours consécutifs (dérogation possible : 36h dont 24h consécutives)</li>
-            </ul>
-          </div>
-          <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <p className="font-semibold text-primary mb-2">Enfants du théâtre (recommandations de la circulaire de 1964)</p>
-            <ul className="text-sm space-y-1">
-              <li>Âge minimum : <strong>9 ans</strong></li>
-              <li>Maximum : <strong>3 représentations/semaine</strong></li>
-              <li>Maximum : <strong>1 représentation/jour</strong></li>
-              <li>Respect du repos pendant vacances scolaires</li>
-            </ul>
-          </div>
+        <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+          <p className="font-semibold text-primary">Scolarité</p>
+          <p className="text-sm">Répétiteur agréé si absence scolaire · 2h d'enseignement/jour minimum · maintien du rythme scolaire</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <p className="font-semibold text-primary mb-2">Travail de nuit</p>
-            <ul className="text-sm space-y-1">
-              <li><strong>&lt; 16 ans :</strong> Interdiction totale 20h-6h</li>
-              <li><strong>16-18 ans :</strong> Interdiction totale 22h-6h</li>
-              <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
-              <li><strong>Repos minimum :</strong> 14h consécutives (&lt;16 ans) / 12h consécutives (16-18 ans), y compris en cas de dérogation</li>
-            </ul>
-          </div>
-          <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <p className="font-semibold text-primary mb-2">Acrobaties et professions spéciales</p>
-            <ul className="text-sm space-y-1">
-              <li><strong>Interdit &lt; 16 ans :</strong> Tours de force périlleux, exercices de dislocation, travaux dangereux</li>
-              <li><strong>Exception :</strong> Enfants de parents acrobates/saltimbanques/montreurs d'animaux/directeurs de cirque si <strong>≥ 12 ans</strong></li>
-            </ul>
-          </div>
+        <div className="bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-4 rounded-md text-sm">
+          <p className="font-semibold mb-2">Pour le détail, voir :</p>
+          <ul className="space-y-1 ml-4 list-disc">
+            <li><strong>Durées par âge, pauses, travail de nuit</strong> : onglet Temps de travail</li>
+            <li><strong>Repos, vacances scolaires, dimanche et jours fériés</strong> : onglet Organisation</li>
+            <li><strong>Théâtre, cirque, acrobaties, publicité</strong> : onglet Types d'emploi des mineurs</li>
+            <li><strong>Pièces du dossier enfant</strong> (constitué par la production) : Espace Parents → Dossier Enfant</li>
+            <li><strong>Rémunération et Caisse des Dépôts</strong> : Espace Parents → Caisse des Dépôts</li>
+          </ul>
         </div>
       </CardContent>
     </Card>
