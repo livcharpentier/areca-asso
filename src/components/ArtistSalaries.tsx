@@ -81,7 +81,7 @@ const ArtistSalaries = () => {
                   </tbody>
                 </table>
               </div>
-              <p className="text-xs text-muted-foreground mt-2">Résumé de la grille des salaires : il ne remplace pas la lecture des conventions collectives. Majorations (heures supplémentaires, nuit, dimanche, jours fériés) dans la grille complète.</p>
+              <p className="text-xs text-muted-foreground mt-2">Résumé de la grille des salaires : il ne remplace pas la lecture des conventions collectives. Majorations (nuit, dimanche, jours fériés) dans la grille complète.</p>
             </div>
             <div className="pt-4 border-t border-border">
               <button
