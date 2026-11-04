@@ -438,8 +438,9 @@ const ConditionsContent = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Autre nouvelle obligation (Castings)</p>
-          <p className="text-sm">Présence obligatoire d'un adulte référent lors de tous les castings avec des mineurs.</p>
+          <p className="font-semibold text-primary mb-2">Castings : adulte référent obligatoire (cinéma)</p>
+          <p className="text-sm">« Les enfants doivent être accompagnés d'un adulte référent dont le rôle est de s'assurer, en contact avec les représentants légaux si ce n'est pas eux qui assument ce rôle, que la sécurité et l'intérêt de l'enfant sont préservés. Les locaux devront en outre permettre d'accueillir les accompagnants. »</p>
+          <p className="text-xs text-muted-foreground mt-1">Convention collective du cinéma, titre III, article 2 (organisation des castings) et article 5.1 — avenant du 17 mai 2024, étendu le 24 septembre 2024. L'adulte référent peut être un parent.</p>
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
