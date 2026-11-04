@@ -48,12 +48,15 @@ const ResponsablesPage = () => {
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
               <Tabs defaultValue="reglementations" className="w-full">
-                <TabsList className="grid w-full grid-cols-3 sm:grid-cols-5 mb-6 h-auto">
+                <TabsList className="grid w-full grid-cols-3 sm:grid-cols-6 mb-6 h-auto">
                   <TabsTrigger value="reglementations">
                     <span>Réglementations</span>
                   </TabsTrigger>
                   <TabsTrigger value="vhss">
                     <span>VHSS</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="diplomes">
+                    <span>Diplômes</span>
                   </TabsTrigger>
                   <TabsTrigger value="positionnement">
                     <span>Positionnement</span>
@@ -65,6 +68,10 @@ const ResponsablesPage = () => {
                     <span>Contacts utiles</span>
                   </TabsTrigger>
                 </TabsList>
+
+            <TabsContent value="diplomes">
+              <DiplomesContent />
+            </TabsContent>
 
             <TabsContent value="contacts">
               <ContactsUtilesContent />
@@ -488,6 +495,114 @@ const ConditionsContent = () => (
             <li><strong>Rémunération et Caisse des Dépôts</strong> : Espace Parents → Caisse des Dépôts</li>
           </ul>
         </div>
+      </CardContent>
+    </Card>
+  </div>
+);
+
+/* Contenu Diplômes */
+const DiplomesContent = () => (
+  <div className="space-y-6">
+    <Card>
+      <CardContent className="p-5 text-sm text-foreground">
+        Aucun diplôme précis n'est exigé par la loi pour être responsable des enfants, mais une formation à l'encadrement
+        des mineurs est un vrai plus. Le plus courant est le <strong>BAFA</strong> (brevet d'aptitude aux fonctions d'animateur).
+      </CardContent>
+    </Card>
+
+    <Card className="border-2 border-[#ee7d2b]">
+      <CardHeader>
+        <CardTitle>Passer le BAFA : les 3 étapes</CardTitle>
+        <p className="text-sm text-muted-foreground">Âge minimum : 16 ans le premier jour de la formation générale. Inscription sur <a className="text-accent underline" href="https://www.bafa-bafd.gouv.fr" target="_blank" rel="noopener noreferrer">bafa-bafd.gouv.fr</a>.</p>
+      </CardHeader>
+      <CardContent className="space-y-4 text-sm text-foreground">
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-bold text-primary">1. Formation générale</p>
+            <p className="font-semibold">8 jours minimum</p>
+            <p>Bases théoriques et pratiques de l'animation. En continu ou en 2 parties sur 1 mois maximum.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-bold text-primary">2. Stage pratique</p>
+            <p className="font-semibold">14 jours minimum</p>
+            <p>En centre de loisirs, colonie de vacances ou accueil de scoutisme, en France (un tournage ne compte pas). Possible en 2 parties d'au moins 4 jours. À commencer dans les 18 mois après la formation générale.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-bold text-primary">3. Approfondissement ou qualification</p>
+            <p className="font-semibold">6 jours (approfondissement) ou 8 jours (qualification)</p>
+            <p>Thème au choix (petite enfance, handicap, activités artistiques…) ou qualification : surveillance de baignade, voile, canoë-kayak, activités motocyclistes.</p>
+          </div>
+        </div>
+        <div className="bg-[#fdf1e7] p-4 rounded-lg border-l-4 border-[#ee7d2b] space-y-1">
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Durée totale : 30 mois maximum</strong> pour faire les 3 étapes (prolongation possible de 12 mois sur demande motivée).</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Le diplôme est délivré par le recteur après avis du jury. Il est <strong>valable à vie</strong>.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>La formation est <strong>payante</strong>, prix variable selon l'organisme. Aides : <strong>Caf</strong> (200 € pour la 3e étape, à demander dans les 3 mois après l'inscription), parfois la MSA, la mairie, le département, la région ou France Travail.</p>
+        </div>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Quelques organismes de formation habilités</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3 text-sm text-foreground">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+          <a className="text-accent underline" href="https://www.cemea.asso.fr" target="_blank" rel="noopener noreferrer">CEMÉA</a>
+          <a className="text-accent underline" href="https://www.ufcv.fr" target="_blank" rel="noopener noreferrer">UFCV</a>
+          <a className="text-accent underline" href="https://www.francas.asso.fr" target="_blank" rel="noopener noreferrer">Les Francas</a>
+          <a className="text-accent underline" href="https://laligue.org" target="_blank" rel="noopener noreferrer">Ligue de l'enseignement</a>
+          <a className="text-accent underline" href="https://www.leolagrange.org" target="_blank" rel="noopener noreferrer">Fédération Léo Lagrange</a>
+          <a className="text-accent underline" href="https://www.famillesrurales.org" target="_blank" rel="noopener noreferrer">Familles Rurales</a>
+          <a className="text-accent underline" href="https://www.afocal.fr" target="_blank" rel="noopener noreferrer">AFOCAL</a>
+          <a className="text-accent underline" href="https://www.ifac.asso.fr" target="_blank" rel="noopener noreferrer">IFAC</a>
+          <a className="text-accent underline" href="https://www.eedf.fr" target="_blank" rel="noopener noreferrer">Éclaireuses et Éclaireurs de France</a>
+        </div>
+        <p className="text-muted-foreground">La liste complète des organismes habilités et les dates de session se trouvent sur <a className="text-accent underline" href="https://www.bafa-bafd.gouv.fr" target="_blank" rel="noopener noreferrer">bafa-bafd.gouv.fr</a>.</p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Diplômes équivalents au BAFA</CardTitle>
+        <p className="text-sm text-muted-foreground">Ces titres permettent d'exercer les mêmes fonctions d'animation que le BAFA (arrêté du 9 février 2007 modifié). Voici les principaux :</p>
+      </CardHeader>
+      <CardContent className="space-y-4 text-sm text-foreground">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-semibold text-primary mb-1">Animation, jeunesse et sport</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>BAPAAT</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>CPJEPS</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>BPJEPS</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>BEATEP</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>CQP animateur périscolaire</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>CQP animateur de loisirs sportifs</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>BEES 1er degré</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-semibold text-primary mb-1">Petite enfance et éducation</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>CAP accompagnant éducatif petite enfance (ou ancien CAP petite enfance)</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Bac pro animation enfance et personnes âgées</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Diplôme d'État de moniteur éducateur</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Diplôme universitaire de musicien intervenant (DUMI)</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-1">
+            <p className="font-semibold text-primary mb-1">Études supérieures</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>DUT / BUT carrières sociales</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Licence STAPS</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Licence sciences de l'éducation</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Licences professionnelles de l'animation sociale et socioculturelle</p>
+          </div>
+          <div className="bg-[#fdf1e7] p-4 rounded-lg border-l-4 border-[#ee7d2b] space-y-1">
+            <p className="font-semibold text-primary mb-1">Niveau au-dessus du BAFA</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>BAFD (brevet d'aptitude aux fonctions de directeur)</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>DEJEPS</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>DESJEPS</p>
+          </div>
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Sources : <a className="underline" href="https://www.service-public.gouv.fr/particuliers/vosdroits/F21074" target="_blank" rel="noopener noreferrer">service-public.gouv.fr, fiche Bafa (juin 2026)</a> ;
+          <a className="underline ml-1" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000615233" target="_blank" rel="noopener noreferrer">arrêté du 9 février 2007 (liste complète)</a>.
+        </p>
       </CardContent>
     </Card>
   </div>
