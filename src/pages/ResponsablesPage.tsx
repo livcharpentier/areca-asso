@@ -293,7 +293,8 @@ const ConditionsContent = () => (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle>Conditions d'Emploi des Mineurs (17 mai 2024)</CardTitle>
+        <CardTitle>Conditions d'emploi des mineurs</CardTitle>
+        <p className="text-xs text-muted-foreground mt-1">Sources officielles : Code du travail (art. L7124-1 et suivants, L3161-1 et suivants), convention collective du cinéma (avenant du 17 mai 2024, étendu le 24 septembre 2024), commission des enfants du spectacle d'Île-de-France.</p>
       </CardHeader>
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
@@ -365,19 +366,20 @@ const ConditionsContent = () => (
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
-            <p className="font-semibold text-primary">Dossier obligatoire</p>
-            <p className="text-sm">• Autorisation parentale</p>
-            <p className="text-sm">• Certificat médical (validité selon âge)</p>
-            <p className="text-sm">• Avis pédagogique Education Nationale</p>
-            <p className="text-sm">• Assurance responsabilité civile</p>
-            <p className="text-sm">• Casier B3 du Responsable des mineurs</p>
+            <p className="font-semibold text-primary">Dossier obligatoire (par enfant)</p>
+            <p className="text-sm">• Livret de famille ou acte de naissance</p>
+            <p className="text-sm">• Autorisation parentale signée par les deux parents (ou justificatif si un seul)</p>
+            <p className="text-sm">• Avis favorable écrit de l'enfant s'il a plus de 13 ans</p>
+            <p className="text-sm">• Projet de contrat de travail</p>
+            <p className="text-sm">• Certificat de scolarité, ou avis pédagogique à partir de 4 jours d'absence</p>
+            <p className="text-sm">• Avis médical d'aptitude (validité selon l'âge)</p>
+            <p className="text-xs text-muted-foreground">Le casier judiciaire (B3) du responsable des enfants est vérifié par l'employeur ; il ne fait pas partie du dossier.</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-3">
             <p className="font-semibold text-primary">Accompagnement plateau</p>
-            <p className="text-sm">Présence d'un parent ou tuteur légal</p>
-            <p className="text-sm">Responsable des mineurs qualifié (cinéma)</p>
-            <p className="text-sm">Adulte référent lors des castings</p>
-            <p className="text-sm">Conditions adaptées (repos, repas)</p>
+            <p className="text-sm">• Responsable des enfants qualifié : obligatoire en cinéma dès qu'un mineur de moins de 16 ans est engagé</p>
+            <p className="text-sm">• Adulte référent : obligatoire lors des castings de mineurs (cinéma)</p>
+            <p className="text-sm">• Conditions adaptées : repos, repas, loge</p>
           </div>
         </div>
 
@@ -585,6 +587,26 @@ const VHSSContent = () => (
       </CardContent>
     </Card>
 
+    <Card className="border-2 border-[#ee7d2b]">
+      <CardHeader>
+        <CardTitle>En cas de problème : à qui s'adresser ?</CardTitle>
+        <p className="text-sm text-muted-foreground">Victime ou témoin de violences, de harcèlement ou d'agissements sexistes, ou situation qui met un enfant en danger : voici l'ordre conseillé.</p>
+      </CardHeader>
+      <CardContent className="space-y-3 text-sm text-foreground">
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">1</span><p><strong>Le référent VHSS du film</strong>, désigné par la production : c'est le premier interlocuteur, il recueille le signalement et alerte la production.</p></div>
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">2</span><p><strong>La production</strong> (employeur, directeur ou directrice de production) : elle doit faire cesser les faits, protéger la victime et mener une enquête interne. Les représentants du personnel peuvent aussi être saisis, ainsi que le <strong>CCHSCT</strong> de la production cinématographique.</p></div>
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">3</span><p><strong>La cellule d'écoute Audiens</strong> (spectacle, cinéma, audiovisuel), gratuite et anonyme si vous le souhaitez, pour un soutien psychologique et juridique : <strong>01 87 20 30 90</strong> (du lundi au vendredi, 9h-13h et 14h-18h) — <a className="text-accent underline" href="mailto:violences-sexuelles-culture@audiens.org">violences-sexuelles-culture@audiens.org</a></p></div>
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">4</span><p><strong>Si rien n'est fait</strong> : le <strong>médecin du travail</strong> (Thalie Santé pour les enfants), l'<strong>inspection du travail</strong> (DREETS ou DRIEETS) et le <strong>Défenseur des droits</strong>.</p></div>
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">5</span><p><strong>Justice</strong> : dépôt de plainte auprès de la police, de la gendarmerie ou directement du procureur de la République.</p></div>
+        <div className="mt-2 grid md:grid-cols-3 gap-3">
+          <div className="bg-destructive/10 border border-destructive/40 rounded-lg p-3"><p className="font-bold">Urgence</p><p>17 (police) ou 112</p></div>
+          <div className="bg-destructive/10 border border-destructive/40 rounded-lg p-3"><p className="font-bold">Enfant en danger</p><p>119 — Allô Enfance en danger, 24h/24, gratuit</p></div>
+          <div className="bg-muted/60 border border-border rounded-lg p-3"><p className="font-bold">Violences Femmes Info</p><p>39 19, gratuit et anonyme</p></div>
+        </div>
+        <p className="text-xs text-muted-foreground">Ces interlocuteurs sont ceux que la convention collective du cinéma impose d'afficher sur chaque production (avenant VHSS).</p>
+      </CardContent>
+    </Card>
+
     <Card>
       <CardHeader>
         <CardTitle>Documents de référence</CardTitle>
@@ -618,6 +640,18 @@ const AnimateursSection = () => (
 
     <TabsContent value="idees-animation">
       <div className="space-y-4">
+        <div className="rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-4 text-foreground">
+          <p className="font-bold text-lg mb-2">Le rôle de l'animateur·trice</p>
+          <p className="text-sm mb-2">
+            L'animateur·trice intervient <strong>en soutien du·de la responsable des enfants</strong>, sous sa supervision directe.
+            Il·elle occupe et accompagne les enfants pendant les temps d'attente, veille à leur bien-être et peut assister le·la responsable dans toutes ses missions.
+          </p>
+          <ul className="text-sm ml-4 list-disc space-y-1">
+            <li>Rend régulièrement compte au·à la responsable des enfants de ce qu'il·elle observe, y compris en cas de difficulté.</li>
+            <li>Ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer au·à la responsable.</li>
+            <li>Adhère à la charte de l'ARENCA et agit dans le même esprit de protection et de bienveillance.</li>
+          </ul>
+        </div>
         <Card>
           <CardHeader><CardTitle>Idées d&apos;animation par tranche d&apos;âge</CardTitle></CardHeader>
           <CardContent className="space-y-6">

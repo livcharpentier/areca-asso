@@ -54,7 +54,7 @@ const WorkTimeRegulations = () => {
                   Respect strict obligatoire
                 </p>
                 <p className="text-sm text-foreground/90">
-                  Durées de référence de la commission des enfants du spectacle (Paris). Le tableau est indicatif : la commission apprécie chaque demande au cas par cas, et les horaires autorisés sont ceux fixés dans l'autorisation.
+                  Durées maximales retenues par la commission des enfants du spectacle d'Île-de-France (DRIEETS). La commission apprécie chaque demande au cas par cas : les horaires à respecter sont ceux fixés dans l'autorisation.
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ const WorkTimeRegulations = () => {
             </div>
 
             <div className="text-center text-sm text-muted-foreground pt-2">
-              <p>Sources : guide de la commission des enfants du spectacle de Paris (durées indicatives) ; Code du travail, articles L3161-1 et suivants, L7124-1 et suivants</p>
+              <p>Sources : DRIEETS Île-de-France, commission des enfants du spectacle ; Code du travail, articles L3161-1 et suivants, L7124-1 et suivants</p>
             </div>
           </CardContent>
         </Card>

@@ -129,7 +129,7 @@ const DossierEnfantContent = () => (
               <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Livret de famille à jour ou acte de naissance</p></li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Autorisation parentale</p>
-                <p className="text-sm text-muted-foreground pl-5">À remplir à partir du modèle (à télécharger plus bas)</p>
+                <p className="text-sm text-muted-foreground pl-5">Signée par les deux parents (ou justificatif si un seul parent) — modèle à télécharger plus bas</p>
               </li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avis favorable écrit de l'enfant</p>
