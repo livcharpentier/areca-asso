@@ -173,6 +173,43 @@ const DossierEnfantContent = () => (
       </CardContent>
     </Card>
 
+    <div className="rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-5 md:p-6">
+      <p className="text-center font-bold text-lg md:text-xl uppercase tracking-wider text-foreground mb-1">
+        Le numéro de sécu de votre enfant
+      </p>
+      <p className="text-center text-sm text-muted-foreground mb-4">Le petit papier qu'on oublie toujours… et qui bloque tout !</p>
+      <div className="grid md:grid-cols-2 gap-5 text-foreground">
+        <div className="space-y-3">
+          <p>
+            <strong>« Mon enfant est sur ma carte Vitale »</strong> : oui, mais seulement pour les remboursements de soins !
+          </p>
+          <p>
+            Pour un <strong>contrat de travail</strong>, et c'est le cas dès qu'un enfant tourne, même en figuration,
+            la production doit déclarer <strong>l'enfant lui-même</strong> à l'URSSAF. Votre numéro à vous ne fonctionne pas.
+          </p>
+          <p>
+            Bonne nouvelle : tout enfant né en France <strong>a déjà son propre numéro</strong>, attribué dès sa naissance.
+            Il suffit d'aller le chercher. Certaines productions, notamment étrangères, le demandent même <strong>avant l'embauche</strong>.
+          </p>
+        </div>
+        <div className="bg-white/70 rounded-lg p-4 border border-[#ee7d2b]/30">
+          <p className="font-bold mb-2">Comment le retrouver en 2 minutes</p>
+          <ol className="space-y-2 text-sm">
+            <li><span className="text-[#ee7d2b] font-bold mr-2">1.</span>Connectez-vous à votre compte sur <a href="https://www.ameli.fr" target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold">ameli.fr</a> (le compte du parent).</li>
+            <li><span className="text-[#ee7d2b] font-bold mr-2">2.</span>Demandez une <strong>attestation de droits</strong> en PDF.</li>
+            <li><span className="text-[#ee7d2b] font-bold mr-2">3.</span>Téléchargez-la : le numéro de votre enfant apparaît en bas, à côté de son nom.</li>
+          </ol>
+          <p className="text-sm mt-3">
+            <strong>Pas de compte ameli ?</strong> Appelez votre caisse d'assurance maladie (36 46) en précisant bien que c'est
+            <strong> un employeur</strong> qui vous demande ce numéro.
+          </p>
+        </div>
+      </div>
+      <p className="text-center text-sm font-semibold mt-4">
+        Astuce : notez-le une bonne fois pour toutes, il vous sera redemandé à chaque tournage !
+      </p>
+    </div>
+
     <Card>
       <CardHeader>
         <CardTitle>Rôle ou figuration : ce qui change</CardTitle>
