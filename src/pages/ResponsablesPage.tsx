@@ -122,7 +122,7 @@ const ReglementationsContent = () => {
             <span>Organisation</span>
           </TabsTrigger>
           <TabsTrigger value="familles-emploi" className="text-xs">
-            <span>Familles d'emploi</span>
+            <span>Types d'emploi</span>
           </TabsTrigger>
           <TabsTrigger value="conditions" className="text-xs">
             <span>Conditions</span>
@@ -224,7 +224,7 @@ const FamillesEmploiContent = () => (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle>Familles d'Emploi des Mineurs dans le Spectacle</CardTitle>
+        <CardTitle>Types d'emploi des mineurs : rôle, figuration, scène, e-sport</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
