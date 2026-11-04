@@ -133,7 +133,7 @@ const DossierEnfantContent = () => (
               </li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avis favorable écrit de l'enfant</p>
-                <p className="text-sm text-muted-foreground pl-5">Si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail) — modèle à télécharger plus bas</p>
+                <p className="text-sm text-muted-foreground pl-5">Si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail), écrit à la main et signé par l'enfant</p>
               </li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Certificat de scolarité</p>
@@ -286,15 +286,6 @@ const DossierEnfantContent = () => (
         >
           <Download className="h-4 w-4 text-primary" />
           Modèle d'autorisation parentale (DOCX)
-        </a>
-        <a
-          href="/avis_enfant_plus_de_13_ans.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
-        >
-          <Download className="h-4 w-4 text-primary" />
-          Avis de l'enfant de plus de 13 ans (modèle ARENCA, PDF)
         </a>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <a
