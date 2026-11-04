@@ -562,7 +562,7 @@ const VHSSContent = () => (
 
     <Card>
       <CardHeader>
-        <CardTitle>Avenant VHSS (17 mai 2024 - étendu septembre 2024)</CardTitle>
+        <CardTitle>Avenant VHSS (17 mai 2024)</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
@@ -573,8 +573,8 @@ const VHSSContent = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground">
           <div className="space-y-3">
             <div>
-              <p className="font-semibold text-primary">Référent VHSS obligatoire</p>
-              <p className="text-sm">Désignation d'un référent formé sur chaque film (30€ brut/semaine en long-métrage)</p>
+              <p className="font-semibold text-primary">Référent VHSS du film</p>
+              <p className="text-sm">Salarié volontaire et formé, désigné par la production (30 € brut/semaine en long métrage) : voir « Devenir référent·e VHSS » ci-dessous</p>
             </div>
             <div>
               <p className="font-semibold text-primary">Procédure de signalement</p>
@@ -607,10 +607,52 @@ const VHSSContent = () => (
             <li>Information de tous les salariés (kit de prévention)</li>
             <li>Affichage des numéros utiles et procédures</li>
             <li>Formation des managers et référents</li>
-            <li>Au moins 2 référents VHSS formés à chaque étape (prépa, tournage, post-prod)</li>
+            <li>Si possible, un ou des référents VHSS sur toutes les étapes (prépa, tournage, post-prod)</li>
             <li>Notification au CCHSCT en cas de signalement (anonymisée)</li>
           </ul>
         </div>
+      </CardContent>
+    </Card>
+
+    <Card className="border-2 border-primary/40">
+      <CardHeader>
+        <CardTitle>Devenir référent·e VHSS du film</CardTitle>
+        <p className="text-sm text-muted-foreground">Une fonction créée par la convention collective du cinéma (avenant du 17 mai 2024), ouverte à tout membre de l'équipe, y compris le ou la responsable des enfants.</p>
+      </CardHeader>
+      <CardContent className="space-y-4 text-sm text-foreground">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+            <p className="font-semibold text-primary">Les conditions</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Être volontaire</strong> : personne ne peut être désigné référent contre son gré.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Être formé</strong> : avoir suivi le parcours « ambassadeur-référent VHSS » de l'<a className="text-accent underline" href="https://www.afdas.com" target="_blank" rel="noopener noreferrer">Afdas</a>, ou une formation équivalente spécifique aux référents VHSS. Gardez votre attestation.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Faire partie de l'équipe</strong> du film.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+            <p className="font-semibold text-primary">La désignation</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avant le projet, la production demande qui, dans l'équipe, est <strong>volontaire et formé</strong>. Signalez-vous à ce moment-là.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>S'il y a un volontaire formé et pas de référent au niveau de la société, la production <strong>doit</strong> en désigner un.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>S'il y a plusieurs volontaires, la production choisit après concertation avec l'équipe.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+            <p className="font-semibold text-primary">Les missions</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Informer et orienter les salariés vers les ressources utiles.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Participer à la sensibilisation et à la prévention, avec la production.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Faire connaître la procédure de signalement.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Recueillir les signalements et les transmettre <strong>par écrit</strong> à la production, puis être informé de leur suivi.</p>
+            <p className="text-muted-foreground">Le référent reste impartial. Il n'est pas responsable du traitement des signalements : c'est l'employeur qui l'est.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
+            <p className="font-semibold text-primary">Moyens, indemnité et protection</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Un échange avec la production fixe les moyens (procédure de signalement, coordonnées des équipes, matériel).</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Indemnité spécifique : <strong>30 € brut par semaine</strong> en long métrage.</p>
+            <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Aucune sanction, ni licenciement, ni discrimination possible pour avoir relaté de bonne foi des faits (art. L1153-2 du code du travail).</p>
+          </div>
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Sources : convention collective de la production cinématographique (IDCC 3097), titre I, art. 32.4 et 33.1.3.3.
+          La convention de la production audiovisuelle (IDCC 2642) ne prévoit pas de référent VHSS du film ; il existe en revanche,
+          selon la taille de la société, un référent du CSE et un référent d'entreprise (art. L2314-1 et L1153-5-1 du code du travail).
+        </p>
       </CardContent>
     </Card>
 

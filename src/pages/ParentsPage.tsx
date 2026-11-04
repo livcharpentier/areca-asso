@@ -28,12 +28,15 @@ const ParentsPage = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="suivi-sante" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-6">
+            <TabsList className="grid w-full h-auto grid-cols-2 md:grid-cols-5 mb-6">
               <TabsTrigger value="suivi-sante">
                 <span>Suivi Santé</span>
               </TabsTrigger>
               <TabsTrigger value="dossier">
-                <span>Dossier Enfant</span>
+                <span>Dossier moins de 16 ans</span>
+              </TabsTrigger>
+              <TabsTrigger value="seize-dix-sept">
+                <span>16 et 17 ans</span>
               </TabsTrigger>
               <TabsTrigger value="salaires">
                 <span>Rôles et salaires</span>
@@ -49,6 +52,10 @@ const ParentsPage = () => {
 
             <TabsContent value="dossier">
               <DossierEnfantContent />
+            </TabsContent>
+
+            <TabsContent value="seize-dix-sept">
+              <SeizeDixSeptContent />
             </TabsContent>
 
             <TabsContent value="salaires">
@@ -71,10 +78,11 @@ const DossierEnfantContent = () => (
   <div className="space-y-6">
     <div className="text-center mb-8">
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-        Dossier Enfant — Pièces à fournir
+        Dossier Enfant — moins de 16 ans
       </h2>
       <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-        Documents à réunir pour chaque enfant dans le cadre d'une demande d'autorisation
+        Documents à réunir pour chaque enfant de moins de 16 ans dans le cadre d'une demande d'autorisation.
+        Votre enfant a 16 ou 17 ans ? Voir l'onglet « 16 et 17 ans ».
       </p>
     </div>
 
@@ -323,6 +331,74 @@ const DossierEnfantContent = () => (
         </p>
       </CardContent>
     </Card>
+  </div>
+);
+
+const SeizeDixSeptContent = () => (
+  <div className="space-y-6">
+    <div className="text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        Jeunes de 16 et 17 ans
+      </h2>
+      <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        À partir de 16 ans, il n'y a plus d'autorisation du préfet ni de dossier DRIEETS, mais votre enfant reste protégé
+        par les règles des jeunes travailleurs.
+      </p>
+    </div>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Temps de tournage</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2 text-foreground">
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>8 heures par jour</strong> et <strong>35 heures par semaine</strong> au maximum.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Pause de <strong>30 minutes</strong> au moins dès que le jeune travaille plus de 4 h 30 d'affilée.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>12 heures de repos</strong> consécutives entre deux journées, et <strong>2 jours de repos</strong> consécutifs par semaine.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Pas de travail de nuit <strong>entre 22 h et 6 h</strong>, sauf dérogation exceptionnelle accordée par l'inspection du travail.</p>
+      </CardContent>
+    </Card>
+
+    <Card className="border-2 border-[#ee7d2b]">
+      <CardHeader>
+        <CardTitle>Pas d'heures supplémentaires</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2 text-foreground">
+        <p>
+          Les limites de 8 heures par jour et 35 heures par semaine ne peuvent pas être dépassées pour finir une scène ou rattraper
+          un retard. Seule l'inspection du travail peut, à titre exceptionnel et après avis du médecin du travail, autoriser
+          jusqu'à 5 heures de plus par semaine.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Le salaire</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2 text-foreground">
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Le salaire ne peut pas être inférieur au <strong>minimum de la convention collective</strong> (voir l'onglet « Rôles et salaires »).</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Pas de Caisse des Dépôts</strong> : la totalité du salaire est versée au jeune, sur un compte à son nom ou joint avec lui.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Les parents doivent donner leur accord au contrat ; cet accord peut être tacite s'ils ne s'y opposent pas.</p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Le ou la responsable des enfants</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-2 text-foreground">
+        <p>
+          Pour le moment, la présence d'un responsable des enfants <strong>n'est pas obligatoire</strong> pour les jeunes de 16 et 17 ans :
+          la convention collective du cinéma l'impose seulement pour les moins de 16 ans. <strong>La production peut toutefois en prévoir un</strong>,
+          et vous pouvez lui poser la question.
+        </p>
+      </CardContent>
+    </Card>
+
+    <p className="text-xs text-muted-foreground italic">
+      Sources : code du travail, art. L3162-1, L3162-3, L3163-2, L3164-1 et L3164-2 ; convention collective de la production
+      cinématographique (IDCC 3097), titre III, art. 6.
+    </p>
   </div>
 );
 
