@@ -12,12 +12,12 @@ const CaisseDepots = () => (
           <div className="text-sm text-foreground space-y-2">
             <p>La Caisse des Dépôts est <strong>garante de la conservation des rémunérations des mineurs</strong> jusqu'à leur majorité (18 ans).</p>
             <p>Les versements se font sur un <strong>compte au nom de l'enfant</strong>. Les représentants légaux ne peuvent en aucun cas le créditer ou le débiter.</p>
-            <p><strong>Enfant de 16 ans et plus :</strong> pas de versement à la Caisse des Dépôts, la rémunération lui est directement versée par son employeur.</p>
+            <p>Elle ne concerne que les <strong>enfants de moins de 16 ans</strong> (voir le cas des 16-17 ans ci-dessous).</p>
           </div>
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-3">Répartition de la rémunération</p>
+          <p className="font-semibold text-primary mb-3">Répartition du salaire : enfant de moins de 16 ans</p>
           <div className="text-sm text-foreground space-y-2">
             <div className="flex items-center gap-3">
               <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">90%</span>
@@ -27,7 +27,15 @@ const CaisseDepots = () => (
               <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
               <p>Laissés à la disposition des <strong>représentants légaux</strong> (part fixée par la commission, en général 10 %)</p>
             </div>
-            <p className="text-muted-foreground text-xs mt-2">La part exacte est fixée par la commission des enfants du spectacle, dans l'autorisation.</p>
+            <p className="text-muted-foreground text-xs mt-2">La part exacte est fixée par la commission des enfants du spectacle, dans l'autorisation (art. L7124-9 du code du travail). Le salaire lui-même ne peut pas être inférieur au minimum de la convention collective applicable.</p>
+          </div>
+        </div>
+
+        <div className="bg-muted/50 p-4 rounded-lg border border-border">
+          <p className="font-semibold text-primary mb-2">Jeune de 16 ou 17 ans</p>
+          <div className="text-sm text-foreground space-y-1">
+            <p>Pas d'autorisation du préfet ni de versement à la Caisse des Dépôts : <strong>la totalité du salaire est versée au jeune</strong>, sur un compte à son nom (ou joint avec lui).</p>
+            <p>Les parents doivent donner leur accord, qui peut être tacite s'ils ne s'y opposent pas.</p>
           </div>
         </div>
 
