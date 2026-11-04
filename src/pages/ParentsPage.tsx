@@ -122,8 +122,9 @@ const DossierEnfantContent = () => (
       </CardHeader>
       <CardContent>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-[#fdf1e7] border border-[#ee7d2b]/30 rounded-lg p-4">
-            <p className="font-bold text-foreground mb-3 uppercase tracking-wide">À fournir par les parents</p>
+          <div className="bg-[#fdf1e7] border border-[#ee7d2b]/40 rounded-lg overflow-hidden">
+            <p className="bg-[#ee7d2b] text-white text-center font-bold text-lg md:text-xl uppercase tracking-wider py-3 px-2">À fournir par les parents</p>
+            <div className="p-4">
             <ul className="space-y-3 text-foreground">
               <li><p className="font-semibold">Livret de famille à jour ou acte de naissance</p></li>
               <li>
@@ -147,10 +148,12 @@ const DossierEnfantContent = () => (
                 <p className="text-sm text-muted-foreground">Le médecin dépend du type d'emploi (voir « Rôle ou figuration »)</p>
               </li>
             </ul>
+            </div>
           </div>
-          <div className="bg-muted/40 border border-border rounded-lg p-4">
-            <p className="font-bold text-foreground mb-1 uppercase tracking-wide">Préparé par la production</p>
-            <p className="text-sm font-bold text-foreground mb-3">Rien à faire de votre côté</p>
+          <div className="bg-muted/40 border border-[#16213f]/30 rounded-lg overflow-hidden">
+            <p className="bg-[#16213f] text-white text-center font-bold text-lg md:text-xl uppercase tracking-wider py-3 px-2">Préparé par la production</p>
+            <div className="p-4">
+            <p className="text-center font-bold text-foreground mb-4 pb-3 border-b border-border">Rien à faire de votre côté</p>
             <ul className="space-y-3 text-foreground">
               <li><p className="font-semibold">Projet de contrat de travail</p></li>
               <li><p className="font-semibold">Synopsis et plan de travail</p></li>
@@ -164,6 +167,7 @@ const DossierEnfantContent = () => (
                 <p className="text-sm text-muted-foreground">Sur la plateforme numérique, et envoi des avis pédagogiques au rectorat</p>
               </li>
             </ul>
+            </div>
           </div>
         </div>
       </CardContent>
