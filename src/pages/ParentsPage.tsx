@@ -134,17 +134,24 @@ const DossierEnfantContent = () => (
       <CardContent className="space-y-3 text-foreground">
         <p className="text-sm text-muted-foreground">
           Pièce obligatoire pour que le dossier soit traité. La production remplit le tableau principal
-          (notamment les modalités du suivi scolaire) ; la famille le fait signer par l'établissement.
+          (notamment les modalités du suivi scolaire) ; la famille le fait signer par l'établissement scolaire de l'enfant.
         </p>
         <ul className="space-y-2 ml-4">
           <li>• <strong>École primaire</strong> (enfant de plus de 3 ans) : rempli et signé par le directeur d'école, puis validé par l'inspecteur de l'éducation nationale de circonscription</li>
           <li>• <strong>Collège et lycée</strong> (moins de 16 ans) : rempli et signé par le chef d'établissement</li>
           <li>• <strong>Avis du DASEN</strong> : quel que soit le lieu de scolarisation, la production pré-remplit le modèle et le renvoie au rectorat de Paris, qui le transmet à la DSDEN concernée</li>
         </ul>
-        <p className="text-sm">
-          Les avis pédagogiques sont à envoyer dès leur obtention au rectorat de Paris :{" "}
-          <a href="mailto:dve-enfantsduspectacle@ac-paris.fr" className="text-accent underline font-semibold">dve-enfantsduspectacle@ac-paris.fr</a>
-        </p>
+        <div className="bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-3 rounded-md text-sm">
+          <p className="font-semibold mb-1">À qui remettre les documents ?</p>
+          <p>
+            Les familles n'envoient rien elles-mêmes à l'administration. Le dossier et tous les documents sont à remettre :
+          </p>
+          <ul className="ml-4 mt-1 space-y-1">
+            <li>• à la <strong>production</strong>, pour un <strong>rôle</strong> ;</li>
+            <li>• au <strong>directeur ou à la directrice de casting</strong>, pour la <strong>figuration, les silhouettes et les doublures</strong>.</li>
+          </ul>
+          <p className="mt-1 text-muted-foreground">C'est ensuite la production qui dépose le dossier sur la plateforme de la DRIEETS et transmet les avis pédagogiques au rectorat.</p>
+        </div>
         <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm space-y-1">
           <p><strong>Rappel aux familles :</strong> prévenir le directeur d'école ou le chef d'établissement dès le premier jour d'absence de l'enfant.</p>
           <p>La commission des enfants du spectacle, présidée par un juge des enfants, se réunit une fois par mois : les dates de dépôt de son calendrier sont impératives.</p>
