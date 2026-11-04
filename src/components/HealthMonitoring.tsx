@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Info } from "lucide-react";
 
 const HealthMonitoring = () => {
   return (
@@ -12,6 +12,15 @@ const HealthMonitoring = () => {
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Le suivi médical obligatoire des enfants du spectacle par Thalie Santé
+        </p>
+      </div>
+
+      <div className="flex items-start gap-3 bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-4 rounded-md">
+        <Info className="h-5 w-5 text-[#ee7d2b] flex-shrink-0 mt-0.5" aria-hidden="true" />
+        <p className="text-foreground">
+          <strong>Étude en cours :</strong> une réflexion est menée pour améliorer la prise en charge
+          médicale des enfants <strong>figurants et silhouettes</strong>. Les informations de cette page
+          seront mises à jour dès que de nouvelles modalités seront arrêtées.
         </p>
       </div>
 
