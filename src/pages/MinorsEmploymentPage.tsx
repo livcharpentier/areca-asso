@@ -493,7 +493,7 @@ const MinorsEmploymentPage = () => {
                       </p>
                       
                       <button
-                        onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                        onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')}
                         className="w-full bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
                       >
                         <FileText className="h-5 w-5" />

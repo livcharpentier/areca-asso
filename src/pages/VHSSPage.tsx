@@ -159,7 +159,7 @@ const VHSSPage = () => {
                     Télécharger l'Étude complète VHSS (Février 2025)
                   </button>
                   <button
-                    onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                    onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')}
                     className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
                   >
                     <Download className="w-5 h-5 text-primary" />

@@ -6,7 +6,7 @@ const Resources = () => {
     { 
       title: "Convention Collective Cinéma (CCNPC)", 
       items: ["Grille des salaires", "Texte intégral", "Fiches pratiques"],
-      link: "/ccn-production-cinema-consolidee-juin-24.pdf",
+      link: "/ccn-production-cinema-novembre-2026.pdf",
       hasHighlight: true
     },
     { 
@@ -227,7 +227,7 @@ const Resources = () => {
             </div>
             <div className="mt-4 pt-4 border-t border-amber-400/30">
               <button
-                onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')}
+                onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')}
                 className="w-full bg-amber-600/20 hover:bg-amber-600/30 text-primary font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
               >
                 <Download className="w-5 h-5" />
@@ -304,7 +304,7 @@ const Resources = () => {
                 <p className="text-foreground mb-4">
                   Accédez aux documents officiels et guides pratiques pour l'emploi des mineurs dans le spectacle
                 </p>
-                <button onClick={() => window.open('/ccn-production-cinema-consolidee-juin-24.pdf', '_blank')} className="w-full bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
+                <button onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')} className="w-full bg-secondary hover:bg-secondary/80 text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105">
                   <FileText className="w-5 h-5" />
                   Convention Collective - Document complet
                 </button>
