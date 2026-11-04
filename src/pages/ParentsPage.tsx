@@ -160,7 +160,7 @@ const DossierEnfantContent = () => (
               <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Note de sécurité, le cas échéant</p></li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Tableau principal de l'avis pédagogique</p>
-                <p className="text-sm text-muted-foreground pl-5">Et l'avis du DASEN si l'enfant est scolarisé hors académie de Paris</p>
+                <p className="text-sm text-muted-foreground pl-5">Et l'avis du DASEN (directeur académique des services de l'Éducation nationale, le responsable de l'Éducation nationale dans le département de l'école de l'enfant) si l'enfant est scolarisé hors académie de Paris</p>
               </li>
               <li>
                 <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Dépôt du dossier à la DRIEETS</p>

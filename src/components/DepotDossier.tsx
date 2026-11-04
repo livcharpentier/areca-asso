@@ -100,7 +100,7 @@ const DepotDossier = () => (
         </div>
         <p className="text-sm">
           Primaire : signé par le directeur d'école et validé par l'inspecteur de circonscription. Collège et lycée : signé par le chef d'établissement.
-          L'avis DASEN est à pré-remplir par la production, quel que soit le lieu de scolarisation.
+          L'avis du DASEN (directeur académique des services de l'Éducation nationale du département de l'école) est à pré-remplir par la production, quel que soit le lieu de scolarisation.
           Les avis sont à envoyer dès leur obtention à <a className={lien} href="mailto:dve-enfantsduspectacle@ac-paris.fr">dve-enfantsduspectacle@ac-paris.fr</a>.
         </p>
       </CardContent>
