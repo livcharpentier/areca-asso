@@ -123,7 +123,7 @@ const DossierEnfantContent = () => (
       <CardContent>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-[#fdf1e7] border border-[#ee7d2b]/30 rounded-lg p-4">
-            <p className="font-bold text-foreground mb-3">À fournir par les parents</p>
+            <p className="font-bold text-foreground mb-3 uppercase tracking-wide">À fournir par les parents</p>
             <ul className="space-y-3 text-foreground">
               <li><p className="font-semibold">Livret de famille à jour ou acte de naissance</p></li>
               <li>
@@ -149,8 +149,8 @@ const DossierEnfantContent = () => (
             </ul>
           </div>
           <div className="bg-muted/40 border border-border rounded-lg p-4">
-            <p className="font-bold text-foreground mb-1">Préparé par la production</p>
-            <p className="text-xs text-muted-foreground mb-3">Rien à faire de votre côté</p>
+            <p className="font-bold text-foreground mb-1 uppercase tracking-wide">Préparé par la production</p>
+            <p className="text-sm font-bold text-foreground mb-3">Rien à faire de votre côté</p>
             <ul className="space-y-3 text-foreground">
               <li><p className="font-semibold">Projet de contrat de travail</p></li>
               <li><p className="font-semibold">Synopsis et plan de travail</p></li>
