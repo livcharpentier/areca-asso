@@ -89,7 +89,7 @@ const ArtistSalaries = () => {
                 className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
               >
                 <Download className="w-5 h-5 text-primary" />
-                Grille des salaires (1er juin 2026)
+                Grille des salaires figuration, silhouette, doublure (1er juin 2026)
               </button>
             </div>
           </CardContent>

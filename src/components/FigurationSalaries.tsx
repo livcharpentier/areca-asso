@@ -195,7 +195,7 @@ const FigurationSalaries = () => {
               className="w-full bg-orange-600/20 hover:bg-orange-600/30 text-orange-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
             >
               <Download className="w-5 h-5" />
-              Grille des salaires (1er juin 2026)
+              Grille des salaires figuration, silhouette, doublure (1er juin 2026)
             </button>
           </div>
         </div>
