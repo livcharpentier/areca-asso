@@ -306,15 +306,6 @@ const DossierEnfantContent = () => (
             <Download className="h-4 w-4 text-primary" />
             Avis pédagogique collège et lycée (2D)
           </a>
-          <a
-            href="https://www.ac-paris.fr/media/63723/download"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
-          >
-            <Download className="h-4 w-4 text-primary" />
-            Modèle avis DASEN
-          </a>
         </div>
       </CardContent>
     </Card>
