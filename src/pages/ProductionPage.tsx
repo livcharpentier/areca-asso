@@ -2,9 +2,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkTimeRegulations from "@/components/WorkTimeRegulations";
 import RegionalCalendar from "@/components/RegionalCalendar";
+import DepotDossier from "@/components/DepotDossier";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Clock, Calendar } from "lucide-react";
+import { Clock, Calendar, FileText } from "lucide-react";
 
 const ProductionPage = () => {
   return (
@@ -28,8 +29,12 @@ const ProductionPage = () => {
       {/* Main Content avec Tabs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="dossier-drieets" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
+          <Tabs defaultValue="depot" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-6">
+              <TabsTrigger value="depot" className="gap-2">
+                <FileText className="h-4 w-4" />
+                <span>Déposer un dossier</span>
+              </TabsTrigger>
               <TabsTrigger value="dossier-drieets" className="gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>Calendrier des commissions</span>
@@ -39,6 +44,10 @@ const ProductionPage = () => {
                 <span>Temps de travail</span>
               </TabsTrigger>
             </TabsList>
+
+            <TabsContent value="depot">
+              <DepotDossier />
+            </TabsContent>
 
             <TabsContent value="dossier-drieets">
               <RegionalCalendar />

@@ -80,6 +80,44 @@ const DossierEnfantContent = () => (
 
     <Card>
       <CardHeader>
+        <CardTitle>Qui fait quoi ?</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid md:grid-cols-2 gap-6 text-foreground">
+          <div className="border border-border rounded-lg p-4 space-y-2">
+            <p className="font-bold text-primary">La DRIEETS</p>
+            <p className="text-sm text-muted-foreground">Direction régionale interdépartementale de l'économie, de l'emploi, du travail et des solidarités d'Île-de-France</p>
+            <p className="text-sm">
+              C'est le service de l'État qui <strong>instruit les demandes d'autorisation</strong> de travail des enfants de moins de 16 ans.
+              Elle vérifie le dossier déposé par la production avec le rectorat et la médecine du travail, puis le présente à la
+              commission des enfants du spectacle. L'autorisation est ensuite délivrée par le préfet.
+            </p>
+            <p className="text-sm bg-muted/50 rounded p-2"><strong>Plus de 13 000 demandes</strong> par an en Île-de-France (cinéma, télévision, radio, spectacle vivant, e-sport).</p>
+          </div>
+          <div className="border border-border rounded-lg p-4 space-y-2">
+            <p className="font-bold text-primary">Thalie Santé</p>
+            <p className="text-sm text-muted-foreground">Service de prévention et de santé au travail, ex-Centre médical de la Bourse</p>
+            <p className="text-sm">
+              C'est le <strong>seul service de santé au travail agréé</strong> pour le suivi des enfants du spectacle de moins de 16 ans en Île-de-France.
+              Son Pôle Enfants lit les scénarios, reçoit l'enfant en visite médicale (son ressenti du rôle, sa scolarité, la différence
+              entre fiction et réalité) et conseille les productions sur la prévention des risques.
+              Ce n'est pas le médecin qui délivre l'autorisation de travail.
+            </p>
+            <div className="text-sm bg-muted/50 rounded p-2">
+              <p className="font-semibold mb-1">En 2023 :</p>
+              <p>566 projets et scénarios lus · 901 visites médicales · 1 345 avis médicaux délivrés</p>
+            </div>
+          </div>
+        </div>
+        <p className="text-xs text-muted-foreground mt-3">
+          Sources : <a className="underline" href="https://beta.gouv.fr/startups/enfants-du-spectacle.html" target="_blank" rel="noopener noreferrer">beta.gouv.fr</a> ;
+          brochure Thalie Santé, mai 2024 (à télécharger dans l'onglet Suivi Santé).
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
         <CardTitle>Pièces à fournir pour chaque enfant</CardTitle>
       </CardHeader>
       <CardContent>
@@ -87,7 +125,7 @@ const DossierEnfantContent = () => (
           <div className="bg-[#fdf1e7] border border-[#ee7d2b]/30 rounded-lg p-4">
             <p className="font-bold text-foreground mb-3">À fournir par les parents</p>
             <ul className="space-y-3 text-foreground">
-              <li><p className="font-semibold">Livret de famille à jour</p></li>
+              <li><p className="font-semibold">Livret de famille à jour ou acte de naissance</p></li>
               <li>
                 <p className="font-semibold">Autorisation parentale</p>
                 <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel (à télécharger plus bas)</p>
@@ -142,7 +180,10 @@ const DossierEnfantContent = () => (
             <p className="text-sm font-semibold">Documents à remettre à :</p>
             <p className="text-sm mb-3">l'assistant·e de production ou l'administrateur·rice de production</p>
             <p className="text-sm font-semibold">Avis médical :</p>
-            <p className="text-sm">médecin du travail de <strong>Thalie Santé</strong> obligatoire (ou, a minima, justificatif de prise de rendez-vous)</p>
+            <ul className="text-sm space-y-1">
+              <li>• rôle 1er ou 2nd choix : médecin du travail de <strong>Thalie Santé</strong> obligatoire (ou, a minima, justificatif de prise de rendez-vous)</li>
+              <li>• petit rôle : médecin généraliste en exercice accepté</li>
+            </ul>
           </div>
           <div className="border border-primary/30 rounded-lg p-4">
             <p className="font-bold text-primary mb-3">Figuration, silhouette, doublure</p>
@@ -207,40 +248,31 @@ const DossierEnfantContent = () => (
         </a>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <a
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_1D.pdf"
+            href="https://www.ac-paris.fr/media/20903/download"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
             <Download className="h-4 w-4 text-primary" />
-            Avis pédagogique 1er degré (PDF)
+            Avis pédagogique primaire (1D)
           </a>
           <a
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_pedagogique_2D.pdf"
+            href="https://www.ac-paris.fr/media/20906/download"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
             <Download className="h-4 w-4 text-primary" />
-            Avis pédagogique 2nd degré (PDF)
+            Avis pédagogique collège et lycée (2D)
           </a>
           <a
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_DASEN.docx"
+            href="https://www.ac-paris.fr/media/63723/download"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
           >
             <Download className="h-4 w-4 text-primary" />
-            Avis Directeur académique (DOCX)
-          </a>
-          <a
-            href="https://enfants-du-spectacle.fabrique.social.gouv.fr/avis_chef_etablissement_1er_degre.doc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all text-sm border border-border"
-          >
-            <Download className="h-4 w-4 text-primary" />
-            Avis chef d'établissement 1er degré
+            Modèle avis DASEN
           </a>
         </div>
       </CardContent>
@@ -255,7 +287,7 @@ const DossierEnfantContent = () => (
           </a>
         </p>
         <p className="text-muted-foreground text-xs mt-2 italic">
-          Source : <a href="https://enfants-du-spectacle.fabrique.social.gouv.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">enfants-du-spectacle.fabrique.social.gouv.fr</a> — Plateforme officielle DRIEETS Île-de-France
+          Sources : <a href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">démarche DRIEETS-IDF-Enfants du Spectacle</a> et <a href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">Académie de Paris</a>
         </p>
       </CardContent>
     </Card>
