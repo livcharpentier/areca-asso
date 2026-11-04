@@ -91,7 +91,7 @@ const HealthMonitoring = () => {
               <div className="bg-muted/30 p-4 rounded-lg border border-border">
                 <h4 className="font-semibold text-primary mb-2">Enfant en région</h4>
                 <ul className="space-y-2 text-foreground text-sm ml-4">
-                  <li>• Thalie Santé charge un <strong>bon de prise en charge</strong> sur la plateforme</li>
+                  <li>• Thalie Santé dépose un <strong>bon de prise en charge</strong> sur la plateforme</li>
                   <li>• Ce bon permet de prendre rendez-vous dans un <strong>centre agréé par Thalie Santé</strong> en région</li>
                 </ul>
               </div>
@@ -212,7 +212,7 @@ const HealthMonitoring = () => {
               <h4 className="font-semibold text-primary mb-2">Âge minimum d'admission</h4>
               <ul className="space-y-2 text-foreground text-sm">
                 <li>• <strong>Spectacle et cinéma :</strong> 3 mois minimum</li>
-                <li>• <strong>Théâtre :</strong> 9 ans conseillés par le Ministère de l'Éducation Nationale</li>
+                <li>• <strong>Théâtre :</strong> 9 ans recommandés (circulaire du ministère du Travail de 1964)</li>
                 <li>• <strong>Attention particulière :</strong> Les demandes concernant les enfants de moins de 6 ans font l'objet d'une étude particulière par la commission</li>
               </ul>
             </div>

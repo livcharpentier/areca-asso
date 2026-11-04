@@ -54,7 +54,7 @@ const WorkTimeRegulations = () => {
                   Respect strict obligatoire
                 </p>
                 <p className="text-sm text-foreground/90">
-                  Ces durées sont des maximums légaux. Le dépassement expose à des sanctions pénales.
+                  Durées de référence de la commission des enfants du spectacle (Paris). Le tableau est indicatif : la commission apprécie chaque demande au cas par cas, et les horaires autorisés sont ceux fixés dans l'autorisation.
                 </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ const WorkTimeRegulations = () => {
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="text-foreground">
-                    <strong>Interdiction générale :</strong> Le travail de nuit est totalement interdit entre <strong>20h et 6h</strong> pour les mineurs (article L.3163-2)
+                    <strong>Interdiction générale :</strong> Le travail de nuit est interdit entre <strong>20h et 6h</strong> pour les moins de 16 ans, et entre <strong>22h et 6h</strong> pour les 16-18 ans (articles L.3163-1 et L.3163-2)
                   </p>
                 </div>
                 <div>
@@ -121,14 +121,14 @@ const WorkTimeRegulations = () => {
                 </div>
                 <div>
                   <p className="text-foreground">
-                    <strong>Repos obligatoire :</strong> En cas de dérogation, la durée minimale de repos quotidien ne peut être inférieure à <strong>12 heures consécutives</strong> (article L.3164-1)
+                    <strong>Repos obligatoire :</strong> La durée minimale de repos quotidien reste de <strong>14 heures consécutives</strong> pour les moins de 16 ans et de <strong>12 heures</strong> pour les 16-18 ans (article L.3164-1)
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="text-center text-sm text-muted-foreground pt-2">
-              <p>Source : Code du travail - Articles L7124-1 et suivants</p>
+              <p>Sources : guide de la commission des enfants du spectacle de Paris (durées indicatives) ; Code du travail, articles L3161-1 et suivants, L7124-1 et suivants</p>
             </div>
           </CardContent>
         </Card>

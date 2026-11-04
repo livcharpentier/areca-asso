@@ -122,7 +122,7 @@ const ReglementationsContent = () => {
             <span>Organisation</span>
           </TabsTrigger>
           <TabsTrigger value="familles-emploi" className="text-xs">
-            <span>Types d'emploi</span>
+            <span>Types d'emploi des mineurs</span>
           </TabsTrigger>
           <TabsTrigger value="conditions" className="text-xs">
             <span>Conditions</span>
@@ -254,9 +254,9 @@ const FamillesEmploiContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Théâtre & Cirque</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
-            <li><strong>Âge minimum :</strong> 9 ans (pas de dérogation possible)</li>
-            <li><strong>Maximum :</strong> 3 représentations par semaine</li>
-            <li><strong>Maximum :</strong> 1 représentation par jour</li>
+            <li><strong>Âge minimum recommandé :</strong> 9 ans (circulaire du 9 novembre 1964)</li>
+            <li><strong>Maximum recommandé :</strong> 3 représentations par semaine</li>
+            <li><strong>Maximum recommandé :</strong> 1 représentation par jour</li>
             <li>Repos obligatoire pendant les vacances scolaires</li>
             <li><strong>Cirque :</strong> Mêmes règles, interdiction des exercices dangereux pour les moins de 16 ans</li>
           </ul>
@@ -275,9 +275,12 @@ const FamillesEmploiContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Compétence territoriale</p>
           <ul className="text-sm space-y-1 ml-4 list-disc">
-            <li><strong>Entreprise française :</strong> Demande auprès de la DRIEETS du département du siège social de l'entreprise</li>
-            <li><strong>Entreprise étrangère :</strong> Demande auprès de la DRIEETS du département du lieu de tournage</li>
-            <li><strong>Île-de-France :</strong> Commission centralisée pour les départements 75, 77, 78, 91, 92, 93, 94, 95</li>
+            <li><strong>C'est le siège de la production qui compte</strong>, pas le lieu de tournage ni le domicile de l'enfant (convention collective du cinéma, titre III, article 5.2).</li>
+            <li><strong>Production dont le siège est en France :</strong> demande auprès du préfet du département du siège, via la DREETS ou la DRIEETS.</li>
+            <li><strong>Production dont le siège est à l'étranger :</strong> demande auprès du préfet de Paris (DRIEETS Île-de-France).</li>
+            <li><strong>Enfant qui habite à l'étranger</strong> (par exemple en Belgique) engagé par une production française : la demande se fait en France, selon le siège de la production, et la réglementation française s'applique.</li>
+            <li><strong>Tournage à l'étranger</strong> d'une production française : l'autorisation française reste nécessaire ; le pays de tournage peut aussi imposer ses propres règles, à vérifier avant le départ.</li>
+            <li><strong>Île-de-France :</strong> une commission commune pour 75, 77, 78, 91, 93, 94 et 95, une commission distincte pour le 92 (voir le calendrier) ; les départements 77, 78, 91 et 95 ont leur propre démarche de dépôt en ligne.</li>
           </ul>
         </div>
       </CardContent>
@@ -295,7 +298,7 @@ const ConditionsContent = () => (
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Champ d'application</p>
-          <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable de la commission enfants du spectacle (DRIEETS).</p>
+          <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable du préfet, délivrée après avis de la commission des enfants du spectacle (dossier instruit par la DRIEETS).</p>
           <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
         </div>
 
@@ -324,11 +327,11 @@ const ConditionsContent = () => (
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-3">Obligation majeure - Responsable des enfants</p>
-          <p className="text-sm mb-3">Obligatoire pour toute production avec mineurs.</p>
+          <p className="text-sm mb-3">En cinéma : obligatoire dès qu'un mineur de moins de 16 ans est engagé (convention collective, titre III, article 6).</p>
           <div className="bg-card p-3 rounded border border-border">
             <p className="font-semibold text-primary mb-2">Profil requis</p>
             <ul className="ml-4 space-y-1 list-disc text-sm">
-              <li>Personne qualifiée justifiant d'un <strong>diplôme (BAFA)</strong> ou d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
+              <li>Personne qualifiée justifiant d'un <strong>diplôme</strong> (par exemple le BAFA) ou d'une <strong>expérience significative</strong> pour l'exercice de ses fonctions</li>
               <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
               <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
             </ul>
@@ -388,6 +391,7 @@ const ConditionsContent = () => (
               <p className="ml-3">• Période scolaire : 3h/jour (pause après 1h30)</p>
               <p className="ml-3">• Vacances scolaires : 4h/jour (pause après 2h)</p>
               <p><strong>12-16 ans :</strong></p>
+              <p className="ml-3">• Période scolaire : 4h/jour (pause après 2h)</p>
               <p className="ml-3">• Vacances scolaires : 6h/jour (pause après 3h)</p>
             </div>
             <p className="text-xs text-muted-foreground mt-2">Temps de travail effectif : préparation (maquillage, coiffure, habillage), répétitions sur plateau, temps de tournage effectif et temps d'attente entre les prises. Ne sont pas du temps de travail : le transport, le repas et la pause.</p>
@@ -427,7 +431,7 @@ const ConditionsContent = () => (
             </ul>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
-            <p className="font-semibold text-primary mb-2">Enfants du théâtre</p>
+            <p className="font-semibold text-primary mb-2">Enfants du théâtre (recommandations de la circulaire de 1964)</p>
             <ul className="text-sm space-y-1">
               <li>Âge minimum : <strong>9 ans</strong></li>
               <li>Maximum : <strong>3 représentations/semaine</strong></li>
@@ -444,7 +448,7 @@ const ConditionsContent = () => (
               <li><strong>&lt; 16 ans :</strong> Interdiction totale 20h-6h</li>
               <li><strong>16-18 ans :</strong> Interdiction totale 22h-6h</li>
               <li><strong>Dérogation exceptionnelle :</strong> Possible jusqu'à 24h (inspecteur du travail)</li>
-              <li><strong>Repos minimum :</strong> 12h consécutives (&lt;16 ans) / 14h consécutives (16-18 ans) en cas de dérogation</li>
+              <li><strong>Repos minimum :</strong> 14h consécutives (&lt;16 ans) / 12h consécutives (16-18 ans), y compris en cas de dérogation</li>
             </ul>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">

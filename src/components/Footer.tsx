@@ -7,23 +7,18 @@ const Footer = () => {
 
   const links = {
     association: [
-      { label: "Présentation", href: "#association" },
-      { label: "Charte ARENCA", href: "/charte" },
-      { label: "Devenir membre", href: "#devenir-membre" },
-      { label: "Organigramme", href: "#organigramme" },
-      { label: "Faire un don", href: "#don" },
+      { label: "Présentation", href: "/#association" },
+      { label: "Le métier et la charte", href: "/metier" },
+      { label: "Membres", href: "/members" },
+      { label: "Devenir membre", href: "/contact" },
     ],
     ressources: [
-      { label: "Conventions collectives", href: "#conventions" },
-      { label: "Boîte à outils", href: "#outils" },
-      { label: "Calendriers", href: "#calendriers" },
-      { label: "Liens utiles", href: "#liens" },
+      { label: "Déposer un dossier", href: "/production" },
+      { label: "Calendrier des commissions", href: "/production#calendrier" },
+      { label: "Espace parents", href: "/parents" },
+      { label: "Formations", href: "/formations" },
     ],
     legal: [
-      { label: "Mentions légales", href: "#mentions" },
-      { label: "Politique de confidentialité", href: "#confidentialite" },
-      { label: "CGU", href: "#cgu" },
-      { label: "Plan du site", href: "#plan" },
     ],
   };
 

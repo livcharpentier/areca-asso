@@ -45,7 +45,7 @@ const FormationsPage = () => {
                 <p className="text-sm text-foreground/90">
                   Les formations présentées ci-dessous sont actuellement en cours de préparation.
                   Elles seront officiellement disponibles d'ici 18 mois.
-                  Nous vous tiendrons informés de leur lancement via notre page actualités.
+                  Nous vous tiendrons informés de leur lancement.
                 </p>
               </div>
             </div>

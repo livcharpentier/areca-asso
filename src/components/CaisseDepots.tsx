@@ -27,7 +27,7 @@ const CaisseDepots = () => (
               <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
               <p>Laissés à la disposition des <strong>représentants légaux</strong> (part fixée par la commission, en général 10 %)</p>
             </div>
-            <p className="text-muted-foreground text-xs mt-2">Pour ESM : la part est fixée par décision de la Commission DREETS</p>
+            <p className="text-muted-foreground text-xs mt-2">La part exacte est fixée par la commission des enfants du spectacle, dans l'autorisation.</p>
           </div>
         </div>
 
@@ -119,9 +119,9 @@ const CaisseDepots = () => (
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Cas particulier : percevoir avant 18 ans</p>
+          <p className="font-semibold text-primary mb-2">Cas particulier : retirer de l'argent avant 18 ans</p>
           <div className="text-sm text-foreground">
-            <p>Après 16 ans, la <strong>Commission DDCS/DIRECCTE</strong> peut autoriser le versement direct d'une partie de la rémunération.</p>
+            <p>En cas d'urgence et à titre exceptionnel, un prélèvement sur le pécule peut être autorisé par le <strong>président de la commission des enfants du spectacle</strong>.</p>
             <p className="text-muted-foreground mt-1">La part bloquée reste à la CDC jusqu'à la majorité.</p>
           </div>
         </div>
@@ -143,7 +143,7 @@ const CaisseDepots = () => (
           rel="noopener noreferrer"
           className="block bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg text-center transition-all text-sm border border-border"
         >
-          Faire ma démarche de restitution ESM
+          Faire ma démarche de restitution
         </a>
       </CardContent>
     </Card>

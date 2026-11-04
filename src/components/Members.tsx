@@ -27,7 +27,7 @@ const Members = () => {
   const membresExemples = membresStatiques;
 
   const categories = [
-    { title: "Responsables des enfants", description: "Coordinateurs et chefs de production jeunesse", slug: "responsables-enfants" },
+    { title: "Responsables des enfants", description: "Encadrement et protection des mineurs sur les tournages", slug: "responsables-enfants" },
     { title: "Précepteurs", description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
     { title: "Animateur/trices", description: "Encadrants jeunesse", slug: "animateurs" },
   ];

@@ -47,7 +47,7 @@ const ArtistSalaries = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-primary">Danseur :</p>
-                  <p>Artiste exécutant des chorégraphies. Salaire silhouette + 50% prime répétitions danse/chant (25€ en cinéma)</p>
+                  <p>Artiste exécutant des chorégraphies. En cinéma : indemnité de + 25 € pour les scènes de danse ou de chant, et répétitions payées 50 % du salaire journalier</p>
                 </div>
                 <div>
                   <p className="font-semibold text-primary">Artiste de cirque :</p>
