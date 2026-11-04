@@ -73,11 +73,11 @@ const ArtistSalaries = () => {
                     </tr>
                   </thead>
                   <tbody>
+                    <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Rôle (minima)</td><td className="py-2 pr-3">418,25 €</td><td className="py-2">304,99 €</td></tr>
                     <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Figurant</td><td className="py-2 pr-3">108,33 €</td><td className="py-2">98,48 € (minimum SMIC)</td></tr>
                     <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Silhouette</td><td className="py-2 pr-3">150,04 €</td><td className="py-2 align-middle" rowSpan={2}>Majoration silhouette (muette et jusqu'à 2 répliques) : + 42,24 €</td></tr>
                     <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Silhouette parlante</td><td className="py-2 pr-3">250,01 € (jusqu'à 5 mots)</td></tr>
                     <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Doublure</td><td className="py-2 pr-3">simple 165 € · polyvalente 200,02 €</td><td className="py-2">122,00 €</td></tr>
-                    <tr><td className="py-2 pr-3 font-semibold">Rôle (pour mémoire)</td><td className="py-2 pr-3">418,25 €</td><td className="py-2">304,99 €</td></tr>
                   </tbody>
                 </table>
               </div>
