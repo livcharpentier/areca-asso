@@ -31,6 +31,22 @@ const CaisseDepots = () => (
           </div>
         </div>
 
+        <div className="bg-[#fdf1e7] p-4 rounded-lg border-l-4 border-[#ee7d2b]">
+          <p className="font-semibold text-primary mb-2">Les 10 % : sur quel compte ?</p>
+          <div className="text-sm text-foreground space-y-2">
+            <p>
+              Cette part du salaire <strong>appartient à votre enfant</strong> : vous la gérez pour lui, en tant que parent
+              (code civil, art. 382 et 386-4). Depuis fin 2022, un salaire doit être versé sur un compte dont le salarié est
+              titulaire ou cotitulaire (code du travail, art. L3241-1).
+            </p>
+            <p>
+              👉 Pensez à ouvrir <strong>un compte au nom de votre enfant</strong> (ou un compte joint avec lui) et donnez ce RIB
+              à la production. Votre RIB personnel risque d'être refusé.
+            </p>
+            <p>Les 90 % restants sont versés directement par la production à la Caisse des Dépôts : vous n'avez rien à faire.</p>
+          </div>
+        </div>
+
         <div className="bg-amber-50 p-4 rounded-lg border border-amber-300">
           <p className="font-semibold text-primary mb-2">Quand l'argent arrive-t-il ?</p>
           <div className="text-sm text-foreground space-y-2">
