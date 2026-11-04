@@ -47,11 +47,8 @@ const ResponsablesPage = () => {
 
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
-              <Tabs defaultValue="compte-rendu" className="w-full">
+              <Tabs defaultValue="reglementations" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-6">
-                  <TabsTrigger value="compte-rendu">
-                    <span>Compte Rendu</span>
-                  </TabsTrigger>
                   <TabsTrigger value="reglementations">
                     <span>Réglementations</span>
                   </TabsTrigger>
@@ -60,6 +57,9 @@ const ResponsablesPage = () => {
                   </TabsTrigger>
                   <TabsTrigger value="positionnement">
                     <span>Positionnement</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="compte-rendu">
+                    <span>Compte Rendu</span>
                   </TabsTrigger>
                 </TabsList>
 

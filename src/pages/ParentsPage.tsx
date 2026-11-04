@@ -101,6 +101,12 @@ const DossierEnfantContent = () => (
         </div>
         <div className="flex gap-3 items-start">
           <div className="text-foreground">
+            <p className="font-semibold">Avis favorable écrit de l'enfant</p>
+            <p className="text-sm text-muted-foreground">Obligatoire si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
+          </div>
+        </div>
+        <div className="flex gap-3 items-start">
+          <div className="text-foreground">
             <p className="font-semibold">Certificat de scolarité</p>
             <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
           </div>
@@ -117,6 +123,34 @@ const DossierEnfantContent = () => (
             <p className="text-sm text-muted-foreground">Médecin du travail Thalie Santé (ex-CMB) ou, a minima, justificatif de prise de rendez-vous</p>
           </div>
         </div>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Obtenir l'avis pédagogique</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3 text-foreground">
+        <p className="text-sm text-muted-foreground">
+          Pièce obligatoire pour que le dossier soit traité. La production remplit le tableau principal
+          (notamment les modalités du suivi scolaire) ; la famille le fait signer par l'établissement.
+        </p>
+        <ul className="space-y-2 ml-4">
+          <li>• <strong>École primaire</strong> (enfant de plus de 3 ans) : rempli et signé par le directeur d'école, puis validé par l'inspecteur de l'éducation nationale de circonscription</li>
+          <li>• <strong>Collège et lycée</strong> (moins de 16 ans) : rempli et signé par le chef d'établissement</li>
+          <li>• <strong>Avis du DASEN</strong> : quel que soit le lieu de scolarisation, la production pré-remplit le modèle et le renvoie au rectorat de Paris, qui le transmet à la DSDEN concernée</li>
+        </ul>
+        <p className="text-sm">
+          Les avis pédagogiques sont à envoyer dès leur obtention au rectorat de Paris :{" "}
+          <a href="mailto:dve-enfantsduspectacle@ac-paris.fr" className="text-accent underline font-semibold">dve-enfantsduspectacle@ac-paris.fr</a>
+        </p>
+        <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm space-y-1">
+          <p><strong>Rappel aux familles :</strong> prévenir le directeur d'école ou le chef d'établissement dès le premier jour d'absence de l'enfant.</p>
+          <p>La commission des enfants du spectacle, présidée par un juge des enfants, se réunit une fois par mois : les dates de dépôt de son calendrier sont impératives.</p>
+        </div>
+        <p className="text-xs text-muted-foreground">
+          Source : <a href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer" className="underline">Académie de Paris — scolarité des enfants du spectacle</a>
+        </p>
       </CardContent>
     </Card>
 
