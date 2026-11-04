@@ -170,7 +170,7 @@ const OrganisationTravailContent = () => (
           <div className="mt-3 bg-card p-3 rounded border border-border">
             <p className="font-semibold text-primary text-sm">Ne sont PAS du temps de travail :</p>
             <ul className="text-sm text-foreground ml-4 list-disc space-y-1 mt-1">
-              <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage)</li>
+              <li><strong>Temps de transport</strong> (trajet domicile → lieu de tournage). En audiovisuel, les <strong>déplacements pendant la journée de travail</strong> (par exemple d'un décor à un autre) sont en revanche du temps de travail effectif (art. VI.1.2 de la convention)</li>
               <li><strong>Temps de repas</strong> (pause déjeuner/dîner)</li>
               <li><strong>La pause</strong></li>
             </ul>
