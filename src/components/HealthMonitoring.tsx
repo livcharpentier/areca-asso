@@ -238,7 +238,6 @@ const HealthMonitoring = () => {
                 <li>• Contraintes physiques imposées par le rôle</li>
                 <li>• Durée, rythme et horaires de l'activité proposée</li>
                 <li>• Capacité de l'enfant à distinguer fiction et réalité</li>
-                <li>• Pour les mannequins : surveillance particulière du poids et de l'alimentation (dépistage anorexie)</li>
               </ul>
             </div>
           </div>
