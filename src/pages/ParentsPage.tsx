@@ -82,48 +82,83 @@ const DossierEnfantContent = () => (
       <CardHeader>
         <CardTitle>Pièces à fournir pour chaque enfant</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Livret de famille à jour</p>
+      <CardContent>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-[#fdf1e7] border border-[#ee7d2b]/30 rounded-lg p-4">
+            <p className="font-bold text-foreground mb-3">À fournir par les parents</p>
+            <ul className="space-y-3 text-foreground">
+              <li><p className="font-semibold">Livret de famille à jour</p></li>
+              <li>
+                <p className="font-semibold">Autorisation parentale</p>
+                <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel (à télécharger plus bas)</p>
+              </li>
+              <li>
+                <p className="font-semibold">Avis favorable écrit de l'enfant</p>
+                <p className="text-sm text-muted-foreground">Si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
+              </li>
+              <li>
+                <p className="font-semibold">Certificat de scolarité</p>
+                <p className="text-sm text-muted-foreground">À partir de 3 ans, quelle que soit la durée du tournage</p>
+              </li>
+              <li>
+                <p className="font-semibold">Avis pédagogique signé par l'école</p>
+                <p className="text-sm text-muted-foreground">À partir de 4 jours d'absence scolaire (voir ci-dessous)</p>
+              </li>
+              <li>
+                <p className="font-semibold">Avis médical d'aptitude</p>
+                <p className="text-sm text-muted-foreground">Le médecin dépend du type d'emploi (voir « Rôle ou figuration »)</p>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-muted/40 border border-border rounded-lg p-4">
+            <p className="font-bold text-foreground mb-1">Préparé par la production</p>
+            <p className="text-xs text-muted-foreground mb-3">Rien à faire de votre côté</p>
+            <ul className="space-y-3 text-foreground">
+              <li><p className="font-semibold">Projet de contrat de travail</p></li>
+              <li><p className="font-semibold">Synopsis et plan de travail</p></li>
+              <li><p className="font-semibold">Note de sécurité, le cas échéant</p></li>
+              <li>
+                <p className="font-semibold">Haut de l'avis pédagogique et avis du DASEN</p>
+                <p className="text-sm text-muted-foreground">Si l'enfant est scolarisé hors académie de Paris</p>
+              </li>
+              <li>
+                <p className="font-semibold">Dépôt du dossier à la DRIEETS</p>
+                <p className="text-sm text-muted-foreground">Sur la plateforme numérique, et envoi des avis pédagogiques au rectorat</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Projet de contrat de travail</p>
-            <p className="text-sm text-muted-foreground">Établi et fourni par la production — rien à préparer de votre côté</p>
+      </CardContent>
+    </Card>
+
+    <Card>
+      <CardHeader>
+        <CardTitle>Rôle ou figuration : ce qui change</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid md:grid-cols-2 gap-6 text-foreground">
+          <div className="border border-primary/30 rounded-lg p-4">
+            <p className="font-bold text-primary mb-3">Rôle</p>
+            <p className="text-sm font-semibold">Documents à remettre à :</p>
+            <p className="text-sm mb-3">l'assistant·e de production ou l'administrateur·rice de production</p>
+            <p className="text-sm font-semibold">Avis médical :</p>
+            <p className="text-sm">médecin du travail de <strong>Thalie Santé</strong> obligatoire (ou, a minima, justificatif de prise de rendez-vous)</p>
+          </div>
+          <div className="border border-primary/30 rounded-lg p-4">
+            <p className="font-bold text-primary mb-3">Figuration, silhouette, doublure</p>
+            <p className="text-sm font-semibold">Documents à remettre à :</p>
+            <p className="text-sm mb-3">le directeur ou la directrice de casting figuration</p>
+            <p className="text-sm font-semibold">Avis médical :</p>
+            <ul className="text-sm space-y-1">
+              <li>• 3 ans et plus : médecin généraliste en exercice</li>
+              <li>• moins de 3 ans : pédiatre</li>
+              <li>• à partir de 5 jours d'absence scolaire : Thalie Santé</li>
+            </ul>
           </div>
         </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Autorisation parentale</p>
-            <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel</p>
-          </div>
-        </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Avis favorable écrit de l'enfant</p>
-            <p className="text-sm text-muted-foreground">Obligatoire si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
-          </div>
-        </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Certificat de scolarité</p>
-            <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
-          </div>
-        </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Avis pédagogique</p>
-            <p className="text-sm text-muted-foreground">À fournir à partir de 4 jours d'absence scolaire. Pour Paris, si l'enfant est scolarisé hors académie de Paris, joindre aussi l'avis du Directeur académique concerné</p>
-          </div>
-        </div>
-        <div className="flex gap-3 items-start">
-          <div className="text-foreground">
-            <p className="font-semibold">Avis médical d'aptitude</p>
-            <p className="text-sm text-muted-foreground">Médecin du travail Thalie Santé (ex-CMB) ou, a minima, justificatif de prise de rendez-vous</p>
-          </div>
-        </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          Les familles n'envoient rien elles-mêmes à l'administration : c'est la production qui dépose le dossier.
+        </p>
       </CardContent>
     </Card>
 
@@ -133,44 +168,20 @@ const DossierEnfantContent = () => (
       </CardHeader>
       <CardContent className="space-y-3 text-foreground">
         <p className="text-sm text-muted-foreground">
-          Pièce obligatoire pour que le dossier soit traité. La production remplit le tableau principal
-          (notamment les modalités du suivi scolaire) ; la famille le fait signer par l'établissement scolaire de l'enfant.
+          La production remplit le tableau principal (notamment les modalités du suivi scolaire) ;
+          la famille le fait signer par l'établissement scolaire de l'enfant, puis le remet à la production ou au casting.
         </p>
         <ul className="space-y-2 ml-4">
-          <li>• <strong>École primaire</strong> (enfant de plus de 3 ans) : rempli et signé par le directeur d'école, puis validé par l'inspecteur de l'éducation nationale de circonscription</li>
-          <li>• <strong>Collège et lycée</strong> (moins de 16 ans) : rempli et signé par le chef d'établissement</li>
-          <li>• <strong>Avis du DASEN</strong> : quel que soit le lieu de scolarisation, la production pré-remplit le modèle et le renvoie au rectorat de Paris, qui le transmet à la DSDEN concernée</li>
+          <li>• <strong>École primaire</strong> (enfant de plus de 3 ans) : signé par le directeur d'école, puis validé par l'inspecteur de l'éducation nationale de circonscription</li>
+          <li>• <strong>Collège et lycée</strong> (moins de 16 ans) : signé par le chef d'établissement</li>
         </ul>
-        <div className="bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-3 rounded-md text-sm">
-          <p className="font-semibold mb-1">À qui remettre les documents ?</p>
-          <p>
-            Les familles n'envoient rien elles-mêmes à l'administration. Le dossier et tous les documents sont à remettre :
-          </p>
-          <ul className="ml-4 mt-1 space-y-1">
-            <li>• à la <strong>production</strong>, pour un <strong>rôle</strong> ;</li>
-            <li>• au <strong>directeur ou à la directrice de casting</strong>, pour la <strong>figuration, les silhouettes et les doublures</strong>.</li>
-          </ul>
-          <p className="mt-1 text-muted-foreground">C'est ensuite la production qui dépose le dossier sur la plateforme de la DRIEETS et transmet les avis pédagogiques au rectorat.</p>
-        </div>
         <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm space-y-1">
           <p><strong>Rappel aux familles :</strong> prévenir le directeur d'école ou le chef d'établissement dès le premier jour d'absence de l'enfant.</p>
-          <p>La commission des enfants du spectacle, présidée par un juge des enfants, se réunit une fois par mois : les dates de dépôt de son calendrier sont impératives.</p>
+          <p>La commission des enfants du spectacle, présidée par un juge des enfants, se réunit une fois par mois : les documents doivent être remis à temps pour respecter ses dates de dépôt.</p>
         </div>
         <p className="text-xs text-muted-foreground">
           Source : <a href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer" className="underline">Académie de Paris — scolarité des enfants du spectacle</a>
         </p>
-      </CardContent>
-    </Card>
-
-    <Card>
-      <CardHeader>
-        <CardTitle>Cas particuliers — Figurants et silhouettes</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <ul className="space-y-1 text-foreground text-sm ml-4">
-          <li>• Enfant de <strong>3 ans et plus</strong> : avis d'un médecin généraliste accepté</li>
-          <li>• Enfant de <strong>moins de 3 ans</strong> : avis d'un pédiatre accepté</li>
-        </ul>
       </CardContent>
     </Card>
 

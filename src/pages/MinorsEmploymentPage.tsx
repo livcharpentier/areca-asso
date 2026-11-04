@@ -324,7 +324,7 @@ const MinorsEmploymentPage = () => {
                       <div className="bg-black/30 p-3 rounded">
                         <p className="font-semibold text-emerald-200 mb-2">Pourquoi les revenus sont-ils bloqués ?</p>
                         <div className="text-sm space-y-2">
-                          <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle et du mannequinat.</p>
+                          <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle.</p>
                           <p>Les sommes sont <strong>sécurisées jusqu'à 18 ans</strong> sur un compte à la Caisse des Dépôts, garantissant un capital pour l'entrée dans la vie adulte.</p>
                           <p className="text-emerald-300">Gestion <strong>totalement gratuite</strong>. Taux de rémunération : <strong>2,76%</strong> depuis le 1er novembre 2025.</p>
                         </div>
