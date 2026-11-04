@@ -36,7 +36,7 @@ const ParentsPage = () => {
                 <span>Dossier Enfant</span>
               </TabsTrigger>
               <TabsTrigger value="salaires">
-                <span>Définitions Fonctions</span>
+                <span>Rôles et salaires</span>
               </TabsTrigger>
               <TabsTrigger value="caisse-depots">
                 <span>Caisse des Dépôts</span>

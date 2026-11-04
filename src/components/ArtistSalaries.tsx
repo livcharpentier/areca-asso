@@ -7,7 +7,7 @@ const ArtistSalaries = () => {
       <div className="container mx-auto max-w-6xl">
         <Card>
           <CardHeader>
-            <CardTitle>Définitions des Fonctions — Artistes-Interprètes et Acteurs de Complément</CardTitle>
+            <CardTitle>Rôle, figurant, silhouette, doublure : qui fait quoi et combien ?</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="bg-muted/50 p-3 rounded-lg border border-border text-sm text-foreground">
@@ -61,13 +61,35 @@ const ArtistSalaries = () => {
               <p>Les silhouettes peuvent être désignées par la mise en scène le jour du tournage en accord avec la production, passant ainsi de figurant à silhouette.</p>
             </div>
 
+            <div className="bg-muted/40 p-4 rounded-lg border border-border">
+              <p className="font-semibold text-primary mb-3">Salaires minimum au 1er juin 2026 (brut, journée de 8h)</p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm text-foreground">
+                  <thead>
+                    <tr className="border-b border-border text-left">
+                      <th className="py-2 pr-3"></th>
+                      <th className="py-2 pr-3">Cinéma</th>
+                      <th className="py-2">Audiovisuel (séries, TV)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Figurant</td><td className="py-2 pr-3">108,33 €</td><td className="py-2">98,48 € (minimum SMIC)</td></tr>
+                    <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Silhouette</td><td className="py-2 pr-3">150,04 €</td><td className="py-2">salaire figurant + 42,24 €</td></tr>
+                    <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Silhouette parlante</td><td className="py-2 pr-3">250,01 € (jusqu'à 5 mots)</td><td className="py-2">—</td></tr>
+                    <tr className="border-b border-border/60"><td className="py-2 pr-3 font-semibold">Doublure</td><td className="py-2 pr-3">simple 165 € · polyvalente 200,02 €</td><td className="py-2">122,00 €</td></tr>
+                    <tr><td className="py-2 pr-3 font-semibold">Rôle (pour mémoire)</td><td className="py-2 pr-3">418,25 €</td><td className="py-2">304,99 €</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-muted-foreground mt-2">Résumé de la grille ACFDA : elle ne remplace pas la lecture des conventions collectives. Majorations (heures supplémentaires, nuit, dimanche, jours fériés) dans la grille complète.</p>
+            </div>
             <div className="pt-4 border-t border-border">
               <button
-                onClick={() => window.open('/acfda_salaire_figu-1er-janv-2025.pdf', '_blank')}
+                onClick={() => window.open('/acfda_salaire_figu-1er-juin-2026.pdf', '_blank')}
                 className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
               >
                 <Download className="w-5 h-5 text-primary" />
-                Télécharger le guide complet ACFDA des salaires figurants (1er janvier 2025)
+                Télécharger la grille ACFDA des salaires (1er juin 2026)
               </button>
             </div>
           </CardContent>

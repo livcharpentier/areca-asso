@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoArenca from "@/assets/logo-arenca.png";
 import { Mail, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -33,14 +34,14 @@ const Footer = () => {
           {/* Logo & Social */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-blue-sky flex items-center justify-center shadow-lg">
-                <span className="text-xl font-bold text-white">A</span>
+              <div className="bg-white rounded-lg p-1.5 shadow-lg flex-shrink-0">
+                <img src={logoArenca} alt="" className="h-10 w-auto" />
               </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-2xl font-lucky text-accent tracking-tight">
-                  ARENCA
+              <div className="flex flex-col leading-tight">
+                <span className="text-2xl text-white leading-[1.6]" style={{ fontFamily: "'Playwrite FR Trad', cursive" }}>
+                  Arenca
                 </span>
-                <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-comic font-bold">
+                <span className="text-[7px] text-primary-foreground/70 uppercase tracking-wider font-sans font-semibold">
                   Responsables Enfants dans le Cinéma et l'Audiovisuel
                 </span>
               </div>
