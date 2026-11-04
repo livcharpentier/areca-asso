@@ -180,9 +180,9 @@ const OrganisationTravailContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Travail du dimanche et jours fériés</p>
           <ul className="text-sm text-foreground space-y-1 ml-4 list-disc">
-            <li>Le travail du dimanche et des jours fériés est <strong>autorisé</strong> dans les entreprises de spectacles</li>
-            <li>Conditions définies par la <strong>convention collective</strong> applicable</li>
-            <li>Les majorations de salaire prévues s'appliquent</li>
+            <li><strong className="text-destructive">Audiovisuel (séries, TV) : travail du dimanche interdit aux moins de 18 ans</strong> (art. VI.9 de la convention collective de la production audiovisuelle)</li>
+            <li><strong>Cinéma :</strong> le code du travail autorise le travail du dimanche et des jours fériés dans les entreprises de spectacles ; il doit rester exceptionnel et être prévu dans la demande d'autorisation</li>
+            <li>Les majorations de salaire prévues par la convention collective s'appliquent (jours fériés ; dimanche en cinéma)</li>
           </ul>
         </div>
 
