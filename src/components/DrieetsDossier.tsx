@@ -112,6 +112,13 @@ const DrieetsDossier = () => {
             <div className="flex gap-3 items-start">
               <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
               <div className="text-foreground">
+                <p className="font-semibold">Avis favorable écrit de l'enfant</p>
+                <p className="text-sm text-muted-foreground">Obligatoire si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+              <div className="text-foreground">
                 <p className="font-semibold">Certificat de scolarité</p>
                 <p className="text-sm text-muted-foreground">Obligatoire à partir de 3 ans, quelle que soit la durée du tournage</p>
               </div>
