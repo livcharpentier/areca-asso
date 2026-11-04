@@ -826,15 +826,15 @@ const AnimateursSection = () => (
       <div className="space-y-4">
         <div className="rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-4 text-foreground">
           <p className="font-bold text-lg mb-2">Le rôle de l'animateur·trice</p>
-          <p className="text-sm mb-2">
-            L'animateur·trice intervient <strong>en soutien du·de la responsable des enfants</strong>, sous sa supervision directe.
-            Il·elle occupe et accompagne les enfants pendant les temps d'attente, veille à leur bien-être et peut assister le·la responsable dans toutes ses missions.
+          <p className="text-sm">
+            L'animateur·trice encadre les enfants pendant les temps d'attente et hors plateau, <strong>sous la responsabilité directe
+            du·de la responsable des enfants</strong>, avec des activités adaptées à leur âge, leur rythme et leurs limites.
+            Il·elle place l'intérêt de l'enfant au cœur de son action, avec bienveillance et confidentialité, et crée une relation
+            de confiance avec les familles sans lien de dépendance avec l'enfant. Il·elle rend compte régulièrement au·à la
+            responsable, l'alerte immédiatement en cas de situation préoccupante et ne prend aucune décision, ni n'intervient
+            auprès de la production, sans son accord.
           </p>
-          <ul className="text-sm ml-4 list-disc space-y-1">
-            <li>Rend régulièrement compte au·à la responsable des enfants de ce qu'il·elle observe, y compris en cas de difficulté.</li>
-            <li>Ne prend aucune décision engageant l'enfant, la famille ou la production sans en référer au·à la responsable.</li>
-            <li>Adhère à la charte de l'ARENCA et agit dans le même esprit de protection et de bienveillance.</li>
-          </ul>
+          <a href="/Charte_Animateur_ARENCA.pdf" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-sm text-accent underline">Lire la charte de l'animateur·trice</a>
         </div>
         <Card>
           <CardHeader><CardTitle>Idées d&apos;animation par tranche d&apos;âge</CardTitle></CardHeader>
