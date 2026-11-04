@@ -81,15 +81,15 @@ const ArtistSalaries = () => {
                   </tbody>
                 </table>
               </div>
-              <p className="text-xs text-muted-foreground mt-2">Résumé de la grille ACFDA : elle ne remplace pas la lecture des conventions collectives. Majorations (heures supplémentaires, nuit, dimanche, jours fériés) dans la grille complète.</p>
+              <p className="text-xs text-muted-foreground mt-2">Résumé de la grille des salaires : il ne remplace pas la lecture des conventions collectives. Majorations (heures supplémentaires, nuit, dimanche, jours fériés) dans la grille complète.</p>
             </div>
             <div className="pt-4 border-t border-border">
               <button
-                onClick={() => window.open('/acfda_salaire_figu-1er-juin-2026.pdf', '_blank')}
+                onClick={() => window.open('/grille_salaires_figuration_juin_2026.pdf', '_blank')}
                 className="w-full bg-muted/50 hover:bg-muted text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all border border-border"
               >
                 <Download className="w-5 h-5 text-primary" />
-                Télécharger la grille ACFDA des salaires (1er juin 2026)
+                Grille des salaires (1er juin 2026)
               </button>
             </div>
           </CardContent>

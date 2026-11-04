@@ -6,7 +6,7 @@ const FigurationSalaries = () => {
       <div className="mb-8 bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-orange-400/60 rounded-lg p-6 backdrop-blur">
         <h3 className="text-2xl font-bold text-orange-300 mb-4 flex items-center gap-2">
           <FileText className="w-6 h-6" />
-          Grille des tarifs 2026 - Cachets Figuration Cinéma et Série TV (ACFDA - 1er janv. 2026)
+          Grille des tarifs 2026 - Cachets Figuration Cinéma et Série TV (1er juin 2026)
         </h3>
         <div className="space-y-4">
           <div className="bg-cyan-900/20 p-3 rounded border border-cyan-400/30 text-sm text-cyan-100">
@@ -191,11 +191,11 @@ const FigurationSalaries = () => {
 
           <div className="mt-4 pt-4 border-t border-orange-400/30">
             <button
-              onClick={() => window.open('/acfda_salaire_figu-1er-juin-2026.pdf', '_blank')}
+              onClick={() => window.open('/grille_salaires_figuration_juin_2026.pdf', '_blank')}
               className="w-full bg-orange-600/20 hover:bg-orange-600/30 text-orange-200 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
             >
               <Download className="w-5 h-5" />
-              Télécharger le guide complet ACFDA des salaires figuration (1er juin 2026)
+              Grille des salaires (1er juin 2026)
             </button>
           </div>
         </div>
