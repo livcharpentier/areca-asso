@@ -48,7 +48,7 @@ const ResponsablesPage = () => {
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
               <Tabs defaultValue="reglementations" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-6">
+                <TabsList className="grid w-full grid-cols-3 sm:grid-cols-5 mb-6 h-auto">
                   <TabsTrigger value="reglementations">
                     <span>Réglementations</span>
                   </TabsTrigger>
@@ -61,7 +61,14 @@ const ResponsablesPage = () => {
                   <TabsTrigger value="compte-rendu">
                     <span>Compte Rendu</span>
                   </TabsTrigger>
+                  <TabsTrigger value="contacts">
+                    <span>Contacts utiles</span>
+                  </TabsTrigger>
                 </TabsList>
+
+            <TabsContent value="contacts">
+              <ContactsUtilesContent />
+            </TabsContent>
 
             <TabsContent value="compte-rendu">
               <DailyReport />
@@ -220,73 +227,163 @@ const OrganisationTravailContent = () => (
 );
 
 /* Contenu Familles d'emploi */
-const FamillesEmploiContent = () => (
+const FamillesEmploiContent = () => {
+  const bloc = "bg-muted/50 p-4 rounded-lg border border-border";
+  const titre = "font-semibold text-primary mb-2";
+  return (
   <div className="space-y-6">
     <Card>
       <CardHeader>
-        <CardTitle>Types d'emploi des mineurs : rôle, figuration, scène, e-sport</CardTitle>
+        <CardTitle>Quelles règles selon ce que fait l'enfant ?</CardTitle>
+        <p className="text-sm text-muted-foreground mt-1">
+          Rôle, figuration, publicité, scène… Le contrat, la rémunération et l'encadrement obligatoire changent selon le type d'emploi.
+          Dans tous les cas, un enfant de moins de 16 ans ne peut travailler qu'avec <strong>l'autorisation préalable du préfet</strong>.
+        </p>
       </CardHeader>
-      <CardContent className="space-y-6 text-foreground">
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-3">Rôle vs. Figuration</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-            <div className="bg-card p-3 rounded border border-border">
-              <p className="font-semibold text-primary mb-1">Rôle (Artiste interprète)</p>
-              <ul className="ml-4 list-disc space-y-1">
-                <li>Texte à dire ou jeu d'acteur identifiable</li>
-                <li>Rémunération selon la convention collective artistes</li>
-                <li>Droits voisins (ADAMI) applicables</li>
-                <li>Contrat d'artiste interprète obligatoire</li>
-              </ul>
-            </div>
-            <div className="bg-card p-3 rounded border border-border">
-              <p className="font-semibold text-primary mb-1">Figuration</p>
-              <ul className="ml-4 list-disc space-y-1">
-                <li>Présence dans le décor sans jeu identifiable</li>
-                <li>Rémunération selon grille de figuration</li>
-                <li>Pas de droits voisins</li>
-                <li>Contrat de figuration</li>
-              </ul>
-            </div>
+      <CardContent className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className={bloc}>
+            <p className={titre}>Rôle (artiste-interprète)</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Texte à dire ou jeu d'acteur identifiable</li>
+              <li>Contrat d'artiste-interprète, salaire selon la convention collective</li>
+              <li>Droits voisins (ADAMI) applicables</li>
+              <li>Cinéma : <strong>responsable des enfants obligatoire</strong> dès qu'un moins de 16 ans est engagé</li>
+            </ul>
+          </div>
+          <div className={bloc}>
+            <p className={titre}>Figuration, silhouette, doublure</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Présence dans le décor sans jeu identifiable (figurant), personnage repéré ou quelques mots (silhouette)</li>
+              <li>Contrat d'acteur de complément, salaire selon la grille de figuration</li>
+              <li>Pas de droits voisins</li>
+              <li>Cinéma : <strong>responsable des enfants obligatoire</strong> dès qu'un moins de 16 ans est engagé</li>
+            </ul>
+          </div>
+          <div className={bloc}>
+            <p className={titre}>Publicité</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Autorisation préalable du préfet <strong>obligatoire</strong>, comme pour un film</li>
+              <li>La convention du cinéma <strong>n'impose pas</strong> de responsable des enfants sur un film publicitaire (titre III, article 7)</li>
+              <li>Les enfants sont souvent engagés comme mannequins, par une agence : règles spécifiques du Code du travail</li>
+              <li>Un responsable des enfants reste recommandé</li>
+            </ul>
+          </div>
+          <div className={bloc}>
+            <p className={titre}>Clip musical</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Autorisation préalable du préfet <strong>obligatoire</strong></li>
+              <li>Aucune convention collective ne rend aujourd'hui le responsable des enfants obligatoire</li>
+              <li>Un responsable des enfants reste recommandé</li>
+            </ul>
+          </div>
+          <div className={bloc}>
+            <p className={titre}>Théâtre et cirque</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Recommandations de la circulaire du 9 novembre 1964 : 9 ans minimum, 1 représentation par jour, 3 par semaine au plus</li>
+              <li>Repos à respecter pendant les vacances scolaires</li>
+              <li>Cirque : tours de force périlleux et exercices dangereux interdits aux moins de 16 ans</li>
+            </ul>
+          </div>
+          <div className={bloc}>
+            <p className={titre}>E-sport (compétitions de jeux vidéo)</p>
+            <ul className="text-sm space-y-1 ml-4 list-disc">
+              <li>Compétitions professionnelles soumises aux mêmes règles que le spectacle</li>
+              <li>Autorisation préalable obligatoire pour les mineurs</li>
+              <li>Mêmes règles de temps de travail et de repos ; rémunération versée en partie à la Caisse des Dépôts</li>
+            </ul>
           </div>
         </div>
+      </CardContent>
+    </Card>
 
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Théâtre & Cirque</p>
-          <ul className="text-sm space-y-1 ml-4 list-disc">
-            <li><strong>Âge minimum recommandé :</strong> 9 ans (circulaire du 9 novembre 1964)</li>
-            <li><strong>Maximum recommandé :</strong> 3 représentations par semaine</li>
-            <li><strong>Maximum recommandé :</strong> 1 représentation par jour</li>
-            <li>Repos obligatoire pendant les vacances scolaires</li>
-            <li><strong>Cirque :</strong> Mêmes règles, interdiction des exercices dangereux pour les moins de 16 ans</li>
-          </ul>
+    <Card>
+      <CardHeader>
+        <CardTitle>Où déposer la demande ?</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="text-sm space-y-2 ml-4 list-disc">
+          <li><strong>C'est le siège de la production qui compte</strong>, pas le lieu de tournage ni le domicile de l'enfant (convention collective du cinéma, titre III, article 5.2).</li>
+          <li><strong>Production dont le siège est en France :</strong> demande auprès du préfet du département du siège, via la DREETS ou la DRIEETS.</li>
+          <li><strong>Production dont le siège est à l'étranger :</strong> demande auprès du préfet de Paris (DRIEETS Île-de-France).</li>
+          <li><strong>Enfant qui habite à l'étranger</strong> (par exemple en Belgique) engagé par une production française : la demande se fait en France, selon le siège de la production, et la réglementation française s'applique.</li>
+          <li><strong>Tournage à l'étranger</strong> d'une production française : l'autorisation française reste nécessaire ; le pays de tournage peut aussi imposer ses propres règles, à vérifier avant le départ.</li>
+          <li><strong>Île-de-France :</strong> une commission commune pour 75, 77, 78, 91, 93, 94 et 95, une commission distincte pour le 92 (voir le calendrier) ; les départements 77, 78, 91 et 95 ont leur propre démarche de dépôt en ligne.</li>
+        </ul>
+      </CardContent>
+    </Card>
+  </div>
+  );
+};
+
+/* Contacts utiles */
+const ContactsUtilesContent = () => {
+  const bloc = "bg-muted/50 p-4 rounded-lg border border-border text-sm space-y-1";
+  const lien = "text-accent underline";
+  return (
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <Card>
+      <CardHeader>
+        <CardTitle>Contacts utiles</CardTitle>
+        <p className="text-sm text-muted-foreground mt-1">Les interlocuteurs à garder sous la main pendant la préparation et le tournage.</p>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className={bloc}>
+            <p className="font-semibold text-primary">DRIEETS Île-de-France — enfants du spectacle</p>
+            <p>Instruction des demandes d'autorisation (unité de Paris)</p>
+            <p><a className={lien} href="mailto:drieets-idf-ud75.eesam@drieets.gouv.fr">drieets-idf-ud75.eesam@drieets.gouv.fr</a></p>
+            <p><a className={lien} href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" target="_blank" rel="noopener noreferrer">Plateforme de dépôt des dossiers</a></p>
+          </div>
+          <div className={bloc}>
+            <p className="font-semibold text-primary">Thalie Santé — Pôle Enfants</p>
+            <p>Médecine du travail des enfants du spectacle</p>
+            <p>50 avenue Daumesnil, 75012 Paris</p>
+            <p><a className={lien} href="mailto:pole.enfant@thalie-sante.org">pole.enfant@thalie-sante.org</a> · <a className={lien} href="https://www.thalie-sante.org" target="_blank" rel="noopener noreferrer">thalie-sante.org</a></p>
+          </div>
+          <div className={bloc}>
+            <p className="font-semibold text-primary">Rectorat de Paris — scolarité (DVE)</p>
+            <p>Avis pédagogiques, suivi scolaire</p>
+            <p>01 44 62 43 33 · <a className={lien} href="mailto:dve-enfantsduspectacle@ac-paris.fr">dve-enfantsduspectacle@ac-paris.fr</a></p>
+          </div>
+          <div className={bloc}>
+            <p className="font-semibold text-primary">Renseignements en droit du travail</p>
+            <p>Service public, pour toute question sur le Code du travail</p>
+            <p>0 806 000 126</p>
+          </div>
         </div>
+      </CardContent>
+    </Card>
 
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">E-sport & Compétitions de jeux vidéo</p>
-          <ul className="text-sm space-y-1 ml-4 list-disc">
-            <li>Les compétitions de jeux vidéo professionnelles sont soumises à la réglementation du spectacle</li>
-            <li>Autorisation de la commission obligatoire pour les mineurs</li>
-            <li>Mêmes règles de temps de travail et de repos applicables</li>
-            <li>Obligation de déclaration à la Caisse des Dépôts pour les gains</li>
-          </ul>
+    <Card className="border-2 border-[#ee7d2b]">
+      <CardHeader>
+        <CardTitle>Besoin d'un soutien psychologique ?</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3 text-sm text-foreground">
+        <p>
+          Si un enfant est en difficulté (scène éprouvante, stress, mal-être), ou si vous-même avez besoin d'aide, <strong>vous pouvez demander à la production
+          de faire appel à un psychologue</strong>. La charte de l'ARENCA prévoit d'orienter vers un professionnel adapté dès que la situation dépasse votre rôle.
+        </p>
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary">Le médecin du travail (Thalie Santé)</p>
+            <p>Pour un enfant : il connaît le rôle et peut conseiller la production sur les mesures à prendre.</p>
+          </div>
+          <div className="bg-muted/50 p-4 rounded-lg border border-border">
+            <p className="font-semibold text-primary">Cellule d'écoute Audiens</p>
+            <p>Soutien psychologique et juridique gratuit, anonyme si vous le souhaitez : <strong>01 87 20 30 90</strong> (lundi-vendredi, 9h-13h et 14h-18h) — <a className="text-accent underline" href="mailto:violences-sexuelles-culture@audiens.org">violences-sexuelles-culture@audiens.org</a></p>
+          </div>
         </div>
-
-        <div className="bg-muted/50 p-4 rounded-lg border border-border">
-          <p className="font-semibold text-primary mb-2">Compétence territoriale</p>
-          <ul className="text-sm space-y-1 ml-4 list-disc">
-            <li><strong>C'est le siège de la production qui compte</strong>, pas le lieu de tournage ni le domicile de l'enfant (convention collective du cinéma, titre III, article 5.2).</li>
-            <li><strong>Production dont le siège est en France :</strong> demande auprès du préfet du département du siège, via la DREETS ou la DRIEETS.</li>
-            <li><strong>Production dont le siège est à l'étranger :</strong> demande auprès du préfet de Paris (DRIEETS Île-de-France).</li>
-            <li><strong>Enfant qui habite à l'étranger</strong> (par exemple en Belgique) engagé par une production française : la demande se fait en France, selon le siège de la production, et la réglementation française s'applique.</li>
-            <li><strong>Tournage à l'étranger</strong> d'une production française : l'autorisation française reste nécessaire ; le pays de tournage peut aussi imposer ses propres règles, à vérifier avant le départ.</li>
-            <li><strong>Île-de-France :</strong> une commission commune pour 75, 77, 78, 91, 93, 94 et 95, une commission distincte pour le 92 (voir le calendrier) ; les départements 77, 78, 91 et 95 ont leur propre démarche de dépôt en ligne.</li>
-          </ul>
+        <div className="grid md:grid-cols-3 gap-3">
+          <div className="bg-destructive/10 border border-destructive/40 rounded-lg p-3"><p className="font-bold">Urgence</p><p>15 (SAMU), 17 (police), 112</p></div>
+          <div className="bg-destructive/10 border border-destructive/40 rounded-lg p-3"><p className="font-bold">Enfant en danger</p><p>119 — Allô Enfance en danger, 24h/24, gratuit</p></div>
+          <div className="bg-muted/60 border border-border rounded-lg p-3"><p className="font-bold">Violences Femmes Info</p><p>39 19, gratuit et anonyme</p></div>
         </div>
       </CardContent>
     </Card>
   </div>
-);
+  );
+};
 
 /* Contenu Conditions */
 const ConditionsContent = () => (
