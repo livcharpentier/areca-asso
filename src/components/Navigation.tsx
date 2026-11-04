@@ -41,11 +41,14 @@ const Navigation = () => {
               alt="ARENCA - Responsables Enfants dans le Cinéma et l'Audiovisuel"
               className="h-12 sm:h-14 w-auto flex-shrink-0"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="text-2xl sm:text-3xl font-black tracking-widest text-black font-sans">
-                ARENCA
+            <div className="flex flex-col leading-tight text-[#16213f]">
+              <span
+                className="text-2xl sm:text-3xl leading-[1.6] pt-1"
+                style={{ fontFamily: "'Playwrite FR Trad', cursive", WebkitTextStroke: "0.6px #16213f" }}
+              >
+                Arenca
               </span>
-              <span className="text-[6px] sm:text-[7px] text-black/80 uppercase tracking-widest font-comic font-bold leading-tight max-w-[140px] sm:max-w-[180px]">
+              <span className="text-[6px] sm:text-[7px] uppercase tracking-widest font-sans font-semibold leading-tight max-w-[140px] sm:max-w-[180px]">
                 Association des Responsables Enfants dans le Cinéma et l'Audiovisuel
               </span>
             </div>
