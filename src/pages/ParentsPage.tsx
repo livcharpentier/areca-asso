@@ -91,6 +91,7 @@ const DossierEnfantContent = () => (
         <div className="flex gap-3 items-start">
           <div className="text-foreground">
             <p className="font-semibold">Projet de contrat de travail</p>
+            <p className="text-sm text-muted-foreground">Établi et fourni par la production — rien à préparer de votre côté</p>
           </div>
         </div>
         <div className="flex gap-3 items-start">
