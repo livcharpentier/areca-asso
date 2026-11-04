@@ -87,6 +87,7 @@ const ArtistSalaries = () => {
                 {" · "}
                 <a href="https://code.travail.gouv.fr/convention-collective/2642-production-audiovisuelle" target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold">Audiovisuel (IDCC 2642)</a>
               </p>
+              <p className="text-sm mt-3 bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-2 rounded"><strong>Dimanche en audiovisuel (séries, TV) :</strong> un mineur n'a pas le droit de travailler le dimanche (art. VI.9 de la convention collective de la production audiovisuelle).</p>
               <p className="text-xs text-muted-foreground mt-2">Résumé de la grille des salaires : il ne remplace pas la lecture des conventions collectives. Majorations (dimanche, jours fériés) et indemnités dans la grille complète.</p>
             </div>
             <div className="pt-4 border-t border-border">
