@@ -126,26 +126,26 @@ const DossierEnfantContent = () => (
             <p className="bg-[#ee7d2b] text-white text-center font-bold text-lg md:text-xl uppercase tracking-wider py-3 px-2">À fournir par les parents</p>
             <div className="p-4">
             <ul className="space-y-3 text-foreground">
-              <li><p className="font-semibold">Livret de famille à jour ou acte de naissance</p></li>
+              <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Livret de famille à jour ou acte de naissance</p></li>
               <li>
-                <p className="font-semibold">Autorisation parentale</p>
-                <p className="text-sm text-muted-foreground">À remplir à partir du modèle officiel (à télécharger plus bas)</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Autorisation parentale</p>
+                <p className="text-sm text-muted-foreground pl-5">À remplir à partir du modèle officiel (à télécharger plus bas)</p>
               </li>
               <li>
-                <p className="font-semibold">Avis favorable écrit de l'enfant</p>
-                <p className="text-sm text-muted-foreground">Si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avis favorable écrit de l'enfant</p>
+                <p className="text-sm text-muted-foreground pl-5">Si l'enfant a plus de 13 ans (art. L7124-2 du Code du travail)</p>
               </li>
               <li>
-                <p className="font-semibold">Certificat de scolarité</p>
-                <p className="text-sm text-muted-foreground">À partir de 3 ans, quelle que soit la durée du tournage</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Certificat de scolarité</p>
+                <p className="text-sm text-muted-foreground pl-5">À partir de 3 ans, quelle que soit la durée du tournage</p>
               </li>
               <li>
-                <p className="font-semibold">Avis pédagogique signé par l'école</p>
-                <p className="text-sm text-muted-foreground">À partir de 4 jours d'absence scolaire (voir ci-dessous)</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avis pédagogique signé par l'école</p>
+                <p className="text-sm text-muted-foreground pl-5">À partir de 4 jours d'absence scolaire (voir ci-dessous)</p>
               </li>
               <li>
-                <p className="font-semibold">Avis médical d'aptitude</p>
-                <p className="text-sm text-muted-foreground">Le médecin dépend du type d'emploi (voir « Rôle ou figuration »)</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Avis médical d'aptitude</p>
+                <p className="text-sm text-muted-foreground pl-5">Le médecin dépend du type d'emploi (voir « Rôle ou figuration »)</p>
               </li>
             </ul>
             </div>
@@ -155,16 +155,16 @@ const DossierEnfantContent = () => (
             <div className="p-4">
             <p className="text-center font-bold text-foreground mb-4 pb-3 border-b border-border">Rien à faire de votre côté</p>
             <ul className="space-y-3 text-foreground">
-              <li><p className="font-semibold">Projet de contrat de travail</p></li>
-              <li><p className="font-semibold">Synopsis et plan de travail</p></li>
-              <li><p className="font-semibold">Note de sécurité, le cas échéant</p></li>
+              <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Projet de contrat de travail</p></li>
+              <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Synopsis et plan de travail</p></li>
+              <li><p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Note de sécurité, le cas échéant</p></li>
               <li>
-                <p className="font-semibold">Tableau principal de l'avis pédagogique</p>
-                <p className="text-sm text-muted-foreground">Et l'avis du DASEN si l'enfant est scolarisé hors académie de Paris</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Tableau principal de l'avis pédagogique</p>
+                <p className="text-sm text-muted-foreground pl-5">Et l'avis du DASEN si l'enfant est scolarisé hors académie de Paris</p>
               </li>
               <li>
-                <p className="font-semibold">Dépôt du dossier à la DRIEETS</p>
-                <p className="text-sm text-muted-foreground">Sur la plateforme numérique, et envoi des avis pédagogiques au rectorat</p>
+                <p className="font-semibold"><span className="text-[#ee7d2b] font-bold mr-2">–</span>Dépôt du dossier à la DRIEETS</p>
+                <p className="text-sm text-muted-foreground pl-5">Sur la plateforme numérique, et envoi des avis pédagogiques au rectorat</p>
               </li>
             </ul>
             </div>
