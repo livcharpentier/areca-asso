@@ -181,7 +181,7 @@ const DossierEnfantContent = () => (
       <div className="grid md:grid-cols-2 gap-5 text-foreground">
         <div className="space-y-3">
           <p>
-            <strong>« Mon enfant est sur ma carte Vitale »</strong> : oui, mais seulement pour les remboursements de soins !
+            <strong>« Mais mon enfant n'a pas de carte Vitale, il est sur la mienne ! »</strong> C'est vrai : il est rattaché à votre carte… mais seulement pour les remboursements de soins.
           </p>
           <p>
             Pour un <strong>contrat de travail</strong>, et c'est le cas dès qu'un enfant tourne, même en figuration,
