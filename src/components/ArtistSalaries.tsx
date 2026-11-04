@@ -68,8 +68,8 @@ const ArtistSalaries = () => {
                   <thead>
                     <tr className="border-b border-border text-left">
                       <th className="py-2 pr-3"></th>
-                      <th className="py-2 pr-3">Cinéma</th>
-                      <th className="py-2">Audiovisuel (séries, TV)</th>
+                      <th className="py-2 pr-3">Cinéma <span className="font-normal text-muted-foreground text-xs">(IDCC 3097)</span></th>
+                      <th className="py-2">Audiovisuel (séries, TV) <span className="font-normal text-muted-foreground text-xs">(IDCC 2642)</span></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -81,6 +81,12 @@ const ArtistSalaries = () => {
                   </tbody>
                 </table>
               </div>
+              <p className="text-sm mt-3">
+                Consulter les conventions collectives :{" "}
+                <a href="https://code.travail.gouv.fr/convention-collective/3097-production-cinematographique" target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold">Cinéma (IDCC 3097)</a>
+                {" · "}
+                <a href="https://code.travail.gouv.fr/convention-collective/2642-production-audiovisuelle" target="_blank" rel="noopener noreferrer" className="text-accent underline font-semibold">Audiovisuel (IDCC 2642)</a>
+              </p>
               <p className="text-xs text-muted-foreground mt-2">Résumé de la grille des salaires : il ne remplace pas la lecture des conventions collectives. Majorations (dimanche, jours fériés) et indemnités dans la grille complète.</p>
             </div>
             <div className="pt-4 border-t border-border">
