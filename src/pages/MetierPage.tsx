@@ -223,19 +223,6 @@ const CharteContent = () => (
         </Card>
       ))}
     </div>
-    <div className="mt-12 p-6 border border-border rounded-lg bg-card">
-      <p className="text-muted-foreground mb-6">
-        Date : <span className="inline-block w-40 border-b border-foreground/30" />
-      </p>
-      <p className="text-foreground font-medium mb-6">
-        Signature du·de la responsable des enfants :
-        <span className="inline-block w-64 ml-2 border-b border-foreground/30" />
-      </p>
-      <p className="text-foreground font-medium">
-        Signature de l'animateur·trice (le cas échéant) :
-        <span className="inline-block w-64 ml-2 border-b border-foreground/30" />
-      </p>
-    </div>
     <div className="mt-8 flex justify-center">
       <a href="/Charte_ARENCA.pdf" download="Charte_Professionnelle_ARENCA.pdf">
         <Button className="bg-accent text-white hover:bg-blue-vibrant shadow-lg hover:shadow-xl transition-all hover:scale-105 gap-2">
