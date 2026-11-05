@@ -12,7 +12,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "inline-flex h-auto min-h-10 gap-1 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground",
+      "inline-flex h-auto min-h-10 gap-1 items-stretch justify-center rounded-md bg-muted p-1 text-muted-foreground border border-[#16213f]/35",
       className,
     )}
     {...props}
@@ -27,7 +27,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center justify-center gap-1.5 whitespace-normal text-center leading-tight min-w-0 rounded-sm px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium ring-offset-background transition-all data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+      "inline-flex items-center justify-center gap-1.5 whitespace-normal text-center leading-tight min-w-0 rounded-sm border border-[#16213f]/20 px-2 sm:px-3 py-1.5 hover:border-[#16213f]/45 hover:text-[#16213f] text-xs sm:text-sm font-medium ring-offset-background transition-all data-[state=active]:bg-background data-[state=active]:text-[#16213f] data-[state=active]:font-semibold data-[state=active]:border-[#16213f]/60 data-[state=active]:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
       className,
     )}
     {...props}

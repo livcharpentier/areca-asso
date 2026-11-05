@@ -37,10 +37,10 @@ const ResponsablesPage = () => {
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="responsables" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
-              <TabsTrigger value="responsables" className="text-base font-semibold">
+              <TabsTrigger value="responsables" className="text-sm sm:text-base font-semibold">
                 Responsables Enfants
               </TabsTrigger>
-              <TabsTrigger value="animateurs" className="text-base font-semibold">
+              <TabsTrigger value="animateurs" className="text-sm sm:text-base font-semibold">
                 Animateur/trices
               </TabsTrigger>
             </TabsList>
@@ -48,7 +48,7 @@ const ResponsablesPage = () => {
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
               <Tabs defaultValue="reglementations" className="w-full">
-                <TabsList className="grid w-full grid-cols-3 sm:grid-cols-6 mb-6 h-auto">
+                <TabsList className="grid w-full grid-cols-2 min-[380px]:grid-cols-3 sm:grid-cols-6 mb-6 h-auto">
                   <TabsTrigger value="reglementations">
                     <span>Réglementations</span>
                   </TabsTrigger>
