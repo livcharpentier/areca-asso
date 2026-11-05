@@ -33,7 +33,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full z-50 border-b border-black/10 bg-[#f5f0e8]">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex items-center justify-between min-h-16 py-2">
+        <div className="flex items-center justify-between lg:justify-start min-h-16 py-2">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-5 gap-y-2 ml-4 xl:ml-8">
+          <div className="hidden lg:flex flex-wrap items-center justify-start gap-x-5 gap-y-2 ml-10 xl:ml-14">
             {navItems.map((item) => (
               <Link
                 key={item.path}
