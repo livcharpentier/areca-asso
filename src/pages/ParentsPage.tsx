@@ -33,7 +33,7 @@ const ParentsPage = () => {
                 <span>Suivi Santé</span>
               </TabsTrigger>
               <TabsTrigger value="dossier">
-                <span>Dossier moins de 16 ans</span>
+                <span>Dossier enfant<br className="sm:hidden" /> moins de 16 ans</span>
               </TabsTrigger>
               <TabsTrigger value="seize-dix-sept">
                 <span>16 et 17 ans</span>
