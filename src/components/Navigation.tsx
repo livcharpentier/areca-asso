@@ -62,8 +62,8 @@ const Navigation = () => {
                 to={item.path}
                 className={`text-xs uppercase tracking-widest font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
-                    ? "text-accent border-accent"
-                    : "text-black hover:text-accent border-transparent hover:border-accent/50"
+                    ? "text-[#16213f] border-[#ee7d2b]"
+                    : "text-[#16213f] hover:text-[#ee7d2b] border-transparent hover:border-[#ee7d2b]/50"
                 }`}
               >
                 {item.label}
@@ -113,8 +113,8 @@ const Navigation = () => {
                     onClick={() => setOpen(false)}
                     className={`text-sm uppercase tracking-wider font-medium transition-colors py-2 text-left ${
                       location.pathname === item.path
-                        ? "text-accent"
-                        : "text-foreground hover:text-accent"
+                        ? "text-[#ee7d2b] font-bold"
+                        : "text-[#16213f] hover:text-[#ee7d2b]"
                     }`}
                   >
                     {item.label}
