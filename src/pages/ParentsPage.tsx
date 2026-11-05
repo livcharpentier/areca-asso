@@ -36,7 +36,7 @@ const ParentsPage = () => {
                 <span>Dossier enfant<br className="sm:hidden" /> moins de 16 ans</span>
               </TabsTrigger>
               <TabsTrigger value="seize-dix-sept">
-                <span>16 et 17 ans</span>
+                <span>Jeunes de<br className="sm:hidden" /> 16 et 17 ans</span>
               </TabsTrigger>
               <TabsTrigger value="salaires">
                 <span>Rôles et salaires</span>
@@ -82,7 +82,7 @@ const DossierEnfantContent = () => (
       </h2>
       <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
         Documents à réunir pour chaque enfant de moins de 16 ans dans le cadre d'une demande d'autorisation.
-        Votre enfant a 16 ou 17 ans ? Voir l'onglet « 16 et 17 ans ».
+        Votre enfant a 16 ou 17 ans ? Voir l'onglet « Jeunes de 16 et 17 ans ».
       </p>
     </div>
 
