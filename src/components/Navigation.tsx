@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-3.5 2xl:gap-x-5 gap-y-2 ml-4">
+          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-5 gap-y-2 ml-4 xl:ml-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -69,6 +69,8 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
+            {/* Connexion masquée tant que l'espace membre n'a pas de comptes personnels */}
+            {user && (
             <div className="flex items-center gap-2 ml-1 pl-3 border-l border-black/20">
               {user && (
                 <Button
@@ -92,6 +94,7 @@ const Navigation = () => {
                 )}
               </Button>
             </div>
+            )}
           </div>
 
           {/* Mobile Menu */}
