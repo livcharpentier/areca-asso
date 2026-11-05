@@ -38,7 +38,7 @@ const Members = () => {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
             <h2 className="text-3xl font-bold text-foreground uppercase tracking-wide">
-              Membres
+              Les membres
             </h2>
             <Button className="bg-accent text-white hover:bg-blue-vibrant shadow-lg hover:shadow-xl transition-all hover:scale-105">
               <Search className="w-4 h-4 mr-2" />

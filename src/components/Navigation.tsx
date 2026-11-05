@@ -23,7 +23,7 @@ const Navigation = () => {
   const navItems = [
     { label: "LE MÉTIER", path: "/metier" },
     { label: "RÉGLEMENTATION", path: "/production" },
-    { label: "MEMBRES", path: "/members" },
+    { label: "LES MEMBRES", path: "/members" },
     { label: "ESPACE PARENTS", path: "/parents" },
     { label: "ESPACE MEMBRE", path: "/responsables" },
     { label: "FORMATIONS", path: "/formations" },
@@ -55,7 +55,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-5 gap-y-2 ml-4 xl:ml-8">
+          <div className="hidden lg:flex flex-wrap items-center justify-center gap-x-3.5 2xl:gap-x-5 gap-y-2 ml-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -69,7 +69,7 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            <div className="flex items-center gap-2 ml-2 pl-4 border-l border-black/20">
+            <div className="flex items-center gap-2 ml-1 pl-3 border-l border-black/20">
               {user && (
                 <Button
                   onClick={() => navigate("/mon-profil")}

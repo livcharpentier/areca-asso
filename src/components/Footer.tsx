@@ -9,7 +9,7 @@ const Footer = () => {
     association: [
       { label: "Présentation", href: "/#association" },
       { label: "Le métier et la charte", href: "/metier" },
-      { label: "Membres", href: "/members" },
+      { label: "Les membres", href: "/members" },
       { label: "Devenir membre", href: "/contact" },
     ],
     ressources: [
