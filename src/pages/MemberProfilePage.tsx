@@ -32,6 +32,7 @@ const memberData: { [key: string]: any } = {
       "Karma": "/affiches/liv/karma.jpg",
       "Histoires parallèles": "/affiches/liv/histoire-parallele.jpg",
       "Robin": "/affiches/liv/robin.jpg",
+      "Les Disparus des Argonnes": "/affiches/liv/les-disparus-des-argonnes.jpg",
       "Radin": "/affiches/liv/radin.jpg",
       "Le petit Spirou": "/affiches/liv/le-petit-spirou.jpg",
       "Rémi sans famille": "/affiches/liv/remi-sans-famille.jpg",
