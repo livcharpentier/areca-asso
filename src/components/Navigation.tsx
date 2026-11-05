@@ -60,7 +60,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-xs uppercase tracking-widest font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
+                className={`text-[13px] 2xl:text-sm uppercase tracking-wider 2xl:tracking-widest font-black transition-all pb-1 border-b-2 flex items-center gap-1 ${
                   location.pathname === item.path
                     ? "text-[#16213f] border-[#ee7d2b]"
                     : "text-[#16213f] hover:text-[#ee7d2b] border-transparent hover:border-[#ee7d2b]/50"
@@ -111,7 +111,7 @@ const Navigation = () => {
                     key={item.path}
                     to={item.path}
                     onClick={() => setOpen(false)}
-                    className={`text-sm uppercase tracking-wider font-medium transition-colors py-2 text-left ${
+                    className={`text-base uppercase tracking-wider font-medium transition-colors py-2 text-left ${
                       location.pathname === item.path
                         ? "text-[#ee7d2b] font-bold"
                         : "text-[#16213f] hover:text-[#ee7d2b]"
