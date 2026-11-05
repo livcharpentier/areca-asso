@@ -31,15 +31,15 @@ const ProductionPage = () => {
         <div className="container mx-auto max-w-6xl">
           <Tabs defaultValue="depot" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-6">
-              <TabsTrigger value="depot" className="gap-2">
+              <TabsTrigger value="depot" className="gap-2 px-1 sm:px-3">
                 <FileText className="h-4 w-4 hidden sm:block" />
                 <span>Déposer un dossier</span>
               </TabsTrigger>
-              <TabsTrigger value="dossier-drieets" className="gap-2">
+              <TabsTrigger value="dossier-drieets" className="gap-2 px-1 sm:px-3">
                 <Calendar className="h-4 w-4 hidden sm:block" />
                 <span>Calendrier des commissions</span>
               </TabsTrigger>
-              <TabsTrigger value="temps-travail" className="gap-2">
+              <TabsTrigger value="temps-travail" className="gap-2 px-1 sm:px-3">
                 <Clock className="h-4 w-4 hidden sm:block" />
                 <span>Temps de travail</span>
               </TabsTrigger>
