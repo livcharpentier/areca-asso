@@ -32,15 +32,15 @@ const ProductionPage = () => {
           <Tabs defaultValue="depot" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-6">
               <TabsTrigger value="depot" className="gap-2">
-                <FileText className="h-4 w-4" />
+                <FileText className="h-4 w-4 hidden sm:block" />
                 <span>Déposer un dossier</span>
               </TabsTrigger>
               <TabsTrigger value="dossier-drieets" className="gap-2">
-                <Calendar className="h-4 w-4" />
+                <Calendar className="h-4 w-4 hidden sm:block" />
                 <span>Calendrier des commissions</span>
               </TabsTrigger>
               <TabsTrigger value="temps-travail" className="gap-2">
-                <Clock className="h-4 w-4" />
+                <Clock className="h-4 w-4 hidden sm:block" />
                 <span>Temps de travail</span>
               </TabsTrigger>
             </TabsList>
