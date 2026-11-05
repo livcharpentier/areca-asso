@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export type FilmCV = {
   titre: string;
@@ -132,6 +133,19 @@ function AfficheDessinee({ film, index }: { film: FilmCV; index: number }) {
 
 const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
   const [affiches, setAffiches] = useState<Record<string, string | null>>({});
+  const bande = useRef<HTMLDivElement>(null);
+  const [fleches, setFleches] = useState({ gauche: false, droite: false });
+  const majFleches = () => {
+    const el = bande.current;
+    if (!el) return;
+    setFleches({ gauche: el.scrollLeft > 4, droite: el.scrollLeft + el.clientWidth < el.scrollWidth - 4 });
+  };
+  useEffect(() => {
+    majFleches();
+    window.addEventListener("resize", majFleches);
+    return () => window.removeEventListener("resize", majFleches);
+  });
+  const defiler = (sens: number) => bande.current?.scrollBy({ left: sens * Math.max(240, (bande.current?.clientWidth || 0) * 0.8), behavior: "smooth" });
   const cleFilms = films.map((f) => `${f.titre}|${f.annee || ""}|${f.affiche || ""}`).join(";");
 
   useEffect(() => {
@@ -172,8 +186,23 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
   const filmsTries = films.map((f, i) => ({ f, i })).sort((a, b) => (b.f.annee || 0) - (a.f.annee || 0) || a.i - b.i).map((x) => x.f);
 
   return (
-    <div className="mb-8">
-      <div className="flex gap-3 overflow-x-auto pb-3 snap-x" style={{ scrollbarWidth: "thin" }}>
+    <div className="mb-8 relative">
+      {fleches.gauche && (
+        <button type="button" aria-label="Affiches précédentes" onClick={() => defiler(-1)}
+          className="absolute left-0 top-[78px] -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-[#16213f]/85 text-white shadow-lg flex items-center justify-center hover:bg-[#16213f] transition">
+          <ChevronLeft className="h-6 w-6" />
+        </button>
+      )}
+      {fleches.droite && (
+        <>
+          <div className="pointer-events-none absolute right-0 top-0 h-[156px] w-16 bg-gradient-to-l from-background to-transparent z-[5]" />
+          <button type="button" aria-label="Voir les autres affiches" onClick={() => defiler(1)}
+            className="absolute right-0 top-[78px] -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-[#ee7d2b] text-white shadow-lg flex items-center justify-center hover:bg-[#d96d1f] transition animate-pulse">
+            <ChevronRight className="h-6 w-6" />
+          </button>
+        </>
+      )}
+      <div ref={bande} onScroll={majFleches} className="flex gap-3 overflow-x-auto pb-3 snap-x" style={{ scrollbarWidth: "thin" }}>
         {filmsTries.map((f, i) => {
           const cle = `${f.titre}|${f.annee || ""}`;
           const url = affiches[cle];
