@@ -47,6 +47,14 @@ const Contact = () => {
                   </p>
                 </CardContent>
               </Card>
+
+              <div className="rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-4 text-sm text-foreground">
+                <p className="font-bold mb-1">Demande d'adhésion</p>
+                <p>
+                  Pour toute demande d'adhésion, référez-vous au{" "}
+                  <a href="/metier?onglet=reglement" className="text-accent underline font-semibold">règlement intérieur</a>.
+                </p>
+              </div>
             </div>
 
             {/* Contact Form */}
