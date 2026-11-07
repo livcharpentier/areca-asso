@@ -21,17 +21,9 @@ const Hero = () => {
             </span>
             <span className="block text-2xl sm:text-3xl md:text-5xl lg:text-6xl">dans le Cinéma et l'Audiovisuel</span>
           </h1>
-          <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed mb-6 drop-shadow-lg font-medium">
+          <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed drop-shadow-lg font-medium">
             Fédérer les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel
           </p>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <button className="px-4 md:px-5 py-1.5 md:py-2 bg-accent hover:bg-blue-vibrant text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 text-xs">
-              Devenir membre
-            </button>
-            <button className="px-4 md:px-5 py-1.5 md:py-2 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg backdrop-blur-sm border border-white/30 transition-all hover:scale-105 text-xs">
-              En savoir plus
-            </button>
-          </div>
         </div>
       </div>
     </section>

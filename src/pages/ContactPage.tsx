@@ -20,7 +20,14 @@ const faqItems = [
   },
   {
     question: "Comment devenir membre de l'ARENCA ?",
-    answer: "Pour devenir membre de l'ARENCA, vous devez exercer le métier de responsable enfants ou être en formation pour ce métier. Utilisez le formulaire de contact ci-dessus pour nous envoyer votre candidature."
+    answer: (
+      <>
+        Pour toute demande d'adhésion, référez-vous au{" "}
+        <a className="text-accent underline" href="/metier?onglet=reglement">règlement intérieur de l'ARENCA</a>{" "}
+        (arenca.fr/metier?onglet=reglement). Il précise le dossier à envoyer (CV, motivations, charte acceptée) à{" "}
+        <a className="text-accent underline" href="mailto:contact@arenca.fr">contact@arenca.fr</a>.
+      </>
+    ),
   },
   {
     question: "Quels sont les horaires de travail autorisés pour les enfants ?",

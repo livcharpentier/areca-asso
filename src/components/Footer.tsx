@@ -7,10 +7,10 @@ const Footer = () => {
 
   const links = {
     association: [
-      { label: "Présentation", href: "/#association" },
-      { label: "Le métier et la charte", href: "/metier" },
+      { label: "Présentation", href: "/metier" },
+      { label: "Règlement intérieur", href: "/metier?onglet=reglement" },
       { label: "Les membres", href: "/members" },
-      { label: "Devenir membre", href: "/contact" },
+      { label: "Devenir membre", href: "/metier?onglet=reglement" },
     ],
     ressources: [
       { label: "Déposer un dossier", href: "/production" },

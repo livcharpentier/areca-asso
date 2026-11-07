@@ -21,7 +21,7 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { label: "LE MÉTIER", path: "/metier" },
+    { label: "PRÉSENTATION", path: "/metier" },
     { label: "RÉGLEMENTATION", path: "/production" },
     { label: "LES MEMBRES", path: "/members" },
     { label: "ESPACE PARENTS", path: "/parents" },

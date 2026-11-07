@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ChildSupervisorRole from "@/components/ChildSupervisorRole";
+import ReglementInterieur from "@/components/ReglementInterieur";
+import { useSearchParams } from "react-router-dom";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -235,6 +237,8 @@ const CharteContent = () => (
 );
 
 const MetierPage = () => {
+  const [params, setParams] = useSearchParams();
+  const onglet = ["fiche", "charte", "reglement"].includes(params.get("onglet") || "") ? (params.get("onglet") as string) : "fiche";
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -242,16 +246,17 @@ const MetierPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bangers text-foreground tracking-wide mb-2">
-              Le Métier
+              Présentation
             </h1>
             <p className="text-xl text-accent font-semibold tracking-wide">
               Responsable Enfants — Cinéma & Audiovisuel
             </p>
           </div>
-          <Tabs defaultValue="fiche" className="w-full max-w-5xl mx-auto">
-            <TabsList className="grid w-full grid-cols-2 mb-8">
-              <TabsTrigger value="fiche">Fiche Métier</TabsTrigger>
-              <TabsTrigger value="charte">Charte Professionnelle</TabsTrigger>
+          <Tabs value={onglet} onValueChange={(v) => setParams({ onglet: v }, { replace: true })} className="w-full max-w-5xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3 mb-8">
+              <TabsTrigger value="fiche" className="px-1 sm:px-3">Fiche Métier</TabsTrigger>
+              <TabsTrigger value="charte" className="px-1 sm:px-3">Charte Professionnelle</TabsTrigger>
+              <TabsTrigger value="reglement" className="px-1 sm:px-3">Règlement intérieur</TabsTrigger>
             </TabsList>
             <TabsContent value="fiche">
               <div className="mb-6 rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-5 md:p-6 text-foreground">
@@ -293,6 +298,9 @@ const MetierPage = () => {
             </TabsContent>
             <TabsContent value="charte">
               <CharteContent />
+            </TabsContent>
+            <TabsContent value="reglement">
+              <ReglementInterieur />
             </TabsContent>
           </Tabs>
         </div>
