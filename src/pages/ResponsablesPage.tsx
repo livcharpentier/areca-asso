@@ -178,7 +178,7 @@ const OrganisationTravailContent = () => (
           <p className="text-sm text-foreground mb-2">Le temps de travail effectif comprend :</p>
           <ul className="text-sm text-foreground ml-4 list-disc space-y-1">
             <li><strong>Préparation :</strong> Maquillage, coiffure, habillage</li>
-            <li><strong>Répétitions :</strong> Toutes les répétitions sur plateau</li>
+            <li><strong>Répétitions :</strong> Toutes les répétitions sur plateau et en loge</li>
             <li><strong>Prises :</strong> Temps de tournage effectif, temps d'attente entre les prises</li>
           </ul>
           <div className="mt-3 bg-card p-3 rounded border border-border">
