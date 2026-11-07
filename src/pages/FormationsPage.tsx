@@ -51,7 +51,8 @@ const FormationsPage = () => {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 mb-12">
-              <h2 className="text-2xl font-bold text-primary mb-2">AFDAS</h2>
+              <h2 className="text-2xl font-bold text-primary mb-1">AFDAS</h2>
+              <p className="text-sm text-muted-foreground mb-2">Opérateur de compétences (OPCO) qui finance la formation professionnelle dans la culture, les médias et le spectacle.</p>
               <p className="text-foreground text-lg">En cours</p>
             </div>
           </div>

@@ -311,7 +311,7 @@ const FamillesEmploiContent = () => {
       <CardContent>
         <ul className="text-sm space-y-2 ml-4 list-disc">
           <li><strong>C'est le siège de la production qui compte</strong>, pas le lieu de tournage ni le domicile de l'enfant (convention collective du cinéma, titre III, article 5.2).</li>
-          <li><strong>Production dont le siège est en France :</strong> demande auprès du préfet du département du siège, via la DREETS ou la DRIEETS.</li>
+          <li><strong>Production dont le siège est en France :</strong> demande auprès du préfet du département du siège, instruite par la DDETS (direction départementale de l'emploi, du travail et des solidarités) ou, en Île-de-France, par la DRIEETS.</li>
           <li><strong>Production dont le siège est à l'étranger :</strong> demande auprès du préfet de Paris (DRIEETS Île-de-France).</li>
           <li><strong>Enfant qui habite à l'étranger</strong> (par exemple en Belgique) engagé par une production française : la demande se fait en France, selon le siège de la production, et la réglementation française s'applique.</li>
           <li><strong>Tournage à l'étranger</strong> d'une production française : l'autorisation française reste nécessaire ; le pays de tournage peut aussi imposer ses propres règles, à vérifier avant le départ.</li>
@@ -616,6 +616,9 @@ const VHSSContent = () => (
         <CardTitle>Formation obligatoire</CardTitle>
       </CardHeader>
       <CardContent>
+        <p className="text-sm text-foreground mb-2">
+          <strong>VHSS</strong> : violences et harcèlement sexistes et sexuels.
+        </p>
         <p className="text-sm text-foreground">
           La formation VHSS est obligatoire pour les producteurs (depuis 2022) et pour toutes les équipes de tournage (depuis janvier 2025).
         </p>
@@ -723,7 +726,7 @@ const VHSSContent = () => (
             <li>Affichage des numéros utiles et procédures</li>
             <li>Formation des managers et référents</li>
             <li>Si possible, un ou des référents VHSS sur toutes les étapes (prépa, tournage, post-prod)</li>
-            <li>Notification au CCHSCT en cas de signalement (anonymisée)</li>
+            <li>Notification au CCHSCT (comité central d'hygiène, de sécurité et des conditions de travail de la production cinématographique) en cas de signalement (anonymisée)</li>
           </ul>
         </div>
       </CardContent>
@@ -780,7 +783,7 @@ const VHSSContent = () => (
         <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">1</span><p><strong>Le référent VHSS du film</strong>, désigné par la production : c'est le premier interlocuteur, il recueille le signalement et alerte la production.</p></div>
         <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">2</span><p><strong>La production</strong> (employeur, directeur ou directrice de production) : elle doit faire cesser les faits, protéger la victime et mener une enquête interne. Les représentants du personnel peuvent aussi être saisis, ainsi que le <strong>CCHSCT</strong> de la production cinématographique.</p></div>
         <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">3</span><p><strong>La cellule d'écoute Audiens</strong> (spectacle, cinéma, audiovisuel), gratuite et anonyme si vous le souhaitez, pour un soutien psychologique et juridique : <strong>01 87 20 30 90</strong> (du lundi au vendredi, 9h-13h et 14h-18h) — <a className="text-accent underline" href="mailto:violences-sexuelles-culture@audiens.org">violences-sexuelles-culture@audiens.org</a></p></div>
-        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">4</span><p><strong>Si rien n'est fait</strong> : le <strong>médecin du travail</strong> (Thalie Santé pour les enfants), l'<strong>inspection du travail</strong> (DREETS ou DRIEETS) et le <strong>Défenseur des droits</strong>.</p></div>
+        <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">4</span><p><strong>Si rien n'est fait</strong> : le <strong>médecin du travail</strong> (Thalie Santé pour les enfants), l'<strong>inspection du travail</strong> (rattachée à la DDETS, ou à la DRIEETS en Île-de-France) et le <strong>Défenseur des droits</strong>.</p></div>
         <div className="flex gap-3"><span className="font-bold text-[#ee7d2b] text-lg leading-none">5</span><p><strong>Justice</strong> : dépôt de plainte auprès de la police, de la gendarmerie ou directement du procureur de la République.</p></div>
         <div className="mt-2 grid md:grid-cols-3 gap-3">
           <div className="bg-destructive/10 border border-destructive/40 rounded-lg p-3"><p className="font-bold">Urgence</p><p>17 (police) ou 112</p></div>
