@@ -11,7 +11,7 @@ const DailyReport = () => {
         <CardHeader>
           <CardTitle>Compte Rendu Journalier de Tournage</CardTitle>
           <CardDescription>
-            Un outil utile pour suivre, jour après jour, chaque mineur présent sur le tournage
+            Un outil pratique proposé par l’ARENCA pour le suivi, jour après jour, de chaque mineur présent sur le tournage
           </CardDescription>
         </CardHeader>
         <CardContent>
