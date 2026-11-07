@@ -481,7 +481,7 @@ const ConditionsContent = () => (
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
           <p className="font-semibold text-primary">Scolarité</p>
-          <p className="text-sm">Répétiteur agréé si absence scolaire · 2h d'enseignement/jour minimum · maintien du rythme scolaire</p>
+          <p className="text-sm">Selon le guide de la commission DRIEETS, dès <strong>4 jours d'absence</strong>, la production envoie au rectorat un dossier avec l'<strong>avis pédagogique</strong> de l'école et les <strong>modalités de rattrapage des cours</strong>, à établir avec l'établissement scolaire.</p>
         </div>
 
         <div className="bg-[#fdf1e7] border-l-4 border-[#ee7d2b] p-4 rounded-md text-sm">
