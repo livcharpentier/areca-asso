@@ -222,8 +222,9 @@ const OrganisationTravailContent = () => (
             <div>
               <p><strong>Repos hebdomadaire :</strong></p>
               <ul className="ml-4 list-disc space-y-1">
-                <li><strong>2 jours consécutifs</strong> incluant le dimanche</li>
-                <li>Dérogation possible : 36h dont 24h consécutives</li>
+                <li><strong>2 jours de repos consécutifs</strong> par semaine (art. L3164-2 du code du travail)</li>
+                <li>Pour les 16-17 ans qui ne sont plus soumis à l'obligation scolaire, un accord collectif étendu peut réduire ce repos, mais <strong>jamais en dessous de 36 heures d'affilée</strong></li>
+                <li>Le dimanche : interdit en audiovisuel, possible en cinéma (voir l'onglet « Organisation »)</li>
               </ul>
             </div>
           </div>
