@@ -412,17 +412,17 @@ const ConditionsContent = () => (
           <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
           <p className="text-sm"><strong>Composition :</strong></p>
           <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
-            <li>Directeur académique des services de l'éducation nationale ou son représentant</li>
-            <li>Directeur départemental chargé de l'emploi (DDETS/DDETSPP) ou son représentant</li>
+            <li>Le directeur académique des services de l'Éducation nationale (DASEN), ou son représentant</li>
+            <li>Le directeur ou la directrice de la DDETS (direction départementale de l'emploi, du travail et des solidarités ; en Île-de-France, la DRIEETS), ou son représentant</li>
             <li>Un médecin</li>
-            <li>Directeur régional des affaires culturelles (DRAC) ou son représentant</li>
+            <li>Le directeur ou la directrice de la DRAC (direction régionale des affaires culturelles), ou son représentant</li>
           </ul>
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Procédure et délais</p>
           <ul className="text-sm space-y-1">
-            <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
+            <li><strong>Instruction :</strong> Par la DDETS (en Île-de-France, la DRIEETS)</li>
             <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
             <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
             <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
