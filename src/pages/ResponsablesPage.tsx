@@ -503,12 +503,13 @@ const ConditionsContent = () => (
 /* Contenu Diplômes */
 const DiplomesContent = () => (
   <div className="space-y-6">
-    <Card>
-      <CardContent className="p-5 text-sm text-foreground">
+    <div className="rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-4 text-foreground">
+      <p className="font-bold text-lg mb-2">Faut-il un diplôme ?</p>
+      <p className="text-sm">
         Aucun diplôme précis n'est exigé par la loi pour être responsable des enfants, mais une formation à l'encadrement
         des mineurs est un vrai plus. Le plus courant est le <strong>BAFA</strong> (brevet d'aptitude aux fonctions d'animateur).
-      </CardContent>
-    </Card>
+      </p>
+    </div>
 
     <Card className="border-2 border-[#ee7d2b]">
       <CardHeader>
