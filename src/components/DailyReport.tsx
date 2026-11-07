@@ -11,7 +11,7 @@ const DailyReport = () => {
         <CardHeader>
           <CardTitle>Compte Rendu Journalier de Tournage</CardTitle>
           <CardDescription>
-            Document obligatoire à remplir quotidiennement pour chaque mineur présent sur le tournage
+            Un outil pratique proposé par l’ARENCA pour suivre, jour après jour, chaque mineur présent sur le tournage
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -159,7 +159,7 @@ const DailyReport = () => {
                   Listez tous les encadrants présents sur le tournage :
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Responsable mineur (obligatoire)</li>
+                  <li>Responsable des enfants</li>
                   <li>Parents/tuteurs légaux</li>
                   <li>Précepteur (si scolarité obligatoire)</li>
                   <li>Autres professionnels d'encadrement</li>
