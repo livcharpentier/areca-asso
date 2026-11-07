@@ -481,7 +481,7 @@ const ConditionsContent = () => (
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
           <p className="font-semibold text-primary">Scolarité</p>
-          <p className="text-sm mb-2">L'instruction est <strong>obligatoire pour chaque enfant de 3 à 16 ans</strong> (art. L131-1 du code de l'éducation), y compris pendant un tournage.</p>
+          <p className="text-sm mb-2">L'instruction est <strong>obligatoire pour chaque enfant de 3 à 16 ans</strong> (art. L131-1 du code de l'éducation).</p>
           <p className="text-sm">Selon le guide de la commission DRIEETS, dès <strong>4 jours d'absence</strong>, la production envoie au rectorat un dossier avec l'<strong>avis pédagogique</strong> de l'école et les <strong>modalités de rattrapage des cours</strong>, à établir avec l'établissement scolaire.</p>
         </div>
 
