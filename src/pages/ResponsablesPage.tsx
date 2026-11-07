@@ -357,6 +357,16 @@ const ContactsUtilesContent = () => {
             <p>Service public, pour toute question sur le Code du travail</p>
             <p>0 806 000 126</p>
           </div>
+          <div className={bloc + " md:col-span-2"}>
+            <p className="font-semibold text-primary">CCHSCT Cinéma</p>
+            <p>Comité central d'hygiène, de sécurité et des conditions de travail de la production cinématographique</p>
+            <p>37 rue Étienne Marcel, 75001 Paris</p>
+            <p className="font-medium pt-1">Déléguées hygiène et sécurité :</p>
+            <div className="grid sm:grid-cols-2 gap-2">
+              <p><strong>Clémentine Charlemaine</strong><br />06 28 23 48 71 · <a className={lien} href="mailto:clementine@cchscinema.org">clementine@cchscinema.org</a></p>
+              <p><strong>Fenda Samassa</strong><br />06 35 30 71 00 · <a className={lien} href="mailto:fenda@cchscinema.org">fenda@cchscinema.org</a></p>
+            </div>
+          </div>
         </div>
       </CardContent>
     </Card>
