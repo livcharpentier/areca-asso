@@ -935,6 +935,32 @@ const AnimateursSection = () => (
           <CardContent className="space-y-6">
             {[
               {
+                age: "3 mois — 2 ans",
+                color: "bg-pink-50 border-pink-200",
+                idees: [
+                  "Histoires courtes et livres d&apos;images (livres en tissu ou cartonnés)",
+                  "Comptines et chansons à gestes",
+                  "Cubes à empiler et à emboîter, mettre des objets dans des cubes",
+                  "Tapis d&apos;éveil et tapis de jeu",
+                  "Hochets, balles souples, jouets sonores",
+                  "Jeux de coucou-caché",
+                  "<strong>Sécurité :</strong> uniquement des jouets adaptés à l&apos;âge, sans petites pièces, et nettoyés",
+                ]
+              },
+              {
+                age: "2 — 3 ans",
+                color: "bg-orange-50 border-orange-200",
+                idees: [
+                  "Histoires, comptines et chansons à gestes",
+                  "Gommettes et coloriages simples (gros crayons)",
+                  "Cubes, gros blocs de construction, encastrements",
+                  "Voitures, poupées, peluches",
+                  "Premiers jeux de société de leur âge (lotos d&apos;images, premiers memory, Mon premier verger)",
+                  "Pâte à modeler",
+                  "<strong>Sécurité :</strong> pas de petites pièces, toujours sous surveillance",
+                ]
+              },
+              {
                 age: "3 — 6 ans",
                 color: "bg-yellow-50 border-yellow-200",
                 idees: [
