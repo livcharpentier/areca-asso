@@ -48,12 +48,15 @@ const ResponsablesPage = () => {
             {/* SECTION RESPONSABLES ENFANTS */}
             <TabsContent value="responsables">
               <Tabs defaultValue="reglementations" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 min-[380px]:grid-cols-3 sm:grid-cols-6 mb-6 h-auto">
+                <TabsList className="grid w-full grid-cols-2 min-[380px]:grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 mb-6 h-auto">
                   <TabsTrigger value="reglementations">
                     <span>Réglementations</span>
                   </TabsTrigger>
                   <TabsTrigger value="vhss">
                     <span>VHSS</span>
+                  </TabsTrigger>
+                  <TabsTrigger value="climat">
+                    <span>Conditions climatiques</span>
                   </TabsTrigger>
                   <TabsTrigger value="diplomes">
                     <span>Diplômes</span>
@@ -68,6 +71,10 @@ const ResponsablesPage = () => {
                     <span>Contacts utiles</span>
                   </TabsTrigger>
                 </TabsList>
+
+            <TabsContent value="climat">
+              <ClimatContent />
+            </TabsContent>
 
             <TabsContent value="diplomes">
               <DiplomesContent />
@@ -323,11 +330,85 @@ const FamillesEmploiContent = () => {
 };
 
 /* Contacts utiles */
+/* Contenu Conditions climatiques */
+const ClimatContent = () => (
+  <div className="space-y-6 max-w-5xl mx-auto">
+    <div className="rounded-lg border-2 border-[#16213f] bg-[#16213f]/5 p-4 text-sm text-foreground">
+      <p className="font-bold text-base mb-1">C'est la production qui décide</p>
+      <p>
+        Le ou la responsable des enfants observe, alerte et propose, mais <strong>rien ne se fait sans l'accord de la production</strong> :
+        c'est elle qui décide d'adapter les horaires, d'ajouter des pauses ou d'arrêter une séquence.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-6">
+      <Card className="border-2 border-[#ee7d2b]">
+        <CardHeader>
+          <CardTitle>Forte chaleur</CardTitle>
+          <p className="text-sm text-muted-foreground">À partir d'une moyenne de plus de 25 °C sur la journée</p>
+        </CardHeader>
+        <CardContent className="space-y-1.5 text-sm text-foreground">
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Faire boire régulièrement : par exemple <strong>un verre d'eau toutes les 20 minutes</strong>, avec de l'eau fraîche à portée de main.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Prévoir des <strong>pauses plus fréquentes</strong>.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Un <strong>abri ombragé ou climatisé</strong> pour attendre (ventilateur, brumisateur).</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Demander à tourner aux <strong>heures les moins chaudes</strong>.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Vêtements clairs, légers et amples dès que le costume le permet ; chapeau et crème solaire entre les prises.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Limiter les efforts physiques.</p>
+        </CardContent>
+      </Card>
+      <Card className="border-2 border-[#16213f]/50">
+        <CardHeader>
+          <CardTitle>Froid</CardTitle>
+          <p className="text-sm text-muted-foreground">En dessous de 5 °C</p>
+        </CardHeader>
+        <CardContent className="space-y-1.5 text-sm text-foreground">
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Vêtements chauds en <strong>plusieurs couches</strong>, gants, bonnet, chaussures chaudes entre les prises.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Un <strong>local chauffé</strong> pour attendre.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Boissons chaudes.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Par temps de gel, de verglas ou de neige : signaler les sols glissants et les accès dangereux.</p>
+        </CardContent>
+      </Card>
+    </div>
+
+    <p className="text-sm text-foreground bg-muted/50 rounded-lg border border-border p-4">
+      Les enfants supportent moins bien la chaleur et le froid que les adultes : ils se déshydratent et se refroidissent plus vite, et ne disent pas
+      toujours qu'ils ont soif, chaud ou froid. Il faut donc les surveiller davantage.
+    </p>
+
+    <p className="text-xs text-muted-foreground">
+      Source : <a className="underline" href="https://cchscinema.org/ambiances-climatiques/" target="_blank" rel="noopener noreferrer">CCHSCT Cinéma, fiche « Ambiances climatiques »</a>, adaptée aux enfants.
+    </p>
+  </div>
+);
+
+
 const ContactsUtilesContent = () => {
   const bloc = "bg-muted/50 p-4 rounded-lg border border-border text-sm space-y-1";
   const lien = "text-accent underline";
   return (
   <div className="space-y-6 max-w-5xl mx-auto">
+    <Card className="border-2 border-red-600">
+      <CardHeader>
+        <CardTitle>En cas d'accident</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-3 text-sm text-foreground">
+        <div className="rounded-lg bg-red-50 border border-red-200 p-3">
+          <p className="font-bold">Urgence : appelez tout de suite les secours</p>
+          <p><strong>15</strong> (SAMU) · <strong>18</strong> (pompiers) · <strong>112</strong> (numéro d'urgence européen)</p>
+          <p className="text-muted-foreground">Appeler les secours ne demande l'accord de personne.</p>
+        </div>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Prévenir immédiatement la production</strong> (direction de production, régie). Pour tout le reste, c'est elle qui prend les décisions.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Prévenir les parents</strong>, en accord avec la production.</p>
+        <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Noter l'heure, le lieu, ce qui s'est passé et les témoins, par exemple dans le compte rendu journalier.</p>
+        <div className="rounded-lg border-l-4 border-[#ee7d2b] bg-[#fdf1e7] p-3 space-y-1">
+          <p className="font-semibold">Les délais de déclaration</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>L'employeur doit être informé <strong>dans les 24 heures</strong>.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>La production déclare l'accident du travail à la <strong>CPAM dans les 48 heures</strong> (hors dimanches et jours fériés). Elle n'a pas à juger si l'accident est réel : c'est la CPAM qui décide.</p>
+          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>En cinéma, la production envoie aussi une copie de la déclaration au <strong>CCHSCT</strong>.</p>
+        </div>
+        <p className="text-xs text-muted-foreground">Sources : code de la sécurité sociale (art. L441-1 et R441-3) ; <a className="underline" href="https://cchscinema.org/f-a-q/" target="_blank" rel="noopener noreferrer">FAQ du CCHSCT Cinéma</a>.</p>
+      </CardContent>
+    </Card>
     <Card>
       <CardHeader>
         <CardTitle>Contacts utiles</CardTitle>
