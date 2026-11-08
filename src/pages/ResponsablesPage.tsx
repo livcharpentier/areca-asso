@@ -401,12 +401,11 @@ const ContactsUtilesContent = () => {
         <p><span className="text-[#ee7d2b] font-bold mr-2">–</span><strong>Prévenir les parents</strong>, en accord avec la production.</p>
         <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>Noter l'heure, le lieu, ce qui s'est passé et les témoins, par exemple dans le compte rendu journalier.</p>
         <div className="rounded-lg border-l-4 border-[#ee7d2b] bg-[#fdf1e7] p-3 space-y-1">
-          <p className="font-semibold">Les délais de déclaration</p>
-          <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>L'employeur doit être informé <strong>dans les 24 heures</strong>.</p>
+          <p className="font-semibold">La déclaration : c'est le rôle de la production</p>
           <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>La production déclare l'accident du travail à la <strong>CPAM dans les 48 heures</strong> (hors dimanches et jours fériés). Elle n'a pas à juger si l'accident est réel : c'est la CPAM qui décide.</p>
           <p><span className="text-[#ee7d2b] font-bold mr-2">–</span>En cinéma, la production envoie aussi une copie de la déclaration au <strong>CCHSCT</strong>.</p>
         </div>
-        <p className="text-xs text-muted-foreground">Sources : code de la sécurité sociale (art. L441-1 et R441-3) ; <a className="underline" href="https://cchscinema.org/f-a-q/" target="_blank" rel="noopener noreferrer">FAQ du CCHSCT Cinéma</a>.</p>
+        <p className="text-xs text-muted-foreground">Sources : code de la sécurité sociale (art. R441-3) ; <a className="underline" href="https://cchscinema.org/f-a-q/" target="_blank" rel="noopener noreferrer">FAQ du CCHSCT Cinéma</a>.</p>
       </CardContent>
     </Card>
     <Card>
