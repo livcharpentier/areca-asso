@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const SocialLinks = () => (
   <section className="py-10 px-4 bg-background">
@@ -14,6 +14,15 @@ const SocialLinks = () => (
         >
           <Facebook className="w-9 h-9" />
           Facebook
+        </a>
+        <a
+          href="https://www.linkedin.com/company/arenca-association-des-responsables-enfants-dans-le-cin%C3%A9ma-et-l-audiovisuel/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 w-full sm:w-auto justify-center rounded-2xl bg-[#0A66C2] text-white px-7 py-4 text-lg font-semibold shadow-md transition-transform hover:scale-105"
+        >
+          <Linkedin className="w-9 h-9" />
+          LinkedIn
         </a>
         <a
           href="https://www.instagram.com/arenca.asso/"

@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -55,6 +55,9 @@ const Contact = () => {
                 <CardContent className="mt-4 space-y-2">
                   <a href="https://www.facebook.com/profile.php?id=61596592014224" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-blue-vibrant font-semibold transition-colors">
                     <Facebook className="w-5 h-5" /> Facebook
+                  </a>
+                  <a href="https://www.linkedin.com/company/arenca-association-des-responsables-enfants-dans-le-cin%C3%A9ma-et-l-audiovisuel/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-blue-vibrant font-semibold transition-colors">
+                    <Linkedin className="w-5 h-5" /> LinkedIn
                   </a>
                   <a href="https://www.instagram.com/arenca.asso/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-blue-vibrant font-semibold transition-colors">
                     <Instagram className="w-5 h-5" /> Instagram · @arenca.asso

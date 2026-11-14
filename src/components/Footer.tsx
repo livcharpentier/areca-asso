@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logoArenca from "@/assets/logo-arenca.png";
-import { Mail, Facebook, Instagram } from "lucide-react";
+import { Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,6 +44,9 @@ const Footer = () => {
             <div className="flex gap-3 mt-6">
               <a href="https://www.facebook.com/profile.php?id=61596592014224" target="_blank" rel="noopener noreferrer" aria-label="Facebook de l'ARENCA" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
                 <Facebook className="w-4 h-4 text-primary-foreground hover:text-white" />
+              </a>
+              <a href="https://www.linkedin.com/company/arenca-association-des-responsables-enfants-dans-le-cin%C3%A9ma-et-l-audiovisuel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de l'ARENCA" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
+                <Linkedin className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
               <a href="https://www.instagram.com/arenca.asso/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de l'ARENCA" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
                 <Instagram className="w-4 h-4 text-primary-foreground hover:text-white" />
