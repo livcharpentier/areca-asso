@@ -910,10 +910,10 @@ const VHSSContent = () => (
 /* Section Animateurs */
 const AnimateursSection = () => (
   <Tabs defaultValue="idees-animation" className="w-full">
-    <TabsList className="grid w-full grid-cols-3 mb-6">
-      <TabsTrigger value="idees-animation" className="text-xs">Animations</TabsTrigger>
-      <TabsTrigger value="jeux-rapides" className="text-xs">Jeux Rapides</TabsTrigger>
-      <TabsTrigger value="jeux-societe" className="text-xs">Jeux Société</TabsTrigger>
+    <TabsList className="grid w-full grid-cols-3 mb-6 h-auto">
+      <TabsTrigger value="idees-animation" className="text-xs sm:text-sm whitespace-normal leading-tight py-1.5">Animations</TabsTrigger>
+      <TabsTrigger value="jeux-rapides" className="text-xs sm:text-sm whitespace-normal leading-tight py-1.5">Jeux rapides sans matériel</TabsTrigger>
+      <TabsTrigger value="jeux-societe" className="text-xs sm:text-sm whitespace-normal leading-tight py-1.5">Jeux de société</TabsTrigger>
     </TabsList>
 
     <TabsContent value="idees-animation">
@@ -1026,7 +1026,7 @@ const AnimateursSection = () => (
     <TabsContent value="jeux-rapides">
       <div className="space-y-4">
         <Card>
-          <CardHeader><CardTitle>Jeux rapides — Sans matériel</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Jeux rapides sans matériel</CardTitle></CardHeader>
           <CardContent className="space-y-6">
             {[
               {
