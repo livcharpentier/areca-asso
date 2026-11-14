@@ -28,7 +28,7 @@ const WorkTimeRegulations = () => {
       age: "de 12 à 16 ans",
       schoolPeriod: "4 heures/jour",
       schoolBreak: "Après 2 heures de temps de travail",
-      holidays: "6 heures /jour",
+      holidays: "6 heures/jour",
       holidayBreak: "Après 3 heures",
       highlight: true,
     },
@@ -111,17 +111,17 @@ const WorkTimeRegulations = () => {
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="text-foreground">
-                    <strong>Interdiction générale :</strong> Le travail de nuit est interdit entre <strong>20h et 6h</strong> pour les moins de 16 ans, et entre <strong>22h et 6h</strong> pour les 16-18 ans (articles L.3163-1 et L.3163-2)
+                    <strong>Interdiction générale :</strong> le travail de nuit est interdit entre <strong>20h et 6h</strong> pour les moins de 16 ans, et entre <strong>22h et 6h</strong> pour les 16-18 ans (articles L.3163-1 et L.3163-2)
                   </p>
                 </div>
                 <div>
                   <p className="text-foreground">
-                    <strong>Dérogation exceptionnelle :</strong> Dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
+                    <strong>Dérogation exceptionnelle :</strong> dans le secteur du spectacle, l'inspecteur du travail peut accorder une dérogation à titre exceptionnel jusqu'à <strong>24h maximum</strong> (articles R.3163-4 et R.7124-30-1)
                   </p>
                 </div>
                 <div>
                   <p className="text-foreground">
-                    <strong>Repos obligatoire :</strong> La durée minimale de repos quotidien reste de <strong>14 heures consécutives</strong> pour les moins de 16 ans et de <strong>12 heures</strong> pour les 16-18 ans (article L.3164-1)
+                    <strong>Repos obligatoire :</strong> la durée minimale de repos quotidien reste de <strong>14 heures consécutives</strong> pour les moins de 16 ans et de <strong>12 heures</strong> pour les 16-18 ans (article L.3164-1)
                   </p>
                 </div>
               </div>

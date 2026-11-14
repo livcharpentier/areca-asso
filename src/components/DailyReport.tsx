@@ -232,7 +232,7 @@ const DailyReport = () => {
       <Card>
         <CardContent className="pt-6">
           <p className="text-sm text-foreground">
-            <strong>Note importante :</strong> Si un précepteur est présent, un bilan scolaire sera réalisé 
+            <strong>Note importante :</strong> si un précepteur est présent, un bilan scolaire sera réalisé 
             pour chaque mineur et transmis à la production et à la famille en fin de tournage.
           </p>
         </CardContent>

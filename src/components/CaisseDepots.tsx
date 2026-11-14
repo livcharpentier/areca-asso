@@ -20,11 +20,11 @@ const CaisseDepots = () => (
           <p className="font-semibold text-primary mb-3">Répartition du salaire : enfant de moins de 16 ans</p>
           <div className="text-sm text-foreground space-y-2">
             <div className="flex items-center gap-3">
-              <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">90%</span>
+              <span className="bg-primary text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">90 %</span>
               <p>Versés à la Caisse des Dépôts (pécule conservé jusqu'à la majorité)</p>
             </div>
             <div className="flex items-center gap-3">
-              <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10%</span>
+              <span className="bg-primary/80 text-primary-foreground font-bold px-3 py-1 rounded min-w-[60px] text-center">10 %</span>
               <p>Laissés à la disposition des <strong>représentants légaux</strong> (part fixée par la commission, en général 10 %)</p>
             </div>
             <p className="text-muted-foreground text-xs mt-2">La part exacte est fixée par la commission des enfants du spectacle, dans l'autorisation (art. L7124-9 du code du travail). Le salaire lui-même ne peut pas être inférieur au minimum de la convention collective applicable.</p>
@@ -67,10 +67,10 @@ const CaisseDepots = () => (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           <div className="bg-card p-4 rounded-lg border border-border text-center">
             <p className="text-2xl font-bold text-primary">Gratuit</p>
-            <p className="text-xs text-muted-foreground mt-1">Aucun frais de dépôt ni gestion</p>
+            <p className="text-xs text-muted-foreground mt-1">Aucuns frais de dépôt ni de gestion</p>
           </div>
           <div className="bg-card p-4 rounded-lg border border-border text-center">
-            <p className="text-2xl font-bold text-primary">2,76%</p>
+            <p className="text-2xl font-bold text-primary">2,76 %</p>
             <p className="text-xs text-muted-foreground mt-1">Taux de rémunération (nov. 2025)</p>
           </div>
           <div className="bg-card p-4 rounded-lg border border-border text-center">
@@ -99,7 +99,7 @@ const CaisseDepots = () => (
           <div className="text-sm text-foreground space-y-2">
             <p>Pour <strong>protéger les mineurs</strong> et éviter les abus, la loi encadre strictement les revenus des enfants du spectacle.</p>
             <p>Les sommes sont <strong>sécurisées jusqu'à 18 ans</strong> sur un compte à la Caisse des Dépôts, garantissant un capital pour l'entrée dans la vie adulte.</p>
-            <p>Gestion <strong>totalement gratuite</strong>. Taux de rémunération : <strong>2,76%</strong> depuis le 1er novembre 2025.</p>
+            <p>Gestion <strong>totalement gratuite</strong>. Taux de rémunération : <strong>2,76 %</strong> depuis le 1er novembre 2025.</p>
           </div>
         </div>
 
@@ -110,7 +110,7 @@ const CaisseDepots = () => (
             <ol className="ml-4 list-decimal space-y-1 mt-2">
               <li>Cliquez sur <strong>« Faire ma démarche en ligne »</strong> sur le site CDC</li>
               <li>Créez un compte profil <strong>Particulier</strong></li>
-              <li>Remplissez la demande en indiquant votre <strong>N° compte CDC</strong></li>
+              <li>Remplissez la demande en indiquant votre <strong>numéro de compte CDC</strong></li>
               <li>Joignez les pièces justificatives (voir ci-dessous)</li>
               <li>Suivez l'avancement dans votre espace personnel</li>
             </ol>
@@ -120,7 +120,7 @@ const CaisseDepots = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Pièces justificatives requises</p>
           <ul className="text-sm text-foreground space-y-1 ml-4 list-disc">
-            <li><strong>Pièce d'identité</strong> (CNI, passeport ou carte de séjour) — Recto/Verso</li>
+            <li><strong>Pièce d'identité</strong> (CNI, passeport ou carte de séjour) — recto verso</li>
             <li><strong>RIB actif</strong> à votre nom et prénom</li>
           </ul>
           <p className="text-muted-foreground text-xs mt-2">Majeurs sous tutelle et héritiers : demandes par courrier uniquement.</p>
@@ -166,7 +166,7 @@ const CaisseDepots = () => (
             <p className="font-semibold text-primary mb-2">Service Consignations</p>
             <p className="text-lg font-bold text-foreground">01 58 50 89 88</p>
             <p className="text-xs text-muted-foreground">Prix d'un appel local</p>
-            <p className="text-sm text-foreground mt-2">Lundi - Vendredi : 9h-12h / 13h-17h</p>
+            <p className="text-sm text-foreground mt-2">Du lundi au vendredi : 9h-12h et 13h-17h</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
             <p className="font-semibold text-primary mb-2">Textes de référence</p>

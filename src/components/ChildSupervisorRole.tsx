@@ -21,7 +21,7 @@ const ChildSupervisorRole = ({ embedded = false }: Props) => {
                   Le responsable des enfants assure l'encadrement des mineurs dans l'audiovisuel et le cinéma.
                   Il veille au respect de la législation, organise leur quotidien pendant les tournages, et assure la liaison entre la famille,
                   la production et les équipes artistiques et techniques. Il est chargé de communiquer et d'organiser en fonction des informations
-                  transmises par la production, mise en scène, régie, habillage, maquillage coiffure (HMC).
+                  transmises par la production, la mise en scène, la régie et l'équipe habillage, maquillage, coiffure (HMC).
                 </p>
               </CardContent>
             </Card>
@@ -48,9 +48,9 @@ const ChildSupervisorRole = ({ embedded = false }: Props) => {
                   <li>• Supervision et accompagnement quotidien de l'enfant</li>
                   <li>• Respect strict des horaires autorisés</li>
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
-                  <li>• Transmettre les informations de la mise en scène pour le jeu</li>
+                  <li>• Transmission des informations de la mise en scène pour le jeu</li>
                   <li>• Gestion des émotions et situations conflictuelles avant, pendant et après</li>
-                  <li>• Réaliser un journal de bord pour chaque journée</li>
+                  <li>• Réalisation d'un journal de bord pour chaque journée</li>
                 </ul>
               </div>
               <div>
@@ -58,7 +58,7 @@ const ChildSupervisorRole = ({ embedded = false }: Props) => {
                 <ul className="space-y-2 text-foreground">
                   <li>• Accompagnement de la transition vers le rythme normal</li>
                   <li>• Réalisation d'un bilan de fin de tournage</li>
-                  <li>• Rester disponible pour toute question des familles et de la production</li>
+                  <li>• Disponibilité pour toute question des familles et de la production</li>
                 </ul>
               </div>
             </CardContent>

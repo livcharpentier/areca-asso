@@ -60,7 +60,7 @@ const VHSSPage = () => {
                     <div className="bg-muted/50 p-4 rounded-lg border border-border">
                       <p className="font-semibold text-primary mb-1">Harcèlement sexuel</p>
                       <p className="text-sm text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-                      <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non-consentis</p>
+                      <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non consentis</p>
                     </div>
                     <div className="bg-muted/50 p-4 rounded-lg border border-border">
                       <p className="font-semibold text-primary mb-1">Agressions sexuelles</p>
@@ -124,7 +124,7 @@ const VHSSPage = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-primary">Enquête interne</p>
-                        <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect présomption d'innocence</p>
+                        <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect de la présomption d'innocence</p>
                       </div>
                       <div>
                         <p className="font-semibold text-primary">Formation obligatoire</p>
@@ -156,14 +156,14 @@ const VHSSPage = () => {
                     className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
                   >
                     <Download className="w-5 h-5 text-primary" />
-                    Télécharger l'Étude complète VHSS (Février 2025)
+                    Télécharger l'étude complète VHSS (février 2025)
                   </button>
                   <button
                     onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')}
                     className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
                   >
                     <Download className="w-5 h-5 text-primary" />
-                    Consulter l'avenant complet dans la Convention Collective (Articles 30-34)
+                    Consulter l'avenant complet dans la convention collective (articles 30 à 34)
                   </button>
                 </CardContent>
               </Card>

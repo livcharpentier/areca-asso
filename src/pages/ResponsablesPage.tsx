@@ -210,9 +210,9 @@ const OrganisationTravailContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Règle des vacances scolaires</p>
           <ul className="text-sm text-foreground space-y-2 ml-4 list-disc">
-            <li><strong>Règle des 50% :</strong> L'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
-            <li><strong>Vacances d'été :</strong> Un mois entier de repos obligatoire (soit juillet SOIT août complet)</li>
-            <li><strong>Cumul :</strong> Cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
+            <li><strong>Règle des 50 % :</strong> l'enfant ne peut travailler plus de la moitié de la durée totale de chaque période de vacances scolaires</li>
+            <li><strong>Vacances d'été :</strong> un mois entier de repos obligatoire (soit juillet, soit août en entier)</li>
+            <li><strong>Cumul :</strong> cette règle s'applique quel que soit le nombre d'employeurs et le nombre de jours travaillés</li>
           </ul>
         </div>
 
@@ -492,13 +492,13 @@ const ConditionsContent = () => (
       <CardContent className="space-y-6 text-foreground">
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Champ d'application</p>
-          <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable du préfet, délivrée après avis de la commission des enfants du spectacle (dossier instruit par la DRIEETS).</p>
-          <p className="text-sm mt-2"><strong>Objectif :</strong> Veiller à ce que l'emploi des enfants ne compromette pas leur scolarité, équilibre physique et moral, santé et sécurité au travail.</p>
+          <p className="text-sm">Toute participation d'un enfant de moins de 16 ans à une production cinématographique ou publicitaire nécessite une autorisation préalable du préfet, délivrée après avis de la commission des enfants du spectacle (dossier instruit par la DDETS, ou par la DRIEETS en Île-de-France).</p>
+          <p className="text-sm mt-2"><strong>Objectif :</strong> veiller à ce que l'emploi des enfants ne compromette ni leur scolarité, ni leur équilibre physique et moral, ni leur santé et leur sécurité au travail.</p>
         </div>
 
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Commission départementale consultative</p>
-          <p className="text-sm mb-2">Présidée par un <strong>magistrat juge des enfants</strong> désigné par le 1er président de la cour d'appel.</p>
+          <p className="text-sm mb-2">Présidée par un <strong>juge des enfants</strong> désigné par le premier président de la cour d'appel.</p>
           <p className="text-sm"><strong>Composition :</strong></p>
           <ul className="text-sm ml-4 list-disc space-y-1 mt-1">
             <li>Le directeur académique des services de l'Éducation nationale (DASEN), ou son représentant</li>
@@ -511,10 +511,10 @@ const ConditionsContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Procédure et délais</p>
           <ul className="text-sm space-y-1">
-            <li><strong>Instruction :</strong> Par la DDETS (en Île-de-France, la DRIEETS)</li>
+            <li><strong>Instruction :</strong> par la DDETS (en Île-de-France, la DRIEETS)</li>
             <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
-            <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
-            <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
+            <li><strong>Complément d'instruction :</strong> délai prolongé d'un mois si nécessaire</li>
+            <li><strong>Absence de réponse :</strong> demande réputée rejetée passé le délai</li>
             <li><strong>L'autorisation peut être retirée à tout moment</strong></li>
           </ul>
         </div>
@@ -529,7 +529,7 @@ const ConditionsContent = () => (
               <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
               <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
             </ul>
-            <p className="text-sm mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau.</p>
+            <p className="text-sm mt-3"><strong>Rôle :</strong> coordonne et supervise la présence et les conditions de travail des enfants sur le plateau.</p>
           </div>
         </div>
 
@@ -542,7 +542,7 @@ const ConditionsContent = () => (
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <p className="font-semibold text-primary mb-2">Certificat médical obligatoire</p>
           <div className="space-y-2 text-sm">
-            <p><strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant.</p>
+            <p><strong>Examen spécifique :</strong> évalue l'impact du rôle sur la santé physique et psychologique de l'enfant.</p>
             <p><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
             <ul className="ml-4 list-disc space-y-1">
               <li>Du contenu du spectacle (histoire, paroles, scènes)</li>
@@ -550,9 +550,9 @@ const ConditionsContent = () => (
             </ul>
             <p className="mt-2"><strong>Renouvellement obligatoire :</strong></p>
             <ul className="ml-4 list-disc space-y-1">
-              <li>Enfants &lt; 3 ans : Tous les <strong>3 mois</strong></li>
-              <li>Enfants 3-6 ans : Tous les <strong>6 mois</strong></li>
-              <li>Enfants &gt; 6 ans : Tous les <strong>ans</strong></li>
+              <li>Enfants &lt; 3 ans : tous les <strong>3 mois</strong></li>
+              <li>Enfants 3-6 ans : tous les <strong>6 mois</strong></li>
+              <li>Enfants &gt; 6 ans : tous les <strong>ans</strong></li>
             </ul>
             <p className="text-destructive mt-2">En cas d'avis médical négatif, l'enfant ne peut être employé.</p>
           </div>
@@ -581,7 +581,7 @@ const ConditionsContent = () => (
             <li><strong>Durées par âge, pauses, travail de nuit</strong> : onglet Temps de travail</li>
             <li><strong>Repos, vacances scolaires, dimanche et jours fériés</strong> : onglet Organisation</li>
             <li><strong>Théâtre, cirque, acrobaties, publicité</strong> : onglet Types d'emploi des mineurs</li>
-            <li><strong>Pièces du dossier enfant</strong> (constitué par la production) : Espace Parents → Dossier Enfant</li>
+            <li><strong>Pièces du dossier enfant</strong> (constitué par la production) : Espace Parents → Dossier enfant moins de 16 ans</li>
             <li><strong>Rémunération et Caisse des Dépôts</strong> : Espace Parents → Caisse des Dépôts</li>
           </ul>
         </div>
@@ -691,8 +691,8 @@ const DiplomesContent = () => (
           </div>
         </div>
         <p className="text-xs text-muted-foreground">
-          Sources : <a className="underline" href="https://www.service-public.gouv.fr/particuliers/vosdroits/F21074" target="_blank" rel="noopener noreferrer">service-public.gouv.fr, fiche Bafa (juin 2026)</a> ;
-          <a className="underline ml-1" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000615233" target="_blank" rel="noopener noreferrer">arrêté du 9 février 2007 (liste complète)</a>.
+          Sources : <a className="underline" href="https://www.service-public.gouv.fr/particuliers/vosdroits/F21074" target="_blank" rel="noopener noreferrer">service-public.gouv.fr, fiche Bafa (juin 2026)</a> ;{" "}
+          <a className="underline" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000615233" target="_blank" rel="noopener noreferrer">arrêté du 9 février 2007 (liste complète)</a>.
         </p>
       </CardContent>
     </Card>
@@ -727,22 +727,22 @@ const VHSSContent = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
             <p className="font-semibold text-primary mb-1">Discrimination</p>
-            <p className="text-sm text-foreground"><strong>47%</strong> ont subi une discrimination (56% femmes, 35% hommes)</p>
+            <p className="text-sm text-foreground"><strong>47 %</strong> ont subi une discrimination (56 % femmes, 35 % hommes)</p>
             <p className="text-xs text-muted-foreground mt-1">Motifs : sexe, âge, apparence physique</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
             <p className="font-semibold text-primary mb-1">Agissements sexistes</p>
-            <p className="text-sm text-foreground"><strong>59%</strong> ont subi des agissements sexistes (85% femmes, 25% hommes)</p>
+            <p className="text-sm text-foreground"><strong>59 %</strong> ont subi des agissements sexistes (85 % femmes, 25 % hommes)</p>
             <p className="text-xs text-muted-foreground mt-1">Remarques, blagues sexistes, interpellations familières</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
             <p className="font-semibold text-primary mb-1">Harcèlement sexuel</p>
-            <p className="text-sm text-foreground"><strong>37%</strong> ont subi du harcèlement sexuel (50% femmes, 20% hommes)</p>
-            <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non-consentis</p>
+            <p className="text-sm text-foreground"><strong>37 %</strong> ont subi du harcèlement sexuel (50 % femmes, 20 % hommes)</p>
+            <p className="text-xs text-muted-foreground mt-1">Blagues grivoises, rapprochements physiques non consentis</p>
           </div>
           <div className="bg-muted/50 p-4 rounded-lg border border-border">
             <p className="font-semibold text-primary mb-1">Agressions sexuelles</p>
-            <p className="text-sm text-foreground"><strong>11%</strong> ont été victimes (15% femmes, 5% hommes)</p>
+            <p className="text-sm text-foreground"><strong>11 %</strong> ont été victimes (15 % femmes, 5 % hommes)</p>
             <p className="text-xs text-muted-foreground mt-1">Baisers forcés, attouchements</p>
           </div>
         </div>
@@ -759,11 +759,11 @@ const VHSSContent = () => (
       <CardContent>
         <div className="bg-muted/50 p-4 rounded-lg border border-border">
           <ul className="text-sm space-y-2 text-foreground">
-            <li><strong>Victimes :</strong> Principalement des femmes, jeunes, en postes subalternes ou techniques</li>
-            <li><strong>Auteurs :</strong> Très majoritairement des hommes avec pouvoir hiérarchique, notoriété ou âge</li>
-            <li><strong>Omerta :</strong> 82% des femmes et 65% des hommes estiment que la loi du silence persiste</li>
-            <li><strong>Contexte :</strong> Tournages en déplacement, horaires tardifs, promiscuité, situations festives</li>
-            <li><strong>Évolution positive :</strong> 83% estiment que la situation s'améliore depuis le début de leur carrière</li>
+            <li><strong>Victimes :</strong> principalement des femmes, jeunes, en postes subalternes ou techniques</li>
+            <li><strong>Auteurs :</strong> très majoritairement des hommes avec pouvoir hiérarchique, notoriété ou âge</li>
+            <li><strong>Omerta :</strong> 82 % des femmes et 65 % des hommes estiment que la loi du silence persiste</li>
+            <li><strong>Contexte :</strong> tournages en déplacement, horaires tardifs, promiscuité, situations festives</li>
+            <li><strong>Évolution positive :</strong> 83 % estiment que la situation s'améliore depuis le début de leur carrière</li>
           </ul>
         </div>
       </CardContent>
@@ -775,8 +775,8 @@ const VHSSContent = () => (
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="bg-muted/50 p-4 rounded-lg border border-border space-y-2">
-          <p className="text-sm text-foreground"><strong>Harcèlement sexuel :</strong> Propos ou comportements à connotation sexuelle répétés portant atteinte à la dignité.</p>
-          <p className="text-sm text-foreground"><strong>Agissement sexiste :</strong> Tout agissement lié au sexe créant un environnement hostile.</p>
+          <p className="text-sm text-foreground"><strong>Harcèlement sexuel :</strong> propos ou comportements à connotation sexuelle répétés portant atteinte à la dignité.</p>
+          <p className="text-sm text-foreground"><strong>Agissement sexiste :</strong> tout agissement lié au sexe créant un environnement hostile.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-foreground">
@@ -787,7 +787,7 @@ const VHSSContent = () => (
             </div>
             <div>
               <p className="font-semibold text-primary">Procédure de signalement</p>
-              <p className="text-sm">Dispositif interne obligatoire - Mail/téléphone dédié - Confidentialité garantie</p>
+              <p className="text-sm">Dispositif interne obligatoire · mail ou téléphone dédié · confidentialité garantie</p>
             </div>
             <div>
               <p className="font-semibold text-primary">Protection des victimes</p>
@@ -797,11 +797,11 @@ const VHSSContent = () => (
           <div className="space-y-3">
             <div>
               <p className="font-semibold text-primary">Cellule d'écoute Audiens</p>
-              <p className="text-sm">Accompagnement psychologique et juridique gratuit - Anonymat préservé</p>
+              <p className="text-sm">Accompagnement psychologique et juridique gratuit · anonymat préservé</p>
             </div>
             <div>
               <p className="font-semibold text-primary">Enquête interne</p>
-              <p className="text-sm">Procédure contradictoire obligatoire - Peut être externalisée - Respect présomption d'innocence</p>
+              <p className="text-sm">Procédure contradictoire obligatoire · peut être externalisée · respect de la présomption d'innocence</p>
             </div>
             <div>
               <p className="font-semibold text-primary">Formation obligatoire</p>
@@ -894,13 +894,13 @@ const VHSSContent = () => (
           onClick={() => window.open('/etude_vhss_cine-av_assos_professionnelles_2025_afar_full_def.pdf', '_blank')}
           className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
         >
-          Télécharger l'Étude complète VHSS (Février 2025)
+          Télécharger l'étude complète VHSS (février 2025)
         </button>
         <button
           onClick={() => window.open('/ccn-production-cinema-novembre-2026.pdf', '_blank')}
           className="w-full bg-muted/50 hover:bg-muted border border-border text-foreground font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-all"
         >
-          Consulter l'avenant complet dans la Convention Collective (Articles 30-34)
+          Consulter l'avenant complet dans la convention collective (articles 30 à 34)
         </button>
       </CardContent>
     </Card>
@@ -965,7 +965,7 @@ const AnimateursSection = () => (
                 color: "bg-yellow-50 border-yellow-200",
                 idees: [
                   "Dessin libre et coloriage sur grand format",
-                  "Jeux de construction (Duplo, kapla)",
+                  "Jeux de construction (Duplo, Kapla)",
                   "Histoires et contes racontés",
                   "Jeux d&apos;imitation et de dînette",
                   "Bulles de savon et jeux sensoriels",
@@ -981,14 +981,14 @@ const AnimateursSection = () => (
                   "Jeux de société simples (Uno, Dobble, Jungle Speed)",
                   "Lecture de BD et livres illustrés",
                   "Activités manuelles (découpage, collage)",
-                  "Jeux de cartes et mémory",
+                  "Jeux de cartes et memory",
                 ]
               },
               {
                 age: "10 — 13 ans",
                 color: "bg-blue-50 border-blue-200",
                 idees: [
-                  "Jeux de société stratégiques (Puissance 4, Échecs, Uno)",
+                  "Jeux de société stratégiques (Puissance 4, échecs, Uno)",
                   "Dessin créatif, manga, BD",
                   "Quiz et jeux de culture générale",
                   "Écriture créative et scénarios",
@@ -1041,7 +1041,7 @@ const AnimateursSection = () => (
               {
                 titre: "6 — 12 ans",
                 jeux: [
-                  { nom: "Le jeu du baccalauréat", desc: "Trouver un prénom, ville, animal... pour chaque lettre" },
+                  { nom: "Le jeu du baccalauréat", desc: "Trouver un prénom, une ville, un animal… pour chaque lettre" },
                   { nom: "Ni oui ni non", desc: "Répondre aux questions sans dire oui ou non" },
                   { nom: "Le message secret", desc: "Chuchoter un message de personne en personne" },
                   { nom: "Mime express", desc: "Mimer un film, un animal, un métier en moins d&apos;une minute" },
@@ -1091,14 +1091,14 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Jeu de logique et de circuit, stimule la réflexion des plus petits</p></div>
                 <div><p className="font-semibold">Little Action</p><p className="text-muted-foreground">Petits défis d&apos;action et de motricité, idéal pour dépenser l&apos;énergie</p></div>
                 <div><p className="font-semibold">Crazy Cups</p><p className="text-muted-foreground">Jeu de rapidité et d&apos;observation avec des gobelets colorés</p></div>
-                <div><p className="font-semibold">Qui Est ?</p><p className="text-muted-foreground">Jeu de devinettes de personnages, stimule la logique</p></div>
+                <div><p className="font-semibold">Qui est-ce ?</p><p className="text-muted-foreground">Jeu de devinettes de personnages, stimule la logique</p></div>
               </div>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
               <p className="font-bold text-lg mb-3">6 — 10 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Mille Sabord</p><p className="text-muted-foreground">Jeu de dés pirate, rapide et rigolo, parfait pour les petits</p></div>
+                <div><p className="font-semibold">Mille Sabords</p><p className="text-muted-foreground">Jeu de dés pirate, rapide et rigolo, parfait pour les petits</p></div>
                 <div><p className="font-semibold">Dobble</p><p className="text-muted-foreground">Réflexes et observation, fonctionne avec tout le monde</p></div>
                 <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Classique indémodable, simple et rapide</p></div>
                 <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Jeu de réflexes, crée beaucoup d&apos;animation</p></div>
@@ -1108,7 +1108,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Toss It</p><p className="text-muted-foreground">Jeu d&apos;adresse et de rapidité, très dynamique</p></div>
                 <div><p className="font-semibold">Cabanga</p><p className="text-muted-foreground">Jeu de cartes nerveux, idéal pour les petits groupes</p></div>
                 <div><p className="font-semibold">Mouton Mouton</p><p className="text-muted-foreground">Jeu d&apos;observation et de rapidité, rigolo et accessible</p></div>
-                <div><p className="font-semibold">6 Qui Prend</p><p className="text-muted-foreground">Jeu de cartes tactique, simple à expliquer et très amusant</p></div>
+                <div><p className="font-semibold">6 qui prend</p><p className="text-muted-foreground">Jeu de cartes tactique, simple à expliquer et très amusant</p></div>
                 <div><p className="font-semibold">Skyjo</p><p className="text-muted-foreground">Jeu de cartes léger et addictif, parfait pour tous les âges</p></div>
                 <div><p className="font-semibold">Taco Chat Bouc Cheese Pizza</p><p className="text-muted-foreground">Jeu de réflexes délirant, fous rires garantis</p></div>
                 <div><p className="font-semibold">Las Vegas</p><p className="text-muted-foreground">Jeu de dés et de tactique, rapide et animé</p></div>
@@ -1131,7 +1131,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Hanabi</p><p className="text-muted-foreground">Jeu coopératif où l&apos;on ne voit pas ses propres cartes, stimule la communication</p></div>
                 <div><p className="font-semibold">The Mind</p><p className="text-muted-foreground">Jeu de cartes coopératif mystérieux, crée une vraie connivence de groupe</p></div>
                 <div><p className="font-semibold">Perudo</p><p className="text-muted-foreground">Jeu de dés et de bluff, idéal pour les groupes animés</p></div>
-                <div><p className="font-semibold">Saboteur</p><p className="text-muted-foreground">Jeu de rôles cachés autour d&apos;une mine, trahi ou coopère !</p></div>
+                <div><p className="font-semibold">Saboteur</p><p className="text-muted-foreground">Jeu de rôles cachés autour d&apos;une mine, trahis ou coopère !</p></div>
                 <div><p className="font-semibold">Bang !</p><p className="text-muted-foreground">Western avec rôles cachés, beaucoup d&apos;interaction et de rebondissements</p></div>
                 <div><p className="font-semibold">Loup-Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, parfait en grand groupe</p></div>
                 <div><p className="font-semibold">Loup-Garou pour un Crépuscule</p><p className="text-muted-foreground">Nouvelle version avec de nouvelles cartes et mécaniques</p></div>

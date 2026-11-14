@@ -24,7 +24,7 @@ const memberData: { [key: string]: any } = {
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
     affiches: {
       "Le Transporteur : Héritage": "/affiches/liv/le-transporteur-heritage.jpg",
-      "Pigalle la nuit": "/affiches/liv/pigalle-la-nuit.jpg",
+      "Pigalle, la nuit": "/affiches/liv/pigalle-la-nuit.jpg",
       "La pire semaine de ma vie": "/affiches/liv/la-pire-semaine-de-ma-vie.jpg",
       "Dracula": "/affiches/liv/dracula.jpg",
       "L'Abandon": "/affiches/liv/abandon.jpg",
@@ -33,7 +33,7 @@ const memberData: { [key: string]: any } = {
       "Histoires parallèles": "/affiches/liv/histoire-parallele.jpg",
       "Robin": "/affiches/liv/robin.jpg",
       "Les Disparus des Argonnes": "/affiches/liv/les-disparus-des-argonnes.jpg",
-      "Radin": "/affiches/liv/radin.jpg",
+      "Radin !": "/affiches/liv/radin.jpg",
       "Le petit Spirou": "/affiches/liv/le-petit-spirou.jpg",
       "Rémi sans famille": "/affiches/liv/remi-sans-famille.jpg",
       "Parents d'élèves": "/affiches/liv/parents-d-eleves.jpg",
@@ -57,11 +57,11 @@ const memberData: { [key: string]: any } = {
       "Transporter 3": "/affiches/liv/transporter-3.jpg",
       "Le petit Nicolas": "/affiches/liv/le-petit-nicolas.jpg",
       "La reine et le cardinal": "/affiches/liv/la-reine-et-le-cardinal.jpg",
-      "Mes amis mes amours mes emmerdes": "/affiches/liv/mes-amis-mes-amours-mes-emmerdes.jpg",
+      "Mes amis, mes amours, mes emmerdes": "/affiches/liv/mes-amis-mes-amours-mes-emmerdes.jpg",
       "Gainsbourg": "/affiches/liv/gainsbourg.jpg",
       "Les vacances du Petit Nicolas": "/affiches/liv/les-vacances-du-petit-nicolas.jpg",
-      "Les virtuoses episode 1 à 6": "/affiches/liv/les-virtuoses-episode-1-a-6.jpg",
-      "Pièce Montée": "/affiches/liv/piece-montee.jpg",
+      "Les Virtuoses, épisodes 1 à 6": "/affiches/liv/les-virtuoses-episode-1-a-6.jpg",
+      "Pièce montée": "/affiches/liv/piece-montee.jpg",
       "Intouchables": "/affiches/liv/intouchables.jpg",
       "L'élève Ducobu": "/affiches/liv/l-eleve-ducobu.jpg",
       "Omar m'a tuer": "/affiches/liv/omar-m-a-tuer.jpg",
@@ -75,27 +75,27 @@ const memberData: { [key: string]: any } = {
       "Les bracelets rouges": "/affiches/liv/les-bracelets-rouges.jpg",
       "On voulait tout casser": "/affiches/liv/on-voulait-tout-casser.jpg",
       "Chocolat": "/affiches/liv/chocolat.jpg",
-      "Stavisky l'escroc du siècle": "/affiches/liv/stavisky-l-escroc-du-siecle.jpg",
+      "Stavisky, l'escroc du siècle": "/affiches/liv/stavisky-l-escroc-du-siecle.jpg",
       "Love Locks": "/affiches/liv/love-locks.jpg",
       "Mon poussin": "/affiches/liv/mon-poussin.jpg",
       "Deux gouttes d'eau": "/affiches/liv/deux-gouttes-d-eau.jpg",
-      "Vise le coeur": "/affiches/liv/vise-le-coeur.jpg",
+      "Vise le cœur": "/affiches/liv/vise-le-coeur.jpg",
       "Pour elle": "/affiches/liv/pour-elle.jpg",
       "La Voix des Steppes": "/affiches/liv/la-voix-des-steppes.jpg",
       "Des nouvelles de la planète Mars": "/affiches/liv/des-nouvelles-de-la-planete-mars.jpg",
       "Arthur et les Minimoys": "/affiches/liv/arthur-et-les-minimoys.jpg",
       "À l'intérieur": "/affiches/liv/a-l-interieur.jpg",
       "Arthur 3": "/affiches/liv/arthur-3.jpg",
-      "Valerian": "/affiches/liv/valerian.jpg"
+      "Valérian": "/affiches/liv/valerian.jpg"
     },
     filmography: {
-      "Responsable des enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), L'Abandon (2026), Histoires parallèles (2025), Les enfants de la résistance (2025), Karma (2026), Robin (2026 — série TF1), Les Disparus des Argonnes (2026 — téléfilm), Les Enfants de la Résistance : L'Escalade (2026)",
-      "Assistante Casting Rôles (Adultes/Enfants)": "Les vacances de Ducobu (2011), La guerre des boutons (2011), Sans laisser de traces (2010), Jamais contente (2017), La guerre des Lulus (2023), Le 3ème jour (2010), Pigalle la nuit (2009 — série)",
-      "Casting Petits Rôles & Figurations": "L'ex-femme de ma vie (2004), Podium (2004), Aurore (2005), Marie Besnard (2006), Le grand Charles (2006), Comme mon père (2007), Famille (2007), Molière (2007), De l'autre côté du lit (2008), Elles et moi (2008), Transporter 3 (2008), Le petit Nicolas (2009), La reine et le cardinal (2009), Mes amis mes amours mes emmerdes (2009), Gainsbourg (2010), Les vacances du Petit Nicolas (2010), Les virtuoses episode 1 à 6 (2010), Pièce Montée (2010), Intouchables (2011), Les vacances de Ducobu (2011), L'élève Ducobu (2011), Omar m'a tuer (2011), La pire semaine de ma vie (2011 — série), Quelques heures de printemps (2012), Cloclo (2012), Stars 80 (2012), Une famille formidable (2012), 20 ans d'écart (2013), La dernière campagne (2013), La grande boucle (2013), Les bracelets rouges (2017-2024, les 5 saisons), On voulait tout casser (2015), Chocolat (2016), Stavisky l'escroc du siècle (2016), Love Locks (2017), Mon poussin (2017), Deux gouttes d'eau (2018), Vise le coeur (2022), La guerre des Lulus (2023), Plusieurs publicités : Nike, Vuitton, KFC, Air France, Vittel… (2012-2026)",
+      "Responsable des enfants": "Radin ! (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), L'Abandon (2026), Histoires parallèles (2025), Les enfants de la résistance (2025), Karma (2026), Robin (2026 — série TF1), Les Disparus des Argonnes (2026 — série France TV), Les Enfants de la Résistance : L'Escalade (2026)",
+      "Assistante Casting Rôles (Adultes/Enfants)": "Les vacances de Ducobu (2011), La guerre des boutons (2011), Sans laisser de traces (2010), Jamais contente (2017), La guerre des Lulus (2023), Le 3ème jour (2010), Pigalle, la nuit (2009 — série)",
+      "Casting Petits Rôles & Figurations": "L'ex-femme de ma vie (2004), Podium (2004), Aurore (2005), Marie Besnard (2006), Le grand Charles (2006), Comme mon père (2007), Famille (2007), Molière (2007), De l'autre côté du lit (2008), Elles et moi (2008), Transporter 3 (2008), Le petit Nicolas (2009), La reine et le cardinal (2009), Mes amis, mes amours, mes emmerdes (2009), Gainsbourg (2010), Les vacances du Petit Nicolas (2010), Les Virtuoses, épisodes 1 à 6 (2010), Pièce montée (2010), Intouchables (2011), Les vacances de Ducobu (2011), L'élève Ducobu (2011), Omar m'a tuer (2011), La pire semaine de ma vie (2011 — série), Quelques heures de printemps (2012), Cloclo (2012), Stars 80 (2012), Une famille formidable (2012), 20 ans d'écart (2013), La dernière campagne (2013), La grande boucle (2013), Les bracelets rouges (2017-2024, les 5 saisons), On voulait tout casser (2015), Chocolat (2016), Stavisky, l'escroc du siècle (2016), Love Locks (2017), Mon poussin (2017), Deux gouttes d'eau (2018), Vise le cœur (2022), La guerre des Lulus (2023), Plusieurs publicités : Nike, Vuitton, KFC, Air France, Vittel… (2012-2026)",
       "Casting Clips": "Plusieurs clips musicaux : Renan Luce, Raphael…",
       "Assistante Mise en Scène": "Pour elle (2008), La Voix des Steppes (2014)",
       "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
-      "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Le Transporteur : Héritage (2015), Valerian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
+      "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Le Transporteur : Héritage (2015), Valérian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
     },
     animation: {
       "Animations entre 1996 et 2010": "Centre de loisirs, colonie de vacances, camp itinérant, encadrement voile, encadrement ski, surveillance mer, professeur spécialisé voile (ado, adulte).",
@@ -200,7 +200,7 @@ const memberData: { [key: string]: any } = {
     ],
     filmography: {
       "Responsable enfants": "Anatole Latuile de François Descraques, Pyramide Productions, enfants acteurs et figurants de 12 à 14 ans (2026), Karma de Guillaume Canet, Iconoclast Films, 7 à 15 ans (2025), Singapura, série de Danielle Arbid et Lucie Borleteau, Étoile Rouge Productions, 14 ans (2024), Sur un fil de Reda Kateb, Pyramide Productions, 5 à 11 ans (2023), Toto : la classe se met au vert de Pascal Bourdiaux, Superprod Films, 10 à 13 ans (2022), La Guerre des Lulus de Yann Samuell, Superprod Films, 7 à 16 ans (2021), Les Blagues de Toto de Pascal Bourdiaux, Superprod Films, 10 à 13 ans (2019), Un sac de billes de Christian Duguay, Mitico, 11 à 15 ans (2015), West Coast de Benjamin Weill, Jéricho, 12 à 17 ans (2014), Les Vacances du Petit Nicolas de Laurent Tirard, Fidélité Films, 8 à 10 ans (2013), La Fleur de l'âge de Nick Quinn, Gloria Films, 6 à 11 ans (2011), La Guerre des boutons de Yann Samuell, One World Films, 7 à 15 ans (2011), Le Petit Nicolas de Laurent Tirard, Fidélité Films, 8 à 10 ans (2008), Les Enfants de Timpelbach de Nicolas Bary, Chapter Two, 8 à 15 ans (2007), Big City de Djamel Bensalah, Miroir Magique, 7 à 15 ans (2006)",
-      "Comédien": "Toto : la classe se met au vert de Pascal Bourdiaux (2022), Les Blagues de Toto de Pascal Bourdiaux (2019), Les Mystères de l'amour, série (2016), Je m'appelle Hmmm… d'Agnès b. (2012), Astérix et Obélix : Au service de Sa Majesté de Laurent Tirard (2011), Akım, court métrage de Nicolas Karolszyk (2011), Ripoux anonymes, téléfilm de Claude et Julien Zidi (2010), courts métrages en 2010 : Bus Stop in Paris, Martin n'est pas blanc, Nicolas et Émilie, Circonstances atténuantes, Élégie, Sur un banc, Casting. À cran, téléfilm d'Alain Tasma (2003)",
+      "Comédien": "Toto : la classe se met au vert de Pascal Bourdiaux (2022), Les Blagues de Toto de Pascal Bourdiaux (2019), Les Mystères de l'amour, série (2016), Je m'appelle Hmmm… d'Agnès b. (2012), Astérix et Obélix : Au service de Sa Majesté de Laurent Tirard (2011), Akım, court métrage de Nicolas Karolszyk (2011), Ripoux anonymes, téléfilm de Claude et Julien Zidi (2010), Courts métrages en 2010 : Bus Stop in Paris, Martin n'est pas blanc, Nicolas et Émilie, Circonstances atténuantes, Élégie, Sur un banc, Casting. À cran, téléfilm d'Alain Tasma (2003)",
       "Répétiteur musique": "Christ(Off) de Pierre Dudan, Fechner Films (2017)"
     },
     cvSections: {

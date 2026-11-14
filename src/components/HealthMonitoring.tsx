@@ -33,7 +33,7 @@ const HealthMonitoring = () => {
             <p className="font-semibold text-foreground mb-1">Enfants rôles ou petits rôles :</p>
             <ul className="space-y-1 ml-4 text-foreground">
               <li>• Avis médical d'aptitude d'un médecin du travail de <strong>Thalie Santé</strong> (ex-CMB)</li>
-              <li>• À minima : document justifiant d'une prise de rendez-vous</li>
+              <li>• A minima : document justifiant d'une prise de rendez-vous</li>
             </ul>
           </div>
           <div className="pt-2 border-t border-border">
@@ -60,18 +60,18 @@ const HealthMonitoring = () => {
               <ul className="space-y-2 text-foreground ml-6">
                 <li>• <strong>Rôle 1er choix</strong></li>
                 <li>• <strong>Rôle 2nd choix</strong></li>
-                <li>• <strong>Figurant avec plus de 4 jours d'absences</strong> (donc à partir de 5 jours d'absences)</li>
+                <li>• <strong>Figurant avec plus de 4 jours d'absence</strong> (donc à partir de 5 jours d'absence)</li>
               </ul>
             </div>
 
             <div className="bg-muted/50 p-4 rounded-lg border border-border">
               <h3 className="font-semibold text-primary mb-3">Médecin généraliste autorisé pour :</h3>
               <p className="text-foreground mb-2">
-                Tous les autres cas (petits rôles, figurants avec 4 jours ou moins d'absences)
+                Tous les autres cas (petits rôles, figurants avec 4 jours d'absence ou moins)
               </p>
               <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg mt-3">
                 <p className="text-sm text-foreground">
-                  <strong className="text-destructive">Important :</strong> Le médecin généraliste doit être en exercice. 
+                  <strong className="text-destructive">Important :</strong> le médecin généraliste doit être en exercice. 
                   Les visites médicales réalisées chez des médecins retraités ne seront pas acceptées.
                 </p>
               </div>
@@ -213,17 +213,17 @@ const HealthMonitoring = () => {
               <ul className="space-y-2 text-foreground text-sm">
                 <li>• <strong>Spectacle et cinéma :</strong> 3 mois minimum</li>
                 <li>• <strong>Théâtre :</strong> 9 ans recommandés (circulaire du ministère du Travail de 1964)</li>
-                <li>• <strong>Attention particulière :</strong> Les demandes concernant les enfants de moins de 6 ans font l'objet d'une étude particulière par la commission</li>
+                <li>• <strong>Attention particulière :</strong> les demandes concernant les enfants de moins de 6 ans font l'objet d'une étude particulière par la commission</li>
               </ul>
             </div>
 
             <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-lg">
               <h4 className="font-semibold text-foreground mb-2">Interdictions formelles</h4>
               <ul className="space-y-2 text-foreground text-sm">
-                <li>• <strong>Strictement interdit :</strong> Faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
-                <li>• <strong>Strictement interdit :</strong> Confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
-                <li>• <strong>Scènes interdites :</strong> Scènes de nu et scènes d'amour</li>
-                <li>• <strong>Restriction d'emploi :</strong> Seuls les parents pratiquant certaines professions (acrobate, saltimbanque, directeur de cirque) peuvent employer leurs propres enfants, et uniquement à partir de 12 ans</li>
+                <li>• <strong>Strictement interdit :</strong> faire exécuter par des enfants de moins de 16 ans des tours de force périlleux ou des exercices de dislocation</li>
+                <li>• <strong>Strictement interdit :</strong> confier des emplois dangereux pour leur vie, leur santé ou leur moralité</li>
+                <li>• <strong>Scènes interdites :</strong> scènes de nu et scènes d'amour</li>
+                <li>• <strong>Restriction d'emploi :</strong> seuls les parents pratiquant certaines professions (acrobate, saltimbanque, directeur de cirque) peuvent employer leurs propres enfants, et uniquement à partir de 12 ans</li>
               </ul>
             </div>
 

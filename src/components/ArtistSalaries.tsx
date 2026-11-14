@@ -62,7 +62,7 @@ const ArtistSalaries = () => {
             </div>
 
             <div className="bg-muted/40 p-4 rounded-lg border border-border">
-              <p className="font-semibold text-primary mb-1">Salaires minimum au 1er juin 2026 (brut, par journée)</p>
+              <p className="font-semibold text-primary mb-1">Salaires minimaux au 1er juin 2026 (brut, par journée)</p>
               <p className="text-xs text-muted-foreground mb-3">IDCC : numéro officiel qui identifie chaque convention collective.</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-foreground">

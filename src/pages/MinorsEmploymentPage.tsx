@@ -90,8 +90,8 @@ const MinorsEmploymentPage = () => {
                       <ul className="text-sm space-y-1">
                         <li><strong>Instruction :</strong> Par le directeur départemental (DDETS/DDETSPP)</li>
                         <li><strong>Délai de décision du préfet :</strong> 1 mois à compter de la réception de la demande complète</li>
-                        <li><strong>Complément d'instruction :</strong> Délai prorogé d'1 mois supplémentaire si nécessaire</li>
-                        <li><strong>Absence de réponse :</strong> Demande réputée rejetée passé le délai</li>
+                        <li><strong>Complément d'instruction :</strong> délai prolongé d'un mois si nécessaire</li>
+                        <li><strong>Absence de réponse :</strong> demande réputée rejetée passé le délai</li>
                         <li><strong>L'autorisation peut être retirée à tout moment</strong></li>
                       </ul>
                     </div>
@@ -111,7 +111,7 @@ const MinorsEmploymentPage = () => {
                             <li><strong>Extrait de casier judiciaire B3</strong> à produire obligatoirement</li>
                             <li>N'a fait l'objet d'<strong>aucune condamnation judiciaire</strong> incompatible avec l'exercice de sa fonction</li>
                           </ul>
-                          <p className="text-orange-100 mt-3"><strong>Rôle :</strong> Coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
+                          <p className="text-orange-100 mt-3"><strong>Rôle :</strong> coordonne et supervise la présence et les conditions de travail des enfants sur le plateau</p>
                         </div>
                       </div>
                     </div>
@@ -124,7 +124,7 @@ const MinorsEmploymentPage = () => {
                     <div className="bg-green-900/20 p-4 rounded-lg border border-green-400/30 mb-4">
                       <p className="font-semibold text-green-200 mb-2">Certificat médical obligatoire :</p>
                       <div className="space-y-2 text-sm">
-                        <p><strong>Examen spécifique :</strong> Évalue l'impact du rôle sur la santé physique et psychologique de l'enfant</p>
+                        <p><strong>Examen spécifique :</strong> évalue l'impact du rôle sur la santé physique et psychologique de l'enfant</p>
                         <p><strong>Le médecin doit préalablement avoir pris connaissance :</strong></p>
                         <ul className="ml-4 list-disc space-y-1">
                           <li>Du contenu du spectacle (histoire, paroles, scènes)</li>
@@ -291,7 +291,7 @@ const MinorsEmploymentPage = () => {
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">Gratuit</p>
-                          <p className="text-xs text-muted-foreground">Aucun frais de dépôt ni gestion</p>
+                          <p className="text-xs text-muted-foreground">Aucuns frais de dépôt ni de gestion</p>
                         </div>
                         <div className="bg-emerald-900/40 p-3 rounded border border-emerald-400/40 text-center">
                           <p className="text-2xl font-bold text-emerald-300">2,76%</p>

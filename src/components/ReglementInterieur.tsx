@@ -22,7 +22,7 @@ const ReglementInterieur = () => (
       <Tiret><strong>Rendre notre métier visible</strong> : faire connaître et reconnaître le rôle des responsables enfants dans le milieu du cinéma et de l'audiovisuel.</Tiret>
       <Tiret><strong>Peser ensemble sur l'évolution du métier</strong> : apporter notre expertise de terrain aux organisations professionnelles et aux pouvoirs publics.</Tiret>
       <Tiret><strong>Échanger avec d'autres responsables enfants</strong> : partager nos expériences, nos difficultés, nos solutions.</Tiret>
-      <Tiret><strong>S'ouvrir sur ce qu'il se fait ailleurs</strong> : s'inspirer de la façon dont d'autres pays abordent la protection des enfants dans l'audiovisuel.</Tiret>
+      <Tiret><strong>S'ouvrir à ce qui se fait ailleurs</strong> : s'inspirer de la façon dont d'autres pays abordent la protection des enfants dans l'audiovisuel.</Tiret>
     </div>
     <p className="mt-3">
       Des réunions régulières, en présentiel ou à distance, permettent à tous les membres de se retrouver, d'échanger et de réfléchir ensemble.
@@ -38,7 +38,7 @@ const ReglementInterieur = () => (
     <div className="space-y-1.5">
       <Tiret>un curriculum vitae à jour ;</Tiret>
       <Tiret>vos motivations : pourquoi vous souhaitez rejoindre l'association ;</Tiret>
-      <Tiret>l'engagement d'avoir lu et d'accepter la <a className="text-accent underline" href="/metier?onglet=charte">charte ARENCA</a>.</Tiret>
+      <Tiret>l'engagement d'avoir lu la <a className="text-accent underline" href="/metier?onglet=charte">charte ARENCA</a> et de l'accepter.</Tiret>
     </div>
     <p className="mt-3 rounded-lg border-2 border-[#ee7d2b] bg-[#fdf1e7] p-3">
       Toute demande d'adhésion est à envoyer à <a className="text-accent underline font-semibold" href="mailto:contact@arenca.fr">contact@arenca.fr</a>.
@@ -47,12 +47,12 @@ const ReglementInterieur = () => (
       Le Bureau examine les candidatures et organise une rencontre avec chaque candidat·e, en présentiel ou en visio. La décision d'admission
       est prise collectivement par le Bureau. Cette étape est importante : elle permet aux personnes d'adhérer aux valeurs de cette association.
     </p>
-    <p className="mt-3">Le montant de l'adhésion est fixé à <strong>20 euros</strong> pour l'année en cours.</p>
+    <p className="mt-3">Le montant de la cotisation est fixé à <strong>20 euros</strong> pour l'année en cours.</p>
     <p className="mt-3">L'ARENCA peut reconsidérer l'adhésion d'un·e membre dont le comportement serait contraire à la charte.</p>
 
     <Titre>2. Le fonctionnement</Titre>
     <Sous>Le Bureau</Sous>
-    <p>L'association est actuellement gérée par un bureau de trois postes : un·e président·e, un·e secrétaire et un·e trésorier·ère.</p>
+    <p>L'association est actuellement gérée par un Bureau de trois postes : un·e président·e, un·e secrétaire et un·e trésorier·ère.</p>
     <Sous>Les finances</Sous>
     <p>
       L'association fonctionne grâce aux cotisations de ses membres. Le montant des cotisations et la tenue des comptes sont discutés chaque
@@ -67,8 +67,8 @@ const ReglementInterieur = () => (
     </p>
     <Sous>La confidentialité</Sous>
     <p>
-      Les membres respectent la confidentialité des échanges pendant les groupes de réflexion. Ils s'engagent à ne pas divulguer les
-      informations personnelles et professionnelles dont ils ont connaissance dans le cadre de l'association.
+      Les membres respectent la confidentialité des échanges pendant les groupes de réflexion et s'engagent à ne pas divulguer les
+      informations personnelles et professionnelles dont elles et ils ont connaissance dans le cadre de l'association.
     </p>
     <Sous>L'image de l'association</Sous>
     <p>
