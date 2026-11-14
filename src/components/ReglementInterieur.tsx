@@ -77,7 +77,7 @@ const ReglementInterieur = () => (
     </p>
 
     <div className="mt-8 flex justify-center">
-      <Button asChild size="lg" className="gap-2">
+      <Button asChild size="lg" className="gap-2 whitespace-normal h-auto py-3 text-center max-w-full">
         <a href="/Reglement_interieur_ARENCA.pdf" target="_blank" rel="noopener noreferrer">
           <Download className="h-5 w-5" /> Télécharger le règlement intérieur en PDF
         </a>
