@@ -5,6 +5,13 @@ export const config = { matcher: "/:path*" };
 
 const COOKIE = "arenca_acces";
 
+// Liens d'invitation (accès sans mot de passe), par organisme. Seule l'empreinte est stockée ici.
+// Pour couper un accès : supprimer sa ligne.
+const INVITATIONS = {
+  thalie: "7ff3b5ab38b65f0d5070916a01dc3afe8bc97173df71aedbc51610894b3aacec",
+  drieets: "a49b57a3a5dc02e09af84ca6848663f2cd09e8a28a1e234416de651eddd9521a",
+};
+
 const pageFermee = (erreur) => `<!doctype html><html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>ARENCA — accès réservé</title>
@@ -39,6 +46,11 @@ async function empreinte(texte) {
   return Array.from(new Uint8Array(h)).map((x) => x.toString(16).padStart(2, "0")).join("");
 }
 
+async function empreinteInvite(texte) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("invite:" + texte));
+  return Array.from(new Uint8Array(h)).map((x) => x.toString(16).padStart(2, "0")).join("");
+}
+
 const reponseFermee = (erreur) =>
   new Response(pageFermee(erreur), {
     status: 401,
@@ -55,6 +67,24 @@ export default async function middleware(request) {
   const cookies = request.headers.get("cookie") || "";
   const m = cookies.match(new RegExp("(?:^|; )" + COOKIE + "=([a-f0-9]+)"));
   if (m && m[1] === attendu) return;
+
+  // Lien d'invitation : ?invite=...
+  const url = new URL(request.url);
+  const invite = url.searchParams.get("invite");
+  if (invite) {
+    const h = await empreinteInvite(invite.trim());
+    if (Object.values(INVITATIONS).includes(h)) {
+      url.searchParams.delete("invite");
+      return new Response(null, {
+        status: 303,
+        headers: {
+          location: url.pathname + url.search,
+          "set-cookie": `${COOKIE}=${attendu}; Path=/; Max-Age=2592000; HttpOnly; Secure; SameSite=Lax`,
+          "cache-control": "no-store",
+        },
+      });
+    }
+  }
 
   // Formulaire envoyé
   if (request.method === "POST") {
