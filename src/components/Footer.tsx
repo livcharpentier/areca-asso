@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logoArenca from "@/assets/logo-arenca.png";
-import { Mail, Facebook, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Mail, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,20 +42,11 @@ const Footer = () => {
               </div>
             </Link>
             <div className="flex gap-3 mt-6">
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
+              <a href="https://www.facebook.com/profile.php?id=61596592014224" target="_blank" rel="noopener noreferrer" aria-label="Facebook de l'ARENCA" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
                 <Facebook className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-blue-sky flex items-center justify-center transition-all hover:scale-110">
-                <Twitter className="w-4 h-4 text-primary-foreground hover:text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-primary flex items-center justify-center transition-all hover:scale-110">
-                <Linkedin className="w-4 h-4 text-primary-foreground hover:text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-blue-vibrant flex items-center justify-center transition-all hover:scale-110">
+              <a href="https://www.instagram.com/arenca.asso/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de l'ARENCA" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-accent flex items-center justify-center transition-all hover:scale-110">
                 <Instagram className="w-4 h-4 text-primary-foreground hover:text-white" />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-festive flex items-center justify-center transition-all hover:scale-110">
-                <Youtube className="w-4 h-4 text-primary-foreground hover:text-white" />
               </a>
             </div>
           </div>
