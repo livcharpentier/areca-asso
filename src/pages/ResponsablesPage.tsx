@@ -1079,92 +1079,127 @@ const AnimateursSection = () => (
           <CardHeader><CardTitle>Idées de jeux de société</CardTitle></CardHeader>
           <CardContent className="space-y-6">
 
+            <p className="text-sm text-muted-foreground">Âges et durées indiqués par les éditeurs, à titre indicatif.</p>
+
             <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg">
-              <p className="font-bold text-lg mb-3">3 — 6 ans</p>
+              <p className="font-bold text-lg mb-3">Dès 3 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Monza</p><p className="text-muted-foreground">Jeu de course automobile avec dés colorés, logique simple</p></div>
-                <div><p className="font-semibold">Memory</p><p className="text-muted-foreground">Classique de mémorisation, fonctionne avec tous les petits</p></div>
-                <div><p className="font-semibold">Bata-Miaou</p><p className="text-muted-foreground">Jeu de chats rigolo et accessible dès le plus jeune âge</p></div>
-                <div><p className="font-semibold">Bata-Waf</p><p className="text-muted-foreground">Version chiens, même principe, très apprécié des petits</p></div>
-                <div><p className="font-semibold">Croque Carotte</p><p className="text-muted-foreground">Jeu coopératif autour d&apos;un lapin gourmand, idéal dès 4 ans</p></div>
-                <div><p className="font-semibold">Dragomino</p><p className="text-muted-foreground">Jeu de dominos avec des dragons, accessible et coloré</p></div>
-                <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Jeu de logique et de circuit, stimule la réflexion des plus petits</p></div>
-                <div><p className="font-semibold">Little Action</p><p className="text-muted-foreground">Petits défis d&apos;action et de motricité, idéal pour dépenser l&apos;énergie</p></div>
-                <div><p className="font-semibold">Crazy Cups</p><p className="text-muted-foreground">Jeu de rapidité et d&apos;observation avec des gobelets colorés</p></div>
-                <div><p className="font-semibold">Qui est-ce ?</p><p className="text-muted-foreground">Jeu de devinettes de personnages, stimule la logique</p></div>
+                <div><p className="font-semibold">Memory</p><p className="text-muted-foreground">Retrouver les paires d&apos;images cachées en mémorisant leur place.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Doudou</p><p className="text-muted-foreground">Coopératif : retrouver le doudou caché avant l&apos;heure du dodo.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 5 min</p></div>
+                <div><p className="font-semibold">Bata-Waf</p><p className="text-muted-foreground">Bataille avec des chiens : la plus grande carte gagne le pli.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Bata-Miaou</p><p className="text-muted-foreground">Même principe que Bata-Waf, avec des chats.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Little Action</p><p className="text-muted-foreground">Petits défis d&apos;adresse et de motricité pour bouger.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Petit jeu de parcours pour découvrir les couleurs et compter.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Opération Noisettes</p><p className="text-muted-foreground">Coopératif d&apos;adresse : aider les écureuils à ramasser les noisettes.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Mission Dragon</p><p className="text-muted-foreground">Adresse : grimper dans la tour du dragon pour récupérer les rubis (plus long).</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Le jeu du moustique</p><p className="text-muted-foreground">Chacun mime l&apos;animal de sa carte, le plus gros l&apos;emporte : très animé.</p><p className="text-xs text-primary mt-0.5">Dès 4 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Croque Carotte</p><p className="text-muted-foreground">Course de lapins : on tourne la carotte et des trous s&apos;ouvrent sur le chemin.</p><p className="text-xs text-primary mt-0.5">Dès 4 ans · env. 20 min</p></div>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">Dès 5 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Monza</p><p className="text-muted-foreground">Course de voitures : lancer les dés et avancer sur les cases de la bonne couleur.</p><p className="text-xs text-primary mt-0.5">Dès 5 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Nom d&apos;un renard !</p><p className="text-muted-foreground">Coopératif : les poules enquêtent pour démasquer le renard voleur avant qu&apos;il s&apos;enfuie.</p><p className="text-xs text-primary mt-0.5">Dès 5 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Dragomino</p><p className="text-muted-foreground">Dominos de paysages pour découvrir des œufs de dragons.</p><p className="text-xs text-primary mt-0.5">Dès 5 ans · env. 20 min</p></div>
               </div>
             </div>
 
             <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
-              <p className="font-bold text-lg mb-3">6 — 10 ans</p>
+              <p className="font-bold text-lg mb-3">Dès 6–7 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Mille Sabords</p><p className="text-muted-foreground">Jeu de dés pirate, rapide et rigolo, parfait pour les petits</p></div>
-                <div><p className="font-semibold">Dobble</p><p className="text-muted-foreground">Réflexes et observation, fonctionne avec tout le monde</p></div>
-                <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Classique indémodable, simple et rapide</p></div>
-                <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Jeu de réflexes, crée beaucoup d&apos;animation</p></div>
-                <div><p className="font-semibold">Zombie Kidz</p><p className="text-muted-foreground">Jeu coopératif, idéal pour apprendre à jouer ensemble</p></div>
-                <div><p className="font-semibold">Trio</p><p className="text-muted-foreground">Jeu de mémorisation et de déduction en famille</p></div>
-                <div><p className="font-semibold">Jungle</p><p className="text-muted-foreground">Jeu de stratégie animalière simple, accessible dès 6 ans</p></div>
-                <div><p className="font-semibold">Toss It</p><p className="text-muted-foreground">Jeu d&apos;adresse et de rapidité, très dynamique</p></div>
-                <div><p className="font-semibold">Cabanga</p><p className="text-muted-foreground">Jeu de cartes nerveux, idéal pour les petits groupes</p></div>
-                <div><p className="font-semibold">Mouton Mouton</p><p className="text-muted-foreground">Jeu d&apos;observation et de rapidité, rigolo et accessible</p></div>
-                <div><p className="font-semibold">6 qui prend</p><p className="text-muted-foreground">Jeu de cartes tactique, simple à expliquer et très amusant</p></div>
-                <div><p className="font-semibold">Skyjo</p><p className="text-muted-foreground">Jeu de cartes léger et addictif, parfait pour tous les âges</p></div>
-                <div><p className="font-semibold">Taco Chat Bouc Cheese Pizza</p><p className="text-muted-foreground">Jeu de réflexes délirant, fous rires garantis</p></div>
-                <div><p className="font-semibold">Las Vegas</p><p className="text-muted-foreground">Jeu de dés et de tactique, rapide et animé</p></div>
-                <div><p className="font-semibold">Rush Hour</p><p className="text-muted-foreground">Jeu de logique et de casse-tête, stimule la réflexion</p></div>
-                <div><p className="font-semibold">Labyrinthe</p><p className="text-muted-foreground">Jeu de plateau classique, déplacement de chemins et stratégie</p></div>
-                <div><p className="font-semibold">Mission Dragon</p><p className="text-muted-foreground">Jeu d&apos;aventure coopératif, accessible et immersif</p></div>
-                <div><p className="font-semibold">Nom d&apos;un Renard !</p><p className="text-muted-foreground">Jeu de culture générale légère, parfait en famille</p></div>
-                <div><p className="font-semibold">Opération Noisette</p><p className="text-muted-foreground">Jeu d&apos;adresse coopératif autour d&apos;un écureuil espion</p></div>
-                <div><p className="font-semibold">Little Secret</p><p className="text-muted-foreground">Jeu de déduction et de secrets, accessible aux enfants</p></div>
+                <div><p className="font-semibold">Qui est-ce ?</p><p className="text-muted-foreground">Poser des questions par oui ou non pour deviner le personnage de l&apos;autre.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Dobble</p><p className="text-muted-foreground">Repérer le symbole commun entre deux cartes, le plus vite possible.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Crazy Cups</p><p className="text-muted-foreground">Empiler ses gobelets dans le bon ordre de couleurs plus vite que les autres.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Les Éclairtout</p><p className="text-muted-foreground">Cherche-et-trouve dans le noir avec une lampe torche.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Tossit</p><p className="text-muted-foreground">Adresse : lancer des pièces sur une cible, entre fléchettes et pétanque (à 2).</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Jungle</p><p className="text-muted-foreground">Jeu de stratégie avec des animaux, simple à expliquer.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Qwirkle</p><p className="text-muted-foreground">Aligner des tuiles de même forme ou de même couleur pour marquer des points.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Les Incollables</p><p className="text-muted-foreground">Questions-réponses adaptées au niveau scolaire de chacun.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Trio</p><p className="text-muted-foreground">Retrouver 3 cartes identiques en demandant la plus petite ou la plus grande carte des autres.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Zombie Kidz Évolution</p><p className="text-muted-foreground">Coopératif : protéger l&apos;école des zombies ; le jeu évolue au fil des parties.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Uno</p><p className="text-muted-foreground">Se débarrasser de ses cartes en suivant la couleur ou le chiffre.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Jungle Speed</p><p className="text-muted-foreground">Réflexes : attraper le totem quand deux symboles identiques apparaissent.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Labyrinthe</p><p className="text-muted-foreground">Faire coulisser les couloirs pour atteindre ses trésors.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Dékal</p><p className="text-muted-foreground">Remplir sa grille de 4×4 cartes pour obtenir le total le plus bas.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Piocher sans tomber sur le chaton explosif : drôle et rapide.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Mito</p><p className="text-muted-foreground">Se débarrasser de ses cartes… en trichant sans se faire prendre.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 20 min</p></div>
+              </div>
+            </div>
+
+            <div className="bg-lime-50 border border-lime-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-3">Dès 8 ans</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Pili Pili</p><p className="text-muted-foreground">Jeu de plis avec des missions à réussir à chaque manche.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Bazar Bizarre</p><p className="text-muted-foreground">Attraper le premier le bon objet selon la carte retournée.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Odin</p><p className="text-muted-foreground">Jeu de cartes : être le premier à se débarrasser de toutes ses cartes.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Time Bomb</p><p className="text-muted-foreground">Rôles cachés : désamorcer la bombe ou la faire exploser, en bluffant.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Just One</p><p className="text-muted-foreground">Coopératif : faire deviner un mot avec un seul indice chacun, sans doublon.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Cluedo</p><p className="text-muted-foreground">Enquête : trouver le coupable, l&apos;arme et la pièce du crime.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Les Aventuriers du Rail</p><p className="text-muted-foreground">Construire des lignes de train entre les villes avec des cartes wagons.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Monopoly</p><p className="text-muted-foreground">Acheter des rues et faire payer des loyers (long : pour les grandes pauses).</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 1 h 30 et +</p></div>
+                <div><p className="font-semibold">Quarto</p><p className="text-muted-foreground">À deux : faire aligner 4 pièces ayant un point commun, mais c&apos;est l&apos;adversaire qui choisit votre pièce.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Mille Sabords</p><p className="text-muted-foreground">Jeu de dés pirate : relancer pour marquer plus, sans tout perdre.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Skyjo</p><p className="text-muted-foreground">Retourner et échanger ses cartes pour avoir le total le plus bas.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Taco Chat Bouc Cheese Pizza</p><p className="text-muted-foreground">Réflexes : taper sur la pile quand la carte correspond au mot annoncé.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Las Vegas</p><p className="text-muted-foreground">Placer ses dés sur les casinos pour remporter les plus gros billets.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Rush Hour</p><p className="text-muted-foreground">Casse-tête : faire sortir la voiture rouge des embouteillages (seul).</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">6 qui prend</p><p className="text-muted-foreground">Poser ses cartes sur les rangées sans ramasser de têtes de bœuf.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Cabanga</p><p className="text-muted-foreground">Jeu de cartes nerveux : se débarrasser de ses cartes sans se faire piéger.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Flip 7</p><p className="text-muted-foreground">Retourner des cartes pour marquer gros, mais deux identiques et tout est perdu.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Skull King</p><p className="text-muted-foreground">Jeu de plis pirate : annoncer combien de plis on va remporter.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Hanabi</p><p className="text-muted-foreground">Coopératif : on ne voit pas ses propres cartes, les autres doivent nous guider.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 25 min</p></div>
+                <div><p className="font-semibold">The Mind</p><p className="text-muted-foreground">Coopératif : poser ses cartes dans l&apos;ordre croissant… sans se parler.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Perudo</p><p className="text-muted-foreground">Dés et bluff : parier sur le nombre de dés identiques sous les gobelets.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Saboteur</p><p className="text-muted-foreground">Rôles cachés : creuser vers l&apos;or pendant que les saboteurs bloquent la mine.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Bang !</p><p className="text-muted-foreground">Western à rôles cachés : shérif, adjoints, hors-la-loi et renégat.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Wazabi</p><p className="text-muted-foreground">Jeu de dés : se débarrasser de ses dés grâce aux effets des cartes.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">The Game</p><p className="text-muted-foreground">Coopératif : poser toutes les cartes de 1 à 100 en séries croissantes et décroissantes.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Le Baron</p><p className="text-muted-foreground">Jeu de cartes de la famille de 6 qui prend, sans ramasser de têtes de bœuf.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">2 Pommes 3 Pains</p><p className="text-muted-foreground">Annonces et rapidité, décalé et drôle.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Speed Bac</p><p className="text-muted-foreground">Petit bac rapide : trouver un mot de la catégorie avant les autres.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Mouton Mouton</p><p className="text-muted-foreground">Deviner la réponse que va donner son partenaire.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Tapple</p><p className="text-muted-foreground">Citer un mot du thème et appuyer sur sa première lettre avant la fin du chrono.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Esquissé ?</p><p className="text-muted-foreground">Téléphone arabe dessiné : dessiner, deviner, dessiner encore… fous rires assurés.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 40 min</p></div>
               </div>
             </div>
 
             <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-              <p className="font-bold text-lg mb-3">10 — 13 ans</p>
+              <p className="font-bold text-lg mb-3">Dès 10 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Mito</p><p className="text-muted-foreground">Bluff et déduction, très populaire chez les ados</p></div>
-                <div><p className="font-semibold">Flip Seven</p><p className="text-muted-foreground">Jeu de cartes addictif, facile à apprendre</p></div>
-                <div><p className="font-semibold">Skull King</p><p className="text-muted-foreground">Jeu de plis pirate, facile et très amusant</p></div>
-                <div><p className="font-semibold">Love Letter</p><p className="text-muted-foreground">Jeu de cartes minimaliste, bluff et déduction, très rapide</p></div>
-                <div><p className="font-semibold">Hanabi</p><p className="text-muted-foreground">Jeu coopératif où l&apos;on ne voit pas ses propres cartes, stimule la communication</p></div>
-                <div><p className="font-semibold">The Mind</p><p className="text-muted-foreground">Jeu de cartes coopératif mystérieux, crée une vraie connivence de groupe</p></div>
-                <div><p className="font-semibold">Perudo</p><p className="text-muted-foreground">Jeu de dés et de bluff, idéal pour les groupes animés</p></div>
-                <div><p className="font-semibold">Saboteur</p><p className="text-muted-foreground">Jeu de rôles cachés autour d&apos;une mine, trahis ou coopère !</p></div>
-                <div><p className="font-semibold">Bang !</p><p className="text-muted-foreground">Western avec rôles cachés, beaucoup d&apos;interaction et de rebondissements</p></div>
-                <div><p className="font-semibold">Loup-Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du célèbre jeu, parfait en grand groupe</p></div>
-                <div><p className="font-semibold">Loup-Garou pour un Crépuscule</p><p className="text-muted-foreground">Nouvelle version avec de nouvelles cartes et mécaniques</p></div>
-                <div><p className="font-semibold">Le Jeu des Loups</p><p className="text-muted-foreground">Jeu de rôles et de déduction en groupe, tension et stratégie</p></div>
-                <div><p className="font-semibold">Traîtres à Bord !</p><p className="text-muted-foreground">Rôles cachés sur un bateau, tension et fous rires garantis</p></div>
-                <div><p className="font-semibold">Galápagos</p><p className="text-muted-foreground">Jeu de survie et de négociation, stimule la coopération et la stratégie</p></div>
-                <div><p className="font-semibold">Faraway</p><p className="text-muted-foreground">Jeu d&apos;exploration de cartes, simple et plein de découvertes</p></div>
-                <div><p className="font-semibold">Burger Quiz</p><p className="text-muted-foreground">Quiz délirant inspiré de l&apos;émission, parfait pour animer un groupe</p></div>
-                <div><p className="font-semibold">Wazabi</p><p className="text-muted-foreground">Jeu de dés épicé et nerveux, très rapide à jouer</p></div>
-                <div><p className="font-semibold">Smile Life</p><p className="text-muted-foreground">Jeu de simulation de vie positive, créatif et bienveillant</p></div>
-                <div><p className="font-semibold">The Crew</p><p className="text-muted-foreground">Jeu de plis coopératif en mission spatiale, très addictif</p></div>
-                <div><p className="font-semibold">Elixir</p><p className="text-muted-foreground">Jeu de potions et de déduction, original et mystérieux</p></div>
-                <div><p className="font-semibold">Unlock !</p><p className="text-muted-foreground">Escape game en cartes, idéal pour résoudre des énigmes en groupe</p></div>
-                <div><p className="font-semibold">Moustique</p><p className="text-muted-foreground">Jeu de rapidité et de réflexes, très animé</p></div>
-                <div><p className="font-semibold">Le Trésor des 3 Brigands</p><p className="text-muted-foreground">Jeu d&apos;aventure et de stratégie autour d&apos;un trésor à partager</p></div>
+                <div><p className="font-semibold">Love Letter</p><p className="text-muted-foreground">Seize cartes, bluff et déduction pour faire parvenir sa lettre à la princesse.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Loup-Garou pour une Nuit</p><p className="text-muted-foreground">Version courte du Loup-Garou : une seule nuit pour démasquer les loups.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Loup-Garou pour un Crépuscule</p><p className="text-muted-foreground">Même principe, avec de nouveaux rôles.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Traîtres à Bord !</p><p className="text-muted-foreground">Rôles cachés sur un bateau pirate : trouver les traîtres.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Galèrapagos</p><p className="text-muted-foreground">Semi-coopératif : construire un radeau pour quitter l&apos;île… pas forcément tous ensemble.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Faraway</p><p className="text-muted-foreground">Poser des cartes de paysages et compter les points à rebours.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">The Crew</p><p className="text-muted-foreground">Jeu de plis coopératif en mission spatiale.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Unlock !</p><p className="text-muted-foreground">Escape game en cartes : résoudre des énigmes en équipe.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 1 h</p></div>
+                <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Coopératif : un fantôme guide les médiums avec des cartes illustrées.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner un mot en plaçant des pions sur des icônes, sans parler.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 40 min</p></div>
+                <div><p className="font-semibold">Secret Identity</p><p className="text-muted-foreground">Faire deviner son personnage avec des cartes illustrées.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Little Secret</p><p className="text-muted-foreground">Un mot secret à partager entre agents… sans le révéler aux espions.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Zombie Bus</p><p className="text-muted-foreground">Fuir les zombies en bus : coopérer ou bluffer.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Catan</p><p className="text-muted-foreground">Récolter des ressources et les échanger pour construire routes et villes.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 1 h 15</p></div>
+                <div><p className="font-semibold">So Clover !</p><p className="text-muted-foreground">Coopératif : trouver un indice qui relie deux mots à la fois.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Courtisans</p><p className="text-muted-foreground">Faire monter ou chuter les familles de la cour de la reine, en secret.</p><p className="text-xs text-primary mt-0.5">Dès 10 ans · env. 30 min</p></div>
               </div>
             </div>
 
             <div className="bg-purple-50 border border-purple-200 p-4 rounded-lg">
-              <p className="font-bold text-lg mb-3">13 — 16 ans</p>
+              <p className="font-bold text-lg mb-3">Ados (12 ans et +)</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Time&apos;s Up</p><p className="text-muted-foreground">Faire deviner des noms célèbres, crée beaucoup de rires</p></div>
-                <div><p className="font-semibold">Codenames</p><p className="text-muted-foreground">Jeu d&apos;espions en équipe, stimule la communication</p></div>
-                <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Jeu coopératif d&apos;enquête, crée des échanges</p></div>
-                <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner sans parler, universel et créatif</p></div>
-                <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Rapide, drôle et plein de rebondissements</p></div>
-                <div><p className="font-semibold">2 Pommes 3 Pins</p><p className="text-muted-foreground">Jeu de culture générale décalé, parfait pour les ados</p></div>
-                <div><p className="font-semibold">Secret Identity</p><p className="text-muted-foreground">Jeu de rôles et déduction, créatif et immersif</p></div>
-                <div><p className="font-semibold">The Game</p><p className="text-muted-foreground">Jeu coopératif de cartes très exigeant, parfait pour souder un groupe</p></div>
-                <div><p className="font-semibold">Le Baron</p><p className="text-muted-foreground">Jeu de stratégie et de négociation, stimule la réflexion</p></div>
-                <div><p className="font-semibold">Speed Bac</p><p className="text-muted-foreground">Jeu de rapidité et de culture générale, très dynamique</p></div>
-                <div><p className="font-semibold">Mamie Moule Maki</p><p className="text-muted-foreground">Le petit bac délirant, parfait en famille ou en groupe</p></div>
-                <div><p className="font-semibold">Micronacro</p><p className="text-muted-foreground">Jeu d&apos;observation et de déduction sur un grand poster, captivant</p></div>
+                <div><p className="font-semibold">Time&apos;s Up</p><p className="text-muted-foreground">Faire deviner des noms célèbres : en parlant, en un mot, puis en mimant.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Burger Quiz</p><p className="text-muted-foreground">Quiz délirant inspiré de l&apos;émission : équipe Ketchup contre équipe Mayo.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">Tu te mets combien ? (TTMC)</p><p className="text-muted-foreground">Choisir son niveau de 1 à 10 sur un thème avant de répondre à la question.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Zéro à 100</p><p className="text-muted-foreground">Quiz dont la réponse est un nombre : il faut être le plus proche.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Pigeon Pigeon</p><p className="text-muted-foreground">Bluff et culture générale : inventer de fausses réponses pour piéger les autres.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">MicroMacro: Crime City</p><p className="text-muted-foreground">Enquêtes à mener sur une immense carte de ville, à la loupe.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Smile Life</p><p className="text-muted-foreground">Jeu de cartes de la vie : métier, famille, voyages… et coups bas.</p><p className="text-xs text-primary mt-0.5">Dès 12 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Codenames</p><p className="text-muted-foreground">Deux équipes, des espions et des indices en un mot pour trouver ses agents.</p><p className="text-xs text-primary mt-0.5">Dès 14 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Top Ten</p><p className="text-muted-foreground">Coopératif : répondre à un thème selon son chiffre de 1 à 10, les autres classent.</p><p className="text-xs text-primary mt-0.5">Dès 14 ans · env. 30 min</p></div>
+                <div><p className="font-semibold">Crack List</p><p className="text-muted-foreground">Entre petit bac et Uno : citer vite un mot de la liste.</p><p className="text-xs text-primary mt-0.5">Dès 14 ans · env. 30 min</p></div>
               </div>
             </div>
 
