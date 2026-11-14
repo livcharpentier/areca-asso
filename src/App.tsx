@@ -14,6 +14,7 @@ import ContactPage from "./pages/ContactPage";
 import ProductionPage from "./pages/ProductionPage";
 import ParentsPage from "./pages/ParentsPage";
 import EspaceMembres from "./pages/EspaceMembres";
+import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 import MyProfilePage from "./pages/MyProfilePage";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/production" element={<ProductionPage />} />
             <Route path="/parents" element={<ParentsPage />} />
             <Route path="/responsables" element={<EspaceMembres />} />
+            <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
             <Route path="/auth" element={<Navigate to="/responsables" replace />} />
             <Route path="/mon-profil" element={<ProtectedRoute><MyProfilePage /></ProtectedRoute>} />
             <Route path="*" element={<NotFound />} />

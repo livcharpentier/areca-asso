@@ -19,6 +19,7 @@ const Footer = () => {
       { label: "Formations", href: "/formations" },
     ],
     legal: [
+      { label: "Mentions légales", href: "/mentions-legales" },
     ],
   };
 
