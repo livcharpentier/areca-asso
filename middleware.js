@@ -16,6 +16,7 @@ const COOKIE = "arenca_acces";
 // Pour couper un accès : supprimer sa ligne.
 const INVITATIONS = {
   thalie: "7ff3b5ab38b65f0d5070916a01dc3afe8bc97173df71aedbc51610894b3aacec",
+  production: "c780393487bf325b528dfad3a66b21aaa912df974d938fae5b7cd199cc0fe6a9",
   drieets: "a49b57a3a5dc02e09af84ca6848663f2cd09e8a28a1e234416de651eddd9521a",
 };
 
