@@ -13,8 +13,7 @@ import FormationsPage from "./pages/FormationsPage";
 import ContactPage from "./pages/ContactPage";
 import ProductionPage from "./pages/ProductionPage";
 import ParentsPage from "./pages/ParentsPage";
-import ResponsablesPage from "./pages/ResponsablesPage";
-import Auth from "./pages/Auth";
+import EspaceMembres from "./pages/EspaceMembres";
 import MyProfilePage from "./pages/MyProfilePage";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -48,8 +47,8 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/production" element={<ProductionPage />} />
             <Route path="/parents" element={<ParentsPage />} />
-            <Route path="/responsables" element={<ResponsablesPage />} />
-            <Route path="/auth" element={<Auth />} />
+            <Route path="/responsables" element={<EspaceMembres />} />
+            <Route path="/auth" element={<Navigate to="/responsables" replace />} />
             <Route path="/mon-profil" element={<ProtectedRoute><MyProfilePage /></ProtectedRoute>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
