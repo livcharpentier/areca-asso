@@ -87,12 +87,6 @@ const EspaceMembres = () => {
     setMdp(""); setMdp2(""); setMode("connexion");
   };
 
-  const deconnexion = async () => {
-    await membres.auth.signOut();
-    ecrireCookie(null);
-    window.location.reload();
-  };
-
   const acces = !refus && mode !== "nouveau" && (session || estInvite());
 
   if (pret && acces) {
@@ -100,14 +94,9 @@ const EspaceMembres = () => {
       <>
         <Garde onErreur={() => { setRefus(true); setSession(null); ecrireCookie(null); }}>
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-muted-foreground">Chargement…</div>}>
-            <ResponsablesPage />
+            <ResponsablesPage membre={session?.user?.email ?? null} onDeconnexion={async () => { await membres.auth.signOut(); ecrireCookie(null); window.location.href = "/responsables"; }} />
           </Suspense>
         </Garde>
-        {session && (
-          <div className="fixed bottom-4 right-4 z-50">
-            <Button variant="outline" size="sm" onClick={deconnexion} className="bg-white shadow">Se déconnecter</Button>
-          </div>
-        )}
       </>
     );
   }

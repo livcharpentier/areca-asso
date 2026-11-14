@@ -1,23 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, LogIn, LogOut, UserCircle } from "lucide-react";
-import { useAuth } from "@/contexts/AuthContext";
+import { Menu, LogOut } from "lucide-react";
+import { membres, ecrireCookie } from "@/lib/membres";
 import logoArenca from "@/assets/logo-arenca.png";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, signOut } = useAuth();
+  const [membre, setMembre] = useState<string | null>(null);
 
-  const handleAuthAction = async () => {
-    if (user) {
-      await signOut();
-    } else {
-      navigate("/auth");
-    }
+  useEffect(() => {
+    membres.auth.getSession().then(({ data: { session } }) => setMembre(session?.user?.email ?? null));
+    const { data } = membres.auth.onAuthStateChange((_e, session) => setMembre(session?.user?.email ?? null));
+    return () => data.subscription.unsubscribe();
+  }, []);
+
+  const deconnexion = async () => {
+    await membres.auth.signOut();
+    ecrireCookie(null);
+    window.location.href = "/responsables";
   };
 
   const navItems = [
@@ -69,31 +73,15 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            {/* Connexion masquée tant que l'espace membre n'a pas de comptes personnels */}
-            {user && (
-            <div className="flex items-center gap-2 ml-1 pl-3 border-l border-black/20">
-              {user && (
-                <Button
-                  onClick={() => navigate("/mon-profil")}
-                  className="bg-transparent border border-accent/60 text-accent hover:bg-accent hover:text-white text-xs px-3 h-8"
-                >
-                  <UserCircle className="w-3.5 h-3.5 mr-1.5" /> Mon profil
-                </Button>
-              )}
+            {membre && (
               <Button
-                onClick={handleAuthAction}
-                className={user
-                  ? "bg-transparent border border-black/40 text-black hover:bg-accent hover:text-white text-xs px-3 h-8"
-                  : "bg-accent text-white hover:bg-accent/90 text-xs px-4 h-8 font-semibold"
-                }
+                onClick={deconnexion}
+                title={"Se déconnecter (" + membre + ")"}
+                aria-label="Se déconnecter"
+                className="bg-transparent border border-[#16213f]/40 text-[#16213f] hover:bg-[#ee7d2b] hover:border-[#ee7d2b] hover:text-white text-xs px-2 h-8"
               >
-                {user ? (
-                  <><LogOut className="w-3.5 h-3.5 mr-1.5" /> Déconnexion</>
-                ) : (
-                  <><LogIn className="w-3.5 h-3.5 mr-1.5" /> Connexion</>
-                )}
+                <LogOut className="w-3.5 h-3.5" />
               </Button>
-            </div>
             )}
           </div>
 
@@ -120,20 +108,14 @@ const Navigation = () => {
                     {item.label}
                   </Link>
                 ))}
-                {user && (
-                  <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-foreground/20">
+                {membre && (
+                  <div className="mt-4 pt-4 border-t border-foreground/20">
+                    <p className="text-xs text-muted-foreground mb-2 break-all">Connecté·e : {membre}</p>
                     <Button
-                      onClick={() => { setOpen(false); navigate("/mon-profil"); }}
-                      variant="outline"
-                      className="border-accent/40 text-accent"
+                      onClick={() => { setOpen(false); deconnexion(); }}
+                      className="w-full bg-transparent border border-[#16213f]/40 text-[#16213f] hover:bg-[#ee7d2b] hover:text-white"
                     >
-                      <UserCircle className="w-4 h-4 mr-2" /> Mon profil
-                    </Button>
-                    <Button
-                      onClick={() => { handleAuthAction(); setOpen(false); }}
-                      className="bg-transparent border border-black/40 text-black"
-                    >
-                      <LogOut className="w-4 h-4 mr-2" /> Déconnexion
+                      <LogOut className="w-4 h-4 mr-2" /> Se déconnecter
                     </Button>
                   </div>
                 )}

@@ -9,7 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Lock } from "lucide-react";
 
-const ResponsablesPage = () => {
+const ResponsablesPage = ({ membre, onDeconnexion }: { membre?: string | null; onDeconnexion?: () => void }) => {
   const { user } = useAuth();
   const navigate = useNavigate();
 
@@ -28,6 +28,14 @@ const ResponsablesPage = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Outils et ressources pour les membres de l'ARENCA
             </p>
+            {membre && onDeconnexion && (
+              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-muted-foreground">
+                <span className="break-all">Connecté·e : {membre}</span>
+                <Button variant="outline" size="sm" onClick={onDeconnexion} className="border-[#16213f]/40 text-[#16213f] hover:bg-[#ee7d2b] hover:text-white">
+                  Se déconnecter
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </section>
