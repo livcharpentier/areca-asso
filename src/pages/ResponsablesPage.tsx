@@ -1162,7 +1162,6 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Secret Identity</p><p className="text-muted-foreground">Jeu de rôles et déduction, créatif et immersif</p></div>
                 <div><p className="font-semibold">The Game</p><p className="text-muted-foreground">Jeu coopératif de cartes très exigeant, parfait pour souder un groupe</p></div>
                 <div><p className="font-semibold">Le Baron</p><p className="text-muted-foreground">Jeu de stratégie et de négociation, stimule la réflexion</p></div>
-                <div><p className="font-semibold">Dystopia</p><p className="text-muted-foreground">Univers dystopique, jeu de stratégie et d&apos;ambiance pour les plus grands</p></div>
                 <div><p className="font-semibold">Speed Bac</p><p className="text-muted-foreground">Jeu de rapidité et de culture générale, très dynamique</p></div>
                 <div><p className="font-semibold">Mamie Moule Maki</p><p className="text-muted-foreground">Le petit bac délirant, parfait en famille ou en groupe</p></div>
                 <div><p className="font-semibold">Micronacro</p><p className="text-muted-foreground">Jeu d&apos;observation et de déduction sur un grand poster, captivant</p></div>
