@@ -1,7 +1,7 @@
 // 1) Espace membres : son contenu (fichiers /membres/...) n'est envoyé qu'aux membres connectés
 //    (compte Supabase « arenca-membres ») ou aux invités (liens Thalie Santé / DRIEETS).
 // 2) Tant que SITE_FERME vaut true, tout le site demande le mot de passe d'entrée.
-const SITE_FERME = true;
+const SITE_FERME = false;
 const MEMBRES_URL = "https://vdirtxbyxnmblbyfjduf.supabase.co";
 const MEMBRES_CLE = "sb_publishable_Syyjvg19IOYVaAXMtBG7zw_GAIsdojf";
 
