@@ -6,8 +6,12 @@ import CaisseDepots from "@/components/CaisseDepots";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
 
 const ParentsPage = () => {
+  const [params] = useSearchParams();
+  const onglet = params.get("onglet");
+  const ongletsValides = ["suivi-sante", "dossier", "seize-dix-sept", "salaires", "caisse-depots"];
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -27,7 +31,7 @@ const ParentsPage = () => {
 
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="suivi-sante" className="w-full">
+          <Tabs defaultValue={onglet && ongletsValides.includes(onglet) ? onglet : "suivi-sante"} className="w-full">
             <TabsList className="grid w-full h-auto grid-cols-2 md:grid-cols-5 mb-6">
               <TabsTrigger value="suivi-sante">
                 <span>Suivi Santé</span>

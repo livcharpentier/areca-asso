@@ -6,8 +6,11 @@ import DepotDossier from "@/components/DepotDossier";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Clock, Calendar, FileText } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
 
 const ProductionPage = () => {
+  const [params] = useSearchParams();
+  const onglet = params.get("onglet");
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -29,7 +32,7 @@ const ProductionPage = () => {
       {/* Main Content avec Tabs */}
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <Tabs defaultValue="depot" className="w-full">
+          <Tabs defaultValue={onglet && ["depot", "dossier-drieets", "temps-travail"].includes(onglet) ? onglet : "depot"} className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-6">
               <TabsTrigger value="depot" className="gap-2 px-1 sm:px-3">
                 <FileText className="h-4 w-4 hidden sm:block" />

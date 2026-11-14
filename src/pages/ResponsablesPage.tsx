@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Lock } from "lucide-react";
 
 const ResponsablesPage = () => {
@@ -132,9 +132,11 @@ const ResponsablesPage = () => {
 
 /* Contenu Réglementations */
 const ReglementationsContent = () => {
+  const [params] = useSearchParams();
+  const onglet = params.get("onglet");
   return (
     <div className="max-w-5xl mx-auto">
-      <Tabs defaultValue="temps-travail" className="w-full">
+      <Tabs defaultValue={onglet && ["temps-travail", "organisation", "familles-emploi", "conditions"].includes(onglet) ? onglet : "temps-travail"} className="w-full">
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
           <TabsTrigger value="temps-travail" className="text-xs">
             <span>Temps de travail</span>
