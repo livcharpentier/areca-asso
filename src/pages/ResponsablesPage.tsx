@@ -1081,15 +1081,32 @@ const AnimateursSection = () => (
 
             <p className="text-sm text-muted-foreground">Âges et durées indiqués par les éditeurs, à titre indicatif.</p>
 
+            <div className="bg-pink-50 border border-pink-200 p-4 rounded-lg">
+              <p className="font-bold text-lg mb-1">0 – 3 ans</p>
+              <p className="text-sm text-muted-foreground mb-3">Avant 2 ans, privilégier les jeux d&apos;éveil (voir les idées d&apos;animation). Les premiers jeux de société arrivent vers 2 ans.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Course : on lance le dé et on avance sur les couleurs ; la fleur fait avancer, l&apos;abeille reculer.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Little Mime</p><p className="text-muted-foreground">Coopératif : imiter les cris et les gestes des animaux pour les aider à retrouver leur chemin.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Comme des petits singes</p><p className="text-muted-foreground">Coopératif : imiter les gestes des singes pour faire grandir l&apos;arbre ; on bouge beaucoup.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Mon premier verger</p><p className="text-muted-foreground">Coopératif : cueillir ensemble les fruits en bois avant l&apos;arrivée du corbeau.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Mon premier Lynx</p><p className="text-muted-foreground">Observation : retrouver le plus vite possible l&apos;image sur le grand plateau.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Mon jeu de Cherche et Trouve des tout-petits</p><p className="text-muted-foreground">Retrouver des éléments sur de grandes planches illustrées, seul ou à plusieurs.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans · env. 10 min</p></div>
+                <div><p className="font-semibold">Little Coopération</p><p className="text-muted-foreground">Coopératif : faire rentrer les animaux polaires à l&apos;igloo avant que le pont de glace cède.</p><p className="text-xs text-primary mt-0.5">Dès 2 ans et demi · env. 10 min</p></div>
+                <div><p className="font-semibold">Memory</p><p className="text-muted-foreground">Retrouver les paires d&apos;images cachées en mémorisant leur place.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Mon premier jeu Les petites souris</p><p className="text-muted-foreground">Coopératif : ramener les souris dans leur lit avant que le chat ait mangé tous les poissons.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Mon premier jeu des odeurs</p><p className="text-muted-foreground">Coopératif à 2 : sentir les cartes fruits et remplir le panier avant que la moisissure gagne.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Pin Pon</p><p className="text-muted-foreground">Coopératif : dégager la route pour que le camion de pompiers arrive avant que le feu gagne la maison.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
+                <div><p className="font-semibold">Morris le dodo</p><p className="text-muted-foreground">Coopératif d&apos;adresse : faire glisser Morris et cacher ses œufs avant l&apos;arrivée de l&apos;explorateur.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 20 min</p></div>
+              </div>
+            </div>
+
             <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg">
               <p className="font-bold text-lg mb-3">Dès 3 ans</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                <div><p className="font-semibold">Memory</p><p className="text-muted-foreground">Retrouver les paires d&apos;images cachées en mémorisant leur place.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 15 min</p></div>
                 <div><p className="font-semibold">Doudou</p><p className="text-muted-foreground">Coopératif : retrouver le doudou caché avant l&apos;heure du dodo.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 5 min</p></div>
                 <div><p className="font-semibold">Bata-Waf</p><p className="text-muted-foreground">Bataille avec des chiens : la plus grande carte gagne le pli.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
                 <div><p className="font-semibold">Bata-Miaou</p><p className="text-muted-foreground">Même principe que Bata-Waf, avec des chats.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
                 <div><p className="font-semibold">Little Action</p><p className="text-muted-foreground">Petits défis d&apos;adresse et de motricité pour bouger.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
-                <div><p className="font-semibold">Little Circuit</p><p className="text-muted-foreground">Petit jeu de parcours pour découvrir les couleurs et compter.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
                 <div><p className="font-semibold">Opération Noisettes</p><p className="text-muted-foreground">Coopératif d&apos;adresse : aider les écureuils à ramasser les noisettes.</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 10 min</p></div>
                 <div><p className="font-semibold">Mission Dragon</p><p className="text-muted-foreground">Adresse : grimper dans la tour du dragon pour récupérer les rubis (plus long).</p><p className="text-xs text-primary mt-0.5">Dès 3 ans · env. 45 min</p></div>
                 <div><p className="font-semibold">Le jeu du moustique</p><p className="text-muted-foreground">Chacun mime l&apos;animal de sa carte, le plus gros l&apos;emporte : très animé.</p><p className="text-xs text-primary mt-0.5">Dès 4 ans · env. 20 min</p></div>
@@ -1116,6 +1133,7 @@ const AnimateursSection = () => (
                 <div><p className="font-semibold">Tossit</p><p className="text-muted-foreground">Adresse : lancer des pièces sur une cible, entre fléchettes et pétanque (à 2).</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 20 min</p></div>
                 <div><p className="font-semibold">Jungle</p><p className="text-muted-foreground">Jeu de stratégie avec des animaux, simple à expliquer.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 15 min</p></div>
                 <div><p className="font-semibold">Qwirkle</p><p className="text-muted-foreground">Aligner des tuiles de même forme ou de même couleur pour marquer des points.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 45 min</p></div>
+                <div><p className="font-semibold">Échecs</p><p className="text-muted-foreground">Stratégie à deux : mettre le roi adverse en échec et mat. Idéal pour les plus patients.</p><p className="text-xs text-primary mt-0.5">Dès 6 ans · env. 30 min et +</p></div>
                 <div><p className="font-semibold">Les Incollables</p><p className="text-muted-foreground">Questions-réponses adaptées au niveau scolaire de chacun.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 20 min</p></div>
                 <div><p className="font-semibold">Trio</p><p className="text-muted-foreground">Retrouver 3 cartes identiques en demandant la plus petite ou la plus grande carte des autres.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
                 <div><p className="font-semibold">Zombie Kidz Évolution</p><p className="text-muted-foreground">Coopératif : protéger l&apos;école des zombies ; le jeu évolue au fil des parties.</p><p className="text-xs text-primary mt-0.5">Dès 7 ans · env. 15 min</p></div>
@@ -1133,6 +1151,7 @@ const AnimateursSection = () => (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div><p className="font-semibold">Pili Pili</p><p className="text-muted-foreground">Jeu de plis avec des missions à réussir à chaque manche.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
                 <div><p className="font-semibold">Bazar Bizarre</p><p className="text-muted-foreground">Attraper le premier le bon objet selon la carte retournée.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
+                <div><p className="font-semibold">La Suite Infernale</p><p className="text-muted-foreground">Être le premier à aligner ses cartes de 1 à 10, pendant que les autres volent, retirent ou échangent.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
                 <div><p className="font-semibold">Odin</p><p className="text-muted-foreground">Jeu de cartes : être le premier à se débarrasser de toutes ses cartes.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 15 min</p></div>
                 <div><p className="font-semibold">Time Bomb</p><p className="text-muted-foreground">Rôles cachés : désamorcer la bombe ou la faire exploser, en bluffant.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 30 min</p></div>
                 <div><p className="font-semibold">Just One</p><p className="text-muted-foreground">Coopératif : faire deviner un mot avec un seul indice chacun, sans doublon.</p><p className="text-xs text-primary mt-0.5">Dès 8 ans · env. 20 min</p></div>
