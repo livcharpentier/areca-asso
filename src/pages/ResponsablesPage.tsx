@@ -1155,7 +1155,6 @@ const AnimateursSection = () => (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <div><p className="font-semibold">Time&apos;s Up</p><p className="text-muted-foreground">Faire deviner des noms célèbres, crée beaucoup de rires</p></div>
                 <div><p className="font-semibold">Codenames</p><p className="text-muted-foreground">Jeu d&apos;espions en équipe, stimule la communication</p></div>
-                <div><p className="font-semibold">Blanc Manger Coco</p><p className="text-muted-foreground">Humour absurde, parfait pour détendre l&apos;atmosphère</p></div>
                 <div><p className="font-semibold">Mysterium</p><p className="text-muted-foreground">Jeu coopératif d&apos;enquête, crée des échanges</p></div>
                 <div><p className="font-semibold">Concept</p><p className="text-muted-foreground">Faire deviner sans parler, universel et créatif</p></div>
                 <div><p className="font-semibold">Exploding Kittens</p><p className="text-muted-foreground">Rapide, drôle et plein de rebondissements</p></div>
