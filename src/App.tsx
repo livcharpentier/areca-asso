@@ -14,6 +14,7 @@ import ContactPage from "./pages/ContactPage";
 import ProductionPage from "./pages/ProductionPage";
 import ParentsPage from "./pages/ParentsPage";
 import EspaceMembres from "./pages/EspaceMembres";
+import TitrePage from "./components/TitrePage";
 import MentionsLegalesPage from "./pages/MentionsLegalesPage";
 import MyProfilePage from "./pages/MyProfilePage";
 import NotFound from "./pages/NotFound";
@@ -31,6 +32,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <TitrePage />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/metier" element={<MetierPage />} />
