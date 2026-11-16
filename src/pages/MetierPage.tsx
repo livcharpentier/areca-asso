@@ -274,18 +274,16 @@ const MetierPage = () => {
                       Il s'agit d'une personne qualifiée, justifiant d'un diplôme ou d'une expérience significative, vérifiés par l'employeur,
                       qui doit aussi produire son extrait de casier judiciaire (B3).
                     </p>
-                    <p className="text-sm text-muted-foreground italic">
-                      « Il est chargé de la surveillance et de l'encadrement des enfants et en assure le confort […] Il peut assurer la préparation
-                      des enfants à leur rôle et assure, le cas échéant, leur suivi scolaire. »
+                    <p className="text-sm">
+                      Selon la convention, il est chargé de la surveillance, de l'encadrement et du confort des enfants pendant la préparation
+                      du film et le tournage. Il peut aussi les accompagner dans la préparation de leur rôle et assure, le cas échéant, leur suivi scolaire.
                     </p>
                   </div>
                   <div className="bg-white/70 rounded-lg p-4 border border-[#ee7d2b]/30">
                     <p className="font-bold text-primary mb-2">Audiovisuel (IDCC 2642)</p>
                     <p className="text-sm mb-2">
-                      L'emploi de <strong>responsable des enfants</strong> figure dans la grille des fonctions (catégorie IIIB) :
-                    </p>
-                    <p className="text-sm text-muted-foreground italic mb-2">
-                      « Surveille, prépare à leur rôle et encadre les enfants. Il peut assurer leur suivi scolaire. »
+                      L'emploi de <strong>responsable des enfants</strong> figure dans la grille des fonctions (catégorie IIIB) : il surveille
+                      et encadre les enfants, peut les accompagner dans la préparation de leur rôle et assurer leur suivi scolaire.
                     </p>
                     <p className="text-sm">
                       Un accord signé le 21 mars 2025 prévoit aussi que son engagement est obligatoire pour tout mineur de moins de 16 ans ;
