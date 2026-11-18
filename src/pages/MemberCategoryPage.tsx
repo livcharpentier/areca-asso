@@ -1,14 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Mail, Phone, Calendar } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import livPhoto from "@/assets/liv-charpentier.png";
-import FilmPosterBand, { filmsDepuisFilmographie } from "@/components/FilmPosterBand";
-import { memberData } from "./MemberProfilePage";
 
 const MemberCategoryPage = () => {
   const { category } = useParams();
@@ -104,101 +100,27 @@ const MemberCategoryPage = () => {
               <p className="text-lg text-muted-foreground">Aucun membre inscrit dans cette catégorie pour le moment.</p>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {membresAffiches.map((member) => (
-                <Card key={member.id} className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105">
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <Avatar className="w-20 h-28 !rounded-lg overflow-hidden">
-                        <AvatarImage src={member.photoUrl} alt={`${member.firstName} ${member.lastName}`} className="!aspect-[3/4] object-cover" />
-                        <AvatarFallback className="!rounded-lg bg-accent/20 text-accent h-full w-full">{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
-                      </Avatar>
-                      <div className="flex-1">
-                        <CardTitle className="text-2xl text-primary font-semibold tracking-wide leading-relaxed mb-2">
-                          {member.firstName} {member.lastName}
-                        </CardTitle>
-                        {member.availability && (<Badge 
-                          variant={member.availability === "Disponible" ? "default" : "secondary"}
-                          className="mb-2"
-                        >
-                          {member.availability}
-                        </Badge>)}
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2">
-                          <Calendar className="w-4 h-4" />
-                          <span>{member.experienceYears} ans d'expérience</span>
-                        </div>
-                        
-                        {/* Coordonnées mises en avant */}
-                        <div className="mt-4 space-y-2 border-t border-amber-300/30 pt-3">
-                          <div className="flex items-center gap-2">
-                            <Mail className="w-5 h-5 text-primary" />
-                            <a href={`mailto:${member.email}`} className="text-base font-semibold text-primary hover:text-primary">
-                              {member.email}
-                            </a>
-                          </div>
-                          {member.phone && (
-                          <div className="flex items-center gap-2">
-                            <Phone className="w-5 h-5 text-primary" />
-                            <a href={`tel:${member.phone}`} className="text-base font-semibold text-primary hover:text-primary">
-                              {member.phone}
-                            </a>
-                          </div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <p className="text-sm text-foreground">{member.bio}</p>
-
-                    {(() => {
-                      const profil = memberData[(member as any).slug];
-                      if (!profil || !(profil.films || profil.filmography)) return null;
-                      return <FilmPosterBand films={profil.films || filmsDepuisFilmographie(profil.filmography, profil.affiches)} />;
-                    })()}
-
-                    {(memberData[(member as any).slug]?.filmography || (member as any).filmography) && (
-                      <div className="space-y-3">
-                        <h4 className="font-semibold text-base text-foreground">Filmographie</h4>
-                        {Object.entries(memberData[(member as any).slug]?.filmography || (member as any).filmography).map(([role, films], idx) => (
-                          <div key={idx} className="space-y-1">
-                            <h5 className="text-sm font-medium text-primary">{role}</h5>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{films as string}</p>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
-                    {member.recentNews && (
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-sm text-foreground">Actualité</h4>
-                        <p className="text-sm text-muted-foreground italic">{member.recentNews}</p>
-                      </div>
-                    )}
-
-                    <Button
-                      variant="default"
-                      size="sm"
-                      onClick={() => navigate(`/member/${(member as any).slug}`)}
-                      className="w-full"
-                    >
-                      Voir le profil complet
-                    </Button>
-
-                    {(member as any).cvUrl && (
-                      <div className="pt-4 border-t border-slate-700">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => window.open((member as any).cvUrl, '_blank')}
-                          className="w-full bg-accent/10 hover:bg-accent/20 border-border text-accent"
-                        >
-                          Télécharger le CV complet
-                        </Button>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
+                <button
+                  key={member.id}
+                  type="button"
+                  onClick={() => navigate(`/member/${(member as any).slug}`)}
+                  className="flex flex-col items-center text-center group rounded-xl p-3 hover:bg-card transition-colors"
+                >
+                  <Avatar className="w-28 h-40 mb-3 !rounded-lg overflow-hidden ring-2 ring-accent/30 group-hover:ring-accent transition-all duration-300">
+                    <AvatarImage src={member.photoUrl} alt={`${member.firstName} ${member.lastName}`} className="!aspect-[3/4] object-cover" />
+                    <AvatarFallback className="!rounded-lg bg-accent/20 text-accent text-lg font-bold h-full w-full">{member.firstName[0]}{member.lastName[0]}</AvatarFallback>
+                  </Avatar>
+                  <span className="text-base font-semibold text-foreground">{member.firstName} {member.lastName}</span>
+                  {member.availability && (
+                    <span className="flex items-center justify-center gap-1 text-xs font-semibold text-orange-600 mt-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse inline-block"></span>
+                      {member.availability}
+                    </span>
+                  )}
+                  <span className="text-xs text-accent mt-2 group-hover:underline">Voir le profil</span>
+                </button>
               ))}
             </div>
           </div>
