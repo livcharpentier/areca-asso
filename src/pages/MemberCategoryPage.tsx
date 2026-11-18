@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar } from "lucide-react";
+import livPhoto from "@/assets/liv-charpentier.png";
 
 const MemberCategoryPage = () => {
   const { category } = useParams();
@@ -26,7 +27,7 @@ const MemberCategoryPage = () => {
       id: 1,
       firstName: "Liv",
       lastName: "Charpentier",
-      photoUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=LivYoung&backgroundColor=b6e3f4,c0aede,d1d4f9&hair=long01,long02,long03,long04,long05&hairColor=a55728,2c1b18,b58143&skinColor=f8d25c,fd9841,edb98a&accessories=round&accessoriesProbability=20",
+      photoUrl: livPhoto,
       email: "liv.charp@wanadoo.fr",
       phone: "06 19 60 12 96",
       bio: "Responsable des enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
