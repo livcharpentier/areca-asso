@@ -8,7 +8,7 @@ import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
 import jsPDF from "jspdf";
 import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres, lignesCV } from "@/components/FilmPosterBand";
 
-const memberData: { [key: string]: any } = {
+export const memberData: { [key: string]: any } = {
   "liv-charpentier": {
     firstName: "Liv",
     lastName: "Charpentier",

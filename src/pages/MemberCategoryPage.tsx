@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar } from "lucide-react";
 import livPhoto from "@/assets/liv-charpentier.png";
+import FilmPosterBand, { filmsDepuisFilmographie } from "@/components/FilmPosterBand";
+import { memberData } from "./MemberProfilePage";
 
 const MemberCategoryPage = () => {
   const { category } = useParams();
@@ -25,6 +27,7 @@ const MemberCategoryPage = () => {
   const mockMembers = [
     {
       id: 1,
+      slug: "liv-charpentier",
       firstName: "Liv",
       lastName: "Charpentier",
       photoUrl: livPhoto,
@@ -46,6 +49,7 @@ const MemberCategoryPage = () => {
     },
     {
       id: 2,
+      slug: "eleonore-aguillon",
       firstName: "Éléonore",
       lastName: "Aguillon",
       photoUrl: "/eleonore-aguillon.jpg",
@@ -59,6 +63,7 @@ const MemberCategoryPage = () => {
     },
     {
       id: 3,
+      slug: "christophe-denis",
       firstName: "Christophe",
       lastName: "Denis",
       photoUrl: "/christophe-denis.jpg",
@@ -145,11 +150,17 @@ const MemberCategoryPage = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-sm text-foreground">{member.bio}</p>
-                    
-                    {(member as any).filmography && (
+
+                    {(() => {
+                      const profil = memberData[(member as any).slug];
+                      if (!profil || !(profil.films || profil.filmography)) return null;
+                      return <FilmPosterBand films={profil.films || filmsDepuisFilmographie(profil.filmography, profil.affiches)} />;
+                    })()}
+
+                    {(memberData[(member as any).slug]?.filmography || (member as any).filmography) && (
                       <div className="space-y-3">
                         <h4 className="font-semibold text-base text-foreground">Filmographie</h4>
-                        {Object.entries((member as any).filmography).map(([role, films], idx) => (
+                        {Object.entries(memberData[(member as any).slug]?.filmography || (member as any).filmography).map(([role, films], idx) => (
                           <div key={idx} className="space-y-1">
                             <h5 className="text-sm font-medium text-primary">{role}</h5>
                             <p className="text-sm text-muted-foreground leading-relaxed">{films as string}</p>
@@ -164,6 +175,15 @@ const MemberCategoryPage = () => {
                         <p className="text-sm text-muted-foreground italic">{member.recentNews}</p>
                       </div>
                     )}
+
+                    <Button
+                      variant="default"
+                      size="sm"
+                      onClick={() => navigate(`/member/${(member as any).slug}`)}
+                      className="w-full"
+                    >
+                      Voir le profil complet
+                    </Button>
 
                     {(member as any).cvUrl && (
                       <div className="pt-4 border-t border-slate-700">
