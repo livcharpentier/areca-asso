@@ -236,7 +236,8 @@ export function filmsDepuisFilmographie(filmography: Record<string, string> | un
     // « Plusieurs publicités : Nike, KFC… (2012-2026) » n'est pas un film
     String(texte)
       .replace(/Plusieurs[^(]*(\([^)]*\))?/gi, "")
-      .split(/,(?![^()]*\))/)
+      // on coupe après « (année…) », pour garder entiers les titres avec virgule (« Pigalle, la nuit »)
+      .split(/(?<=\))\s*,\s+/)
       .map((s) => s.trim())
       .forEach((item) => {
         if (!item || /^(plusieurs|pub\b)/i.test(item)) return;
