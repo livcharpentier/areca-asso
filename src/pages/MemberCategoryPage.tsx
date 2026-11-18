@@ -71,6 +71,9 @@ const MemberCategoryPage = () => {
     }
   ];
 
+  // Pour l'instant, seuls les responsables des enfants ont des membres inscrits
+  const membresAffiches = category === "responsables-enfants" ? mockMembers : [];
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -91,8 +94,12 @@ const MemberCategoryPage = () => {
               {categoryTitles[category || ""] || "Membres"}
             </h1>
 
+            {membresAffiches.length === 0 && (
+              <p className="text-lg text-muted-foreground">Aucun membre inscrit dans cette catégorie pour le moment.</p>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {mockMembers.map((member) => (
+              {membresAffiches.map((member) => (
                 <Card key={member.id} className="border-border bg-card hover:border-accent/50 transition-all duration-300 hover:scale-105">
                   <CardHeader>
                     <div className="flex items-start gap-4">
