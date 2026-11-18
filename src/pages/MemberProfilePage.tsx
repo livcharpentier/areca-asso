@@ -98,7 +98,7 @@ export const memberData: { [key: string]: any } = {
       "Casting Clips": "Plusieurs clips musicaux : Renan Luce, Raphael…",
       "Assistante Mise en Scène": "La Voix des Steppes (2014), Pour elle (2008 — réal. Fred Cavayé · prod. Fidélité Films)",
       "Coach Enfants": "Des nouvelles de la planète Mars (2016 — réal. Dominik Moll · prod. Diaphana Films, Artemis Production)",
-      "Assistante Régisseuse": "Dracula (2025 — réal. Luc Besson), Valérian (2017 — réal. Luc Besson · prod. EuropaCorp), Le Transporteur : Héritage (2015 — réal. Camille Delamarre · prod. EuropaCorp), Arthur 3 (2010 — réal. Luc Besson · prod. EuropaCorp), Transporter 3 (2008 — réal. Olivier Megaton · prod. EuropaCorp), À l'intérieur (2007 — réal. Alexandre Bustillo et Julien Maury), Arthur et les Minimoys (2006 — réal. Luc Besson · prod. EuropaCorp), Pub Afflelou, Pub KFC"
+      "Assistante Régisseuse": "Robin (2026 — série TF1 · renfort régie · réal. Nicolas Guicheteau · prod. Fédération Studio France, Égalité Studios), Dracula (2025 — réal. Luc Besson), Valérian (2017 — réal. Luc Besson · prod. EuropaCorp), Le Transporteur : Héritage (2015 — réal. Camille Delamarre · prod. EuropaCorp), Arthur 3 (2010 — réal. Luc Besson · prod. EuropaCorp), Transporter 3 (2008 — réal. Olivier Megaton · prod. EuropaCorp), À l'intérieur (2007 — réal. Alexandre Bustillo et Julien Maury), Arthur et les Minimoys (2006 — réal. Luc Besson · prod. EuropaCorp), Pub Afflelou, Pub KFC"
     },
     animation: {
       "Animations entre 1996 et 2010": "Centre de loisirs, colonie de vacances, camp itinérant, encadrement voile, encadrement ski, surveillance mer, professeur spécialisé voile (ado, adulte).",
