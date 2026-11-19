@@ -110,9 +110,9 @@ const Members = () => {
             })}
           </div>
 
-          {/* Partenaires sur les tournages (hors association) */}
+          {/* Partenaires (hors association) */}
           <div className="mt-12">
-            <h3 className="text-xl font-semibold text-foreground mb-2 uppercase tracking-wide">Nos partenaires sur les tournages</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-2 uppercase tracking-wide">Nos partenaires</h3>
             <p className="text-sm text-muted-foreground mb-5">
               Ils ne sont pas membres de l'ARENCA, mais nous travaillons souvent à leurs côtés, chacun dans son métier, au service des enfants.
             </p>
