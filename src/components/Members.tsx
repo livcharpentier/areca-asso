@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Search, ChevronRight } from "lucide-react";
+import { Users, Search, ChevronRight, Handshake } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import livPhoto from "@/assets/liv-charpentier.png";
@@ -109,6 +109,38 @@ const Members = () => {
                 </Card>
               );
             })}
+          </div>
+
+          {/* Partenaires sur les tournages (hors association) */}
+          <div className="mt-12">
+            <h3 className="text-xl font-semibold text-foreground mb-2 uppercase tracking-wide">Nos partenaires sur les tournages</h3>
+            <p className="text-sm text-muted-foreground mb-5">
+              Ils ne sont pas membres de l'ARENCA, mais nous travaillons souvent à leurs côtés, chacun dans son métier, au service des enfants.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
+                { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
+                { title: "Coachs enfants", description: "Accompagnent les enfants dans leur jeu, en lien avec la mise en scène" },
+              ].map((partenaire) => (
+                <Card key={partenaire.title} className="border-[#ee7d2b]/40 bg-[#fdf1e7]">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-xl text-[#c25e12] font-semibold tracking-wide leading-relaxed flex items-center justify-between gap-3">
+                      <span>{partenaire.title}</span>
+                      <div className="w-10 h-10 shrink-0 rounded-lg bg-[#ee7d2b]/15 flex items-center justify-center">
+                        <Handshake className="w-5 h-5 text-[#c25e12]" />
+                      </div>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-foreground">{partenaire.description}</p>
+                    <span className="inline-block mt-3 text-[11px] font-semibold uppercase tracking-wider text-[#c25e12] border border-[#ee7d2b]/50 rounded-full px-2 py-0.5">
+                      Hors association
+                    </span>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           {/* Positionnement de l'ARENCA */}
