@@ -39,7 +39,7 @@ const MemberCategoryPage = () => {
         "Coach Enfants": "Des nouvelles de la planète Mars (2016)",
         "Assistante Régisseuse": "Arthur et les Minimoys (2006), À l'intérieur (2007), Transporter 3 (2008), Arthur 3 (2010), Valérian (2017), Pub Afflelou, Pub KFC, Dracula (2025)"
       },
-      availability: "Disponible",
+      availability: "",
       recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
       cvUrl: "/CV_LIV_CHARPENTIER.pdf"
     },

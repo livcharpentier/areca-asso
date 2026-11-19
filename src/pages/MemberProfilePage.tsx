@@ -20,7 +20,7 @@ export const memberData: { [key: string]: any } = {
     experienceYears: 28,
     availability: "Disponible",
     recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
-    actualite: "Disponible",
+    actualite: "",
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
     affiches: {
       "Le Transporteur : Héritage": "/affiches/liv/le-transporteur-heritage.jpg",
