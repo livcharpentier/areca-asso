@@ -66,8 +66,13 @@ const MentionsLegalesPage = () => (
 
         <Bloc titre="Cookies">
           <p>
-            Le site n&apos;utilise ni publicité ni outil de mesure d&apos;audience. Seuls des cookies techniques
-            sont déposés pour permettre la connexion à l&apos;Espace membres ; ils ne nécessitent pas de consentement.
+            Le site n&apos;utilise pas de publicité. Seuls des cookies techniques sont déposés pour permettre la
+            connexion à l&apos;Espace membres ; ils ne nécessitent pas de consentement.
+          </p>
+          <p className="mt-3">
+            Mesure d&apos;audience : le site compte les visites de façon anonyme grâce à Vercel Web Analytics,
+            sans cookie et sans conserver de données personnelles permettant de vous identifier. Ces statistiques
+            servent uniquement à savoir combien de personnes consultent le site et quelles pages sont lues.
           </p>
         </Bloc>
 
