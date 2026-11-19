@@ -13,7 +13,7 @@ const articles = [
     id: "preambule",
     title: "Préambule",
     content: [
-      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineur·es.\nL’ARENCA peut reconsidérer l’adhésion d’un·e membre dont le comportement serait contraire à la charte.\nEn signant la présente charte, le·la responsable des enfants et/ou l’animateur·trice déclare sur l’honneur avoir un casier judiciaire vierge."
+      "La présente charte définit les principes fondamentaux pour adhérer à l’association ARENCA. Elle vise à garantir la protection, le bien-être et l’épanouissement des mineur·es. L’association vise à promouvoir la distinction et la complémentarité des postes de Responsable enfant et de Coach enfant. En signant cette charte, le·la responsable s’engage à défendre cela sur le terrain.\nL’ARENCA peut reconsidérer l’adhésion d’un·e membre dont le comportement serait contraire à la charte.\nEn signant la présente charte, le·la responsable des enfants et/ou l’animateur·trice déclare sur l’honneur avoir un casier judiciaire vierge."
     ]
   },
   {
