@@ -178,7 +178,7 @@ const articles = [
   }
 ];
 
-// Historique des modifications de la charte : ajouter une ligne en tête à chaque modification
+// Date de la dernière modification de la charte (affichée sur le site et dans le PDF) ; la liste des changements reste pour mémoire, elle n'est pas affichée
 const MAJ_CHARTE = [
   {
     date: "19 novembre 2026",
@@ -306,11 +306,6 @@ const MetierPage = () => {
                   <p className="text-muted-foreground">
                     Dernière mise à jour de la charte : <span className="font-semibold text-[#16213f]">{MAJ_CHARTE[0].date}</span>
                   </p>
-                  <ul className="mt-1 space-y-0.5 text-foreground">
-                    {MAJ_CHARTE[0].changements.map((c) => (
-                      <li key={c}>• {c}</li>
-                    ))}
-                  </ul>
                 </div>
               )}
               <CharteContent />
