@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Search, ChevronRight, Handshake } from "lucide-react";
+import { Search, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import livPhoto from "@/assets/liv-charpentier.png";
@@ -94,9 +94,6 @@ const Members = () => {
                   <CardHeader className="pb-3">
                     <CardTitle className="text-xl text-primary font-semibold tracking-wide leading-relaxed flex items-center justify-between">
                       <span>{category.title}</span>
-                      <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                        <Users className="w-5 h-5 text-accent" />
-                      </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -118,17 +115,14 @@ const Members = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
-                { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
                 { title: "Coachs mineurs", description: "Accompagnent les mineurs dans leur jeu, en lien avec la mise en scène" },
+                { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
+                { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
               ].map((partenaire) => (
                 <Card key={partenaire.title} className="border-[#ee7d2b]/40 bg-[#fdf1e7]">
                   <CardHeader className="pb-3">
                     <CardTitle className="text-xl text-[#c25e12] font-semibold tracking-wide leading-relaxed flex items-center justify-between gap-3">
                       <span>{partenaire.title}</span>
-                      <div className="w-10 h-10 shrink-0 rounded-lg bg-[#ee7d2b]/15 flex items-center justify-center">
-                        <Handshake className="w-5 h-5 text-[#c25e12]" />
-                      </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
