@@ -19,17 +19,17 @@ const DepotDossier = () => (
       <CardContent className="space-y-3 text-foreground">
         <p>
           Les demandes se déposent uniquement en ligne, sur la démarche officielle
-          <strong> « DRIEETS-IDF-Enfants du Spectacle »</strong>. Chaque dossier demande 3 à 5 semaines d'instruction :
+          <strong> « DRIEETS – IDF – 75 – Commission des enfants du spectacle de Paris »</strong> (employeurs domiciliés à Paris ou à l'étranger). Chaque dossier demande 3 à 5 semaines d'instruction :
           respectez les dates de dépôt du calendrier des commissions.
         </p>
         <a
-          href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026"
+          href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold hover:opacity-90"
         >
           <ExternalLink className="h-4 w-4" />
-          Accéder à la plateforme de dépôt
+          Accéder à la plateforme de dépôt — Paris (75)
         </a>
         <p className="text-sm text-muted-foreground">
           Certains départements d'Île-de-France ont leur propre démarche :{" "}
@@ -126,7 +126,7 @@ const DepotDossier = () => (
 
     <p className="text-xs text-muted-foreground text-center">
       Sources :{" "}
-      <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" target="_blank" rel="noopener noreferrer">démarche DRIEETS-IDF-Enfants du Spectacle</a>,{" "}
+      <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">démarche DRIEETS-IDF-Enfants du Spectacle</a>,{" "}
       <a className="underline" href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer">Académie de Paris</a>,{" "}
       <a className="underline" href="https://beta.gouv.fr/startups/enfants-du-spectacle.html" target="_blank" rel="noopener noreferrer">beta.gouv.fr</a>
     </p>

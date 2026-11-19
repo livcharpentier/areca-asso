@@ -33,13 +33,13 @@ const DrieetsDossier = () => {
                 La procédure de demande d'autorisation est désormais dématérialisée. Déposez votre dossier en ligne sur la plateforme officielle.
               </p>
               <a 
-                href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" 
+                href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-accent px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               >
                 <ExternalLink className="h-4 w-4" />
-                Accéder à la plateforme de dépôt
+                Accéder à la plateforme de dépôt — Paris (75)
               </a>
             </div>
           </div>
@@ -197,7 +197,7 @@ const DrieetsDossier = () => {
             variant="default" 
             size="lg" 
             className="gap-2"
-            onClick={() => window.open('https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026', '_blank')}
+            onClick={() => window.open('https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle', '_blank')}
           >
             <FileText className="h-4 w-4" />
             Confectionner un dossier en ligne

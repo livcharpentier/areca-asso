@@ -429,7 +429,7 @@ const ContactsUtilesContent = () => {
             <p className="font-semibold text-primary">DRIEETS Île-de-France — enfants du spectacle</p>
             <p>Instruction des demandes d'autorisation (unité de Paris)</p>
             <p><a className={lien} href="mailto:drieets-idf-ud75.eesam@drieets.gouv.fr">drieets-idf-ud75.eesam@drieets.gouv.fr</a></p>
-            <p><a className={lien} href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" target="_blank" rel="noopener noreferrer">Plateforme de dépôt des dossiers</a></p>
+            <p><a className={lien} href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">Plateforme de dépôt des dossiers — Paris (75)</a></p>
           </div>
           <div className={bloc}>
             <p className="font-semibold text-primary">Thalie Santé — Pôle Enfants</p>

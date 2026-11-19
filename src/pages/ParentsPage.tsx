@@ -331,7 +331,7 @@ const DossierEnfantContent = () => (
           </a>
         </p>
         <p className="text-muted-foreground text-xs mt-2 italic">
-          Sources : <a href="https://demarche.numerique.gouv.fr/commencer/enfants-du-spectacle-2026" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">démarche DRIEETS-IDF-Enfants du Spectacle</a> et <a href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">Académie de Paris</a>
+          Sources : <a href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-75-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">démarche DRIEETS-IDF-Enfants du Spectacle</a> et <a href="https://www.ac-paris.fr/scolarite-des-enfants-du-spectacle-123037" target="_blank" rel="noopener noreferrer" className="underline hover:text-muted-foreground">Académie de Paris</a>
         </p>
       </CardContent>
     </Card>
