@@ -33,8 +33,8 @@ const DepotDossier = () => (
         </a>
         <p className="text-sm text-muted-foreground">
           Certains départements d'Île-de-France ont leur propre démarche :{" "}
-          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/05c734ad-6f03-4a33-8e0d-83fd47ac204a" target="_blank" rel="noopener noreferrer">77</a>,{" "}
-          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/6cee78e5-0a28-48aa-b9b0-2aafbadb7632" target="_blank" rel="noopener noreferrer">78</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-77-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">77</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-78-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">78</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/be4a5003-eaa7-40d4-aa98-e30376e0731d" target="_blank" rel="noopener noreferrer">91</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-95-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">95</a>.
         </p>
