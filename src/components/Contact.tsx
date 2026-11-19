@@ -69,7 +69,8 @@ const Contact = () => {
                 <p className="font-bold mb-1">Demande d'adhésion</p>
                 <p>
                   Pour toute demande d'adhésion, référez-vous au{" "}
-                  <a href="/metier?onglet=reglement" className="text-accent underline font-semibold">règlement intérieur</a>.
+                  <a href="/metier?onglet=reglement" className="text-accent underline font-semibold">règlement intérieur</a> et à la{" "}
+                  <a href="/metier?onglet=charte" className="text-accent underline font-semibold">charte</a>.
                 </p>
               </div>
             </div>
