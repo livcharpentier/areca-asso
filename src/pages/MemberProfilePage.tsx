@@ -22,6 +22,9 @@ export const memberData: { [key: string]: any } = {
     recentNews: "Atelier bricolage dans les écoles maternelle et primaire (2018-2025)",
     actualite: "",
     cvUrl: "/CV_LIV_CHARPENTIER.pdf",
+    cvSections: {
+      "IMDb": "https://www.imdb.com/fr/name/nm2444237/"
+    },
     affiches: {
       "Le Transporteur : Héritage": "/affiches/liv/le-transporteur-heritage.jpg",
       "Pigalle, la nuit": "/affiches/liv/pigalle-la-nuit.jpg",

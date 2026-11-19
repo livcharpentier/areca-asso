@@ -115,7 +115,7 @@ const Members = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { title: "Coachs mineurs", description: "Accompagnent les mineurs dans leur jeu, en lien avec la mise en scène" },
+                { title: "Coachs mineurs", description: "Accompagnent les mineurs dans leur jeu, en lien avec la mise en scène", site: "https://acmafiction.fr/", siteNom: "ACMA Fiction" },
                 { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
                 { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
               ].map((partenaire) => (
@@ -131,13 +131,24 @@ const Members = () => {
                       <span className="inline-block text-[11px] font-semibold uppercase tracking-wider text-[#c25e12] border border-[#ee7d2b]/50 rounded-full px-2 py-0.5">
                         Hors association
                       </span>
-                      <span
-                        aria-disabled="true"
-                        title="Le lien vers leur site sera ajouté prochainement"
-                        className="inline-block text-[11px] font-semibold text-[#c25e12]/60 border border-dashed border-[#ee7d2b]/40 rounded-full px-2 py-0.5 cursor-default"
-                      >
-                        Site : en cours
-                      </span>
+                      {(partenaire as { site?: string }).site ? (
+                        <a
+                          href={(partenaire as { site?: string }).site}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block text-[11px] font-semibold text-white bg-[#ee7d2b] hover:bg-[#c25e12] rounded-full px-2.5 py-0.5 transition-colors"
+                        >
+                          Voir leur site{(partenaire as { siteNom?: string }).siteNom ? ` : ${(partenaire as { siteNom?: string }).siteNom}` : ""} ↗
+                        </a>
+                      ) : (
+                        <span
+                          aria-disabled="true"
+                          title="Le lien vers leur site sera ajouté prochainement"
+                          className="inline-block text-[11px] font-semibold text-[#c25e12]/60 border border-dashed border-[#ee7d2b]/40 rounded-full px-2 py-0.5 cursor-default"
+                        >
+                          Site : en cours
+                        </span>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
