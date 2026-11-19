@@ -36,6 +36,7 @@ const DepotDossier = () => (
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-77-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">77</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-78-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">78</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-91-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">91</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-92-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">92</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-93-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">93</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-94-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">94</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-95-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">95</a>.
