@@ -1,4 +1,5 @@
 import heroCameras from "@/assets/hero-cameras.jpg";
+import DerniereMiseAJour from "@/components/DerniereMiseAJour";
 
 const Hero = () => {
   return (
@@ -24,6 +25,7 @@ const Hero = () => {
           <p className="text-base md:text-lg lg:text-xl text-white/95 leading-relaxed drop-shadow-lg font-medium">
             Fédérer les professionnels de l'encadrement des mineurs dans le cinéma et l'audiovisuel
           </p>
+          <DerniereMiseAJour className="mt-4 inline-block self-start text-xs md:text-sm text-white/85 bg-black/40 rounded-md px-3 py-1.5 drop-shadow" />
         </div>
       </div>
     </section>

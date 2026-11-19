@@ -178,6 +178,17 @@ const articles = [
   }
 ];
 
+// Historique des modifications de la charte : ajouter une ligne en tête à chaque modification
+const MAJ_CHARTE = [
+  {
+    date: "19 novembre 2026",
+    changements: [
+      "Préambule : ajout de la distinction et de la complémentarité des postes de Responsable enfant et de Coach enfant",
+      "Préambule : mise en page en deux paragraphes",
+    ],
+  },
+];
+
 const CharteContent = () => (
   <div className="max-w-4xl mx-auto">
     <div className="space-y-6">
@@ -251,6 +262,18 @@ const MetierPage = () => {
             <p className="text-xl text-accent font-semibold tracking-wide">
               Responsable Enfants — Cinéma & Audiovisuel
             </p>
+            {onglet === "charte" && MAJ_CHARTE.length > 0 && (
+              <div className="mt-5 inline-block text-left max-w-2xl rounded-lg border border-[#16213f]/15 bg-white/70 px-4 py-3 text-sm">
+                <p className="text-muted-foreground">
+                  Dernière mise à jour de la charte : <span className="font-semibold text-[#16213f]">{MAJ_CHARTE[0].date}</span>
+                </p>
+                <ul className="mt-1 space-y-0.5 text-foreground">
+                  {MAJ_CHARTE[0].changements.map((c) => (
+                    <li key={c}>• {c}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
           <Tabs value={onglet} onValueChange={(v) => setParams({ onglet: v }, { replace: true })} className="w-full max-w-5xl mx-auto">
             <TabsList className="grid w-full grid-cols-3 mb-8">
