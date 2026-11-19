@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Mail, Phone, Calendar, Download } from "lucide-react";
+import { ArrowLeft, Mail, Phone, Calendar, Download, Film } from "lucide-react";
 import jsPDF from "jspdf";
 import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres, lignesCV } from "@/components/FilmPosterBand";
 
@@ -427,6 +427,11 @@ const MemberProfilePage = () => {
               {member.phone && (
                 <a href={`tel:${member.phone}`} className="flex items-center gap-2 text-accent hover:text-accent/80">
                   <Phone className="w-4 h-4" /> {member.phone}
+                </a>
+              )}
+              {member.cvSections?.IMDb && (
+                <a href={member.cvSections.IMDb} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80">
+                  <Film className="w-4 h-4" /> IMDb
                 </a>
               )}
             </div>
