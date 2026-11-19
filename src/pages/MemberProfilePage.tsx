@@ -313,7 +313,16 @@ const MemberProfilePage = () => {
           x = margin; y += 4.5;
           if (y > 275) { doc.addPage(); y = 20; }
         }
-        doc.text(m.t, x, y);
+        if (/^https?:\/\//.test(m.t)) {
+          // Adresse web cliquable dans le PDF (ex. IMDb)
+          doc.setTextColor(...bleu);
+          doc.textWithLink(m.t, x, y, { url: m.t });
+          doc.setDrawColor(...bleu);
+          doc.line(x, y + 0.6, x + w, y + 0.6);
+          doc.setTextColor(...noir);
+        } else {
+          doc.text(m.t, x, y);
+        }
         x += w;
       });
       });
