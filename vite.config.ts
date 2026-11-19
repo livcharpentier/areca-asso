@@ -10,6 +10,10 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  // Date de la dernière mise en ligne, affichée sur la page d'accueil
+  define: {
+    __DATE_MISE_A_JOUR__: JSON.stringify(new Date().toISOString()),
+  },
   build: {
     rollupOptions: {
       output: {

@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import SocialLinks from "@/components/SocialLinks";
+import DerniereMiseAJour from "@/components/DerniereMiseAJour";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <SocialLinks />
+      <DerniereMiseAJour />
       <Footer />
     </div>
   );
