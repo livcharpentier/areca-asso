@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
+import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
 
 // Liens reçus par mail (invitation, mot de passe oublié) : toujours vers l'Espace membres
@@ -7,4 +8,9 @@ if (/type=(invite|recovery)|error_description=/.test(window.location.hash) && wi
   window.location.replace("/responsables" + window.location.hash);
 }
 
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <>
+    <App />
+    <Analytics />
+  </>
+);
