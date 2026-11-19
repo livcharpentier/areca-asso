@@ -133,9 +133,18 @@ const Members = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-foreground">{partenaire.description}</p>
-                    <span className="inline-block mt-3 text-[11px] font-semibold uppercase tracking-wider text-[#c25e12] border border-[#ee7d2b]/50 rounded-full px-2 py-0.5">
-                      Hors association
-                    </span>
+                    <div className="flex flex-wrap items-center gap-2 mt-3">
+                      <span className="inline-block text-[11px] font-semibold uppercase tracking-wider text-[#c25e12] border border-[#ee7d2b]/50 rounded-full px-2 py-0.5">
+                        Hors association
+                      </span>
+                      <span
+                        aria-disabled="true"
+                        title="Le lien vers leur site sera ajouté prochainement"
+                        className="inline-block text-[11px] font-semibold text-[#c25e12]/60 border border-dashed border-[#ee7d2b]/40 rounded-full px-2 py-0.5 cursor-default"
+                      >
+                        Site : en cours
+                      </span>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
