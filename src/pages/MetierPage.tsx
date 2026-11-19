@@ -262,18 +262,6 @@ const MetierPage = () => {
             <p className="text-xl text-accent font-semibold tracking-wide">
               Responsable Enfants — Cinéma & Audiovisuel
             </p>
-            {onglet === "charte" && MAJ_CHARTE.length > 0 && (
-              <div className="mt-5 inline-block text-left max-w-2xl rounded-lg border border-[#16213f]/15 bg-white/70 px-4 py-3 text-sm">
-                <p className="text-muted-foreground">
-                  Dernière mise à jour de la charte : <span className="font-semibold text-[#16213f]">{MAJ_CHARTE[0].date}</span>
-                </p>
-                <ul className="mt-1 space-y-0.5 text-foreground">
-                  {MAJ_CHARTE[0].changements.map((c) => (
-                    <li key={c}>• {c}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
           <Tabs value={onglet} onValueChange={(v) => setParams({ onglet: v }, { replace: true })} className="w-full max-w-5xl mx-auto">
             <TabsList className="grid w-full grid-cols-3 mb-8">
@@ -313,6 +301,18 @@ const MetierPage = () => {
               <ChildSupervisorRole embedded />
             </TabsContent>
             <TabsContent value="charte">
+              {MAJ_CHARTE.length > 0 && (
+                <div className="mb-6 text-left max-w-4xl mx-auto rounded-lg border border-[#16213f]/15 bg-white/70 px-4 py-3 text-sm">
+                  <p className="text-muted-foreground">
+                    Dernière mise à jour de la charte : <span className="font-semibold text-[#16213f]">{MAJ_CHARTE[0].date}</span>
+                  </p>
+                  <ul className="mt-1 space-y-0.5 text-foreground">
+                    {MAJ_CHARTE[0].changements.map((c) => (
+                      <li key={c}>• {c}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <CharteContent />
             </TabsContent>
             <TabsContent value="reglement">
