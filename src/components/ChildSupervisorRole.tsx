@@ -48,7 +48,6 @@ const ChildSupervisorRole = ({ embedded = false }: Props) => {
                   <li>• Supervision et accompagnement quotidien de l'enfant</li>
                   <li>• Respect strict des horaires autorisés</li>
                   <li>• Organisation d'activités adaptées durant les temps d'attente</li>
-                  <li>• Transmission des informations de la mise en scène pour le jeu</li>
                   <li>• Gestion des émotions et situations conflictuelles avant, pendant et après</li>
                   <li>• Réalisation d'un journal de bord pour chaque journée</li>
                 </ul>
