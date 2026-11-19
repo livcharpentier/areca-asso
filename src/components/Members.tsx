@@ -28,7 +28,6 @@ const Members = () => {
 
   const categories = [
     { title: "Responsables des enfants", description: "Encadrement et protection des mineurs sur les tournages", slug: "responsables-enfants" },
-    { title: "Précepteurs", description: "Suivi pédagogique et scolaire", slug: "precepteurs" },
     { title: "Animateur/trices", description: "Encadrants jeunesse", slug: "animateurs" },
   ];
 
@@ -121,7 +120,7 @@ const Members = () => {
               {[
                 { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
                 { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
-                { title: "Coachs enfants", description: "Accompagnent les enfants dans leur jeu, en lien avec la mise en scène" },
+                { title: "Coachs mineurs", description: "Accompagnent les mineurs dans leur jeu, en lien avec la mise en scène" },
               ].map((partenaire) => (
                 <Card key={partenaire.title} className="border-[#ee7d2b]/40 bg-[#fdf1e7]">
                   <CardHeader className="pb-3">
