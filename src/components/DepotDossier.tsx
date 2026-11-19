@@ -32,10 +32,12 @@ const DepotDossier = () => (
           Accéder à la plateforme de dépôt — Paris (75)
         </a>
         <p className="text-sm text-muted-foreground">
-          Certains départements d'Île-de-France ont leur propre démarche :{" "}
+          Autres départements d'Île-de-France (selon la domiciliation de l'employeur) :{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-77-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">77</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-78-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">78</a>,{" "}
-          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/be4a5003-eaa7-40d4-aa98-e30376e0731d" target="_blank" rel="noopener noreferrer">91</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-91-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">91</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-93-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">93</a>,{" "}
+          <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-94-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">94</a>,{" "}
           <a className="underline" href="https://demarche.numerique.gouv.fr/commencer/drieets-idf-95-commission-des-enfants-du-spectacle" target="_blank" rel="noopener noreferrer">95</a>.
         </p>
       </CardContent>
