@@ -70,6 +70,20 @@ const MemberCategoryPage = () => {
       availability: "",
       recentNews: "",
       cvUrl: "/CV_CHRISTOPHE_DENIS.pdf"
+    },
+    {
+      id: 4,
+      slug: "marine-longuet",
+      firstName: "Marine",
+      lastName: "Longuet",
+      photoUrl: "/marine-longuet.jpg",
+      email: "marine.longuet@gmail.com",
+      phone: "",
+      bio: "Assistante réalisation et responsable enfants depuis 2007. Casting rôles et figuration. Basée en Normandie.",
+      experienceYears: 19,
+      availability: "",
+      recentNews: "",
+      cvUrl: "/CV_MARINE_LONGUET.pdf"
     }
   ];
 

@@ -218,6 +218,60 @@ export const memberData: { [key: string]: any } = {
       "Formation": "Référent VHSS, violences, harcèlement et discriminations sexuelles et sexistes, Atelier Marcelle (2025). Formation professionnelle d'intervenant pédagogique en musiques actuelles, FIPMA (2016). Formation professionnelle de comédien, Studio Pygmalion (2012). Cycle professionnel de musicien, spécialisation musique de film, 300 heures (2009). Animation d'ateliers d'écriture de chansons, ALEPH (1998). Encadrement de répétitions en musiques actuelles, Le CRY, Yvelines (1996). Brevet d'État d'éducateur sportif 1er degré option natation, BEESAN (1990). Études de guitare et d'arrangement, école de jazz du CIM (1984-1989). BAFA (1983)",
       "IMDb": "https://www.imdb.com/fr/name/nm1456468/"
     }
+  },
+  "marine-longuet": {
+    firstName: "Marine",
+    lastName: "Longuet",
+    photo: "/marine-longuet.jpg",
+    email: "marine.longuet@gmail.com",
+    role: "Responsable enfants | Assistante réalisation | Casting rôles et figuration | Coordination enfants",
+    bio: "Assistante réalisation et responsable enfants depuis 2007, spécialisée dans la préparation et l'encadrement des mineurs. Assistante à la distribution des rôles et chargée de figuration. Basée en Normandie.",
+    experienceYears: 19,
+    cvUrl: "/CV_MARINE_LONGUET.pdf",
+    films: [
+      { titre: "Opéra bleu", realisateur: "Vassia Chavaroche", annee: 2026, type: "court" },
+      { titre: "Night", realisateur: "Beatrice Gibson", annee: 2025, type: "film" },
+      { titre: "Les Princes du BTP", realisateur: "Antoine Giorgini", annee: 2025, type: "film" },
+      { titre: "Six jours, ce printemps-là", realisateur: "Joachim Lafosse", annee: 2024, type: "film" },
+      { titre: "À la hauteur", realisateur: "Hélène Fabre", annee: 2024, type: "court" },
+      { titre: "La Vallée des fous", realisateur: "Xavier Beauvois", annee: 2023, type: "film" },
+      { titre: "Les Fantômes", realisateur: "Jonathan Millet", annee: 2023, type: "film" },
+      { titre: "Second tour", realisateur: "Albert Dupontel", annee: 2023, type: "film" },
+      { titre: "Je ne suis pas un héros", realisateur: "Rudy Milstein", annee: 2022, type: "film" },
+      { titre: "La Petite", realisateur: "Guillaume Nicloux", annee: 2022, type: "film", affiche: "/affiches/la-petite.jpg" },
+      { titre: "La Nouvelle Femme", realisateur: "Léa Todorov", annee: 2022, type: "film" },
+      { titre: "Il n'y a pas d'ombre dans le désert", realisateur: "Yossi Aviram", annee: 2022, type: "film" },
+      { titre: "Les Enfants des autres", realisateur: "Rebecca Zlotowski", annee: 2021, type: "film" },
+      { titre: "Je te veux, moi non plus", realisateur: "Inès Reg et Kevin Debonne", annee: 2021, type: "film" },
+      { titre: "Petite Maman", realisateur: "Céline Sciamma", annee: 2020, type: "film" },
+      { titre: "Albatros", realisateur: "Xavier Beauvois", annee: 2019, type: "film" },
+      { titre: "Été 85", realisateur: "François Ozon", annee: 2019, type: "film" },
+      { titre: "Anna Vernor II", realisateur: "Edouardo Carretié", annee: 2019, type: "court" },
+      { titre: "La Dernière Vie de Simon", realisateur: "Léo Karmann", annee: 2018, type: "film" },
+      { titre: "Sun", realisateur: "Jonathan Desoindre", annee: 2017, type: "film" },
+      { titre: "La Musique à l'eau", realisateur: "Claude Duty", annee: 2017, type: "court" },
+      { titre: "La Fine Équipe", realisateur: "Magaly Richard-Serrano", annee: 2016, type: "film" },
+      { titre: "Je ne sais pas si c'est tout le monde", realisateur: "Vincent Delerm", annee: 2015, type: "film" },
+      { titre: "Tristesse Club", realisateur: "Vincent Mariette", annee: 2013, type: "film" },
+      { titre: "Les Conquérants", realisateur: "Xabi Molia", annee: 2012, type: "film" },
+      { titre: "De rouille et d'os", realisateur: "Jacques Audiard", annee: 2012, type: "film" },
+      { titre: "38 témoins", realisateur: "Lucas Belvaux", annee: 2012, type: "film" },
+      { titre: "La Fée", realisateur: "Abel, Gordon et Romy", annee: 2011, type: "film" },
+      { titre: "Belle Épine", realisateur: "Rebecca Zlotowski", annee: 2009, type: "film" }
+    ],
+    filmography: {
+      "Responsable enfants": "Six jours, ce printemps-là de Joachim Lafosse, Stenola / Les Films du Losange, rôles principaux (2024), La Vallée des fous de Xavier Beauvois, Les Films du Worso, rôle principal (2023), Les Enfants des autres de Rebecca Zlotowski, Les Films Velvet, rôle principal (2021), Petite Maman de Céline Sciamma, Lilies Films, rôles principaux (2020)",
+      "Assistante réalisation — Longs métrages": "Night de Beatrice Gibson, 1re assistante, Somesuch / Norte Productions / BBC (2025), Les Fantômes de Jonathan Millet, repérages, Grand Huit (2023), Je ne suis pas un héros de Rudy Milstein, 2e assistante, Delante (2022), La Petite de Guillaume Nicloux, 1re assistante pré-tournage en remplacement, Les Films du Kiosque (2022), La Dernière Vie de Simon de Léo Karmann, 2e assistante, Gekko Film (2018), Sun de Jonathan Desoindre, 2e assistante, Produits Frais / Rouge International (2017), Je ne sais pas si c'est tout le monde de Vincent Delerm, 1re assistante pré-tournage, Tôt ou Tard Films / Rouge International (2015), Tristesse Club de Vincent Mariette, 2e assistante, Kazak (2013), Les Conquérants de Xabi Molia, 2e assistante, Moteur s'il vous plaît (2012), La Fée d'Abel, Gordon et Romy, 2e assistante, MK2 / Courage Mon Amour (2011), Belle Épine de Rebecca Zlotowski, 3e assistante et repérages Normandie, Les Films Velvet (2009)",
+      "Assistante réalisation — Courts métrages et publicité": "Opéra bleu de Vassia Chavaroche, 1re assistante, Apaches Films (2026), À la hauteur d'Hélène Fabre, 1re assistante, Offshore (2024), Anna Vernor II d'Edouardo Carretié, 1re assistante, Envie de Tempête (2019), Publicité Française des Jeux de Géraldine Nakache, 2e assistante, Quad Productions (2018), La Musique à l'eau de Claude Duty, 1re assistante, Envie de Tempête (2017)",
+      "Assistante à la distribution des rôles & chargée de figuration": "Les Princes du BTP d'Antoine Giorgini, Deuxième Ligne Films (2025), La Vallée des fous de Xavier Beauvois, Les Films du Worso (2023), Second tour d'Albert Dupontel, ADCB Films, chargée de figuration retakes (2023), La Nouvelle Femme de Léa Todorov, Geko Films, reprise de poste et retakes (2022), Il n'y a pas d'ombre dans le désert de Yossi Aviram, Les Films du Poisson, chargée de figuration (2022), Je te veux, moi non plus d'Inès Reg et Kevin Debonne, Monkey Pack Films, chargée de figuration (2021), Albatros de Xavier Beauvois, Les Films du Worso (2019), Été 85 de François Ozon, Mandarin Production, chargée de figuration (2019), La Fine Équipe de Magaly Richard-Serrano, Blue Monday Productions (2016), 38 témoins de Lucas Belvaux, Agat Films (2012), De rouille et d'os de Jacques Audiard, Why Not Productions, recherche de doublure (2012)"
+    },
+    cvSections: {
+      "Expériences spécifiques": "Préparation et encadrement de rôles enfants de 3 à 15 ans. Coordination d'intimité. Scènes de foules de 200 à 500 figurants. Tournages avec des personnes en situation de handicap. Animaux (singe, ours, chien). Drone et hélicoptère. Essayages figuration pour film d'époque",
+      "Compétences": "Casting rôles adultes et enfants. Gestion de la figuration, administrative et plateau (Myrole, Starbizz, Movinmotion). Fichier figurants Normandie : Le Havre, Dieppe, Rouen, Fécamp",
+      "Formation": "Atelier documentaire, La Fémis (2015). Licence de cinéma, Université Paris 1 Panthéon-Sorbonne (2006). BTS audiovisuel option montage, lycée Corneille, Rouen (2005). Bac littéraire spécialité cinéma, lycée Lumière, Lyon (2002). Permis B",
+      "Engagements": "Membre du conseil d'administration du Collectif 50/50 (2023-2025). Référente VHSS, Atelier Marcelle. Consultante encadrement des mineurs (CPNEF)",
+      "IMDb": "https://www.imdb.com/name/nm3142882/"
+    }
   }
 };
 
