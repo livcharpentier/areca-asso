@@ -79,7 +79,7 @@ const MemberCategoryPage = () => {
       photoUrl: "/marine-longuet.jpg",
       email: "marine.longuet@gmail.com",
       phone: "",
-      bio: "Assistante réalisation et responsable enfants depuis 2007. Casting rôles et figuration. Basée en Normandie.",
+      bio: "Assistante réalisation et responsable enfants depuis 2007. Casting rôles et figuration.",
       experienceYears: 19,
       availability: "",
       recentNews: "",

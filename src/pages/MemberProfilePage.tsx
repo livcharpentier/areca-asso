@@ -227,7 +227,7 @@ export const memberData: { [key: string]: any } = {
     photo: "/marine-longuet.jpg",
     email: "marine.longuet@gmail.com",
     role: "Responsable enfants | Assistante réalisation | Casting rôles et figuration | Coordination enfants",
-    bio: "Assistante réalisation et responsable enfants depuis 2007, spécialisée dans la préparation et l'encadrement des mineurs. Assistante à la distribution des rôles et chargée de figuration. Basée en Normandie.",
+    bio: "Assistante réalisation et responsable enfants depuis 2007, spécialisée dans la préparation et l'encadrement des mineurs. Assistante à la distribution des rôles et chargée de figuration.",
     experienceYears: 19,
     cvUrl: "/CV_MARINE_LONGUET.pdf",
     films: [
