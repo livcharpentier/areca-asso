@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Mail, Phone, Calendar, Download, Film } from "lucide-react";
 import jsPDF from "jspdf";
-import FilmPosterBand, { filmsDepuisFilmographie, titresDuMembre, segmentsTitres, lignesCV } from "@/components/FilmPosterBand";
+import FilmPosterBand, { filmsDepuisFilmographie, groupesDepuisFilmographie, titresDuMembre, segmentsTitres, lignesCV } from "@/components/FilmPosterBand";
 
 export const memberData: { [key: string]: any } = {
   "liv-charpentier": {
@@ -494,7 +494,7 @@ const MemberProfilePage = () => {
 
             {/* Bandeau d'affiches des films du CV */}
             {(member.films || member.filmography) && (
-              <FilmPosterBand films={member.films || filmsDepuisFilmographie(member.filmography, member.affiches)} />
+              <FilmPosterBand films={member.films || filmsDepuisFilmographie(member.filmography, member.affiches)} groupes={!member.films && slug === "liv-charpentier" ? groupesDepuisFilmographie(member.filmography, member.affiches) : undefined} />
             )}
 
             {/* Filmographie */}

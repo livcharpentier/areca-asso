@@ -131,7 +131,9 @@ function AfficheDessinee({ film, index }: { film: FilmCV; index: number }) {
   );
 }
 
-const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
+export type GroupeAffiches = { titre: string; films: FilmCV[] };
+
+const FilmPosterBand = ({ films, groupes }: { films: FilmCV[]; groupes?: GroupeAffiches[] }) => {
   const [affiches, setAffiches] = useState<Record<string, string | null>>({});
   const bande = useRef<HTMLDivElement>(null);
   const [fleches, setFleches] = useState({ gauche: false, droite: false });
@@ -146,18 +148,19 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
     return () => window.removeEventListener("resize", majFleches);
   });
   const defiler = (sens: number) => bande.current?.scrollBy({ left: sens * Math.max(240, (bande.current?.clientWidth || 0) * 0.8), behavior: "smooth" });
-  const cleFilms = films.map((f) => `${f.titre}|${f.annee || ""}|${f.affiche || ""}`).join(";");
+  const tousFilms = groupes ? groupes.flatMap((g) => g.films) : films;
+  const cleFilms = tousFilms.map((f) => `${f.titre}|${f.annee || ""}|${f.affiche || ""}`).join(";");
 
   useEffect(() => {
     let annule = false;
     const cache = lireCache();
     const initial: Record<string, string | null> = {};
     const aChercher: FilmCV[] = [];
-    films.forEach((f) => {
+    tousFilms.forEach((f) => {
       const cle = `${f.titre}|${f.annee || ""}`;
       if (f.affiche) initial[cle] = f.affiche;
       else if (cache[cle] && Date.now() - cache[cle].t < DUREE_CACHE) initial[cle] = cache[cle].url;
-      else aChercher.push(f);
+      else if (!aChercher.some((x) => `${x.titre}|${x.annee || ""}` === cle)) aChercher.push(f);
     });
     setAffiches(initial);
     (async () => {
@@ -181,9 +184,28 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cleFilms]);
 
-  if (!films.length) return null;
+  if (!tousFilms.length) return null;
   // Par date de sortie, du plus récent au plus ancien (sans année : à la fin)
-  const filmsTries = films.map((f, i) => ({ f, i })).sort((a, b) => (b.f.annee || 0) - (a.f.annee || 0) || a.i - b.i).map((x) => x.f);
+  const trier = (liste: FilmCV[]) => liste.map((f, i) => ({ f, i })).sort((a, b) => (b.f.annee || 0) - (a.f.annee || 0) || a.i - b.i).map((x) => x.f);
+  const blocs: GroupeAffiches[] = groupes ? groupes.filter((g) => g.films.length).map((g) => ({ titre: g.titre, films: trier(g.films) })) : [{ titre: "", films: trier(films) }];
+
+  const carte = (f: FilmCV, i: number, g: number) => {
+    const cle = `${f.titre}|${f.annee || ""}`;
+    const url = affiches[cle];
+    return (
+      <figure key={g + "|" + cle} className="flex-shrink-0 w-[104px] snap-start" title={`${f.titre}${f.realisateur ? " — " + f.realisateur : ""}${f.annee ? " (" + f.annee + ")" : ""}`}>
+        <div className="w-[104px] h-[156px] rounded-md overflow-hidden shadow-md bg-muted ring-1 ring-black/5">
+          {url ? (
+            <img src={url} alt={`Affiche : ${f.titre}`} loading="lazy" className="w-full h-full object-cover" onError={() => setAffiches((a) => ({ ...a, [cle]: null }))} />
+          ) : (
+            <AfficheDessinee film={f} index={i} />
+          )}
+        </div>
+        <figcaption className="mt-1 text-[11px] leading-tight text-foreground line-clamp-2">{f.titre}</figcaption>
+        {f.annee && <div className="text-[10px] text-muted-foreground">{f.annee}</div>}
+      </figure>
+    );
+  };
 
   return (
     <div className="mb-8 relative">
@@ -202,24 +224,18 @@ const FilmPosterBand = ({ films }: { films: FilmCV[] }) => {
           </button>
         </>
       )}
-      <div ref={bande} onScroll={majFleches} className="flex gap-3 overflow-x-auto pb-3 snap-x" style={{ scrollbarWidth: "thin" }}>
-        {filmsTries.map((f, i) => {
-          const cle = `${f.titre}|${f.annee || ""}`;
-          const url = affiches[cle];
-          return (
-            <figure key={cle} className="flex-shrink-0 w-[104px] snap-start" title={`${f.titre}${f.realisateur ? " — " + f.realisateur : ""}${f.annee ? " (" + f.annee + ")" : ""}`}>
-              <div className="w-[104px] h-[156px] rounded-md overflow-hidden shadow-md bg-muted ring-1 ring-black/5">
-                {url ? (
-                  <img src={url} alt={`Affiche : ${f.titre}`} loading="lazy" className="w-full h-full object-cover" onError={() => setAffiches((a) => ({ ...a, [cle]: null }))} />
-                ) : (
-                  <AfficheDessinee film={f} index={i} />
-                )}
-              </div>
-              <figcaption className="mt-1 text-[11px] leading-tight text-foreground line-clamp-2">{f.titre}</figcaption>
-              {f.annee && <div className="text-[10px] text-muted-foreground">{f.annee}</div>}
-            </figure>
-          );
-        })}
+      <div ref={bande} onScroll={majFleches} className={`flex ${groupes ? "gap-8" : "gap-3"} overflow-x-auto pb-3 snap-x`} style={{ scrollbarWidth: "thin" }}>
+        {blocs.map((b, g) =>
+          groupes ? (
+            <div key={b.titre} className="flex-shrink-0 flex flex-col">
+              <div className="flex gap-3">{b.films.map((f, i) => carte(f, i, g))}</div>
+              <div className="mt-2 h-[3px] rounded-full bg-accent" />
+              <div className="mt-1.5 text-[11px] font-semibold uppercase tracking-wider text-accent whitespace-nowrap">{b.titre}</div>
+            </div>
+          ) : (
+            b.films.map((f, i) => carte(f, i, g))
+          )
+        )}
       </div>
     </div>
   );
@@ -251,6 +267,11 @@ export function filmsDepuisFilmographie(filmography: Record<string, string> | un
       });
   });
   return films.sort((a, b) => (b.annee || 0) - (a.annee || 0));
+}
+
+// Une rubrique de la filmographie = un groupe d'affiches (titre en bleu sous les affiches)
+export function groupesDepuisFilmographie(filmography: Record<string, string> | undefined, affiches?: Record<string, string>): GroupeAffiches[] {
+  return Object.entries(filmography || {}).map(([titre, texte]) => ({ titre, films: filmsDepuisFilmographie({ [titre]: texte }, affiches) }));
 }
 
 export default FilmPosterBand;
