@@ -46,6 +46,8 @@ export const memberData: { [key: string]: any } = {
       "Sans laisser de traces": "/affiches/liv/sans-laisser-de-traces.jpg",
       "Jamais contente": "/affiches/liv/jamais-contente.jpg",
       "La guerre des Lulus": "/affiches/liv/la-guerre-des-lulus.jpg",
+      "Les Enfants de la Résistance : L'Escalade": "/affiches/liv/les-enfants-de-la-resistance-l-escalade.jpg",
+      "Les Bodin's partent en vrille": "/affiches/liv/les-bodins-partent-en-vrille.jpg",
       "Le 3ème jour": "/affiches/liv/le-3eme-jour.jpg",
       "L'ex-femme de ma vie": "/affiches/liv/l-ex-femme-de-ma-vie.jpg",
       "Podium": "/affiches/liv/podium.jpg",
