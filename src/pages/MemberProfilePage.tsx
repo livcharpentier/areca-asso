@@ -319,7 +319,8 @@ const MemberProfilePage = () => {
     const bleu = [59, 130, 246] as [number, number, number];
     const noir = [15, 23, 42] as [number, number, number];
     const gris = [100, 116, 139] as [number, number, number];
-    const beige = [245, 240, 232] as [number, number, number];
+    // Fond du bandeau : bleu léger pour Liv, beige pour les autres
+    const beige = (slug === "liv-charpentier" ? [224, 236, 252] : [245, 240, 232]) as [number, number, number];
 
     // Fond beige header
     doc.setFillColor(...beige);
