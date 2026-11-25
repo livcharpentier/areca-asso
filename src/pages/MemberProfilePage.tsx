@@ -188,6 +188,7 @@ export const memberData: { [key: string]: any } = {
     bio: "Responsable de l'encadrement des enfants acteurs au cinéma et en audiovisuel depuis 2006. Basé à Paris.",
     experienceYears: 20,
     cvUrl: "/CV_CHRISTOPHE_DENIS.pdf",
+    cvOriginal: true, // on télécharge le PDF envoyé tel quel (pas de CV regénéré)
     films: [
       { titre: "Anatole Latuile", realisateur: "François Descraques", annee: 2026, type: "film" },
       { titre: "Karma", realisateur: "Guillaume Canet", annee: 2025, type: "film", affiche: "/affiches/cdenis/karma.jpg" },
@@ -571,7 +572,14 @@ const MemberProfilePage = () => {
             )}
 
             {/* CV PDF (téléchargement) */}
-            {member.cvUrl && (
+            {member.cvUrl && (member as any).cvOriginal ? (
+              <Button size="lg" className="gap-2" asChild>
+                <a href={member.cvUrl} download={`CV_${member.firstName}_${member.lastName}.pdf`} target="_blank" rel="noopener noreferrer">
+                  <Download className="h-5 w-5" />
+                  Télécharger le CV complet (PDF)
+                </a>
+              </Button>
+            ) : member.cvUrl && (
               <Button
                 size="lg"
                 onClick={generatePDF}
