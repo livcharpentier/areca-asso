@@ -62,7 +62,7 @@ const MemberCategoryPage = () => {
       slug: "christophe-denis",
       firstName: "Christophe",
       lastName: "Denis",
-      photoUrl: "/christophe-denis.jpg",
+      photoUrl: "/christophe-denis.jpg?v=2",
       email: "christophe2ni@gmail.com",
       phone: "",
       bio: "Responsable de l'encadrement des enfants acteurs depuis 2006. Comédien, musicien, répétiteur musique.",

@@ -182,7 +182,7 @@ export const memberData: { [key: string]: any } = {
   "christophe-denis": {
     firstName: "Christophe",
     lastName: "Denis",
-    photo: "/christophe-denis.jpg",
+    photo: "/christophe-denis.jpg?v=2",
     email: "christophe2ni@gmail.com",
     role: "Responsable enfants | Comédien | Musicien | Répétiteur musique",
     bio: "Responsable de l'encadrement des enfants acteurs au cinéma et en audiovisuel depuis 2006. Basé à Paris.",
