@@ -29,8 +29,8 @@ const MemberCategoryPage = () => {
       photoUrl: livPhoto,
       email: "liv.charp@wanadoo.fr",
       phone: "06 19 60 12 96",
-      bio: "Responsable des enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. Spécialisée dans l'encadrement et l'animation depuis 1996.",
-      experienceYears: 28,
+      bio: "Responsable des enfants sur tournage, 3ème Assistante mise en scène, Assistante régisseuse. ",
+      experienceYears: 26,
       filmography: {
         "Responsable des enfants": "Radin (2016), Le petit Spirou (2017), Rémi sans famille (2018), Parents d'élèves (2020), Le trésor du Petit Nicolas (2021), L'Abandon, Histoires parallèles, Les enfants de la résistance (2026), Karma (2026)",
         "Assistante Casting Rôles (Adultes/Enfants)": "Les vacances de Ducobu (2011), La guerre des boutons (2011), Sans laisser de traces (2010), Jamais contente (2017), La guerre des Lulus (2023), Le 3ème jour",
