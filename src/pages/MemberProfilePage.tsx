@@ -197,7 +197,7 @@ export const memberData: { [key: string]: any } = {
       { titre: "Toto : la classe se met au vert", realisateur: "Pascal Bourdiaux", annee: 2022, type: "film", affiche: "/affiches/cdenis/toto-classe-verte.jpg" },
       { titre: "La Guerre des Lulus", realisateur: "Yann Samuell", annee: 2021, type: "film", affiche: "/affiches/cdenis/la-guerre-des-lulus.jpg" },
       { titre: "Les Blagues de Toto", realisateur: "Pascal Bourdiaux", annee: 2019, type: "film", affiche: "/affiches/cdenis/les-blagues-de-toto.jpg" },
-      { titre: "Christ(Off)", realisateur: "Pierre Dudan", annee: 2017, type: "film" },
+      { titre: "Christ(Off)", realisateur: "Pierre Dudan", annee: 2017, type: "film", affiche: "/affiches/cdenis/christ-off.jpg" },
       { titre: "Les Mystères de l'amour", annee: 2016, type: "serie", affiche: "/affiches/cdenis/les-mysteres-de-l-amour.jpg" },
       { titre: "Le Nouveau", realisateur: "Rudi Rosenberg", annee: 2015, type: "film", affiche: "/affiches/cdenis/le-nouveau.jpg" },
       { titre: "Un sac de billes", realisateur: "Christian Duguay", annee: 2015, type: "film", affiche: "/affiches/cdenis/un-sac-de-billes.jpg" },
