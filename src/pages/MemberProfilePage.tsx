@@ -284,7 +284,31 @@ const MemberProfilePage = () => {
   const navigate = useNavigate();
   const member = memberData[slug || ""];
 
-  const generatePDF = () => {
+  // Photo du site, recadrée en portrait 3:4, pour le CV en PDF
+  const chargerPhotoPourPdf = (src: string): Promise<string | null> =>
+    new Promise((resolve) => {
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      img.onload = () => {
+        try {
+          const W = 600, H = 800;
+          const c = document.createElement("canvas");
+          c.width = W; c.height = H;
+          const ctx = c.getContext("2d");
+          if (!ctx) return resolve(null);
+          const ratio = Math.max(W / img.width, H / img.height);
+          const w = img.width * ratio, h = img.height * ratio;
+          ctx.fillStyle = "#ffffff"; ctx.fillRect(0, 0, W, H);
+          ctx.drawImage(img, (W - w) / 2, (H - h) / 3, w, h);
+          resolve(c.toDataURL("image/jpeg", 0.88));
+        } catch { resolve(null); }
+      };
+      img.onerror = () => resolve(null);
+      img.src = src;
+    });
+
+  const generatePDF = async () => {
+    const photoPdf = member.photo ? await chargerPhotoPourPdf(member.photo) : null;
     const doc = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
     const pageW = 210;
     const margin = 18;
@@ -301,6 +325,13 @@ const MemberProfilePage = () => {
     doc.setFillColor(...beige);
     doc.rect(0, 0, pageW, 50, "F");
 
+    // Photo en haut à droite
+    const largeurPhoto = 30;
+    const largeurTexteEntete = photoPdf ? contentW - largeurPhoto - 6 : contentW;
+    if (photoPdf) {
+      doc.addImage(photoPdf, "JPEG", pageW - margin - largeurPhoto, 5, largeurPhoto, 40);
+    }
+
     // Nom
     doc.setFont("helvetica", "bold");
     doc.setFontSize(22);
@@ -311,7 +342,7 @@ const MemberProfilePage = () => {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10);
     doc.setTextColor(...bleu);
-    const roleLines = doc.splitTextToSize(member.role || "", contentW);
+    const roleLines = doc.splitTextToSize(member.role || "", largeurTexteEntete);
     doc.text(roleLines, margin, y + 14);
     const roleHeight = roleLines.length * 5;
 
