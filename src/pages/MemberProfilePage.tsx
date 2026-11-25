@@ -207,7 +207,7 @@ export const memberData: { [key: string]: any } = {
       { titre: "La Fleur de l'âge", realisateur: "Nick Quinn", annee: 2011, type: "film", affiche: "/affiches/cdenis/la-fleur-de-l-age.jpg" },
       { titre: "La Guerre des boutons", realisateur: "Yann Samuell", annee: 2011, type: "film", affiche: "/affiches/cdenis/la-guerre-des-boutons.jpg" },
       { titre: "Astérix et Obélix : Au service de Sa Majesté", realisateur: "Laurent Tirard", annee: 2011, type: "film", affiche: "/affiches/cdenis/asterix-au-service-de-sa-majeste.jpg" },
-      { titre: "Ripoux anonymes", realisateur: "Claude et Julien Zidi", annee: 2010, type: "film" },
+      { titre: "Ripoux anonymes", realisateur: "Claude et Julien Zidi", annee: 2010, type: "film", affiche: "/affiches/cdenis/ripoux-anonymes.jpg" },
       { titre: "Le Petit Nicolas", realisateur: "Laurent Tirard", annee: 2008, type: "film", affiche: "/affiches/cdenis/le-petit-nicolas.jpg" },
       { titre: "Les Enfants de Timpelbach", realisateur: "Nicolas Bary", annee: 2007, type: "film", affiche: "/affiches/cdenis/les-enfants-de-timpelbach.jpg" },
       { titre: "Big City", realisateur: "Djamel Bensalah", annee: 2006, type: "film", affiche: "/affiches/cdenis/big-city.jpg" },
