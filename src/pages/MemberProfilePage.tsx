@@ -199,7 +199,7 @@ export const memberData: { [key: string]: any } = {
       { titre: "Les Blagues de Toto", realisateur: "Pascal Bourdiaux", annee: 2019, type: "film", affiche: "/affiches/cdenis/les-blagues-de-toto.jpg" },
       { titre: "Christ(Off)", realisateur: "Pierre Dudan", annee: 2017, type: "film" },
       { titre: "Les Mystères de l'amour", annee: 2016, type: "serie", affiche: "/affiches/cdenis/les-mysteres-de-l-amour.jpg" },
-      { titre: "Le Nouveau", realisateur: "Rudi Rosenberg", annee: 2015, type: "film" },
+      { titre: "Le Nouveau", realisateur: "Rudi Rosenberg", annee: 2015, type: "film", affiche: "/affiches/cdenis/le-nouveau.jpg" },
       { titre: "Un sac de billes", realisateur: "Christian Duguay", annee: 2015, type: "film", affiche: "/affiches/cdenis/un-sac-de-billes.jpg" },
       { titre: "West Coast", realisateur: "Benjamin Weill", annee: 2014, type: "film", affiche: "/affiches/cdenis/west-coast.jpg" },
       { titre: "Les Vacances du Petit Nicolas", realisateur: "Laurent Tirard", annee: 2013, type: "film", affiche: "/affiches/cdenis/les-vacances-du-petit-nicolas.jpg" },
