@@ -117,7 +117,7 @@ const Members = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 { title: "Coachs mineurs", description: "Accompagnent les mineurs dans leur jeu, en lien avec la mise en scène", site: "https://acmafiction.fr/", siteNom: "ACMA Fiction" },
-                { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage" },
+                { title: "Précepteur·rices", description: "Assurent le suivi scolaire des enfants pendant le tournage", site: "https://sites.google.com/view/ecoleaucinema", siteNom: "École au cinéma" },
                 { title: "Coordinateur·rices d'intimité", description: "Accompagnent les scènes d'intimité et veillent au consentement et au respect de chacun" },
               ].map((partenaire) => (
                 <Card key={partenaire.title} className="border-[#ee7d2b]/40 bg-[#fdf1e7]">
